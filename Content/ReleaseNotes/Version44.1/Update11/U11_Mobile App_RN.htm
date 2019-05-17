@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Mobile App Release Notes <br />V44.1 Update 11</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;</p>
+        <p>See Also:&#160;<a href="U11_Mobile App Known Issues.htm">EMS Mobile App Known Issues</a></p>
+        <p><a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a></p>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>V44.1 Update 11</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;<br />May 12, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch #:&#160;&#160;<br />201705091</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build&#160;#:&#160;&#160; <br />44.1.11000.3761</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">About Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">API Revision Number Missing on About Page</p>
+                        <p class="RNBody">The API revision number was not displayed with the version number on the About Page.</p>
+                        <p class="RNBody"><span class="ui">Fix: </span>Modified the page to add the API revision number.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=29299" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">29299</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="3" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Entering a Blank Server URL Over SSO Caused Crash</p>
+                        <p class="RNBody">When users changed the Server URL to an empty value using Single Sign On authentication, EMS Mobile App crashed.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span> Modified validations so the app no longer crashes and instead presents the error message, "Unable to import configuration".</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=29733" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">29733</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Child User-Defined Fields Disappear</p>
+                        <p class="RNBody">When users edited values in User Defined Fields (UDFs) that had child fields, saved changes, and then opened the reservation to edit again, the child UDFs did not display.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span> Modified functionality so that child UDFs display in edit mode.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=29480" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">29480</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">User Authentication Issues Due To Custom config.json File</p>
+                        <p class="RNBody">For customers who used a custom config.json file, users had to click the About &gt; EMS Server URL in order to authenticate.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span> Modified functionality so that custom config.json files no longer cause the issue and users authenticate in one step.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=29692" class="RNRefHyper">29692</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

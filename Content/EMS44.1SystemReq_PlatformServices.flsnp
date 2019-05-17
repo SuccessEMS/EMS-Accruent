@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p scope="col">
+                            <MadCap:annotation MadCap:createDate="2019-03-31T14:28:13.8287974-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Using Snippet condition to hide &quot;prior to Update 28&quot; info from the Platform requirements snippet in Google topic. Condition is excluded in topics through Topic Properties &gt; Snippet Conditions tab and select Include for Topic_Hide_A." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-26T08:45:51.3087228-06:00">Operating System</MadCap:annotation>
+                        </p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p scope="col">IIS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Operating System" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p data-th="Operating System">Windows Server 2012&#160;&#160;</p>
+                    </td>
+                    <td data-th="IIS" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: center;">
+                        <p data-th="IIS">8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Operating System" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p data-th="Operating System">Windows Server 2012 R2&#160;&#160;</p>
+                    </td>
+                    <td data-th="IIS" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: center;">
+                        <p data-th="IIS">8.5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>.NET Framework</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: center;">
+                        <p>4.6.1</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Application Pool</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: center;">
+                        <p>4.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" colspan="2">
+                        <p colspan="2" class="beforelist"><b>Prerequisites (Prior to Update 28)</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>HTTPPlatformHandler&#160;IIS Module</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="https://www.iis.net/downloads/microsoft/httpplatformhandler" title="https://www.iis.net/downloads/microsoft/httpplatformhandler">Download Version 1.2&#160;here</a>&#160;OR download the installer&#160;<a href="http://download.microsoft.com/download/8/1/3/813AC4E6-9203-4F7A-8DD5-F3D54D10C5CD/httpPlatformHandler_amd64.msi" title="http://download.microsoft.com/download/8/1/3/813AC4E6-9203-4F7A-8DD5-F3D54D10C5CD/httpPlatformHandler_amd64.msi">here</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>PowerShell</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes" title="https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes">5+ Version</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>ASP.NET Version 4.6</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Under Web Server (IIS) &gt; Web Server &gt; Application Development:</p>
+                        <ul class="unorder-list">
+                            <li>
+                                <p>ISAPI Extensions</p>
+                            </li>
+                            <li>
+                                <p>ISAPI Filters</p>
+                            </li>
+                            <li>
+                                <p>.NET Extensibility 4.6</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" colspan="2">
+                        <p colspan="2" class="beforelist"><b>Prerequisites </b>
+                            <MadCap:conditionalText MadCap:conditions="General.Topic_Hide_A" style="font-weight: bold;">(Update 28 and Later)</MadCap:conditionalText>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a href="https://www.microsoft.com/net/download/dotnet-core/2.1">ASP.NET&#160;Core</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>See Also:&#160;<a href="EMSPlatformServices/InstallationGuide/SystemRequirements.htm#asp.nethandler">Installing ASP.NET&#160;Core</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>PowerShell</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes" title="https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes">5+ Version</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>ASP.NET Version 4.6</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="beforelist">Under Web Server (IIS) &gt; Web Server &gt; Application Development:</p>
+                        <ul class="unorder-list">
+                            <li>
+                                <p>ISAPI Extensions</p>
+                            </li>
+                            <li>
+                                <p>ISAPI Filters</p>
+                            </li>
+                            <li>
+                                <p>.NET Extensibility 4.6</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

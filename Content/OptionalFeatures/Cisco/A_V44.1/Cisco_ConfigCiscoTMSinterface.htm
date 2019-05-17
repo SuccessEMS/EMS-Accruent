@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/noborder_table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Configure the EMS - Cisco TMS Interface</h1>
+        <h2><a name="Configure_Rooms_and_Resources"></a>Configure Rooms and Resources</h2>
+        <p>Before activating the EMS – Cisco TMS Interface, the EMS video conference-room and/or resource list must be synchronized with a Cisco TMS video-conference system (e.g. room or resource).&#160;Systems are linked via the EMS Room/Resource&#160;<span class="ui">External Reference</span>&#160;field and the&#160;<span class="ui">System ID</span>&#160;in Cisco TMS.</p>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Configuring the EMS Cisco.png" class="resize80_noborder_padding" />
+        </p>
+        <p>Rooms can be accessed in EMS within&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Rooms</span>.&#160;Resources can be accessed in EMS within&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Resources</span>.</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Verify that the Cisco TMS Booking API Web Service is installed and running by opening a browser and entering the web service URL (typically&#160;<span class="ui">http://[ServerName]/TMS/external/booking/bookingservice.asmx</span>).&#160;The following screen should appear:</p>
+                <p>
+                    <img src="../../../Resources/Images/CISCO_Guide/Configuring the EMS Cisco_1.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Log into the EMS desktop application using an EMS user account with Administrator-level access.</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">Cisco TMS Activity</span>&#160;button on the tool bar.&#160;The&#160;Cisco TMS Activity&#160;screen will appear.</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">Settings&#160;</span>menu option in the upper right-hand corner of the&#160;Cisco TMS Activity&#160;screen.&#160;The&#160;Cisco TMS Settings&#160;screen will appear.</p>
+                <p>
+                    <img src="../../../Resources/Images/CISCO_Guide/Configuring the EMS Cisco_2.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>On the&#160;<span class="ui">Settings&#160;</span>tab, specify values for the items listed by highlighting the record and clicking the&#160;Edit&#160;button. Once you configure a setting, click the&#160;<span class="ui">OK&#160;</span>button to save your value.</p>
+                <ul start="1">
+                    <li>
+                        <p><span class="ui">Enable Event Logging</span>&#160;– Enables EMS – Cisco TMS Windows Service event logging.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Error Email Message</span>&#160;– Subject line of error email notifications.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Error “From” Email Address</span>&#160;– Email address (individual or distribution group) that error email notifications will be sent from.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Error “To” Email Address&#160;</span>– Email address (individual or distribution group) that error email notifications will be sent to.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Number of days prior to Event</span>&#160;– Specifies how far in advance of a video-conference date the EMS – Cisco TMS Interface should push the EMS booking(s) to Cisco TMS.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">SMTP Authentication Type</span>&#160;– Anonymous or Authenticated.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">SMTP Password</span>&#160;– Specify if SMTP Authentication Type = Authenticated.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">SMTP Server</span>&#160;– Used to relay error notification emails.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">SMTP User Name</span>&#160;– Specify if SMTP Authentication Type = Authenticated.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Use Reserved Time</span>&#160;– If set to Yes, the booking reserved time will be passed to the Cisco TMS Booking API.&#160; Otherwise, the event time will be passed.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Web Service Authentication Type</span>&#160;– Anonymous or Authenticated.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Web Service Domain</span>&#160;– Cisco TMS Booking API Web Service Domain.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Web Service Password</span>&#160;– Specify if Web Service Authentication Type = Authenticated.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Web Service URL</span>&#160;– URL to Cisco TMS Booking API Web Service verified in Step 1.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Web Service User Name</span>&#160;– Specify if Web Service Authentication Type = Authenticated.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Go to the&#160;<span class="ui">Buildings&#160;</span>tab.&#160;This tab is used to include/exclude EMS bookings scheduled in specific Buildings, Areas, or Views during processing.&#160;To select an item, highlight the record and click the&#160;<span class="ui">&gt;</span>&#160;button.</p>
+            </li>
+            <li>
+                <p>Go to the&#160;<span class="ui">Event Types</span>&#160;tab.&#160;This tab is used to include/exclude EMS bookings scheduled in specific Event Types during processing.</p>
+            </li>
+            <li>
+                <p>Go to the&#160;<span class="ui">Status&#160;</span>tab. This tab is used to include/exclude EMS bookings scheduled in specific Statuses during processing.</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">OK&#160;</span>button to save your settings.</p>
+            </li>
+        </ol>
+        <h2><a name="Advanced_Configuration"></a>Advanced Configuration</h2>
+        <p>By default, the following booking information is transferred from EMS to the Cisco TMS Booking API:</p>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>EMS Table.Column</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Cisco TMS Conference Object Property</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Direction</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Reservation Event Name</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>tblReservation. EventName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Title</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Booking Event Start Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>tblBooking. GMTTimeEventStart</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>StartTimeUTC</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Booking Event End Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>tblBooking. GMTTimeEventEnd</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>EndTimeUTC</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Room(s) and/or Resource(s)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>tblRoom. ExternalReference</p>
+                        <p>and/or</p>
+                        <p>tblResource.ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>ParticipantID(s)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Room Phone(s)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>tblRoomPhone.&#160; NA for resource.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>NameOrNumber</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Cisco TMS Conference ID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>tblTMSActivity. ConferenceID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>ConferenceID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Cisco TMS &gt; EMS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>TMS Error Information</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>tblTMSActivity.Error</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>FaultCode + FaultString</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Cisco TMS &gt; EMS</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Cisco TMS default values (defined within Cisco TMS) will be used for any properties not explicitly specified in the table above.&#160;Functionality is available to send additional Cisco TMS Conference Object properties using EMS reservation-level User Defined Fields (UDFs).&#160; This would allow you, for example, to create an EMS UDF named “Conference Type” and map that to the&#160;<span class="italics">ConferenceType&#160;</span>Cisco TMS Conference Object property.&#160;To map an EMS UDF to a Cisco TMS Conference Object property, do the following:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Create a reservation-level UDF in EMS within&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">User Defined Fields</span>.&#160;For information on how to configure an EMS UDF, please refer to the&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/2_EMS_Desktop_Client_CG.htm">EMS Desktop Client Configuration Guide</a>.</p>
+            </li>
+            <li>
+                <p>Go to the&#160;<span class="ui">Optional Cisco TMS Settings</span>&#160;tab within the Cisco TMS Settings area (outlined in the section above).</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">New&#160;</span>button.&#160;The&#160;Optional Cisco TMS Setting&#160;screen will appear.</p>
+            </li>
+            <li>
+                <p>Select your Cisco TMS Conference Object property in the&#160;Cisco TMS Setting&#160;dropdown.&#160;Please refer to your Cisco TMS Booking API documentation for a listing/explanation of Cisco TMS Conference Object properties.</p>
+            </li>
+            <li>
+                <p>Select your EMS UDF in the&#160;<span class="ui">User Defined Field</span>&#160;dropdown.</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">OK&#160;</span>button to close the&#160;Optional Cisco TMS Setting&#160;screen.</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">OK&#160;</span>button to close the&#160;Cisco TMS Settings&#160;screen and save your configuration settings.</p>
+            </li>
+        </ol>
+        <h2><a name="Additional_Cisco_TMS_Conference_Object_Properties"></a>Additional Cisco TMS Conference Object Properties</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/noborder_table.css');" class="TableStyle-noborder_table" cellspacing="0">
+            <col class="TableStyle-noborder_table-Column-Column1" />
+            <col class="TableStyle-noborder_table-Column-Column1" />
+            <col class="TableStyle-noborder_table-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-noborder_table-Body-Body1">
+                    <td class="TableStyle-noborder_table-BodyB-Column1-Body1" style="text-align: left; vertical-align: text-top;">
+                        <p style="text-align: left;">Conference Type<br />Bandwidth<br />Picture Mode<br />Encrypted<br />Data Conference</p>
+                    </td>
+                    <td class="TableStyle-noborder_table-BodyB-Column1-Body1" style="text-align: left; vertical-align: text-top;">
+                        <p style="text-align: left;">Password<br />Billing Code<br />ISDN Restrict<br />User Message Text<br />External Source ID</p>
+                    </td>
+                    <td class="TableStyle-noborder_table-BodyA-Column1-Body1" style="text-align: left; vertical-align: text-top;">
+                        <p style="text-align: left;">Participant Call Type<br />Numeric ID<br />External Primary Key<br />Show Extend Option</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

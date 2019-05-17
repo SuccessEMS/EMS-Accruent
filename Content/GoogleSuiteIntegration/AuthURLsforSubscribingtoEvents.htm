@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2019-04-24T13:54:04.7767743-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Search is turned off perf Matt James's request. Also, the link from the ConfigGoogleCalendar.htm topic is conditioned for Edit only, so the link won't open this topic in the build. When Matt is ready for this to go live, need to turn on search, remove condition on link in other topic, and add this topic to the Master TOC and the PDF toc and rebuild PDF." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-24T13:56:08.0996080-06:00">Authorize URLs for Subscribing to Events</MadCap:annotation>
+        </h1>
+        <p>To authorize URLs for subscribing to events from GSuite:</p>
+        <ol>
+            <li>
+                <p>Navigate to this <a href="https://console.developers.google.com/apis/credentials/domainverification">link</a>.</p>
+            </li>
+            <li>
+                <p>Ensure you have the correct project selected. </p>
+                <p>
+                    <img src="images/image.png" style="width: 615px; height: 248px;" class="hyperlink_with_padding_and_border" />
+                </p>
+            </li>
+            <li>
+                <p>Enter your EMS&#160;Cloud Services <span class="ui">Domain </span>(for example:&#160;my-subdomain.emscloudservice.com). </p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Add Domain</span>.</p>
+                <p>
+                    <img src="images/AddDomain.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>The Verify Ownership dialog box will appear. Click <span class="ui">Take Me There</span>. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="images/VerifyOwnership.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Verify Ownership Dialog Box</p>
+                </div>
+            </li>
+            <li>
+                <p>The <span class="ui">Webmaster Central </span>dialog box will appear. Sign in to your domain name provider. </p>
+            </li>
+            <li>
+                <p>Click the <span class="ui">Other </span>drop-box list and click<span class="ui"> Add a CNAME&#160;record</span>. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="images/webmaster.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Webmaster Central Dialog Box</p>
+                </div>
+            </li>
+            <li>
+                <p>Provide the <span class="ui">CNAME Label / Host</span> and the <span class="ui">CNAME Destination / Target </span>to EMS to be applied to DNS for validation.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="images/cnamelabel.png" class="hyperlink_with_padding_and_border" />
+                    </p>
+                    <p class="Caption">Providing the CNAME&#160;Label/Host and Destination Target</p>
+                </div>
+            </li>
+            <li>
+                <p>Once EMS has put the records in place, you can click <span class="ui">Verify</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If you end up away from this page, you can follow the steps again and it will produce the same records.</p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configure Everyday User Process Templates V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Configure <MadCap:annotation MadCap:createDate="2019-05-16T08:58:51.0559693-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Information is similar/same to info in WebApp_CG_ConfigEverydayUserProcessTemps.html file. Need to create snippet for same info and share between topics.\r\n\r\nThe Web App version seems more up-to-date, especially the linked topics that describe the fields and tabs." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-17T09:36:39.6605752-06:00">Everyday User Process</MadCap:annotation> Templates</h1>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concepts: <MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><span class="ui">Everyday User</span>—Someone who can request or reserve space and services in any EMS Software application other than EMS Desktop Client. You assign these users to templates.</p>
+                <p><span class="ui">Everyday User Template</span>—Defines and controls what a user can do. EMS uses two types of everyday user templates:</p>
+                <ul>
+                    <li><span class="ui">Security template</span>—This is essentially a security profile. It controls which menu items are available to the users assigned to the template, which booking information fields display to them, and other information.</li>
+                    <li><span class="ui">Process template</span>—This is essentially a booking template. It controls what users can do for different types of reservations (conference room, workspace, study room, and so on). This type of template also controls users' date/time restrictions, room security (reserve, request only, no access), and service availability (A/V, catering, and so on).</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you have previously used older versions of EMS, you might know booking templates as "Web Process Templates." These are now called "Everyday User Process Templates." These templates define user access and booking behavior in EMS Web App, EMS Mobile App, and EMS for Outlook. Similarly, you might know permissions templates, which control what an Everyday User is able to do, as "Web Security Templates." These are now called "Everyday User Security Templates."</p>
+        </div>
+        <p>To configure everyday user process templates, follow these steps:</p>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday Applications</span> &gt; <span class="ui">Everyday User Process Templates</span>. The Everyday User Process Templates window opens on the Everyday User Template tab.</p>
+                <p>
+                    <img src="Images/DC_CG_EverydayUserProcTemp.png" class="resize80_noborder_padding" />
+                </p>
+                <p>This window lists the process templates that have been defined for your EMS Web App implementation. The pre-defined user called "(unauthenticated user)" is included in all EMS implementations; you use this template to manage settings for anonymous or “guest” users. For a user to be able to view and use this template, you must assign the user to the template. See <a href="ConfigUsers.htm">Configure Users</a>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To view all everyday user process templates in your EMS database, regardless of status, under Show, click <span class="ui">Inactive</span>.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span>. The Everyday User Process Template dialog box displays. Enter the information for the new everyday user process template as needed.</p>
+                <p>
+                    <img src="Images/DC_CG_ConfigUserProcessTEmplate1.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the information for the new everyday user process template as needed. For more information on the <MadCap:annotation MadCap:createDate="2019-03-04T11:11:32.6561986-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to go over these topics and verify they are up-to-date with current software. For examlpe, can't find the Web Text Tab in the dialog box. " MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-04T11:12:22.2404001-07:00">various tabs and settings</MadCap:annotation>, refer to the following:</p>
+                <ul MadCap:continue="true">
+                    <li>
+                        <p><a href="WebTemplateTab.htm">Process Template Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="BookingRulesTab.htm">Booking Rules Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="DefaultsTab.htm">Defaults Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="VideoConferencetab.htm">Video Conference Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="RoomsTab.htm">Rooms Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="CategoryTab.htm">Categories Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="EventTypeTab.htm">Event Type Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="LDAPGroupTab.htm">LDAP&#160;Groups Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="UserDefinedFieldTab.htm">User-Defined Fields (UDF)&#160;Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="ParametersTab.htm">Parameters Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="WebTextTab.htm">Web Text Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="MenuTextTab.htm">Menu Text Translations Tab</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="TermsConditionsTab.htm">Terms and Conditions Tab</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The cache must be cleared in the <MadCap:variable name="General.EMS&#160;Web App" /> whenever parameter changes are made in the <MadCap:variable name="General.EMS&#160;Desktop Client" />.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Request Status field is used to configure booking templates for the "Request/Approval" booking model, in which everyday users request space and administrative users approve those requests (using the Dashboard menu icon). For example, if you set this field to Request, then the booking will not be finalized until an administrator has approved it.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are configuring a template for booking desks and workspaces or "hoteling," see <a href="CreateTempDeskWork.htm">Create Templates for Desks and Workspaces</a>.</p>
+        </div>
+    </body>
+</html>

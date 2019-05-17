@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Upgrade Instructions V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Upgrade Instructions</h1>
+        <MadCap:snippetBlock src="../../../CloudInstallNote.flsnp" />
+        <p>In order to upgrade&#160;<MadCap:variable name="General.Product" />, you must perform two operations:</p>
+        <ul>
+            <li>
+                <p><a href="#Upgrading">Upgrade the EMS Server Components</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#UpgradingIndiv">Upgrade Individual Workstations</a>
+                </p>
+                <ul>
+                    <li>
+                        <p><a href="#EMS+Desktop+Client+Web+Deployment">[%=General.EMS&#160;Desktop Client%] Web Deployment</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#Installing">Install Additional EMS Services</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are upgrading from a version of EMS released prior to server version 35, please contact <a href="../../../ContactUs.htm#Support">Customer Support</a>.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can see a summary of all EMS Updates for V44.1 <a target="_blank" title="https://success.emssoftware.com/Release_Notes_(V44.1)" href="../../../V44.1_ReleaseNotes.htm" alt="https://success.emssoftware.com/Release_Notes_(V44.1)">here</a>.</p>
+            <p>To learn more about our release update process, see <a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS</a> and <a href="../../../ReleaseNotes/Version44.1/HowAreEMSApplicationsUpdated.htm">How Are EMS&#160;Applications Updated</a>.</p>
+        </div>
+        <h2><a name="Upgrading"></a>Upgrade the EMS Server Components</h2>
+        <p>The server upgrade process will upgrade the EMS databases on your MS SQL Server.&#160;If you are&#160;upgrading from EMS Enterprise 4.x or below, your existing <strong>EMSEnterprise_Master</strong> database (which&#160;contains licensing information) will be replaced by a new <strong>EMS_Master</strong> database, and your existing <strong>EMS</strong> database will be upgraded to the current version.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>A <em>Microsoft SQL Server SA</em> level account will be required to execute the database upgrade process.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Download the <strong>EMS.ServerInstall.exe</strong> file from the Downloads area of Accruent Access.</p>
+                <MadCap:snippetBlock src="../../../DownloadsArea.flsnp" />
+            </li>
+            <li>
+                <p>Using <strong>SQL Server Management Studio</strong>, back&#160;up your existing EMS databases.</p>
+            </li>
+            <li>
+                <p>Run <strong>EMS.ServerInstall.exe</strong>. </p>
+                <p>This .exe can be run from any PC that has access to your database server.</p>
+                <p>
+                    <img src="Images/Installation/ServerInstallUpgradeUtility.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>In the Server field,&#160;enter the name of the MS SQL Server.</p>
+            </li>
+            <li>
+                <p>In the Database field, enter the name of the EMS database you want to upgrade.&#160;</p>
+            </li>
+            <li>
+                <p>In the Server Authentication area, specify your MS SQL Server authentication credentials.&#160; </p>
+                <p>If <span class="ui">SQL Server Authentication Mode</span> is selected, you will be required to specify a <span class="ui">User Name</span> and <span class="ui">Password</span>.&#160;</p>
+            </li>
+            <li>
+                <p>Click the <strong>Execute </strong>button. </p>
+                <p>A Backup Database pop-up&#160;window will appear.&#160;</p>
+            </li>
+            <li>
+                <p>Click <strong>Yes</strong> to acknowledge that you have backed up your EMS databases, and it is OK to continue. </p>
+                <p>You have completed the upgrade process for the server portion of EMS. Next, you will <a href="#UpgradingIndiv">upgrade individual workstations</a>.&#160;</p>
+                <p>
+                    <img alt="" src="Images/Installation/ServerInstallUpgradeUtility.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For information on installing the optional Email Notification Service or the EMS Campus Auto Sync Service (EMS Campus only), see <a href="../../../ServicesComponents/InstallUpgradeEMSEmailNotificationSvc.htm">Installing or Upgrading the EMS Email Notification Service</a> and/or <a class="external" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Installing_EMS/09-Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)" href="../../../ServicesComponents/InstallUpgrade_CampusAutoSyncService.htm" alt="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Installing_EMS/09-Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)">Installing or Upgrading the EMS Campus Auto Sync Service</a>.</p>
+        </div>
+        <h2><a name="UpgradingIndiv"></a>Upgrade Individual Workstations</h2>
+        <p>Follow the procedures below to upgrade individual workstations to <MadCap:variable name="General.EMS&#160;Desktop Client" />.&#160;</p>
+        <div class="mt-page-section" id="section_3">
+            <h3><a id="EMS+Desktop+Client+Web+Deployment" name="EMS+Desktop+Client+Web+Deployment"></a>EMS&#160;Desktop Web Deployment</h3>
+            <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                <p>Before beginning the installation process, please install or upgrade your EMS databases. </p>
+                <p>To learn more about EMS&#160;Desktop&#160;Web Deployment, see the <a href="../../../ReleaseNotes/Version44.1/DecisionGuide_WebDeployVsConventDeploy.htm">Web Deployment Decision Guide</a>. If you choose not to use this&#160;option, skip to the <a title="Upgrade Instructions" href="../ConfigurationGuide/Deploy_ConventionalDeployment.htm" alt="Upgrade Instructions">Conventional Desktop Client Installation</a>&#160;section. &#160;</p>
+            </div>
+            <ol class="number-list">
+                <li>
+                    <p>Manually&#160;<em>uninstall</em>&#160;any previous versions of EMS&#160;Desktop Web Deployment on your web server.&#160;&#160;</p>
+                </li>
+                <li>
+                    <p>Verify that the <a class="F1" title="EMS V44.1 System Requirements" href="SystemRequirements.htm" alt="EMS V44.1 System Requirements">prerequisite software</a> has been installed.</p>
+                </li>
+                <li>
+                    <p>Download the&#160;<strong>EMSDesktopWebDeploySetup.msi</strong>&#160;file onto the web server that will be running EMS&#160;Desktop Web Deployment.</p>
+                </li>
+                <li>
+                    <p>Run the&#160;<strong>EMSDesktopWebDeploySetup.msi </strong>as an administrator.</p>
+                </li>
+                <li>
+                    <p>On the welcome screen of the EMS&#160;Desktop Web Deployment&#160;Setup Wizard,&#160;click&#160;<strong>Next</strong>&#160;to begin the installation process.&#160;</p>
+                    <p>The&#160;<em>Destination Folder</em>&#160;dialog&#160;will appear.</p>
+                    <p>
+                        <img alt="" src="Images/Installation/WebDeploymentsetup.png" class="resize80_noborder_padding" />
+                    </p>
+                </li>
+                <li>
+                    <p>In the <span class="ui">Install EMS&#160;Desktop Web Deployment to</span> field, select the destination folder where you want to install the EMS Desktop Web Deployment.&#160;</p>
+                    <p>The installation process will create a new physical directory on your web server based on the destination folder path you entered (“EMSDesktopWebDeploy” in the example above.).</p>
+                </li>
+                <li>
+                    <p>In the <strong>Web Site URL and Virtual Directory Name</strong>&#160;fields, enter your SQL instance name.</p>
+                </li>
+                <li>
+                    <p>
+                        <MadCap:annotation MadCap:createDate="2019-04-23T12:28:18.3769617-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This step seems to be part of step 7. Are the steps mixed up? Need to check with PO." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-23T12:28:43.0932995-06:00">In the <strong>EMS Database </strong>field, enter your Database Name: the Virtual Directory Name will default to the destination folder specified in Step 6.&#160; It is recommended that you keep the default setting.&#160; The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMS Desktop Web Deploy” in the example above.)&#160;</MadCap:annotation>
+                    </p>
+                </li>
+                <li>
+                    <p>If you will be using a Load Balancer with the EMS&#160;Desktop&#160;Web Deploy application, enter&#160;the Name or IP Address of your server in the <strong>EMS SQL Server</strong> field.&#160;</p>
+                </li>
+                <li>Click&#160;<strong>Next</strong>.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The EMS Desktop Web Deployment&#160;should&#160;<em>not</em>&#160;be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS&#160;Desktop Web Deployment.</p></div></li>
+                <li>
+                    <p>The&#160;<em>Ready to install&#160;</em>the EMS&#160;Desktop Web Deployment window will appear.&#160;Click&#160;<strong>Install</strong>.</p>
+                </li>
+                <li>
+                    <p>The&#160;<em>Completed&#160;EMS&#160;Desktop Web Deployment&#160;Setup Wizard</em>&#160;window will appear.&#160; Click&#160;<strong>Finish</strong>.&#160;&#160;</p>
+                </li>
+                <li>
+                    <p>After following the steps above, verify your EMS&#160;Desktop Web Deployment installation by opening a browser and entering the address:</p>
+                    <p class="mt-indent-2">http://[ServerName]/EMSDesktopWebDeploy/&#160; (replace [ServerName] with the name of your web server)</p>
+                </li>
+            </ol>
+            <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                <p>The first time you launch the EMS&#160;Desktop Web Deployment, it might take a few extra moments for the page to display.&#160; If you encounter any issues, please contact <a href="#Contact_Customer_Support">Customer Support</a> for assistance.</p>
+            </div>
+        </div>
+        <h3><a name="Installing"></a>Install Additional EMS Services</h3>
+        <p>All optional EMS features, services, and add-ons are listed <a href="../../../OptionalIntegrationsandFeatures.htm">here</a>. You might need to install or upgrade additional features.</p>
+        <h2><a name="Contact_Customer_Support"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

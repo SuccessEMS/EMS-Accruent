@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Overview of Configuring Rooms V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Overview of Configuring Rooms</h1>
+        <p>A&#160;<span class="ui">room</span>&#160;is a physical location that you reserve for an event. You can configure any physical location or space (e.g., meeting room, athletic field, lobby, etc.), as a room. Examples of rooms:</p>
+        <ul class="unorder-list">
+            <li>Grand Ballroom</li>
+            <li>Conference Room A</li>
+            <li>Harris Hall Room 200</li>
+            <li>South Soccer Field</li>
+        </ul>
+        <p>EMS&#160;uses three classifications of rooms:</p>
+        <ol class="number-list">
+            <li><a href="#StandardCombo">Standard Rooms</a>
+            </li>
+            <li><a href="#StandardCombo">Combination Rooms</a>
+            </li>
+            <li><a href="#Override">Override Rooms</a>
+            </li>
+        </ol>
+        <p>Your organization might use a different term to identify the spaces or locations that are booked for reservations at your facilities. If you want to change the term from “room” to your organization-specific term throughout your EMS system (e.g., menus, window and dialog box titles, confirmation headings, etc.), you must change the values for the <a href="EMSAllApplicationParameters.htm#Labels">Room Title Plural</a> and <a href="EMSAllApplicationParameters.htm#Labels">Room Title Singular</a> parameters. <span class="ui">See Also:</span>&#160;<a rel="internal" title="System Parameters" href="SystemParam.htm" alt="System Parameters">System Parameters</a>.</p>
+        <h2><a name="StandardCombo"></a>Standard and Combination Rooms</h2>
+        <p>A&#160;<span class="ui">standard</span>&#160;room is any physical space that can be booked at your facility. You can use standard rooms as components when you configure a&#160;<span class="ui">combination</span>&#160;room. You can configure a combination room from two or more standard rooms, or you can configure it based on a logical relationship among multiple rooms. </p>
+        <p>For example, if your organization is a student union, it might have a space that is designated as the Grand Ballroom, which is actually made of three standard rooms—Ballroom A, Ballroom B, and Ballroom C—and you can literally combine or divide these rooms using movable partitions. </p>
+        <p>In another example, you could configure a combination room that is called the West End and this room includes all rooms in the West End of a given building, regardless of whether the rooms are contiguous.</p>
+        <p>To configure a combination room, you must first configure the component rooms as standard rooms. You can then configure the combination room and indicate that its components are the previously defined standard rooms. Consider the ballroom example cited above: First, define the standard rooms—Ballroom A, Ballroom B, and Ballroom C. You then configure a room called the Grand Ballroom, give it a classification of “combo room” and indicate that it is made up of three standard rooms—Ballroom A, Ballroom B, and Ballroom C. If you want, you can also configure subsets of the Grand Ballroom, such as Ballroom AB, Ballroom AC, and Ballroom BC. As a result, when the Grand Ballroom is scheduled for an event, the three standard rooms—Ballroom A, Ballroom B, and Ballroom C—are unavailable in EMS. Conversely, if you schedule one of the three standard rooms, for example, Ballroom A, then the Grand Ballroom, Ballroom AB, and Ballroom AC, are unavailable in EMS. The table below&#160;summarizes this example.</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 174px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 157px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 385px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Room</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Classification</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Components</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Comments</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Ballroom A</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Standard</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available for booking only if Ballroom AB, Ballroom AC, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ballroom B</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Standard</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>N/A</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available for booking only if Ballroom AB, Ballroom BC, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Ballroom C</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Standard</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available for booking only if Ballroom BC, Ballroom AC, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ballroom AB</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Combo</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ballroom A, Ballroom B</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available for booking only if Ballroom A, Ballroom B, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Ballroom AC</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Combo</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Ballroom A, Ballroom C</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available for booking only if Ballroom A, Ballroom C, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ballroom BC</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Combo</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ballroom B, Ballroom C</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available for booking only if Ballroom B, Ballroom C, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Grand Ballroom</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Combo</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Ballroom A, Ballroom B, Ballroom C</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Available for booking only if none of the standard rooms or none of the subset ballrooms are not already booked.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Override"></a>Override Rooms</h2>
+        <p>An&#160;<span class="ui">override&#160;room</span> is used to book an event in a space that is not managed in EMS. When you configure an override room, you not only name it in a manner that indicates that the room is an override room (for example, “Override Area”), but also, you classify the room as “Override Description.” When a user is searching for a specific room in the Reservation Wizard, and selects the option of “Override Area,” a Location field is enabled in which they must enter the specific location of this override room. By using an override room, the user can schedule a meeting (for example, Dr. Wilson’s Research Group meeting) without having “Dr. Wilson’s Office” configured as a room in EMS.</p>
+        <p>Events that are scheduled in rooms that are classified as “Override Description” are displayed in Daily reports as taking place in the location name specified, in the building in which the room is configured. Sales and Statistical reports simply report on the use of a room as you defined it, for example as “Override Area." </p>
+    </body>
+</html>

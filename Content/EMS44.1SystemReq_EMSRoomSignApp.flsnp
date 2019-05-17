@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Tablet Operating Systems</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Supported Browsers</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>iOS&#160;9, 10</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Safari</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Android&#160;5, 6</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Chrome, KioWare Lite&#160;(see&#160;<a href="EMSRoomSignApp/44.1/ConfigurationGuide/BestPractDeviceConfSteps.htm" MadCap:conditions="General.Online Only">Best Practice:&#160;Device Configuration Steps</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/ConfigurationGuide/BestPractDeviceConfSteps.htm" MadCap:conditions="General.Print Only">Best Practice:&#160;Device Configuration Steps</a>)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Windows 7, 8, 10</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Chrome, Firefox</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="2">
+                        <p colspan="2">.NET Framework: 4.6.2</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">
+                        <p colspan="2">Tablet Requirements</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><b>Supported Resolutions</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>1024 x 600 <br />1280 x 800<br />1660 x 900 <br />1920 x 1080 <br />2048 x 1536</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" colspan="2">
+                        <p colspan="2">EMS tests on and recommends the <a href="https://www.apple.com/ipad-mini-4/">iPad Mini</a> and <a href="http://www.samsung.com/us/mobile/tablets/all-other-tablets/samsung-galaxy-tab-a-8-0-16gb-wi-fi-smoky-titanium-sm-t350nzaaxar/">8” Samsung Tab A.</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" colspan="2">
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p colspan="2">EMS Room Sign App will run on touch-enabled tablets (with above resolutions)&#160;set in landscape mode.&#160;Integrating with ArmorActive&#160;enclosures require a browser&#160;that can play sound.&#160;<span class="bold">See Also: </span><a href="EMSRoomSignApp/44.1/ConfigurationGuide/BestPractDeviceConfSteps.htm" MadCap:conditions="General.Online Only">Best Practice:&#160;Device Configuration Steps</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/ConfigurationGuide/BestPractDeviceConfSteps.htm" MadCap:conditions="General.Print Only">Best Practice:&#160;Device Configuration Steps</a>.&#160;</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" colspan="2">
+                        <p colspan="2"><b>Prerequisites</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1" colspan="2">
+                        <p colspan="2"><MadCap:variable name="General.EMS&#160;Desktop Client" />, running&#160;on database and web servers that meet our EMS&#160;System Requirements.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

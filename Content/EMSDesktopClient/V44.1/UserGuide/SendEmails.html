@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Sending Emails V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Send Emails</h1>
+        <p>Once your EMS Desktop Client Administrator has configured system email for EMS Desktop Client, you can set personal preferences on your installation of the application to email confirmations or invoices to groups or miscellaneous information to your EMS users or groups. </p>
+        <p>Your personal preferences on your installation of the EMS Desktop Client control how emails are sent:</p>
+        <ul class="unorder-list">
+            <li>If your organization uses Microsoft<sup>®</sup> Outlook, you can set preferences to use your respective email system within EMS Desktop Client to send confirmations and invoices or any other individual emails to EMS users or groups.</li>
+            <li>To send bulk emails to groups within EMS Desktop Client (basic/advanced, transactions, calendar, and so on), however, you must set preferences to use SMTP email.</li>
+            <li>If your organization does not use Microsoft<sup>®</sup> Outlook, furthermore, SMTP email is also used to send all email from EMS Desktop Client, including emails to users or groups and confirmations and invoices.</li>
+            <li>Generic emails (which are not “tied” to a confirmation, invoice, reminder, etc.) can go to any recipient.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For any of your personal email preferences to work, your user account must be configured with an email address. See your EMS administrator or internal IT staff for information on how to enable SMTP email.</p>
+        </div>
+        <h2>Email Reservation Attendees from the EMS Desktop Client Application</h2>
+        <ol class="number-list">
+            <li>Select a reservation, and then click <span class="ui">Email </span>to open a pre-addressed SMTP email to the group associated with the reservation.</li>
+            <li>Enter the necessary information in the From, Subject, Message and other fields.</li>
+            <li>Optionally, do one or both of the following:<ul><li>To attach a file, click <span class="ui">Attachments </span>at the top of the window.</li><li>To format the body of the email message, use the options on the Formatting toolbar.</li></ul></li>
+            <li>Click <span class="ui">Send</span>.</li>
+        </ol>
+        <h2>Send a Meeting Confirmation or Invoice</h2>
+        <ol class="number-list">
+            <li>On the Confirmation dialog box or on the onscreen preview of a new or reprinted invoice, click Email.<ul><li>For a confirmation, an Email window that displays the confirmation in the body opens. The From field is populated with the user address that is associated with your user account or, based on your user preferences, the email address of the department that is associated with your user account. You can select either address. (See Also: <a href="UserSettings.html">Setting User Preferences and Default Values.</a>) The To field is blank.</li><li><p>For an invoice, an Email window that contains the invoice as an attachment opens. The From field is populated with the user address that is associated with your user account or, based on your user preferences, the email address of the department that is associated with your user account, and you cannot change this value. (See Also: <a href="UserSettings.html">Setting User Preferences and Default Values.</a>) The To field is populated with the email address for the associated group, but you change this value if needed.</p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>For an invoice, the SMTP email window also has Header Message and Footer Message fields for including header and footer messages in the email body.</p></div></li></ul></li>
+            <li>Select the recipients for the email.</li>
+            <li>Optionally, do one or both of the following:<ul start="2"><li>To format the body of the email message, use the options on the Formatting toolbar.</li><li>To attach a file, click Attachments at the top of the window.</li><li>The default format for the attached invoice is PDF. You can select a different format if needed. Other allowed formats are HTML, Microsoft Excel (.xls), Microsoft Word (.rtf), Picture (.tiff), and Text File (.txt).</li><li>If the emailed confirmation is to include the entire confirmation as an attachment, then you must also select a file format for the attached confirmation. The default value is Adobe (.pdf). Other allowed formats are HTML, Microsoft Excel (.xls), Microsoft Word (.rtf), Picture (.tiff), and Text File (.txt).</li><li><p>If the emailed confirmation includes one or more attachments, then the Confirmation Title is also used for the name for all attachments other than an .ics file. If the confirmation includes an .ics file, then the .ics file is always named Confirmation.ics.</p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>To include the entire confirmation as an attachment, or an .ics file in a confirmation, see <a href="SpecifyConfirmSettings.htm">Specify Your Confirmation Settings</a>.</p></div></li></ul></li>
+            <li>Click <span class="ui">Send</span>.</li>
+        </ol>
+        <h2>Send a Generic Email</h2>
+        <ol class="number-list">
+            <li>On the EMS toolbar, click the Email icon. A generic email form opens. Depending on your preferences, the <span class="ui">From </span>field is automatically populated either with the email address that is specified for your user account, or the email address of the department that is associated with your user account. (See Also: <a href="UserSettings.html">Setting User Preferences and Default Values.</a>)</li>
+            <li>Enter the necessary information in the To, Subject, Message, and other fields.</li>
+            <li>Optionally, do one or both of the following:<ul><li>To attach a file, click <span class="ui">Attachments </span>at the top of the window.</li><li>To format the body of the email message, use the options on the Formatting toolbar.</li></ul></li>
+            <li>Click <span class="ui">Send</span>.</li>
+        </ol>
+    </body>
+</html>

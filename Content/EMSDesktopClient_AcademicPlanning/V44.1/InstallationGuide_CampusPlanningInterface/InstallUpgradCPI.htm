@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Install or Upgrade CPI V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Install or Upgrade the EMS Campus Planning Interface</h1>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, please install or upgrade your EMS databases as outlined in the&#160;<a href="../../../EMSDesktopClient/V44.1/InstallationGuide/Introduction.html">Installation Guide for EMS&#160;Desktop Client</a>.</p>
+        </div>
+        <ol class="number-list">
+            <li>Manually&#160;uninstall&#160;any previous versions of the EMS Campus Web Client/EMS Campus Planning Interface on your web server.&#160;</li>
+            <li>Verify that the <a href="SysReqPrereq.htm">System Requirements and Prerequisites for EMS&#160;Campus</a> have been met.</li>
+            <li>Download the&#160;EMSCampusPlanningInterface.msi&#160;file onto the web server that will be running EMS Campus Planning Interface.</li>
+            <li>Run&#160;EMSCampusPlanningInterface.msi.</li>
+            <li>The first screen welcomes you to the Campus Planning Interface Setup Wizard.&#160;Click&#160;Next&#160;to begin the installation process. The&#160;Destination Folder&#160;screen will appear.<p><img src="../../../Resources/Images/Installing Campus Planning Interface/Installing or Upgrading the.jpg" class="padding_only" /></p></li>
+            <li>Select the destination folder. The installation process will create a new physical directory on your web server based on the destination folder path entered (“Campus Planning Interface” in the example above.) &#160;Click&#160;Next.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>EMS Campus Planning Interface should&#160;not&#160;be installed in the same physical directory as other EMS web-based products OR under a site running another version of EMS Campus Planning Interface.</p></div></li>
+            <li>The&#160;SQL Server and database information&#160;screen will appear.<p><img src="../../../Resources/Images/Installing Campus Planning Interface/Installing or Upgrading the_1.jpg" class="padding_only" /></p></li>
+            <li>Enter your SQL Instance (i.e. Server) Name.</li>
+            <li>Enter your Database Name (typically named “EMS”). Click&#160;Next.</li>
+            <li>The&#160;Virtual Directory information&#160;screen will appear.&#160;<p><img src="../../../Resources/Images/Installing Campus Planning Interface/Installing or Upgrading the.png" class="padding_only" /></p></li>
+            <li>The Virtual Directory Name will default to the destination folder specified in Step 6. It is recommended that you keep the default setting. The installation process will create a virtual directory on your web server based on the virtual directory entered (“Campus Planning Interface” in the example above.)&#160; Click&#160;Next.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>EMS Campus Planning Interface should&#160;not&#160;be installed in the same virtual directory as other EMS web-based products OR under a site running another version of EMS Campus Planning Interface.</p></div></li>
+            <li>The&#160;Ready to install Campus Planning Interface&#160;screen will appear. Click Install to install EMS Campus Planning Interface.</li>
+            <li>The&#160;Completed the Campus Planning Interface Setup Wizard&#160;screen will appear. Click&#160;Finish. </li>
+        </ol>
+    </body>
+</html>

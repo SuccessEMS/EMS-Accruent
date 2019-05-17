@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Synchronize Facility Data V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Synchronize Facility Data</h1>
+        <p>You must synchronize your facility data in the following order:&#160;</p>
+        <ol class="number-list">
+            <li><a href="#Synchronize_Buildings">Buildings</a>
+            </li>
+            <li><a href="#Synchronize_Room_Types">Room Types</a>
+            </li>
+            <li><a href="#Synchronize_Rooms">Rooms</a>
+            </li>
+        </ol>
+        <p>The synchronization process does not update existing facility records after they have been imported and linked. For example, if a room’s code, description, or capacity is changed in the SIS after it has been imported and linked, this information is not changed in the EMS database.</p>
+        <h2><a name="Synchronize_Buildings"></a>Synchronize Buildings</h2>
+        <p>When you synchronize buildings, the values for Building Code and Description in the SIS are used for any new buildings that are configured in your EMS database. You can edit these values if needed in EMS. See <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigBuilding.html">Configure Buildings</a>.</p>
+        <ol class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Configuration </span>&gt; <span class="ui">Synchronize Buildings</span>. The EMS Academic Planning Building window opens.<p><img border="0" src="../Images/V44.1_Config/SyncFacData1.png" class="resize80_border_and_padding" /></p></li>
+            <li>Set the status of the imported buildings (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a href="OverviewofSynchr.html#Facility_Data_Synchronization">Facility data synchronization</a>.&#160;A window opens that requires you to select a time zone for the referenced buildings.</li>
+            <li>Select the correct time zone, and then click <span class="ui">Close </span>to return to the EMS Academic Planning Buildings window.</li>
+            <li>Click <span class="ui">Process</span>.&#160;A message opens indicating that the buildings were successfully processed.</li>
+            <li>Click <span class="ui">OK </span>to close the message and return to the EMS Academic Planning Buildings window.</li>
+            <li>Click <span class="ui">Cancel </span>or Close (x) to close the window.</li>
+        </ol>
+        <h2><a name="Synchronize_Room_Types"></a>Synchronize Room Types</h2>
+        <ol class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning </span>&gt; <span class="ui">Configuration </span>&gt; <span class="ui">Synchronize Room Types</span>.&#160;The EMS Academic Planning Room Types window opens.<p><img border="0" src="../Images/V44.1_Config/SyncFacData2.png" class="resize80_noborder_padding" /></p></li>
+            <li>Set the status of the imported room types (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a href="OverviewofSynchr.html#Facility_Data_Synchronization">Facility data synchronization</a>.</li>
+            <li>Click <span class="ui">Process</span>.&#160;A message opens indicating that the room types were successfully processed.</li>
+            <li>Click <span class="ui">OK </span>to close the message and return to the EMS Academic Planning Room Types window.</li>
+            <li>Click <span class="ui">Cancel </span>or Close (x) to close the window.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>After you have synchronized the room types, you can edit the names as needed. See <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigRoomType.html">Configure Room Types</a>.</p>
+        </div>
+        <h2><a name="Synchronize_Rooms"></a>Synchronize Rooms</h2>
+        <p>Before you can synchronize room data, at least one setup type must be configured in your EMS database (for example, academic setup), or the synchronization process cannot correctly import the room capacity. To configure a setup type, or confirm that one already has been configured in your EMS database, see <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigSetupType.html">Configure Setup Types</a>. After you have configured or confirmed this setup type, set the value for the following EMS system parameter (Area: Campus, Description: Default Setup Type) to this setup type. See <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EditSysParam.htm">Edit System Parameters</a>.</p>
+        <ol class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Configuration </span>&gt; <span class="ui">Synchronize Rooms</span>.&#160;The EMS Academic Planning Rooms window opens.<p><img border="0" src="../Images/V44.1_Config/SyncFacData3.png" class="resize80_noborder_padding" /></p></li>
+            <li>Set the status of the imported rooms (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a href="OverviewofSynchr.html#Facility_Data_Synchronization">Facility data synchronization</a>.</li>
+            <li>Click <span class="ui">Process</span>.&#160;A message opens indicating that the rooms were successfully processed.</li>
+            <li>Click <span class="ui">OK </span>to close the message and return to the EMS Academic Planning Rooms window.</li>
+            <li>Click <span class="ui">Cancel </span>or Close (x) to close the window.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>After you synchronize the rooms, you can edit the names as needed. See <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigRooms.html">Configure Rooms</a>.</p>
+        </div>
+    </body>
+</html>

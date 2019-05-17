@@ -1,0 +1,1757 @@
+﻿/*<meta />*/
+
+
+/* Home Page General Styles*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+	/* Removes Side Nav from Home Landing Page */
+
+.sidenav-wrapper
+	{
+		display:none !important;
+	}
+/*Finished Removes Side Nav*/
+
+#contentBody
+{
+	padding-left: 0;
+}
+
+
+/*Removes padding around header*/	
+div.body-container
+{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+}
+
+div.accruent_logo_top
+{
+	padding: 10px;
+}
+
+img.accruent-logo-top
+{
+	max-width: 175px;
+}
+
+.title-bar-container
+	{
+		display:none !important;
+	}
+	
+a.BlackText
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.container
+{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 !important;
+}
+
+.centered-text
+{
+	padding-left: 0 !important;
+}
+
+.title-text
+{
+	padding-left: 0 !important;
+}
+
+h1
+{
+	font-family: 'Segoe UI', Arial;
+	color: #00467f;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	word-spacing: 6px;
+	font-size: 20pt;
+	font-variant: normal;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2
+{
+	font-size: 18pt !important;
+	font-weight: normal;
+	line-height: 27px !important;
+	color: #444444;
+	font-family: 'Segoe UI', Arial;
+	margin: 20px 0 5px !important;
+}
+
+hr
+{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #b2b2b2;
+    margin: 1em 0;
+    padding: 0;
+}
+
+div.general-documentation-text
+{
+	padding: 19px 0 3px;
+}
+
+div.products-text
+{
+	padding: 19px 0 3px;
+	text-align: left;
+}
+
+div.general
+{
+	padding: 0 !important;
+}
+
+div.general-doc-box
+{
+	margin: 8px auto 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 0px !important;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.5), 1px 4px 3px 0 rgba(0,0,0,0.5);
+	border: none;
+	border-radius: 2px;
+}
+
+div.general-doc-container
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 !important;
+}
+
+div.general-doc-container > div
+{
+	flex-basis: auto;
+	box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.03);
+	width: 175px;
+	border: 1px #dddddd solid;
+	border-radius: 2px;
+	padding: 0 !important;
+	margin: 10px 5px;
+}
+
+div.products
+{
+	padding: 0 !important;		
+}
+
+div.products-doc-box
+{
+	margin: 8px auto 16px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 0px !important;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.5), 1px 4px 3px 0 rgba(0,0,0,0.5);
+	border: none;
+	border-radius: 2px;
+}
+
+div.products-container
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 !important;
+}
+
+div.products-container > div
+{
+	flex-basis: auto;
+	box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.03);
+	width: 175px;
+	border: 1px #dddddd solid;
+	border-radius: 2px;
+	padding: 0 !important;
+	margin: 10px 5px;
+}
+
+img.Hyperlinked
+{
+	border-style: none;
+}
+
+img.Slideshow
+{
+	border-style: none;
+	margin-bottom: 40px;
+	height: 128px;
+	width: 128px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: helvetica;
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: inherit;
+	font-family: 'Segoe UI', Arial;
+	text-align: justify;
+	color: #000000;
+	padding:0;
+}
+
+p.Copyright
+{
+	font-size: 14px;
+	text-align: left;
+	color: #aeaeae;
+	line-height: 1.6em;
+	margin: 0 0 10px 0;
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.whiteheader
+{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.off-canvas-content .title-bar .nav-search
+{
+	display: none;
+}
+
+.off-canvas-content .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+	margin: auto;
+}
+
+/* Home Page Button Styles */
+
+.button
+{
+	cursor: pointer;
+	background-color: transparent;
+	width: 200px;
+	height: 35px;
+	font-weight: normal;
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.button.black
+{
+	border: solid 2px black;
+	color: black;
+}
+
+.button.black:hover
+{
+	background-color: #ccc;
+}
+
+.button a
+{
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/* Responsive Header Styles*/
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/* Content Section */
+
+#content-section
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #e6e6e6;
+	margin-top: 35px;
+}
+
+.right-section div.button-group,
+.left-section div.button-group
+{
+	margin-top: 20px;
+}
+
+#content-section .left-section
+{
+	padding-right: 20px;
+}
+
+#content-section .right-section
+{
+	padding-left: 20px;
+}
+
+.left-section .left-content,
+.right-section .right-content
+{
+	height: 270px;
+}
+
+#content-section .right-section .table-images:first-of-type
+{
+	margin-bottom: 20px;
+}
+
+#content-section.mc-blurb p
+{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#content-section.mc-blurb .mc-bullets
+{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+#content-section.mc-blurb .mc-bullets > li
+{
+	color: #5a5a5a;
+	list-style-image: url('../Images/Bullet1.png');
+	font-size: 14px;
+	margin-top: 8px;
+	line-height: 1.6em;
+}
+
+/* Home Page Topic Hero section*/
+
+div.topichero
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 0px;
+	display: block;
+	min-height: 200px;
+	padding-bottom: 0;
+	background-color: #007ac9;    
+	border-top: 1px #007ac9 solid;
+    border-bottom: 1px #007ac9 solid;
+	padding-left: 0 !important;
+}
+
+div.topichero h1
+{
+	font-size: 52px;/*new 4-4*/
+	margin-top: 40px;/*new 4-5, 4-4 29px*/
+	margin-bottom: 5px;/*new 4-4*/
+	line-height: 57px;/*new 4-4*/
+	font-weight: lighter;
+	text-align: center;
+}
+
+div.topichero p
+{
+	font-size: 21px;/*new 4-4*/
+	color: #fff;
+	line-height: 41px;/*new 4-4*/
+	font-weight: 300;
+	margin: 10px 0 10px;/*new 4-4*/
+	text-align: center;
+}
+
+div.topichero p.popularTopics
+{
+	font-size: 14px;/*new 4-4*/
+	color: #fff;
+	line-height: 20px;/*new 4-4*/
+	text-align: center;
+	padding-bottom: 18px;/*new 4-5, 4-4 was 15px*/
+	margin-top: 10px;/*new 4-4*/
+	
+}
+
+.search,
+.search-bar
+{
+	margin: 0 auto;
+}
+
+.search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit
+{
+	border: 0px;
+	margin: 0px 15px;/*new 4-4*/
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-submit
+{
+	height: 55px;
+	padding-left: 10px;
+}
+
+
+/* Home Page slide show */
+
+div.slidingshow
+{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+}
+
+.mc-wrapper .mc-caption
+{
+	background: none;
+}
+
+.download-note
+{
+	font-size: 18px;
+	font-weight: 400;
+	color: #666666;
+	font-family: 'Segoe UI', Arial;
+	text-align: center;
+	width: 100%;
+	padding: 30px 10px 30px;
+	clear: both;
+}
+
+.download-note a
+{
+	color: #00467f;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+/* Home Page Footer css */
+
+div.footer-accruent
+{
+	margin-bottom: 30px;
+}
+
+div.footer
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	clear: both;
+}
+
+div.footer a
+{
+	text-decoration: none;
+	margin: 0 5px;
+	color: #aeaeae;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Segoe UI', Arial;
+	display: inline-block;
+}
+
+div.footer > div.outer-row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+}
+
+.footer-links
+{
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+.footer-icons > a
+{
+	margin: 0 5px;
+	padding: 18px;
+	background-position: center center;
+	vertical-align: middle;
+}
+
+div.footer a.facebook
+{
+	background: url(../Images/fb.svg) no-repeat;
+}
+
+div.footer a.facebook:hover
+{
+	background: url(../Images/fbhover.svg) no-repeat;
+}
+
+div.footer a.twitter
+{
+	background: url(../Images/twitter.svg) no-repeat;
+}
+
+div.footer a.twitter:hover
+{
+	background: url(../Images/twitterhover.svg) no-repeat;
+}
+
+div.footer a.linkedin
+{
+	background: url(../Images/linkedin.svg) no-repeat;
+}
+
+div.footer a.linkedin:hover
+{
+	background: url(../Images/linkdinhover.svg) no-repeat;
+}
+
+div.footer a.youtube
+{
+	background: url(../Images/youtube.svg) no-repeat;
+}
+
+div.footer a.youtube:hover
+{
+	background: url(../Images/youtubehover.svg) no-repeat;
+}
+
+div.footer a.googleplus
+{
+	background: url(../Images/googleplus.svg) no-repeat;
+}
+
+div.footer a.googleplus:hover
+{
+	background: url(../Images/googleplushover.svg) no-repeat;
+}
+div.HomeMasterPageFooter	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeMasterPageFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeMasterPageFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeMasterPageFooter > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+	text-align: left;
+	color: #aeaeae;
+	float: left;
+	margin-top: 5px;
+}
+
+div.HomeMasterPageFooter > div:nth-child(2)
+{
+	width: 50%;
+	text-align: right;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+
+/* Mad Cap proxy/editor assigned styles */
+
+/*.search-bar .search-submit-wrapper
+{
+	left: 0px;
+	right: auto;
+}*/
+/* ******************************   */
+/* Home page Tiles css */
+.product-block
+{
+	
+}
+
+.product-block .block
+{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Segoe UI', Arial;
+	font-weight: normal;
+	color: #444444;
+	padding:12px; 
+	line-height: 18px;
+}
+
+.product-block .block:hover
+{
+	text-decoration: none;
+	background: #f8f8f8;
+	min-height: 72px;
+}
+
+.product-block div.columns:last-child
+{
+	float: left;
+}
+
+.product-block .block .img-block {
+    min-height: 72px;
+    text-align: center;
+    display: block;
+    vertical-align: bottom;
+    position: relative;
+	width: 68px;
+    margin: 20px auto 20px;
+}
+
+.product-block .img-block img {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  
+}
+
+span.img-block.padd5 img {
+    padding-top: 5px;
+}
+span.img-block.padd10 img {
+    padding-top: 10px;
+}
+span.img-block.padd15 img {
+    padding-top: 15px;
+}
+
+span.img-block.padd20 img {
+    padding-top: 20px;
+}
+
+.product-block .block .img-block.releasenotes {
+    width: 55px;
+}
+
+.product-block .block .img-block.systemrequirements {
+    height: 68px;
+}
+
+.product-block .block .img-block.authentication {
+    width: 50px;
+} 
+
+.product-block .block .img-block.olderreleases {
+    width: 70px;
+}
+
+.product-block .block .img-block.mobile-app {
+    width: 48px;
+}
+
+.product-block .block .img-block.campus {
+    width: 60px;
+} 
+
+/* Home page Tiles css  ends */
+
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+p.TOC2
+{
+	margin-left: 20px;
+	display: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|slideshow
+{
+	border-style: none;
+	box-shadow: none;
+	font-family: 'Segoe UI', Arial;
+	font-size: 16pt;
+	color: #00467f;
+}
+
+MadCap|slideshowCaption
+{
+	background: none;
+	color: #000000;
+	padding-top: 15px;
+	text-align: center;
+}
+
+html.HomePage
+{
+	mc-community-features: disabled;
+}
+
+div.HomeHeroSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0 !important;
+}
+
+div.HomeHeroSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeHeroSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeHeroSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeHeroSection > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(1)
+{
+	width: 58.333%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(2)
+{
+	width: 41.667%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomeButtons	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomeButtons::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomeButtons::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomeButtons > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomeButtons > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomeWelcomeButtons > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomePDFSection > div:nth-child(1)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSection > div:nth-child(2)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSection > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFButton	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFButton::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFButton::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFButton > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomePDFButton > div:nth-child(1)
+{
+	width: 50%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+div.HomeVideoSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeVideoSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeVideoSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeVideoSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomeVideoSection > div:nth-child(1)
+{
+	width: 33.33333%;
+}
+
+div.HomeVideoSection > div:nth-child(2)
+{
+	width: 33.33333%;
+}
+
+div.HomeVideoSection > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+b
+{
+	font-weight: bold;
+	font-style: normal;
+	font-family: 'Segoe UI', Arial;
+}
+
+img
+{
+	mc-thumbnail-max-height: auto;
+	mc-thumbnail-max-width: auto;
+	mc-thumbnail: none;
+	height: auto;
+	max-width: 1000px;
+	max-height: auto;
+	width: auto;
+}
+
+/*Custom CSS for Home page*/
+/* Top navigation css  */
+ul.navigation > li:first-child
+{
+	display: inline-block;
+}
+
+ul.navigation li > a
+{
+	text-align: center;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 17px;
+	white-space: pre-wrap;
+	padding: 30px 0 23px;
+	max-width:120px;
+	font-weight: 600;
+}
+ul.navigation > li::before, ul.navigation li::before {
+    background: none;
+}
+ul.navigation > li:nth-child(4) a,
+ul.navigation > li:nth-child(5) a
+{
+	max-width: 70px;
+}
+ul.navigation > li:nth-last-child(2) > a {
+    max-width: 85px;
+}
+
+ul.navigation ul > li > a,
+ul.navigation li:nth-child(4) ul li a,
+ul.navigation li:nth-child(5) ul li > a
+{
+    max-width: 100%;
+    white-space: pre-wrap;
+}
+ul.navigation > li > ul{ left: 0; right: 0; width: auto; min-width: 300px;}
+
+ul.navigation > li:last-child > a{ padding-bottom: 40px; }
+ul.navigation > li:nth-last-child(3) >a {
+   padding-bottom: 40px;
+}
+ul.navigation
+{
+	margin-left: 0;
+}
+.title-bar-section.middle > div{ margin-top:20px;}
+.title-bar-section a.logo
+{
+	/*position: relative;*/
+}
+
+.navigation-wrapper
+{
+	width: 70%;
+	padding: 0;
+}
+ul.navigation > li.has-children:after{display:none;}
+ul.navigation > li
+{
+	position: relative;
+	float: none;
+	display: inline-block;
+	/* max-width: 100px; */
+	margin: 0 10px;
+	vertical-align: top;
+}
+ul.navigation > li > a:hover{    border-bottom: 3px #afbd21 solid;}
+
+/* Top navigation css ends  */
+
+.copyright
+{
+	float: left;
+}
+
+.social
+{
+	float: right;
+}
+
+/* Medium Search bar 1279px*/  /*new 4-4*/
+
+@media only screen and (max-width: 1279px)
+{
+.search-bar._Skins_HomeSearchBar.mc-component
+	{
+		width: 60%;
+	}
+}
+/* Medium Layout */
+
+@media screen and (max-width: 1200px)
+{
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+		.container
+	{
+		max-width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.title-bar-section a.logo
+	{
+		left: 60px;
+	}
+
+	nav.title-bar .menu-icon
+	{
+		left: 0px;
+		top: 43%;
+	}
+	
+div.general
+{
+	margin-left: 125px;/*new 4-6*/
+	margin-right: 125px;/*new 4-6*/
+}
+
+div.products
+{
+	margin-left: 125px;/*new 4-6*/
+	margin-right: 125px;/*new 4-6*/
+}
+	
+.topichero
+	{ 
+		margin-top:0px;
+		padding-bottom:20px;
+	}
+
+.topichero h1
+{
+	font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    line-height: 66px;
+    font-weight: lighter;
+}
+
+div.topichero p.sub-title
+{
+	line-height: 32px; /*new 4-4*/
+}
+
+div.contentBody	
+	{
+		margin-left: -15px;
+		mc-hidden: hidden;
+	}
+
+	div.slidingshow
+	{
+		width: 100%;
+	}
+
+	.left-section div.button-group > div
+	{
+		margin-bottom: 20px;
+	}
+
+/*	div.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}*/
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(1)
+	{
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(2)
+	{
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomePDFSection > div:nth-child(1)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSection > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSection > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFButton > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		text-align: left;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomeVideoSection > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+/*	.footer-links,
+		p.Copyright,
+		.footer-icons
+		{
+			text-align: left;
+			margin-left: 0px;padding-left:0px;
+		}
+}*/
+
+/* Small Layout */
+
+@media only screen and (max-width: 767px)
+{	
+
+	/*controls padding between nested divs*/
+
+	div.body-container > div,
+	div.body-container > div > div,
+	div.body-container > div > div > div,
+	div.body-container > div > div > div > div,
+	div.body-container > div > div > div > div > div,
+	div.body-container > div > div > div > div > div > div,
+	div.body-container > div > ol > div	/*this line applies the padding to divs that are nested IN an ordered list*/
+	{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+.search-bar._Skins_HomeSearchBar.mc-component
+	{
+		width: 80%;/*new 4-4*/
+		margin-bottom: 15px;/*new 4-4*/
+	}	
+
+	div.accruent_logo_top
+	{
+		margin-left: 15px;
+	}
+	
+	div.topichero h1
+{
+	margin-left: 10px;/*new 4-4*/
+	margin-right: 10px;/*new 4-4*/
+}
+
+div.topichero p
+{
+	font-size: 21px;/*new 4-4*/
+	color: #fff;
+	line-height: 41px;/*new 4-4*/
+	font-weight: 300;
+	margin: 10px 0 10px;/*new 4-4*/
+	text-align: center;
+}
+
+div.topichero p.popularTopics
+{
+	font-size: 14px;/*new 4-4*/
+	color: #fff;
+	line-height: 20px;/*new 4-4*/
+	text-align: center;
+	padding-bottom: 10px;/*new 4-4*/
+	margin-top: 10px;/*new 4-4*/
+	
+}
+	
+	
+	div.general
+{
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+div.products
+{
+	margin-left: 75px;
+	margin-right: 75px;
+}
+	
+	div.general-documentation-text	
+	{
+		text-align: center;
+	}
+	
+	div.products-text	
+	{
+		text-align: center;
+	}
+	
+@media mobile
+{
+	.sidenav-wrapper
+	{
+		display:inline !important;
+	}
+
+.search-bar._Skins_HomeSearchBar.mc-component
+	{
+		width: 80%;
+	}
+	
+	MadCap|searchBarProxy.homeSearchBar
+	{
+		width: 100%;
+	}
+
+	div.general
+{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+div.products
+{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+		
+	div.general-documentation-text	
+	{
+		text-align: center;
+	}
+	
+	div.products-text	
+	{
+		text-align: center;
+	}
+	
+	.left-content
+	{
+		margin-bottom: 60px;
+	}
+
+	.title-bar-section a.logo
+	{
+		
+		top: 0px;
+		width: 260px;
+		height: 40px; background-size:100% auto;
+	}
+
+	/*.title-bar-section a.logo::after
+	{
+		top: 2px;
+		padding-left: 10px;
+		left: 125px;
+		font-size: 14px;
+	}*/
+
+	ul.off-canvas-list li a
+	{
+		font-weight: 300;
+	}
+
+	h1#results-heading
+	{
+		line-height: 32px;
+	}
+	div.topichero
+	{ 
+		height: 350px;
+		padding-bottom:20px;
+	}
+	
+	div.topichero h1
+	{
+		font-size: 30px;
+		line-height: 36px;
+		margin-top: 65px;
+	}
+
+	.sub-title
+	{
+		display: none;
+		margin-bottom: 20px;
+		line-height: 35px;/*new 4-4*/
+	}
+
+	div.topichero p.popularTopics
+	{
+		width: 90%;
+		display: block;
+		font-size: 12px;
+		margin: 0 auto;
+	}
+
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.video-section
+	{
+		padding-top: 30px;
+	}
+
+	.video-section .columns
+	{
+		padding: 0;
+	}
+
+	.footer-links,
+	p.Copyright,
+	.footer-icons
+	{
+		text-align: left;
+		margin-left: 0px;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		text-align: left;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(1)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(2)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomePDFSection > div:nth-child(1)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(2)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(3)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFButton > div:nth-child(1)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 100%;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div#searchPane
+	{
+		max-width: 90%;
+	}
+	.footer-links,
+		p.Copyright,
+		.footer-icons
+		{
+			text-align: left;
+			margin-left: 0px;padding-left:0px;
+		}
+}
+
+
+.mc-wrapper .mc-viewport
+{
+	text-align: center;
+}
+
+p.Note
+{
+	background-image: url('../Images/NoteIcon.png');
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: center;
+	padding-left: 250px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #008000;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #008000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #008000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #008000;
+}
+
+div.Row-6-6:after
+{
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	padding: 20px;
+	padding-left: 40px;
+	background-image: url('../Images/QuotationMark.png');
+}
+
+div.Row-6-6:before
+{
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	padding: 20px;
+	padding-left: 40px;
+	background-image: url('../Images/QuotationMark.png');
+}
+
+div.NoteBox
+{
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	line-height: 18px;
+	background-image: url('../Images/Release Notes Updates 14.3-11.1/V44 1 Update 14 1.png');
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	background-position-y: center;
+	padding-left: 60px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #b3b3b3;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #b3b3b3;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #b3b3b3;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b3b3b3;
+}
+
+p.EMSSoftware
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: helvetica;
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: inherit;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	color: #000000;
+}
+
+img.resizelarge	/*Resize large images*/
+{
+	mc-thumbnail-max-width: 200px;
+	mc-thumbnail: none;
+	width: 500px;
+	height: auto;
+}
+
+p.lastUpdated
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: helvetica;
+	font-variant: inherit;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #adbd21;
+}
+
+p.footer
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: helvetica;
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: inherit;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	color: #000000;
+}
+
+@media print
+{
+	p.footer
+	{
+		font-size: 10pt;
+	}
+}

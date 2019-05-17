@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Statuses V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Statuses</h1>
+        <p>A status automates the booking workflow, especially for booking requests that must be approved and then completed. A status is one of four core data items that you must configure so that your users can make reservations.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can associate a status to reservations and to bookings, but only booking-level statuses affects room availability. Every booking must have a status.</p>
+        </div>
+        <p>You might want to configure your own statuses to automate the booking request workflow, such as “Confirmed,” “Tentative,” “Wait List,” and “Canceled.” You can configure as many statuses as you need and give them any names you want; however, you must always assign one of the four following status types to a status:</p>
+        <ul class="unorder-list">
+            <li>Book Space</li>
+            <li>Wait</li>
+            <li>Info Only</li>
+            <li>Cancel</li>
+        </ul>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Status type determines if a room remains available to other users. </p>
+        </div>
+        <p>The name that you assign to a status is a convenient label that assists you in managing your organization’s business. The status type is what is actually used by EMS to determine if a room must be taken out of inventory.</p>
+        <p>To configure statuses, complete the following steps:</p>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt; <span class="ui">Statuses</span>.&#160;The Statuses window opens. This window lists all the statuses that are currently configured in your EMS database and that have a status of Active.<div class="TitleandImage"><p><img src="../../../Resources/Images/DTC_V44_CGBookElements/Configuring Statuses.png" alt="emssg_coreadmin_image005.png" class="padding_only" /></p><p class="Caption">Statuses Window</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Optionally, to view all statuses in your EMS database, regardless of status, under Show, click <span class="ui">Inactive</span>.</p></div></li>
+            <li>Click <span class="ui">New</span>.&#160;The Status dialog box opens.<div class="TitleandImage"><p><img src="Images/DC_CG_ConfigStatuses1.jpg" alt="emssg_coreadmin_image006.png" class="padding_only" /></p><p class="Caption">Status Dialog Box</p></div></li>
+            <li>
+                <p>Enter the information for the new status.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The name of the status.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The status can be a maximum of 30 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Status Type</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Required. You must select one of the following four values:</p>
+                                <ul>
+                                    <li>Book Space—The room is taken out of inventory and cannot be reserved by another booking. (The system prevents the space from being double-booked.)</li>
+                                    <li>Cancel—Booking information is retained, but the room is released back into inventory.</li>
+                                    <li>Info Only—Booking information is retained, but the space is not taken out of inventory.</li>
+                                    <li>Wait—Booking information is retained in case the space becomes available prior to the event date. Wait bookings show up on the Wait List Report and in the Dashboard.</li>
+                                </ul>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If you are configuring a conflict status, then it must Status Type Info Only or Wait.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Reserved Color</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The color that is used by this status in the Reservation Book to indicate&#160;reserved&#160;time. When the reserved time extends before or after event time, thin bars of this color extend out from the beginning and/or end of the event. To use the system default colors, click Default.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Event Color</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The color for events of this status in the Navigator and Reservation Book. To use the system default colors, click Default.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Lighter colors are the better colors to use for events because they make it easier to read the event name in the Reservation Book, which is in black text.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Reconfirm Date</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option if you want the system to require a reconfirm date when a reservation is made in EMS. When a user gives a booking a status that requires a reconfirm date, the system displays an additional field, prompting the user to enter the date. You can identify bookings with a reconfirm date in the Dashboard.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Commits Inventory</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Select this option if the status should remove resources from inventory.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Typically, you would select this option for a status with a Book Space type whereas you would&#160;not&#160;select this option for a status with a Cancel type.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Inactive</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Leave this option blank to add the status as an active status. Select this option to inactivate the status.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p><span class="ui"><MadCap:variable name="General.EMS&#160;Web App"></MadCap:variable> Settings</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Display to Everyday Users</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option to display the event details for bookings with this status in EMS Web App.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>For a booking to appear on Browse Events, the event type, status and room for that booking all have to have Display to Everyday User (DEDU)&#160;settings enabled. If one of these properties is not DEDU-enabled, the booking will not appear on Browse Events in the EMS&#160;Web App.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Allow Booking Edit</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Select this option to allow the editing of bookings with this status in EMS Web App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Allow Service Edit</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option to allow the editing of services for bookings with this status in EMS Web App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Allow Booking Cancellation</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Select this option to allow the canceling of bookings with this status in EMS Web App.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Click <span class="ui">OK</span>.&#160;The Status dialog box closes. You return to the Statuses window with the newly configured status automatically selected.</li>
+        </ol>
+    </body>
+</html>

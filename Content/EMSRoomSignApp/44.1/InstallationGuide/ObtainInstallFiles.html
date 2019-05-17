@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Obtain the Installation Files for EMS Room Sign</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Obtain Installation Files for <MadCap:variable name="General.RSA" /></h1>
+        <p>The latest <MadCap:variable name="General.RSA" /> (formerly named EMS Glance)&#160;components can be downloaded from <MadCap:snippetText src="../../../AccruentAccess_Link_NoLink.flsnp" />.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p> The EMS Room Sign App was formerly named EMS Glance. Some of the installation files, such as the DLL, will temporarily retain the Glance name.</p>
+        </div>
+        <MadCap:snippetBlock src="../../../ObtainInstallFilesStartAt1.flsnp" />
+        <ol class="number-list" start="4" MadCap:continue="true">
+            <li>
+                <p>Download the following components:</p>
+                <ul>
+                    <li>
+                        <p><b>EMSRoomSignApp.msi:</b> EMS Room Sign&#160;web application installed on your web server.&#160;</p>
+                    </li>
+                    <li>
+                        <p><b>EMS.Glance.dll:</b> File that will expose the EMS Room Sign App Settings area within EMS.</p>
+                    </li>
+                    <li>
+                        <p><b>EMS Room Sign App License Key:</b> The EMS Room Sign App is an optional component that requires the appropriate license to activate.&#160;&#160;</p>
+                    </li>
+                    <li>
+                        <p>For earlier versions of the V44.1 software, you will need to download additional components:</p>
+                        <ul>
+                            <li>
+                                <p><i>Update 29 and earlier,</i> download <b>EMSGlanceAPI.msi</b>.&#160;This is the installation file for the EMS Room Sign App API web service installed on your web server. </p>
+                            </li>
+                            <li>
+                                <p><i>Update 31 and earlier,</i> download <b>EMSRoomSignApp.sql</b>.&#160;This is the SQL script that needs to be executed against your EMS database.&#160;This will create EMS Room Sign specific objects (tables and stored procedures) in your EMS database.</p>
+                                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If you are on Update 32, do NOT install <b>EMSRoomSignApp.sql</b>. If you do install the .sql file, you will need to re-install the EMS&#160;patch.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

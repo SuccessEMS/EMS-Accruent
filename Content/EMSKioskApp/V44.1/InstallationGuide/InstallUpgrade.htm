@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>Install or Upgrade the EMS Kiosk App V44.1 (EMS Kiosk App)</title>
+    </head>
+    <body>
+        <h1>Install or Upgrade the EMS Kiosk App</h1>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Verify that the <a href="SysReqPrereq.htm">System Requirements and Prerequisites for EMS Kiosk App</a> have&#160;been fulfilled:</p>
+                <ol start="1">
+                    <li>
+                        <p>Patches</p>
+                    </li>
+                    <li>
+                        <p>API</p>
+                    </li>
+                    <li>
+                        <p><a href="https://docs.microsoft.com/en-us/aspnet/core/publishing/iis#install-the-net-core-windows-server-hosting-bundle?tabs=aspnetcore2x" title="https://docs.microsoft.com/en-us/aspnet/core/publishing/iis?tabs=aspnetcore2x#install-the-net-core-windows-server-hosting-bundle">.NET Core Windows Server Hosting Bundle</a>:</p>
+                        <ol start="1" style="list-style-type: lower-roman;">
+                            <li>
+                                <p>Run the installer.</p>
+                            </li>
+                            <li>
+                                <p>When complete, open a CMD prompt as an Admin.</p>
+                            </li>
+                            <li>
+                                <p>Right-click the <span class="ui">Start </span>button and select <span class="ui">Command Prompt (admin)</span>.</p>
+                            </li>
+                            <li>
+                                <p>Type <span class="ui">net stop was /y</span> &lt;enter&gt;.</p>
+                            </li>
+                            <li>
+                                <p>Type <span class="ui">net start w3svc</span> &lt;enter&gt;.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>EMS Platform Services</p>
+                        <ol start="1" style="list-style-type: lower-roman;">
+                            <li>
+                                <p>You might want to test that Platform Services is properly installed by navigating to the&#160;URL it created on install (http://localhost/EmsPlatform).</p>
+                            </li>
+                            <li>
+                                <p>To ensure Platform Services is working correctly,&#160;connect to&#160;http://localhost/EmsPlatform/admin&#160;and use an Admin Everyday User&#160;to verify you can log in.&#160;If you see license info, everything is working properly.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Uninstall&#160;any old version of EMS Kiosk App.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>We recommend that you&#160;take a moment now to record the IIS server, the SQL server name, the EMS DB name, etc.&#160;We also recommend creating a notepad file for the URLs that are generated&#160;for later reference.</p>
+                </div>
+            </li>
+            <li>
+                <p>Obtain the latest version of the installation files from the Downloads area in Accruent Access.</p>
+                <MadCap:snippetBlock src="../../../DownloadsArea.flsnp" />
+            </li>
+            <li>
+                <p>Load the&#160;<span class="ui">EMS.Kiosk.App.msi</span>&#160;file onto the web server that will be running the EMS Kiosk App.</p>
+            </li>
+            <li>
+                <p>Run&#160;<span class="ui">EMS.Kiosk.App.msi</span>.</p>
+            </li>
+            <li>
+                <p>The first screen welcomes you to the EMS Kiosk Setup Wizard. Click the&#160;<span class="ui">Next&#160;</span>button to begin the installation process.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS.png" alt="EMSKiosk_InstallingUpgrading_KioskSetup.PNG" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Welcome Screen to the EMS Kiosk Setup Wizard</p>
+                </div>
+            </li>
+            <li>
+                <p>The Destination Folder screen will appear.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The default install folder for the EMS Kiosk App is not under wwwroot but under&#160;<span class="ui">C:\Program Files</span>. However, you can change the location of the default installation folder.</p>
+                </div>
+                <div class="TitleandImage">
+                    <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_1.png" alt="EMSKiosk_InstallingUpgrading_DestinationFolder.PNG" class="resize80_noborder_padding" />
+                    <p class="Caption">Destination Folder</p>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>EMS Kiosk App should&#160;<span class="ui">not&#160;</span>be installed in the same physical directory as other EMS web-based products OR under a site running another version of the EMS Kiosk App.</p>
+                </div>
+            </li>
+            <li>
+                <p>In the EMS Application Settings screen, enter the&#160;EMS Platform Services URL&#160;and specify the&#160;Virtual Directory Name. See Also&#160;EMS Platform Services Installation Guide.&#160;</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_2.png" alt="EMSKiosk_InstallingUpgrading_ApplicationSettings.PNG" class="imgBorderMax520" />
+                    </p>
+                    <p class="Caption">EMS Application Settings Screen</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter your EMS Kiosk App path and click&#160;<span class="ui">Next</span>.&#160;The&#160;Virtual Directory&#160;screen will appear.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_3.png" alt="EMSKiosk_InstallingUpgrading_VirtualDirectory.PNG" />
+                    </p>
+                    <p class="Caption">Virtual Directory</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter the name you want to give to the virtual directory.&#160;Click&#160;<span class="ui">Next</span>.&#160;The&#160;Ready to Install&#160;screen will appear.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_4.png" alt="EMSKiosk_InstallingUpgrading_ReadytoInstall.PNG" />
+                    </p>
+                    <p class="Caption">Ready to Install Screen</p>
+                </div>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">Install&#160;</span>button to install EMS Kiosk App.</p>
+            </li>
+            <li>
+                <p>Open the&#160;<span class="ui">appsettings.json</span>&#160;file in Notepad. This file can be found in C:\Program Files\EMS Software\EMSKiosk.</p>
+                <p>
+                    <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_5.png" alt="Kiosk_IG_Appsettingsjson.PNG" />
+                </p>
+            </li>
+            <li>
+                <p>Search for the section, "Platform Options." DO NOT&#160;EDIT ANYTHING except the next steps.&#160;If there are multiple (load balanced) nodes, you need to apply the Client Secret to all of them.</p>
+            </li>
+            <li>
+                <p>Add a new line below the first {.<br />Type in: <br />“SecureCookies”: false,</p>
+                <p>
+                    <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_6.png" alt="PlatformOptions.PNG" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Navigate to your Platform Services URL&#160;and log-in.</p>
+            </li>
+            <li>
+                <p>Choose the&#160;<span class="ui">Integrations&#160;</span>Area.</p>
+                <p>
+                    <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_7.png" alt="Integrations.PNG" class="resize80_border_nopadding" />
+                </p>
+            </li>
+            <li>
+                <p>Select the EMS Kiosk service.</p>
+                <ol start="1">
+                    <li>
+                        <p>Copy the Client ID.</p>
+                    </li>
+                    <li>
+                        <p>In your notepad file, replace the Client ID area between the quotation marks. Do not delete the commas.</p>
+                        <p>
+                            <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_8.png" alt="Kiosk_IG_Commas.PNG" class="popup_with_padding_and_border" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Reset the client secret in the EMS Platform Admin UI:</p>
+                <ol start="1" style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Visit the Admin UI for you EMS Platform Services install (e.g.,&#160;https://my-company.com/EmsPlatform/admin). You will need a Web User login with Administrative permissions to perform this step.&#160;</p>
+                    </li>
+                    <li>
+                        <p>Click the&#160;<span class="ui">Reset Secret</span>&#160;button.</p>
+                        <p>
+                            <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_9.png" alt="EMSKiosk_InstallingUpgrading_ResetSecret.PNG" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>A new Client Secret is generated following the reset.</p>
+                        <p>
+                            <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_10.png" alt="EMSKiosk_InstallingUpgrading_NewclientSecret.PNG" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Copy the generated Client Secret after successful reset.&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>You will not be able to retrieve this secret later, instead you will have to reset the secret again to generate a new secret.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>In your notepad file, replace the blank area between the QUOTES “” of ClientSecret with this code. Ensure that the quotations remain before and after the ClientSecret and that there are no spaces.&#160;</p>
+                        <p>
+                            <img src="../../../Resources/Images/Kiosk_IG_InstallUpgrade1/Install or Upgrade the EMS_11.png" alt="EMSKiosk_InstallingUpgrading_SampleClientSecretvalue.PNG" />
+                        </p>
+                        <p class="Caption">Sample ClientSecret Value</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Save and close the file. Overwrite the existing appsettings.json file. Ensure your overwrite worked by checking the date (your file should reflect the current date and time.)</p>
+            </li>
+            <li>
+                <p>Reboot your server. Conversely, you could:</p>
+                <ol start="1" style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Open a CMD prompt as admin.</p>
+                    </li>
+                    <li>
+                        <p>Type: <span class="ui">net stop was /y</span>&#160;&lt;enter&gt;</p>
+                    </li>
+                    <li>
+                        <p>Type: <span class="ui">net start w3svc</span>&#160;&lt;enter&gt;</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Clear the temp&#160;cache by closing&#160;your EMS Kiosk App browser window.</p>
+            </li>
+            <li>
+                <p>Return to the EMS Platform Admin and set the Active, Enable Logging, and User Auth to&#160;<span class="ui">CHECKED</span>.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Save</span>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

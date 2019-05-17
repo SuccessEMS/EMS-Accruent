@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host="s-f3cf4910b7b74ec8a.server.transfer.us-west-2.amazonaws.com"
+  User="MyAccountId"
+  Password=""
+  Directory="accruentaccess"
+  Port="22"
+  ViewUrl="stage-documentation.accruent.com/ems/accruentaccess"
+  Type="sftp"
+  ConnectionMode="Active"
+  SftpServerValidation="validation-none"
+  SftpAuthentication="authentication-public-key"
+  SftpPublicKeyFile="C:\Users\cameron.harris\OneDrive - Accruent LLC\Desktop\repos\technical-publications-ems\ssh_keys\stage-ems"
+  SftpPublicKeyPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZr0yoa9pAUaMj56ugNrfIAAAAAACAAAAAAAQZgAAAAEAACAAAABjr/kv1uGjAFbsVLcb0u3/eUrGo9nPv5wEXjxnhLOiGAAAAAAOgAAAAAIAACAAAADmOUBhwKs91tTAd5TTLlnJS9dUGtLGsoAzHz2hJ4pbKCAAAAB1moYEL+b2jkM0KCVQmTi1Ge7Y0oHm5pr7aT78w1ePyUAAAAA/bbrKQwAQZmwR+MDLrHE+KUO+vd1LX3bcMcXa3jhnDsgoPg1YHMdZCuJcBpWekbw59Zc8dU15GE8eqOtRGWO4"></CatapultDestination>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <h1>System Prerequisites and Requirements for EMS&#160;Platform Services</h1>
+        <p>The following information is necessary to successfully <a href="InstallPS.html">install EMS&#160;Platform Services</a>. See Also:&#160;<a href="LicenseRequirements.html">Licensing Requirements</a>.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>As of <a href="../../ReleaseNotes/Version44.1/Update28/EMSPlatformServices.htm">Update 28</a>, users are required to deploy EMS Platform Services with <a href="https://www.microsoft.com/net/download/dotnet-core/2.1">ASP.NET Core</a>, rather than the HTTP Platform Handler.</p>
+        </div>
+        <h2><a name="EMSPSReqs"></a>EMS&#160;Platform Services Prerequisites and <MadCap:annotation MadCap:createDate="2018-09-19T11:41:47.0876840-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Ankita is following up on this question:\r\n\r\nMatt James was wondering if Windows Server 2008 R2 should be removed from the PS Web Server table and if Windows Server 2016 should be added. He had us update these requirements for the EMS Web Server table." MadCap:editor="Megan.Laub" MadCap:editDate="2018-09-19T11:42:49.0070584-06:00">Requirements</MadCap:annotation></h2>
+        <MadCap:snippetBlock src="../../EMS44.1SystemReq_PlatformServices.flsnp" />
+        <h2><a name="asp.nethandler"></a>Install the ASP.NET Core</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>As of <a href="../../ReleaseNotes/Version44.1/Update28/EMSPlatformServices.htm">Update 28</a>, users are required to deploy EMS Platform Services with <a href="https://www.microsoft.com/net/download/dotnet-core/2.1">ASP.NET Core</a>, rather than the HTTP Platform Handler.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p><a href="https://www.microsoft.com/net/download/dotnet-core/2.1">Download the .NET&#160;files</a>.</p>
+            </li>
+            <li>
+                <p>Choose .NET Core version 2.1.</p>
+            </li>
+            <li>
+                <p>In the right-hand “Runtime” column, select <span class="ui">ASP.NET Core/.NET Core: Runtime &amp; Hosting Bundle</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>ASP.Net handler is a part of the Runtime &amp; Hosting Bundle.</p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

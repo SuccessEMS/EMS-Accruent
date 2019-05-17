@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+    </head>
+    <body>
+        <h1>Install or Upgrade the Master Calendar Email Notification Service</h1>
+        <p>The EMS Master Calendar Email Notification Service must be installed on a computer that is connected to the network and is running 24 hours a day, often the database server.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Install the EMS Master Calendar Email Notification Service on one computer only, typically installed on a machine that is continuously running.</p>
+            <p>Existing versions of the EMS Master Calendar Email Notification Service must be manually    uninstalled through the Add or Remove Programs menu.</p>
+        </div>
+        <ol class="number-list">
+            <li>Download the DeaMasterCalendarEmailNotificationSetup.msi onto the server that will be running the service.  </li>
+            <li>
+                <p>Double-click DeaMasterCalendarEmailNotificationSetup.msi. Follow the on-screen prompts.  It is recommended that the defaults are accepted.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../images/A_Installation/MC_Install_EMailNotSvc1.PNG" class="padding_only" />
+                    </p>
+                    <p class="Caption"> Welcome to the EMS Master Calendar Email Notification Service Setup Wizard</p>
+                </div>
+            </li>
+            <li>
+                <p>In the Microsoft Windows Start menu, locate EMS Master Calendar Email Notification Configuration Service &gt; Email Notification Configuration Settings. The EMS Master Calendar Email Notification screen will appear.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../images/A_Installation/InstallUpgradeEmailNotSvc_1.PNG" class="padding_only" />
+                    </p>
+                    <p class="Caption">Master Calendar Email Notification Configuration</p>
+                </div>
+            </li>
+        </ol>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Enter a valid SMTP Server name or IP address that the Email Notification Service can utilize to send notification emails.</p>
+                <p>
+                    <img src="../images/A_Installation/InstallUpgradeEmailNotSvc_2.PNG" class="resize80_noborder_padding" />
+                </p>
+                <p class="Caption">Master Calendar Email Notification Configuration</p>
+            </li>
+            <li>In addition to modifying the Server and database name, the following must be configured as well: <ul MadCap:continue="true"><li><span class="ui">Send From</span>—An active email address that will be displayed in the From Field of the notification emails that are sent out.   </li><li><span class="ui">Master Calendar URL</span>—Enter in the Master Calendar URL.  </li><li><span class="ui">Interval</span>—Determines how frequently emails are to be sent out. </li></ul></li>
+            <li>
+                <p>Edit the Server and Database names to reflect the Server and Master Calendar database names.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../images/A_Installation/InstallUpgradeEmailNotSvc_3.PNG" />
+                    </p>
+                    <p class="Caption">Database Connection Test</p>
+                </div>
+            </li>
+            <li>Click the <span class="ui">Test Connection</span> button to verify a successful connection.</li>
+            <li>Select whether Event Logging should be enabled. </li>
+            <li>Click <span class="ui">OK </span>to save the settings.  </li>
+        </ol>
+        <MadCap:snippetBlock src="../../../IssuesStartingService.flsnp" />
+    </body>
+</html>

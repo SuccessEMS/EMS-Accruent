@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Configuring Automated Reports V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Automated Reports</h1>
+        <p>EMS is able to send reports daily to selected email addresses. Reports that can currently be automated to send are Reservation and Sales\Statistics Queries and all Saved&#160;Daily and Statistics Reports under the EMS Reports menu. To learn more, see creating&#160;<a href="WorkwithQuery.html" title="Working with a Query" alt="Working with a Query">Queries</a>&#160;or&#160;<a href="WorkwithSavedReports.html" title="Working with Saved Reports" alt="Working with Saved Reports">Saved Reports</a>.&#160;Automated Reports can be set up and emailed to selected individuals. Automated Reports use predefined&#160;Queries&#160;and Saved Reports. An email will be sent to the users defined in the Automated Report Delivery with either the information requested through the report or with an email stating there was no data to display.</p>
+        <p>For Automated Reports to be sent,&#160;the EMS Automated Report service needs to be installed and configured. For directions on installing and configuring&#160;the service, see <a href="../../../ServicesComponents/EMSAutomatedReportService.htm" title="Installing the EMS Automated Report Service" alt="Installing the EMS Automated Report Service">Installing&#160;the EMS Automated Report Service</a>.</p>
+        <ol start="1">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">Reports </span>&gt;&#160;<span class="ui">Automated Report Delivery</span>.&#160;</p>
+                <p>The Automated Report Delivery&#160;window opens. This window lists all Automated Reports&#160;that are currently configured in your EMS database and that have a status of Active.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_RepQuer/Configuring Automated Reports.gif" alt="https://success.emssoftware.com/@api/deki/files/1414/Automated_Report_Delivery.gif?revision=4" class="resize80_noborder_padding">
+                    </img>
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To view any deactivated Automated Reports&#160;check the <span class="ui">Inactive</span> checkbox in the Show section of the window.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">New</span>.&#160;</p>
+                <p>The Automated Report window&#160;opens.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_RepQuer/Configuring Automated Reports_1.gif" alt="https://success.emssoftware.com/@api/deki/files/1415/Automated_Report_Config.gif?revision=3" class="resize80_noborder_padding">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the&#160;<span class="ui">Description&#160;</span>field, enter a name or description for the new Automated Report.&#160;</p>
+                <p>The Automated Report Delivery description should specify the type of&#160;delivery, such as Daily Event Schedule Delivery.</p>
+            </li>
+            <li>
+                <p>In the Automated Report Type area, specify if this report is a&#160;<span class="ui">Query&#160;</span>or&#160;<span class="ui">Saved Report</span>.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_RepQuer/Configuring Automated Reports_2.gif" alt="https://success.emssoftware.com/@api/deki/files/1423/Report_Type_Query1.gif?revision=3" class="resize80_noborder_padding">
+                    </img>
+                </p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot><span class="ui">Concept:&#160;Queries and Saved Reports </span>
+                            <MadCap:snippetText src="../../../Click_to_Expand.flsnp" />
+                        </MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p><b>Query</b>
+                        </p>
+                        <ul>
+                            <li>
+                                <p><span class="ui">Query Type:</span> limits the displayed Queries to either&#160;Reservation or Sales\Statistics.</p>
+                            </li>
+                            <li>
+                                <p><span class="ui">Query:</span> Shows the available Queries to Automate based on either Query Type, or if no Query Type is selected it will display all&#160;Reservation and&#160;Sales\Statistics queries.</p>
+                            </li>
+                        </ul>
+                        <p><b>Saved Report</b>
+                        </p>
+                        <ul>
+                            <li>
+                                <p><span class="ui">Report Section:</span> Set to (all) by default, but can be modified to either Daily or Statistics to limit the Report Types that will be shown.</p>
+                            </li>
+                            <li>
+                                <p><span class="ui">Report Type:</span> Set to (all) by default, but can be modified to a specific Daily or Statistical report to filter the saved reports.</p>
+                            </li>
+                            <li>
+                                <p><span class="ui">Saved Report:</span> Displays the Saved Reports that are available to be automated.</p>
+                            </li>
+                        </ul>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p>Specify&#160;the Frequency using the options described in the following list:</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_RepQuer/Configuring Automated Reports_3.gif" alt="https://success.emssoftware.com/@api/deki/files/1428/Frequency.gif?revision=3" class="resize80_noborder_padding">
+                    </img>
+                </p>
+                <ul>
+                    <li>
+                        <p><span class="ui">Daily/Weekly/Monthly:</span> Determines&#160;the frequency that the report will send.</p>
+                        <ul>
+                            <li>
+                                <p><span class="ui">Daily:</span> will send every day at the specified time.</p>
+                            </li>
+                            <li>
+                                <p><span class="ui">Weekly:</span> Can be set to a single day every week or multiple days every week.</p>
+                            </li>
+                            <li>
+                                <p><span class="ui">Monthly:</span> Can specify&#160;a specific day each month (1-28) or the last day of the month.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><span class="ui">Send Report At:</span> Determines the time each day that the Automated Report will send.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Time Zone:</span> Determines the time zone for the time selected for the report to send.&#160;Time and Time Zone correlate to the database server and the server on which the Automated Report Service is installed.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Reporting Period:</span> Determines the dates which the report will be automated for. Choose from&#160;multiple options in the drop-down list to customize the reports.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Specify&#160;Email Settings and Email Recipients  using the options described in the following list:</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_RepQuer/Configuring Automated Reports_4.gif" alt="https://success.emssoftware.com/@api/deki/files/1431/Email_Settings.gif?revision=3" class="resize80_noborder_padding" />
+                </p>
+                <ul>
+                    <li>
+                        <p><span class="ui">Email&#160;From:</span> Enter the Email From address for the Automated Report.</p>
+                        <ul>
+                            <li>
+                                <p>If you leave the Email From field blank, then the Email From address entered in the EMS Automated Report&#160;Service is used.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><span class="ui">Email Subject:</span> Enter the title for the email that will contain the Automated Report.</p>
+                        <ul>
+                            <li>
+                                <p>If the Subject line is left blank, the Automated Report description will be used as the email subject.</p>
+                            </li>
+                            <li>
+                                <p>A variable&#160;can be used to put information into the subject line as described in the Legend. %1% is the code for the Reporting Period, so "Event Schedule for %1%" results in "Event Schedule&#160;for Tomorrow" being displayed in the subject line.</p>
+                            </li>
+                            <li>
+                                <p>You can look up Email Addresses by clicking the <span class="ui">Add </span>button, which selects from the Global Address Book.&#160;In the Email Address field, for each user and/or group that is to receive the Automated Report, enter the appropriate email address, and then click <span class="ui">Add</span>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

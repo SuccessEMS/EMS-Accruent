@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Web App Release Notes <br />V44.1, Update 32</h1>
+        <p>
+            <MadCap:concept term="V44.1" />This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 183px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 32</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />March 26, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />201903211<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.32000.1733<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 172px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Browse Locations and Create&#160;a&#160;Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Removing Event Name from security template removes Event Name from additional areas</p>
+                        <p class="RNBody">When the <span class="ui">Event Name</span> is suppressed in EMS&#160;Desktop Client (<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday User Security Templates</span> &gt; <span class="ui">Edit </span>existing template &gt; <span class="ui">Booking Details Display Fields</span> tab), the <span class="ui">Event Name</span> will not display in the EMS&#160;Web App schedule view (from the Related Bookings area of Browse Locations or Create a Reservation). Previously, the <span class="ui">Event Name</span> was only suppressed from the Booking Details screen in Browse Events and Browse Locations.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41131&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41131</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Canceling a Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-11T11:13:29.6670772-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Update core doc for this enhancement" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-11T11:13:56.4022732-06:00">Improved messaging when canceling single occurrence in recurring calendar-enabled reservation</MadCap:annotation>
+                        </p>
+                        <p class="RNBodyBeforeList">The following message now displays when a booking that is part of a multi-location occurrence is canceled:</p>
+                        <div class="indent">
+                            <p class="RNBody">"This booking is part of a Calendar Occurrence. Canceling this location will cancel all locations with same date/time."</p>
+                        </div>
+                        <p class="RNBodyBeforeList">The message will appear when users cancel a single occurrence from any of the following pages:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>Reservation Summary page, in the list of bookings:</li>
+                            <li>My Events page &gt; Bookings tab</li>
+                            <li>Home page &gt; My Bookings section</li>
+                            <li>Home page &gt; Search screen results</li>
+                            <li>EMS&#160;Mobile Web App &gt; Booking Details</li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42758&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42758</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Security</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-21T12:15:23.7101892-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Added from 31.1 per mindy" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-21T12:15:30.8950681-06:00">EMS</MadCap:annotation>&#160;Web App Security Enhancements</p>
+                        <p class="RNBody">Enhancements have been implemented to strengthen security in the EMS&#160;Web App. Submit an EMS&#160;Support Help Desk ticket through <MadCap:snippetText src="../../../AccruentAccess_Link_NoLink.flsnp" /> to receive additional information. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42815&amp;_a=edit&amp;triage=true" class="RNRefHyper">42815</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42817&amp;_a=edit&amp;triage=true" class="RNRefHyper">42817</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42816&amp;_a=edit&amp;triage=true" class="RNRefHyper">42816</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42818&amp;_a=edit&amp;triage=true" class="RNRefHyper">42818</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42813&amp;_a=edit&amp;triage=true" class="RNRefHyper">42813</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42812&amp;_a=edit&amp;triage=true" class="RNRefHyper">42812</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42811&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42811</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Parameter Settings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-21T12:15:33.5215632-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="added from 31.1 per mindy" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-21T12:15:40.0328283-06:00">Parameter</MadCap:annotation> Update for Use of EMS&#160;Platform Services</p>
+                        <p class="RNBody">The parameter settings that require use of EMS&#160;Platform Services by EMS&#160;Web App were automated to prevent manual configuration requirements. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42915&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42915</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 190px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Session Time Out</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">500 error occurred when using EMS Web App in multiple tabs and/or browser windows</p>
+                        <p class="RNBody">For some customers, when users opened EMS&#160;Web App in multiple tabs and/or windows of the browser, the time-out functionality was not syncing across all the tabs/windows, and users were not aware that they were signed out of all instances of EMS&#160;Web App in the tabs/windows. Also, when the session timer timed out, the redirect to the login page was not taking into account the login override settings, such as Portal Authentication and SAML&#160;scenarios and where a customer-created login page was used. </p>
+                        <p class="RNBody">Example: A user signs into EMS&#160;Web App on Tab&#160;1 of the browser. Then after 30 seconds, the user opens another instance of EMS&#160;Web App on Tab&#160;2. The user stops working in EMS&#160;Web App for a while, and during that time, the session times out in Tab&#160;1; however, a time-out message does not display in Tab&#160;2, and it appears as though the user is still signed into the app on Tab&#160;2. The user continues working in Tab&#160;2. When the user tries searching for attendees while creating a reservation, the user gets a 500 error because the user has been signed out of EMS&#160;Web App on Tab&#160;1 and EMS&#160;Web App can no longer pull attendee information.</p>
+                        <p class="RNBodyBeforeList"><b>Fix:</b> Modified functionality so that when users open multiple instances of EMS&#160;Web App in a browser, the following occurs:</p>
+                        <ul class="RN-unorder-list">
+                            <li>The client-side timers sync across all tabs/windows.</li>
+                            <li>Signing out of one tab/window will sign out users in all other tabs/windows.</li>
+                            <li>Timing out of one tab/window will sign out users in all other tabs and windows.</li>
+                            <li>Extending the session of one tab/window will extend the session for all other tabs/windows.</li>
+                            <li>Extending the session via the "Still Working?" modal will close any other tabs/windows that display the same modal and will extend the session.</li>
+                            <li>The redirect to the login page takes into account the login override settings.</li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=38837&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38837</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Viewing Room Details</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle"><a name="Privatelabel"></a>EMS&#160;Web App was not honoring the "Hide Group" setting in the Schedule Grid, Related Events, and Unavailable Dates &amp; Times screen</p>
+                        <p class="RNBodyBeforeList">The <span class="ui">Hide Group</span> room setting was not being honored in EMS&#160;Web App even though the <span class="ui">Hide Group</span> checkbox was selected in EMS&#160;Desktop Client (<span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Rooms </span>&gt; <span class="ui">Room </span>configuration dialog &gt; <span class="ui">Room </span>tab). In EMS&#160;Web App, the group information remained visible on the following:</p>
+                        <ul class="RN-unorder-list">
+                            <li>Schedule Grid &gt; Booking Display Bar</li>
+                            <li>Booking Details &gt; Related Events tab</li>
+                            <li>Unavailable Dates &amp; Times screen</li>
+                        </ul>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that when the <span class="ui">Hide Group</span> checkbox is selected for a room, the group information is suppressed on all the appropriate screens in EMS&#160;Web App. Additionally, in Schedule Grid &gt; Booking Display Bar, when the <span class="ui">Hide Group</span> checkbox is selected, the Private label text will be displayed (text is configured in the <span class="ui"><a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm#LabelforPrivateBooking"><span class="ui">Label for “Private” Bookings on Schedule View</span></a></span> parameter).</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41135&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41135</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">My Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Unable to download .ics files for reservations with non-standard recurrence patterns</p>
+                        <p class="RNBody">For reservations with non-standard recurrence patterns, users were unable to download the .ics file and add the reservations to their calendars via the <span class="ui">Add to My Calendar</span> link <MadCap:annotation MadCap:createDate="2019-02-26T14:13:26.0134746-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Was this only from the My Events page, or was it with any Add to My Calendar link involving non-standard recurrence reservations (such as the link displayed after successfully creating a reservation)?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-02-26T14:14:44.4247513-07:00">on the My Events page</MadCap:annotation>. When users clicked the link, they would get an error message:&#160;"There was a problem attempting to complete the action you requested. Please try again at a later time."  </p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that users can successfully download the .ics file for reservations with non-standard recurrence patterns using the <span class="ui">Add to My Calendar</span> link. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41135&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper"><MadCap:annotation MadCap:createDate="2019-02-26T13:57:38.7240578-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Will there be new TFS number, or should we just use 41135 since that is the bug being fixed when .ics was also fixed?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-02-26T13:58:14.4601507-07:00">41135</MadCap:annotation></a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Time Zones</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Time Zone field defaulted to empty if the everyday user had a time zone default of "no preference"</p>
+                        <p class="RNBody">In EMS&#160;Web App, the <span class="ui">Create booking in this time zone</span> field was empty if the everyday user account had no time zone specified (EMS&#160;Desktop Client &gt;&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday Users</span>).  </p>
+                        <p class="RNBodyBeforeList"><b>Fix:</b> Modified functionality so that when an everyday user is created with no time zone specified, the time zone value for the  <span class="ui">Create booking in this time zone</span> field will be taken from one of the following (listed in order of preference):</p>
+                        <ul class="RN-unorder-list">
+                            <li>Personalization Template default</li>
+                            <li>Everyday User Process Template default</li>
+                            <li>Everyday User default</li>
+                            <li>First time zone in the list of the template</li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42650&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42650</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Time Zones</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">EMS Web App reservations created with start date in daylight savings time range created calendar appointment at incorrect time in Google Calendar</p>
+                        <p class="RNBody">Reservations created on a Google Integration template with a reservation start date in Daylight Savings Time (between March 10, 2019 and November 2, 2019*) were creating calendar appointments at the wrong time (incorrect by one hour).</p>
+                        <p class="RNBody">*Some global locations have unique start/end dates for DST. These dates reflect the most common range.</p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that the calendar appointment is created at the correct time for reservations with a start date in DST range.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42889&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42889</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Security</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-02-25T10:11:44.1282418-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="For cross-sciprting problem. " MadCap:editor="Megan.Laub" MadCap:editDate="2019-02-25T10:12:03.2923079-07:00">EMS&#160;Web App Security Enhancements</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">Enhancements have been implemented to strengthen security in the EMS&#160;Web App. Submit an EMS&#160;Support Help Desk ticket through <MadCap:snippetText src="../../../AccruentAccess_Link_NoLink.flsnp" /> to receive additional information. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43155&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43155</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Date Picker</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-02-07T08:49:20.2135029-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Added from U31.2 per Mindy" MadCap:editor="Megan.Laub" MadCap:editDate="2019-02-07T08:49:20.9990493-07:00">Date Picker Not Functioning</MadCap:annotation> for Users with Specific Personalization Defaults</p>
+                        <p class="RNBody">On Exchange-enabled templates in the EMS&#160;Web App, if a user had defaulted a time zone in personalization and the current time in that default time zone had crossed midnight (but the user time zone had not), then the date picker picked dates randomly. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that the date picker functions correctly on Exchange-enabled templates. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42918&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42918</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Time Zones</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-02-07T08:49:13.7851901-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Added from U31.2 per Mindy" MadCap:editor="Megan.Laub" MadCap:editDate="2019-02-07T08:49:14.5627447-07:00">Date Picker reflects</MadCap:annotation> incorrect date with specific personalization defaults</p>
+                        <p class="RNBody">If a user had defaulted a time zone in personalization and the current time in that default time zone had crossed midnight (but the user time zone had not), then the EMS&#160;Web App reflected the wrong date once chosen.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the date selected is committed to the date-form field and the New Booking Label is consistent with what was chosen.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42917&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42917</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Timezone</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-21T12:14:52.1203053-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="added from 31.1 per mindy" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-21T12:14:59.1112990-06:00">EMS</MadCap:annotation> Web App Reservations Created with Start Date in Daylight Savings Time Range Created Calendar Appointment at Incorrect Time in Google Calendar</p>
+                        <p class="RNBody">Reservations created on a Google Integration template with a reservation start date in Daylight Savings Time (between March 10, 2019 and November 2, 2019*) were creating calendar appointments at the wrong time (incorrect by one hour). </p>
+                        <p class="RNBody">*Some global locations have unique start/end dates for DST. These dates reflect the most common range.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the calendar appointment is created at the correct time for reservations with a start date in DST range. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42868&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42868</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Room Request Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Not all bookings were showing on schedule view grid when completing a room search</p>
+                        <p class="RNBody">Not all bookings were displaying on the schedule grid when searching for a room. This was due to a logic error where the value in parameter ‘Number of Available Rooms Upon Search’ was being used to limit the results returned on booking searches. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that all bookings are displayed on the schedule view grid when searching for a room.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43735&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43735</a>  / Jira <a href="https://jira.accruent.com/browse/EMS-1461" class="RNRefHyper">EMS-1461</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Language Translation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Corrupt French language translation files caused templates to error out</p>
+                        <p class="RNBody">French language translation files, with apostrophes in certain locations, were causing templates to not function. When users clicked on a template in EMS&#160;Web App, the template would error out.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the French translation files no longer cause templates to error out, and EMS&#160;Web App functions properly with translations.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43525&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43525</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

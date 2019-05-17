@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS for Outlook Release Notes <br />V44.1, Update 34</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 215px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 34</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />TBD<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />TBD<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Resolve Conflict</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Could not add room to reservation-plus sign missing</p>
+                        <p class="RNBody"> When creating a meeting in EMS&#160;for Outlook, users were unable to resolve a room conflict when they selected an available room, and then changed the time in the drop-down list to a time when the room was not available. After changing the time, the Resolve Conflicts window would appear, but the <span class="ui">Add</span> (+) buttons were missing, and users were unable to select a different room.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that users can resolve room conflicts after modifying the meeting time in the EMS&#160;for Outlook time drop-down list.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2318" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2318</a><br />(For Internal Use Only)</p>
+                        <p class="RNRef">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Create Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Drag-and-Drop did not update time for meetings in Beijing time zone</p>
+                        <p class="RNBody">For meetings in the Beijing time zone, when users modified the meeting time using drag-and-drop in the Outlook calendar, the EMS for Outlook add-in did not update the time in the database if the change was made on the same day.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the database updates when users in the Beijing time zone make changes via drag-and-drop to the meeting time.</p>
+                        <p class="RNRef">I<MadCap:annotation MadCap:createDate="2019-04-12T14:29:45.7881693-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Not in jira" MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-12T14:29:48.4011697-06:00">nternal Refere</MadCap:annotation>nce #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42190&amp;_a=edit&amp;triage=true" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">42190</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

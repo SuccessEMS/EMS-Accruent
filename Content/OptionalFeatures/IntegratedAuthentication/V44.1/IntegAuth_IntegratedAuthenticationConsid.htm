@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Integrated Authentication Considerations</h1>
+        <p>When you purchase the Integrated Authentication Service, you are able to use LDAP Integration, Integrated Authentication (IA), or Portal Authentication. Integrated and Portal Authentications are true Single Sign-On (SSO) solutions; LDAP is not. These methods are not typically used together.&#160;This section explains&#160;how each one works, along with pros and cons for each method.</p>
+        <h2>LDAP Integration</h2>
+        <p>LDAP integration allows you to bypass creating individual web users for your organization. By configuring EMS to query your LDAP groups, you can use LDAP groups to assign web template permissions. Your users would just use their windows credentials to login to the site. After creating a web user account (most data is pre-populated from their LDAP account), they receive the template permissions granted to their LDAP group.</p>
+        <h3>Pros</h3>
+        <ul class="unorder-list">
+            <li>
+                <p>No need to create/maintain individual accounts for web users. Mass assign process templates.</p>
+            </li>
+        </ul>
+        <h3>Cons</h3>
+        <ul class="unorder-list">
+            <li>
+                <p>Requires LDAP groups to be precisely defined and maintained to ensure proper access. EMS does not create or update LDAP groups, so product may require assistance from LDAP/Exchange administrators.</p>
+            </li>
+            <li>
+                <p>NOT Single Sign-on: users must enter windows credentials on each visit.</p>
+            </li>
+        </ul>
+        <h2>Integrated Authentication</h2>
+        <p>IA is SSO. For this to work, every user must have a web user account created (manually through client/virtual piece or using our HRToolkit module). In each web account, a network ID is added. When a user visits VEMS or EMS Web App, a call is made to the machine to retrieve the windows account signed in. It compares that value to the network ID field in existing accounts, logging in users automatically. Permissions are assigned to the individual web user accounts.</p>
+        <h3>Pros</h3>
+        <ul class="unorder-list">
+            <li>
+                <p>Can be true SSO – the account creation and maintenance can be completely invisible to the end user. Not reliant on Exchange/LDAP administrators.</p>
+            </li>
+        </ul>
+        <h3>Cons</h3>
+        <ul class="unorder-list">
+            <li>
+                <p>Requires active web user creation and maintenance: manually on the client side, manually through end-user input, or automatically through an HR feed.</p>
+            </li>
+        </ul>
+        <h2>Portal Authentication</h2>
+        <p>With Portal Authentication, user information is passed from your existing portal to records in EMS&#160;by cookie, session string or similar. Portal Authentication is true SSO when used with our supported methods.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>When you implement Integrated Authentication, your consultant will assist you with creating templates and web users during onsite training. If you are adding this module separately and need assistance with virtual configuration contact your account manager about purchasing training. This document is intended to explain the different authentication options available, so you can anticipate any configuration needs. If you choose LDAP Integration, you will need to create an&#160;administrator account and admin web template to access the configuration page. See the EMS Configuration Guide for questions with creating that template. Using LDAP with IA or Portal Authentication requires each user be responsible for creating/verifying their account on the first visit; SSO isn’t immediate. Portal authentication can be used with LDAP, but this is atypical in most portal environments since other credentialing is available.</p>
+        </div>
+    </body>
+</html>

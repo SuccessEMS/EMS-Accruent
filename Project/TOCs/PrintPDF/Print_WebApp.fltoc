@@ -1,0 +1,1030 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Web App"
+    Link="/Content/Print Only Topics/TitlePage_WebApp.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Installation Guide"
+    Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/3_Web Appv44.1 Home.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    PageNumberFormat="decimal"
+    PageNumber="1">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/Web App_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="System Architecture"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_SystemArchitecture.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Requirements and Prerequisites"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_RequirementPrerequisites.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Obtain the Installation Files"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_ObtainInstallFiles.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Install or Upgrade the EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_InstallUpgradetoWebApp.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Upgrade Considerations"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_UpgradeConsiderations.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Optional EMS Web App Features"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_OptionalFeatures.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"></TocEntry>
+    <TocEntry
+      Title="EMS Mobile Web Application"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_MobileWebApplication.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Launch EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_StartWebApp.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Windows Server 2008/2008 R2 Web Server Setup Guide"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_WinWebServGuide2008R2.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Best Practices: Setting Up Your Web Server 2008 or 2008R2"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_BestPracSetUpServer2008R2.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Install .NET Framework"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_InstallNETFramework2008.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Install Internet Information Services (IIS)"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_Install-IIS2008.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue">
+        <TocEntry
+          Title="Add Role Services"
+          Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_AddingRoleServices2008.html"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Windows Server 2012/2012 R2 Web Server Setup Guide"
+      Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_WinWebServGuide2012R.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Best Practices: Setting Up Your Web Server 2012 or 2012R2"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_BestPracSetUpServer2012R2.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Install .NET Framework"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_InstallNETFramework2012.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Install Internet Information Services (IIS)"
+        Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_Install-IIS2012.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue">
+        <TocEntry
+          Title="Add Role Services"
+          Link="/Content/EMSWebApp/A_V44.1/A_InstallationGuide/WebApp_AddRoleServices2012.html"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Integrated Authentication Options"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      Link="/Content/Authentication/IntroEMSIntegratedAuth.htm"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Integrated Authentication Considerations"
+        Link="/Content/OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_IntegratedAuthenticationConsid.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Integrated Windows Authentication"
+        Link="/Content/Authentication/WindowsAuthen.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue">
+        <TocEntry
+          Title="Manage Everyday Users For Integrated Authentication"
+          Link="/Content/OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_ManageEUforIntegAuthen.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+      </TocEntry>
+      <TocEntry
+        Title="LDAP Authentication"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Portal or Federated Authentication"
+        Link="/Content/Authentication/PortalFederatedAuthen.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue">
+        <TocEntry
+          Title="Portal Authentication Methods"
+          Link="/Content/Authentication/PortalAuthMethods.html"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+      </TocEntry>
+      <TocEntry
+        Title="EMS Web App and VEMS Authentication Options"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/AuthOptions_WebApp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Configuration Guide"
+    Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/3_EMS_WebApp_CG.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Administative Functions in the EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/AdminFunctions.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Configure Everyday Users"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUsers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Configure Groups and Contacts from an Everyday User"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigGroupsContactsEU.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Licensing for Everyday Users"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_LicenseEverydayUsers.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Configure Everyday User Templates"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserTemplates.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Assign Process Templates to an Everyday User"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_AssignProcessTemplatesEU.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Configure Everyday User Process Templates"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserProcessTemps.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Configure Confirmation Behavior for Everyday User Applications"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigConfBehEUapps.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Configure Managed Space"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigManagedSpace.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Everyday User Process Template Field Definitions"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EverydayUserProcTempFieldDef.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Security Templates"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_SecurityTemplates.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Configure Security Templates"
+        Link="/Content/EMSDesktopClient/V44.1/ConfigurationGuide/ConfigSecTemplate.htm"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Assign Security Templates to Multiple Everyday Users"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_AssignSecTempMultEU.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Everyday User Security Template Field Definitions"
+        Link="/Content/EMSDesktopClient/V44.1/ConfigurationGuide/ConfigEUSecurityFieldDef.htm"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Email an Everyday User"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EmailEverydayUser.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Configure Web Menus"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigWebMenus.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Configure Help Text"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigHelpText.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Configure Language Translations for Everyday User Applications"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigLangTransEUapps.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"></TocEntry>
+    <TocEntry
+      Title="Customize EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_Customize.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="EMS Web App System Parameters"
+      Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_WebAppSysParameters.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="User Guide"
+    Link="/Content/UserGuides/3_EMSWebAppV44.1_UG.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Get Started with EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_GettingStarted.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Log In and Out"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_LogginginandOut.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Check In To Events"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_CheckingIntoEvents.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Introduction to the Home Page"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_IntroductiontoHomePage.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Create Your Login or Get a New Password"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_CreateLoginOrGetNewPassword.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Browse Events, Locations, and People"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BrowseEventsLocPeople.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Browse Events"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEvents.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Browse Locations"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BrowsingLocations.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="View Floor Plans"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_ViewingFloorPlans.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Locate People"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_LocatingPeople.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Event Details Page"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_EventDetailsPage.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Overview of Creating a Reservation"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/IntroCreateRes.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Create a Reservation in EMS Web App"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_MakingaResv.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue"></TocEntry>
+      <TocEntry
+        Title="Ways to Make Reservations"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_WaystoMakeReservations.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="View Your Events"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_ViewingYourEvents.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Search for Available Rooms"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_SearchingforAvailableRooms.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Book Multiple Rooms"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BookingMultipleRooms.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Book Recurring Meetings"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BookingRecurringMeetings.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Book a Video Conference Room"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BookingVCRoom.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Book a Desk or Workspace"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BookingDeskWorkspace.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Add Reservation Details"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_AddingReservationDetails.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Add Services to a Meeting"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_AddingServicestoMtg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Work with Services"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_WorkingwithServices.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Cancel Your Reservations and Bookings"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_CancelingYourResvandBook.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Edit Reservations and Bookings"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_EditResvBooking.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Invite Attendees with EMS for Outlook"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_InviteAttendeesOutlook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Notifications in the EMS Web App"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_Notifications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Personalize Your Account"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_PersonalizingYourAcct.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Change Account Information"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_ChangeAccountInfo.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Establish Delegates"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_EstablishingDelegates.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Establish Booking Templates"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_EstablBookingTemp.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Set Favorite Rooms"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_SettingFavoriteRooms.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Mobile Web App"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_MobileWebApp.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Using the EMS Web App on Mobile Devices"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_UsingWebApponMobileDev.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="EMS Mobile App Versus EMS Mobile Web App: What is the Difference?"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_EMSMobilevsWeb.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Learn About EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_LearningAbout.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Booking Templates, Requests, and Reservations"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_BookingTemplatesRequestsReserv.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Delegates Act as You"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_DelegatesActasYou.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="MY EVENTS vs. BROWSE EVENTS"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_MyEventsvsBrowseEvents.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Notifications Automatically Alert People to Changes in EMS"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_NotifcationsAutomaticallyAlert.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="EMS for Outlook® (Optional Capability)"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_EMSforOutlookOption.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Integration with Exchange Enables You to Use Outlook®"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_IntegrationwithExchangeEnables.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Reservations, Bookings, and Booking Details"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_ReservBookingsBookingDetails.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Troubleshooting: Internal Server Error When Viewing My Events in EMS Web App"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_Troubleshooting.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Understanding Everyday User Templates"
+        Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_UnderstandingEverydayUser.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Skype for Business in the EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_SkypeforBusiness.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Last Page"
+    Link="/Content/Print Only Topics/LastPage_WebApp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageType="first" />
+</CatapultToc>

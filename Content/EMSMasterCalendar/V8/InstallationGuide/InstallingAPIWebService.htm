@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+    </head>
+    <body>
+        <h1>Install the EMS&#160;Master Calendar API Web Service</h1>
+        <p>Once you meet the <a href="../ConfigurationGuide/APISysRequirements.html">prerequisites</a>, to install EMS Master Calender API, you will:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#ObtainInstallFiles">Obtain the installation files</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Install/upgradedatabasecomponent">Install/upgrade the database component in EMS&#160;Master Calendar</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Install/upgradeAPIWebService">Install/upgrade the EMS&#160;Master Calendar API&#160;Web Service</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#ConfiguringMCforMCAPIWebServiceUse">Configure EMS&#160;Master Calendar for Master Calendar API&#160;Web Service Use</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Verify">Verify the Master Calendar API</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="ObtainInstallFiles"></a>Obtain the  Installation Files </h2>
+        <p>Please contact your Professional Services Consultant or <a href="../../../ContactUs.htm">Customer Support</a> to obtain the following components:</p>
+        <ol class="number-list">
+            <li>
+                <p><span class="ui">Master Calendar API (MCAPI.msi) </span>—Installation file.</p>
+            </li>
+            <li>
+                <p><span class="ui">MCAPI_Script.sql</span>—This SQL file is required to create the necessary API objects within your Master Calendar database.</p>
+            </li>
+        </ol>
+        <h2><a name="Install/upgradedatabasecomponent"></a>Install/Upgrade the Database Component in Master Calendar </h2>
+        <ol class="number-list">
+            <li>
+                <p><a href="#ObtainInstallFiles">Obtain the MCAPI_Script.sql file</a>. </p>
+            </li>
+            <li>
+                <p>Open Microsoft SQL Server Management Studio. </p>
+            </li>
+            <li>
+                <p>Within Microsoft SQL Server Management Studio, select <span class="ui">File </span>&gt; <span class="ui">Open </span>&gt; <span class="ui">File</span>. Locate the MCAPI_Script.sql file.</p>
+            </li>
+            <li>
+                <p>Select your Master Calendar database and execute the query (<span class="ui">Query </span>&gt; <span class="ui">Execute</span>).  When the query execution has completed, a ‘Command(s) completed successfully’ message will display in the Results section.</p>
+            </li>
+        </ol>
+        <h2><a name="Install/upgradeAPIWebService"></a>Install/Upgrade the Master Calendar API Web Service </h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, please install or upgrade your Master Calendar databases as outlined in the <a href="InstallUpgradeDatabaseComp.html">Master Calendar Installation Instructions</a>. You will also need to manually uninstall any previous versions of the Master Calendar API Web Service on your web server.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Download the MCAPI.msi file onto the web server that will be running the Master Calendar API Web Service (typically the web server that hosts your Master Calendar site.)</p>
+            </li>
+            <li>
+                <p>Run MCAPI.msi. A Welcome Screen  to the Master Calendar API Setup Wizard appears.</p>
+            </li>
+            <li>
+                <p>Click Next to begin the installation process.  The Destination Folder screen will appear.</p>
+            </li>
+        </ol>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Select the destination folder.  The installation process will create a new physical directory on your web server based on the destination folder path entered (“MCAPI” in the example above.)  Click Next.</p>
+                <p>
+                    <img src="Images/MCAPI_1.png" />
+                </p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Master Calendar API Web Service should not be installed in the same physical directory as other EMS web-based products OR under a site running another version of Master Calendar or the Master Calendar API.</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>The SQL Server and database information screen will appear.</p>
+            </li>
+        </ol>
+        <p>
+            <img src="Images/MCAPI_2.png" />
+        </p>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Enter your Master Calendar SQL Instance Name.</p>
+            </li>
+            <li>
+                <p>Enter your Master Calendar Database Name. </p>
+            </li>
+            <li>
+                <p>Click Next. </p>
+            </li>
+            <li>
+                <p>The Virtual Directory information screen will appear.</p>
+            </li>
+        </ol>
+        <p>
+            <img src="Images/MCAPI_3.png" />
+        </p>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>The Virtual Directory Name will default to the destination folder.  It is recommended that you keep the default setting.  The installation process will create a virtual directory on your web server based on the virtual directory entered (“MCAPI” in the example above.)  Click Next.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p> The Master Calendar API Web Service should not be installed in the same virtual directory as other EMS web-based products OR under a site running another version of Master Calendar or the Master Calendar API. </p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>The Ready to install Master Calendar API screen will appear.  Click   to install the Master Calendar API Web Service. </p>
+            </li>
+            <li>
+                <p>The Completed the Master Calendar API Setup Wizard screen will appear.  Click Finish.</p>
+            </li>
+        </ol>
+        <h2><a name="ConfiguringMCforMCAPIWebServiceUse"></a>Configure Master Calendar for Master Calendar API Web Service Use</h2>
+        <p> External applications require a pre-defined Master Calendar User account to authenticate to the Master Calendar API Web Service.  The Master Calendar User account should not be granted any rights within the Master Calendar application itself.  Please see the <a href="../ConfigurationGuide/ConfigUsers.html">Master Calendar Configuration Guide</a> for instructions on how to create a Master Calendar user account.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p> In the Sample Code examples below, use the Master Calendar account created in this section for the UserID and Password.</p>
+        </div>
+        <h2><a name="Verify"></a>Verify the Master Calendar API</h2>
+        <ol class="number-list">
+            <li>
+                <p>Open a browser and enter the following URL: <br />http://[ServerName]/MCAPI/MCAPIService.asmx <br />(replace [ServerName] with the name of your web server)</p>
+            </li>
+            <li>
+                <p>Your browser should return a list of API calls. Please see <a href="../ConfigurationGuide/APIfunctions.htm">API&#160;Functions</a>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

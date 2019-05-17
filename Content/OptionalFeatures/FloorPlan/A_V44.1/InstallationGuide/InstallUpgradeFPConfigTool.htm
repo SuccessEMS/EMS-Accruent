@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>Install/Upgrade Floor Plans Configuration Tool V44.1 (EMS Floor Plans)</title>
+    </head>
+    <body>
+        <h1>Install or Upgrade the Floor Plans Configuration Tool</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, please manually&#160;uninstall&#160;any previous versions of the Floor Plan Configuration Tool on your web server.&#160;</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>Run&#160;<span class="ui">EMSFloorPlanConfiguration.msi</span>.&#160;The first screen welcomes you to the EMS Floor Plan Configuration Website Setup Wizard.<p><img src="../Images/FloorPlan_Guide/Installing Upgrading the Floor_1_1.png" alt="https://success.emssoftware.com/@api/deki/files/5025/floorplanCWSSWV44.png?revision=1" class="resize80_noborder_padding" /></p></li>
+            <li>Click&#160;<span class="ui">Next&#160;</span>&#160;to begin the installation process.&#160;The&#160;Destination Folder&#160;screen will appear.<p><img src="../Images/FloorPlan_Guide/Installing Upgrading the Floor_1_2.png" alt="https://success.emssoftware.com/@api/deki/files/5024/floorplanCWSSWV44A.png?revision=1" class="resize80_noborder_padding" /></p></li>
+            <li>Click&#160;<span class="ui">Next</span>. The SQL Server and database information screen will appear.<p><img src="../Images/FloorPlan_Guide/Installing Upgrading the Floor_1_3.png" alt="https://success.emssoftware.com/@api/deki/files/5023/floorplanCWSSWV44B.png?revision=1" class="resize80_noborder_padding" /></p></li>
+            <li>Enter your SQL Instance Name, Database Name (typically "EMS") and&#160;Web Service URL (as configured in <a href="InstallUpgradeFPWebService.htm">Install Floor Plan Web Service</a>).</li>
+            <li>Click&#160;<span class="ui">Next</span>. The Virtual Directory screen will appear.<p><img src="../Images/FloorPlan_Guide/Installing Upgrading the Floor_1_4.png" alt="https://success.emssoftware.com/@api/deki/files/5022/floorplanCWSSWV44C.png?revision=1" class="resize80_noborder_padding" /></p></li>
+            <li>
+                <p>Enter a Virtual Directory Name.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The EMS Floor Plan Configuration site should&#160;not&#160;be installed in the same Virtual Directory as other EMS web-based products. The installation process will create a Virtual directory on your web server named “EMSFloorPlanConfiguration” (or the name&#160;you entered in the Virtual Directory field.)</p>
+                </div>
+            </li>
+            <li>Click&#160;<span class="ui">Next</span>. The Ready to Install... screen will appear.<p><img src="../Images/FloorPlan_Guide/Installing Upgrading the Floor_1_5.png" alt="https://success.emssoftware.com/@api/deki/files/5021/floorplanCWSSWV44D.png?revision=1&amp;size=bestfit&amp;width=630" class="resize80_noborder_padding" /></p></li>
+            <li>Click&#160;<span class="ui">Install</span>. Once complete, the&#160;Installation Complete&#160;screen will appear.&#160;</li>
+            <li>Click&#160;<span class="ui">Close</span>.&#160;</li>
+            <li>After following the steps above, verify your installation by opening a browser and entering the following URL:<p><span class="ui">http://[ServerName]/emsfloorplanconfiguration</span>&#160;(replace [ServerName] with the name of your web server).</p></li>
+        </ol>
+    </body>
+</html>

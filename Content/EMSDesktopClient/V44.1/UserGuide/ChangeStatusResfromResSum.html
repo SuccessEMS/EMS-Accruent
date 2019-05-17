@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Changing the Status for a Reservation from the Reservation Summary Tab V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Change the Status for a Reservation from the Reservation Summary Tab</h1>
+        <p>Even though the Change Booking Status Wizard is available for changing the status of multiple bookings in a reservation, most reservationists who approve reservations that are submitted from Web App do so by using the Change Status function that is available on the Reservation Summary tab in the Navigator. This is because unlike the Change Booking Status Wizard, when you use the Change Status function in the Navigator to&#160;change&#160;the status of a reservation, an option is available for automatically generating and sending a confirmation to the group for whom the reservation was made.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS administrator must grant you the appropriate security access to change the status of a booking, which includes canceling a booking. If you want to change the status of a booking using the Change Booking Status Wizard, see&#160;<a href="EditMultBookinNav.htm">Editing Multiple Bookings in the Navigator</a>.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>An email can be automatically generated and sent only if Email is selected for the Confirmation setting on the General tab of the Navigator Options dialog box, and if the group for which the reservation was made has an email address in its record. See&#160;<a href="NavigatorOverview.html#Navigator_Options_dialog_box" title="Navigator Overview" alt="Navigator Overview">Navigator Options dialog box</a>&#160;and&#160;<a href="../ConfigurationGuide/ConfigGroup.htm" title="Searching for and Configuring Groups" alt="Searching for and Configuring Groups" MadCap:conditions="General.Online Only">Search for and Configure Groups</a><a href="https://docs.emssoftware.com/Content/EMSDesktopClient/V44.1/UserGuide/SearchConfigGroupsIndividuals.htm" title="Searching for and Configuring Groups" alt="Searching for and Configuring Groups" MadCap:conditions="General.Print Only">Search for and Configure Groups</a>.</p>
+        </div>
+        <p><a name="ChangeStatusforReservation"></a>To change the status for a reservation, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>Open the reservation in the Navigator. See:<ul><li><a href="NavigatorOverview.html#OpeningResInNav">Open a reservation directly in the Navigator</a></li><li><a href="NavigatorOverview.html#ResthroughResBook">Open a reservation through the Reservation Book</a></li><li><a href="NavigatorOverview.html#OpenResThroughGroup">Open a reservation through a group</a></li><li><a href="NavigatorOverview.html#OpenResThroughSearch">Open a reservation through search</a></li></ul></li>
+            <li>In left pane in the Navigator, select the reservation that you are editing, and then on the <span class="ui">Reservation Summary</span> tab, click <span class="ui">Change Status</span>.&#160;The Change Booking Status window opens.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44.1_Navigator/Changing the Status for a.png" alt="emsum_Navigator_image023.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Change Booking Status window</p>
+        </div>
+        <ol start="3" class="number-list">
+            <li>On the Status drop-down list, select the new status for the bookings.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you select any type of Canceled status, then three additional fields—Reason, Who Canceled and Notes—are displayed on the Change Booking Status window. You must enter data in all three of these fields before you can continue in the Wizard.</p>
+        </div>
+        <ol start="4" class="number-list">
+            <li>Enter a Reconfirm Date if it is required for the new status that you selected.</li>
+            <li>Optionally, do one or both of the following:<ul><li>Leave <span class="ui">Update Reservation Status</span> selected to have the reservation-level status changed as well.</li><li>Select <span class="ui">Send Confirmation If Successful</span> to have an email automatically generated and sent to the group for whom the reservation was made.</li></ul></li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The confirmation is generated based on the system confirmation settings that you have specified. See&#160;<a href="Confirmations.html" title="Specifying your Confirmation Settings" alt="Specifying your Confirmation Settings">Specifying your Confirmation Settings</a>.</p>
+        </div>
+        <ol start="6" class="number-list">
+            <li>Click <span class="ui">Next</span>.&#160;The Select Bookings window opens. This window displays all the bookings for the selected reservation with a date greater than or equal to the current day's date and that do not have invoiced items. By default, all the bookings are selected.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Changing the Status for a_1.png" alt="emsum_Navigator_image024.png" class="resize80_noborder_padding" />
+        </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To show canceled bookings, clear <span class="ui">Hide Canceled Bookings</span>. Conversely, to hide canceled bookings, select <span class="ui">Hide Canceled Bookings</span>. To show all bookings regardless of date, clear <span class="ui">Hide Old Bookings</span>.</p>
+        </div>
+        <ol start="7" class="number-list">
+            <li>Select the booking, or CTRL-click to select the multiple bookings for which you are changing the status, and then click <span class="ui">Finish</span>.&#160;The Change Booking Status Results window opens. This window lists all the bookings for the reservation, whether the status was successfully changed or not.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Changing the Status for a_2.png" alt="emsum_Navigator_image025.png" class="resize80_noborder_padding">
+            </img>
+        </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Optionally, to view only the bookings for the selected reservation that were NOT successfully changed, select <span class="ui">Show Unchanged Only</span>. To view the details for a specific booking that was changed, select the booking, and then click <span class="ui">Go To</span>.</p>
+        </div>
+        <ol start="8" class="number-list">
+            <li>Click Close to close the Change Status Results window and return to the Navigator.</li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>If you reserve a resource and then edit the date, time, location, or status of a booking, and there is a resource inventory conflict, a Resource Inventory Conflicts report opens onscreen. If you close this report, you can manually run a Resource Inventory Conflict check. In the Bookings folder of the Navigator, select <span class="ui">Tools </span>&gt; <span class="ui">Resource Inventory Conflict</span>.</p>
+        </div>
+    </body>
+</html>

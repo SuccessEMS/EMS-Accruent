@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Introduction to EMS Platform Services</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2019-04-26T09:29:12.9875510-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to merge info in IG_Overview.htm with this information (other topic is just links to the rest of the topics in the Install Guide." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-26T09:29:43.7916261-06:00">Introduction</MadCap:annotation> to EMS Platform Services</h1>
+        <p>This topic contains introductory information regarding EMS Platform Services:</p>
+        <ul>
+            <li>
+                <p><a href="#overview">Overview</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#gettingstartedwithintegrations">Get Started with Integrations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#apidocumentation">API Documentation</a>
+                </p>
+            </li>
+        </ul>
+        <p>See Also:&#160;<a href="Architecture.html">Architecture</a> and <a href="SystemRequirements.htm">Prerequisites and Requirements</a></p>
+        <h2><a id="overview" name="overview"></a>Overview</h2>
+        <h3>What is EMS Platform Services?</h3>
+        <p>EMS Platform Services is a Platform as a Service (PaaS) solution offering modern, RESTful APIs. Platform Services enables the development of multi-platform applications that&#160;can be customized, cloud-based, scalable, and easily integrated. It&#160;is a true middle tier, providing a business and resource layer&#160;that enables the central development of applications, reducing complexity and development time. Platform Services fosters innovation by ensuring&#160;easy maintenance and efficient management of an application's life cycle.</p>
+        <p>In the current EMS architecture, databases exchange business logic directly with applications in the business tier.&#160;The Platform Services architecture creates an intermediary layer of business logic and resources that provides a buffer between the applications and EMS databases. Fixes, enhancements, and/or new features can now be dispersed simultaneously to all products through Platform Services.</p>
+        <p>See Also:&#160;<a href="Architecture.html">EMS&#160;Platform Services Architecture</a></p>
+        <h2><a id="gettingstartedwithintegrations" name="gettingstartedwithintegrations"></a>Get Started with Integrations</h2>
+        <p>Platform Services provides RESTful APIs that empower customers and partners to build custom, multi-platform applications connected to EMS. Any client/device accessing EMS Platform Services must be a registered Integration Client. The one exception is that anyone can access the public (open) API requests (/status, /health, /clientauthentication).</p>
+        <p>There are two types of Integrations:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Custom—Customer applications</p>
+            </li>
+            <li>
+                <p>Partner—Third-party EMS partner applications (e.g.,&#160;7PointsSolutions, Pepperdash,&#160;control concepts, etc.)</p>
+            </li>
+        </ul>
+        <p>Partner and Custom types can be classified as either of the following two client sub-categories:</p>
+        <ol class="number-list">
+            <li>
+                <p>User-based:&#160;User-based clients (EMS Mobile, EMS for Outlook) need to authenticate as a user  to perform any actions. These clients need an integration client role with minimal access to the following API resources (above and beyond public resources):
+
+    </p>
+                <ul>
+                    <li>
+                        <p>/authentication</p>
+                    </li>
+                    <li>
+                        <p>/logging</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Non-user Based: Non-user Based clients (EMS Kiosk, EMS Room Sign App) provide functionality independent of users but also support user-like functionality (such as Check-In and on-the-fly room reservations). These clients need a role with wider access.</p>
+            </li>
+        </ol>
+        <h3>Begin the Integration Process</h3>
+        <p>To start the integration process, follow these steps:</p>
+        <ol class="number-list">
+            <li>
+                <p>Verify if you have a license for adding Integrations. EMS Licensing manages a numeric count of both Custom and Partner Integration Types. Contact your EMS Sales Representative for a license for EMS Platform Services. View Licensing Requirements (see <a href="LicenseRequirements.html">Licensing Requirements for Platform Services</a>).&#160;</p>
+            </li>
+            <li>
+                <p>Access Platform Services documentation (e.g.,&#160;https://Yourcompany.com/EmsPlatform/swagger).&#160;</p>
+            </li>
+            <li>
+                <p>Access admin portal for Platform Services&#160;(e.g., https://Yourcompany.com/EmsPlatform/admin) to create a new Integration Client.&#160;See <a href="../ConfigurationGuide/ConfigPSinAdminPortal.html#CreateNewIntegrationClient">Configuring Platform Services in the Admin Portal</a> for more information.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Creating a new Integration Client will generate a Client ID and Secret pair.</p>
+                </div>
+            </li>
+            <li>
+                <p>Platform Services requires a valid JWT Authentication token to call any of the API resources&#160;with the exception of&#160;<tt>/public, /status</tt>&#160;and&#160;<tt>/clientauthentication</tt>. Before making any API request, you must first call&#160;<tt>/clientauthentication</tt>&#160;with a Client ID and Secret&#160;pair generated in the previous step.</p>
+                <ul>
+                    <li>
+                        <p>The Client token returned from calling /clientauthentication should be applied to the x-ems-api-token header for subsequent API requests.</p>
+                    </li>
+                </ul>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>There can be multiple active instances of a particular client interacting with the Platform. All devices that share a client/secret will share a common authentication token. If the token expires, all devices will need to authenticate again to get a new shared token.</p>
+                </div>
+            </li>
+            <li>
+                <p>For API resources that require an authenticated web user, your integration client will need to request a web user authentication token for that user. To acquire an authentication token, call the /authentication requests.</p>
+            </li>
+            <li>
+                <p>The Web token returned from calling /authentication should also be applied to the x-ems-api-token header;&#160;thus, replacing the client token with a user token.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Refer to the <a href="#apidocumentation">API documentation</a> to determine the appropriate token (i.e., client token or web token)&#160;for the header field.</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a id="apidocumentation" name="apidocumentation"></a>API Documentation</h2>
+        <p>Navigate to Platform Services URL (e.g. https://Yourcompany.com/EmsPlatform/swagger)&#160;to view the API documentation. You can also manually type in the URL (https://Yourcompany.com/EmsPlatform/swagger). </p>
+        <h3>Base URL for All API Requests</h3>
+        <p>All requests should be made to URL for EMS Platform Services (e.g.,&#160;https://Yourcompany.com/EmsPlatform).</p>
+        <h3>Date/Time Standards</h3>
+        <p>All dates and times passed to the API requests follow&#160;RFC 3339&#160;Standard and must be in UTC.&#160;</p>
+        <p>All DateTimes&#160;follow the standard (e.g.,&#160;2008-09-08T22:47:31-07:00)</p>
+        <h3>Common Response Codes</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p scope="col">Response Code</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p scope="col">Title</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p scope="col">Meaning</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Response Code" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">200</td>
+                    <td data-th="Title" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Success</td>
+                    <td data-th="Meaning" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Successful data call/pull</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Response Code" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">400</td>
+                    <td data-th="Title" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Bad Request</td>
+                    <td data-th="Meaning" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Server could not understand the request due to invalid syntax</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Response Code" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">401</td>
+                    <td data-th="Title" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Invalid/Missing Client Credential</td>
+                    <td data-th="Meaning" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">User credentials are incorrect; invalid login info</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Response Code" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">500</td>
+                    <td data-th="Title" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Server Error</td>
+                    <td data-th="Meaning" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">General status code that indicates the server encountered an unexpected condition and could not fulfill the request</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Response Code" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">503</td>
+                    <td data-th="Title" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Service Unavailable</td>
+                    <td data-th="Meaning" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Application pools are not currently enabled</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Response Code" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">519</td>
+                    <td data-th="Title" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Server Internal Error</td>
+                    <td data-th="Meaning" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">System requirements are not met</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>HTTP Request Methods</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p scope="col">Method</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p scope="col">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Method" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">GET</td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Requests data from a specified source.</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Method" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">POST</td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Sends data to the API&#160;server to create or update a resource; data sent to the server is stored in the request body of the HTTP&#160;request.</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Method" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">PUT</td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Sends data to the API&#160;server to create or update a resource (similar to POST). However, PUT&#160;requests are idempotent and calling the same PUT&#160;request multiple times will always produce the same result. Calling a POST request repeatedly might have the side effect of creating the same resource multiple times.</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Method" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">DELETE</td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Deletes the specified resource.</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Method" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">PATCH</td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">Applies partial modifications to a resource.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

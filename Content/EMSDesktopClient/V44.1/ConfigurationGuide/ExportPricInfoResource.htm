@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Export Pricing Information for a Resource V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Export Pricing Information for a Resource</h1>
+        <p>You can&#160;export&#160;any pricing information that you have configured for a resource on a per rate schedule basis from the Edit Pricing window. The information is exported to a Microsoft Excel file.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You do not need Microsoft Excel on your EMS client to export the information to the file; however, you must have Microsoft Excel on your EMS client to view the file. You can also export the pricing information for rooms and billable items after you have configured the information for the room or resource. See&#160;also: <a href="ExportPricInfoRoom.htm">Export Pricing Information for a Room</a> and&#160;<a href="ExportPricingInfoBillableItems.htm">Export Pricing Information for Billable Items</a>.</p>
+        </div>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;You Can Assign Rate Schedules to Specific Rooms and Resources. <MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you define your organization’s rate schedules, you have three options for&#160;manually&#160;assigning the prices to billable items (rooms and resources) based on these schedules:</p>
+                <ol class="number-list">
+                    <li><span class="ui">During the configuration of a room or resource.</span> When you are configuring a <a href="ConfigRooms.html">room</a> or <a href="ConfigResourcesforCat.html">resource</a>, the configuration dialog box contains a <span class="ui">Pricing </span>tab. This tab lists all the rate schedules that are currently configured in your EMS database. You can specify the pricing method for the billable item that you are configuring for each rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options.</li>
+                    <li><span class="ui">After all necessary rooms and resources are configured.</span> Both the <a href="ConfigRoomPricing.htm">Rooms</a> window and the <a href="ConfigPricingResourceEditPriceWin.htm">Resources</a> window contain a <span class="ui">Pricing </span>button. You can click <span class="ui">Pricing </span>to open an Edit Pricing window. You can use the options on this window to specify the pricing method for the billable items (rooms and resources) for a selected rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options.</li>
+                    <li><span class="ui">When rate schedules are defined. </span>The <a href="ConfigRateSchedule.htm">Rate Schedules</a> window has a <span class="ui">Pricing </span>button. After you have defined a rate schedule, you can select a rate schedule in the Rate Schedules window and click <span class="ui">Pricing </span>to open an Edit Pricing window. You can use the options on this window to specify the pricing method for every billable item for the rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>To export pricing information for a resource, complete the following steps:</p>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt;&#160;<span class="ui">Resources</span>.&#160;A list of all the categories that are currently configured in your EMS database&#160;and&#160;for which you can configure resources opens.</li>
+            <li>Select the category for which you are pricing the resources.&#160;The Resources window opens. This window lists all of the resources that are currently configured in your EMS database for the selected category and that have a status of <span class="ui">Active</span>.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWindow1.PNG" class="resize80_noborder_padding" /></p><p class="Caption">Resources Window</p></div></li>
+            <li>Click&#160;the <span class="ui">Pricing</span> button on the Resources window.&#160;The Edit Pricing window opens.<div class="TitleandImage"><p><img src="Images/DC_Resources/EditPricingWindow.PNG" alt="Desktop Client Edit Pricing window where you can " class="resize80_noborder_padding" title="Edit Pricing Window" /></p><p class="Caption">Pricing Window</p></div></li>
+            <li>From the Rate Schedule drop-down list, select the rate schedule for which you are exporting the pricing information.</li>
+            <li>From the Grouping drop-down list, do one of the following:<ul start="5"><li>Leave the Grouping drop-down list set to the default value of (all), and then click the <span class="ui">Display</span> button to display a list of all&#160;active&#160;resources in all the groupings that have been configured for the selected category.</li><li>Select a specific grouping from the drop-down list, and then click the <span class="ui">Display</span> button to display a list of all&#160;active&#160;resources in the grouping.</li></ul></li>
+            <li>Click&#160;<span class="ui">Export</span>.&#160;A Save As dialog box opens. The export file is named Pricing.xls by default. You can edit the name of the export file.</li>
+            <li>Save the file to a location of your choice.&#160;An Export Report message opens indicating that the export was successful and asks you if you want to preview the exported file.</li>
+            <li>In the Export Report message window, do one of the following:<ul start="5"><li>Click&#160;<span class="ui">Yes&#160;</span>to open the export file in Microsoft Excel. After viewing the file, you can close it to return to the Edit Pricing window.</li><li>Click&#160;<span class="ui">No&#160;</span>to close the message and return to the Edit Pricing window.</li></ul></li>
+            <li>Repeat&#160;Step 4&#160;through&#160;Step 8&#160;for each rate schedule and/or grouping for which you are exporting the information.</li>
+            <li>After you have exported all the necessary pricing information for a resource, click&#160;<span class="ui">Close</span>.&#160;The Edit Pricing window closes. The Resources window remains opens.</li>
+        </ol>
+    </body>
+</html>

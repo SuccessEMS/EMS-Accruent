@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>What Do EMS APIs Do?</h1>
+        <p>EMS APIs&#160;can be used to develop your own custom solutions for taking data from&#160;EMS&#160;and using it elsewhere, such as another software application, a digital sign, or a web page.&#160;The&#160;APIs&#160;include&#160;"Get" calls, which are used to&#160;query&#160;data that already exists in&#160;EMS.&#160;Also included is the use of "Update" calls to add or&#160;update&#160;information in&#160;EMS. There is an additional charge for APIs. For pricing, or more information,&#160;contact&#160;a sales representative. </p>
+        <p>You can use our APIs&#160;to develop your own custom solutions for taking data from&#160;EMS&#160;and using it elsewhere, to&#160;display information on calendars, websites, digital signage, and to&#160;integrate&#160;with third-party service systems.&#160;Our APIs&#160;include&#160;"Get" calls, which are used to&#160;query&#160;data that already exists in&#160;EMS, and "Update" calls, to add or&#160;update&#160;information in&#160;EMS.&#160;The EMS API and connectors provide connections for most integrations, including:</p>
+        <ul class="ul_5">
+            <li class="mt-font-size-135pt_2">Human Resources Information Systems</li>
+            <li class="mt-font-size-135pt_2">Facilities Management Systems</li>
+            <li class="mt-font-size-135pt_2">Resource Management Systems</li>
+            <li class="mt-font-size-135pt_2">Microsoft Exchange / Outlook</li>
+            <li class="mt-font-size-135pt_2">Integrated Authentication</li>
+            <li class="mt-font-size-135pt_2">Video Conferencing</li>
+            <li class="mt-font-size-135pt_2">Student Information Systems (Sis)</li>
+            <li class="mt-font-size-135pt_2">Digital Signage</li>
+            <li class="mt-font-size-135pt_2">Building Automated Control Systems</li>
+        </ul>
+        <p class="p_27">Many partners use the API to integrate with digital signage, lecture capture, HVAC systems, create their own EMS Mobile App, and much more.</p>
+        <ul class="ul_5">
+            <li class="li_17">Retrieve and Manipulate&#160;EMS data with more than 44 read-only API calls.</li>
+            <li class="li_17">Add and Update data directly into EMS with more than 87 updating calls.</li>
+            <li class="li_17">Integrate&#160;EMS with digital signage, lecture capture, HVAC systems</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To use our APIs, you purchase additional software:&#160;the .msi installer, and&#160;a&#160;SQL file which you use to install the&#160;EMS API Web Service; this enables you to connect your database.&#160;The Basic API and the Advanced API are optional licenses&#160;available&#160;for an additional cost.&#160;EMS Mobile App can be&#160;customized through&#160;EMS Platform Services (a REST-based API).&#160;</p>
+            <p>For pricing&#160;or more information,&#160;contact your EMS Account Executive.</p>
+        </div>
+        <h2>Examples of How EMS APIs Streamline Data and Increase Configurability&#160;</h2>
+        <p class="NormalWeb_15">A leading management consulting firm with over 250,000 employee has used EMS for more than 10 years to schedule and manage Classrooms, Lobby Areas, Meeting and Conference Rooms, Hot Desks, Parking Spaces and Video Conference Rooms. Their EMS implementation manages 330 customer buildings around the world, comprising 33,095 rooms and hot-desks. In 2011, the number of bookings scheduled was 2,234,086.&#160;</p>
+        <p class="NormalWeb_15">There is no limit&#160;on the amount of data you can pull through the API. The EMS API provide numerous call filters so you can request an efficient and targeted set of data. This helps reduce the workload on the EMS system. It also improves the performance of your solution, so no extraneous data is processed.&#160;</p>
+        <p class="NormalWeb_15">EMS APIs provide infinite configurability by enabling you to completely customize your API calls and returns.</p>
+        <h3>EventTypes and StatusTypes</h3>
+        <p class="NormalWeb_15">You define your organization's EventTypes&#160;and Statuses; you can retrieve a list of these calls using the GetEventTypes and GetStatusTypes&#160;calls.&#160;Status types, for example, are as follows:</p>
+        <ul class="ul_5">
+            <li class="li_21"><span class="ui">Booked Space</span>—the room is taken out of inventory and cannot be reserved by another booking. (The system prevents the space from being double-booked.)</li>
+            <li class="li_21"><span class="ui">Cancel</span>—booking information is retained, but the room is released back into inventory</li>
+            <li class="li_21"><span class="ui">Info Only</span>—Booking information is retained, but the space is not taken out of inventory</li>
+            <li class="li_21"><span class="ui">Wait</span>—booking information is retained in case the space becomes available prior to the event date</li>
+        </ul>
+        <p class="NormalWeb_15">StatusTypeIDs are as follows: </p>
+        <ul>
+            <li>-14 = Booked Space</li>
+            <li>-11 = Info Only</li>
+            <li>-13 = Wait</li>
+            <li>-12 = Cancel</li>
+        </ul>
+        <h3>DisplayOnWeb</h3>
+        <p class="NormalWeb_15">The GetEventTypes and GetStatuses calls above both return a field called DisplayOnWeb. You set this field when defining a new EventType or a new Status, to either Yes or No.&#160;DisplayOnWeb is the field used in EMS web interfaces, including EMS Web App&#160;and EMS Kiosk, to determine whether to display an event.&#160;Taken one step further, you can also determine which EventTypes and Statuses may be displayed (DisplayonWeb=Yes). You can use those EventTypes and Statuses as filters on some&#160;GetBooking calls; the result is you see&#160;just the booking data needed, rather than pulling in all data and then discarding a long list of bookings. &#160;&#160;</p>
+        <h2>Learn more about EMS&#160;API Functions</h2>
+        <p>EMS APIs are intended for programmers who are familiar with:</p>
+        <ul>
+            <li>XML</li>
+            <li>Web services</li>
+            <li>Query or SOAP</li>
+            <li>REST (EMS Platform Services for EMS Mobile App)</li>
+            <li>One or more programming languages</li>
+        </ul>
+        <p>EMS Software provides support for APIs and answers questions on data structure, however, we do not code these integrations.</p>
+        <p>Click <a href="../OptionalFeatures/EMS_API/A_V44.1/EMSAPIfunctions_ADDOperation.html">here</a> to see our APIs.</p>
+        <h2>How Do I Install It?</h2>
+        <p class="p_26">To use EMS APIs, you will:</p>
+        <ul class="ul_5">
+            <li class="li_22">Obtain and Install Database Components</li>
+            <li class="li_22">Install the EMS API Web Service</li>
+            <li class="li_22">Configure and Verify EMS for EMS API Web Service Use</li>
+            <li class="li_22">Work with the API Functions</li>
+        </ul>
+        <p>See Also:&#160;<a href="../EMS_SystemReq_44.1.html">System Requirements</a></p>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Master Calendar Release Notes <br />V44.1, Update 34</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 215px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 34</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />TBD<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />TBD<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Data Connectors</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Data connector timed out</p>
+                        <p class="RNBody">Connectors timed out when there was a large amount of data on them. </p>
+                        <p class="RNBodyBeforeList"><b>Fix:</b>&#160;Modified functionality so that the data connectors can handle large data without timing out.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=27175" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">27175</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Data Connectors</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Data connectors were not updating successfully</p>
+                        <p class="RNBodyBeforeList">For users with a larger number of connectors configured and running (&gt;20), connectors were not updating successfully over time. </p>
+                        <p class="RNBodyBeforeList">For example:&#160; </p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>04/08/2017 — 22 Connectors Updated</p>
+                            </li>
+                            <li>
+                                <p>04/09/2017 — 22 Connectors Updated</p>
+                            </li>
+                            <li>
+                                <p>04/10/2017 —  22 Connectors Updated</p>
+                            </li>
+                            <li>
+                                <p>04/11/2017 —  20 Connectors Updated</p>
+                            </li>
+                            <li>
+                                <p>04/12/2017 — 12 Connectors Updated</p>
+                            </li>
+                        </ul>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that all connectors update successfully over time. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=30219&amp;_a=edit&amp;triage=true" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">30219</a><br />(For&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">iCal</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">iCal feeds were not updating properly</p>
+                        <p class="RNBody">Changes to events in EMS&#160;Master Calendar were not correctly reflecting in Microsoft Outlook using iCal feeds.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that changes made in EMS&#160;Master Calendar are reflected using iCal feeds. </p>
+                        <p class="RNRef">Internal References #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=32500" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">32500</a> &amp;&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33030" class="RNRefHyper" title="For Internal Use Only" alt="For Internal Use Only">33030</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">RSS&#160;Feeds</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Following EMS&#160;Master Calendar updates RSS&#160;feeds not working</p>
+                        <p class="RNBody">After updating EMS&#160;Master Calendar, the RSS feeds returned no data. In addition, creating new RSS Feeds also returned no data.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that RSS&#160;feeds pull events that adhere to the RSS&#160;Feed Configuration.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33227" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">33227</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

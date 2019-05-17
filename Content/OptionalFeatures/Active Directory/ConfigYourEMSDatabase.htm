@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Configure Your EMS Database</h1>
+        <ol class="number-list">
+            <li>
+                <p>Using Microsoft SQL Server Management Studio,&#160;<a href="Pre-InstallReqs.htm">add a login for the EMS Active Directory security group</a>.&#160;</p>
+            </li>
+            <li>
+                <p>Under the User Mapping area, map the login to your EMS database. Add the&#160;<span class="ui">db_datareader</span>&#160;and&#160;<span class="ui">db_datawriter&#160;roles</span>. &#160;&#160;</p>
+            </li>
+            <li>
+                <p>Repeat Step 2 for the EMS_Master database.&#160;</p>
+            </li>
+            <li>
+                <p>Using Microsoft SQL Server Management Studio, execute the following statement against your EMS database:&#160;</p>
+                <p>sp_addrolemember 'EMS_Role', 'securitygroup' &#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Replace&#160;<span class="ui">securitygroup&#160;</span>with the name of your EMS Active Directory security group.</p>
+                </div>
+            </li>
+        </ol>
+        <ol class="number-list" MadCap:continue="true">
+            <li>
+                <p>Repeat Step 4 for the EMS_Master database.&#160;<br />&#160;</p>
+            </li>
+        </ol>
+    </body>
+</html>

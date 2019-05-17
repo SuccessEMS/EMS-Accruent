@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="8.5in" Height="11in" Padding="20px" PageSize="custom" PageType="normal" PaddingRight="0" PaddingLeft="0" PaddingTop="0" PaddingBottom="0" Name="Normal" BackgroundRepeat="no-repeat" BackgroundPositionX="575px" BackgroundPositionY="50px" BackgroundImage="../Images/title_logowhite.png">
+        <Frame X="87px" Y="99px" Width="638px" Height="845px" Flow="body" Right="91px" Bottom="112px" Anchors="" ColumnCount="1" ColumnGap="20px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="1px" Y="957px" Width="816px" Height="100px" Flow="footer" BorderTopStyle="solid" BorderTopWidth="2pt" BorderTopColor="#c2c2c2" BackgroundType="Solid" BackgroundColor="#d9d9d9" Anchors="" Right="-1px" Bottom="-1px" VerticalAlign="middle" TextAlign="left" PaddingTop="0" PaddingLeft="50px" PaddingRight="50px" PaddingBottom="0">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body xhtml:class="title_footerdecor">
+                        <xhtml:table xhtml:style="width: 802px;mc-table-style: url('../TableStyles/Border_table_alternate_colors.css');" xhtml:class="TableStyle-Border_table_alternate_colors" xhtml:cellspacing="12">
+                            <xhtml:col xhtml:style="width: 379px;" xhtml:class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                            <xhtml:col xhtml:class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <xhtml:td xhtml:class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Accruent Confidential and Proprietary, Copyright ©&#160;2019</xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;" xhtml:class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">Page | <MadCap:variable xhtml:name="System.PageNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="0px" Y="0px" Width="816px" Height="98px" Flow="header" BackgroundType="Solid" BackgroundColor="transparent" Anchors="" BackgroundRepeat="no-repeat" BackgroundPositionX="80px" BackgroundPositionY="30px" Right="0px" Bottom="958px" PaddingTop="100px" BackgroundImage="none">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="50px" Y="36px" Width="209px" Height="32px" Flow="decoration0" Right="557px" Bottom="988px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>
+                            <xhtml:img xhtml:src="../Common (Printed)/Accruent_logo_blue.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xhtml:style="width: 200px;height: auto;" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="263px" Y="19px" Width="9px" Height="56px" Flow="decoration1" Right="544px" Bottom="981px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p><xhtml:span xhtml:style="font-size: 20pt;"><xhtml:span xhtml:style="color: #00609c; font-size: 28pt;">|</xhtml:span> </xhtml:span>
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="274px" Y="32px" Width="295px" Height="36px" Right="247px" Bottom="988px" Flow="decoration2" FlowIndex="1">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;&#160;&#160;<xhtml:img xhtml:src="../Common (Printed)/Blue_Product_Logos/vxMaintain.png" xhtml:style="width: auto;vertical-align: bottom;padding-top: 5px;margin-top: 3px;height: 30px;" MadCap:mediastyle="@media print { width: auto;height: 30px; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Operating System</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">IIS VERSION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Windows Server 2016</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">10.0</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Windows Server 2012</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>8.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Windows Server 2012 R2</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>8.5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Windows Server 2016</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1"><b><MadCap:annotation MadCap:createDate="2019-04-26T08:43:27.3293312-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="**IMPORTANT**\r\nUsing condition Topic_Hide_A to hide information. Currently, only info is being hidden for GSuite in the IntroInstallation topic. To use the snippet condition, select Topic Properties &gt; Snippet Condition and select Include for Topic_Hide_A." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-26T08:45:20.5116563-06:00">Prerequisites</MadCap:annotation></b>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Application Pool Running&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>(2.0 or 4.0 depending on the EMS&#160;Software Application)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>.NET Framework 4.6.1**</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2" MadCap:conditions="General.Topic_Hide_A">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="2">
+                        <p><b>Minimum System Requirements</b>
+                        </p>
+                        <p>Processor: 2.0 GHz and 4 cores or faster <br />Memory: 8 GB or more** <br />Hard-Disk Space: 1 GB or more</p>
+                        <p>*For up to 100 concurrent users.&#160;Increased specs required for 100+ concurrent users.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="General.Topic_Hide_A">*Requires an update to Windows Management Framework to version 3.<br />**= varies per EMS Software Application</p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12" MadCap:conditions="General.Edit_in_Review">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" MadCap:conditions="General.Topic_Hide_B" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" MadCap:conditions="General.Topic_Hide_B" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" MadCap:conditions="General.Topic_Hide_B" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2019-04-25T12:40:52.4812537-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Not sure what this table is for. It is currently set as &quot;in review.&quot; Need to ask POs." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-25T12:41:33.0155112-06:00">Software </MadCap:annotation>Module</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>.NET Version</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>IIS App Pool</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Desktop Web Deploy</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>4.5.2</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>4.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Virtual EMS</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>3.5</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>2.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus Web Service</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>3.5</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>2.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus Planning Interface</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>4.6.1</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>4.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Floor Plan Configuration</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>3.5</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>2.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Room Diagramming Service</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>3.5</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>2.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="Strong_1">PAM Web Service</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>3.5</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>2.0</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

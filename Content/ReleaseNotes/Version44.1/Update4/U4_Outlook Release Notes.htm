@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="3975" MadCap:lastWidth="1186" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS for Outlook <br />Release Notes <br />V44.1, Update 4</h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 957px;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 266px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 389px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 299px;" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">V44.1 Update 4</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Release&#160;Date:&#160;<br />September 19, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_12">Build #:&#160;<br />44.1.191.0</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 955px;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 184px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 771px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">New Booking &gt; Add Resources</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Excluded Resources Allowed</p>
+                        <p class="RNBody">When making a new reservation and adding resources, users were able to choose services that were excluded from the selected rooms.&#160;</p>
+                        <p class="RNBody">Fix: Enforced the excluded resources rule so that users cannot add services that are excluded for certain rooms.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;22998</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">New Booking &gt; Commit Date</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">"Commit Date" Message Persists After Clicking Commit Dates Option</p>
+                        <p class="RNBody">When booking a space in EMS for Outlook and clicking the Commit Dates option, the message "Commit Date" presented&#160;persistently and prevented users from selecting different dates.</p>
+                        <p class="RNBody">Fix:&#160;Changed the display so the message does not persist and users can change the date.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;22112</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">New Recurring Event</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">New Recurrent Meeting With Attendees Automatically Canceled</p>
+                        <p class="RNBody">When booking a recurrent meeting using a single room&#160;and adding attendees in the&#160;To:&#160;field, an error occurred: "Reservation [###] has been canceled."&#160;</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so the error no longer occurs and users can create this type of event.</p>
+                        <p class="RNTitle">Multiple Confirmation Emails Triggered by Changing Recurrence, Cancellation, and Conflicts in&#160;Recurrent Meetings</p>
+                        <p class="RNBody">When changing the recurrence, canceling, or raising a conflict in a&#160;recurrent meeting, the same number of&#160;individual confirmation emails were generated for each change as there were occurrences.</p>
+                        <p class="RNBody">Fix: Modified functionality so that only one confirmation email triggers for these types of changes.&#160;</p>
+                        <p class="RNTitle">Conflicted&#160;Booking Shows on Calendar After "Proceed Without Alternative"</p>
+                        <p class="RNBody">When booking a recurring meeting&#160;in conflict by clicking the&#160;Proceed without alternate&#160;option during the conflict resolution process, the blocking event still&#160;showed on the calendar.</p>
+                        <p class="RNBody">Fix:&#160;Modified the calendar so that blocking events are canceled and removed from the calendar in this situation.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #s:&#160;&#160;23141, 22893, 23013</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">New Booking &gt; Search for Space</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Load Default Criteria Button Fails</p>
+                        <p class="RNBody">When booking an event and searching for&#160;space, clicking the Load Default Criteria button, the wrong information appeared.</p>
+                        <p class="RNBody">Fix:&#160;Removed the button.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;23043</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">View Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Cancel and Edit Options&#160;Missing from View Reservation</p>
+                        <p class="RNBody">When viewing a reservation, the Cancel and Edit options did not appear next to the reservation.</p>
+                        <p class="RNBody">Fix:&#160;Modified the display so that the options show next to the reservation. Also, added a confirmation message for cancellations.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;22327</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Email Notifications</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Confirmation Formats for Outlook Meetings&#160;Do Not Match&#160;EMS Web App</p>
+                        <p class="RNBody">Email confirmations were different when sent for a booking made in Outlook versus&#160;Web App&#160;when&#160;using the same booking template.</p>
+                        <p class="RNBody">Fix:&#160;Modified Outlook&#160;notifications to match the format for EMS Web App.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;23227</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

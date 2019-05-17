@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Align Your Source Data for HR Toolkit</h1>
+        <p>You can use the specifications below to make sure your source data will import correctly into EMS.</p>
+        <p>The HRTK_Update_Group stored procedure contains all of the logic to create your EMS Contact, Group and Everyday Applications (web) User data. Records are imported into EMS from the EMS_Staging database according to the specifications below.</p>
+        <p> This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li>Two baseline setups for the staging data:<ul><li><a href="#HybridSetup">Hybrid Setup </a></li><li><a href="#GroupGroupType">Group-Group Type Setup</a></li></ul></li>
+            <li><a href="#GroupTypeRecord">Group Type Records</a>
+            </li>
+            <li><a href="#GroupRecords">Group Records</a>
+            </li>
+            <li><a href="#ContactRecords">Contact Records</a>
+            </li>
+        </ul>
+        <p>Below are the baseline staging database fields for both <a href="#Hybrid">Hybrid</a> and <a href="#GroupGroupType">Group-Group Type</a> Setups.  Please note that your EMS&#160;HR Toolkit staging database may be different.  Please contact your Professional Services Consultant if you are unsure of what EMS&#160;HR Toolkit setup you are using.</p>
+        <h2><a name="HybridSetup"></a>Hybrid Setup</h2>
+        <p>In some instances, it may be necessary to combine elements of the Group/Group Type model&#160;into a Hybrid data model. This is typically necessary when you will have some Everyday Application&#160;Users belonging to a department while other Everyday Application&#160;Users are not part of a department and are simply using <a href="ConfigWebAppforHRTK.htm">EMS Web App</a>&#160;on their own. </p>
+        <p>For example,&#160;for study rooms on college campuses, students on campus could have access to EMS Web App&#160;to book these study spaces, but they may not all belong to a Group (department), and therefore are created following the Group/Group Type rules. Additionally, it is possible to have users that belong to both individual Groups and organizational Groups.&#160;For instance, John Doe could be created as a contact for the History department as well as an individual Group.&#160;You should work with your Professional Services Consultant for guidance on whether the Hybrid data model&#160;is right for you. &#160;</p>
+        <p class="Caption"><a name="Hybrid"></a>Baseline Stage Database Fields for Hybrid Setup </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 185px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 221px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 365px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>EMS Staging Field (varchar)</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Writes Data to EMS Database Fields</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Requirements/Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">PersonnelNumber&#160;</span>(255)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact.External Reference</p>
+                        <p>WebUser.ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">REQUIRED </span>Part of Primary Key Cluster.&#160;Unique identifier (e.g. Employee/Student ID, Personnel Number, etc.) for each web user.&#160; Used for purposes of creating /updating EMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">FirstName&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">LastName&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact.Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Title&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.Title</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">MiddleInitial&#160;</span>(10)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact .Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">EMailAddress&#160;</span>(75)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.EmailAddress</p>
+                        <p>WebUser.EmailAddress</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">REQUIRED </span>for Web User creation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Phone&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact.Phone</p>
+                        <p>WebUser.Phone</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Fax&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.Phone</p>
+                        <p>WebUser.Fax</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Address1&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact.Address1</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Address2&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.Address2</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">City&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact.City</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">State&#160;</span>(3)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.State</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">ZipCode&#160;</span>(10)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Contact.ZipCode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Country&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.Country</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">NetworkID&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>WebUser.NetworkID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">REQUIRED </span>for Integrated Authentication.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">GroupID&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">REQUIRED.</span>&#160;&#160;Unique identifier for each group.&#160;&#160;Along with PersonnelNumber, part of primary key cluster. If (Hybrid) for Group/GroupType functionality must be 0.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">GroupName&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.GroupName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">REQUIRED </span>only for Everyday Application User associated with Groups. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p><span class="ui">GroupType&#160;</span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Group.GroupTypeID</p>
+                        <p>GroupType.Description if unique</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p><span class="ui">REQUIRED </span>only for Everyday Application User associated with Groups. Associates groups with group types. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="GroupGroupType"></a>Group-Group Type Setup</h2>
+        <p>The <span class="ui">Group/Group Type</span> setup categorizes User records by group and group type and does not create Contacts under the Groups imported into the EMS&#160;HR Toolkit. </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS environment may use different names for Groups and Contacts, such as Employee.</p>
+        </div>
+        <p class="Caption">Baseline Stage Database Fields for Group-Group Type Setup</p>
+        <table style="width: 570px;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 187px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 184px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 403px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>EMS Staging Field (varchar)</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Writes Data to EMS Database Fields</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Requirements/Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">PersonnelNumber </span>(20)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.ExternalReference	</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><![CDATA[	]]><span class="ui">REQUIRED </span>Unique identifier (e.g. Employee/Student ID, Personnel Number, etc.) for each web user.  Used for purposes of creating /updating EMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">FirstName </span> (50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.GroupName
+WebUser.UserName
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Must have at least 1 of 3. Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">LastName </span> (50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.GroupName
+WebUser.UserName
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must have at least 1 of 3. Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Title </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Contact.Title</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">MiddleInitial </span>(10)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.Group Name
+WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must have at least 1 of 3. Built in EMS as LastName, FirstName Middle Initial. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">EMailAddress </span>(75)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.EmailAddress
+WebUser.EmailAddress
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">REQUIRED </span>for Web User creation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Phone </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.Phone
+WebUser.Phone
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Fax </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.Fax
+WebUser.Fax
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Address1 </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.Address1</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Address2 </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.Address2</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">City </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.City</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">State </span>(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.State</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">ZipCode</span> (10)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.ZipCode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Country</span> (50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.Country</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">BillingReference</span> (50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group.BillingReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Can be null.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">NetworkID</span> (50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Group.NetworkID
+WebUser.NetworkID
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">REQUIRED </span>for Integrated Authentication.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p><span class="ui">GroupType</span> (50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>GroupType.Description if unique Group.GrouptypeID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><span class="ui">REQUIRED </span>for assignment of Group Type to groups. Will assign GroupType of (None) when left blank or null.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="GroupTypeRecord"></a>Group Type Records&#160;</h2>
+        <ul class="unorder-list">
+            <li>Unique GroupTypes in EMS_Staging.tblPeople are added to the Group Types table in EMS (EMS.tblGroupType). Group Types are not updated or de-activated.</li>
+        </ul>
+        <h2><a name="GroupRecords"></a>Group Records&#160;</h2>
+        <ul class="unorder-list">
+            <li>Groups that exist in EMS_Staging.tblPeople, but not in EMS.tblGroup (based on EMS_Staging.tblPeople.PersonnelNumber and EMS.tblGroup.ExternalReference) will be created in EMS.</li>
+            <li>For Groups that exist in EMS_Staging.tblPeople and in EMS.tblGroup, GroupName (tblPeople.LastName, tblPeople.FirstName) and GroupType changes in EMS_Staging will be updated in EMS.</li>
+            <li>Groups that exist in EMS.tblGroup, but not in EMS_Staging.tblPeople will be de-activated in EMS.</li>
+            <li>An Everyday User Account will be created for each group.</li>
+        </ul>
+        <h2><a name="ContactRecords"></a>Contact Records&#160;</h2>
+        <ul class="unorder-list">
+            <li>Contacts that exist in EMS_Staging.tblPeople, but not in EMS.tblContact (based on EMS_Staging.tblPeople.PersonnelNumber and EMS.tblContact.ExternalReference), will be created in EMS. A Web User account will also be created for the Contact in EMS and the Group record will be automatically assigned to the Contact’s Web User record. This allows the Contact to make a reservation on behalf of the Group in EMS Web App.</li>
+            <li>For Contacts that exist in EMS_Staging.tblPeople and in EMS.tblContact, any/all changes to the Contact’s information (name, address, etc.) in EMS_Staging will be updated in EMS.</li>
+            <li>Contacts that exist in EMS.tblContact, but not in EMS_Staging.tblPeople will be de-activated in EMS.</li>
+        </ul>
+    </body>
+</html>

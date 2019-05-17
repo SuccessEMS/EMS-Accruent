@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Configure EMS Desktop Client</h1>
+        <ol class="number-list">
+            <li>
+                <p>Go to an EMS desktop client user’s PC and open the Registry Editor.&#160;</p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>Registry changes can cause irreversible damage if done incorrectly.</p>
+                </div>
+            </li>
+            <li>
+                <p>Locate and expand&#160;<span class="ui">HKEY_CURRENT_USER</span>.&#160;</p>
+            </li>
+            <li>
+                <p>Locate and expand&#160;<span class="ui">Software</span>.&#160;</p>
+            </li>
+            <li>
+                <p>Locate and expand&#160;EMS&#160;Software if you use V44.1, or <span class="ui">Dean Evans and Associates</span>&#160;if you use EMS V43 or V44.&#160;</p>
+            </li>
+            <li>
+                <p>Navigate to and select your EMS product folder (e.g. EMS Workplace 6.0).&#160;</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Configuring EMS Desktop Client_1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Right-click, select&#160;<span class="ui">New</span>, and add a&#160;<span class="ui">DWORD (32-bit) Value</span>.&#160;</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Configuring EMS Desktop Client_2.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Rename the&#160;<span class="ui">New Value #1</span>&#160;entry to&#160;<span class="ui">UseAuthentication</span>.&#160;</p>
+            </li>
+            <li>
+                <p>Modify the&#160;<span class="ui">Value&#160;</span>data field to 1.&#160;</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Configuring EMS Desktop Client_3.png" class="padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Launch your EMS Desktop Client&#160;application to verify connectivity.&#160;</p>
+            </li>
+        </ol>
+    </body>
+</html>

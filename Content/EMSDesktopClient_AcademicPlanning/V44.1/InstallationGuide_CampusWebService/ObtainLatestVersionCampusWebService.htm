@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Obtain Latest Version of Campus Web Service V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Obtain the Latest Version of EMS Campus Web Service</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>EMS&#160;Cloud Customers must contact <a href="../../../ContactUs.htm">EMS Support</a> or their Professional Services Consultant to obtain the files below.&#160;All other customers can obtain the files from the Downloads area of Accruent Access. <MadCap:snippetText src="../../../DownloadsArea.flsnp" /></p>
+        </div>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">EMSCampusWebService.msi—</span>EMS Campus Web Service installation file.</p>
+            </li>
+            <li>
+                <p><span class="ui">Views.sql<span class="ui">—</span></span>Script that will create EMS Campus specific views in your SIS that the EMS Campus Web Service will use to query/update data.</p>
+            </li>
+            <li>
+                <p><span class="ui">Queries.xml<span class="ui">—</span></span>SIS-specific configuration file used by the EMS Campus Web Service to connect to your SIS.&#160;</p>
+            </li>
+        </ul>
+        <h2>Install the EMS Campus Views</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>EMS Campus clients using the tab-delimited file option can skip to the&#160;<a href="SysReqPrereq.htm">System Requirements and Prerequisites for EMS Campus Web Service</a> section.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Obtain the&#160;Views.sql&#160;file (required for new EMS Campus installations AND upgrades.)</p>
+            </li>
+            <li>
+                <p>Create an EMS Campus specific account (name and password are arbitrary) in the SIS database that has been granted permissions to execute the EMS Campus views and has update privileges on the table used to store course meeting information.&#160; This account will be used by the EMS Campus Web Service to connect, query, and update your SIS via the views created by the&#160;Views.sql&#160;file.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>For a list of permissions by table for your particular SIS, please contact your Professional Services Consultant.</p>
+                </div>
+            </li>
+            <li>
+                <p>Execute&#160;Views.sql&#160;against your SIS database.&#160; </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Depending on your database management system, you might need to execute the&#160;Views.sql&#160;file using the account created in Step 2.</p>
+                </div>
+            </li>
+            <li>
+                <p>Complete the following additional steps based on your SIS Database Management System.</p>
+            </li>
+        </ol>
+        <h2>Microsoft SQL Server</h2>
+        <p>No further steps are required.</p>
+        <h2>Oracle</h2>
+        <ol class="number-list">
+            <li>
+                <p>Install the Oracle Client (version 11.1.x or 11.2.x) on your web server.&#160; Choose the ‘Administrator’ installation type option.</p>
+            </li>
+            <li>
+                <p>Using the Oracle Net Manager, create a TNSNAMES.ora file.</p>
+            </li>
+            <li>
+                <p>Verify that the PATH Environment Variable references the location of your TNSNAMES.ora file.</p>
+            </li>
+            <li>
+                <p>Create a TNS_ADMIN Environment Variable to point to the location of your TNSNAMES.ora file.</p>
+            </li>
+            <li>
+                <p>Grant to the Authenticated Users group Read + Execute privileges on your main Oracle directory.&#160; Make sure that permissions are propagated to all child objects.</p>
+            </li>
+            <li>
+                <p>Reboot your web server.</p>
+            </li>
+            <li>
+                <p>Launch SQL Plus and log-in.</p>
+            </li>
+            <li>
+                <p>Execute the following statement to verify connectivity to your Oracle-EMS buildings view.</p>
+            </li>
+            <li>
+                <p>Select * from ems_vwbuildings.</p>
+            </li>
+        </ol>
+        <h2>IBM UniData</h2>
+        <p>UniData comes with the following tools, which must be installed:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Visual Schema Generator (VSG) – Used to build views and sub-tables for EMS Campus.</p>
+            </li>
+            <li>
+                <p>ODBC Client Software.</p>
+            </li>
+        </ul>
+        <h2>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

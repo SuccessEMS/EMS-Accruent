@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Installing/Upgrading the Master Calendar Web Service</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Install or Upgrade the Master Calendar Web Service</h1>
+        <p>Once you meet the&#160;<a href="SystemRequirementsandPrerequisites.html">prerequisites</a>,&#160;<a href="ObtainingMCInstallationFiles.html">download the installation files</a>, <a href="RunningMCInstaller.html">run the Master Calendar Installer</a>, and <a href="InstallUpgradeDatabaseComp.html">install/upgrade the Database Component</a>,&#160;you will need to do the following:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#To_install/upgrade_the_API_Web_Service,_do_the_following">Install/Upgrade the API Web Service</a>
+            </li>
+            <li>(Optional) <a href="../ConfigurationGuide/VerifyMCAPI.html">Verify the Master Calendar API installation</a></li>
+        </ul>
+        <h2><a name="To_install/upgrade_the_API_Web_Service,_do_the_following"></a>Install/Upgrade the API Web Service</h2>
+        <ol class="number-list">
+            <li>Download the MCAPI.msi file onto the web server that will be running the Master Calendar API Web Service (typically the web server that hosts your EMS&#160;Master Calendar site). </li>
+            <li>Run <span class="ui">MCAPI.msi</span>. </li>
+            <li>The first screen welcomes you to the Master Calendar API Setup Wizard.&#160;Click <span class="ui">Next </span>to begin the installation process.&#160; The Destination Folder screen will appear. <p><img src="../images/A_Installation/MC_InstallUpgradeMCWebService_DestinationFolder.png" class="padding_only" /></p></li>
+            <li value="4">Select the destination folder. The installation process will create a new physical directory on your web server based on the destination folder path entered (“MCAPI” in the example above).&#160;Click <span class="ui">Next</span>. <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Master Calendar API Web Service should not be installed in the same physical directory as other EMS web-based products OR under a site running another version of Master Calendar or the Master Calendar API.</p></div></li>
+            <li value="5">The SQL Server and database information screen will appear. <p><img src="../images/A_Installation/MC_InstallUpgradeMCWebService_SQLServerdatabase.png" class="padding_only" /></p></li>
+            <li value="6">Enter your Master Calendar SQL Instance Name. </li>
+            <li value="7">Enter your Master Calendar Database Name. </li>
+            <li value="8">Click <span class="ui">Next</span>. </li>
+            <li value="9">The Virtual Directory information screen will appear.&#160;&#160; <p><img src="../images/A_Installation/MC_InstallUpgradeMCWebService_VirtualDirectoryinformation.png" class="padding_only" /></p></li>
+            <li value="10">The Virtual Directory Name will default to the destination folder specified in Step 4.&#160;It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“MCAPI” in the example above).&#160;Click <span class="ui">Next</span>. <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Master Calendar API Web Service should not be installed in the same virtual directory as other EMS web-based products OR under a site running another version of Master Calendar or the Master Calendar API. </p></div></li>
+            <li value="11">The Ready to install Master Calendar API screen will appear. Click&#160; <span class="ui">Install&#160;</span>to install the Master Calendar API Web Service. </li>
+            <li value="12">The Completed the Master Calendar API Setup Wizard screen will appear.&#160;Click <span class="ui">Finish</span>.&#160;&#160;</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the EMS Platform Services Admin Portal.&#160;</p>
+            </li>
+            <li>
+                <p>Select <span class="ui">Integrations</span>. Under Clients, click on the EMS Web App link.</p>
+            </li>
+            <li>
+                <p>Click the <span class="ui">Reset Secret</span> button and copy the generated Secret.</p>
+            </li>
+            <li>
+                <p>In the web.config file located in the designated folder for your current version of EMS, insert the copied Secret&#160;ID into the value field.&#160;</p>
+                <div class="indent"><pre>&#160; &#160; &lt;add key="platformServicesSecret" value="YourSecretID" /&gt;</pre>
+                </div>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>EMS Cloud Services customers do not need to generate a Secret or insert it into the web.config file (<MadCap:annotation MadCap:createDate="2019-04-26T08:11:10.5110400-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="**IMPORTANT**\r\nWhen adding this snippet to topics, make sure to set conditions for this snippet in the topic's Topic Properties &gt; Snippet Conditions tab &gt; select include/exclude Topic_Show_ A or Topic_Show_B. Select based on how this snippet is included in the topic. \r\n\r\nUse A if the snippet is nested under a numbered step.\r\nUse B if the snippet is not nested. " MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-26T08:14:23.4894840-06:00">Steps</MadCap:annotation><MadCap:conditionalText MadCap:conditions="General.Topic_Show_B"> 3 </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Topic_Show_A"> c </MadCap:conditionalText>and<MadCap:conditionalText MadCap:conditions="General.Topic_Show_B"> 4</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="General.Topic_Show_A"> d</MadCap:conditionalText>).</p>
+                </div>
+            </li>
+            <li>
+                <p><a href="EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#ClearCache">Clear the cache in EMS Platform Services</a>.&#160;</p>
+            </li>
+            <li>
+                <p>In the EMS&#160;Desktop Client, navigate to <span class="ui">System Administration</span> &gt;&#160;<span class="ui">Settings&#160;</span>&gt;&#160;<span class="ui">Parameters </span>&gt;&#160;<span class="ui">Everyday User Applications</span>. Configure the <span class="ui">Platform Services API&#160;URL</span>&#160;parameter and then click <span class="ui">Close</span>. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="EMSPlatformServices/Images/EverydayUserApplicationsTab.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Everyday User Applications Tab, Platform Services API&#160;URL</p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

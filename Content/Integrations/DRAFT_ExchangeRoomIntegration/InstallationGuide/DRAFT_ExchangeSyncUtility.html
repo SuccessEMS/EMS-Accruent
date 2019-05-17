@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Exchange Sync Utility V44.1</title>
+    </head>
+    <body>
+        <h1>Exchange Sync Utility</h1>
+        <p>This topic provides an overview of Exchange Sync Utility and how to install the utility.</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#overview">Overview</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#installation">Install Exchange Sync Utility</a>
+                </p>
+                <ul>
+                    <li>
+                        <p><a href="#commands">Commands</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#syntax">Syntax</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#parameters">Parameters</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="overview"></a>Overview</h2>
+        <h3>What is Exchange Sync Utility?</h3>
+        <p>Exchange Sync Utility&#160;allows existing bookings in EMS to be synchronized with <MadCap:annotation MadCap:createDate="2019-05-16T13:24:44.2101385-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Configured where? Guessing in Microsoft Exchange and not Desktop Client." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T13:25:08.6554205-06:00">configured Exchange resource mailboxes</MadCap:annotation>. Exchange Room Integration (ERI) will automatically synchronize new bookings once rooms and resources are <MadCap:annotation MadCap:createDate="2019-05-16T13:25:43.3924506-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="In Deskto Client, not Microsoft Exchange, right?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T13:25:57.1246964-06:00">configured</MadCap:annotation>, but existing bookings will not automatically be synchronized. The Exchange Sync Utility can push those existing bookings to the corresponding Exchange resource mailbox.&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Existing customers already using <MadCap:annotation MadCap:createDate="2019-05-16T13:26:30.9505952-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Not in ERI, right? Using them in Microsoft Exchange?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T13:26:45.2736054-06:00">Exchange resource mailboxes</MadCap:annotation> will need to resolve conflicting Exchange appointments prior to synchronization.&#160;Synchronization issues should be resolved in Exchange and conflicts should be checked again until all issues are resolved.</p>
+        </div>
+        <h2><a name="installation"></a>Install Exchange Sync Utility&#160;</h2>
+        <p>The Exchange Sync Utility is installed in the Platform API directory. The utility does not need to be accessed from the directory running Platform Services. The Platform API can be installed locally to utilize Exchange Sync Utility.&#160;Users must have write permission to the directory where the utility is being installed for the creation of reports.</p>
+        <p>To <MadCap:annotation MadCap:createDate="2019-05-16T13:36:02.0933920-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does this only install the utility? With these steps, are customers actually using the utility (do customers use the commands, syntax, and parameters in Command Prompt to sync or is there another interface)? \r\n\r\nAre the install directions in the paragraph above the steps and the steps and tables explain how to use the utility?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T13:38:29.2748316-06:00">install the Exchange Sync Utility</MadCap:annotation>, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Open a Command Prompt and navigate to <span class="ui">Platform API</span> directory.</p>
+            </li>
+            <li>
+                <p>Type <span class="ui">exchangesync </span>to see a list of commands.</p>
+            </li>
+        </ol>
+        <h3><a name="commands"></a>Commands for Exchange Sync Utility </h3>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Commands</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>-List</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: left;">Use this command to list the bookings Exchange Sync Utility will send to Exchange before synchronization. This can be written to a .csv file to reference all bookings and potential conflicts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>-Sync</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Use this command to synchronize EMS bookings to Exchange.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>-SyncOne</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Use this command to synchronize&#160;a single booking to Exchange.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>-Import</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Use this command to import room and resource mailboxes into EMS. The format utilizes the ID of the room or resource and the SMTP mail address in exchange.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>-Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Use this command to view a list of rooms and their configured mailboxes. This can be written to a .csv file to reference the configurations.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>-Resources</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Use this command to view a list of resources and their configured mailboxes. This can be written to a .csv file to reference the configurations.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="syntax"></a>Syntax for Exchange Sync Utility</h3>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Syntax</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>List</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>exchangesync.exe -exec=list -url=&lt;platform url&gt; -user=&lt;username&gt; \ -pass=&lt;password&gt;<br />[-csv=&lt;out.csv&gt;]</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Sync</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>exchangesync.exe -exec=sync -url=&lt;platform url&gt; -user=&lt;username&gt; \ -pass=&lt;password&gt;<br />[-csv=&lt;out.csv&gt;] [-bookings=&lt;1,2,3...&gt;]</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Import</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>exchangesync.exe -exec=import -url=&lt;platform url&gt; -user=&lt;username&gt; \ -pass=&lt;password&gt;<br />-rooms=&lt;rooms.csv&gt; -resources=&lt;resources.csv&gt;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>exchangesync.exe -exec=rooms -url=&lt;platform url&gt; -user=&lt;username&gt; \&#160;-pass=&lt;password&gt;<br />[-csv=&lt;out.csv&gt;]</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Resources</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>exchangesync.exe -exec=resources -url=&lt;platform url&gt; -user=&lt;username&gt; \&#160;-pass=&lt;password&gt; [-csv=&lt;out.csv&gt;]</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="parameters"></a>Parameters for Exchange Sync Utility</h3>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Parameters</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>-exec=&lt;command&gt;</p>
+                        <p>-url=&lt;platform url&gt;</p>
+                        <p>-user=&lt;username&gt;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The command to run</p>
+                        <p>The EMS Platform API url</p>
+                        <p>Username for authentication</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Must have web admin privileges.&#160;</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>-pass=&lt;password&gt;</p>
+                        <p>-bookings=&lt;booking ids&gt;</p>
+                        <p>-start=&lt;datetime&gt;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The password for authentication</p>
+                        <p>Comma separated list of booking IDs to sync</p>
+                        <p>Limit sync items to after this date and time. Requires&#160;-end</p>
+                        <p>Example:&#160;&#160;- format 2008-09-08T22:47:31-07:00</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>-end=&lt;datetime&gt;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Limit sync items to before this date and time. Requires&#160;-start</p>
+                        <p>Example:&#160;- format 2008-09-08T22:47:31-07:00</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>-rooms=&lt;rooms.csv&gt;</p>
+                        <p>-resources=&lt;resources.csv&gt;&#160;&#160;&#160;&#160;&#160;</p>
+                        <p>-csv=&lt;output.csv&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>CSV input file for room import</p>
+                        <p>CSV input file for resource import</p>
+                        <p>CSV output file</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The CSV output is generated in the directory where the Exchange Sync Utility is located.&#160;<span class="ui">Write access is required.</span>&#160;The CSV input file should be in the directory where the Exchange Sync Utility is located.&#160;<span class="ui">Read access is required.</span></p>
+        </div>
+        <h3>Commands for Exchange Sync Utility in Command Prompt</h3>
+        <p>
+            <img src="../../../Resources/Images/ERI_IG_ExchangeRoom/Configure Exchange Room Integration_4.png" alt="ExchangeSyncUtility_CommandPrompt.PNG" class="hyperlink_with_padding_and_border" />
+        </p>
+    </body>
+</html>

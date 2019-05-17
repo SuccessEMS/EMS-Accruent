@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>In EMS Desktop Client, you might think the terms category, resource, and service can be used interchangeably; however, these terms are different concepts.</p>
+        <p>A <span class="italics">category </span>in EMS is anything you might add to a booking, such as catering, audio visual, furniture, security, notes, attendee names, or agendas. When you configure a category, however, you must select one of the following six <a href="ConfigCategory.html#Category_Type">category types</a>: </p>
+        <ul>
+            <li>
+                <p>Activities</p>
+            </li>
+            <li>
+                <p>Attendees</p>
+            </li>
+            <li>
+                <p>Catering</p>
+            </li>
+            <li>
+                <p>Notes</p>
+            </li>
+            <li>
+                <p>Resources with Service Orders</p>
+            </li>
+            <li>
+                <p>Resources without Service Orders</p>
+            </li>
+        </ul>
+        <p>These category types cause the service to behave slightly differently when added to a booking. For example, a Notes/Activities/Attendees type service category does not require the EMS Administrator to configure items under it, and there is nothing for a user to “select” from these types of services.</p>
+        <p>By contrast, a <span class="italics">service category</span> that has a type of catering, resource with service order, or a resource without a service order category, will require the EMS&#160;Administrator to create items under it. For example, an AV Equipment service  category (configured as a <span class="italics">Resource without a Service Order Category</span> type) might have items under it, such as a flip chart or whiteboard. The user requesting the service for this meeting would select AV Equipment, and then the user might select options, such as flip chart and whiteboard, to add to the event.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p class="box-tip">The following category types allow <a href="DefineProdAreaItems.htm">Production Items</a>: Catering, Resources with Service Orders, and Resources Without Service Orders.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p class="box-tip">A Category can be configured to <a href="ConfigCategory.html#Use_States">Use States</a> so that when a service is requested with a meeting, the service can be managed through a review and approval process in the Manage Services toolbar option in  <MadCap:variable name="General.EMS&#160;Desktop Client" />.</p>
+        </div>
+    </body>
+</html>

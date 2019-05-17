@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Desktop Client – Academic Planning"
+    Link="/Content/Print Only Topics/TitlePage_AcademicPlanning.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberFormat="lower-roman"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Installing EMS Campus Planning Interface"
+    Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusPlanningInterface/IntroductiontoCPI.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    PageNumberFormat="decimal"
+    ChapterNumber="1"
+    PageNumber="1">
+    <TocEntry
+      Title="EMS V44.1 System Requirements"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusPlanningInterface/SysReqPrereq.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Obtain the Latest Release of EMS Campus Planning Interface"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusPlanningInterface/ObtainLateRel.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Install or Upgrade the EMS Campus Planning Interface"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusPlanningInterface/InstallUpgradCPI.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusPlanningInterface/StartCPI.htm"
+      Title="Start the EMS Campus Planning Interface"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/InstallationOverview.htm"
+    Title="Installing EMS Campus Web Service and White Paper"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/IntroductionEMSCampusWebService.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/SysReqPrereq.htm"
+      Title="EMS Campus Web Service Hardware/Software Requirements"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/ObtainLatestVersionCampusWebService.htm"
+      Title="Obtain the Latest EMS Campus Web Service Components"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/InstallUpgradeEMSCampusWebService.html"
+      Title="Install or Upgrade the EMS Campus Web Service"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/ConfiguringEMSCampusWebService.htm"
+      Title="Configure EMS Campus Web Service"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/DataModels.htm"
+      Title="Data Models"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/BannerView.htm"
+        Title="Banner Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/CAMSViewsDataModel.htm"
+        Title="CAMS Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/ColleagueOracleSQL.htm"
+        Title="Colleague (Oracle or SQL) Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/ColleagueUnidata.htm"
+        Title="Colleague Unidata Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/JenzabarCX.htm"
+        Title="Jenzabar (CX - Informix) Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/JenzabarEX.htm"
+        Title="Jenzabar (EX) Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/PeopleSoft.htm"
+        Title="PeopleSoft Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/PowerCampus.htm"
+        Title="PowerCampus Views Data Model"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/WebServiceOverview.htm"
+      Title="Web Service Overview"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/FormatTabDelimitedFiles.htm"
+      Title="Appendix A - Format for Tab-Delimited Files"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/InstallationGuide_CampusWebService/IntegCourseStudentInfowithSIS.htm"
+      Title="Integrate Course and Student Information with Student Information Systems (SIS)"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuration Guide for EMS Academic Planning"
+    Link="/Content/ConfigGuides/10_EMS Campus Configuration Guide.htm"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    ChapterNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/Introduction.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Overview of Synchronization"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/OverviewofSynchr.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Synchronize Campus-Specific Data"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/SynchroCampus-SpecificData.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Synchronize Facility Data"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/SynchroFacilityData.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure Domains"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigDomains.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure Academic Units"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigAcademUnit.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure Instructors"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigInstructors.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure the Primary Academic Unit for a Subject"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigPrimaryAcadUnitforSub.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure Course Types"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigCourseType.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure Course Types/Room Types Matches"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigCourseRoomTypeMatch.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Configure Time Block Templates"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/ConfigurationGuide_EMSDesktopClientAcademicPlanning/ConfigTimeBlockTemp.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="User Guide Campus Planning Interface"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="continue"
+    StartSection="false"
+    Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_CampusPlanningInterface/Introduction.html"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same">
+    <TocEntry
+      Title="Manage User Options in the EMS Campus Planning Interface"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_CampusPlanningInterface/ManageUserOptions.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      StartSection="false" />
+    <TocEntry
+      Title="EMS Campus Planning Interface Reports"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_CampusPlanningInterface/CampusPlanningInterfaceReports.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      StartSection="false" />
+    <TocEntry
+      Title="EMS Campus Planning Interface Search Tools V44.1"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_CampusPlanningInterface/CPISearchTools.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      StartSection="false" />
+  </TocEntry>
+  <TocEntry
+    Title="User Guide EMS Desktop Client Academic Planning"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="continue"
+    StartSection="false"
+    Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/Introduction.htm">
+    <TocEntry
+      Title="Overview of the Academic Scheduling Process"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/OverviewAcademicScheduling.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Using the Academic Book"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/UseAcadBook.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Search with the Academic Browser"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/SearchwithAcadBrowser.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Specify Room Preferences and Requirements"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/SpecifyRoomPrefReq.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Review and Verify Room Preferences"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/ReviewVerifyRoomPref.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Overview of Importing an Academic Term"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/OverviewImportAcadTerm.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Synchronize an Academic Term"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/SynchronizeAcadTerm.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Publish an Academic Term"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/PublishTerm.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Unpublish a Previously Published Academic Term"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/UnpublishPreviousPubTerm.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Enable/Disable a Term for Set Preferences Mode"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/EnableDisableTermSetPrefMode.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Enable/Disable a Term for Define and Edit Mode"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/EnableDisableTermDefineEditMode.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Using the Course Navigator"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/UseCourseNav.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Available Actions in the Course Navigator"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/AvailActionsCourseNav.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Add and Review Courses"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/AddReviewCourses.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Edit or Cancel Courses"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/EditCancelCourses.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Synchronize Courses"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/SynchronizeCourses.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Identify New, Edited, or Canceled Courses"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/IdentifyNewEditedCanceledCourses.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Review and Verify Room Preferences"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/ReviewVerifyRoomPref.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Specify Room Preferences/Requirements"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/SpecifyRoomPrefReq.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Overview of Room Assignments"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/OverviewRoomAssignOpti.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Assign Rooms"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/AssignRooms.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Using the Search for Rooms Tool"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/UseSearchRoomsTool.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Review Reservations and Resolve Room Assignments"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/ReviewResolveRoomAssign.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Work with Shared Spaces"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/WorkwithSharedSpaces.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Manually Update Course Locations in the SIS"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/ManualUpdateCourseLocSIS.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="About Creating Scenarios and Optimization"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/AboutCreateScenariosOpt.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Create Scenarios"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/CreateScenarios.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Set a Final Exam Schedule"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/SetFinalExamSched.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Publish a Final Exam Session"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/PubFinalExamSession.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Post-Publishing Processing of Courses"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/Post-PubProcCourses.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Generate Academic Reports"
+      Link="/Content/EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/GenerateAcadReports.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Print Only Topics/LastPage_AcademicPlanning.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    ChapterNumberReset="continue"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first" />
+</CatapultToc>

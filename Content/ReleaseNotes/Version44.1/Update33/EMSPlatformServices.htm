@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Platform Services Release Notes <br />V44.1, Update 33</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 215px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 33</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />TBD<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />TBD<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 165px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Reservation Edit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-04-24T12:55:25.9521618-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This item is in U15 as an enhancment with the same legacy TFS number (32394) as this Jira ticket. Should the item be removed from U15? " MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-24T12:56:20.8833398-06:00">Reservation Edit supports nonUser clients</MadCap:annotation> with <i>ignoreTemplateRules</i></p>
+                        <p class="RNBody">The <i>PATCH /reservations/{id} </i>route can be called with the client token (instead of the user token), if the client has <i>ignoreTemplateRules</i> set. </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2988" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2988</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">API&#160;Call</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Audit history available for GetGroups call</p>
+                        <p class="RNBody">The GetGroups call now returns an audit history in the results.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-5084" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5084</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Logging Service API</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-04-22T11:18:15.7753637-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should this just say: &quot;The Swagger documentation has been updated with information about the Logging Service and log levels/configuration can now be controlled through the API&quot;?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-22T11:26:05.0591759-06:00">Log refractor:&#160;Logging Service improvements</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">The following improvements have been made for the Logging Service:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>The API&#160;has been correctly documented in Swagger, and the intended behavior of the Logging Service has been fully documented.</p>
+                            </li>
+                            <li>
+                                <p>The log file handling code has been factored out and tested.</p>
+                            </li>
+                            <li>
+                                <p>Log levels and/or configuration can be controlled through the API.</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4284" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4284</a> and <a href="https://jira.accruent.com/browse/EMS-4289" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4289</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">MS&#160;Graph</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-05-13T10:42:47.3064004-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Part of ERI update. Does this need to be separate?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T10:43:03.8447545-06:00">Add tblRegistry Entries</MadCap:annotation> for MSGraph and Migrate GSuite/MSGraph Creds to New Encryption</p>
+                        <p class="RNBody">XX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4406" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4406</a>, <a href="https://jira.accruent.com/browse/EMS-4408" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4408</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Exchange Room Integration (ERI)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Enhanced Features and Functionality for Exchange Room Integration (ERI)</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">
+                            <MadCap:annotation MadCap:createDate="2019-05-13T10:41:35.0829968-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Add all???????????????????????" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T10:41:42.3957097-06:00">EMS&#160;Interna</MadCap:annotation>l Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4409" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4409</a>,<a href="https://jira.accruent.com/browse/EMS-4410" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4410</a>, <a href="https://jira.accruent.com/browse/EMS-4552" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4552</a>, <a href="https://jira.accruent.com/browse/EMS-4559" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4559</a>, <a href="https://jira.accruent.com/browse/EMS-4570" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4570</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">2-Way Sync – Subscribe to room mailboxes for Exchange bookings and sync single and recurring bookings</p>
+                        <p class="RNBody">The new 2-Way Sync feature allows EMS&#160;to retrieve bookings from Exchange and synchronize booking information. You can subscribe to Exchange room mailboxes and receive push notifications from Exchange for the following changes to single and recurring bookings:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>New bookings in Exchange resource calendars</p>
+                            </li>
+                            <li>
+                                <p>Modifications to existing bookings in Exchange resource calendars</p>
+                            </li>
+                            <li>
+                                <p>Deletions of bookings in Exchange resource calendars</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4552" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4552</a>, <a href="https://jira.accruent.com/browse/EMS-4559" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4559</a>, <a href="https://jira.accruent.com/browse/EMS-4570" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4570</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">2-Way Sync – Subscribe CalendarProvider Implementation</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4409" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4409</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">2-Way Sync – SyncDelta CalendarProvider Implementation</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4410" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4410</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">2-Way Sync – Synchronize New Exchange Room Resource Mailbox Bookings to EMS - No Template</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4550" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4550</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">2-Way Sync – Recurrence : Synchronize New Exchange Room Resource Mailbox Bookings to EMS</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4570" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4570</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">2-Way Sync – Subscribe to room mailboxes for Exchange bookings</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4559" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4559</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">2-Way Sync – Exception Cancel Recurrence : Synchronize Deleted Exchange Bookings to EMS</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4580" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4580</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">2-Way Sync </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">2-Way Sync – Master Cancel Recurrence : Synchronize Deleted Exchange Bookings to EMS</p>
+                        <p class="RNBody">XXXXX</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-4581" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-4581</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">
+                            <MadCap:annotation MadCap:createDate="2019-05-03T14:40:09.8948913-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should Kiosk release note be separate from main ERI update? Look into combining all release notes for 2-Way Sync for Kiosk" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T10:43:43.9921904-06:00">2-Way Sync &gt; EMS Kiosk App</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-04-22T13:18:29.6187591-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does this feature require any config steps  by the user? Does the core documentation need to be updated?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-22T13:18:56.6057396-06:00">2-Way Sync with Kiosk 2.0 – Ability to sync single and recurring Exchange Integration bookings</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">The EMS&#160;Kiosk App can now sync with Exchange Integration Web Service (EIWS). This sync allows single and recurring Exchange bookings made in the Kiosk App to appear on room calendars and on organizer/attendee Outlook calendars so that room and attendee availability are accurate.  </p>
+                        <p class="RNBody">For the 2-Way Sync to work between the EMS&#160;Kiosk App and EIWS, a 1:1 mapping must exist between the group and the Everyday User. </p>
+                        <p class="RNBody">The <i>POST/Kiosk/{id}/reservation</i> route was modified for this enhancement. </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-5309" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5309</a> and <a href="https://jira.accruent.com/browse/EMS-5310" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5310</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">2-Way Sync &gt; EMS Kiosk App</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">2-Way Sync with Kiosk 2.0 – Ability to cancel single and recurring Exchange  Integration bookings</p>
+                        <p class="RNBody">
+                            <MadCap:annotation MadCap:createDate="2019-05-03T14:22:45.0616022-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="How are we referring to this feature: 2-Way Sync or bi-directional?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-03T14:23:11.8758797-06:00">With 2-Way Sync</MadCap:annotation>, users can now cancel single and recurring Exchange bookings from the EMS&#160;Kiosk App, and the canceled bookings will be removed from room calendars and from organizer/attendee  <MadCap:annotation MadCap:createDate="2019-05-03T14:26:25.6438848-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Exchange or Outlook?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-03T14:26:30.1142991-06:00">Exchange </MadCap:annotation>calendars so that room and attendee availability are accurate. </p>
+                        <p class="RNBody">
+                            <MadCap:annotation MadCap:createDate="2019-05-13T10:44:10.8434978-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Do users need the route info? Ask Ankita." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T10:44:40.9770657-06:00">The <i>POST/Kiosk/{Id}/booking/group/{groupId}/cancel</i> route was modified for this enhancement.</MadCap:annotation> </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-5499" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5499</a> and <a href="https://jira.accruent.com/browse/EMS-5500" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5500</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">2-Way Sync &gt; EMS Kiosk App</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">2-Way Sync with Kiosk 2.0 – Ability to end Exchange Integration bookings</p>
+                        <p class="RNBody">With 2-Way Sync, users can now end Exchange bookings from the EMS&#160;Kiosk App, and the bookings end time will be updated in room calendars and in organizer/attendee  Exchange calendars so that room and attendee availability are accurate. </p>
+                        <p class="RNBody">
+                            <MadCap:annotation MadCap:createDate="2019-05-13T10:44:48.4807267-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Do users need the route info? Ask Ankita." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T10:44:52.9181580-06:00">The <i>POST/kiosk/{id}/booking/{bookingId}/group/{groupId}/endnow</i> route was modified for this enhancement</MadCap:annotation>. </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-5318" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5318</a> <br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">API Calls</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">EMS&#160;Platform call returned false regardless of how it was set in database</p>
+                        <p class="RNBody">The Get Event Types call for "displayOnWeb" and "allowWebRequest" returned a false response, regardless of how the flag was set in the database. </p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that the correct value is returned on these parameters.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-3148" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">EMS-3148</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">API&#160;Calls</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Call for rooms/actions/availability returned no rooms</p>
+                        <p class="RNBody">The rooms/actions/availability call returned an <span class="ui">"unavailableReason": 4</span> response for the current day. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that available rooms are returned.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-1458" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">EMS-1458</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>System Requirements of ERI V44.1</title>
+    </head>
+    <body>
+        <h1>System Prerequisites and Requirements for ERI</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ERI/ERI_Note_U32_or_prior.flsnp" />
+        <h2>Prerequisites</h2>
+        <p>You must meet the following prerequisites to use Exchange Room Integration (ERI):</p>
+        <ul>
+            <li>
+                <p>A valid license for ERI and a valid sync limit (1 or more)</p>
+                <p>To determine if you have a valid ERI&#160;sync limit, verify that the value for the  Exchange Room Sync Limit is 1 or more in <MadCap:annotation MadCap:createDate="2019-05-14T19:44:59.3519381-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should I use greater than 0 instead? Also, can users access the DEA Customer Relationship manager, or will they have to have their sales representative do this?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:45:44.3311020-06:00">DEA&#160;Customer Relationship Manager</MadCap:annotation>. The Exchange Room Sync Limit is the number of rooms that can be configured with Exchange mailboxes.</p>
+            </li>
+            <li>
+                <p>EMS&#160;Platform Services&#160;minimum version&#160;required:&#160;Update 33</p>
+            </li>
+            <li>
+                <p>Meet system requirements</p>
+                <ul>
+                    <li>
+                        <p><MadCap:variable name="General.Exchange-to-EMS" />&#160;sync requirements</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <MadCap:annotation MadCap:createDate="2019-05-15T14:01:13.2541330-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Still confused about requirements. Why don't they have to have Exchange server for Exchange to EMS or is it that it doesn't matter which version of Exchange server customers have. Both syncs require Office 365, right? " MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-15T14:01:13.6189251-06:00">Exchange </MadCap:annotation>version supported:&#160;Microsoft Office 365 </p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Hosted, Hybrid, and On-prem are note supported because of Microsoft limitations. For more information, refer to the Microsoft's <a href="https://docs.microsoft.com/en-us/graph/hybrid-rest-support"><MadCap:annotation MadCap:createDate="2019-05-14T19:44:06.5630247-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This link only discusses Hybrid. Is there a link for all methods?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:44:26.1873507-06:00">documentation</MadCap:annotation></a>.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><MadCap:variable name="General.EMS-to-Exchange" /> sync requirements</p>
+                        <ul>
+                            <li>
+                                <p>Microsoft Exchange 2016; 2013; 2010, SP3</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:annotation MadCap:createDate="2019-05-13T17:29:11.3798444-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="For EMS to Exchange, is Hosted, Hybrid, On-Prem not supported, too?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T17:29:36.6703754-06:00">Microsoft Office 365</MadCap:annotation>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Admin user within your Office 365 account</p>
+            </li>
+            <li>
+                <p>Access to <a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#HOME">EMS Platform Services Admin Portal</a></p>
+            </li>
+        </ul>
+        <h2>
+            <MadCap:annotation MadCap:createDate="2019-05-14T19:48:55.4164436-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should there be two tables: one for Exchange to EMS and one for EMS to Exchange?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:49:26.0625018-06:00">System Requirements</MadCap:annotation>
+        </h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>
+                <MadCap:annotation MadCap:createDate="2019-05-14T19:39:09.3828519-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should we keep this note?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:39:14.5528972-06:00">The latest version&#160;of EMS software (V44.1) </MadCap:annotation>must be installed before you begin&#160;<a href="../../ExchangeRoomIntegration/InstallationGuide/InstallingERI.html">Installing Exchange Room Integration</a>.</p>
+        </div>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th colspan="2" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2019-05-14T19:49:31.2488014-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Make this table a snippet like the rest of the product sys reqs." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:49:50.3118886-06:00">Microsoft</MadCap:annotation><sup>®</sup>&#160;Exchange Support</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Microsoft<sup>®</sup>&#160;Exchange</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>2016; 2013; 2010, SP3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Microsoft<sup>®</sup>&#160;Office</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>365</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

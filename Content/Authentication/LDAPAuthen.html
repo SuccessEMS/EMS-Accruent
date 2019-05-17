@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>LDAP Authentication</title>
+    </head>
+    <body>
+        <h1>LDAP Authentication</h1>
+        <p>Lightweight Directory Access Protocol (LDAP) is an application protocol for querying directory information.  The LDAP Authentication method provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS Everyday applications such as EMS Web App and EMS Mobile App.</p>
+        <p>For example, when a user logs into EMS Web App or EMS Mobile App with their User ID and Password, their credentials are authenticated against LDAP and compared against corresponding user information recorded in the Network ID and/or External Reference fields of your EMS Everyday User records.  If a match exists, the Everyday User will be logged in to the application, inheriting any Everyday User Process Template rights to which their LDAP Group has been assigned.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS Web App LDAP-Process Template assignment process requires that your implementation of LDAP stores group information (e.g., staff, student, department, etc.) as a Directory Service object containing a property (i.e., member) that contains the users that belong to your various groups.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Field Used to Authenticate Everyday User parameter (within System Administration &gt; Settings &gt; Parameters (Everyday User Applications tab) is used by the applications to determine which value should be used for authentication.</p>
+        </div>
+        <p>Follow the steps in this section to authenticate your users via LDAP.&#160;After successful connection to the platform API, the user will log in following the scenario below:</p>
+        <ul>
+            <li>The user will enter credentials on the Sign In screen and tap <span class="ui">Sign In</span>.</li>
+            <li><MadCap:variable name="General.Mobile" />&#160;will send credentials to the EMS Platform Services.</li>
+            <li>EMS Platform Services will verify credentials against the configured LDAP provider.</li>
+            <li>EMS Platform Services will respond to the <MadCap:variable name="General.Mobile" />.</li>
+            <li>User will be taken to the Home screen.</li>
+        </ul>
+        <p>If the credentials are missing when the user taps <span class="ui">Sign In</span>, an error message will display stating that fields are required. If the platform API is unable to verify the credentials, the mobile app will inform the user based on that response.</p>
+        <p>To use LDAP authentication, you will need to:</p>
+        <ol>
+            <li><a href="#Configure_Your_LDAP_Provider">Configure your LDAP Provider</a>.</li>
+            <li><a href="#Test_Your_LDAP_Configuration">Test your LDAP Configuration</a>.</li>
+            <li><a href="#Test_Your_LDAP_Authentication">Test your LDAP Authentication</a>.</li>
+        </ol>
+        <p>This topic covers the following topics related to LDAP configuration:</p>
+        <ul>
+            <li><a href="#ConfigureWebApp">Configure EMS Web App to Use LDAP Authentication</a>
+            </li>
+            <li><a href="#ConfiguringWebAppSecurity">Configure EMS Web App Security</a>
+            </li>
+            <li><a href="#ConfiguringCommunicationOptions">Configure Communication Options</a>
+            </li>
+            <li><a href="#CoreProperties">Core Properties</a>
+            </li>
+            <li><a href="#NonADConfig">Non-AD Config</a>
+            </li>
+            <li><a href="#LDAPQueries">LDAP Queries</a>
+            </li>
+            <li><a href="#SaveConfiguration">Save Your Configuration</a>
+            </li>
+            <li><a href="#TestConfiguration">Test Your Configuration</a>
+            </li>
+            <li><a href="#ConfiguringAuthenticationforEMSMobileApp">Configure Authentication for EMS Mobile App</a>
+            </li>
+        </ul>
+        <h2><a name="Configure_Your_LDAP_Provider"></a>Configure Your LDAP Provider</h2>
+        <ol>
+            <li>Navigate to Platform Services admin portal (e.g., https://Yourcompany.com/EmsPlatform/admin) and select Integrations&#160;from the sidebar. </li>
+            <li>Select EMS Mobile and choose LDAP from everyday user authentication method dropdown.<p><img src="../EMSMobileApp/Images/B_ConfigurationGuide/MA_ConfiguringLDAP_PlatfromServices.png" class="resize80_border_and_padding" /></p></li>
+            <li>Navigate to the <span class="ui">EMS Web App</span> &gt;&#160;<span class="ui">Admin Functions</span>&#160;page,&#160;listed under your name in the upper right corner of the application.<p><img src="../EMSMobileApp/Images/B_ConfigurationGuide/MA_ConfiguringLDAP_AdminFunctions.png" class="resize80_noborder_padding" /></p></li>
+            <li>Tap the<span class="ui"> LDAP Configuration</span> tab and complete all required LDAP information, and then <a href="#Test_Your_LDAP_Configuration">test your configuration</a>.<p><img src="../EMSMobileApp/Images/B_ConfigurationGuide/MA_ConfiguringLDAP_TestConfiguration.png" class="resize80_border_and_padding" /></p></li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>This is the same process you use&#160;for <a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html">authenticating EMS&#160;Web App with LDAP</a>. The EMS Platform Services&#160;API uses&#160;the same configuration information.</p>
+        </div>
+        <h3><a name="ConfigureWebApp"></a>Configure EMS&#160;Web App to Use LDAP&#160;Authentication</h3>
+        <ol class="number-list">
+            <li>Log into EMS Web App with a User that belongs to an Everyday User Security Template containing the Web Administrator role (controlled in the EMS Desktop Client under Configuration &gt; Everyday User Applications &gt; Everyday User Security Templates). See Also: Configuring Security Templates</li>
+            <li>From the User Options, select Admin Functions.<p><img src="../Resources/Images/adminfunctionsmenu.png" class="padding_only" /></p></li>
+            <li>Click the LDAP Configuration tab. <p><img src="../Resources/Images/WebApp_LDAPConfig.png" class="resize80_noborder_padding" /></p></li>
+            <li>The LDAP Configuration window appears, presenting multiple tabs for various settings.<p><img src="../Resources/Images/AdminLDAPconfig1.png" class="resize80_noborder_padding" /></p></li>
+        </ol>
+        <h3><a name="ConfiguringWebAppSecurity"></a>Configure EMS Web App Security</h3>
+        <p>To configure EMS&#160;Web App security, complete the following from the <span class="ui">Security </span>tab:</p>
+        <ol>
+            <li>Select the Authenticate users via LDAP checkbox to enable LDAP authentication.</li>
+            <li>If LDAP will be used to assign Everyday User Process Templates to your Web Users, select the Use LDAP to assign Process Templates checkbox.</li>
+            <li>Use advanced communication options: Skip this step for Active Directory environments.  Enabling this checkbox requires that you complete the settings on the Communication Options tab.</li>
+            <li>In the Path for LDAP Query field, specify a valid LDAP path (example – LDAP://YourCompany.com)</li>
+            <li>List of Domains:  Skip this step if your organization uses a single domain.  Otherwise, provide a comma separated list of your domains.</li>
+            <li>In the LDAP Domain\User field, enter a Domain User account  that has rights to query LDAP (example – YourDomain\User)</li>
+            <li>In the Password field, enter a valid Password for the User Account entered in the previous step.</li>
+            <li>Specify the appropriate LDAP Authentication Type for your environment.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</p>
+        </div>
+        <h3><a name="ConfiguringCommunicationOptions"></a>Configure Communication Options</h3>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p> It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP. If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+        </div>
+        <p>The Communication Options tab includes fields that define how to fetch a Group or a User when sending communications from the EMS Desktop Client. You can also set the SSL configurations, including the Security Certificate Path. Checking the Use SSL box will force communication to use SSL.</p>
+        <ul>
+            <li><span class="ui">Certificate Path</span>: If there is a specific certification that you want to use to validate your authentication.</li>
+            <li><span class="ui">Authentication Type</span>: Type of authentication that your LDAP server will use during the binding process. Basic is the default because it is the most common.</li>
+            <li><span class="ui">Search Root</span>: The root is the level at which your search will begin.</li>
+            <li><span class="ui">User Search Filter</span>: Specifies the filter to use when performing the user search.<ul><li>Example: (&amp;(objectClass=Person)(SAMAccountName={0})) or (&amp;(objectClass=Person)(uid={0}))</li></ul></li>
+            <li><span class="ui">Group Search Filter</span>: Specifies the filter to use when performing the group search.<ul><li>Example: (&amp;(objectClass=Person)(objectClass=user))</li></ul></li>
+            <li><span class="ui">Protocol Version</span>: Insert the current version number here. The default is 3, as the current version should be 3.</li>
+        </ul>
+        <h3><a name="CoreProperties"></a>Core Properties</h3>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP. If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+        </div>
+        <p>Indicate whether your LDAP implementation is Active Directory. These properties are set to the common defaults, but can be changed here if the LDAP properties differ from the defaults displayed.</p>
+        <ul>
+            <li><span class="ui">LDAP Name Property</span>: The property for user name on the user record in LDAP that will be displayed.  Displayname is the default, as it is the most common.</li>
+            <li><span class="ui">LDAP Phone Property</span>: The property for the phone number on the user record in LDAP that will be displayed. Telephonenumber is the default, as it is the most common.</li>
+            <li><span class="ui">Domain to append to users</span>: This field is unnecessary unless the domain of your user is different from the domain returned from the query.</li>
+            <li><span class="ui">Field for LDAP Group Lookup</span>: This identifies the EMS property that should be utilized when performing the search. For example, if you use LDAP solely to assign templates and you want the EMS Web App to look up group membership using a field other than the login name, then you must enter that field's name here.</li>
+        </ul>
+        <h3><a name="NonADConfig"></a>Non-AD Configuration</h3>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP. If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+        </div>
+        <p>If your LDAP implementation is not Active Directory, use these fields to redefine the LDAP property names used when searching directory information.</p>
+        <ul class="unorder-list">
+            <li><span class="ui">LDAP Account/User ID Property</span>: The property in your LDAP store that contains the user name.<ul><li>Example: If sameaccountname=xxxx, then enter sameaccountname</li></ul></li>
+            <li><span class="ui">Full LDAP User ID Format</span>: Leave blank unless authentication requires a full path.<ul><li>Example:  cn={0},ou=staff,o=yourdomain</li></ul></li>
+            <li><span class="ui">LDAP Group Category</span>: The property in your LDAP store that contains the group category.<ul><li>Example: If filter should be objectClass=groupOfNames, then property should be groupOfNames</li></ul></li>
+            <li><span class="ui">LDAP Group Name</span>: The property in your LDAP store that contains the group name.</li>
+            <li><span class="ui">LDAP Group Member Name</span>: The property in your LDAP store that contains the name of a single member in the group.<ul><li>Example: If member property is member=jdoe, then property should be member</li></ul></li>
+            <li><span class="ui">LDAP Group Member User Name Attribute</span>: The property of the user record that corresponds to the group's member property to determine group membership.</li>
+        </ul>
+        <h3><a name="LDAPQueries"></a>LDAP&#160;Queries</h3>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>  It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP. If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+        </div>
+        <p>These are LDAP query overrides to fetch Groups and Users from the domain. These settings rarely need to overridden, but can be used to customize queries.</p>
+        <ul class="unorder-list">
+            <li><span class="ui">LDAP query for security groups</span>: Query used to search for security groups in your LDAP store.</li>
+            <li><span class="ui">LDAP query to find users</span>: Query used to search for users in your LDAP store.</li>
+            <li><span class="ui">LDAP query for find users with space</span>: Query used to search for users that have spaces surrounding their user names in your LDAP store.</li>
+        </ul>
+        <h3><a name="SaveConfiguration"></a>Save Your Configuration</h3>
+        <ol class="number-list">
+            <li>Click Save.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p> If you want Everyday Users to inherit Everyday User Process Templates based on the LDAP Group(s) with which they belong, see <a href="../EMSDesktopClient/V44.1/ConfigurationGuide/LDAPGroupTab.htm">LDAP&#160;Groups Tab</a>.  Otherwise, you have completed the configuration process.</p></div></li>
+            <li>Within EMS Desktop Client, go to the Everyday User Process Templates area (Configuration &gt; Web &gt; Everyday User Process Templates).</li>
+            <li>Within an Everyday User Process Template, locate the LDAP Groups tab and select the appropriate LDAP Group(s) to map to that Everyday User Process Template.</li>
+            <li>Click OK.</li>
+        </ol>
+        <h3><a name="TestConfiguration"></a>Test Your Configuration</h3>
+        <ol>
+            <li>After completing configuration, navigate to the <span class="ui">Test Configuration</span> tab in the EMS Web App under LDAP Configuration.</li>
+            <li>Enter your Network UserId Without Domain Name.</li>
+            <li>Enter your Password.</li>
+            <li>Click <span class="ui">Test</span>.<ol><li>If your configuration was successful, you will receive a message in a green box at the top that includes domain information and the words "Authentication successful" (please see example below). <p><img src="../Resources/Images/LDAPAuthentication_Test_Configuration.png" class="popup_with_padding_only" /></p></li><li>If the configuration was unsuccessful, you will receive a prompt stating that LDAP could not be accessed. Check your logs to determine the reason for the failure.</li></ol></li>
+        </ol>
+        <h3><a name="ConfiguringAuthenticationforEMSMobileApp"></a>Configuring Authentication for the EMS&#160;Mobile App</h3>
+        <ol>
+            <li>If your organization uses EMS Mobile App, click the <span class="ui">Mobile App </span>tab.</li>
+            <li>Choose the LDAP option.</li>
+        </ol>
+        <h2><a name="Test_Your_LDAP_Configuration"></a>Test Your LDAP Configuration</h2>
+        <p>Assuming you have installed the EMS Platform Services&#160;at&#160;https://Yourcompany.com/EmsPlatform, then you can test the configuration with a simple curl command:</p>
+        <div class="code-sample"><pre>curl -X GET -H 'x-ems-consumer: MobileApp' https://ems.yourcompany.com/endpoint/api/v1/health</pre>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p> You can also use the API's Swagger interface to accomplish this goal.</p>
+        </div>
+        <p>You should see a portion of the JSON response that looks like this (unrelated details omitted for brevity):</p>
+        <div class="code-sample"><pre>{<br />&#160;&#160;&#160; ...<br />&#160;&#160;&#160; "additionalProperties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authConfig": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities":"ldap"&#160; // &lt;-- these are the critical lines<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ui":"ldap"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</pre>
+        </div>
+        <h2><a name="Test_Your_LDAP_Authentication"></a>Test Your LDAP Authentication</h2>
+        <p>Assuming you have installed the EMS Platform Services API at https://ems.<span class="italics">yourcompany</span>.com/endpoint, you can test the authentication with a simple curl command:</p>
+        <div class="code-sample"><pre xml:space="preserve">curl -X POST -H 'x-ems-consumer: MobileApp' -H 'Content-Type: application/json' -d '{"username":</pre><pre xml:space="preserve">"your_username", "password":"your_password"}' https://ems.yourcompany.com/endpoint...authentication</pre>
+        </div>
+        <p>...where your<span class="italics">_username</span> and your<span class="italics">_password</span> are your credentials.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">api/v1/authentication</span> is the endpoint within the API where your request must be sent.</p>
+        </div>
+    </body>
+</html>

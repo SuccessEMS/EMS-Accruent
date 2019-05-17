@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Users V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Users</h1>
+        <p>Users are the people who log in to EMS Desktop Client whether they are making reservations or just using the system in a read-only capacity. When your EMS Desktop Client application is first installed, it is installed with a default user admin account with “admin” for both the User ID and password. As EMS recommends, for security reasons, after you log in to EMS Desktop Client the first time using “admin” as both the username and password, at a minimum, you should change the account password. Ideally, you should configure an entirely new administrator account with a new username and password. You must also configure all the necessary accounts for your users, which includes assigning processes to the user account. You can create user accounts entirely from “scratch,” or you can copy an existing user account, and then make the necessary edits to the account for another user. You can also export a list of all your user accounts to an Excel spreadsheet.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Instead of configuring user accounts individually, you can configure a template and then assign it all users you want to have the same security settings. <span class="ui">See Also:</span>&#160;<a href="ConfigUserTemp.htm">Configure User Templates</a> and <a href="ConfigAcadUserTemp.htm">Configure Academic User Templates</a>.</p>
+        </div>
+        <p>This topic will provide information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#ConfigureDCUser">Configure an EMS&#160;Desktop Client User</a>
+            </li>
+            <li><a href="#SetDCUserEventSec">Set EMS&#160;Desktop Client User Event Security</a>
+            </li>
+            <li><a href="#SetDCUserCat">Set [%=General.EMS&#160;Desktop Client%] User Categories&#160;</a>
+            </li>
+            <li><a href="#SetDCUserProc">Set [%=General.EMS&#160;Desktop Client%] User Processes&#160;</a>
+            </li>
+            <li><a href="#ConfigureDCBuildingRights">Configure [%=General.EMS&#160;Desktop Client%] User Building Rights</a>
+            </li>
+            <li><a href="#SpecifyDCUserRoomAccess">Specify [%=General.EMS&#160;Desktop Client%] User Room&#160;Access&#160;</a>
+            </li>
+            <li><a href="#SetUserStatusOptions">Set User Status&#160;Options</a>
+            </li>
+            <li><a href="#SetUserQuery">Set User Queries&#160;Option</a>
+            </li>
+            <li><a href="#SetUserAcadSec">Set User Academic Security (EMS Campus Only)&#160;</a>
+            </li>
+            <li><a href="#SetUserProc">Set User Processes (EMS Campus Only)&#160;</a>
+            </li>
+            <li><a href="#ExportListUserAcct">Export a List of User Accounts&#160;</a>
+            </li>
+        </ul>
+        <h2 class="Heading2"><a name="ConfigureDCUser"></a>Configure an EMS&#160;Desktop Client User</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">System Administration</span> &gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>. The Users window opens. This window lists the names and types for all users who currently have an account for your EMS installation and that have a status of Active.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts.png" alt="emssg_SysAdminSecurity_image001.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Users Window</p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>You can see all user accounts, regardless of status: under Show, click <span class="ui">Inactive</span>.</p>
+                    </div>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>The remainder of this procedure describes how to configure a user account “from scratch.” You can also configure a user account by copying an existing account. Select the user account that you want to copy, click <span class="ui">Copy</span>, and then continue to Step 3.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span>. The User dialog box opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_1.png" alt="emssg_SysAdminSecurity_image002.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter basic information for the new user in this dialog box and use the menu options to the left to define the user's access for each of the following: categories, processes, building configuration, room access, statuses and queries, and for EMS Campus, academic properties and processes (see the additional procedures in this topic).</p>
+                <div class="TitleandImage">
+                    <p><b>User Fields</b>
+                    </p>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                        <thead>
+                            <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                    <p>Field</p>
+                                </th>
+                                <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                    <p>Description</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Name</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>First and last name for the user.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Administrator</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>Select this option if the user is to be an EMS Administrator.</p>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>If you select this option, then only Event Properties remains displayed on the User dialog box as an EMS administrative user has access to all EMS functions (categories, processes, buildings, rooms, statuses, and queries).</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Initials</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>The user’s initials, which are printed at the bottom of all reports as well as the date and time that the user ran the report.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>Login Section</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>User ID</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>The ID that the user must use to log in to EMS.</p>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>The User ID must be 20 characters or less, including spaces.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Password</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>The password that the user must use to log in to EMS.</p>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>The user can change this password. See the&#160;<a href="../UserGuide/DesktopClient_UG.html">EMS Desktop Client User’s Manual</a>.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Network ID</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>If you enter a value in this field, the user is automatically logged in to EMS based on the user’s Windows credentials without being asked to enter a user ID and password.</p>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>Enter the network domain along with the network ID, such as DOMAIN\john.doe.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>External Reference</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>Links the user account to an outside program, if needed.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>Contact Information</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Phone</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>The phone number for the user. This value is not printed on any correspondence (reports, emails, and so on) from the user.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Fax</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>The fax number for the user. This value is not printed on any correspondence (reports, emails, and so on) from the user.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Email Address</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>The email for the user. This value is not printed on any reports that the user generates; however, this is a required value if the user wants to email reports or confirmations from EMS using the SMTP email option.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>Job Information</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Title</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>The user’s title, such as Mr., Ms., and so on.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Notes</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>Any additional information that is relevant to the user.</p>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>This information is not printed on any report.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                    <p>Inactive</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                    <p>Leave this option blank to add the user as an active user. Select this option to inactive the user’s account. An inactive user cannot log in to EMS.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">OK</span>. The User dialog box closes. You return to the Users window with the newly configured user automatically selected.</p>
+            </li>
+        </ol>
+        <h2><a name="SetDCUserEventSec"></a>Set EMS&#160;Desktop Client User Event Security</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>If needed, open the User dialog box. (<span class="ui">See&#160;Also:</span> <a href="#">Configure a User Account</a>.)</p>
+            </li>
+            <li>
+                <p>Select Event Properties. The User dialog box is refreshed with options for the event security settings for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_2.png" alt="emssg_SysAdminSecurity_image003.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Event Properties</p>
+                </div>
+            </li>
+            <li>
+                <p>Specify the event security settings for the user.</p>
+                <div class="TitleandImage">
+                    <p><b>Event Properties Field</b>
+                    </p>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                        <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                        <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                    <p>Field</p>
+                                </th>
+                                <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                    <p>Description</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p><span class="ui">Event Properties Section</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Template</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>If you select a template, then only the Event Properties options remain available. The categories, processes, buildings, rooms, statuses, and queries are automatically assigned to the user based on the selected template. <span class="ui">See&#160;Also:</span>&#160;<a href="ConfigUserTemp.htm">Configuring User Templates</a>.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" colspan="2"><span class="ui">Defaults Section</span>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">All the values that you select here (Building, Status, Event Type, Event Name, Event Time, Reservation Source, and Time Zone) are displayed by default when the user opens the Reservation Wizard to make a reservation; however, the user can edit any and all values as needed.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="SetDCUserCat"></a>Set <MadCap:variable name="General.EMS&#160;Desktop Client" /> User Categories&#160;</h2>
+        <p>You specify the categories that a user can add to a booking or edit for a booking on the Categories tab.</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>From the User Dialog Box, select <span class="ui">Categories</span>. The User dialog box is refreshed with a list of all the active categories that you can select for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_3.png" alt="emssg_SysAdminSecurity_image004.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Categories</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Available list, select the category or CTRL-click to select the multiple categories to which a user is to have access, and then click the Move button (&gt;) to move the selected categories to the Selected list.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To add these categories to a booking, a user needs access to the Edit Booking Details process. </p>
+                </div>
+            </li>
+            <li>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h2><a name="SetDCUserProc"></a>Set <MadCap:variable name="General.EMS&#160;Desktop Client" /> User Processes&#160;</h2>
+        <ol class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Processes</span>. The User dialog box is refreshed with a list of all the processes that you can select for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_4.png" alt="emssg_SysAdminSecurity_image005.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Processes</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Available list, select the process or CTRL-click to select the multiple processes to which a user is to have access, and then click the Move button (&gt;) to move the selected processes to the Selected list.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>For an explanation of each process, <span class="ui">See Also:</span>&#160;<a href="OverviewUserProc.htm">Overview of User Processes</a>.</p>
+                </div>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="ConfigureDCBuildingRights"></a>Configure <MadCap:variable name="General.EMS&#160;Desktop Client" /> User Building Rights</h2>
+        <p>You specify the building configuration rights for a user on the <span class="ui">Buildings </span>tab.</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Configure Buildings</span>. The User dialog box is refreshed with a list of all the buildings that you can select for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_5.png" alt="emssg_SysAdminSecurity_image006.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Buildings</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Available list, select the building or CTRL-click to select the multiple buildings to which a user is to have access, and then click the Move button (&gt;) to move the selected buildings to the Selected list.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Define and Edit Buildings and Define and Edit Rooms security processes are required for a user to have configuration access to selected buildings.</p>
+                </div>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="SpecifyDCUserRoomAccess"></a>Specify <MadCap:variable name="General.EMS&#160;Desktop Client" /> User Room&#160;Access&#160;</h2>
+        <p>You specify the rooms to which a user has access on the Room Access tab.</p>
+        <ol class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Room Access</span>. The User dialog box is refreshed a options for searching for the rooms to add to the user account.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_6.png" alt="emssg_SysAdminSecurity_image007.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Room Access</p>
+                </div>
+            </li>
+            <li>
+                <p>Search for the rooms to which the user is to have access by doing one or both of the following and the Available list will update with a list of rooms that meet your search criteria:</p>
+                <ul start="3" MadCap:continue="true">
+                    <li>
+                        <p>On the Building drop-down list, select (all) buildings, a specific building, an area, or a view.</p>
+                    </li>
+                    <li>
+                        <p>On the Room Type drop-down list, leave the default value of (all), or select a specific room type.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On the Available list, select the room or CTRL-click to select the multiple rooms to which a user is to have access, and then click the Move button (&gt;) to move the selected rooms to the appropriate Selected list.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>EMS Enterprise has both the View and Book and the View Only access for user security. EMS Professional has just the View and Book access for user security.</p>
+                </div>
+                <ul start="3" MadCap:continue="true">
+                    <li>
+                        <p>View and Book—A user who has access to the Special - Edit Critical Booking Information process&#160;and&#160;who is assigned to this option can reserve the room, move an event into or out of the room, change the time or status of an event that is scheduled in the room, and add resources to events in the room.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The Special - View and Book Access On All Rooms process can be used as an alternative to manually assigning all rooms to the View and Book list.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul start="3" MadCap:continue="true">
+                    <li>
+                        <p>View Only—A user who is assigned to this option cannot reserve the room, move an event into or out of the room, or change the time or status of an event that is scheduled in the room; however, as long as the user has access to the appropriate category and to the Special - Edit Booking Details process, the user can view events in the room and add resources to events in the room.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="SetUserStatusOptions"></a>Set User Status&#160;Options</h2>
+        <p>You select the statuses to which a user is to have access on the Statuses tab. A user needs access to a status in order to create a reservation with the status or edit a booking with the status.</p>
+        <ol class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Statuses</span>. The User dialog box is refreshed with a list of all the active event statuses that you can select for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_7.png" alt="emssg_SysAdminSecurity_image008.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Statuses</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Available list, select the status or CTRL-click to select the multiple statuses to which a user is to have access, and then click the Move button (&gt;) to move the selected statuses to the Selected list.</p>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="SetUserQuery"></a>Set User Queries&#160;Option</h2>
+        <p>You specify the queries that a user can run on the <span class="ui">Queries </span>tab.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can specify the queries to run by user only in EMS Enterprise. All queries are available to all users in EMS Professional.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Queries</span>. The User dialog box is refreshed with a list of all the defined queries that you can select for the user account.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_8.png" alt="emssg_SysAdminSecurity_image009.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Queries</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Available list, select the query or CTRL-click to select the multiple queries to which a user is to have access, and then click the Move button (&gt;) to move the selected queries to the Selected list.</p>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="SetUserAcadSec"></a>Set User Academic Security (EMS Campus Only)&#160;</h2>
+        <ol class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Academic Properties</span>. The User dialog box is refreshed with options for the academic security settings for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_9.png" alt="emssg_SysAdminSecurity_image010.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Academic Properties (EMS Academic Planning Only)</p>
+                </div>
+            </li>
+            <li>
+                <p>Specify the academic security settings for the user.</p>
+                <div class="TitleandImage">
+                    <p><b>Academic Security Fields</b>
+                    </p>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                        <thead>
+                            <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                    <p>Field</p>
+                                </th>
+                                <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                    <p>Description</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Type</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <ul>
+                                        <li>Domain—The domain (typically renamed to campus or school) to which the user belongs.</li>
+                                        <li>Academic Unit—The academic unit (typically renamed to academic department or division) to which the user belongs.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p>Domain</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>The domain to which the user belongs.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p>Academic Unit</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>Available only if the user is assigned the type of “Academic Unit.” The academic unit to which the user belongs.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                    <p>Template</p>
+                                </td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                    <p>The academic template to which the user is assigned. The template determines the academic processes to which the user has access. <span class="ui">See&#160;Also:</span>Configuring Academic User Templates.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2><a name="SetUserProc"></a>Set User Processes (EMS Campus Only)&#160;</h2>
+        <ol class="number-list">
+            <li>
+                <p>From the User dialog box, select <span class="ui">Processes </span>(under Academic Properties). The User dialog box is refreshed with a list of all the academic processes that you can select for the user.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_10.png" alt="emssg_SysAdminSecurity_image011.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">User Dialog Box, Academic Processes (EMS Academic Planning Only)</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Available list, select the academic process or CTRL-click to select the multiple academic event processes to which a user is to have access, and then click the Move button (&gt;) to move the selected processes to the Selected list. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>For an explanation of each process, <span class="ui">See&#160;Also:</span>&#160;<a href="../../../EMSDesktopClient_AcademicPlanning/V44.1/UserGuide_EMSDesktopClientAcademicPlanning/OverviewAcademicScheduling.htm">Academic Scheduling Process</a>. </p>
+                </div>
+            </li>
+            <li>
+                <p>Continue with any other configuration for the user as needed; otherwise, click <span class="ui">OK </span>to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+            </li>
+        </ol>
+        <h2 class="Heading2"><a name="ExportListUserAcct"></a>Export a List of User Accounts&#160;</h2>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">System Administration</span> &gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>. The Users window opens. This window lists the names and types for all users who currently have an account for your EMS installation.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Export</span>. The Save As dialog box opens. The default file name is User List, file type is *.xls.</p>
+            </li>
+            <li>
+                <p>You can change the file name, and save the file in a location of your choosing.</p>
+            </li>
+        </ol>
+    </body>
+</html>

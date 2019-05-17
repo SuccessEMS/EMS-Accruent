@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Installing EMS Platform Services</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Install EMS Platform Services</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>As of <a href="../../ReleaseNotes/Version44.1/Update28/EMSPlatformServices.htm">Update 28</a>, users are required to deploy EMS Platform Services with <a href="../../EMS_SystemReq_44.1.html#EMSPlatformServices">ASP.NET Handler</a>, rather than the HTTP Platform Handler.</p>
+        </div>
+        <p>This topic provides information on the following:&#160;</p>
+        <ul>
+            <li>
+                <p><a href="#Install_Platform_Services">Install EMS&#160;Platform Services</a>
+                </p>
+                <ul>
+                    <li>
+                        <p><a href="#InstallMultiple">Install multiple instances of EMS&#160;Platform Services in the IIS</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><a href="#Verify_Installation_Status">Verify Installation Status</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Verifying">Verify NTLM&#160;Authentication</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#UpgradePlatformServicesSoftware">Upgrade EMS Platform Services Software</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Install_Platform_Services"></a>Install Platform Services</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Verify the&#160;<a href="SystemRequirements.htm">System Requirements</a> and install the <a href="SystemRequirements.htm#EMSPSReqs">Prerequisites</a> prior to installing EMS&#160;Platform Services. </p>
+        </div>
+        <MadCap:snippetBlock src="../../ObtainInstallFilesStartAt1.flsnp" />
+        <ol MadCap:continue="true">
+            <li style="margin-top: -10px;">
+                <p>Download&#160;<span class="ui">EMSPlatformServices.msi</span>. (Required for all&#160;installations.)&#160;</p>
+            </li>
+            <li>
+                <p>The EMS Platform Services Setup Wizard will appear. Click&#160;<span class="ui">Next&#160;</span>to begin installation.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/PS_Install_DestinationFolder.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">EMS&#160;Platform Services Setup Wizard</p>
+                </div>
+            </li>
+            <li>
+                <p><a name="defaultfolder"></a>Choose a default folder for installing EMS Platform Services. The Platform installer by default will try to install in the Programs folder. You can change the path to wwwroot folder. The typical install path is&#160;C:\Program Files\EMS Software, LLC\EmsPlatformApi\. Click&#160;<span class="ui">Next</span>.&#160;</p>
+            </li>
+            <li>
+                <p>You will need to enter the SQL server and EMS database, configured to allow external connections. Make a note of the database name.&#160;</p>
+                <p>Select the <span class="ui">Use Windows Authentication for Database Connection</span> checkbox to use an Active Directory account instead of the EMS&#160;User for database authentication.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If you are unsure of the SQL&#160;server and EMS&#160;database name, you can find the SQL server and EMS&#160;database name in the EMS&#160;Web App (<span class="ui">Admin Functions</span> &gt; <span class="ui">Connection String values</span> under the version number heading) or EMS&#160;Desktop Client (<span class="ui">File </span>&gt; <span class="ui">Change Database</span> &gt; <span class="ui">Provide Server Parameters</span> dialog). You can also contact your company's IT&#160;group to locate the information. </p>
+                </div>
+            </li>
+            <li>
+                <p>Enter a Virtual Directory Name.</p>
+            </li>
+            <li>
+                <p><a name="EnableNTLM_Checkbox"></a>To enable NTLM authentication for Everyday User Authentication for the Platform Services Admin Portal <MadCap:annotation MadCap:createDate="2018-08-07T15:18:04.9079163-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Ankita is checking on this: \r\n\r\nDoes the &quot;Enable NTLM for EMS Everyday User Authentication&quot; check box only refer to the PS Admin Portal? This check box does not affect the individual integration clients, right? If so, can we delete the &quot;and Integration Clients&quot; from this step?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-09-19T12:10:07.4575083-06:00">and Integration Clients</MadCap:annotation>, click the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;box.&#160;</p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>To use NTLM&#160;authentication when logging into the EMS&#160;Platform Services Admin Portal, you must select the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;box. If you complete the installation process without selecting the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;box and you want to use NTLM authentication, you will need to  re-install the EMS&#160;Platform Services software and select the checkbox during  install.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">Install&#160;</span>button to complete the installation. You will receive a prompt from the Wizard that installation is complete. EMS Platform Services is now installed on your Web server.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Finish</span>.&#160;</p>
+            </li>
+            <li>
+                <p>If you enabled NTLM authentication through the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;box during installation, <a href="#Verifying">verify the NTLM&#160;authentication</a>.  </p>
+            </li>
+        </ol>
+        <h2><a name="InstallMultiple"></a>Install a Multiple Instance of EMS&#160;Platform Services in the IIS</h2>
+        <ol class="number-list">
+            <li>
+                <p>After <a href="#Install_Platform_Services">installing EMS Platform Services</a>, copy the installed directory for each additional instance of EMS Platform Services.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/platformconfig1.PNG" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Copy of Installed Directory of EMS Platform Services</p>
+                </div>
+            </li>
+            <li>
+                <p>From your Internet Information Services (IIS)&#160;Manager, right click and select <span class="ui">Add Application</span>. In the Add Application dialog box, choose a unique name in the <span class="ui">Alias </span>field. In the <span class="ui">Physical Path</span> field, include the path of the copied folder above.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/platformconfig2.PNG" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Adding a Multiple Instance of EMS&#160;Platform Services in IIS</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">OK</span>.</p>
+            </li>
+            <li>
+                <p>Navigate to your <span class="ui">default.json</span> file (or <span class="ui">web.config</span> override file). Edit the <span style="font-family: 'Courier New';">urlPrefix</span> setting to match the unique name of the instance in the IIS.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/platformconfig3.PNG" class="padding_only" />
+                    </p>
+                    <p class="Caption">Editing the urlPrefix in the default.json File of the Multiple Instance</p>
+                </div>
+            </li>
+            <li>
+                <p>Reset the IIS.</p>
+            </li>
+        </ol>
+        <h2><a name="Verify_Installation_Status"></a>Verify Installation Status</h2>
+        <ol class="number-list">
+            <li>
+                <p>Access your URL for Platform Services (e.g.,&#160;https://yourcompany.com/EMSPlatform).</p>
+            </li>
+            <li>
+                <p>Verify the status of your installation by navigating  to&#160;https://yourcompany.com/EMSPlatform/status. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/PS_Status.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Status Screen for EMS&#160;Platform Services</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Verifying"></a>Verify NTLM&#160;Authentication</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>To use NTLM&#160;authentication when logging into the EMS&#160;Platform Services Admin Portal, you need to have selected the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;checkbox during the <a href="#EnableNTLM_Checkbox">installation process</a>. If you completed the installation process without selecting the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;box and you want to use NTLM authentication, you will need to  re-install the EMS&#160;Platform Services software and select the checkbox during install.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Verify that Windows Authentication is enabled  from your Internet Information Services (IIS) Manager. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/InstallPS_IISManager.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Windows Authentication Enabled in IIS&#160;Manager</p>
+                </div>
+            </li>
+            <li>
+                <p>Navigate to the EMS&#160;Platform Services Admin Portal (e.g.,&#160;https://yourcompany.com/EMSPlatform/admin). </p>
+            </li>
+            <li>
+                <p>Verify that the Windows Security dialog box appears.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/InstallPS_WindowsSecurity.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Verifying Windows Security Screen When Logging into the Admin Portal</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter  the Everyday User's <span class="ui">username </span>and <span class="ui">password</span>. </p>
+            </li>
+        </ol>
+        <h2><a name="UpgradePlatformServicesSoftware"></a>Upgrade EMS Platform Services Software</h2>
+        <p class="beforelist">To upgrade EMS&#160;Platform Services to the current version of the software, you will need to do the following:&#160;</p>
+        <ol class="number-list">
+            <li>
+                <p>Uninstall the EMS&#160;Platform Services software through <span class="ui">Windows Control Panel</span> &gt; <span class="ui">Programs </span>&gt; <span class="ui">Uninstall a Program</span>. </p>
+            </li>
+            <li>
+                <p>Obtain the current release of EMS Platform Services from the Downloads area in Accruent Access.</p>
+                <MadCap:snippetBlock src="../../DownloadsArea.flsnp" />
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>For more information on obtaining the latest version of the EMS&#160;Platform Services software and on enhancements and fixes to the software, see also:&#160;<a href="../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a> and <a href="../../V44.1_ReleaseNotes.htm">Release Notes</a>.</p>
+                </div>
+            </li>
+            <li>
+                <p>Re-install the EMS&#160;Platform services by completing the steps in the <a href="#Install_Platform_Services">Install Platform Services</a> section.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If multiple instances of the EMS&#160;Platform Services software exist in IIS, you will need to delete the instances from the Windows directory and from IIS, and then install the multiple instances again once you have finished upgrading the EMS&#160;Platform Services software. See Also:&#160;<a href="#InstallMultiple">Install a Multiple Instance of EMS&#160;Platform Services in the IIS</a>. </p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

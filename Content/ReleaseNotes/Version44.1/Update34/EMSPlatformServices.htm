@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Platform Services Release Notes <br />V44.1, Update 34</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 215px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 34</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />TBD<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />TBD<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 165px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Logging</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">"Always On" detailed logging for error requests</p>
+                        <p class="RNBody">When an error occurs during a request,  the complete set of log entries for the request are now captured and outputted as follows:</p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>On a successful request, the platform will only output logs at the default or specified log level (e.g. "Warning").</p>
+                            </li>
+                            <li>
+                                <p>On an erroneous request, the platform will output fine-grained logs for that request (e.g. all DEBUG/INFO log entries).</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=35085&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">35085</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Logs</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Enhanced log filtering functionality
+</p>
+                        <p class="RNBody">Raw and formatted logs can now be filtered by date and time in the EMS Platform Services Admin Portal. This enhancement will facilitate troubleshooting.</p>
+                        <p class="RNRef">
+EMS Internal Reference # 40234
+<br />(For Internal Use Only)
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">SAML&#160;Authentication</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">SP&#160;Metadata URL&#160;displayed</p>
+                        <p class="RNBody">For the convenience of users configuring SAML&#160;authentication, a field has been added to display (but not edit)&#160;the metadata URL in the EMS&#160;Platform Services Admin UI. </p>
+                        <p class="RNRef">EMS&#160;Internal Reference <MadCap:annotation MadCap:createDate="2018-09-21T10:34:33.9870321-06:00" MadCap:creator="Jen.Naused" MadCap:initials="JE" MadCap:comment="Get screenshot from Greg per Ankita. " MadCap:editor="Jen.Naused" MadCap:editDate="2018-09-21T10:34:41.0220475-06:00">#&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38092&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38092</a></MadCap:annotation><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Metadata import</p>
+                        <p class="RNBody">The SAML configuration screen allows users to import IdP metadata by file upload and by URL in the EMS&#160;Platform Services Admin UI. The file mechanism will use the existing API route to upload; however, the URL mechanism needs an alternative route.</p>
+                        <p class="RNRef">EMS&#160;Internal <MadCap:annotation MadCap:createDate="2018-09-21T10:35:05.2052352-06:00" MadCap:creator="Jen.Naused" MadCap:initials="JE" MadCap:comment="Get screenshots from Greg. " MadCap:editor="Jen.Naused" MadCap:editDate="2018-09-21T10:35:16.4030376-06:00">Reference</MadCap:annotation> #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38093&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38093</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-08T08:22:30.8422975-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Put in rejected state in U32. Probably can remove this in U33. Saving just in case." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-08T08:23:14.6105058-07:00">Parameter</MadCap:annotation> Events 2HVAC added</p>
+                        <p class="RNBody">Events2HVAC — Get In Progress Bookings — parameter added so that users can get bookings that start or end within filtered dates that includes "in progress"&#160;bookings.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=29337&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">29337</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Logs</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Custom integration error logs were combined with global logs</p>
+                        <p class="RNBody">For custom integrations on the EMS&#160;Platform that had logging enabled, custom integration logs were being combined with global logs, but with missing information.</p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that custom integration logs display separately from global logs  under the appropriate integration.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41027&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41027</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">XX</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Skype 3rd party conference missing when looking at calendar item in outlook from reservation made in web app and mobile</p>
+                        <p class="RNBody">XX</p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=36351&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36351</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">API</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Booking information changes missing in history tab</p>
+                        <p class="RNBody">When critical booking changes were made, the booking history was not being updated through the EMS&#160;Platform Services API. </p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that changes to booking's critical information (e.g., date, time, room, attendee, etc.)&#160;are captured in the booking's history tab in the EMS&#160;Desktop Client.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42850&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42850</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">EMS&#160;Web App was not connecting to EMS&#160;Platform Services</p>
+                        <p class="RNBody">Due to SAML&#160;configuration issues, the EMS&#160;Web App was not connecting to the EMS&#160;Platform. </p>
+                        <p class="RNBody"><b>Fix:</b> Resolved SAML&#160;configuration issues so that the EMS&#160;Web App can connect to the EMS&#160;Platform.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42212&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42212</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

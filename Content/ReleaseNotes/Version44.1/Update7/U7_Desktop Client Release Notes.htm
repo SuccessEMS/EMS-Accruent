@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="6829" MadCap:lastWidth="1186" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />&#160;EMS Desktop Client Release Notes <br />V44.1 Update 7</h1>
+        <p class="NormalWeb">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_71">See Also:&#160;</p>
+        <ul class="unorder-list">
+            <li class="li_4">
+                <a href="U7_EMS Desktop Client Known Issues.htm">EMS Desktop Client Known Issues</a>
+            </li>
+            <li>
+                <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+            </li>
+        </ul>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Name:&#160;V44.1 Update 7</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Release&#160;Date:&#160;December 6, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Patch:&#160;2016.12.05.0</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_12">Build #:&#160;&#160;44.1.284.0</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 192px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 679px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">SQL&#160;Server</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Add Support for SQL Server SP3</h4>
+                        <p class="p_4">24174; see also&#160;<a href="../../../EMS_SystemReq_44.1.html">EMS V44.1 System Requirements</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Manage Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <h4>Show Reservation ID Field on&#160;Manage Services Browser Window</h4>
+                        <p class="p_4">Added the&#160;Reservation ID&#160;field to the Manage Services page.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25038" class="a_16">25038</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 193px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 680px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Performance</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Database Slowness</h4>
+                        <p class="p_25">Browsing on VEMS had very slow performance and timed out due to two stored procedures: &#160;vems_ReservationSummary_LoadData&#160;and&#160;ems_RES_UserDefinedFields.&#160;</p>
+                        <p class="p_4">Fix:&#160;Modified the stored procedures so that users no longer experience slow performance.&#160;</p>
+                        <p class="p_25">25085</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">System Updates</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>API URL Absent After Auto-Updating Web Deploy Client</h4>
+                        <p class="p_25">When upgrading from V44 to V44.1 via auto-update web deploy, on the first launch of the application, users were prompted to enter their EMS server and database name, and the API URL from the original install was not preserved.</p>
+                        <p class="p_4">Fix:&#160;Modified auto-update to carry over the API URL from the previous installation so that users are not prompted for server or database name.</p>
+                        <p class="p_25">23318&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Login</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Custom Log Out URL Unavailable</h4>
+                        <p class="p_4">The&#160;Sign Out&#160;option was unavailable on EMS Web App for customers who wished to override the default LogOut.aspx link with their own URL.</p>
+                        <p class="p_4">Fix:&#160;Modified validations to ensure that users can assign a custom URL for the&#160;Sign Out&#160;button on the EMS Web App.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23743" class="a_16">23743</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Reservation Book</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>User Access for Combo Rooms Not Observed</h4>
+                        <p class="p_4">Bookings for combo rooms and their components did not display&#160;as intended&#160;when users did&#160;not&#160;have access to combo rooms but&#160;did&#160;have access to component&#160;rooms: the Reservation Book displayed the booking&#160;to these users&#160;as if it were in one of the component rooms in the combo when it should have displayed as being in all the component rooms for which the users had been assigned access.</p>
+                        <p class="p_4">Fix:&#160;Modified validations to ensure that users who do not have&#160;access to combo rooms will see the&#160;booking in the appropriate component rooms&#160;in the Reservation Book. Additionally, modified the display so that these users can see when combo&#160;and&#160;component&#160;rooms are blocked.&#160;</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23795" class="a_16">23795</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Room Wizard</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Date and Time Field Entries Overridden on Room Wizard</h4>
+                        <p class="p_25">When users added a new booking to&#160;a video conference reservation with multiple occurrences, and entered a date and time before choosing a room, the date and time fields did not carry over their date and time entries into the Room Wizard.</p>
+                        <p class="p_4">Fix:&#160;Modified the fields to check for user entries earlier in the workflow so the users do&#160;not have to re-enter them on the Room Wizard.</p>
+                        <p class="p_25">24251</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Video Conferences</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Host Location Field Showed for Video Conferences With Two or More Hosts</h4>
+                        <p class="p_25">When editing a video conference reservation, the Host Location field displayed in error.&#160;</p>
+                        <p class="p_4">Fix:&#160;Modified the field so that it does not display when the video conference has two or more hosts.&#160;</p>
+                        <p class="p_25">24201</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Reports</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Error Running Query Builder When Used With&#160;Web Deploy Service</h4>
+                        <p class="p_25">When users ran reports on Reports&gt;Queries&gt;Query Builder on systems that used EMS via Web Deploy, an SQL Connection Error occurred.</p>
+                        <p class="p_4">Fix:&#160;Modified functionality to ensure that reports run without issue.</p>
+                        <p class="p_25">23011</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Time Zones</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>GMT Offset Incorrect for Moscow Time Zone</h4>
+                        <p class="p_25">The GMT offset was incorrectly calculated as 240 minutes for the Moscow time zone.&#160;</p>
+                        <p class="p_4">Fix:&#160;Modified the time zone table to calculate the offset for 180 minutes.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23725" class="a_16">23725</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Patch Installation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Patch for EMS Professional Caused Error</h4>
+                        <p class="p_25">Running the update patch for EMS Professional via System Administration &gt; Database &gt; Install Patch caused the error, "Patch is invalid. Patch is a different Server Version."</p>
+                        <p class="p_4">Fix:&#160;Modified the DLL so that the&#160;EMS Professional patch runs without error as expected.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23175" class="a_16">23175</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Notifications</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Notifications&#160;Not Triggered for Date/Time, Status, or Room Changes</h4>
+                        <p class="NormalWeb_2">When users changed dates or times, status, or room for events that had notification rules to email participants such as event coordinators, and there were additional notification rules for the events set to monitor other status changes, the date/time change&#160;notifications did not occur.</p>
+                        <p class="p_53">Fix:&#160;Modified validations to ensure that notifications are sent to participants as expected.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22064" class="a_16">22064</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25240" class="a_16">25240</a></p>
+                        <h4>No-Show and Cancellation&#160;Notifications Triggered at Incorrect Time</h4>
+                        <p class="NormalWeb_2">When a booking had a no-show or cancellation notification rule set to trigger at five minutes before the event time, the notices fired incorrectly at five minutes before the reserved or setup time.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that notices fire based on the event time for these notification rules.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/15501" class="a_16">15501</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_26">Services</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <h4>Resources From Setup Worksheet Out of Order</h4>
+                        <p class="p_25">When users used a setup worksheet to add resources to bookings, they were listed in the wrong order and groupings.</p>
+                        <p class="p_4">Fix:&#160;Modified import sequence for setup worksheet so that resources now show in chronological and category groupings.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24310" class="a_16">&#160;24310</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+        <p class="NormalWeb">&#160;</p>
+    </body>
+</html>

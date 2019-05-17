@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+    <GlossaryEntry glossTerm="Glossary.Term0">
+        <Terms>
+            <Term>Topic</Term>
+        </Terms>
+        <Definition Link="">A chunk of information about a particular subject. Topics are the most important part of a project. Everything else is contained within &#160;topics (e.g., hyperlinks, text, pictures) or points toward topics (e.g., table of contents, index, browse sequences). The very reason end users open a Help system is to find information, a little direction. They find that help within individual topics.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term1">
+        <Terms>
+            <Term>Condition tag</Term>
+        </Terms>
+        <Definition Link="">A marker that you can apply to different areas of your content so that some sections show up in some of your outputs but not in others.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term2">
+        <Terms>
+            <Term>XML Editor</Term>
+        </Terms>
+        <Definition Link="">The window in the Flare interface where you can add content and formatting to elements such as topics and snippets.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term3" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>Style</Term>
+        </Terms>
+        <Definition Link="">An element to which you assign a certain look and/or behavior. You can then apply that style to your content. Different kinds of styles are available in a stylesheet, to be used for various purposes in your content.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term4" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>Single-Sourcing</Term>
+        </Terms>
+        <Definition Link="">Reusing content and producing multiple outputs from the same set of source files. Flare lets you single-source your projects in many ways, using various features. This includes features such as topic-based authoring, conditions, snippets, variables, multiple tables of contents, and more.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term5">
+        <Terms>
+            <Term>Target</Term>
+        </Terms>
+        <Definition Link="">One "instance" of an output type. When you build your final output, you are essentially building one or more of the targets in your project.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term6">
+        <Terms>
+            <Term>Snippet</Term>
+        </Terms>
+        <Definition Link="">A pre-set chunk of content that you can use in your project over and over. Snippets are similar to variables, but snippets are used for longer chunks of content that you can format just as you would any other content in your topic. In snippets, you can also insert tables, pictures, and whatever else can be included in a normal topic.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term7" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>Variable</Term>
+        </Terms>
+        <Definition Link="">A pre-set term or content that you can use in your project over and over. Variables are similar to snippets, but variables are used for brief, non-formatted pieces of content (such as the name of your company's product or your company's phone number).</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term8">
+        <Terms>
+            <Term>Table</Term>
+        </Terms>
+        <Definition Link="">A group of intersecting columns and rows that you can add to a topic for various purposes, such as comparing one thing with another or giving field descriptions for a software dialog.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term9" Stem="" IgnoreCase="false">
+        <Terms>
+            <Term>Drop-down text</Term>
+        </Terms>
+        <Definition Link="">A feature that lets you collapse content in your topic. The content is expanded (and therefore displayed) when the end user clicks a link.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term10">
+        <Terms>
+            <Term>Text snippet</Term>
+        </Terms>
+        <Definition Link="">A snippet that is created out of a portion of one paragraph.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term11">
+        <Terms>
+            <Term>Block snippet</Term>
+        </Terms>
+        <Definition Link="">A snippet that is created out of one or more paragraphs.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term12">
+        <Terms>
+            <Term>Span</Term>
+        </Terms>
+        <Definition Link="">A tag that is used to group inline elements to format them with styles. A span tag doesn't perform any specific action; it simply holds the attributes (e.g., font size, color, font family) that you apply to inline content.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term13">
+        <Terms>
+            <Term>Cross-reference</Term>
+        </Terms>
+        <Definition Link="">A navigation link that lets you connect text in one topic to another topic (or a bookmark within a topic). Cross-references let you create "automated" links that are based on commands you provide. This allows you to keep links consistent and change them in just one place by using the "xref" style.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term14">
+        <Terms>
+            <Term>Footnote</Term>
+        </Terms>
+        <Definition Link="">A comment that is used to explain a specific area of the text. Both the area in the text and the comment contain a number or symbol that ties the two together. A footnote (or endnote) comment can be placed at the end of a page, document, chapter, section, or book.</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry glossTerm="Glossary.Term15">
+        <Terms>
+            <Term>Batch target</Term>
+        </Terms>
+        <Definition Link="">A special target that lets you build and/or publish multiple other targets in a single group (or "batch"). You can schedule batches to run at any time.</Definition>
+    </GlossaryEntry>
+</CatapultGlossary>

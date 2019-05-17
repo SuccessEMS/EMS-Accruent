@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title>Create Templates for Desktop Client Workspaces V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Create Templates for Desks and Workspaces</h1>
+        <p>To create booking templates for "hoteling" (desks and workspaces), you need to do the following:&#160;</p>
+        <ul>
+            <li>
+                <p>Configure Space</p>
+            </li>
+            <li>
+                <p>Configure Templates</p>
+            </li>
+            <li>
+                <p>Enable those templates for specific types of users</p>
+            </li>
+        </ul>
+        <ol>
+            <li>
+                <p>To begin configuring facilities for your organization, configure the following elements of space as needed:</p>
+                <ul>
+                    <li>
+                        <p>Setup Types</p>
+                    </li>
+                    <li>
+                        <p>Rooms</p>
+                    </li>
+                    <li>
+                        <p>Room Types</p>
+                    </li>
+                    <li>
+                        <p>Areas</p>
+                    </li>
+                    <li>
+                        <p>Public Views</p>
+                    </li>
+                    <li>
+                        <p>Features</p>
+                    </li>
+                </ul>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Consider using a naming convention or Public Area that groups workspaces and desks together in lists so they are easier to find during the configuration and booking processes.</p>
+                </div>
+            </li>
+            <li>
+                <p>Once you have set up space, you can establish special booking templates for hoteling. Follow the workflow for building an Everyday User template. See Also: Detailed Process Template field definitions. An example of this setup screen is shown here:</p>
+                <p>
+                    <img src="Images/DC_UG_CreateTemplatesforDeskWorkspace1.png" class="hyperlink_with_padding_and_border" />
+                </p>
+            </li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>
+                <p>Enable the template for your users in the Everyday User Application Settings section:</p>
+                <ol MadCap:continue="true" style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select Enable for Web App to enable the template on EMS Web App.</p>
+                    </li>
+                    <li>
+                        <p>Select Enable for Mobile to enable the template for both the EMS Mobile App and the mobile version of EMS Web App.</p>
+                    </li>
+                    <li>
+                        <p>Select Enable for Outlook to enable the template for the optional EMS for Outlook add-in, which can override booking rules such that users can book a room that is in conflict. For this situation, you can also configure a system-generated email to be sent to the user if any rooms are not available for dates booked.  An additional tab becomes available if you create a template with the option enabled, Outlook Conflict Email.</p>
+                    </li>
+                    <li>
+                        <p>Select Enable Integration to Microsoft Exchange to enable the template for Microsoft<sup>®</sup> Exchange when your organization does not use EMS for Outlook.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Browse through additional tabs as needed on the template configuration page to add further customizations, such as Booking Rules, Defaults, Rooms, and Event Types. Then click OK to save your new template. Authorized users will see this option when they begin the booking process.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>See the following topics for further configuration and administration options that are relevant to hoteling:</p>
+            <ul>
+                <li>
+                    <p><a href="ReportsQueries.html">Run a Hoteling Report</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="EnableBookingCheckIn.html">Enable Check-In for Space</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="../ConfigurationGuide/ConfigGenerRoomQRCode.htm">Associate QR Codes with Space</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="../ConfigurationGuide/ConfigCheckinNot.htm">Configure Check-In Notification Rules</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

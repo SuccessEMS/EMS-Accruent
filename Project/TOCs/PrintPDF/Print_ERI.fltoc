@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Exchange Room Integration"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    Link="/Content/Print Only Topics/TitlePage_ERI.htm"
+    PageNumber="1"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumber="1"
+    PageNumberFormat="lower-roman"
+    ChapterNumber="1"
+    ChapterNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberFormat="lower-roman"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Introduction to ERI"
+    Link="/Content/Integrations/ExchangeRoomIntegration/InstallationGuide/IntroductiontoERI.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    PageNumberFormat="decimal"></TocEntry>
+  <TocEntry
+    Title="System Requirements of ERI"
+    Link="/Content/Integrations/ExchangeRoomIntegration/InstallationGuide/SystemRequirements.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="Architecture of ERI"
+    Link="/Content/Integrations/ExchangeRoomIntegration/InstallationGuide/ArchitectureofERI.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="Install Exchange Room Integration"
+    Link="/Content/Integrations/ExchangeRoomIntegration/InstallationGuide/InstallingERI.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="Exchange Sync Utility"
+    Link="/Content/Integrations/ExchangeRoomIntegration/InstallationGuide/ExchangeSyncUtility.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="Configure Exchange Room Integration (ERI)"
+    Link="/Content/Integrations/ExchangeRoomIntegration/ConfigurationGuide/ConfigERI.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Print Only Topics/LastPage_ERI.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+</CatapultToc>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Room Sign App Release Notes <br />V44.1, Update 32</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 189px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 32</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />March 26, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />201903211<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />19.3.4.1<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 192px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Check In</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-01T08:31:15.1415788-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to review core documentation and see if this enhancement changes any instructions/info (per Mindy). Even if this info isn't covered, we may need to add it to the core documentation (check with Mindy)." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T08:32:20.4240264-07:00">Checking into a calendar-enabled meeting or video conference meeting no longer changes the meeting start time to the time the user checked in</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">Now, when users check into a calendar-enabled meeting or video conference meeting from the EMS&#160;Room Sign App, the meeting start time no longer changes to the check in time. </p>
+                        <p class="RNBodyBeforeList">This change was made to prevent the following issues:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>If the meeting was open in Outlook or Google Calendar during check in from the EMS&#160;Room Sign App and the meeting start time was changed to the EMS&#160;Room Sign App check in time, the meeting ended up with an Outlook or Google Calendar rule violation because the meeting's start time was edited while the meeting was in progress. </li>
+                            <li>For meetings with multi-location bookings, changing the meeting start time to the check in time from the EMS Room Sign App would update the start times of all the booking locations, not just the location where check in occurred.</li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41365&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">41365</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Installation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-02-28T14:50:41.3625176-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="We will need to see a demo of the install process so we can update the documentation and get applicable screen captures. \r\n\r\nNeed to review website and make sure more core doc topics aren't affected by this enhancement." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T08:12:56.9714279-07:00">EMS Room Sign App installation process improvements</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">To simplify the EMS&#160;Room Sign App installation process, the  overlay script has been integrated into the EMS&#160;patch.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41949&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">41949</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">API</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-01T08:17:58.9344198-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to update core documentation &quot;Install RSA&quot; topic has a section titled &quot;Create an EMS Admin User.&quot; How will this change affect this section?\r\n\r\nWe need someone to take us through the RSA install process so we can make sure we have the instructions up-to-date." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T08:22:02.6248344-07:00">Removed requirement to create admin user for managing EMS&#160;Room Sign API</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">The EMS&#160;Room Sign API was moved inside of the Room Sign App. Therefore, customers are no longer required to create an admin user to manage the API. Where required for audit trail purposes, EMS will use the user “EMS Room Sign App.” </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41958&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">41958</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">API</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Iadea Internal API Access_Token removed</p>
+                        <p class="RNBody">Tokens can now be obtained if the user has set a password on their EMS&#160;Room Sign App. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43037&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">43037</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Parameter</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Updates to "Allow Extend Booking" parameter</p>
+                        <p class="RNBody">The parameter—<span class="ui">Allow Extend Booking</span>—has been updated. Previously, for multi-location Exchange meetings, when the <span class="ui">Extend </span><MadCap:annotation MadCap:createDate="2019-03-01T10:14:49.8300060-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Is the button labeled &quot;Extend&quot; or &quot;Adjust&quot;?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T10:15:06.9006991-07:00">button </MadCap:annotation>was used to extend the meeting time in one location, the meeting time was extended for all the locations. </p>
+                        <p class="RNBodyBeforeList">To prevent meeting time adjustments being applied to all locations in multi-location meetings and to improve functionality, the <span class="ui">Allow Extend Booking</span> parameter has been updated with the following <MadCap:annotation MadCap:createDate="2019-03-01T10:05:46.5731491-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to update RSA global parameters documentation with new values (similar to &quot;Allow End Booking&quot; parameter. " MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T10:07:51.7043348-07:00">values </MadCap:annotation>(similar to <span class="ui">Allow End Booking</span><MadCap:annotation MadCap:createDate="2019-03-01T10:10:23.6979617-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="The &quot;Allow End Now&quot; parameter currently states that all locations will be updated for a multi-location PAM reservation. Is this still true or has the &quot;Allow End Booking&quot; been fixed so that only the one location is updated? If this has been fixed, need to update core documentation." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T10:12:01.6428578-07:00">parameter</MadCap:annotation>):</p>
+                        <ul class="RN-unorder-list">
+                            <li><span class="ui">No</span>—<span class="ui">Extend </span><MadCap:annotation MadCap:createDate="2019-03-01T09:44:10.5111412-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Is the button labeled &quot;Extend&quot; or &quot;Adjust&quot;? " MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-01T10:09:03.4910681-07:00">button </MadCap:annotation>will not be displayed in the EMS&#160;Room Sign&#160;App.</li>
+                            <li><span class="ui">Standard Bookings</span>—<span class="ui">Extend </span>button will be displayed for bookings that are not calendar-enabled or created on a VC&#160;template and that are not configured with setup and teardown times. Selecting <span class="ui">Extend </span>will extend the booking time by the number of minutes configured in EMS&#160;Room Sign App settings (typically 15 minutes). </li>
+                            <li><span class="ui">Standard + Bookings with Setup and Teardown</span>—<span class="ui">Extend </span>button will be displayed for standard bookings with or without setup and teardown times. Selecting <span class="ui">Extend </span>will extend the meeting time and the teardown time by the number of minutes the meeting was extended.</li>
+                            <li><span class="ui">Standard + Calendar-Enabled and VC Bookings</span>—<span class="ui">Extend </span>button will be displayed for all standard bookings and all calendar-enabled bookings or bookings created on a VC template; however, the <span class="ui">Extend </span>button will not be displayed for bookings with setup and teardown times. For calendar-enabled bookings, selecting the button will only affect the current location, not other booking locations tied to the reservation. For bookings created on a VC template, selecting the button will extend the meeting in the current location regardless of the Host. The Exchange or Google appointment will not be updated upon extend.</li>
+                            <li><span class="ui">All Bookings</span>—<span class="ui">Extend </span>button will be displayed for all booking types. Selecting <span class="ui">Extend </span>will extend the meeting time, and the teardown time if applicable, by the number of minutes configured in EMS&#160;Room Sign App settings (typically 15 minutes).</li>
+                        </ul>
+                        <p class="RNBody">See Also:&#160;<a href="../../../EMSRoomSignApp/44.1/ConfigurationGuide/GlobalSettings.html#AllowExtendBooking">EMS&#160;Room Sign App Global Settings</a></p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43435&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">43435</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 193px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 707px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">LED&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">LED&#160;sync color issue</p>
+                        <p class="RNBody">When a user created a reservation during the check-in window of the next meeting, the EMS&#160;Room Sign App displayed the check-in LED color and the check-in button while displaying the reserved meeting.
+</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the EMS&#160;Room Sign App switches to the reserved LED color until the meeting ends and then switches back to the check-in LED status color while hiding the check-in button for the future event.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=35825&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">35825</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Crestron Screen Display</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Screen interface was being cut off on specific-model Crestron panels</p>
+                        <p class="RNBodyBeforeList">For customers using Crestron panels, portions of the screen interface were being cut off on the following models and resolutions:</p>
+                        <ul class="RN-unorder-list">
+                            <li>7-inch Creston Panel at a resolution of 1024&#160;x&#160;600 (TSS-7-W-S-SIW KIT)</li>
+                            <li>10-inch Crestron Panel at a resolution of 1280&#160;x&#160;800 (TSS-10-B-S-SIW KIT)</li>
+                        </ul>
+                        <p class="RNBody"><b>Fix</b>:&#160;Modified functionality so that the interface displays correctly.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41953&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">41953</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Time Bar</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Clicking different hour sections selected the same Start/End time</p>
+                        <p class="RNBody">When selecting a time in the EMS&#160;Room Sign App, clicking a different section in the time bar resulted in the same Start/End time. </p>
+                        <p class="RNBody"><b>Fix</b>:&#160;Modified functionality so that clicking on a different hour section results in the selection of a different Start/End time. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=35993&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">35993</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Time Bar</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Time bar appeared in background when creating a reservation in portrait mode on the Samsung Tab A</p>
+                        <p class="RNBody">When creating a reservation in portrait mode on the Samsung Tab A, users could still see the time bar in the background.  </p>
+                        <p class="RNBody"><b>Fix</b>:&#160;Modified functionality so that users do not see the time bar when creating a reservation on the Samsung Tab A in portrait mode.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=31132&amp;_a=edit&amp;triage=true" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">31132</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

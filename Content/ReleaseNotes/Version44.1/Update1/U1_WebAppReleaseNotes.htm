@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Web App Release Notes <br />V44.1, Update 1</h1>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_1">Name:&#160;V44.1, Update 1</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_1">Release&#160;Date:&#160;July 20, 2016</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_1">Patch #:&#160;2016.07.20.1</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For more information, please see <a href="#Contact">Contact Customer Support</a> and <a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        </div>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_2">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_2">Issue</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="5" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">Booking Templates and User Personalization Issues</p>
+                        <p class="italics">New Reservation</p>
+                        <p class="p_1">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Add to Calendar Checkbox Settings Not Enforced for Booking Templates&#160;</h4>
+                        <p class="p_1">When using a booking template that had&#160;Enable "Add to Calendar" Checkbox by Default&#160;activated, the setting was not enforced and the checkbox was missing on&#160;the Reservation Details page.</p>
+                        <p class="p_3">Modified the parameter to ensure that settings are enforced and the checkbox appears when activated&#160;on the Reservation Details page.</p>
+                        <p class="p_1">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Areas Listed as Buildings for Service Only Request Booking Template</h4>
+                        <p class="p_3">When using the Service Only Request template during a new reservation, selecting an Area as a building caused a crash.</p>
+                        <p class="p_3">Fix:&#160;Changed the template so that only buildings are listed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Default Location Setting Not Displayed for Booking Templates</h4>
+                        <p class="p_3">When using a booking template that had a default location specified, the Location, Time, Timezone, and Event Name did not display properly on the Create A Reservation page.</p>
+                        <p class="p_3">Fix:&#160;Modified the parameter to ensure that settings are enforced and the correct location and event information displays on the Create A Reservation page.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Default Time Zone Setting Not Observed for New Bookings</h4>
+                        <p class="p_1">When users had a default timezone specified in their Everyday User profile, that setting was not observed during the booking workflow and the&#160;Create a booking in this time zone&#160;field on the new booking screen was instead using the system time zone.</p>
+                        <p class="p_3">Fix:&#160;Modified functionality to ensure that this setting is observed and time zone defaults display&#160;on the Create A Reservation page.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Room Setup Types Not Restricted to Room</p>
+                        <p class="p_3">When editing a room setup type during a booking, the dropdown seemed&#160;to randomly select a setup, and the list included setup types that were not attributed to the room.</p>
+                        <p class="p_3">Fix:&#160;Modified functionality to only list setup types associated with the room.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="italics">Add Services</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Adding Services from Reservation Summary Causes Error</h4>
+                        <p class="NormalWeb_1">Clicking the Add Services option from the Reservation Summary could cause the error,</p>
+                        <p class="NormalWeb">"System.ArgumentException: Column 'BillingReference' does not belong to table ReservationDetails."</p>
+                        <p class="p_3">Fix:&#160;Modified functionality&#160;to&#160;ensure that the error no longer occurs.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">Manage Services</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>POs on Room Requests Not Saving</h4>
+                        <p class="p_3">When including a PO on a room request, the PO information was not saving correctly and was missing from the Reservation Summary.&#160;</p>
+                        <p class="p_3">Fix:&#160;Modified functionality to ensure that PO information is correctly saved with room requests.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="italics">Edit Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Rescheduling Booking Causes Wrong Start and End Times to Display</h4>
+                        <p class="p_3">When using this option to choose a new booking time, the Start/End time in the Reservation Summary grid view was incorrect because the wrong time zone was used to calculate the new time.</p>
+                        <p class="p_3">Fix:&#160;Modified functionality&#160;to&#160;ensure that new Start/End times are correctly recalculated to display on the Reservation Summary.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="6" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">General User Interface Issues</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Edit Icon Sometimes Missing</h4>
+                        <p class="p_1">The Edit icon was occasionally missing on Booking Details and Reservation Details screens even though the user had proper rights to edit.</p>
+                        <p class="p_4">Fix:&#160;Modified the display&#160;to ensure consistent availability of the icon for:</p>
+                        <ul>
+                            <li>Booking Details</li>
+                            <li>My Home &gt; My Bookings</li>
+                            <li>My Events &gt; My Bookings</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Room Name Cut Off in Search Results</h4>
+                        <p class="p_3">When searching for rooms, long room names appeared to be cut off in the Room Search Results list.</p>
+                        <p class="p_3">Fix:&#160;Modified the display to show the complete room name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Room Notes Displaying Incorrectly</h4>
+                        <p class="p_1">Text in the Notes field was incorrectly displaying HTML code instead of normal text format when users copied and pasted the text from other applications.</p>
+                        <p class="p_1">Fix:&#160;Modified the Notes field to display text normally.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Search for Location Field Not Clearing</h4>
+                        <p class="p_1">When searching for location by feature, once a search was completed, the search field was not clearing and the search term remained.</p>
+                        <p class="p_1">Fix:&#160;Modified the display to clear the field after search action completes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Sign Out Option Incorrectly Available With Integrated Windows Authentication</h4>
+                        <p class="p_1">When using Integrated Windows Authentication, the&#160;Sign Out&#160;option remained incorrectly available.&#160;</p>
+                        <p class="p_1">Fix:&#160;Removed the option when Integrated Windows Authentication is active.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Unclear Browser Warning</h4>
+                        <p class="p_1">When using Internet Explorer Version 11, a popup warning indicating that this browser version was unclear.</p>
+                        <p class="p_1">"We've noticed that you're using an older web browser. For the best experience, upgrade to the latest version of one of the browsers (see system requirements page)."&#160;</p>
+                        <h4>Modified the error message to add further guidance:</h4>
+                        <p class="p_1">"We've noticed that you're using an older web browser. For the best experience, upgrade to the latest version of one of the browsers (see system requirements page)."&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="p_1">If you are using Internet Explorer, please also make sure that Compatibility View is disabled."</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">Room Request</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Existing Bookings Not Shown on Calendar During New Reservation</h4>
+                        <p class="p_1">When creating a new reservation and adding a meeting room using the&#160;Let Me Search For A Room&#160;option on the Room request screen, existing reservations did not show on the calendar.</p>
+                        <p class="p_3">Fix:&#160;Modified functionality&#160;to&#160;ensure that existing reservations show on the calendar so users do not attempt to request reserved rooms.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Room Search Missing "No Rooms Available" Message</h4>
+                        <p class="p_1">When creating a new reservation and adding a meeting room using the&#160;Let Me Search For A Room&#160;option on the Room request screen, when there were no rooms available, the list view did not provide any messaging indicating as such.</p>
+                        <p class="p_3">Fix:&#160;Added a message that will appear on the search results tab&#160;to indicate&#160;when no rooms are available.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">View Cart</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Start and End Times for New Reservations Incorrect in Cart&#160;</p>
+                        <p class="p_3">The start and end times for new reservations was incorrect in the Shopping Cart view.</p>
+                        <p class="p_3">Fix:&#160;Modified calculations so that the start and end times in the cart match the reservation start and end times.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="4" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="italics">Browse Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Browse Events Lists Areas Under Locations</h4>
+                        <p class="p_3">Searching by Location returned a list that incorrectly included both Locations and Areas.&#160;</p>
+                        <p class="p_3">Fix:&#160;Modified the display&#160;to list only Locations for Select Location, and Areas for Select Area.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Browse Events Lists Different Events Depending on Time Zone</h4>
+                        <p class="p_3">The events listed on the Browse Events screen was different depending on time zone, when it should have been the same.&#160;</p>
+                        <p class="p_3">Fix:&#160;Modified the display&#160;to list the same events regardless of time zone.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Browse Events Lists Duplicate Events</h4>
+                        <p class="p_3">The events listed on the Browse Events screen were sometimes duplicated in the daily view.&#160;</p>
+                        <p class="p_3">Fix:&#160;Modified the display for the daily view to prevent duplicate listings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Current Date Incorrect on My Events and Browse Events</h4>
+                        <p class="p_3">When showing bookings for today's date, these views incorrectly showed&#160;today's date as the following day. While the items listed were for today, the date was incorrect.</p>
+                        <p class="p_3">Fix:&#160;Modified the displays to list today's date correctly.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="italics">Browse Locations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Enter Key Disabled on Filter by Room Field for Browse Locations</h4>
+                        <p class="p_1">When searching for a room and using the Room field in the Filters area, the Enter key was disabled.</p>
+                        <p class="p_1">Fix:&#160;Modified the field so that when users enter a room name, they can press the Enter key to initiate the search filter.&#160;&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Find a Room Feature Needed in Browse Locations</h4>
+                        <p class="p_1">When searching for a room returns too many results, the user needed the ability to Find a Room from this screen.</p>
+                        <p class="p_1">Fix:&#160;Added Find a Room functionality to the Browse Locations views to&#160;streamline the room search process.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="5" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="italics">EMS for Outlook Issues</p>
+                        <p class="p_1">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Adding Rooms to Recurring Meetings in Outlook Cancels Meeting</h4>
+                        <p class="p_1">When editing a recurring meeting by&#160;clicking the&#160;Add Location&#160;button on the Manage Bookings screen, selecting an available room,&#160;and then clicking the&#160;Notify Attendees&#160;button, attendees received a notification email that the meeting was canceled and it showed as canceled in the Outlook® calendar.&#160;</p>
+                        <p class="p_1">Fix:&#160;Modified functionality&#160;to&#160;ensure that the meeting is no longer canceled when&#160;users add a room to a recurring meeting with Exchange integration and&#160;email attendees&#160;.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Attendee Availability Displays Incorrectly During Booking EMS for Outlook</h4>
+                        <p class="p_1">When creating a new reservation and adding attendees, their free/busy/tentative status did not display correctly when the user clicked the forward/back buttons to advance to future or previous days in the calendar.&#160;</p>
+                        <p class="p_1">Fix:&#160;Modified functionality&#160;to&#160;ensure that attendee availability displays correctly.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Recurring Meetings in EMS for Outlook Allow Bookings in Conflict</h4>
+                        <p class="p_1">When editing a recurring meeting that was in conflict status, the room incorrectly appeared&#160;to be available in the&#160;Outlook<sup>®</sup> calendar, however, when the user attempted to change the room (clicking the&#160;Add Location&#160;button on the Manage Bookings screen),&#160;the following error occurred and the conflict could not be resolved.&#160;</p>
+                        <p class="Emphasis_1">"Booking failed to update. Another user might have changed this booking or taken its location."</p>
+                        <p class="p_1">Fix:&#160;Changed validations so that the room in conflict did not appear as available in Outlook<sup>®</sup>, and ensure that users can change the room to correct the conflict.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Recurring Meetings Not Listed Properly in EMS for Outlook</h4>
+                        <p class="p_1">Only the first occurrence of a recurring meeting was listed in EMS for Outlook.</p>
+                        <p class="p_1">Fix:&#160;Modified functionality&#160;to&#160;ensure all occurrences of a recurrent meeting are listed properly in EMS for Outlook.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Room Change Notification Emails Missing User's Message</h4>
+                        <p class="p_1">When changing a reservation, the text users manually entered in the Message field on the Notify Attendees screen was omitted from the emails sent to attendees.&#160;</p>
+                        <p class="p_1">Fix:&#160;Modified functionality&#160;to&#160;ensure that text users enter in the Message field&#160;appears in the notification email.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">Mobile Web App Issues</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Mobile Web App Allows Multiple Rooms to Be Added to Recurring Meetings in EMS for Outlook</h4>
+                        <p class="p_1">The Mobile Web App allowed users to edit multi-room bookings on the same date and time and apply more than one room to a booking, including changing multiple rooms.</p>
+                        <p class="p_1">Fix:&#160;Changed functionality to prevent users from applying more than one room to a booking or changing multiple rooms at once for&#160;one occurrence.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Room Info Missing From My Bookings on Mobile Web App&#160;</h4>
+                        <p class="p_1">The room information, check in, cancel, and end now buttons were not displaying in the My Bookings view for mobile Web App users.</p>
+                        <p class="p_1">Fix:&#160;Modified functionality&#160;to&#160;ensure that room information and check in, cancel, and end now buttons display in the My Bookings view.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="italics">Video Conference Issues</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Video Conferences Not Visually Grouped</h4>
+                        <p class="p_1">Video conference bookings were not visually grouped so that Host bookings and child bookings were obvious.&#160;</p>
+                        <p class="p_1">Fix:&#160;Modified functionality&#160;to&#160;group and visually separate these parent-child bookings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <h4>Video Conference Host Reservation Incorrectly Cancellable</h4>
+                        <p class="p_3">When editing a video conference (VC) reservation, the Cancel Bookings button was incorrectly available for the host room.</p>
+                        <p class="p_3">Fix:&#160;Modified functionality&#160;to&#160;make the Cancel Bookings&#160;option unavailable for VC reservations designated as "Host."</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Service</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+        <p>&#160;</p>
+    </body>
+</html>

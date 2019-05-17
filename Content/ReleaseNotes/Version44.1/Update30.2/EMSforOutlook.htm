@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS for Outlook Release Notes <br />V44.1, Update 30.2</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 30.2</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />November 9, 2018<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.30002.2102<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 111px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 384px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="font-style: italic;">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Incorrect Time Bar in Attendee Schedule View</p>
+                        <p class="RNBody">Time labels across the attendees area of schedule view was not reflecting the correct time for the organizer and attendees.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the attendee schedule view reflects the correct time. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41582&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41582</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" style="font-style: italic;">
+                        <p>Create a Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Incorrect Booking Rule Error Message</p>
+                        <p class="RNBody">Regardless of what was configured in the "Allow New Bookings Within Range of this Many Days," users experienced the error message, "You cannot book this Room after XX/XX/XXXX. . . ."&#160;The date on the error message was one day before the last allowed booking date. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the correct last allowed booking date displays if users try to book beyond that date.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41099&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41099</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="font-style: italic;">
+                        <p class="RNArea">Cancellations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Canceling One Occurrence in EMS&#160;for Outlook Canceled All Bookings</p>
+                        <p class="RNBody">Canceling one occurrence in EMS&#160;for Outlook resulted in the cancellation of all dates in the series in the EMS&#160;Web App and EMS&#160;Desktop Client. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that canceling one occurrence does not affect other dates in the series. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41533&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41533</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" style="font-style: italic;">
+                        <p class="RNArea">Conflict Resolution and <br />Recurring Reservations </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">EMS&#160;for Outlook Add-in Was Unresponsive When Users Tried to Resolve Conflicts</p>
+                        <p class="RNBody">When resolving booking conflicts for a recurring meeting, the select room button (<span class="ui">+</span>) on the Resolve Conflicts page was unresponsive, and users were unable to select a new location to resolve the conflict. This was caused by rooms configured to alert users where no alert message was actually configured. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the select room button (<span class="ui">+</span>) on the Resolve Conflicts page functions properly, and users can select a new location to resolve a conflict.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=40727&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">40727</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="font-style: italic;">
+                        <p>Billing Reference and PO Numbers</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Group Default Billing Reference (BR)&#160;and PO&#160;Numbers Were Not Populating</p>
+                        <p class="RNBody">When creating a reservation in EMS for Outlook, the BR and PO&#160;values were not populating by default in their respective fields.  The defaults were populating when users toggled from a different group back to the original group.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the default BR and PO values for a group are populated in the respective fields by default when creating a new reservation on a template that displays these fields.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=40968&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">40968</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" style="font-style: italic;">
+                        <p>Edit a Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Attendees' Calendars Were&#160;Not Updating When Dragging and Dropping</p>
+                        <p class="RNBody">Reservations created using the EMS&#160;for Outlook Add-in that were edited by dragging and dropping to a new time were not updating on attendees' calendars. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that the attendees' calendars are updated. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41827&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41827</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="font-style: italic;">
+                        <p>Edit a Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Dragging and Dropping Did Not Update Database</p>
+                        <p class="RNBody">Users were unable to drag/drop a single occurrence in the EMS&#160;for Outlook Add-in. The time was not updating in the database unless the time was changed in the meeting drop down. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that simply dragging and dropping updates the time in the database.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41640&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41640</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" style="font-style: italic;">
+                        <p>Delegates</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Edits Made to Delegate Calendar Were Not Reflected in EMS&#160;Web App or EMS&#160;Desktop Client</p>
+                        <p class="RNBody">Edits made on a delegate's calendar in the EMS for Outlook Add-in  were not reflected in the EMS Web App or the EMS&#160;Desktop Client. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that edits made to a delegate's calendar will be reflected in all EMS&#160;access points.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=40232&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">40232</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1" style="font-style: italic;">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Location Text Field in Occurrence Not Updating</p>
+                        <p class="RNBody">The Location text field in an occurrence was not updating if either the conflict on a recurrence was resolved with the EMS&#160;screen or the conflict was resolved on an appointment. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that the Location text field updates with room changes.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42018&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42018</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

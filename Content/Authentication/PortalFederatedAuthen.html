@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Portal or Federated Authentication</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Portal or Federated Authentication</h1>
+        <p>This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#Portal_Authentication_Overview">Portal Authentication Overview</a>
+            </li>
+            <li><a href="#Installation/Configuration">Installation/Configuration</a>
+                <ul>
+                    <li><a href="#Redirect_User_Log_In_to_Your_SSO_Provider">Redirect User Log In to Your SSO Provider</a>
+                    </li>
+                    <li><a href="#Specify_a_Different_Default_Home_Page_for_Guest_Users">Specify a Different Default Home Page for Guest Users</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="Portal_Authentication_Overview"></a>Portal Authentication Overview&#160;</h2>
+        <p>The Portal Authentication method provides EMS Web App single sign-on capability using your organization’s portal (e.g.,&#160;CAS, Shibboleth,&#160;SiteMinder, Plumtree, uPortal, etc.). When a user who is logged into your portal accesses EMS Web App, a predefined user-specific variable (e.g.,&#160;email address, employee/student ID, network ID, etc.) captured by your portal/sign-on page is compared against corresponding information recorded in the&#160;<span class="ui">Network ID</span>&#160;and/or&#160;<span class="ui">External Reference</span>&#160;fields of your EMS Everyday User records. If a match exists, the Everyday User will be automatically logged-into EMS Web App.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Field Used to Authenticate Everyday User&#160;parameter (within <span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Parameters&#160;</span>&gt; <span class="ui">Everyday User Applications</span> tab) is used by EMS Web App to determine which value should be used for authentication.</p>
+        </div>
+        <p>Several built-in authentication methods to pass-in credentials are available including:</p>
+        <ul>
+            <li>Server Variable (Header Variable)</li>
+            <li>Session</li>
+            <li>Form</li>
+            <li>Cookie</li>
+            <li>Query String</li>
+            <li>Federated (SAML)</li>
+        </ul>
+        <p>For a more detailed explanation of the authentication methods outlined above,&#160;see&#160;<a href="PortalAuthMethods.html">Portal Authentication Methods</a>.&#160;</p>
+        <h2><a name="Installation/Configuration"></a>Installation/Configuration&#160;</h2>
+        <ol start="1">
+            <li>Within the Everyday User Applications parameters area of EMS (System Administration &gt; Settings &gt;&#160;Parameters&#160;(Everyday User Applications tab), the following parameters must be set accordingly:</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Portal Authentication Cookie Key</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Required if Portal Authentication Method = Cookie</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Portal Authentication Method</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Server Variable</p>
+                        <p>Session</p>
+                        <p>Form</p>
+                        <p>Cookie</p>
+                        <p>Query String</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Portal Authentication Variable</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>User variable to be compared against the EMS Everyday User&#160;External Reference/Network ID&#160;field</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="2" MadCap:continue="true">
+            <li>Direct users to the default EMS Web App page. If the default installation settings were used, the default page is:<p>(http://[ServerName]/EMSWebApp/Default.aspx)<br />(replace [ServerName] with the name of your web&#160;server)</p></li>
+        </ol>
+        <h3><a name="Redirect_User_Log_In_to_Your_SSO_Provider"></a>Redirect User Log In to Your SSO Provider</h3>
+        <p>Administrators can&#160;hide the login form on the My Home page and instead, present a single&#160;<span class="ui">Sign In</span>&#160;button that links to the override URL. Open the web.config file and locate the following code to customize the redirect:</p>
+        <div class="code-sample"><pre>&lt;!--&lt;add key="loginOverrideUrl" value=""/&gt;--&gt;</pre><pre>Additionally, you can do the same for user log out:</pre><pre>&lt;!--&lt;add key="logoutOverrideUrl" value=""/&gt;--&gt;</pre><pre>Changing the URL in these areas means that when users log in or out, they will pass through your SSO provider.</pre>
+        </div>
+        <h3><a name="Specify_a_Different_Default_Home_Page_for_Guest_Users"></a>Specify a Different Default Home Page for Guest Users</h3>
+        <p>Additionally, you can now&#160;<a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_WebAppSysParameters.html">specify a different site home page</a>&#160;for unauthenticated users.</p>
+    </body>
+</html>

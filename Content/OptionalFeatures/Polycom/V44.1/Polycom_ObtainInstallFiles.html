@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>Obtain the Polycom Integration Installation Files</title>
+    </head>
+    <body>
+        <h1>Obtain the Installation Files</h1>
+        <p>In addition to the EMS license key (available from <MadCap:snippetText src="../../../AccruentAccess_Link_NoLink.flsnp" />), please contact Customer Support, or a member of the Professional Services group if you are working with one, to obtain the following components:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">PolycomOverlay.sql:</span>&#160;SQL script that will need to be executed against your EMS database. This will create EMS&#160;Polycom Interface-specific objects (tables and stored procedures).</p>
+            </li>
+            <li>
+                <p><span class="ui">PolycomSetup.msi:&#160;</span>Service responsible for pushing video conference bookings from EMS to the Polycom Realpresence Resource Manager API at timed intervals.</p>
+            </li>
+            <li>
+                <p><span class="ui">EMS.Polycom.dll:</span> Custom Polycom DLL that will display all EMS Polycom Interface activity within the EMS application including errors and successfully scheduled video conferences. The Polycom Activity DLL also contains an area that allows EMS Administrators to configure various EMS Polycom Interface settings.</p>
+            </li>
+        </ul>
+    </body>
+</html>

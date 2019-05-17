@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Platform Services Release Notes <br />V44.1, Update 32</h1>
+        <p>
+            <MadCap:concept term="V44.1" />This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 186px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 32</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />March 26, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />201903211<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.32000.843<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 184px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 742px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Parameters</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Updated search bookings route</p>
+                        <p class="RNBodyBeforeList">The search bookings route has been updated in order to get bookings changed within a timeframe.  The following filters were added to the search bookings route: </p>
+                        <ul class="RN-unorder-list">
+                            <li>minDateChanged</li>
+                            <li>maxDateChanged</li>
+                        </ul>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=29333&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">29333</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Authentication works with Azure IdP</p>
+                        <p class="RNBody">An enhancement was made that fixed an issue related to SAML and ADFS authentication. Authentication now works using Azure IdP.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=42145&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42145</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Service Orders</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">State ID&#160;can be set when adding or editing a service order</p>
+                        <p class="RNBody">Users can now set the state ID while adding a service order to a booking or while editing a service order in a booking. </p>
+                        <p class="RNBodyBeforeList">The following routes have been updated to include state Id of service in the request body:</p>
+                        <ul class="RN-unorder-list">
+                            <li>POST/bookings/{id}/serviceorders </li>
+                            <li>PATCH/serviceorders/{id} </li>
+                        </ul>
+                        <p class="RNRef">
+EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=42836&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42836</a> and <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=42838&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42838</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Service Orders</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Added new GET&#160;Category States route</p>
+                        <p class="RNBody">A new route, GET/Categories/{id}/states, has been added. Users can now  get states of the categories while adding a service order to booking.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42930&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42930</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Booking Search Call</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Added 'HideGroup' room property to booking search call </p>
+                        <p class="RNBody">In the booking search call (/bookings/actions/search), a 'hideGroup' property has been added to the BookingRoomModel being returned.  The 'hideGroup' property is used to determine when to replace a group name with the <a href="EMSWebApp.htm#Privatelabel">Private label</a> when viewing room details in EMS&#160;Web App.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43067&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43067</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Skype for Business</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-03-08T09:57:38.4874994-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does this information cover 43684, or do we need to provide more info?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-08T09:59:39.5581603-07:00">Skype</MadCap:annotation> for Business Meeting Option Parameter Added</p>
+                        <p class="RNBodyBeforeList">A new meeting option parameter has been added to the EMS&#160;Platform Services Admin&#160;UI under Skype for Business on the <span class="ui">Conferencing </span>tab. The parameter <span class="ui">These people don't have to wait in the lobby</span> is a drop-down field with the following values: </p>
+                        <ul class="RN-unorder-list">
+                            <li><span class="ui">Only me, the meeting organizer</span>
+                            </li>
+                            <li><span class="ui">People I invite from my company</span>
+                            </li>
+                            <li><span class="ui">Anyone from my organization</span>
+                            </li>
+                            <li><span class="ui">Anyone (no restrictions</span>
+                            </li>
+                        </ul>
+                        <p class="RNBody">
+                            <MadCap:annotation MadCap:createDate="2019-03-08T09:59:45.2059163-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to add this information to the core documentation." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-08T09:59:55.7019106-07:00">The</MadCap:annotation> default value is <span class="ui">Anyone from my organization</span>.</p>
+                        <p class="RNBody">
+                            <img src="../../../EMSPlatformServices/Images/PlatformSettingAdminUI_TFS42219.png" style="width: 656px;height: 530px;" class="popup_with_padding_only" MadCap:mediastyle="@media print { max-width: 475px; }" />
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=42219&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42219</a> and <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43684&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43684</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 165px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">API Calls</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Incorrect Group Email Address was returned</p>
+                        <p class="RNBody">When making the POST /bookings/actions/search REST call, the incorrect Group Email Address was returned.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the correct Group Email Address is returned.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=40001&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">40001</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Parameters</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Reservation not inserted when AltTempContact parameter exceeded 50 characters</p>
+                        <p class="RNBody">When a value for altTempContact exceeded 50 characters, a reservation appeared to be created but was in fact an orphaned booking. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the parameter field value is validated  prior to insertion and an error is returned if the values do not meet the requirements.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41134&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41134</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">SAML&#160;Authentication</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Signature validation failing (SAML)</p>
+                        <p class="RNBody">Some customers' SAML configurations were not allowing SAML Responses to validate in the EMS&#160;Platform (using a Shibboleth IdP).</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that signatures can be validated. </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41651&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41651</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">API</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Request Body was missing for Get UDF Values for Multiple Rooms in the Swagger documentation.</p>
+                        <p class="RNBody">In the Swagger documentation, the <span class="ui">Get UDF Values for Multiple Rooms</span> call did not include the Request Body section with the RoomIds array variable. The RoomIds array is a required field in the body for the <span class="ui">Get UDF Values for Multiple Rooms</span> call. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Added the Request Body section to the Swagger documentation.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43077&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43077</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">API</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">'Delete Remove Delegates Response' missing in Swagger documentation</p>
+                        <p class="RNBody">There was incorrect documentation for 	myuser/delegates/{delegateId}. The Swagger documentation for the Remove Delegates call showed a message array in the response. When calling this API, the response received was a single message not in an array.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Fixed the response for the myuser/delegates/{delegateId}  in the Swagger documentation.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43115&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43115</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

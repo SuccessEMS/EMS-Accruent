@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Accruent Access Build of EMS Documentation"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  Skin="/Project/Skins/AccruentAccess/NewSkin.flskn"
+  MenuSkin="/Project/Skins/AccruentAccess/Top Nav Menu.flskn"
+  TopicToolbarSkin="/Project/Skins/AccruentAccess/Topic Toolbar.flskn"
+  SearchResultsSkin="/Project/Skins/AccruentAccess/Search Results.flskn"
+  ConditionTagExpression="include[Default.AccruentAccessOnly or Default.ScreenOnly or &quot;General.Online Only&quot;] exclude[Default.ExcludefromAccruentAccess or Default.FullHelpSite or Default.PrintOnly or General.Edit_in_Review or &quot;General.Print Only&quot;] "
+  EquationsOutputType="PNG"
+  ExcludeUnreferencedContent="false"
+  FaviconSkin="/Project/Skins/AccruentAccess/Favicons.flskn"
+  MasterStylesheet="/Content/Resources/Stylesheets/Accruent_2018.css"
+  DefaultUrl="/Content/Home_AA.htm"
+  TopNavTocPath="true"
+  MasterPage="/Content/Resources/MasterPages/No-Survey Master Page_AA.flmsp"
+  EnableSitemap="true"
+  SitemapWebUrl="https://documentation.accruent.com/accruentaccess/ems/"
+  ResolveCssVariables="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

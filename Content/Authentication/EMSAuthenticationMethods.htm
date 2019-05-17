@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <h1>EMS Authentication Methods</h1>
+        <p>Authentication is the process of identifying an individual or entity that is attempting to log into a secure domain. EMS&#160;Software supports multiple authentication methods that are suited to different applications and use cases. </p>
+        <p>The following table provides information on the various authentication methods for each EMS&#160;product. </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 172px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 260px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>EMS&#160;Product</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Authentication Options</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Available on EMS Platform Services</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Available to EMS Cloud Services Customers</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p>
+                      Best Practices
+                    </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/AuthenticationOptions.html">EMS&#160;Desktop Client</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul>
+                            <li><a href="EMSNativeAuthen.html">EMS&#160;Native Authentication</a>
+                            </li>
+                            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html">LDAP</a>
+                            </li>
+                            <li><a href="WindowsAuthen.html">Windows Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>YES. However, not available in Citrix (LDAP&#160;and Windows Authentication). </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/AuthOptions_WebApp.htm">EMS&#160;Web App</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <ul>
+                            <li><a href="WindowsAuthen.html">Windows Authentication</a>
+                            </li>
+                            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Configure_EMS_Web_App_to_Use_LDAP_Authentication">LDAP</a>
+                            </li>
+                            <li><a href="EMSNativeAuthen.html">EMS&#160;Native&#160;Authentication</a>
+                            </li>
+                            <li><a href="SAMLAuthen.html">SAML 2.0 (ADFS)</a>
+                            </li>
+                            <li><a href="CASAuthentication.htm">CAS</a>
+                            </li>
+                            <li>Portal Authentication</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>YES (LDAP, EMS&#160;Authentication, and SAML 2.0 ADFS)</p>
+                        <p>NO (Windows Authentication and Portal Authentication)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a href="../EMSKioskApp/V44.1/ConfigurationGuide/AuthenOptions.html">EMS Kiosk App</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Primary Authentication:</p>
+                        <ul>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Primary">Standard</a>
+                            </li>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Primary">Exact Match</a>
+                            </li>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Primary">LDAP</a>
+                            </li>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Primary">Badge</a>
+                            </li>
+                        </ul>
+                        <p>Second Authentication:</p>
+                        <ul>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Secondary">Exact Match</a>
+                            </li>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Secondary">LDAP</a>
+                            </li>
+                            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Secondary">Standard</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>EMS&#160;Kiosk App (Legacy)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Primary Authentication:</p>
+                        <ul>
+                            <li>Standard</li>
+                            <li>Exact Match</li>
+                            <li>LDAP</li>
+                            <li>Badge</li>
+                        </ul>
+                        <p>Secondary Authentication:</p>
+                        <ul>
+                            <li>Security Type</li>
+                            <li>Badge</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a href="../EMSRoomSignApp/44.1/ConfigurationGuide/Authentication.htm">EMS&#160;Room Sign App</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul>
+                            <li><a href="../EMSRoomSignApp/44.1/ConfigurationGuide/Authentication.htm#GroupIdentification">Group Authentication:</a>
+                                <ul>
+                                    <li>Badge</li>
+                                    <li>External Reference</li>
+                                    <li>Group/Contact Email</li>
+                                    <li>Network ID</li>
+                                    <li>Other ID</li>
+                                    <li>Personnel Number</li>
+                                </ul>
+                            </li>
+                            <li>Contact Authentication</li>
+                            <li><a href="../EMSRoomSignApp/44.1/ConfigurationGuide/Authentication.htm#Secondary">Secondary Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="../EMSRoomSignApp/44.1/InstallationGuide/BestPractices.htm">Best Practices</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a href="../EMSMobileApp/ConfigurationGuide/Authentication/ConfigureAuthentication.html">EMS&#160;Mobile App</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <ul>
+                            <li><a href="SAMLAuthen.html">SAML</a>
+                            </li>
+                            <li><a href="NTLMWindowsAuthentication.html">NTLM&#160;Windows Authentication </a>
+                            </li>
+                            <li><a href="LDAPAuthen.html#ConfiguringAuthenticationforEMSMobileApp">LDAP</a>
+                            </li>
+                            <li><a href="../EMSMobileApp/ConfigurationGuide/Authentication/OpenIDAuthen.html">OpenID</a>
+                            </li>
+                            <li><a href="../EMSMobileApp/ConfigurationGuide/Authentication/PersistentAuth.htm">Persistent Authentication</a>
+                            </li>
+                            <li><a href="EMSNativeAuthen.html">EMS&#160;Native&#160;Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>YES (SAML, LDAP, OpenID, EMS&#160;Native Authentication)</p>
+                        <p>NO&#160;(NTLM Windows Authentication and Header Authentication)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a href="../EMSMasterCalendar/V8/ConfigurationGuide/IntegAuthenforMC.html">Master Calendar</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul>
+                            <li><a href="NTLMWindowsAuthentication.html">NTLM&#160;Windows Authentication</a>
+                            </li>
+                            <li><a href="LDAPAuthen.html">LDAP</a>
+                            </li>
+                            <li><a href="PortalAuthMethods.html">Portal Authentication</a>
+                            </li>
+                            <li><a href="EMSNativeAuthen.html">Native&#160;Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>YES (LDAP and EMS&#160;Native Authentication)</p>
+                        <p>NO&#160;(Portal and NTLM Windows Authentication)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus Planning Interface</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <ul>
+                            <li><a href="EMSNativeAuthen.html">EMS&#160;Native Authentication</a>
+                            </li>
+                            <li><a href="WindowsAuthen.html">Windows Authentication</a>
+                            </li>
+                            <li><a href="LDAPAuthen.html">LDAP&#160;Authentication</a>
+                            </li>
+                            <li><a href="PortalAuthMethods.html">Portal Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>YES&#160;(EMS&#160;Authentication and LDAP)<br /></p>
+                        <p>NO&#160;(Windows Authentication and Portal)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a href="../EMSforOutlook/IntegrationtoMicrosoftExchange/Introduction.htm">EMS&#160;for Outlook</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul>
+                            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_ManageEUforIntegAuthen.htm">Exchange Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>EMS&#160;Floor Plan</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <ul>
+                            <li><a href="EMSNativeAuthen.html">EMS Native Authentication</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>NO</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>YES</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>See Also:</p>
+        <ul>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/AuthOptions_WebApp.htm">Authentication Options for EMS Web App</a>
+            </li>
+            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_Authentication Options_Mobile.htm">Authentication Options for EMS Mobile App</a>
+            </li>
+            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_Authentication Options_MC.htm">Authentication Options for EMS Master Calendar</a>
+            </li>
+            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_Authentication Options_Regics.htm">Authentication Options for EMS Regics</a>
+            </li>
+            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_IntegratedAuthenticationConsid.htm">Integrated Authentication Considerations</a>
+            </li>
+            <li><a href="WindowsAuthen.html">Integrated Windows Authentication</a>
+            </li>
+            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_ManageEUforIntegAuthen.htm">Manage Everyday Users For Integrated Authentication</a>
+            </li>
+            <li><a href="LDAPAuthen.html">LDAP Authentication</a>
+            </li>
+            <li><a href="PortalFederatedAuthen.html">Portal or Federated Authentication</a>
+            </li>
+            <li><a href="PortalAuthMethods.html">Portal Authentication Methods</a>
+            </li>
+            <li><a href="SAMLAuthen.html">SAML&#160;Authentication</a>
+            </li>
+        </ul>
+    </body>
+</html>

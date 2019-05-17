@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure Buildings V44.1 (EMS Desktop Client) </title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Buildings</h1>
+        <p>A <span class="ui">building</span> is a physical location that contains one or more spaces (e.g., rooms, open areas, etc.), that users can reserve for an event. Buildings are one of the core data items that you must configure&#160;so that your users can make reservations in <MadCap:variable name="General.Product" />.</p>
+        <p>This topic provides the following information:</p>
+        <ul class="unorder-list">
+            <li><a href="#ConfigureBuilding">Configure a Building</a>
+            </li>
+            <li><a href="#RestrictBuilding">Restrict a Building to Specific Categories</a>
+            </li>
+            <li><a href="#AssociateImage">Associate&#160;an Image With a Building</a>
+            </li>
+            <li><a href="#SetValues">Set Values&#160;for the User Defined Fields (UDFs)</a>
+            </li>
+            <li><a href="#Specify">Specify Unregistered Attendee/Visitor Behavior</a>
+            </li>
+            <li><a href="#AuditTab">Audit Tab</a>
+            </li>
+        </ul>
+        <h2><a name="ConfigureBuilding"></a>Configure a Building</h2>
+        <ol class="number-list">
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Buildings</span>.&#160;The Buildings window opens. This window lists all the buildings that are currently configured in your <MadCap:variable name="General.Product" /> database.<div class="TitleandImage"><p class="Caption"><img src="Images/Buildings.png" class="padding_only" /></p><p class="Caption"> Buildings Window</p></div></li>
+            <li>Click <span class="ui">New</span>.&#160;The Building configuration dialog opens on the <span class="ui">Building </span>tab.<div class="TitleandImage"><p><img src="Images/Buildingn.png" class="resize80_noborder_padding" /></p><p class="Caption">Building Configuration Dialog</p></div></li>
+            <li>Enter the information as appropriate for the building using the subtopics in this topic.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>By default, when you configure a building, the building hours are set to Open All Day. To change these hours, see <a href="ConfigBuildingHours.html">Configuring Building Hours</a>. Only the building name, the building code, and the time zone are required fields. All other fields on all other tabs are optional and can be configured at a later date if needed.</p></div></li>
+        </ol>
+        <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p scope="col">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Building</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Required field. The name of the building (maximum&#160;50 characters, including spaces).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Building Code</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Required field. Abbreviated text that conveys the building name or description (maximum 20 characters, including spaces). For example, if a building is named the Conference Building, then a code for the building could be CONF.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Free-form text that provides any additional information or description about the building.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>URL</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The web address of a web page that provides more information about the building (for example, Google Maps).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Print Notes on Confirmation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Include the building notes in any confirmations that are printed for events that are scheduled in the building.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Time Zone</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Required field. Select the time zone in which the building resides.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you are configuring buildings in EMS&#160;Enterprise, you can select a unique time zone for each building. If you are configuring buildings in <MadCap:variable name="General.Product" />, all buildings must belong to the same time zone.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Currency</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the currency to be used for pricing all rooms in the building. See <a href="ConfigCurrencies.htm">Configure Currencies</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>External Reference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Links the building to an outside program, if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Cost Per Sq. Ft./Meter Per Yr.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Building cost. Used on the Room Utilization report.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Annual Operating Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Total number of hours that the building is open during a calendar year. Used on the Room Utilization report.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Latitude</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>This field relates to geofencing in the EMS&#160;Mobile App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Longitude</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>This field relates to geofencing in the EMS&#160;Mobile <MadCap:annotation MadCap:createDate="2018-02-16T09:00:39.2791203-07:00" MadCap:creator="Jen.Naused" MadCap:initials="JE" MadCap:comment="Add to Mobile App documentation." MadCap:editor="Jen.Naused" MadCap:editDate="2018-02-16T09:00:45.5026641-07:00">App.</MadCap:annotation></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Continue with any other configuration for the building as needed in this topic; otherwise, click <span class="ui">OK </span>to close the Building dialog box and return to the Buildings window. The newly configured building is displayed in the window.</li>
+        </ol>
+        <h2><a name="RestrictBuilding"></a>Restrict a Building to Specific Categories</h2>
+        <p>You can restrict specific categories to specific buildings. </p>
+        <ol class="number-list">
+            <li>From the Building Configuration dialog, click&#160;the <span class="ui">Categories </span>tab.<div class="TitleandImage"><p><img src="Images/categories.png" class="resize80_border_and_padding" /></p><p class="Caption">Categories Tab of the Building Configuration Dialog</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Available to All Buildings list in the lower right pane displays all the categories that are always available to all buildings and you cannot edit this list. You can also link buildings and categories when you are configuring categories. See <a href="ConfigCategory.html">Configure Categories</a>.</p></div></li>
+            <li>Select the categories you want&#160;to be available for use in the building, and then use the arrow buttons (&lt;,&gt;) to move them to the Selected list.</li>
+            <li>Continue with any other configuration for the building as needed; otherwise, click <span class="ui">OK </span>to close the Building dialog and return to the Buildings window. The newly configured building is displayed in the window.</li>
+        </ol>
+        <h2><a name="AssociateImage"></a>Associate&#160;an Image With a Building</h2>
+        <p>Images are displayed as thumbnails when an Everyday User views details about a building. You can associate an image with a building if the image is in one of the following formats: .gif, .jpeg, .jpg, .bmp, .wmf, or .png and ideally, it should not be larger than 615 x 350 pixels. If you attach an image larger than this, you might not be able to view the image without scrolling.</p>
+        <ol class="number-list">
+            <li>From the Building Configuration dialog, click&#160;the <span class="ui">Images </span>tab.<div class="TitleandImage"><p><img src="Images/DocUpdate/Configuration-BuildingsImages.PNG" class="resize80_noborder_padding" /></p><p class="Caption">Images Tab of the Building Configuration Dialog</p></div></li>
+            <li>To have an image of the building display&#160;to Everyday Users when viewing building details, click <span class="ui">New </span>to open the Find Image dialog box, and then browse to and select the image.&#160;The Find Image dialog box closes. You remain on the <span class="ui">Images </span>tab with an entry for the image displayed on the tab.</li>
+            <li>You can enter a longer description of the building&#160;in the <span class="ui">Web App Long Description</span> field. The value that you enter here defines the “long desc” attribute.</li>
+            <li>Continue with any other configuration for the building as needed; otherwise, click <span class="ui">OK </span>to close the Building dialog box and return to the Buildings window.&#160;</li>
+        </ol>
+        <h2><a name="SetValues"></a>Set Values&#160;for the User Defined Fields (UDFs)</h2>
+        <p>The UDF fields are used to flag details associated with a building for reporting purposes. These fields are typically used when integrating with other systems. </p>
+        <ol class="number-list">
+            <li>From the Building configuration dialog, click&#160;the <span class="ui">User Defined Fields </span>tab.<div class="TitleandImage"><p><img border="0" src="Images/DC_CG_ConfigBuild5.png" class="resize80_noborder_padding" /></p><p class="Caption">User Defined Fields Tab of the Building Configuration Dialog</p></div></li>
+            <li>For each UDF that has been defined for the building, select the UDF, and then click the <span class="ui">Set Value</span> button to open the Building Manager dialog box in which you can set the value for the UDF.<div class="TitleandImage"><p><img src="Images/DocUpdate/Configuration-BuildingUDF.PNG" class="padding_only" /></p><p class="Caption">Building Manager Dialog</p></div></li>
+            <li>Continue with any other configuration for the building as needed; otherwise, click <span class="ui">OK </span>to close the Building dialog box and return to the Buildings window.</li>
+        </ol>
+        <h2><a name="Specify"></a>Specify Unregistered Attendee/Visitor Behavior</h2>
+        <p>The Visitor Management tab enables front-desk users, such as reception, to check in visitors, print badges, access lists of visitors, and run reports. The values that you specify on this tab are used when a new visitor checks into your building.&#160;<span class="ui">See Also:&#160;</span><a href="EnableVisitorMgmt.htm">Enable Visitor Management</a>.</p>
+        <ol class="number-list">
+            <li>From the Building configuration dialog, click the <span class="ui">Visitor Management </span>tab.<div class="TitleandImage"><p><img border="0" src="Images/DC_CG_ConfigBuild6.png" class="resize80_noborder_padding" /></p><p class="Caption">Visitor Management Tab of the Building Configuration Dialog</p></div></li>
+            <li>Enter the information for the new unregistered visitor/attendee.</li>
+        </ol>
+        <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');">
+            <col style="width: 122px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <dl>
+                            <dt class="TableColumnHeader">Option</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p scope="col">DESCRIPTION</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Category</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select an Attendee type category. See <a href="ConfigCategory.html">Configure Categories</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Room</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The Override room that is booked for the unregistered visitor’s/attendee’s reservation.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Typically, you would want to book an Override room named something such as Other Space, Unregistered Space, or so on. See <a href="ConfigOverrideRooms.htm">Configuring Override Rooms</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The status that is used for an unregistered visitor’s/attendee’s reservation. See <a href="ConfigStatuses.htm">Configure Statuses</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The event type that is used for the unregistered visitor’s/attendee’s reservation.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Typically, you would want to use an event type named something such as Unregistered Visitor, Unregistered Attendee or so on.&#160;See <a href="ConfigEventType.html">Configure Event Types</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event Name</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">The event name that is used for the unregistered visitor’s/attendee’s reservation.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>You can include the variable for Group Name (the name of the group that the visitor/attendee is seeing) in the subject line as described in the Legend. For example, “Unregistered Visitor for%1%” would result in “Unregistered Visitor for Academic Affairs” being displayed in the subject line.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>End Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="TableBody">The booking for the unregistered visitor/attendee is created from the current time until the end time that you specify.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Continue with any other configuration for the building as needed; otherwise, click <span class="ui">OK </span>to close the Building configuration dialog and return to the list of Buildings.</li>
+        </ol>
+        <h2><a name="AuditTab"></a>Audit Tab</h2>
+        <MadCap:snippetBlock src="../../../AuditTab.flsnp" />
+    </body>
+</html>

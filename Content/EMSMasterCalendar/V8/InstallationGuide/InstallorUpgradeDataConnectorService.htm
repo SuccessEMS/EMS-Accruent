@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Install or Upgrade EMS&#160;Data Connector Service</h1>
+        <p>Prior to installing or upgrading the EMS&#160;Master Calendar Data Connector Service, be sure the EMS Data Connector Script has been executed against the EMS Database(s).  (See <a href="ExecuteDataConnectorScript.htm">Executing the EMS Data Connector Script</a>.)</p>
+        <p>The optional Data Connector Service for the EMS&#160;Master Calendar System can be used to create a connection between an EMS Database and a calendar in the Master Calendar system.  </p>
+        <p>Data Connectors can also be used to import tab delimited and XML files (see “Installing or Upgrading the Master Calendar Import Service”).  The Data Connector Service must be installed on a machine that is connected to the network and is running every day.  The Data Connector Service is often installed on the database server or the web server.</p>
+        <h2>Install the Master Calendar Data Connector Service</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p> Existing versions of the EMS&#160;Master Calendar Data Connector Service must be manually uninstalled, through the <span class="ui">Add or Remove Programs</span> menu, prior to upgrading the EMS&#160;Master Calendar Data Connector Service to a newer version.</p>
+        </div>
+        <ol class="number-list">
+            <li>Download the DEAMasterCalendarDataConnectorSetup.msi onto the server that will be running the service.</li>
+            <li>
+                <p>Double-click DEAMasterCalendarDataConnectorSetup.msi. Follow the on-screen prompts.  It is recommended that the defaults are accepted.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_DataConnectorService1.PNG" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">EMS Master Calendar Data Connector Service Setup Wizard</p>
+                </div>
+            </li>
+            <li>
+                <p>Within the Microsoft Windows Start menu, locate EMS Master Calendar Data Connector Service &gt; Data Connector Configuration Setting.  The Master Calendar Data Connector Configuration screen will appear.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_DataConnectorService2.PNG" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Master Calendar Data Connector Configuration</p>
+                </div>
+            </li>
+            <li>Enter in the SQL Server name of where the Master Calendar Database resides on.</li>
+            <li>Enter in the database name that was provided for the Master Calendar Database during installation/upgrade.  By default, the database name should be ‘Master_Calendar’ unless changed during installation.</li>
+            <li>
+                <p>Click Verify Connection to confirm that the Data Connector Service has connected to the EMS&#160;Master Calendar Database.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_DataConnectorService3.PNG" class="padding_only" />
+                    </p>
+                    <p class="Caption">Database Connection Test</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_DataConnectorService4.PNG" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">EMS&#160;Master Calendar Data Connector Configuration</p>
+                </div>
+            </li>
+            <li>Select an Interval which determines how frequently data is pulled from the database. If the interval is set to 0 the service will never run. </li>
+            <li>Select if Error Logging should be enabled.   </li>
+            <li>Click <span class="ui">OK </span>to save the settings.  </li>
+        </ol>
+        <MadCap:snippetBlock src="../../../IssuesStartingService.flsnp" />
+    </body>
+</html>

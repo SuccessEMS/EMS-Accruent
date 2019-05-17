@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="ScreenOnly"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="PrintOnly"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="ExcludefromAccruentAccess"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8eb841"
+    Name="AccruentAccessOnly"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#80003b"
+    Name="FullHelpSite"
+    Comment="" />
+</CatapultConditionTagSet>

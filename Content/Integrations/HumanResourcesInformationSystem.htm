@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Human Resources Information System (HRIS) V44.1</title>
+    </head>
+    <body>
+        <h1>Human Resources Information System (HRIS)</h1>
+        <p>User and Group Data: Human Resources Toolkit syncs user and group profiles in EMS with your HR systems.</p>
+        <p>If your organization uses a Human Resources Information System or HRIS, user and group profiles or "accounts" might already be maintained there. This toolkit eliminates the double-entry of this information, by synchronizing between your HRIS and EMS at your chosen frequency. This toolkit enables you to automate the creation, updating, and de-activation of user and group accounts in EMS. You can configure it to automatically transfer selected records to a staging database and then update the appropriate tables in EMS. This tool saves time and enhances security, and enables the creation, maintenance, and inactivation of user and group accounts from an outside data source.</p>
+        <h2>How It Works</h2>
+        <p>The EMS_Staging database (created by <span class="ui">HRTK Staging DB Install G_GT_WU.sql</span>) is used to stage user records before they are imported into EMS.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS database might have the “Groups” field renamed to another term, such as Employees.</p>
+        </div>
+        <p>Once you have identified the data source within your organization that will be used to create and maintain your user records, you will then define and create a process to import active user records into the <span class="italics">tblPeople</span> table within <span class="italics">EMS_Staging</span> (shown below).</p>
+        <p>
+            <img src="../OptionalFeatures/HRToolkit/V44.1/Images/HRToolkit_InstallGuide/How It Works.png" alt="https://success.emssoftware.com/@api/deki/files/1949/image_26.png?revision=1&amp;size=bestfit&amp;width=385&amp;height=441" class="resize80_noborder_padding" />
+        </p>
+    </body>
+</html>

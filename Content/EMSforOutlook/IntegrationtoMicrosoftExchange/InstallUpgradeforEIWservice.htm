@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Install or Upgrade the Exchange Integration Web Service V44.1</title>
+    </head>
+    <body>
+        <h1>Install or Upgrade the Exchange Integration Web Service</h1>
+        <h2>Prior to Install or Upgrade</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, complete the following steps.</p>
+        </div>
+        <ol class="number-list">
+            <li>Install or upgrade your EMS databases as outlined in the&#160;<a href="../../EMSDesktopClient/V44.1/InstallationGuide/2_DesktopClient_Home.htm">EMS&#160;Desktop Client Installation Guide</a>.</li>
+            <li>Manually&#160;uninstall&#160;any previous versions of the Exchange&#160;Integration&#160;Service on your web server.&#160;</li>
+            <li>If you are upgrading from previous versions, update your parameter settings for "PAM Web Service URL" to "Exchange Integration Web Service URL" (i.e.,&#160;http://server/ExchangeIntegrationWebService).&#160;See Also:&#160;<a href="../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_WebAppSysParameters.html">EMS Web App Parameters</a>.</li>
+        </ol>
+        <h2>Install or Upgrade Instructions</h2>
+        <ol start="1" class="number-list">
+            <li>Verify that the requirements outlined in the&#160;<a href="IntegExchanReqs.htm">System Requirements</a>&#160;section have been met.</li>
+            <li>Download&#160;<span class="ui">ExchangeIntegrationWebService.msi</span>​&#160;onto the web server that will be running the service.</li>
+            <li>Run&#160;<span class="ui">ExchangeIntegrationWebService.msi​</span>.&#160;</li>
+            <li>The first screen welcomes you to the Exchange Integration Service Setup Wizard.&#160;Click&#160;<span class="ui">Next&#160;</span>to begin the installation process. The&#160;Destination Folder&#160;screen will appear.</li>
+            <li>Select the destination folder. The installation process will create a new physical directory on your web server based on the destination folder path entered (“ExchangeIntegrationService” in the example above.)&#160;Click&#160;<span class="ui">Next</span>.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Exchange Integration Service should&#160;not&#160;be installed in the same physical directory as other EMS web-based products.</p></div></li>
+            <li>The&#160;SQL Server and database information&#160;screen will appear.</li>
+            <li>Enter your EMS SQL Instance Name.</li>
+            <li>Enter your EMS Database Name, typically named&#160; “EMS”.</li>
+            <li>Click&#160;<span class="ui">Next</span>. The&#160;Virtual Directory information&#160;screen will appear.</li>
+            <li>The Virtual Directory Name will default to the destination folder specified in Step 5. It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“ExchangeIntegrationWebService” in the example above.)&#160;Click&#160;Next.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Exchange Integration should&#160;not&#160;be installed in the same virtual directory as other EMS web-based products.</p></div></li>
+            <li>The&#160;Ready to Install Exchange Integration Web Service&#160;screen will appear.&#160;Click&#160;<span class="ui">Install&#160;</span>to install the Exchange Integration.</li>
+            <li>The&#160;Completed the Exchange Integration Web Service Setup Wizard&#160;screen will appear.&#160;Click&#160;<span class="ui">Finish</span>.&#160;</li>
+            <li>After following the steps above, verify your installation by opening a browser and entering the following:<p>http://[ServerName]/ExchangeIntegrationWebService/Service.asmx <br />(replace [ServerName] with the name of your web server)</p><div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;"><p>A standard installation requires that the Exchange Integration be published without any authentication methods in place (e.g., Integrated Windows Authentication or Portal Authentication). If you require the Exchange Integration to be secured with authentication, additional configuration is necessary. Contact your implementation consultant for further details.</p></div></li>
+        </ol>
+    </body>
+</html>

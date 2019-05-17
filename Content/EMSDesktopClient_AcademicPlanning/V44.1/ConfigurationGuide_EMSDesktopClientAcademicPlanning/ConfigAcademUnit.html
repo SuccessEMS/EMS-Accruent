@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configuring Academic Units V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Configure Academic Units</h1>
+        <p>An&#160;<span class="italics">academic unit</span>&#160;is a level of organization within an institution that defines responsibility for making schedule requests for a portion of a domain. Academic units are used when assigning permissions to academic users and when filtering reports.</p>
+        <p>When you&#160;configure your academic units, you must specify the event type that is to be used when you publish your courses in <MadCap:variable name="General.My Company" />, the group for which the course reservation is to be made, the rooms that the units control, and the subjects that are associated with the units. The rooms that are defined within an academic unit give the unit the ability to require these spaces during optimization. The subjects that are defined within an academic unit determine the courses that are listed when filtering by the unit. Both subjects and rooms can belong to more than one academic unit.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The term “domain” is controlled by an EMS system parameter (Campus: Academic Unit Title Singular and Campus: Academic Unit Title Plural), and typically, it is changed to Department or Division to better describe how course scheduling requests are divided. See Also:&#160;<a rel="internal" title="Editing System Parameters" href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/AuthenticationOptions.html" alt="Editing System Parameters">Editing System Parameters</a>.</p>
+        </div>
+        <ol class="number-list">
+            <li>On the <MadCap:variable name="General.EMS Campus" /> menu bar, click Academic Planning &gt; Configuration &gt; <strong>Academic Units</strong>.&#160;The Academic Units window opens, listing&#160;the units associated with a specific domain.<p><img border="0" src="../Images/V44.1_Config/ConfigAcadUnits1.png" class="resize80_noborder_padding"></img></p></li>
+            <li>On the Domain drop-down list, select the domain for which you are configuring the units, and then click <strong>New</strong>.&#160;The Academic Unit dialog box opens. The Academic Unit tab is the active tab.<p><img border="0" src="../Images/V44.1_Config/ConfigAcadUnits2.png" style="width: 523px; height: 265px;" class="resize80_noborder_padding"></img></p></li>
+            <li>Enter the information for the new academic unit.</li>
+        </ol>
+        <table border="0" cellspacing="12" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Academic Unit Code</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Required field. Abbreviated text that conveys the unit name or description. For example, if a unit is named Department of Life Science, then a code for the unit could be LIFESCI.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The code can be a maximum of 10 characters, including spaces.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Academic Unit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Required field. The name of the unit.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The name can be a maximum of 30 characters, including spaces.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Domain</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The domain with which the units are associated.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The value that is displayed here is the value that you selected in&#160;Step 2&#160;but you can select a different value if needed.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Building Preference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>You can leave the building preference set to the default value of (no preference), or you can select a specific building, area, or view. If you select a specific building, area, or view, then this specific building, area, or view is set to the default value for all courses that are held in this academic unit during Set Preferences mode, but a user can select a different value if needed. If you select Required, then the specific building, area, or view is the only value that is allowed for all courses that are held in this academic unit during Set Preference modes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The event type that is to be used for the room bookings when publishing your courses in EMS for the unit.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>You can also specify the event type at the course type level. The event type specified here is used if you choose not to associate course types with event types. See&#160;<a href="ConfigCourseType.html">Configuring Course Types</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2"><MadCap:variable name="General.EMS&#160;Web App" class="bold"></MadCap:variable>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Everyday User</p>
+                        <p>Everyday User Process Template</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Optionally, you can select a Everyday User for this academic unit and a default process template. After the term is published, this Everyday User will see the courses that are associated with this academic unit in the View My Requests section of <MadCap:variable name="General.EMS&#160;Web App" />.</p>
+                        <p>To select a user, click the Search icon&#160;to open the Everyday Users dialog box and search from a list of registered Everyday Users.</p>
+                        <ul class="unorder-list">
+                            <li>You can search by User Name or Email Address.</li>
+                            <li>To search a list of all available Everyday Users, leave the Search field in the Everyday Users dialog box blank, and then click Display.</li>
+                            <li>To search for a specific Everyday User, enter a search string in the Search field, and then click Display.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The string is not case-sensitive, but your search is limited to the exact order of characters in the string and it must begin with the information for which you are searching. For example, if searching by Email Address, a search string of&#160;bob&#160;returns&#160;bob.worth@emssoftware.com&#160;but not&#160;dbobbett@emssoftware.com.</p>
+                        </div>
+                        <p>To return these fields to their default values at any time, click <span class="ui">Reset</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Open the Rooms tab, and optionally do one or both of the following:<ul><li>On the Building drop-down list, select (all) buildings, or select a specific building.</li><li>On the Room type drop-down list, leave the value set to (all), or select a specific room type.<p>All rooms that meet your search criteria are displayed in the Available list.</p></li></ul></li>
+            <li>On the Available list, select the room&#160;(CTRL-click to select multiple rooms)&#160;to which the academic unit should have access, and then Move (&gt;) to the Selected list.</li>
+            <li>Open the Subjects tab, and on the Available list, select the subject (CTRL-click to select multiple subjects) to be&#160;associated with the academic unit’s schedule, and then Move (&gt;)&#160;to the Selected list.&#160;The Academic Unit dialog box closes. You return to the Academic Units window and the newly configured academic unit shows as&#160;automatically selected.</li>
+        </ol>
+    </body>
+</html>

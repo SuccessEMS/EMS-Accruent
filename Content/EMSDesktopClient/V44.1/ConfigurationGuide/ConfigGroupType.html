@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure Group Types V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Group Types</h1>
+        <p>You can&#160;configure&#160;group types, which you use to classify or categorize the different groups that sponsor or hold events at your facilities. For example, if your organization is an academic organization, you might configure student groups, alumni groups, and so on for some of your group types.</p>
+        <p>To configure&#160;group types, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Group Types</span>.&#160;The Group Types window opens. This window lists all the group types that are currently configured in your EMS database.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Group Types.png" alt="emssg_coreother_image007.png" />
+            </p>
+            <p class="Caption">Group Types Window</p>
+        </div>
+        <ol start="2" class="number-list">
+            <li>Click <span class="ui">New</span>.&#160;The Group Type dialog box opens. The <span class="ui">Group Type</span> tab is the active tab.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="Images/DC_CG_ConfigGroupTypes1.png" alt="emssg_coreother_image008.png" />
+            </p>
+            <p class="Caption">Group Type Tab of the Group Type Dialog</p>
+        </div>
+        <ol start="3" class="number-list">
+            <li>Enter the information for the new group type.</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The name or classification for the group type.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The group type can be a maximum of 50 characters, including spaces.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Pricing Plan</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select the default pricing plan that is to be applied when creating a new group.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you select or edit a pricing plan for a group type, the information is not updated for existing groups of this group type. Instead, it applies only to new groups of this group type.</p>
+                        </div>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate pricing plan is not available, you can configure it. See&#160;Configuring Pricing Plans.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Available to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Select this option if <MadCap:variable name="General.EMS&#160;Web App" /> users are to be able to filter events by this group type when they are browsing for events.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4" class="number-list">
+            <li>Optionally, open the <span class="ui">Calculations </span>tab and on the Available list, select the calculation, or CTRL-click to select the multiple calculations that are to always apply to this group type, and then click the Move button (&gt;) to move the selected calculations to the Selected list.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Group Types_2.png" alt="emssg_coreother_image009.png" />
+            </p>
+            <p class="Caption">Calculations Tab of the Group Type Dialog</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If the appropriate calculation is not available, then you can configure it. See&#160;<a href="ConfigCalc.htm">Configure Calculations</a>.</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>Click <span class="ui">OK</span>.&#160;The Group Type dialog box closes. You return to the Group Types window with the newly configured group type automatically selected.</li>
+        </ol>
+    </body>
+</html>

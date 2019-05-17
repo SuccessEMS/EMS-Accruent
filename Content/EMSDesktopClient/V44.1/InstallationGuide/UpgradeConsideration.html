@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Upgrade Considerations V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Upgrade Considerations</h1>
+        <p>When planning your&#160;upgrade&#160;to the <MadCap:variable name="General.EMS&#160;Desktop Client" /> V44.1, be sure to take the following changes in functionality into consideration.</p>
+        <h2>Everyday User Process Template Configuration&#160;</h2>
+        <p>After you upgrade your system, all&#160;<a title="Understanding Everyday User Templates" href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserTemplates.html" alt="Understanding Everyday User Templates">everyday user process templates</a> will be set to&#160;<span class="ui">Enabled for Web Application.&#160;</span>This means that these templates will be potentially available to everyday users of the <MadCap:variable name="General.EMS&#160;Web App" /> (under the&#160;<span class="ui">Create a Reservation </span>menu). If you would prefer that a template is only available to users of <MadCap:variable name="General.EMS for Outlook Add-in" /> and/or <MadCap:variable name="General.Mobile" />, you must disable the setting&#160;<span class="ui">Enabled for Web Application&#160;</span>under the process template's configuration (<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday User Process Templates</span> &gt; <span class="ui">Edit&#160;</span>the template &gt;&#160;<span class="ui">Process Template&#160;</span>tab).</p>
+        <p>The following process template settings will also persist&#160;after upgrade:</p>
+        <ul>
+            <li><em>Allow Invitations = </em><a title="Integration with Exchange Enables You to Use Outlook®" href="../../../Integrations/MicrosoftExchangeIntegrations.htm" alt="Integration with Exchange Enables You to Use Outlook®"><em>Enable Integration to Microsoft Exchange</em></a>
+            </li>
+            <li><em>Outlook = </em><a href="../../../EMSforOutlook/InstallationGuide/Architecture.htm"><em>Enable <MadCap:variable name="General.EMS for Outlook Add-in"></MadCap:variable></em></a>
+            </li>
+            <li><em>Enable for Mobile Device = </em><em>Enable for <MadCap:variable name="General.Mobile" />.&#160;</em>
+            </li>
+        </ul>
+        <h2>Everyday User&#160;Web Menu Changes</h2>
+        <ul>
+            <li>After you upgrade, all everyday user process templates will move under the&#160;<span class="ui">Create a Reservation</span>&#160;parent menu.</li>
+            <li>All custom web menus&#160;(i.e.,&#160;any non-system-generated web menus such as <em>Browse, Create a Reservation, Help,&#160;</em>etc.)&#160;will move under the&#160;<span class="ui">Links </span>menu. Administrators can change the sequence of these custom menus and/or move custom menus to the&#160;<span class="ui">Help&#160;</span>menu by changing the web menu configuration (<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Web Menus</span>).</li>
+        </ul>
+        <h2>Additional Default Settings</h2>
+        <ul>
+            <li>If the existing <a title="Configuring Setup Types" href="../ConfigurationGuide/ConfigSetupType.html" alt="Configuring Setup Types">Default Setup Type</a> for a room does not match a Setup Type configured as <span class="ui">In Use</span>, <span class="ui">Default Setup Type</span> will revert to <span class="ui">(none)</span>.</li>
+        </ul>
+        <h2>Additional System Changes</h2>
+        <ul>
+            <li><a href="../../../OptionalFeatures/Polycom/V44.1/Polycom_Introduction.html" alt="Cisco TMS Activity DLL Installation" title="Cisco TMS Activity DLL Installation">TMS and Polycom DLL</a> access will be controlled by both EMS&#160;Desktop Client user permissions and licensing. In order for a user to access the desktop client menu for TMS or Polycom&#160;settings, an administrator must apply these settings to the user or the user's template under&#160;<span class="ui">System Administration</span> &gt; <span class="ui">Security </span>&gt; <span class="ui">Users&#160;</span>or&#160;<span class="ui">User Templates</span>.&#160;</li>
+        </ul>
+        <h2>
+            <MadCap:annotation MadCap:createDate="2019-02-19T11:10:59.2548248-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Was this information just for a particular release (see first sentence)? Should &quot;are not affected for this release&quot; read &quot;not affected in future releases&quot;?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-02-19T11:12:05.9658775-07:00">No Considerations Needed</MadCap:annotation>
+        </h2>
+        <p>The following items, which are typically affected by EMS upgrades, are not affected for this release.</p>
+        <ul>
+            <li>Any label changes within the desktop client</li>
+            <li>Parameter Tab/Area/Name Label Changes or Reassignments</li>
+            <li>New functionality introduced with V44.1</li>
+        </ul>
+    </body>
+</html>

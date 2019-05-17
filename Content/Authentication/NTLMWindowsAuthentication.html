@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Using Windows Authentication (NTLM) for EMS Mobile</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>NTLM&#160;Windows Authentication </h1>
+        <p>Follow the steps in this section to authenticate&#160;your users with Windows Authentication via Microsoft's NTLM challenge-response protocol. &#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Windows Authentication requires that you install and use the optional EMS Platform Services API.</p>
+        </div>
+        <h2>User Login Scenario</h2>
+        <p>Once you have established a connection to the EMS Platform Services API, the user log-in process is as follows:</p>
+        <ul>
+            <li>Users will enter domain credentials to log into their EMS&#160;product.</li>
+            <li>EMS&#160;will send credentials to the EMS Platform Services API.</li>
+            <li>IIS will intercept the call and issue a challenge.
+    <ul><li>The EMS&#160;access point (e.g., EMS&#160;Mobile App, EMS&#160;Web App, etc.) will then perform all steps necessary to complete process with the user's provided credentials.</li></ul></li>
+            <li>EMS&#160;Platform Services API receives the initial request and extract the authenticated user from the IIS context.</li>
+            <li>EMS&#160;Platform Services API will verify the authenticated user against the EMS database.</li>
+            <li>User will be taken to the <span class="ui">Home</span> screen.</li>
+        </ul>
+        <p>If the credentials are missing when the user taps <span class="ui">Sign In</span>, an error message will appear indicating that&#160;fields are required. If the EMS Platform Services API is unable to verify the authenticated user, or if IIS rejects the request due to failed authentication, EMS will inform the user.</p>
+        <h2>Test Your&#160;Windows Authentication</h2>
+        <p>Assuming you have installed the EMS Platform Services API at https://Yourcompany.com/EmsPlatform, then you can test the authentication with a curl command:</p>
+        <div class="code-sample">
+            <p>curl -X POST -H "x-ems-consumer: MobileApp" -H "Content-Type: application/json" --ntlm&#160; -u your_username:your_password -vvvv -d '{}'&#160; "https://ems.yourcompany.com/endpoint...authentication"</p>
+        </div>
+        <p class="indent_14">...where your<span class="italics">_username</span> and your<span class="italics">_password</span> are your credentials.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">api/v1/authentication</span> is the endpoint within the API where your request must be sent.</p>
+        </div>
+    </body>
+</html>

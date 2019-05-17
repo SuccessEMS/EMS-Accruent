@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <h1>How Are EMS Applications Updated?</h1>
+        <h2>EMS Structure   </h2>
+        <p>EMS consists of:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Database</p>
+            </li>
+            <li>
+                <p>Web Server</p>
+            </li>
+            <li>
+                <p>Applications</p>
+            </li>
+            <li>
+                <p>Optional Features and Services</p>
+            </li>
+        </ul>
+        <p>Each has its own installation and upgrade procedure. You can download the EMS License Key, Server Install, and updates for all components from the Downloads area in Accruent Access. <MadCap:snippetText src="../../DownloadsArea.flsnp" /> You will only see downloads for products you are licensed on. Updates for EMS Desktop Client are delivered in patches and builds. All other components are updated with builds and/or DLLs.</p>
+        <h2>EMS Maintenance</h2>
+        <p>EMS follows an agile development model: we release frequent software updates via monthly maintenance releases. If you have active maintenance, your technical contact will be notified via email of these releases. Please review your assigned technical contacts; to make changes, please contact <a href="#Contact">Customer Support</a>.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Maintenance Type</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">	DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Upgrades or Releases	</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>From one major version of EMS to the next, such as V43 to V44; all components must be upgraded together, and these occur typically once a year. These signify all the latest, verified builds for each application and service, including the latest patch, and typically warrant re-installation of all the applications, services, and the latest patch.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Updates</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Minor, cumulative updates to a version, such as V44.1 Update 10. An update may not affect all components, so for example, Update 1 affected the EMS Database, the Desktop Client, Exchange, and EMS for Outlook, but Update 2 only affected the Desktop Client and EMS for Outlook. Updates are cumulative, which means that to bring one of your affected components up to the most current version, you can skip any older updates that you missed and only install the latest update. For example, to update your EMS for Outlook from V44.1 all the way up to Update 2, you only need to install Update 2 for EMS for Outlook. That single install includes all updates from Update 1 and Update 2.<br /></p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>All V44.1 Updates are summarized <a href="../../V44.1_ReleaseNotes.htm">here</a>. See this example of builds to install: <a href="Update_from_EMS_V44.1_to_EMS_V44.1_U2.1_What_Install.htm">Updating from EMS V44.1 to EMS V44.1 Update 2.1</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Patches	</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Database updates. These may be released (and installed) independently of EMS applications and services in extenuating circumstances (hotfixes), or as part of a release with applications and services (in which case they should all be installed together).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Builds </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>	Compiled versions of a single application, component, or service, and have a number like 44.1.123 (for most EMS applications; EMS for Outlook has a different numbering scheme). Occasionally (hotfixes), builds can be released independently of patches. A new build means you only need to install the latest build, however, the latest patch will most likely be required to run the build.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

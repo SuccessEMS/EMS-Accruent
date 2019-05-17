@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure the Reservation Wizard V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Configure Reservation Wizard Templates</h1>
+        <p class="body_1">The reservation wizard templates&#160;simplify the reservation making process for your users. A reservation wizard template sets the default values for many of the fields in the Reservation Wizard. For example, you could configure a video conference reservation wizard template such that the default values for status, room type, event name, and event type are all set to “Video Conference.”</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your users can always over-write the&#160;default values you set here when they use the Reservation Wizard. </p>
+        </div>
+        <p class="body_1">This topic includes information on the following:</p>
+        <ul>
+            <li><a href="#ConfigureResWizTemp">Configure the Reservation Wizard Template</a>
+            </li>
+            <li><a href="#SetDefault">Set Default Event Information&#160;for a Reservation Wizard Template</a>
+            </li>
+            <li><a href="#SetRoomFeat">Set Default Room Features for a Reservation Wizard Template</a>
+            </li>
+            <li><a href="#SetUDF">Set User-Defined (UDF) Field Values&#160;for a Reservation Wizard Template</a>
+            </li>
+        </ul>
+        <h2><a name="ConfigureResWizTemp"></a>Configure the Reservation Wizard Template</h2>
+        <p>To configure the Reservation Wizard Template, complete these steps:</p>
+        <ol>
+            <li>
+                <p>On the EMS Workplace menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt;&#160;<span class="ui">Reservation Wizard Templates</span>. The Reservation Wizard Templates window opens. This window lists all the reservation wizard templates that are currently configured in your EMS database and that have a status of Active.</p>
+                <div class="TitleandImage">
+                    <p class="stepnumberbegin_1">
+                        <img src="../../../Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_1.png" alt="emssg_coreadmin_image023.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Reservation Wizard Template Window</p>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Optionally, to view all reservation wizard templates in your EMS database, regardless of status, under Show, click Inactive.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">New</span>.&#160;The Reservation Wizard Template dialog box opens. The <span class="ui">Reservation Wizard Template</span> tab is the active tab.</p>
+                <p class="stepnumberbegin_1">
+                    <img src="../../../Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_2.png" alt="emssg_coreadmin_image024.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the summary information for the new reservation wizard template.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The only required information is the template description. All other information on all tabs is optional and can be added at a later date when needed.</p>
+                </div>
+                <p><b>Reservation Wizard Fields</b>
+                </p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p class="body_3">Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p class="body_3">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="body_2">Description</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="body_2">Required field. The name or description of the reservation wizard template.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>This is the only required information for the group. All other information on all tabs is optional and can be added at a later date when needed. The description can be a maximum of 50 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="body_2">Prompt for Date</p>
+                                <p class="body_2">Number of Days to Select</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="body_2">Select this option if a reservationist/user is to be prompted with a start date for the reservation in the Reservation Wizard, and then in the Number of Days to Select field, enter the number of days that are to be automatically selected in the Reservation Wizard after the reservationist/user enters a start date for the event.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p class="body_2">Video Conference</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                <p class="body_2">Select this option to apply the Video Conference option as a default field on the last page of the Reservation Wizard when this template is used.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p class="body_2">This option is not available in EMS Professional.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Click <span class="ui">OK </span>to close the Reservation Wizard Template dialog box and return to the Reservation Wizard Templates window with the newly configured template automatically selected.</li>
+        </ol>
+        <h2><a name="SetDefault"></a>Set Default Event Information&#160;for a Reservation Wizard Template</h2>
+        <ol>
+            <li>
+                <p>If needed, open the Reservation Wizard Template dialog box for the reservation wizard template that you are configuring.</p>
+            </li>
+            <li>
+                <p>Open the <span class="ui">Defaults </span>tab, and do the following for each reservation variable for which you want to specify a default value:</p>
+                <ul>
+                    <li>
+                        <p>Select the variable, and then click <span class="ui">Edit </span>to open a Set Default Value dialog box.</p>
+                    </li>
+                    <li>
+                        <p>Enter the default value for the variable, and then click&#160;<span class="ui">OK&#160;</span>to close the Set Default Value dialog box and return to the <span class="ui">Defaults </span>tab.</p>
+                    </li>
+                </ul>
+                <p class="stepnumberbegin_1">
+                    <img src="../../../Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_3.png" alt="emssg_coreadmin_image025.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Continue with any other optional configuration for the template as needed; otherwise, click <span class="ui">OK </span>to close the Reservation Wizard Template dialog box and return to the Reservation Wizard Templates window with the newly configured template automatically selected.</p>
+            </li>
+        </ol>
+        <h2><a name="SetRoomFeat"></a>Set Default Room Features for a Reservation Wizard Template</h2>
+        <p class="body_1">A&#160;feature&#160;is built-in or permanent attribute of a room, such as a network connection, a&#160;built-in plasma TV, window, and so on. You can configure a reservation wizard template so that the initial list of rooms that are available to a user who is making a reservation using the template is limited to only those rooms with these default features.</p>
+        <ol>
+            <li>
+                <p>If needed, open the Reservation Wizard Template dialog box for the reservation wizard template that you are configuring.</p>
+            </li>
+            <li>
+                <p>Open the Features tab, and on the Available list, select the feature, or CTRL-click to select the multiple features that the rooms are to have, and then click the Move button (&gt;) to move the selected features to the Selected list.</p>
+                <p class="stepnumberbegin_1">
+                    <img src="../../../Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_4.png" alt="emssg_coreadmin_image026.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Continue with any other optional configuration for the template as needed; otherwise, click <span class="ui">OK </span>to close the Reservation Wizard Template dialog box and return to the Reservation Wizard Templates window with the newly configured template automatically selected.</p>
+            </li>
+        </ol>
+        <h2><a name="SetUDF"></a>Set User-Defined (UDF) Field Values&#160;for a Reservation Wizard Template</h2>
+        <p class="body_1">User defined fields,&#160;or&#160;UDFs,&#160;are custom fields that store additional information or data for a a reservation. For example, for a reservation, you might want to note the date that the contract for the event was received and if the event was approved by a supervisor. You can select the default user defined fields that are to always apply to a reservation wizard template. These fields are displayed on the User Defined Fields tab in the Reservation Wizard.</p>
+        <ol>
+            <li>
+                <p>If needed, open the Reservation Wizard Template dialog box for the reservation wizard template that you are configuring.</p>
+            </li>
+            <li>
+                <p>Open the User Defined Fields tab, and on the Available list, select the UDF, or&#160;CTRL-click to select the multiple UDFs that are to always apply to the template, and then click the Move button (&gt;) to move the selected fields to the Selected list.</p>
+                <p class="stepnumberbegin_1">
+                    <img src="../../../Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_5.png" alt="emssg_coreadmin_image027.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Continue with any other optional configuration for the template as needed; otherwise, click&#160;OK&#160;to close the Reservation Wizard Template dialog box and return to the Reservation Wizard Templates window with the newly configured template automatically selected.</p>
+            </li>
+        </ol>
+    </body>
+</html>

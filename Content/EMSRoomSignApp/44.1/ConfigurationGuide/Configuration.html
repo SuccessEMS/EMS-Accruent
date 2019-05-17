@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Configuring EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure EMS Room Sign App</h1>
+        <p>This topic provides information on configuring the following in <MadCap:variable name="General.RSA" /> (formerly named Glance):&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#Access_EMS_Room_Sign_App_Settings">Access EMS Room Sign App Settings</a>
+            </li>
+            <li><a href="#Global_Settings">Global Settings</a>
+            </li>
+            <li><a href="#Primary_EMS_Room_Sign_App_Screens">Primary EMS Room Sign App Screens</a>
+            </li>
+        </ul>
+        <h2><a name="Access_EMS_Room_Sign_App_Settings"></a>Access EMS Room Sign App (formerly named Glance)&#160;Settings</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>When configuring devices (such as tablets) to use the EMS Room Sign App, please consider these <a href="BestPractDeviceConfSteps.htm">Best Practices</a>.</p>
+        </div>
+        <ol class="number-list">
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <span class="ui">EMS Glance Settings.</span></li>
+            <li>The EMS (Glance) Room Sign App main window opens. The window displays three configuration options: <span class="ui">Global Settings</span>, <span class="ui">Profiles</span>, and&#160;<span class="ui">Refresh All Units</span>.<div class="TitleandImage"><p class="Caption"><img src="../Images/B_Configuration/EMSGlanceMainWindow.png" class="resize80_noborder_padding" /></p><p class="Caption">EMS (Glance)&#160;Room Sign App Main Window</p></div><ul><li><span class="ui">Global Settings</span>—Contains all of the EMS Room Sign App global settings, which determine the behavior for a particular EMS Room Sign App unit or group of EMS Room Sign App units. Profile settings can overwrite <a href="#Global_Settings">Global Settings</a>.</li><li><span class="ui">Profiles</span>—Controls the functionality of your EMS Room Sign App units. Depending on how you would like to manage your EMS Room Sign App devices, a single profile can be configured to manage a single meeting room or multiple meeting rooms.&#160;See Also:&#160;<a href="ConfigProfile.html">Configure Profiles in the EMS Room Sign App</a>.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>A particular device is tied to one specific room in EMS.&#160;Profiles provide flexibility in how you choose to manage the configuration of your devices.</p></div></li><li><span class="ui">Refresh All Units</span>—Forces all units to refresh their settings. Use this setting after modifying a specific Profile or Global Settings to force all of your units to pick-up the setting change(s).</li></ul></li>
+        </ol>
+        <h2><a name="Global_Settings"></a>Global Settings</h2>
+        <p><a href="GlobalSettings.html">Global settings</a> affect the booking detail information that is displayed for all the profiles in your EMS Room Sign App&#160;instance. </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p> You can set how information displays at the Global level (defaults for all Profiles) or for just one <a href="ConfigProfile.html">profile</a>. </p>
+            <p> You can override these settings on a per profile basis on the Settings tab of the Profile dialog box.</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/GlobalSettingsDialogBox.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Global Settings Dialog Box</p>
+        </div>
+        <h2><a name="Primary_EMS_Room_Sign_App_Screens"></a>Primary EMS Room Sign App Screens</h2>
+        <p>EMS Room Sign App consists of two primary screens: the <span class="italics">Available </span>screen and the <span class="italics">In Progress</span> screen. Both <a href="GlobalSettings.html">Global settings</a> and <a href="ConfigProfile.html">Profile settings</a> determine the booking information that is displayed on the various screens.</p>
+        <div class="TitleandImage">
+            <p class="Caption">
+                <img src="../Images/B_Configuration/AvailableScreen.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Available Screen (Example of a future meeting with setup and teardown)</p>
+        </div>
+        <div class="TitleandImage">
+            <p class="Caption">
+                <img src="../Images/B_Configuration/InprogressScreen.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">In Progress Screen</p>
+        </div>
+    </body>
+</html>

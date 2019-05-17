@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Everyday Users V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Everyday Users</h1>
+        <p>An Everyday User is someone who can request or reserve space and services in any EMS Software application other than <MadCap:variable name="General.EMS&#160;Desktop Client" />. You assign these users to templates.</p>
+        <p>This section guides you in&#160;configuring&#160;one Everyday User at a time. Once you have configured these users, you might need to assign them to&#160;security templates and one or more process templates.&#160;</p>
+        <ul class="unorder-list">
+            <li>To assign users to Everyday User process templates, see&#160;<a href="AssignTempEverydayUser.htm">Assigning Templates to an Everyday User</a>.</li>
+            <li>To assign multiple templates to multiple users in a single step, see&#160;<a href="AssignSecTempMultUser.htm">Assigning Templates to Multiple Users</a>.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>EMS classifies users into two categories: <span class="ui">Guests/Visitors</span>&#160;and&#160;<span class="ui">Everyday Users</span>.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You configure EMS Desktop Client user accounts in a different area (under the <span class="ui">System Administration</span> &gt; <span class="ui">Security </span>menu). For instructions,&#160;See Also:&#160;<a href="ConfigUsers.htm">Configuring EMS Desktop Client User Accounts.</a></p>
+        </div>
+        <p>Additionally, if your organization uses EMS Human Resources Toolkit to manage Everyday User accounts,&#160;See Also:&#160;<a href="../../../OptionalFeatures/HRToolkit/V44.1/Introduction.htm">Using EMS HR Toolkit</a>. Also, a set of Account Management parameters control account management behavior. To see these parameters, refer to&#160;<a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_WebAppSysParameters.html">EMS Web App System Parameters</a>.</p>
+        <p>To configure Everyday Users, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS Desktop Client&#160;menu bar, navigate to <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt;&#160;<span class="ui">Everyday Users</span>.&#160;The Everyday&#160;Users window opens. The number of configured users for EMS Web App&#160;shows in&#160;the upper left corner.&#160;The number of users for which your organization is licensed shows in the top center.</p>
+                <p>
+                    <img src="../../../Resources/Images/Configuring Everyday Users/Configuring Everyday Users_1.png" alt="https://success.emssoftware.com/@api/deki/files/4020/DTPEverydayUsers.png?revision=1" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Check that the user you want to configure does not already exist.&#160;Enter the user name or email address in the&#160;Find&#160;field.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>This search string is not case-sensitive, but your entries must be in the correct order. For example, if searching by Email Address, a search string of&#160;bob&#160;returns&#160;bobworth@emssoftware.com&#160;but not&#160;dbobbett@emssoftware.com.</p>
+                </div>
+                <p>You&#160;can&#160;narrow your search results by:</p>
+                <ul class="unorder-list">
+                    <li>
+                        <p>Group Type&#160;</p>
+                    </li>
+                    <li>
+                        <p>City</p>
+                    </li>
+                    <li>
+                        <p>Status</p>
+                    </li>
+                    <li>
+                        <p>Process Template</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Then click&#160;Display; search results show&#160;in the lower pane of the window. If your user does not already exist in EMS, proceed to the next step.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If the EMS system parameter "Users linked to Groups via External Reference"&#160;is set to&#160;Yes, then you will also see&#160;a Group column and a City column.</p>
+                </div>
+            </li>
+            <li class="li_1">
+                <p>Create a new user.&#160;Click the&#160;<span class="ui">New&#160;</span>button.&#160;A dialog box opens.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If the user has confirmed membership (by responding to an email containing an activation link), the&#160;Validated&#160;checkbox highlighted below will be selected.&#160;<br />If the user had to answer questions when requesting an account, you can view the user's responses on the&#160;<span class="ui">User Defined Fields</span>&#160;tab.</p>
+                </div>
+                <p>
+                    <img src="../../../Resources/Images/Configuring Everyday Users/Configuring Everyday Users_2.png" alt="https://success.emssoftware.com/@api/deki/files/3934/WebUserConfig.png?revision=2" class="resize80_noborder_padding" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>When you configure a user, you can also specify one or more delegates for the user. A&#160;delegate&#160;is a user who can create and view reservations on behalf of another user.</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter information for the new user.&#160;User name&#160;and email address are required; password&#160;is only required if not using the optional Integrated Authentication module. All other information is optional and can be added later as&#160;needed.</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Name</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The name of the user.&#160;(Maximum of 30 characters, including spaces).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Password</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The password that the user must enter to log in to EMS Web App. If using the optional Integrated Authentication module, Password can be left blank since the network password is used instead.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Email Address</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Enter the full email address for the user as the user must enter this address to log in to EMS Web App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Phone 1 /Phone 2</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional fields.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Optional field. Read-only.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>External Reference</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional field. Links the user to an outside program such as EMS Human Resources Toolkit if needed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Network ID</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The user’s network ID.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Email Opt Out</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional field. Select this option if you do&#160;not&#160;want the user to receive automatic emails (such as reservation summary emails) from EMS Web App. The user can still receive manually sent emails.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Required field. Select the status for the user:</p>
+                                <ul>
+                                    <li>Active—The user can log in to EMS Web App, EMS Mobile App, and EMS for Outlook.</li>
+                                    <li>Pending—The user cannot log in to EMS Web App, EMS Mobile App, and EMS for Outlook and is informed that he/she must check back at a later time.</li>
+                                    <li>Inactive—The user cannot log in to EMS Web App, EMS Mobile App, and EMS for Outlook&#160;and is instructed to contact the EMS administrator.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Security Template</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Required field. This determines the user's access to the system (i.e., the menu items the user can see and the event&#160;information that the user can view).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Time Zone</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="p_11">Optional field. The time zone in which the user is located. Beginning in version 44.1, it is strongly recommended that users are assigned to a time zone for an optimal experience on all Everyday User Applications.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Validated</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>When checked, users who created their own accounts have&#160;confirmed membership (by responding to an email containing an activation link). When unchecked, the user will not be able to use EMS Web App.&#160;</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Assign process templates to the new user.&#160;Open the&#160;<span class="ui">Process Templates&#160;</span>tab. The&#160;process templates you assign&#160;here will appear as menu items to the user in EMS Web App, EMS Mobile App, and EMS for Outlook.</p>
+            </li>
+            <li>
+                <p>Specify Groups&#160;on whose behalf the user can create and manage reservations.&#160;Open the&#160;<span class="ui">Groups&#160;</span>tab. To&#160;filter the list of active groups displayed, use the&#160;Find&#160;and&#160;Type&#160;fields and&#160;then click&#160;Display. Select one or more Groups (use CTRL-click for multiple groups), and then click&#160;Move&#160;(&gt;) to move the selected groups to the Selected list.</p>
+            </li>
+            <li>
+                <p>Specify Delegates the user can impersonate.&#160;Open the&#160;<span class="ui">Delegates&#160;</span>tab; to see all available users, simply click&#160;Display. To narrow the search results, use the&#160;Search by&#160;drop-down list to search by User Name or Email Address.&#160;Select one or more delegates (using CTRL-click for multiple delegates), and then click&#160;Move&#160;(&gt;) to move the selected users to the Selected list.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Click&#160;<span class="ui">Spelling&#160;</span>to spell-check any information that you manually entered for the user.</p>
+                </div>
+            </li>
+            <li class="li_1">
+                <p>Click&#160;<span class="ui">OK</span>.&#160;The dialog box closes and returns you&#160;to the users window with the newly configured user automatically selected.</p>
+            </li>
+        </ol>
+    </body>
+</html>

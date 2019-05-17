@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Add Booking Detail Item to Individual Booking V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Add Booking Details and Items to Individual Bookings</h1>
+        <p>The steps that you follow to add booking details and items to individual bookings depend on the category type. Also, you can add multiple occurrences of a booking detail to a booking only if the booking detail is a Resource with Service Order category or a Catering category. If the booking detail is&#160;not&#160;a Resource with Service Order category or a Catering category, and the detail is already added to a booking, you cannot add the detail again to the booking. You can, however, add more items to the booking detail.</p>
+        <p>To add booking details and items to individual bookings, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>Open the reservation in the Navigator. Refer to the following for directions:</li>
+            <ul>
+                <li><a href="NavigatorOverview.html#OpeningResInNav">Opening a reservation directly in the Navigator</a>
+                </li>
+                <li><a href="NavigatorOverview.html#ResthroughResBook">Opening a reservation through the Reservation Book</a>
+                </li>
+                <li><a href="NavigatorOverview.html#OpenResThroughGroup">Opening a reservation through a group</a>
+                </li>
+                <li><a href="NavigatorOverview.html#OpenResThroughSearch">Open a reservation through a search</a>
+                </li>
+            </ul>
+            <li>In the left pane of the Navigator, expand the folder structure for the reservation until the appropriate booking folder is visible.</li>
+            <li>Select the booking folder, and then in the Booking Details pane, click <span class="ui">New</span>.&#160;The Booking Details list opens.<p><img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and.png" alt="emsum_Navigator_image054.png" style="width: 277px;height: 254px;" /></p></li>
+            <li>Select the booking detail that you are adding to the booking.&#160;A dialog box opens.</li>
+            <li>Continue to one of the following:</li>
+            <ul>
+                <li>&#160;<a href="#Addbookingdetail_non-resource">Add a booking detail from a non-resource category</a></li>
+                <li><a href="#addbookingdetail_res_servorder_catering">Add a booking detail from a resource, service order, or catering category</a>
+                </li>
+            </ul>
+        </ol>
+        <h2><a name="Addbookingdetail_non-resource"></a>Add a Booking Detail from a Non-Resource Category&#160;</h2>
+        <p>A booking detail that is from a non-resource category can be&#160;<a href="#Add_Setup_Notes">setup notes</a>,&#160;<a href="#Add_Attendees">attendees</a>,&#160;<a href="#Add_an_Agenda">agenda&#160;(activities)</a>, or a&#160;<a href="#Add_a_Room_Charge">room charge</a>.</p>
+        <h3><a name="Add_Setup_Notes"></a>Add Setup Notes&#160;</h3>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_1.png" alt="emsum_Navigator_image055.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="1" class="number-list">
+            <li>Enter the sequence number for the setup notes.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The sequence number determines the order in which the notes are displayed in the Items pane in the Navigator when the booking detail (Setup Notes) is selected for a booking.</p></div></li>
+        </ol>
+        <ol start="2" class="number-list">
+            <li>Enter the appropriate notes or comments.</li>
+            <li>Optionally, if these notes are to be printed on internal reports only (the notes would be excluded from external reports like a confirmation), then select <span class="ui">Internal</span>.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The Setup Notes dialog box closes. The booking detail and its items are displayed as folders under the Booking folder in the Navigator window.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>After you add setup notes for the first time to a booking, Setup Notes is no longer an available option on the Booking Details drop-down list. To add more setup notes to the booking, select the Setup Notes folder for the booking or click a Setup Note in the Items pane, and then click <span class="ui">New</span>.</p></div></li>
+        </ol>
+        <h3><a name="Add_Attendees"></a>Add Attendees&#160;</h3>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_2.png" alt="emsum_Navigator_image056.png" class="resize80_noborder_padding" />
+        </p>
+        <p class="Caption">Attendees dialog box</p>
+        <ol start="1" class="number-list">
+            <li>Enter the information for the attendee. At a minimum, you must enter the attendee name.</li>
+            <li>If the attendee is a visitor (that is, not registered for the event), then select <span class="ui">Visitor</span>.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The Attendee dialog box remains open.</li>
+            <li>Repeat&#160;Step 1&#160;through&#160;Step 3&#160;until you have added all the needed attendees/visitors to the booking.</li>
+            <li>Click <span class="ui">Cancel</span>.&#160;The Attendees dialog box closes. The booking detail and its items are displayed as folders under the Booking folder in the Navigator window.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you close the Attendees dialog box before you have added all the needed attendees/visitors to the booking, then <span class="ui">Attendees </span>is no longer an available option on the Booking Details drop-down list. To add more attendees/visitors to the booking, select the Attendees folder for the booking or click an attendee/visitor in the Items pane, and then click <span class="ui">New</span>.</p>
+        </div>
+        <h3><a name="Add_an_Agenda"></a>Add an Agenda (Activities)&#160;</h3>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_3.png" alt="emsum_Navigator_image057.png" class="padding_only" />
+        </p>
+        <p class="Caption">Agenda dialog box</p>
+        <ol start="1" class="number-list">
+            <li>Enter the start time, the end time, and a description for the agenda.</li>
+            <li>Optionally, in the Description field, enter a name or description for the agenda.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The description can be a maximum of 50 characters, including spaces.</p></div></li>
+            <li>Optionally, if these notes are to be printed on internal reports only (the notes would be excluded from external reports like a confirmation), then select Internal.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The Agenda dialog box remains open.</li>
+            <li>Repeat&#160;Step 1&#160;through&#160;Step 4&#160;until you have added all the needed agendas.</li>
+            <li>Click <span class="ui">Cancel</span>.&#160;The Agenda dialog box closes. The booking detail and its items are displayed as folders under the Booking folder in the Navigator window.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you close the Agenda dialog box before you have added all the needed agendas/activities to the booking, then <span class="ui">Agenda </span>is no longer an available option on the Booking Details drop-down list. To add more agenda/activities to the booking, select the Agenda folder for the booking or click an agenda in the Items pane, and then click <span class="ui">New</span>.</p>
+        </div>
+        <h3><a name="Add_a_Room_Charge"></a>Add a Room Charge</h3>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_4.png" alt="emsum_Navigator_image058.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="1" class="number-list">
+            <li>Enter the sequence number for the room charge.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The sequence number determines the order in which the charges are displayed in the Items pane in the Navigator when the booking detail (Room Charge) is selected for a booking.</p></div></li>
+            <li>Optionally, enter notes or comments about the room charge.</li>
+            <li>If needed, edit the quantity.</li>
+            <li>Select the appropriate pricing method, and then enter any other additional information as needed after you select a pricing method.</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Pricing Method</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Additional Fields</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Unit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Unit Price</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Half Day/Full Day (Event Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Half Day Price</p>
+                        <p>Full Day Price</p>
+                        <p>Hours</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Half Day/Full Day (Reserved Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Half Day Price</p>
+                        <p>Full Day Price</p>
+                        <p>Hours</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hourly (Event Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Hourly Price</p>
+                        <p>Minimum Charge</p>
+                        <p>Maximum Charge</p>
+                        <p>Initial Flat Charge</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Hourly (Reserved Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Hourly Price</p>
+                        <p>Minimum Charge</p>
+                        <p>Maximum Charge</p>
+                        <p>Initial Flat Charge</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Hourly (Specific)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Hourly Price</p>
+                        <p>Minimum Charge</p>
+                        <p>Maximum Charge</p>
+                        <p>Initial Flat Charge</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="5" class="number-list">
+            <li>Optionally, enter a discount percent and/or a reservation discount.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The Room Charge dialog box closes. The booking detail and its items are displayed as folders under the Booking folder in the Navigator window.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you must add multiple room charges to a booking, then after you add charges for the first time to a booking, <span class="ui">Room Charge </span>is no longer an available option on the Booking Details drop-down list. To add more charges to the booking, select the Room Charge folder for the booking or click a room charge in the Items pane, and then click <span class="ui">New</span>.</p>
+        </div>
+        <h2><a name="addbookingdetail_res_servorder_catering"></a>Add a Booking Detail from a Resource, Service Order, or Catering Category&#160;</h2>
+        <ul class="unorder-list">
+            <li>If you select a service order or catering category, a Service Order dialog box opens with, at a minimum, options for Service, Reviewed, Service Start Time, and End Time. If a catering category is selected, additional fields for Estimated, Guaranteed and Actual Counts are displayed. Go to&#160;Step 1 below.</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_5.png" alt="emsum_Navigator_image059.png" class="padding_only" />
+        </p>
+        <p class="Caption">Example of a Service Order dialog box for a catering category</p>
+        <ul class="unorder-list">
+            <li>If you select a resource category, then a Resource Selection dialog box opens. The <span class="ui">Resources </span>tab is the active tab. Go to&#160;Step 4.</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_6.png" alt="emsum_Navigator_image060.png" class="padding_only" />
+        </p>
+        <p class="Caption">Example of a Resource Selection dialog box, Resources tab</p>
+        <ol start="1" class="number-list">
+            <li>Select the service type.</li>
+            <li>Enter the start time, and optionally, the end time, estimated count, guaranteed count, and if applicable, select Reviewed and/or a state.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>For more information about reviewing service orders and selecting states, see&#160;also:&#160;<a href="ManageServiceOrders.html#SearchServiceOrders">Search for Service Orders</a>.</p></div></li>
+            <li>Click <span class="ui">OK</span>.&#160;A Resource Selection dialog box. The <span class="ui">Resources </span>tab is the active tab.</li>
+            <li>Do one of the following<ul start="1"><li>To select one or more resources from the pre-configured list of resources, leave the <span class="ui">Resources </span>tab open, and then go to&#160;Step 5.</li><li>To add multiple resources to the booking in a single step, open the <span class="ui">Packages </span>tab, and then go to&#160;Step 7.</li></ul></li>
+            <li>Do one of the following on the Grouping drop-down list:<ul start="1"><li>Leave the default value of (all) as is to search for all items in all groupings.</li><li>Select a specific grouping to search for only those items in the grouping. For example, if the selected resource category is A/V Equipment, then available groupings could include Computer, Phone, Video, and so on. To search only for the available phones to add to a booking detail, select the Phones grouping.</li></ul></li>
+            <li>Optionally, in the Filter field, enter a search string by which to filter your search.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Your search is limited to the exact order of the characters in the string, but the search string is not case-sensitive and it can appear anywhere in the search results. For example, a search string of&#160;co&#160;returns&#160;coffee service,&#160;conference phone, and mini-copier.</p></div></li>
+            <li>In the Quantity field, leave the default value of 1.00; otherwise, enter a new value.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If you change the quantity for a resource package, then the quantity for each individual resource that makes up the package is also changed.</p></div></li>
+            <li>Do one of the following:<ul start="1"><li>For the <span class="ui">Resources</span> tab, on the Items list, select the resource item, or CTRL-click to select the multiple resource items that you are adding to the booking.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Your EMS administrator might have configured an override resource (also known as an override description) so that you can book a resource that has not been configured in your EMS database. For example, the administrator might have configured an override resource named "Other." If you select the Other resource, then a Description field is displayed on the Resource Selection dialog box. You must enter a description or name for the override resource before you can continue. EMS does not track availability of override resource items; however, EMS reports on override resource items just like any other resource item.</p></div></li><li>For the <span class="ui">Package </span>tab, select the package that contains the multiple resources that you are adding to the booking.</li></ul></li>
+            <li>Click <span class="ui">Select</span>.<ul start="1"><li>For items on the <span class="ui">Resources </span>tab, if your EMS administrator configured selections for the resource, then either you might be required to make selections for the resource, or you have the option to make selections for the resource; otherwise, go to&#160;Step 10.<div class="TitleandImage"><p><img src="../../../Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_7.png" alt="emsum_Navigator_image061.png" class="resize80_noborder_padding" /></p><p class="Caption">Example of a Resource Selections dialog box</p></div></li></ul><ul start="1"><li>For packages on the <span class="ui">Packages</span> tab, the package is added to the booking. An entry for the package as well as entry for each item in the package is displayed in the Booking Detail Items pane of the Navigator.</li></ul></li>
+            <li>Repeat&#160;Step 4&#160;through&#160;Step 9&#160;until you have added all the necessary booking detail items for the selected booking.</li>
+            <li>Click <span class="ui">Close</span>.&#160;The Resource Selection dialog box closes. The resource and its items are displayed as folders under the Booking folder in the Navigator.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you close the Resource Selection dialog box before you have added all the needed resource items to the booking, and the booking detail is not from a catering or service order category, then the booking detail is no longer an available option on the Booking Details drop-down list. To add more resource items to the booking, you can select the Booking Detail folder for the booking or you can click a booking detail item in the Items pane, and then click <span class="ui">New</span>.</p>
+        </div>
+    </body>
+</html>

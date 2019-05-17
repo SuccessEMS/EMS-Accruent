@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Plan Your EMS for Outlook Implementation</h1>
+        <p>There are several steps that your Administrator must complete when installing EMS for Outlook:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p><a href="#ObtainEMSforOutlookInstallationFile">Obtain the installation files</a> from the&#160;EMS Customer Portal.</p>
+            </li>
+            <li>
+                <p><a href="#EMSIntegrationforMicrosoftExchange">Install the EMS Integration for Microsoft Exchange</a>.</p>
+            </li>
+            <li>
+                <p><a href="#InstallEMSPlatformServices">Install EMS Platform Services</a> and connect to your organization's web server.</p>
+            </li>
+            <li>
+                <p><a href="#InstallEMSonUsersComputers">Install EMS for Outlook on Users' Computers</a>.</p>
+            </li>
+            <li>
+                <p>
+                Ensure the <a href="#ConfigurationPath">Configuration Path</a>&#160;is correct.</p>
+            </li>
+        </ol>
+        <h2><a name="ObtainEMSforOutlookInstallationFile"></a>Obtain the EMS for Outlook Installation File</h2>
+        <MadCap:snippetBlock src="../../ObtainInstallFilesStartAt1.flsnp" />
+        <ol class="number-list" MadCap:continue="true">
+            <li>
+                <p>Download&#160;<span class="ui">EMS For Outlook (EMSForOutlook.msi)</span>&#160;(required for both first time installations and upgrades).</p>
+            </li>
+        </ol>
+        <h2><a name="EMSIntegrationforMicrosoftExchange"></a>Install the EMS Integration for Microsoft Exchange</h2>
+        <p>This service (typically&#160;<a href="../IntegrationtoMicrosoftExchange/Introduction.htm">installed</a>&#160;where your EMS Web App&#160;resides) manages the integration between EMS Software&#160;and Exchange, including checking room availability, booking the meeting in EMS, and managing changes.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Exchange Integration service needs to be properly configured.&#160;For complete instructions, see the&#160;<a href="../IntegrationtoMicrosoftExchange/Introduction.htm">Integration to Microsoft<sup>®</sup> Exchange</a>&#160;guide.</p>
+        </div>
+        <h2><a name="InstallEMSPlatformServices"></a>Install EMS Platform Services on Your Web Server</h2>
+        <MadCap:snippetBlock src="../../ObtainInstallFilesStartAt1.flsnp" />
+        <ol class="number-list" MadCap:continue="true">
+            <li>
+                <p>Download the&#160;<span class="ui">EMSPlatformServices.msi</span>&#160;file.&#160;</p>
+            </li>
+            <li>
+                <p>Run this file on your web server.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You will need to enter the SQL server and EMS database. Make a note of the database name.&#160;The typical install path is&#160;C:\Program Files\EMS Software\Ems.Platform.Api.</p>
+                </div>
+            </li>
+            <li>
+                <p>When all prompts have been completed, click&#160;<span class="ui">Install</span>. The API is installed on your web server.&#160;</p>
+            </li>
+            <li>
+                <p>You will also need a Virtual Directory Name (typical default is EMSPlatformServices). Make a note of the new site you have created. This URL will need to be entered during the installation process <br />(e.g.,&#160;<span class="ui">http://[ServerName]/EMSPlatform/</span>&#160;[replace with the name of your web server]).</p>
+            </li>
+        </ol>
+        <h2><a name="InstallEMSonUsersComputers"></a>Install EMS for Outlook on Users' Computers</h2>
+        <p>This&#160;add-in should be&#160;installed on your users’ desktops.&#160;You will be prompted to supply the Platform Services URL during the installation process. By default, the&#160;<span class="ui">EMSForOutlook.msi</span>&#160;installs all of the files required by the EMS for Outlook&#160;Add-in in the following locations:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">32-bit machines</span>&#160;–&#160;<span class="italics">C:\Program Files\EMS for Outlook</span></p>
+            </li>
+            <li>
+                <p><span class="ui">64-bit machines</span>&#160;– <span class="italics">C:\Program Files (x86)\EMS for Outlook</span></p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>A 64-bit machine installation will require an elevated permission level.</p>
+                </div>
+                <p>This location can be changed during the installation, but it is recommended that you keep the default.</p>
+            </li>
+        </ul>
+        <h2><a name="ConfigurationPath"></a>Configuration Path</h2>
+        <p>EMS must be&#160;<a href="../ConfigurationGuide/ConfigOutlookOverview.htm">configured</a> properly  to activate EMS for Outlook for each Outlook user:</p>
+        <ol start="1" class="number-list">
+            <li class="li_3">
+                <p>The Outlook user must have an active EMS&#160;Everyday User&#160;account.</p>
+            </li>
+            <li class="li_3">
+                <p>The EMS Everyday User account must be assigned to&#160;<a href="../ConfigurationGuide/ConfigforOutlook.htm#EstablishingBookingTemplates">at least one Everyday User Process Template</a>&#160;with the&#160;Outlook&#160;option enabled.</p>
+            </li>
+            <li class="li_3">
+                <p>The EMS Everyday User account must be&#160;<a href="../ConfigurationGuide/ConfigforOutlook.htm#AssignEMSUsersToGroups">associated to an active EMS Group record</a>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title>Booking Details Items Overview V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Booking <MadCap:annotation MadCap:createDate="2017-11-11T17:43:44.7246820-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Topic is from 44H, not 44.1. Should we use DC_UG_WorkBookDetItemsCatResServ.html topic here instead since it's from 44.1?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-12T18:38:40.0000744-07:00">Details</MadCap:annotation> and Items Overview</h1>
+        <p>Booking details, which are also called categories, are the services (catering, A/V equipment, and so on), notes, attendees, activities, or room charges that you can add to a booking. Booking detail items, also called resources, are the individual items (coffee, sandwich, projector, and so on) that you add to a booking detail. When you add a resource to a booking, for example, coffee, various selections might be available or required, for example, regular, decaf, Italian roast, breakfast blend, and so on. Depending on how your EMS administrator has configured your categories, a resource might require service order times to be specified.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS administrator can configure buildings and categories so that a particular category can be used only in a particular building or buildings. This means that when you are adding booking details to a reservation, some booking details (categories) might not be displayed as an option.</p>
+        </div>
+        <p>The booking details for a selected booking are displayed in the Booking Details pane (the lower right pane) of the Navigator.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Categories that contain resources, but do not require service times are referred to as "resource categories." Categories that contain resources and that require service times are referred to as "service order categories." Categories that are used to manage food service are referred to as "catering categories." Categories that are used to manage miscellaneous notes (setup notes), agenda items, attendees/visitors, or room charges are referred to as "non-resource categories."</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44.1_Navigator/Booking Details and Items.png" alt="emsum_Navigator_image050.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">The Navigator Window with a Booking Folder Selected</p>
+        </div>
+        <p>If you select a booking detail folder that is for a Resource with Service Order category or a Catering category, then the service order number is displayed in the title bar of the Navigator.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44.1_Navigator/Booking Details and Items_1.png" alt="emsum_Navigator_image051.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">The Navigator Window With a Booking Detail Folder Selected</p>
+        </div>
+        <p>When you select a booking detail folder in the left pane of the Navigator, the tabs that are displayed in the upper right pane of the Navigator depend on the type of booking detail that you selected.</p>
+        <ul class="unorder-list">
+            <li><span class="ui">Summary </span>tab—The Summary displays information about the selected booking detail, including the event date, the event location, and the event status.</li>
+            <li><span class="ui">Properties </span>tab—The Properties tab also displays information about the booking detail, including the date that it was added to the booking, who added the detail, and, if applicable, the date that the detail was changed and who made the change.</li>
+        </ul>
+        <p>If the booking detail has a price/charge associated with it, for example, a room charge, then the following two tabs are also displayed:</p>
+        <ul class="unorder-list">
+            <li><span class="ui">Billing Reference Allocation</span> tab—By default, the charge for a booking detail can be allocated to a single billing reference number. On the <span class="ui">Billing Reference Allocation</span> tab, you can allocate the charge for a reservation to multiple billing reference numbers by percentage. See&#160;Also:&#160;<a href="NavigatorOverview.html#allocate_charges_to_multiple_billing_reference">Allocating charges to multiple billing reference numbers and/or PO numbers</a>.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS administrator must enable the <span class="ui">Use Billing Reference Allocation</span> parameter for this tab to be displayed. See <a href="../ConfigurationGuide/EMSDesktopClientParameters.htm" MadCap:conditions="General.Online Only">EMS Desktop Client Parameters</a><a href="https://docs.emssoftware.com/Content/EMSDesktopClient/V44.1/ConfigurationGuide/EMSDesktopClientParameters.htm" MadCap:conditions="General.Print Only">EMS Desktop Client Parameters</a>.</p>
+        </div>
+        <ul class="unorder-list">
+            <li><span class="ui">PO Number Allocation</span> tab—By default, the charge for a booking detail can be allocated to a single purchase order (PO) number. On the PO Number Allocation tab, you can allocate the charge for a reservation to multiple billing PO numbers by percentage. See&#160;Also:&#160;<a href="NavigatorOverview.html#allocate_charges_to_multiple_billing_reference">Allocating charges to multiple billing reference numbers and/or PO numbers</a>.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS administrator must enable the <span class="ui">Use PO Number Allocation</span> parameter for this tab to be displayed. See Also:&#160;<a href="../ConfigurationGuide/EMSDesktopClientParameters.htm" MadCap:conditions="General.Online Only">EMS Desktop Client Parameters</a><a href="https://docs.emssoftware.com/Content/EMSDesktopClient/V44.1/ConfigurationGuide/EMSDesktopClientParameters.htm" MadCap:conditions="General.Print Only">EMS Desktop Client Parameters</a>.</p>
+        </div>
+        <h2><a name="ServiceOrder"></a>Service Order&#160;</h2>
+        <p>If the selected booking detail requires a service order or catering category, then the following four tabs are also displayed:</p>
+        <ul class="unorder-list">
+            <li><span class="ui">User Defined Fields</span> tab—The User Defined Fields tab displays the additional fields that store custom data for the booking detail. Your EMS administrator configures the types of fields that are available as well as the allowed values for these fields. See&#160;Also:&#160;<a href="UserDefFieldsinNav.html" title="Working with User Defined Fields in the Navigator" alt="Working with User Defined Fields in the Navigator">User Defined Fields in the Navigator</a>.</li>
+            <li><span class="ui">Reminders </span>tab—The Reminders tab displays any reminders that were created for the selected booking detail. See&#160;Also:&#160;<a href="CommRemindinNav.html" title="Working with Comments and Reminders in the Navigator" alt="Working with Comments and Reminders in the Navigator">Comments and Reminders in the Navigator</a>.</li>
+            <li><span class="ui">Comments </span>tab—The Comments tab displays any comments that were made for the selected booking detail. See&#160;Also:&#160;<a href="CommRemindinNav.html" title="Working with Comments and Reminders in the Navigator" alt="Working with Comments and Reminders in the Navigator">Comments and Reminders in the Navigator</a>.</li>
+            <li><span class="ui">History </span>tab—The History tab displays the history for the booking detail (the date that a change was made to the detail, the ID of the user who made the change, the field that was changed, the old field value, and the new field value).</li>
+        </ul>
+        <p>Also, when you select a booking detail folder:</p>
+        <ul class="unorder-list">
+            <li>Most of the tabs in the upper pane of the window have some of the basic features of an EMS Browser window. You can change the width of the data columns, you can rearrange the column order by dragging a column to a new location using the column heading, and you can sort the data columns in either ascending or descending sort order. See&#160;Also:&#160;<a href="EMSWindow.html" title="An EMS Browser Window" alt="An EMS Browser Window">EMS Browser Window</a>.</li>
+            <li>The booking detail items for the selected booking detail are displayed in the Items pane (the lower right pane) of the Navigator. A green check mark appears in front of each individual item that has been added to a booking. If the item is a package, then a green checkmark is displayed not only in front of the package, but also, in front of each individual item in the package. A red "<span style="color: #ff0000;">X</span>" is displayed in front of any booking detail and/or booking detail item that has been deleted from a booking. The Items pane has all the features of an EMS Browser window. See&#160;Also:&#160;<a href="EMSWindow.html" title="An EMS Browser Window" alt="An EMS Browser Window">EMS Browser Window</a>.</li>
+        </ul>
+        <p>If you select a booking details item in the left pane of the Navigator, then the entire right pane of the Navigator is refreshed with three tabs—<span class="ui">Properties </span>tab that displays for the selected item, a <span class="ui">Selections </span>tab that displays the selections for the booking detail item (if applicable), and a <span class="ui">History </span>tab that details the history of the item.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44.1_Navigator/Booking Details and Items_2.png" alt="emsum_Navigator_image052.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">The Navigator window with a booking detail item selected</p>
+        </div>
+        <p>A booking detail might include a service order. A service order is a request to use the resource for a specified time period as opposed to using the resource for the entire event. For example, an event that meets from 10:00 am to 2:00 pm, might have food service from 11:00 am to noon. A service order consists of the service type, start and end times, and a unique, system-generated service order ID. For a catering booking detail, you can also indicate estimated count, guaranteed count, and actual count. You can create multiple service orders in the same booking. For example, you might have a number of catering services (breakfast, lunch, and afternoon refreshments) in the course of a one day training event. In this case, multiple folders are displayed under the booking folder on the left side of the Navigator window, with each folder representing a unique service order.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44.1_Navigator/Booking Details and Items_3.png" alt="emsum_Navigator_image053.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">The Navigator window showing multiple service orders in the same booking</p>
+        </div>
+        <p>If you reserve an item from a category that does not require a service order, your only choices are to reserve the item for the event time or for the entire reserved time.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS administrator might have configured a default service type for some or all of your system's categories, but you can always select a different value. In addition, your EMS administrator might have configured states to manage your service order process. For detailed information about states, see&#160;<a href="../ConfigurationGuide/ConfigCategory.html" MadCap:conditions="General.Online Only">Configure Categories</a><a href="[%=Links.WebsitePath%]ConfigurationGuide/ConfigCategory.html" MadCap:conditions="General.Print Only">Configure Categories.</a></p>
+        </div>
+    </body>
+</html>

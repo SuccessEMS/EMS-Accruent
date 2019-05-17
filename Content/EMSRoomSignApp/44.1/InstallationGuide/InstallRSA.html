@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Install the EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Install EMS&#160;Room Sign App</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS Room Sign App was <span class="ui">formerly named EMS Glance</span>. Some of the installation files (e.g., API, dll, etc.) will temporarily retain the Glance name.&#160;</p>
+        </div>
+        <p>This topic provides information about the following:</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>In <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a>, the Room Sign App API was moved into the EMS Room Sign application to improve performance. The <span class="ui">EMSGlanceAPI.msi</span> file is no longer required for customers running Update 30 or later.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Install_or_Upgrade_the_Database_Component">Install or Upgrade the EMS&#160;Database Component</a> (only required for Update 31 or earlier)</p>
+            </li>
+            <li>
+                <p><a href="#Install_or_Upgrade_the_EMS_Room_Sign_App_DLL">Install or Upgrade the EMS&#160;Room Sign App DLL</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Install_or_Upgrade_the_EMS_Room_Sign_App_API">Install or Upgrade the EMS&#160;Room Sign App API</a> (only required for Update 29 or earlier)</p>
+            </li>
+            <li>
+                <p><a href="#Verify_the_EMS_Room_Sign_App_API_Installation">Verify the EMS&#160;Room Sign App API&#160;Installation</a> (only required for Update 29 or earlier)</p>
+            </li>
+            <li>
+                <p><a href="#Install_or_Upgrade_the_EMS_Room_Sign_Web_Application">Install or Upgrade the EMS&#160;Room Sign Web Application</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Create_an_EMS_Admin_User_to_Manage">Create an EMS&#160;Admin User to Manage Your EMS&#160;Room Sign App API&#160;Web Service</a> (only required for Update 31 or earlier)</p>
+            </li>
+            <li>
+                <p><a href="#SetLaunchPin">Set a Launch Pin</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Access_EMS_Room_Sign_App_on_Your_Device(s)">Register EMS&#160;Room Sign App on Your Devices</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Deregister_RSA_on_Your_Device">Deregister EMS Room Sign App on Your Devices</a>
+                </p>
+                <ul>
+                    <li>
+                        <p><a href="#Remove_Unused_Devices_from_the_Database">Remove Unused Devices from the Database (exceeds licenses error)</a> (only for Update 28 or earlier)</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Overview of Install/Upgrade Process</h2>
+        <p>To install or upgrade the EMS Room Sign App, you will:</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are upgrading to Update 30 or later, make sure you uninstall the API prior to upgrading. In <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a>, the EMS Room Sign API was moved into the application, and you no longer need to install the API separately.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>For Update 31 or earlier, install the <a href="#Install_or_Upgrade_the_Database_Component">EMS Room Sign App .sql file</a>. </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>If you are on Update 32, do NOT&#160;install <b>EMSRoomSignApp.sql</b>. If you do install the .sql file, you will need to re-install the EMS&#160;patch.</p>
+                </div>
+            </li>
+            <li>
+                <p>Copy the <a href="#Install_or_Upgrade_the_EMS_Room_Sign_App_DLL">EMS Room Sign App .dll</a> file to each user workstation that needs EMS Room Sign App options in EMS Desktop Client.</p>
+            </li>
+            <li>
+                <p>For Update 29 or earlier, install the new <a href="#Install_or_Upgrade_the_EMS_Room_Sign_App_API">EMS Room Sign App API</a> on the web server that will be running it, and <a href="#Verify_the_EMS_Room_Sign_App_API_Installation">verify the installation</a>. </p>
+            </li>
+            <li>
+                <p>Install the new <a href="#Install_or_Upgrade_the_EMS_Room_Sign_Web_Application">EMS Room Sign App web application</a> on the web server that will be hosting it (and connect it to your EMS Room Sign App API, SQL server, and database).</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>For Update 30 or later, the EMS&#160;Room Sign API&#160;has been moved into the application. If you are running Update 30 or later, you will not need to connect the API&#160;to the web application.</p>
+                </div>
+            </li>
+            <li>
+                <p>For Update 31 or earlier, <a href="#Create_an_EMS_Admin_User_to_Manage">create an Admin User</a> to manage the EMS Room Sign App API&#160;web service.</p>
+            </li>
+            <li>
+                <p><a href="#Access_EMS_Room_Sign_App_on_Your_Device(s)">Access your&#160;EMS Room Sign application</a> through the web&#160;on your device(s).</p>
+            </li>
+        </ol>
+        <h2><a name="Install_or_Upgrade_the_Database_Component"></a>Install or Upgrade the Database Component (Update 31 or Earlier)</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are on Update 32, do NOT&#160;install <b>EMSRoomSignApp.sql</b>. If you do install the .sql file, you will need to re-install the EMS&#160;patch.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p><a href="ObtainInstallFiles.html">Obtain</a> the&#160;<span class="ui">EMSRoomSignApp.sql</span>&#160;file.</p>
+            </li>
+            <li>
+                <p>Open&#160;Microsoft SQL Server Management Studio.</p>
+            </li>
+            <li>
+                <p>Within&#160;Microsoft SQL Server Management Studio, select&#160;<span class="ui">File &gt; Open &gt; File…</span>&#160;and locate&#160;<span class="ui">EMSRoomSignApp.sql</span>.</p>
+            </li>
+            <li>
+                <p>Select your&#160;<span class="ui">EMS</span>&#160;Database&#160;and execute the query&#160;(<span class="ui">Query </span>&gt; <span class="ui">Execute</span>).&#160;When query execution has completed, the message "Command(s) completed successfully" will appear in the Results section.</p>
+            </li>
+        </ol>
+        <h2><a name="Install_or_Upgrade_the_EMS_Room_Sign_App_DLL"></a>Install or Upgrade the EMS Room Sign App DLL</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS Room Sign App was <span class="ui">formerly named EMS Glance</span>. Some of the installation files (e.g., API, dll, etc.) will temporarily retain the Glance name.&#160;</p>
+        </div>
+        <ol class="number-list">
+            <li value="1">
+                <p>On each client machine that needs access to the EMS Room Sign App Settings area, complete the following based on whether the install is local or web deploy:&#160;</p>
+                <ul>
+                    <li value="1">
+                        <p>Local Install — paste a copy of the&#160;<span class="bold">EMS.Glance.dll</span>&#160;file into the folder that contains your EMS application files (typically C:\Program Files\EMS).</p>
+                    </li>
+                    <li value="2">
+                        <p>Web Deploy Install — enter the <span class="bold">EMS.Glance.dll</span> in the following location:&#160;<br />C:\Users\&lt;username&gt;\AppData\Roaming\EMS2016\Extensions</p>
+                    </li>
+                </ul>
+            </li>
+            <li value="2">
+                <p>Once the&#160;<span class="bold">EMS.Glance.dll</span>&#160;is placed in the correct folder on the client machine (assuming your organization is appropriately licensed for the EMS Room Sign App), the EMS user will see the&#160;<span class="bold">EMS Glance Settings&#160;</span>button on the tool bar within the EMS application.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To update your registration, obtain a new license file and import into the EMS&#160;Desktop Client by navigating to <span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Registration</span>.</p>
+        </div>
+        <h2><a name="Install_or_Upgrade_the_EMS_Room_Sign_App_API"></a>Install or Upgrade the EMS Room Sign App API (Update 29 or Earlier)</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>For Update 30 or later, you do not need to install the EMS&#160;Room Sign API because the API&#160;has been moved into the EMS&#160;Room Sign application to improve performance. See <a href="#Install_or_Upgrade_the_EMS_Room_Sign_Web_Application">Install or Upgrade the EMS&#160;Room Sign App Web Application</a> to continue with the installation process.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Manually&#160;<span class="ui">uninstall</span>&#160;any previous versions of the API on your web server.&#160;</p>
+            </li>
+            <li>
+                <p>Download the&#160;<span class="ui">EMSGlanceAPI.msi</span>&#160;file onto the web server that will be running the API.</p>
+            </li>
+            <li>
+                <p>Run&#160;<span class="ui">EMSGlanceAPI.msi</span>.</p>
+            </li>
+            <li>
+                <p>The first screen welcomes you to the EMS Room Sign App API Web Service Setup Wizard.&#160;Click&#160;<span class="ui">Next&#160;</span>to begin the installation process.&#160;The&#160;Destination Folder&#160;screen will appear.</p>
+                <p>
+                    <img src="../Images/A_Installation/RSA_InstalRSA_RoomSignAppSetup.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Select the destination folder.&#160;The installation process will create a new physical directory on your web server based on the destination folder path entered (“EMSRoomSignApp” in the example above.)&#160;Click&#160;<span class="ui">Next</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The API should not be installed in the same physical directory as other EMS web-based products OR under a site running another version of the  API.</p>
+                </div>
+            </li>
+            <li>
+                <p>The&#160;EMS SQL&#160;Server Database Settings&#160;information screen will appear.</p>
+                <p>
+                    <img src="../Images/A_Installation/RSA_InstalRSA_ServiceDB.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Enter your EMS SQL&#160;<span class="ui">Server&#160;</span>name.</p>
+            </li>
+            <li>
+                <p>Enter your EMS&#160;<span class="ui">Database</span>&#160;name:</p>
+                <ul>
+                    <li>
+                        <p>EMS Professional customers (typically named&#160;“EMSData”).</p>
+                    </li>
+                    <li>
+                        <p>EMS Workplace, EMS Campus, EMS Enterprise, EMS District and EMS Legal customers (typically named&#160;“EMS”).</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <span class="ui">Next</span>.</p>
+            </li>
+            <li>
+                <p>The&#160;Virtual Directory information&#160;screen will appear.</p>
+                <p>
+                    <img src="../Images/A_Installation/RSA_InstalRSA_VirtualDirectory.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>The Virtual Directory Name will default to the destination folder specified above.&#160;It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMSRoomSignApp” in the example above.)&#160;Click&#160;<span class="ui">Next</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p> The API should&#160;<b>not</b>&#160;be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the  API.</p>
+                </div>
+            </li>
+            <li>
+                <p>The&#160;Ready to install EMS Room Sign App API Web Service&#160;screen will appear.&#160;Click&#160;<span class="ui">Install&#160;</span>to install the  API.</p>
+            </li>
+            <li>
+                <p>The&#160;Completed the EMS Room Sign App API Web Service Setup Wizard&#160;screen will appear.&#160;Click&#160;<span class="ui">Finish</span>.</p>
+            </li>
+        </ol>
+        <h2><a name="Verify_the_EMS_Room_Sign_App_API_Installation"></a>Verify the EMS Room Sign App API Installation (Update 29 or Earlier)</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>For <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a> or later, you do not need to verify the EMS&#160;Room Sign API installation because the API&#160;has been moved into the EMS&#160;Room Sign application and no longer needs to be installed separately. See <a href="#Install_or_Upgrade_the_EMS_Room_Sign_Web_Application">Install or Upgrade the EMS&#160;Room Sign App Web Application</a> to continue with the installation process.</p>
+        </div>
+        <p>After following the steps above, verify your API installation by opening a browser and entering the  API URL:</p>
+        <blockquote>
+            <p class="mt-indent-2"><b>Example:</b>&#160;http://[ServerName]/EMSGlanceAPI/service.asmx</p>
+            <p class="mt-indent-2">(replace [ServerName] with the name of your web server)</p>
+        </blockquote>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p class="mt-indent-2"> This URL will be required for the EMS Room Sign App Web Application installation.</p>
+        </div>
+        <h2><a name="Install_or_Upgrade_the_EMS_Room_Sign_Web_Application"></a>Install or Upgrade the EMS Room Sign Web Application</h2>
+        <ol class="number-list" MadCap:continue="false">
+            <li>
+                <p>Download the&#160;<span class="ui">EMSGlance.msi</span>&#160;file onto the web server that will be running the EMS Room Sign App web application.</p>
+            </li>
+            <li>
+                <p>Run&#160;<span class="ui">EMSGlance.msi</span>.</p>
+            </li>
+            <li>
+                <p>The first screen welcomes you to the EMS Room Sign App Setup Wizard.&#160;Click&#160;<span class="ui">Next&#160;</span>to begin the installation process.&#160;The&#160;Destination Folder&#160;screen will appear.</p>
+            </li>
+            <li>
+                <p>Select the destination folder.&#160;The installation process will create a new physical directory on your web server based on the destination folder path entered (“EMSRoomSignApp” in the example above.)&#160;Click&#160;<span class="ui">Next.</span></p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p> The EMS Room Sign App should&#160;<b>not</b>&#160;be installed in the same physical directory as other EMS web-based products OR under a site running another version of EMS Room Sign App.</p>
+                </div>
+            </li>
+            <li>
+                <p>Based on your software version, do the following:&#160;</p>
+                <ul MadCap:continue="false">
+                    <li>
+                        <p><span class="ui">Prior to Update 30</span><![CDATA[  ]]></p>
+                        <ol MadCap:continue="false" style="list-style-type: lower-alpha;">
+                            <li>
+                                <p>When the EMS Room Sign App API Path screen appears, enter the URL of your EMS Room Sign App API Web Service.</p>
+                                <p><span class="ui">Example:</span> http://[ServerName]/EMSGlanceAPI/service.asmx <br />(replace [ServerName] with the name of your web server)</p>
+                            </li>
+                            <li>
+                                <p>Click <span class="ui">Next</span>. </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><span class="ui">Update 30 or Later</span>
+                        </p>
+                        <ol MadCap:continue="false" style="list-style-type: lower-alpha;">
+                            <li>
+                                <p>When the EMS SQL&#160;Server Database Settings screen appears, enter your EMS SQL&#160;<span class="ui">Server&#160;</span>name and your EMS&#160;<span class="ui">Database</span>&#160;name in the appropriate fields.</p>
+                                <p>
+                                    <img src="../Images/A_Installation/RSA_InstalRSA_ServerDatabase.png" title="EMS SQL&#160;Server Database Settings Screen" alt="EMS SQL&#160;Server Database Settings Screen of the EMS Room Sign App Installer" class="resize80_noborder_padding" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click <span class="ui">Next</span>.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>The Virtual Directory information screen will appear. </p>
+            </li>
+            <li>
+                <p>The Virtual Directory Name will default to the destination folder specified in Step 4.&#160;It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMSRoomSignApp” in the example above.)&#160;Click&#160;<span class="ui">Next</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The EMS Room Sign App&#160;should&#160;<b>not</b>&#160;be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS Room Sign App.</p>
+                </div>
+            </li>
+            <li>
+                <p>The&#160;Ready to install EMS Room Sign App&#160;screen will appear. Click&#160;the <span class="ui">Install&#160;</span>button to install the EMS Room Sign App.</p>
+            </li>
+            <li>
+                <p>The&#160;Completed the EMS Room Sign App Setup Wizard&#160;screen will appear.&#160;Click&#160;<span class="ui">Finish</span>.&#160;</p>
+            </li>
+        </ol>
+        <h2><a name="Create_an_EMS_Admin_User_to_Manage"></a>Create an EMS Admin User to Manage Your EMS Room Sign App API Web Service (Update 31 or Earlier)</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Beginning in Update 32, you do not need to create an EMS&#160;admin user to manage the API because the  API was moved inside of the EMS&#160;Room Sign App. When required for audit trail purposes, EMS will use the user “EMS Room Sign App.”</p>
+        </div>
+        <p>To create an EMS&#160;admin user to manage your EMS&#160;Room Sign App API web service, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Create&#160;the EMS Admin Account to be used for the EMS Room Sign App:
+    </p>
+                <ol start="1" style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Create a user account in EMS Desktop Client under <span class="ui">System Administration</span> &gt; <span class="ui">Security</span> &gt;&#160;<span class="ui">Users&#160;</span>(with any user name and password you choose).</p>
+                    </li>
+                    <li>
+                        <p>Ensure the <span class="ui">Administrator&#160;</span>box remains unchecked.</p>
+                    </li>
+                    <li>
+                        <p>Then add the process&#160;<span class="ui">EMS API Web Service Access</span>&#160;to this account.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Enter the user name and password for the account in the web.config file of the EMS Room Sign App settings (see the following example excerpt from the web.config file):</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>In <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a>, changes were made to the web.config file. If you are running a software version prior to Update 30, your web.config file may contain different values than the ones shown in the example below.</p>
+                </div>
+                <div class="code-sample"><pre>&lt;appSettings&gt;</pre><pre xml:space="preserve" style="margin-left: 20px;">&lt;add key="webpages:Version" value="2.0.0.0" /&gt; 
+&lt;add key="webpages:Enabled" value="false" /&gt; 
+&lt;add key="PreserveLoginUrl" value="true" /&gt; 
+&lt;add key="ClientValidationEnabled" value="true" /&gt; 
+&lt;add key="UnobtrusiveJavaScriptEnabled" value="true" /&gt; 
+<span style="background-color: #ffff00;">&lt;add key="EmsUser" value="admin" /&gt; 
+</span><span style="background-color: #ffff00;">&lt;add key="EmsPassword" value="admin" /&gt;</span>
+&lt;add key="ShowDetailedErrors" value="true" /&gt; 
+&lt;!-- Set this pin to be used to access selecting the profile and room the 1st 
+time the application is launched on a device --&gt; 
+&lt;add key="LaunchPin" value="" /&gt; 
+&lt;add key="ExceptionHandlingSectionNode" value="glanceExceptionHandling" /&gt;
+&lt;add key="ValidateAntiForgery" value="false" /&gt; 
+&lt;add key="UseRelativeFilePaths" value="false" /&gt;
+&lt;add key="ForceTLS11AsMinimumProtocol" value="false" /&gt;
+&lt;!-- Set to INFO to enable trace logging of timing associated with the 
+most common actions - supported values:  "verbose" "debug" "info" "warning" 
+"error" "fatal" "none" --&gt; 
+&lt;add key="LogLevel" value="info" /&gt; 
+&lt;!-- File path to which trace logging data should be written --&gt; 
+&lt;add key="LogPath" value="" /&gt; 
+&lt;!-- Trace logging file size limit, in bytes --&gt; 
+&lt;add key="LogMaxFileSize" value="1073741824" /&gt; 
+&lt;!-- Max number of trace logging files to be retained --&gt; 
+&lt;add key="LogFileCountLimit" value="10" /&gt; 
+&lt;add key="UseJSON" value="true" /&gt; 
+&lt;!--IsoDateFormat or MicrosoftDateFormat --&gt; 
+&lt;add key="JSONDateFormat" value="IsoDateFormat" /&gt; 
+&lt;!-- durationUsePrimaryDB is the duration in minutes to call the primary 
+database to get bookings after a manual reservation is made from a Glance unit--&gt; 
+&lt;add key="durationUsePrimaryDB" value="5" /&gt; 
+<span style="background-color: #ffff00;">&lt;add key="useEmsUser" value="true" /&gt;</span>
+</pre><pre xml:space="preserve">&lt;/appSettings&gt;</pre>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p class="mt-indent-2" style="text-align: left;"><span class="ui">FOR&#160;EMS&#160;CLOUD CUSTOMERS:</span> Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please <a href="../../../ContactUs.htm">contact EMS Support</a>.</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="SetLaunchPin"></a>Set a Launch Pin</h2>
+        <p>To set a launch pin, complete the following steps:</p>
+        <ol class="number-list">
+            <li>
+                <p>Open a browser and enter the URL to your EMS Room Sign App web application.</p>
+            </li>
+            <li>
+                <p>If this is your first time accessing the site, <MadCap:annotation MadCap:createDate="2018-11-19T11:53:15.2872573-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does profile need to be configured prior to setting a launch pin? If so, need to add a note and link to configuring profile in EMS Desktop. Up to this point in the topic, we haven't told the user to configure a profile." MadCap:editor="Megan.Laub" MadCap:editDate="2018-11-19T11:59:22.9739504-07:00">select a profile and room</MadCap:annotation>. Each individual profile can be protected with a passcode; however, the first landing page does not have a passcode set by default. </p>
+            </li>
+            <li>
+                <p>Modify the web.config file to set a Launch Pin. Setting this value (which is blank by default), will force users to enter a code the first time they browse to the EMS&#160;Room Sign site. To set the Launch Pin key in the web.config file, do the following:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Navigate to the Room Sign App web directory. </p>
+                    </li>
+                    <li>
+                        <p>Open the web.config file for editing.</p>
+                    </li>
+                    <li>
+                        <p>In the web.config file, locate <span class="ui">key="LaunchPin"</span> and enter a value for the Launch Pin key. </p>
+                    </li>
+                    <li>
+                        <p>Save the web.config file.</p>
+                        <div class="TitleandImage">
+                            <p>
+                                <img src="../Images/RSA_launchpin.png" class="popup_with_padding_and_border" />
+                            </p>
+                            <p class="Caption">Example Screenshot with a 0000 Pin </p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2><a name="Access_EMS_Room_Sign_App_on_Your_Device(s)"></a>Register&#160;EMS Room Sign App on Your Device(s)</h2>
+        <p>The EMS Room Sign App is ready to use once all of the  components have been properly installed and <span class="italics">at least one Profile has been configured for use</span> (see&#160;<a href="../ConfigurationGuide/Configuration.html" MadCap:conditions="General.Online Only">Configure the EMS Room Sign App</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/ConfigurationGuide/Configuration.html" MadCap:conditions="General.Print Only">Configure the EMS Room Sign App</a>).</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Each EMS&#160;Room Sign device is tied to one specific room in EMS.&#160;Therefore, each room you register to a device will count against your available licenses. If you get an error about exceeding your license count, you will need to deregister unused devices to&#160;free up licenses (see <a href="#Deregister_RSA_on_Your_Device">Deregister EMS Room Sign App on Your Devices</a>).</p>
+        </div>
+        <p>To register&#160;the EMS Room Sign App on your device, do the following:</p>
+        <ol class="number-list">
+            <li>
+                <p>Ensure that you have <a href="../ConfigurationGuide/ConfigProfile.html#Create_a_New_Profile">configured the profile</a> that you want to associate with the device.</p>
+            </li>
+            <li>
+                <p>On your device, open a browser and enter the URL to your EMS Room Sign App web application:</p>
+                <p><b>Example:</b>&#160;http://[ServerName]/EMSGlance<br />(replace [ServerName] with the name of your web server)</p>
+            </li>
+            <li>
+                <p>The first time you access the EMS Room Sign App on your device, the Settings screen will appear.</p>
+                <p>
+                    <img src="../Images/A_Installation/RSA_InstalRSA_SettingsScreen.png" class="padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Select the Profile from the&#160;<span class="ui">Profile</span>&#160;drop-down list.</p>
+            </li>
+            <li>
+                <p>Select the Room from the&#160;<span class="ui">Room</span>&#160;drop-down list.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Apply</span>.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Once the EMS Room Sign App is running, to re-access the Settings screen for any reason, simply double-tap the EMS Room Sign App logo in the upper-left hand corner of the screen.</p>
+        </div>
+        <h2><a name="Deregister_RSA_on_Your_Device"></a>
+            <MadCap:annotation MadCap:createDate="2019-05-02T09:29:59.6507720-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="All update versions can do this, correct?  Do users on Update 29 or later have the choice to deregister devices either through the EMS &gt; deregister option or through by  deleting a profile or deleting a room from a profile?\r\n\r\nNeed to update the section when the menu tree appears for U33? Which settings option should be default: the menu tree or the Glance button?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-02T09:33:08.9221734-06:00">Deregister EMS&#160;Room Sign App on Your Devices</MadCap:annotation>
+        </h2>
+        <p>Each EMS Room Sign device is tied to one specific room in EMS.&#160;Therefore, each room you associate with a device counts against your available licenses. If you get an error about exceeding your license count, you will need to deregister unused devices to&#160;free up licenses. </p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>For Update 28 or earlier, you should deregister  devices before you <a href="../ConfigurationGuide/ConfigProfile.html#Delete_a_Profile">delete a profile</a> or before you <a href="../ConfigurationGuide/ConfigProfile.html#adddeleteroom">delete a room from a profile</a>. EMS&#160;Desktop Client does not automatically deregister devices when you delete a profile or room. If you have already deleted a profile or room and you did not first deregister the devices, you will not be able to deregister the devices through the <a href="#DeregisterDeviceWindow">Deregister Device window</a>. You will need to <a href="#Remove_Unused_Devices_from_the_Database">access the database to remove the devices</a> and free up licenses.</p>
+            <p>For Update 29 or later, when you <a href="../ConfigurationGuide/ConfigProfile.html#Delete_a_Profile">delete a profile</a>, or when you <a href="../ConfigurationGuide/ConfigProfile.html#adddeleteroom">delete a room from a profile</a>, the software automatically deregisters the devices associated with the profile/rooms.</p>
+        </div>
+        <p>To deregister devices and free up licenses, complete the following steps in EMS&#160;Desktop Client:&#160;</p>
+        <ol class="number-list">
+            <li>
+                <p>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <span class="ui">EMS&#160;Glance Settings</span>&#160;to access the EMS&#160;Glance window.&#160;</p>
+            </li>
+            <li>
+                <p>In the EMS&#160;Glance window, select&#160;<strong>Deregister Device</strong> and click <strong>Open</strong>. The Deregister Device window opens.</p>
+            </li>
+            <li>
+                <p>From the drop-down list, select the Profile associated with the device you want to deregister.</p>
+            </li>
+            <li>
+                <p>From the list of rooms that appears, select the room associated with the device you want to deregister, and then click <span class="ui">Deregister</span>.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/Deregister2.PNG" title="Deregister Device Window for EMS Room Sign App" alt="Deregister Device Window for EMS Room Sign App" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption"><a name="DeregisterDeviceWindow"></a>Deregister Device Window</p>
+                </div>
+            </li>
+        </ol>
+        <ol class="number-list" MadCap:continue="true">
+            <li>
+                <p>In the Deregister Device confirmation window, click <span class="ui">Yes </span>to confirm. </p>
+                <p>A message will appear explaining that the device was successfully deregistered.</p>
+            </li>
+            <li>
+                <p>Repeat steps 3 through 5 to deregister additional devices.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Close </span>to exit the Deregister Device window.</p>
+            </li>
+        </ol>
+        <h3><a name="Remove_Unused_Devices_from_the_Database"></a>Remove Unused Devices from the Database—Exceeds Licenses Error (Update 28 or Earlier)</h3>
+        <p><b>For Update 28 or earlier</b>, if you delete a profile, or rooms from a profile, without first deregistering the devices, you can get an "exceeds licenses" error even though you are not using all your licenses. When you <a href="#Access_EMS_Room_Sign_App_on_Your_Device(s)">register a device</a>, the software builds an ID&#160;based on the profile and room that you associate with the device and stores the ID&#160;in the database to track your license use. When you delete profiles or rooms without first deregistering the devices, the IDs are not removed from the database and continue to  count against your available licenses.  </p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>For Update 29 or later, when you <a href="../ConfigurationGuide/ConfigProfile.html#Delete_a_Profile">delete a profile</a>, or when you <a href="../ConfigurationGuide/ConfigProfile.html#adddeleteroom">delete a room from a profile</a>, the software automatically deregisters the devices associated with the profile/rooms and frees up the licenses. You do not need to remove the devices from the database.</p>
+        </div>
+        <p>If you are running Update 28 or earlier and you have already deleted a profile or room  without first <a href="#Deregister_RSA_on_Your_Device">deregistering the devices</a>, you will need to access the database to remove the IDs associated with these devices as follows:</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can use the following SQL statement to verify how many registered rooms you have before and after you remove rooms from the database:&#160;</p>
+            <p><span class="italics">SELECT&#160;COUNT(UDID)&#160;AS RegisteredRooms&#160;FROM&#160;sDigitalRoomSignLimit</span>
+            </p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>In the EMS&#160;database, access the <span class="ui">sDigitalRoomSignLimit</span> table.</p>
+            </li>
+            <li>
+                <p>Use the Room ID to locate each unused device, and then remove the entire row for each unused device from the table. </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Overview Configuration &gt; Billing V44.1 (EMS Desktop Client) </title>
+    </head>
+    <body>
+        <h1>Configuration &gt; Billing</h1>
+        <p>Before you can use EMS to manage your organization’s events, you must configure core data items that are specific to your organization. For example, before you can automatically price items in a reservation, you must first configure rate schedules and pricing plans.</p>
+        <p>Initial configuration for billing in EMS Desktop Client is extensive. If your organization uses EMS for revenue and billing, please consult your Professional Services representative for assistance. Consider <MadCap:annotation MadCap:createDate="2018-11-08T14:07:05.8562051-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should we organize the topics in the TOC the same as is suggested here, or is the current TOC order the way they appear in the EMS menu?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-11-08T14:08:08.2639617-07:00">configuring your billing information in phases</MadCap:annotation> as follows:</p>
+        <ul>
+            <li>
+                <p><a href="#EMSBillingConcepts">EMS Billing Concepts</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigAccount.htm">Configure Accounts</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigCurrencies.htm">Configure Currencies</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigBillRefPO.htm">Configure Billing Reference and PO Numbers</a>
+                </p>
+            </li>
+            <li>
+                <p>Review and Confirm <a href="ConfigGroup.htm#ConfigureGroup">Group</a>, <a href="ConfigRooms.html">Room</a>, and <a href="ConfigCategory.html">Category</a> Configurations (making a note of those you wish to link to billing)</p>
+            </li>
+            <li>
+                <p><a href="ConfigPaymentType.htm">Configure Payment Types</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigSalesCat.htm">Configure Sales Categories</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Calculations">Calculations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#PricingPlans">Pricing Plans</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigRateSchedule.htm">Configure Rate Schedules</a>
+                </p>
+            </li>
+            <li>
+                <p>Confirm Billing Assignments in <a href="ConfigGroup.htm#ConfigureGroup">Group</a>, <a href="ConfigRooms.html">Room</a>, and <a href="ConfigCategory.html">Category</a> Configurations</p>
+            </li>
+        </ul>
+        <p>In EMS,&#160;rate schedules&#160;and&#160;pricing plans&#160;allow you to define the pricing for your resources and rooms so that the pricing is automatically applied to the resources or rooms when a reservation is made.</p>
+        <p class="beforelist">See Also:</p>
+        <ul>
+            <li>
+                <p><a href="ConfigPricingPlan.htm">Configure Pricing Plans</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigCalc.htm">Configure Calculations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="EstablishBillingRef.htm">Establish Billing Reference and PO Behavior</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ExportPricInfoResource.htm">Export Pricing Information for a Resource</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ExportPricInfoRoom.htm">Export Pricing Information for a Room</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ExportPricingInfoBillableItems.htm">Export Pricing Information for Billable Items (Rooms &amp; Resources)</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="EMSBillingConcepts"></a>EMS Billing Concepts</h2>
+        <p>This section provides an overview of the following EMS&#160;billing concepts:</p>
+        <ul>
+            <li>
+                <p><a href="#Rate_Schedules">Rate Schedules</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Rate_Schedules_and_Billable_Items">Rate Schedules and Billable Items (rooms and resources)</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Calculations">Calculations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#PricingPlans">Pricing Plans</a>
+                </p>
+            </li>
+        </ul>
+        <h3><a name="Rate_Schedules"></a>Rate Schedules</h3>
+        <p>A&#160;rate schedule&#160;is a pricing sheet that lists&#160;prices for billable items in your EMS database. For example, if your organization is an academic organization, then at the most basic level, you would configure three different rate schedules for the three primary groups that book events at your facilities—an Internal group (students, faculty, staff, and so on), an External group (outside organizations that are not affiliated with your organization in any way), and an Alumni group. These rate schedules could detail the prices for such things as the room charge, A/V equipment charges, catering charges, and so on.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGBilling/Overview of Billing in EMS.png" title="Rate Schedule Example" alt="Example of Rate Schedule for three primary groups: Internal, External, and Alumni" />
+            </p>
+            <p class="Caption">Rate Schedule Example</p>
+        </div>
+        <p>Four factors affect how pricing is applied for a rate schedule</p>
+        <ol>
+            <li>
+                <p>Pricing method (flat rate, hourly rate, and so on)</p>
+            </li>
+            <li>
+                <p>Calculations (taxes, gratuities, and so on)</p>
+            </li>
+            <li>
+                <p>Discount percentage</p>
+            </li>
+            <li>
+                <p>Minimum/maximum charge</p>
+            </li>
+        </ol>
+        <p>You specify the pricing method, and if applicable, the discount percentage, and the minimum and maximum charges when you assign the prices to billable items based on your rate schedules. You can assign calculations directly to a category, a group, a group type, a resource, or a room. You can also assign calculations through pricing plans (see&#160;<a href="#Calculations">Calculations</a>).</p>
+        <h3 class="Heading3"><a name="Rate_Schedules_and_Billable_Items"></a>Rate Schedules and Billable Items (rooms and resources)&#160;</h3>
+        <p>After you define your organization’s rate schedules, you have three options for&#160;<span class="italics">manually&#160;</span>assigning the prices to billable items (rooms and resources) based on these schedules:</p>
+        <ul>
+            <li>
+                <p><span class="ui">During the configuration of a room or resource.</span> When you are configuring a room or resource, the configuration dialog box contains a <span class="ui">Pricing </span>tab. This tab lists all the rate schedules that are currently configured in your EMS database. You can specify the pricing method for the billable item that you are configuring for each rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;Also:&#160;<a href="ConfigRooms.html#ConfigurePricing">Configure Rooms</a>&#160;and&#160;<a href="ConfigResourcesforCat.html#ConfigurePricingResource">Configure Resources for a Category</a>.)</p>
+            </li>
+            <li>
+                <p><span class="ui">After all necessary rooms and resources are configured.</span> Both the Rooms window and the Resources window contain a <span class="ui">Pricing </span>button. You can click <span class="ui">Pricing </span>to open an Edit Pricing window. You can use the options on this window to specify the pricing method for the billable items (rooms and resources) for a selected rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;Also:&#160;<a href="ConfigRoomPricing.htm">Configure the Pricing for a Room on the Edit Pricing Window</a>&#160;and&#160;<a href="ConfigPricingResourceEditPriceWin.htm">Configure the Pricing for a Resource on the Edit Pricing Window</a>.)</p>
+            </li>
+            <li>
+                <p><span class="ui">Where rate schedules are defined.</span> The Rate Schedules window has a <span class="ui">Pricing </span>button. After you have defined a rate schedule, you can select a rate schedule in the Rate Schedules window and click <span class="ui">Pricing </span>to open an Edit Pricing window. You can use the options on this Edit Pricing window to specify the pricing method for every billable item for the rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;Also:&#160;<a href="ConfigRateSchedule.htm#ConfigurePricing">Configure Rate Schedules</a>.)</p>
+            </li>
+        </ul>
+        <h3><a name="Calculations"></a>Calculations&#160;</h3>
+        <p>Calculations&#160;are additional charges, such as gratuity or sales tax, that can be applied to billable items (a category, a group, a group type, a resource, or a room). You can apply a calculation  to a resource item every time a group uses the item, or you can apply the calculation only when a particular pricing plan is used for a group’s reservation. For a calculation to be applied&#160;every time&#160;a group uses a resource item, you must define the calculation  not only for the resource item but also for the group that is using the item. For a calculation to be applied to a resource item on as-needed basis, you must use <a href="#PricingPlans">pricing plans</a>.</p>
+        <p>See Also: <a href="ConfigCalc.htm">Configure Calculations</a></p>
+        <h3><a name="PricingPlans"></a>Pricing Plans&#160;</h3>
+        <p>A&#160;pricing plan&#160;bundles rate schedules. When your users apply a pre-configured pricing plan to a reservation, EMS automatically calculates the pricing for the billable items that are reserved for an event.</p>
+        <p>You can use a pricing plan to customize the pricing for a specific group type or even a specific group. When you configure a group type or group, you can assign a default pricing plan to the group type or group. When your users book a reservation for the group type or group, then the default pricing plan is applied to the reservation and EMS automatically calculates the pricing for the billable items that are reserved for the group’s reservation. For example, consider the following rate schedules:</p>
+        <table style="margin-left: auto;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Rate Schedule</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Charges</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Internal</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge - $10/hour (event time). 100% discount.</p>
+                            </li>
+                            <li>
+                                <p>A/V (for example, overhead projector) - $20/unit. 100% discount.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>External</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge - $10/hour (event time). $50 minimum.</p>
+                            </li>
+                            <li>
+                                <p>A/V (for example, overhead projector) - $20/unit.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Alumni</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge - $10/hour (event time). $50 minimum. 25% discount.</p>
+                            </li>
+                            <li>
+                                <p>A/V (for example, overhead projector) - $20/unit. 25% discount.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Standard</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Catering (for example, coffee) - $5/unit. 5% sales tax.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Based on the rate schedules that are defined above, you would configure your pricing plans&#160;as shown in the example below.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGBilling/Overview of Billing in EMS_1.png" title="Pricing Plans Example" alt="Pricing Plans Example" />
+            </p>
+            <p class="Caption">Pricing Plans Example</p>
+        </div>
+        <p>Note that these three pricing plans do not make a distinction between External for Profit groups and External for Non-Profit groups; however, if you want to customize the pricing so that External for Profit groups pay sales tax, but External Not For Profit groups do not, you could configure the pricing plans listed in the following table.</p>
+        <table style="margin-left: auto;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Pricing Plan</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Billable Item</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Rate Schedule</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Internal</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge</p>
+                            </li>
+                            <li>
+                                <p>A/V</p>
+                            </li>
+                            <li>
+                                <p>Catering</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Internal</p>
+                            </li>
+                            <li>
+                                <p>Internal</p>
+                            </li>
+                            <li>
+                                <p>Standard</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>External for Profit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge</p>
+                            </li>
+                            <li>
+                                <p>A/V</p>
+                            </li>
+                            <li>
+                                <p>Catering</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>External</p>
+                            </li>
+                            <li>
+                                <p>External</p>
+                            </li>
+                            <li>
+                                <p>Standard</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>External Not For Profit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge</p>
+                            </li>
+                            <li>
+                                <p>A/V</p>
+                            </li>
+                            <li>
+                                <p>Catering</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Alumni</p>
+                            </li>
+                            <li>
+                                <p>Internal</p>
+                            </li>
+                            <li>
+                                <p>Standard (No Tax)</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Alumni</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Room Charge</p>
+                            </li>
+                            <li>
+                                <p>A/V</p>
+                            </li>
+                            <li>
+                                <p>Catering</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>
+                                <p>Alumni</p>
+                            </li>
+                            <li>
+                                <p>
+                                    <MadCap:annotation MadCap:createDate="2018-11-08T10:27:35.4196555-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Shouldn't this be &quot;Alumni&quot; to match the example in the figure and table above?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-11-08T10:27:58.6084331-07:00">Internal</MadCap:annotation>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Standard</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>A pricing plan is also required to apply calculations correctly to invoiced items. You can apply a calculation to a resource item every time a group uses the item, or you can apply the calculation  only when particular pricing plan is used for a group’s reservation. For a calculation to be applied&#160;every time&#160;a group uses a resource item, you must define the calculation  not only for the resource item but also for the group that is using the item. For a calculation to be applied to a resource item on as needed basis, you must use pricing plans. When you are configuring a pricing plan, you have the option to:</p>
+        <ul>
+            <li>
+                <p>Have no calculations associated with the pricing plan.</p>
+            </li>
+            <li>
+                <p>Add charges&#160;in addition&#160;to what a group already pays.</p>
+            </li>
+            <li>
+                <p>Override a group’s set charges with different charges.</p>
+            </li>
+        </ul>
+        <p>Also, the pricing for a billable item is determined at the time that the item is reserved for an event. If your users do not select a pricing plan at the time they are making a reservation, no pricing information is retrieved. If your users select a pricing plan after the fact, or if they change the pricing plan for a reservation, then they can update the prices of the billable items that are reserved for the event only by using the Update Pricing function in the Navigator.</p>
+        <p>See Also: <a href="ConfigPricingPlan.htm">Configure Pricing Plans</a></p>
+    </body>
+</html>

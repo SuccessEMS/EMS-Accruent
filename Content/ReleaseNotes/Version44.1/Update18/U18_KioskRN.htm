@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="5112" MadCap:lastWidth="1124" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1_2">
+            <MadCap:concept term="V44.1" />EMS Kiosk App<br />Release Notes<br />V44.1 Update 18 </h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Name:&#160;V44.1,&#160;Update 18</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;October 31, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch:&#160;44.1.18000.201710252</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build #:&#160;&#160;44.1.18000.209</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_2_1">Fixes&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Configuration</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Entire Page Was Moving When Scrolling on Touch Screen</p>
+                        <p class="NormalWeb_2">Users were experiencing the entire page moving when scrolling outside of the profile list on a touch screen device.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that entire page does not move.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Inactive Profiles Were Visible in List</p>
+                        <p class="NormalWeb_2">Users could still see inactive profiles when searching for them from the Configuration page.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that if the "Inactive" checkbox is marked on the required Kiosk profile, it should be hidden in the profiles list on the 'config' page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Today's Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Bad Profile Configuration Broke Building and Floor Filters</p>
+                        <p class="NormalWeb_2">Building filter was incorrectly defaulting to All Buildings and the floor filter was defaulting&#160;to All Floors.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that the building filter defaults to the building on the profile and the floor filter defaults to the Default floor.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32719" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32719" class="Hyperlink_2">32719</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Authorization</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">"No Results Found" Validation Message Displays by Default on Secondary Auth Screen After Using Invalid Badge on Badge Auth</p>
+                        <p class="NormalWeb_2">Users who scanned&#160;an invalid Badge and then clicked on the "I don't have my badge" button received a&#160;validation message that continued to display by default on the secondary auth screen.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that the validation message does not appear on the secondary authorization screen.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32782" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32782" class="Hyperlink_2">32782</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Locate a Person</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">The Max Record Returned for Group Searches Parameter Wasn't Being Honored</p>
+                        <p class="NormalWeb_2">Users who&#160;set the parameter in the EMS Desktop Client were experiencing search results that were not honoring this value.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that search results honor the parameter's value.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33217" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33217" class="Hyperlink_2">33217</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">The Max Booking Availability Records Returned&#160;Parameter Wasn't Being Honored</p>
+                        <p class="NormalWeb_2">Users who&#160;set the parameter in the EMS Desktop Client were experiencing search results that were not honoring this value.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that search results honor the parameter's value.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33247" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33247" class="Hyperlink_2">33247</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">My Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">The Allow User to Cancel/End Booking Outside of Profile&#160;Parameter Wasn't Being Honored</p>
+                        <p class="NormalWeb_2">Users who&#160;set the parameter in the EMS Desktop Client were experiencing search results that were not honoring this value.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that search results honor the parameter's value.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33267" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33267" class="Hyperlink_2">33267</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="Emphasis_1">Profiles</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Splash Screen for Successfully Applied Profiles Did Not Automatically Move to Next Screen</p>
+                        <p class="NormalWeb_2">Users applying profiles were experiencing a stuck splash screen that would not progress. The splash screen should appear for a few seconds before moving on the next Welcome screen and then on to the default page.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that users can progress beyond the splash screen when applying profiles.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33702" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33702" class="Hyperlink_2">33702</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+        <p>&#160;</p>
+    </body>
+</html>

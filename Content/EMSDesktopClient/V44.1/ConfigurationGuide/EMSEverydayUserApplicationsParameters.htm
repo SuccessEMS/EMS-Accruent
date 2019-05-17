@@ -1,0 +1,1532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>EMS System Paramter V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>EMS&#160;System Parameters </h1>
+        <h2>Everyday User Applications</h2>
+        <p>Parameters for Everyday User Applications are broken out into the following <span class="ui">Areas</span>:</p>
+        <ul class="unorder-list">
+            <li><a href="#AccountManagment">Account Management</a>
+            </li>
+            <li><a href="#Authentication">Authentication</a>
+            </li>
+            <li><a href="#BookingDetails">Booking Details</a>
+            </li>
+            <li><a href="#BrowseEvents">Browse Events</a>
+            </li>
+            <li><a href="#BrowseLocations">Browse Locations</a>
+            </li>
+            <li><a href="#Create-ManageReservations">Create/Manage Reservations</a>
+            </li>
+            <li><a href="#Email">Email</a>
+            </li>
+            <li><a href="#Email-Settings">Email - Settings</a>
+            </li>
+            <li><a href="#Outlook">EMS&#160;for Outlook - Specific</a>
+            </li>
+            <li><a href="#FloorMapping">Floor Mapping</a>
+            </li>
+            <li><a href="#General">General</a>
+            </li>
+            <li><a href="#HomePage">Home Page</a>
+            </li>
+            <li><a href="#Labels">Labels</a>
+            </li>
+            <li><a href="#Mobile-Specific">Mobile-Specific</a>
+            </li>
+            <li><a href="#MyEvents">My Events</a>
+            </li>
+            <li><a href="#ScheduleView">Schedule View</a>
+            </li>
+            <li><a href="#Services">Services</a>
+            </li>
+            <li><a href="#Skype">Skype for Business</a>
+            </li>
+            <li><a href="#System">System</a>
+            </li>
+            <li><a href="#Unauthenticated">Unauthenticated Requests</a>
+            </li>
+        </ul>
+        <h2><a name="AccountManagment"></a>Account Management</h2>
+        <table cellspacing="12" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr style="height : 31.200000000000003px;" class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Email My Password</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allows Everyday Users to email their passwords to themselves.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO if customer is using Single Sign On.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Allow Everyday User to Opt-Out of Automatic Emails</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Allows Everyday Users to specify if they want to receive or opt out of  any automatic emails (e.g.,&#160;automatic confirmations or cancellations) from EMS Web App.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Everyday Users can log into the EMS&#160;Web App, navigate to My Account, and click the box "I do not want to receive e-mails from EMS Software" if this parameter is set to YES.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Auto Create Everyday User Account (for Integrated Authentication)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">An Everyday User account is automatically created via the integrated authentication process if a new user accesses&#160;the EMS Everyday User Application. (EMS&#160;Web App) </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 105px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Automatically Set Everyday User Time Zone to First Buildings Time Zone On Login</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">After an Everyday User logs in, the time zone for the user is set to the time zone for the first building that is stored in the EMS database. If this building, however, is not listed on the Locations drop-down list, then the time zone is set to the first available time zone on the Time Zone drop-down list, but the user can always select a different value if one is available.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Everyday Users can log into the EMS&#160;Web App, navigate to My Account, and set Time Zone preference.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Account Status for Newly-Created User</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default status (Active or Pending) for new Everyday User accounts, regardless of account creation method.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Active/Pending</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Security Template for User</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The default Web Security template that is assigned to new Everyday Users when their account is created.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Dependent on what Security Templates have been created.     Parameter must be populated before the EMS&#160;Web App can be used.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Manual Account Creation - Password Reset Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email text sent as a security measure to an Everyday User who has requested reset of their account password. Not recommended for organizations who utilize integrated authentication.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Manual Account Creation - Password Reset Success Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email text sent to an Everyday User to confirm reset of their password. Not recommended for organizations who utilize integrated authentication.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Manual Account Creation - Request Received Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email text sent to a potential web app user to confirm their request for an account has been received. Applicable to organizations whose allow account requesting instead of automatic account creation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Manual Account Creation - Sign Up Confirmation Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email text sent to a potential web app user as a security measure to confirm their request for an account. Applicable to organizations whose allow automatic account creation instead of account requesting.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Manual Account Creation - Sign Up Success Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email text sent to a new EMS&#160;Web App user to confirm their account has been created and is active. Email is sent as a result of the user selecting the link within the sign up confirmation email. Applicable to organizations whose allow automatic account creation instead of account requesting.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Account Management</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Require Phone during account creation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Requires the potential Everyday User to complete Phone 1 during manual account creation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Authentication"></a>Authentication</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Enable persistent authentication for supported applications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">For Everyday User applications that support authentication that is not through EMS Platform Services, this parameter allows users to remain authenticated across sessions.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Field Used to Authenticate Everyday User</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Indicates the field (Email Address, Network ID, or External Reference) that is used to authenticate an Everyday User.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Label for Login box</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The label for the User ID field on the Login page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">User ID, E-Mail address</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Portal Authentication Cookie Key</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Appropriate variable to be used if Portal Authentication is enabled by your organization and the parameter&#160;Portal Authentication Method&#160;is set to "Cookie."</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Portal Authentication Email Variable</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Variable to be used if Portal Authentication is enabled and the parameter&#160;Portal Authentication Method&#160;is set to "ServerVariable."&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Portal Authentication External Reference Variable</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Variable to be used if Portal Authentication is enabled and the parameter&#160;Portal Authentication Method&#160;is set to "ServerVariable."&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Portal Authentication Fax Variable</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Variable to be used if Portal Authentication is enabled and the parameter&#160;Portal Authentication Method&#160;is set to "ServerVariable."&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Portal Authentication Method</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Method of Portal Authentication to be used, if enabled by your organization. Choices are Form, Server Variable, Session, Querystring, and Cookie.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Portal Authentication Name Variable</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Variable to be used if Portal Authentication is enabled and the parameter&#160;Portal Authentication Method&#160;is set to "ServerVariable."&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Portal Authentication Phone Variable</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Variable to be used if Portal Authentication is enabled and the parameter&#160;Portal Authentication Method&#160;is set to "ServerVariable."&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 105px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Portal Authentication Variable</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">User variable to be compared against the EMS Everyday User&#160;External Reference&#160;or&#160;Network ID&#160;fields if your organization has enabled Portal Authentication. This parameter works in tandem with the choice selected for the parameter&#160;Portal Authentication Method&#160;(Form, Session, ServerVariable, Cookie, Querystring).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Authentication</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Use SAML 2.0 Authentication for User Authentication Web App Only</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="BookingDetails"></a>Booking Details</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 135px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Booking Details</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Make Add to Personal Calendar Link Appear</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, the&#160;Add to Personal Calendar&#160;link is displayed when the Everyday User views the event details in either Reservation Summary or Reservation Details - Reservation Tasks</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If this is an Exchange-enabled template, the booking (s) will already be on the Everyday User's calendar.      Having this enabled allows end users to add a booking they just made to their calendar if the template is not "exchange enabled."       Keep in mind, if the Everyday User changes or cancels the booking(s), the booking(s) remain on the calendar - (if using this method).</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Booking Details</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Show Social Networking Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">If set to “Yes,” then displays links to various social networking sites when a user views the details of a booking.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">From Browse Events, on the calendar - allows user to add events to Facebook, Twitter, Pinterest, Linked In, Tumbler - by clicking on "share" from the Event.&#160; Not typically used by Corporate customers.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="BrowseEvents"></a>Browse Events</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Browse Event Default Display Format</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Determines the initial format in which the Browse Events function displays information. Options are: Daily, Weekly, Monthly.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to Daily.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Collapse Related Bookings to Start Times on Weekly/Monthly Views</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If more than one booking within a reservation takes place on the same day, enabling this parameter will collapse the bookings into a single entry per Start Time. Only applies to Weekly and Monthly view.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2"> If a reservation has two bookings starting at same time and this parameter is set to YES, then the booking will be listed once with "multiple bookings" under the title.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Hide Past Events From View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, events from the past will no longer appear in Browse Events.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Maximum Number of Events/Day to Display in Daily View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Controls the number of events that are available for display, per day, in the daily views of the Browse Events function.&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In some circumstances, you must click a link to see additional events.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Maximum Number of Events/Day to Display in Monthly View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Controls the number of events that are available for display, per day, in the monthly views of the Browse Events function. </p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In some circumstances, you must click a link to see additional events.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Maximum Number of Events/Day to Display in Weekly View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Controls the number of events that are available for display, per day, in the weekly views of the Browse Events function.  </p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In some circumstances, you must click a link to see additional events.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show End Time in Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If this option is set to NO, only start time is shown in Browse Events.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES. &#160; 
+</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Group Name in Daily View of Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES,&#160;then the name of the group that is holding an event is shown in Browse Events.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">There are some cases when  EMS customers do not want the Group  to be displayed on Browse Events.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show Group Type Filter in Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, then the group type filter is an option in Browse Events.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">There are some cases when EMS customers do not want the Group Type to be displayed on Browse Events.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Location on Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES, then the event location is displayed in the calendar view on the Browse Events page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Show Room Type Filter in Browse Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">If set to YES, then a Room Type filter is displayed on the Browse Events page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">Typically set to NO if all the rooms in the template have the same "room type."</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="BrowseLocations"></a>Browse Locations</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Browse Locations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Room Name Format in Browse Locations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Determines how room information is formatted in Browse Locations. Options are Room Description or Room Code</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Room Description/Room Code</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Create-ManageReservations"></a>Create/Manage Reservations</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Billing Reference Lookup</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, a user can look up pre-configured Billing References in the Reservation Details. Pre-configured Billing References can exist in the  EMS&#160;Desktop Client on a Group record or in the global Billing References list under <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Billing References</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Allow PO Number Lookup</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES, a user can look up pre-configured PO Numbers in the Reservation Details. Pre-configured PO Numbers can exist in the EMS&#160;Desktop Client on the Group record or in the global PO Numbers list under <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">PO Numbers</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Temporary Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, then a user can specify a temporary contact when making a reservation. Temporary contacts are not saved to the Group record.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">A "temporary contact" is one in which an Everyday User types in the name of a contact.     Might be used in the case where the regular contact is not applicable to this meeting   (e.g., this is the "back up contact").</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Attachments Allowed Extensions</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The allowed attachment types for room requests.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Attachments Allowed on Room Request</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Controls whether users can submit an attachment as part of creating a reservation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1"><span class="ui">WARNING</span>: These attachments are stored in the EMS Database.</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Billing Reference Validation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Controls what options exist for requiring and validating Billing References. Validation occurs against pre-configured Billing References in the EMS&#160;Desktop Client, either on a Group record or in the global&#160;Billing References&#160;list under&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Billing References</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Cancel Reason</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Whatever "reason" is selected, when a person cancels a booking, this will be the reason.  &#160;Additionally, there is a report that the cancel reasons can be seen.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Pricing Plan</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Indicates the default pricing plan that is used to display pricing.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If "Show Room Pricing" and/or "Show Resource Pricing" are set to YES, then the prices that are displayed on the EMS Web App are based on whatever Pricing Plan is set in this parameter.</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Room Availability View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">When a user searches for available rooms, this parameter drives the default display. Options are Grid, List or Floor Map.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Grid/List/Floor Map</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Everyday Users can override by logging into the EMS&#160;Web App, navigating to <span class="ui">My Account</span> &gt; <span class="ui">Personalization</span>, choosing a&#160;template and editing. Everyday Users can change default display.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Value for Attendance</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Often on a template created for booking a workspace, this is defaulted to "1" so that the Everyday User does not have to input a number.    Reduces steps/clicks.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1"><a name="Delay_for_Type_Ahead_Search_Trigger"></a>Delay for Type Ahead Search Trigger (ms)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Affects all type-ahead search fields. Administrators can specify the duration after the last keystroke entry before triggering the search call for attendees. The default is <span class="ui">400 ms</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1"> 400&#160;ms, 600&#160;ms, 800&#160;ms, or 1000&#160;ms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">This parameter enables administrators to specify a longer duration after the last keystroke entry to prevent performance issues when returning attendee results. </td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Exclude Closures From Date Calculations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES, closures are not taken into account on booking rule date calculations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If set to YES, the date of the building closure is ignored and skipped when calculating date range booking rules.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Exclude Weekends From Date Calculations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, weekends are not taken into account on booking rule date calculations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If set to YES, weekends are ignored and skipped when calculating date range booking rules.   Weekend is defined as Saturday and Sunday.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Hide Daily Recurrence Option</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Hide the daily recurrence option on the Room Request page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If set to YES, the Everyday User will not be able to make a daily recurrence reservation on the EMS Web App.  "Daily" will not be in the dropbox.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Hide Monthly Recurrence Option</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Hide the monthly recurrence option on the Room Request page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If set to YES, the Everyday User will not be able to make a monthly recurrence reservation on the EMS Web App. &#160;"Monthly" will not be in the dropbox.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Hide Random Recurrence Option</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Hide the random recurrence option on the Room Request page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If set to YES, the Everyday User will not be able to make a random recurrence reservation on the EMS&#160;Web App (e.g., Tuesday, Saturday, Sunday).</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Hide Weekly Recurrence Option</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Hide the weekly recurrence option on the Room Request page.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If set to YES, the Everyday User will not be able to make a weekly recurrence reservation on the EMS Web App. &#160;"Weekly" will not be in the dropbox.</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2" MadCap:conditions="">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2"><a name="Minimum_Characters_to_Initiate_Type_Ahead_Search"></a>Minimum Characters to Initiate Type Ahead Search</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Affects the Find Attendees search field in calendar-enabled templates (Exchange and G&#160;Suite). Administrators can specify the minimum character count to initiate type-ahead searches. The default is <span class="ui">3</span> characters.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Positive Integer</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">This parameter enables administrators to set the minimum character search length at a higher value to prevent performance issues when returning attendee results. Updates recommended only for organizations with complex Exchange or G&#160;Suite deployments.</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Number of Available Rooms upon Search</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Specify the number of available rooms listed at a time in search results&#160;in EMS Web App only.   </p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This parameter is ignored for EMS for Outlook and the EMS&#160;Mobile App.&#160;</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Limiting the number of rooms displayed in a search results can assist in performance and a better user experience if a template or search criteria would return 1000's of results. &#160; The recommended setting is 250.</td>
+                </tr>
+                <tr style="height : 105px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Only Display Rooms That Exact Match Search Criteria</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to YES. &#160; If set to NO, rooms that are not part of the exact search criteria are displayed. This attempts to prevent the Everyday User from coming up with no results. &#160;
+
+</td>
+                </tr>
+                <tr style="height : 180px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Override Default Room Setup/Teardown Times</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Ability to override the setup and tear down time configured on the room.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If set to “YES, the default setup/teardown times defined for a room are ignored and the values for Setup Time in Minutes for All Rooms and Teardown Time in Minutes for All Rooms parameters are used instead. These parameters are usually configured for video conference (VC)&#160;bookings where setup/teardown times for participating rooms can differ. &#160; &#160; &#160;This parameter works in tandem with "Setup Time in Minutes for All Rooms" and "TeardownTime in Minutes for All Rooms".</td>
+                </tr>
+                <tr style="height : 150px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">PO Number Validation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Controls what options exist for requiring and validating PO Numbers. Validation occurs against pre-configured PO Numbers in the  EMS&#160;Desktop Client, either on a Group record or in the global&#160;PO Numbers&#160;list under <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt;<span class="ui"> PO Numbers</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">OPTIONS: &#160;No Validation; &#160; &#160;Required but not Validated&#160;= PO number is required on EMS&#160;Web App and EMS for Outlook but is not validated against pre-configured PO numbers; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; Required and Validated =&#160;PO Number is required on EMS&#160;Web App and EMS for Outlook and is validated against pre-configured PO numbers. &#160; &#160; &#160; &#160;Works in tandem with Show PO Number on Reservation.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Require Contact Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Specify NO or YES to require contact email at checkout.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Require Contact Phone</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Specify NO or YES to require a contact phone number at checkout.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 105px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservation Comment Type on Checkout</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservation-level Comment to be displayed in the Reservation Details when creating a Reservation. Comment must be configured to&#160;Display on Web&#160;and include&#160;Display Text.&#160;Only one Reservation-level Comment per Web Process Template allowed. Comments are configured in the  EMS&#160;Desktop Client under&#160;<span class="ui">Configuration</span> &gt; <span class="ui">Other </span>&gt; <span class="ui">Comment Types</span>.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">This might be used by a customer to capture more information about the Event.    Example a Comment might be created called "Event Details" and Everyday User could type in more information about the event.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservation Source for New Reservation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Specify the only reservation source for all reservations made through the EMS Web App.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">EMS Web App</td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Setup Time in Minutes For All Rooms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, the default setup time defined for a room is ignored and this parameter's value is used instead. The parameter&#160;Override Default Room Setup/Teardown Times&#160;must also be enabled. This parameter is usually configured for video conference (VC)&#160;reservations where setup/teardown times for participating rooms can differ.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If enabled, the default setup time defined for a room is ignored and this parameter's value is used instead. The parameter Override Default Room Setup/Teardown Times must also be enabled. This parameter is usually configured for VC reservations where setup/teardown times for participating rooms can differ. </td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Setup Type Validation Rule</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" rowspan="5">
+                        <p rowspan="5">Determines how Setup Type and Attendance are displayed and handled against room capacities. Four options are available: </p>
+                        <ul>
+                            <li rowspan="5"><span class="ui">No Setup and No Validation</span>: Do not show the Setup Type field and do not validate the Attendance value against room minimum and maximum capacities.</li>
+                            <li rowspan="5"><span class="ui">Validate But Don't Show</span>: Do not show the Setup Type field but validate the Attendance value against room minimum and maximum capacities. </li>
+                            <li rowspan="5"><span class="ui">Show and Validate</span>: Show the Setup Type field and validate the Attendance and Setup Type against all Setup Type and Capacity pairings for rooms.</li>
+                            <li rowspan="5"><span class="ui">Show But Don't Validate</span>: Show the Setup Type field but do not validate Setup Type or Attendance.</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show 2nd Contact</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, then the 2nd Contact Name, Phone 1, Phone 2, and Email Address fields are displayed in the Reservation Details.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Additional Filters Initially</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES, then by default, room searching filters are made immediately available to the everyday user. In the EMS Web App, filters are available under "Let Me Search for a Room."</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show Attendance on Room Request</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Controls whether the Number of People field appears as part of searching for a Room.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO on a "Book a Workspace" template and default attendance is set to 1.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Billing Reference on Reservation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES, the Billing Reference is displayed in the Reservation Details.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show Feature Filter</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Controls whether Features appear as a search criterion for a room.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO if no features have been defined on the rooms.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Floor Filter</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Controls whether Floors appear as a search criterion for a room.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to NO if all rooms in the template are on the same floor.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show PO Number on Reservation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, the PO Number is displayed in the Reservation Details.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Room Pricing</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, room pricing will be displayed per the selection in the Default Pricing Plan parameter.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show Room Type Filter</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Controls whether Room Types appear as a search criteria for a room.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO if all rooms in the template are the same room type.</td>
+                </tr>
+                <tr style="height : 135px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Teardown Time in Minutes For All Rooms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, the default teardown time defined for a room is ignored and this parameter's value is used instead. The parameter&#160;Override Default Room Setup/Teardown Times&#160;must also be enabled. This parameter is usually configured for video conference (VC) reservations where setup/teardown times for participating rooms can differ.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If enabled, the default teardown time defined for a room is ignored and this parameter's value is used instead. The parameter Override Default Room Setup/Teardown Times must also be enabled. This parameter is usually configured for VC reservations where setup/teardown times for participating rooms can differ. </td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Validation of Building Hours</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Controls whether Building Hours are enforced based on the Booking's Event Time or Reserved Time (i.e.,&#160;the setup and/or teardown time surrounding the booking).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reserved Time or Event Time</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1"> Parameter is set to Reserved Time.  Building hours are 9 am - 4 pm.   Setup time configured on room X is set to 30 minutes.    Everyday User will not be able to book room at 9 am because the setup time is 30 minutes before building is "open."</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Create/Manage Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Warn User if Room Selected is Not Available for All Dates</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">If enabled, a user will be alerted by a pop up, if a selected room is not available for all requested dates.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">Typically set to YES.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Email"></a>Email</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 105px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Subject for Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">This entry appears in the Subject line of email the reservation summary email that is generated when an Everyday User submits a reservation. Parameter&#160;Send Request Summary upon Submit&#160;must be enabled, and a reservation summary email must be configured. See Also: <a href="ConfigEmailSet.html">Configure Email Settings</a>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Request Summary, Event Summary, etc.</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email Address of Sender</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">This entry indicates the “From” email address in the reservation summary email that is generated when an Everyday User submits a reservation. Parameter&#160;Send Request Summary upon Submit&#160;must be enabled, and a reservation summary email must be configured.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Format for Request Summary</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Specify a detailed or summarized report for the reservation summary email that is generated when an Everyday User submits a reservation. Parameter&#160;Send Request Summary upon Submit&#160;must be enabled, and a reservation summary email must be configured.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Detail Summary  Mobile Friendly </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Name of Email Sender</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Indicates the "From" name in the reservation summary email generated when an everyday user creates a reservation. Parameter&#160;Send Request Summary upon Submit&#160;must be enabled, and a reservation summary email must be configured. Navigate to <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday User Process Templates</span> and&#160;highlight the template. Select&#160;Confirmation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Send Confirmation on Cancel</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sends the reservation summary if the reservation or a booking is canceled.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Send Request Summary upon Submit</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Determines whether reservation summary information is emailed to the Everyday Users when a reservation is submitted. A reservation summary email must be configured at the Everyday User Template/Confirmation level.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">Typically set to YES.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Email-Settings"></a>Email - Settings</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email - Settings</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Account to Use for Sending Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The email account against which outgoing email from EMS is authenticated. Only required if the SMTP mail server requires authentication.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email - Settings</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Name or IP Address of SMTP Server</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">SMTP mail server used solely for emails related to everyday user application functionality. This mail server does not apply to emails generated within the EMS&#160;Desktop Client or by any email notification service.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email - Settings</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Password of Email Account</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The password for the email account. Only required if the SMTP mail server requires authentication.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Email - Settings</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">SMTP Server Port</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">The default email port for your SMTP server.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Outlook"></a>EMS&#160;for Outlook - Specific</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">EMS for Outlook-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Display Filters before showing Rooms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Whether to show filter options before listing room availability on EMS for Outlook.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">EMS for Outlook-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Edit Text to display under icon in EMS for Outlook</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">EMS for Outlook-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Number of Available Rooms upon Search in Outlook</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">EMS&#160;for Outlook-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Outlook Book Selected Bookings Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">EMS for Outlook-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show Attendees in Book</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Shows attendees availability as well as room availability in Grid view.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">EMS for Outlook-Specific </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Text to append to EMS for Outlook meetings</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Adds text to Outlook meetings when the meetings are created using the EMS&#160;for Outlook add-in.</p>
+                        <p>When&#160;configuring the parameter, the following apply:&#160;</p>
+                        <ul>
+                            <li>You can enter plain text with a 50 character limit; HTML&#160;is not supported. The text you enter will be added to the meeting body.</li>
+                            <li>If you leave the parameter's value field empty (Null), no text will be added to the meeting body.</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="FloorMapping"></a>Floor Mapping</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Floor Mapping</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Floor Plan Web Service URL</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Used for the EMS Floor Plan module. URL address for the floor mapping web service.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">https://localhost/room-diagramming/diagramWS.asmx?WSDL</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="General"></a>General</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">General</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">ICS File (Calendar Appointment) Status</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If the user selects&#160;Add to Personal Calendar&#160;from their existing reservations, this parameter controls if the default calendar appointment status is Busy or Tentative.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 105px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">General</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Location Format</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Determines how location information is displayed in Browse Events. Options are Room Code, Room Description, Building Code - Room Code, Building Code - Room Description, Building Description - Room Code, Building Description - Room Description, Building Description.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 195px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">General</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Max Length for Text Fields</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Introduced in Fall 2017 to mitigate a security vulnerability where the EMS&#160;Web App previously accepted an unlimited character count into certain fields. &#160; This parameter applies to the following fields:</p>
+                        <ul>
+                            <li>UDFs</li>
+                            <li>Reservation Comments</li>
+                            <li>Service Attendee Notes</li>
+                            <li>Exchange Email Messages</li>
+                            <li>Web Text &#160;</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This parameter does not apply to the LDAP Configuration page. </p>
+                        </div>
+                    </td>
+                    <p>&#160;</p>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p><span class="ui">IMPORTANT</span>:&#160;If utilizing Skype for Business integration, this parameter must be set to '0' (unlimited). If a limit is set here, the Skype for Business invitation will not contain all required information. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="HomePage"></a>Home Page</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 61.8px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Home Page</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Home Page (Authenticated)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span style="color: #000000">Controls which home page tab appears to Everyday Users—</span><span style="font-style: italic">Site Home</span> (help text record for&#160;<span style="font-style: italic">Default.aspx)&#160;</span>or&#160;<span style="font-style: italic">My Home</span>). This parameter only applies to authenticated users<span style="font-style: italic">.</span></p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 60.6px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Home Page</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Home Page (Unauthenticated)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2"><span style="color: #000000">Controls whether&#160;</span><span style="font-style: italic">Site Home</span>&#160;or&#160;<span style="font-style: italic">My Home</span>&#160;is the default tab when loading default.aspx. The default value of this parameter is Site Home. This parameter only applies to unauthenticated users.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Home Page</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Show Infographics on My Home</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Controls whether the infographics about the Everyday Users' bookings appear on the My Home tab.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Labels"></a>Labels</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Event Title Plural</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If updating this parameter, it is recommended that the parameter&#160;Event Type Singular&#160;is also updated.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">See Event Title Singular.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Event Title Singular</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">If updating this parameter, it is recommended that the parameter&#160;Event Type Plural&#160;is also updated.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">Appears on 3rd Screen of EMS&#160;Web App.   Often titled "Event", "Meeting."</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Mobile-Specific"></a>Mobile - Specific</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Field to find rooms by when scanning QR codes</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Indicates the fields you want to match rooms by Room ID, Room Code or External Reference. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Room ID, Room Code, External Reference (on room).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Label for the Help Link on the Mobile App</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Login to the EMS Mobile App and click on top left navigation bar. &#160; On the bottom there is a help URL. This parameter allows you to configure the label for the help link. &#160; You can also configure the URL using another parameter - URL for HELP link on the EMS&#160;Mobile App.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Login to the EMS Mobile App and click on top left navigation bar. &#160; On the bottom there is a help URL.   </td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Maximum EMS Mobile App version that the API should allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Maximum app version that the API will allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Minimum EMS Mobile App version that the API should allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Minimum app version that the API will allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Minimum number of minutes to book via QR code or mobile Browse Location</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile checkin proximity distance</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile proximity unit of measurement</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Scans custom QR codes and interprets them as URLs.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">QR Codes when scanned, can be configured to be interpreted as a URL.   If the Customer's configuration requires QR codes to be scanned as a URL, this parameter should be set to YES.   If set to No, QR Codes will be scanned as plain text.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sets the header variable for the EMS Mobile APIs Header Authentication Method</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">EMS Mobile App supports header authentication.    The value of the header variable is set on the Platform's Admin page.   The same value should also be set for this parameter to make the Header Authentication work.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">See Also:&#160;<a href="../../../Authentication/PortalAuthMethods.html">Portal Authentication Methods. </a></td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The Query String Field in QR Code URLs for looking up Rooms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If you have the parameter SCAN CUSTOM QR CODES and INTERPRETS THEM AS URLS set to YES, then this is what tells the app to look for in the Query string. &#160; &#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If set to ROOMID, when it goes to the following URL: http://blah.com?romID=23921, it would use that ROOMID to look up the room based on the parameter: &#160;FIELD TO FIND ROOMS BY WHEN SCANNING QR CODES.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The subject for the EMS Mobile two-factor setup email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Subject of the email sent to users notifying them to go to the EMS&#160;Web App and scan their 2fa barcode.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">The first time you configure 2fa (Two-Factor Authentication) you get e-mailed. &#160;This is the subject of that e-mail.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">URL for the EMS Mobile App in the app store</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Setting this parameter to blank prevents&#160;the EMS Mobile App popup prompt from appearing.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">URL for the EMS Mobile App in the play store</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Setting this parameter to blank prevents&#160;the EMS Mobile App popup prompt from appearing.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">URL for the Help Link on the mobile app</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Login to the EMS Mobile App and click on top left navigation bar. &#160; On the bottom there is a help URL. The URL you put here, will be the URL for the Help Link. &#160; You can also configure the Help Link Label using another parameter - URL for HELP link Label on the EMS Mobile App.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="MyEvents"></a>My Events</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Add Booking to Reservation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, users can add bookings to existing Reservations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES. </td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Allow Edit UDFs on Reservation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, users can edit User Defined Field values for their existing Reservations.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Reservation Edits</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, an Everyday User can edit reservation-level information on existing reservations, specifically, Event Name, Event Type, Group and Contact information, billing information, and a Comment (if one exists).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2" MadCap:conditions="">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2"><a name="My_Events_Default_View"></a>My Events Default View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Controls the default view of the My Events page in the EMS Web App. You can set the My Events page’s default view to either the <span class="ui">Reservations </span>tab or the <span class="ui">Bookings </span>tab. The default value for this parameter is Reservations. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations/Bookings</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Users who primarily manage Conference/Events would typically want the default view to be Reservations, and users who primarily manage Workspace/Self-Serve meetings would typically want the default view to be Bookings because viewing events by bookings reduces the number of selections required to check-in.</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Require Cancellation Reason</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, users must provide a cancellation reason if they opt to cancel a booking. Cancel Reasons are configured within the  EMS&#160;Desktop Client under&#160;<span class="ui">Configuration</span> &gt; <span class="ui">Other </span>&gt;<span class="ui"> Cancel Reasons</span>,&#160;and a Cancel Reason must be enabled for the everyday user in order to appear as an option.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Show Group Column on My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, the Group column appears when a user is viewing a list of their Reservations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Show Send Invitation Link</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If set to NO, the Send Invitation option does not appear in Reservation Tasks on the View Reservation page in My Events.          When enabled, the ics file is sent to the entered email address.  If set to YES, the Send Invitation link is available in the Reservation Tasks.  on the View Reservation page in My Events.     </td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">My Events</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Show Service Availability</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Controls whether the View Service Availability option appears when managing an existing reservation. Service Availability includes cutoff times for services enabled for the everyday user as well as Building to which services are available.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">From My Events, select the Event. Under Reservation Tasks, users can see View Service Availability.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="ScheduleView"></a>Schedule View</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Display Setup/Teardown Times</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If room has setup/teardown times they are always shown irrespective of this parameter. If disabled, then booking level setup/teardown time is not shown to the user.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Event Information to Display in Booking on Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Determines what information should show in the free/busy bar in the Book. Options include: None, Event Name or Group Name.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 78px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Ignore Room Display to Everyday Users Flag</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">All bookings for all rooms are considered "Private" if this parameter is enabled.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If set to YES, the booking will display the label defined in PARAMETER: Label for Private Bookings on Schedule View. &#160; &#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2"><a name="LabelforPrivateBooking"></a>Label for "Private" Bookings on Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The default label in&#160;Schedule View for events set to not display on the web (i.e.,&#160;the bookings' Event Type and/or Status are not configured to display on the web).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2"> "Private"</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sequence of Available Rooms upon Search</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Option for how rooms are sorted when a user is viewing rooms in the schedule view. Choices are alphabetically by Room Description or numerically by Book Sequence values are configured on the Rooms.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Start Time on Schedule View</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Determines the start time for the grid. (Schedule View)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">7 am</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Services"></a>Services</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Adjust Service Order Times upon Booking Edit</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to YES, then Service Order Times are automatically adjusted if the booking time is modified.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Allow Edit of Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If this option is set to YES, users can edit the services they have added to events.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Populate Service Setup with Attendance</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, the Estimated Count field for Catering-type Categories will be populated with the Attendance value.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Restrict Service Order Times Within Event Times</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, users cannot specify Service Order Start or End times outside of the event's Start and End times.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Set Service Time Default from the Event Time</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p rowspan="2">If set to YES, then the service start/end times are set by default to the event start/end times. </p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p rowspan="2">This parameter is not enforced for EMS for Outlook. The service times will default to the event time when it is changed in EMS for Outlook.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Services</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Show Resource Pricing</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">If enabled, resource pricing will be displayed per the selection in the&#160;Default Pricing Plan&#160;parameter.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Skype"></a>Skype for Business</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Skype for Business</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Azure Active Directory Client ID</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Skype for Business</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Azure Active Directly Tenant</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Skype for Business</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Skype For Business AutoDiscover [sic] URL</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">See Also:&#160;<a href="../../../Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html#AutodiscoverURL">AutoDiscover URL</a> in the Configure Skype for Business topic.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Skype for Business</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Skype For Business Server Authentication Method</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="System"></a>System</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Platform Services API URL</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Unauthenticated"></a>Unauthenticated Requests</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">AREA</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Unauthenticated Requests</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Unauthenticated Users to Create Requests</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, unauthenticated users (i.e., guests) will have the option to request a room. The&#160;(unauthenticated user)&#160;Everyday User Process Template must also be configured in the EMS&#160;Desktop Client under&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday User Process Templates</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Unauthenticated Requests</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Allow Unauthenticated Users to Search for Room by Name</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, an unauthenticated user can specify a room as part of their request.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Unauthenticated Requests</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Display Location Filters and Room Availability to Unauthenticated Users</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">If enabled, an unauthenticated user can search for rooms and see room availability.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

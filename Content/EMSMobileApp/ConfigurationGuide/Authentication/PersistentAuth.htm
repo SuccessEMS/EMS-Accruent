@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Persistent and 2-Factor Authentication</h1>
+        <p><a href="#Persistent">Persistent Authentication</a>&#160;refers to the ability of the EMS Mobile App to automatically log users in so that they are not required to log into EMS Mobile App&#160;every time they need to access it. &#160;When using persistent authentication, a user's EMS Mobile App credentials will become invalid after a&#160;period of inactivity&#160;equal to or greater than the duration defined in settings.&#160;If not using persistent authentication, a user will be forced to re-authenticate after the duration defined in settings has elapsed, regardless of activity.</p>
+        <p><a href="#2fa">Two-factor (2fa)</a> refers to the ability of the EMS Mobile App to confirm a user's identity by granting access only after successfully presenting two or more pieces of evidence to an authentication mechanism. This gives EMS&#160;Administrators an enhanced security option for their EMS&#160;Everyday Users. </p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Both Persistent and 2fa are available through Native, Windows, and LDAP authentications. </p>
+        </div>
+        <h2><a name="Persistent"></a>Persistent Authentication</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Users with persistent authentication will be prompted to log back in to EMS Mobile App&#160;if anything is changed about their profile in EMS Desktop Client on the&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigEverydayUser.htm">Everyday Users tab</a>, such as&#160;Email, Password, External Reference, Network ID, and&#160;Security Template. If you remove a user's access to a process template, they will also be alerted when they attempt to use it, and then they will be&#160;prompted to re-authenticate.</p>
+        </div>
+        <ol class="number-list">
+            <li>Navigate to the&#160;<a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html">EMS&#160;Platform Services Admin Page</a>.</li>
+            <li>Click the <a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#Integrations">Integrations</a> tab.</li>
+            <li>Click on EMS&#160;Mobile.<br /></li>
+            <li>Select the&#160;<span class="ui">User Authentication Is Persistent </span>checkbox.</li>
+            <li>
+                <p>Set the token duration in minutes.</p>
+                <p>
+                    <img src="../../../Resources/Images/image7.png" class="hyperlink_with_padding_and_border" />
+                </p>
+            </li>
+            <li>Click <span class="ui">Save</span>.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>This setting&#160;overrides the token duration sent by SSO providers. If a user should leave your organization, you should manually disable&#160;his or her profile in EMS, otherwise the employee will have access to EMS Mobile App&#160;for the duration defined above. You can also use&#160;&#160;to streamline this process.&#160;</p>
+        </div>
+        <h2><a name="2fa"></a>Two-Factor (2fa)&#160;Authentication</h2>
+        <ol>
+            <li>Enable the 2fa parameter in EMS&#160;Desktop Client. </li>
+            <li>Navigate to the&#160;<a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html">EMS&#160;Platform Services Admin Page</a>.</li>
+            <li>Click the <a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#Integrations">Integrations</a> tab.</li>
+            <li>Click on EMS&#160;Mobile.</li>
+            <li>Select the&#160;<span class="ui">Require Two Factor Authentication </span>checkbox.</li>
+        </ol>
+    </body>
+</html>

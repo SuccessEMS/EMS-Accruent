@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Web Deployment V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Web Deployment</h1>
+        <p>EMS Desktop Web Deployment is a new option to Server Version 44 (Released January 2016). This feature allows for easy deployment of the desktop to your end users. It also incorporates a central source for posting application updates. These updates are applied to your end users' computers automatically once deployed to the server.</p>
+        <p>This topic provides information on the following</p>
+        <ul start="1" class="unorder-list">
+            <li><a href="#howwebdeployworks">How Web Deployment Works</a>
+            </li>
+            <li><a href="#Networking">Networking Components</a>
+            </li>
+            <li><a href="#Optional">Optional Connections</a>
+            </li>
+            <li><a href="#Architecture">Architecture Diagram</a>
+            </li>
+        </ul>
+        <p>
+            <MadCap:concept term="V44.1" />EMS Desktop Web Deployment (V44+ and V44.1) is an alternative method for installing EMS Desktop Client locally on individual user machines. This solution is not a replacement for the EMS Web Client (discontinued after V43), but rather, it is an alternative to using Microsoft<sup>®</sup> methods of deployment, such as SCCM. Administrators can use it to host EMS Desktop Client&#160;on a web server, with the ability to push the URL to any EMS Administrators so they can download&#160;EMS Desktop Client&#160;without needing Administrative Privileges on their local machine.&#160;</p>
+        <h2><a name="howwebdeployworks"></a>How Web Deployment Works</h2>
+        <p>The web deploy application is installed on your web server. The EMS Desktop Application is included within this installation. Once installed, the end users point&#160;their web browsers to the web deploy application, which&#160;links them to download the EMS Client. Once the user downloads and runs that link, the Desktop Client is installed within the&#160;user's profile on that workstation. Once installed, the EMS Desktop Client Application will check the server for a updated version each time the client is launched. If a new version is available, then it will automatically download and install the update.</p>
+        <h2><a name="Networking"></a>Networking Components</h2>
+        <ul class="unorder-list">
+            <li>The Web Server can be accessed by IP Address or Hostname. Port configuration is managed within IIS.</li>
+            <li>If HTTPS is leveraged you will need to have a Certificate assigned to the binding within IIS. This certification must be trusted by the workstations that will be running the desktop client.</li>
+            <li>The Web Server hosting the Web Deploy Application will need to have access to the Database server. The administrative&#160;users who will be leveraging the desktop client will need access to the Web Server.</li>
+        </ul>
+        <h2><a name="Optional"></a>Optional Connections</h2>
+        <p>The Desktop client can connect to these services:</p>
+        <ul class="unorder-list">
+            <li>SMTP Server</li>
+            <li>LDAP Server</li>
+            <li>Global Address Book Searches</li>
+            <li>Admin User Authentication</li>
+            <li>Web Process Template Configuration (Assigning LDAP Groups to Web Process Templates)</li>
+        </ul>
+        <h2><a name="Architecture"></a>Architecture Diagram</h2>
+        <p>
+            <img src="../../../Resources/Images/DeployDesktopClient/Web Deployment.jpg" alt="https://success.emssoftware.com/@api/deki/files/1412/Desktop_Web_Deploy_Arch1.jpg?revision=1&amp;size=bestfit&amp;width=693&amp;height=416" class="popup_with_padding_and_border" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Edit Booking Functionality in the EMS Room Sign App</title>
+    </head>
+    <body>
+        <h1>Configure Edit Booking Functionality in EMS Room Sign App</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The user experience for editing bookings has been improved with Version 44.1, Update 12. Users can now extend their bookings with only one click. Admins should change the <span class="ui">Extend Booking Button Label</span> parameter to be "Mins" or "Minutes."</p>
+        </div>
+        <p>To configure edit booking functionality in EMS Room Sign App, follow these steps:</p>
+        <ol class="number-list">
+            <li>On the EMS Desktop Client toolbar, click <span class="ui">EMS&#160;Glance Settings</span> to access the EMS Room Sign App Settings area.&#160;<p>You can set how information displays at the Global level (the default for all Profiles) or for just one Profile.</p></li>
+            <li>Open Global Settings&#160;to set this functionality as the default for all Profiles,&#160;<i>or</i>&#160;open a Profile&#160;for which you want to create a special display,&#160;and then edit the settings on the Settings tab.</li>
+            <li>
+                <p>Adjust the Global or Profile settings listed in the table below to configure&#160;how&#160;booking information displays on the following screen.&#160;The <span class="ui">Edit Booking </span>functions determine if meetings that are In Progress can be adjusted or ended in the EMS Room Sign App.</p>
+                <p><b>Edit Booking Settings</b>
+                </p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Option</p>
+                            </th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Allow Edit Booking</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" data-th="Description">
+                                <p>Indicates if a meeting can be adjusted or ended. If set to <span class="ui">Yes</span>, then the <span class="ui">End </span>button will display while a meeting is in progress. The meeting can also be extended based on the value of the parameter described below.</p>
+                                <p><span class="ui">End</span>—Sets the booking end time to the current time.&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Number of Minutes to Extend Booking</p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Determines how much the meeting can be extended if the room is available. The options are 15, 30, 45, and 60 minutes. If the user presses this button, the meeting end time will be extended by the value shown.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Require Authentication to Edit Booking in Progress</td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p data-th="Option">Require Authentication to End Booking in Progress</p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p data-th="Description">If set to YES, user will need to authenticate in order to end booking in progress.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Currently, the EMS Room Sign App only supports editing meetings without setup or teardown time.</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/RSA_CG_EditBookingInprogressReserve.PNG" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">In Progress Screen with Reserve, One-Click Meeting Extend, and End Buttons</p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

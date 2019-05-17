@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview of the Academic Scheduling Process V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Overview of the Academic Scheduling Process</h1>
+        <p>The academic scheduling process is a multi-step process for enabling online communication between the Domain Scheduler and academic units, optimizing academic space use, and creating reservations in EMS Academic Planning for academic courses. To use the full functionality of EMS Academic Planning, it is important that you understand the&#160;academic&#160;scheduling specific terms&#160;that are used in EMS Academic Planning and that you have a high-level understanding of the&#160;academic scheduling configuration process.</p>
+        <h2>Academic Scheduling Specific Terms Used in EMS Campus&#160;</h2>
+        <p>While meeting/event scheduling and academic scheduling have many features in common, EMS Academic Planning uses terms that are specific to the academic scheduling configuration process.</p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Term</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>SIS</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Generic acronym that is used in EMS Academic Planning to represent a Student Information System. A system parameter controls the term “SIS,” and typically, your EMS administrator changes it to the system-specific term that your organization uses, for example, PeopleSoft, Banner, Colleague, and so on.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Academic Term</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Defines a set of courses that is taught for a specific time period and is synchronized from the SIS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Instructors</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Instructors are imported from your SIS. Instructors determine who is teaching a course. They are also referred to as a “contact” after publishing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Subject</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Subjects are imported from your SIS. Subjects describe the topic of the course offered, for example, Math or English. Subjects are assigned to domains and academic units to designate who manages the courses that are taught within a subject.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>A course type is imported from your SIS. Course types categorize offerings, for example, a lecture or a lab. Course types are used for limiting the types of rooms in which a course can be taught and for reporting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Domain</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>A level of organization within the institution that defines scheduling responsibility. The subjects defined within a domain determine the courses that are listed for the domain. The rooms that are defined within a domain determine all spaces that are potentially available for the courses. Functions such as synchronizing, optimizing, and running reports are carried out on a per domain basis. (A user who has this type of access is referred to as a Domain Scheduler.) The term “domain” is controlled by a parameter, and in many cases it is changed to “Campus” or “School” to better describe how course scheduling is divided.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Academic Unit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>A level of organization within the institution that defines responsibility for making schedule requests for a portion of a domain. The rooms that are defined within an academic unit give the unit the ability to require these spaces during optimization. The subjects that are defined within an academic unit determine the courses that are listed when filtering by the unit. Academic units are used when assigning permissions to Academic users and when filtering reports. The term “academic unit” is controlled by a parameter, and in many cases it is changed to “Department” or “Division” to better describe how course scheduling requests are divided.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>EMS Campus Planning Interface</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The web-based interface that is typically used by academic units to review course schedule data and communicate changes to the domain scheduler. Any computer with a standard Internet browser can be used to access the EMS Campus Planning Interface.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Equivalent to a section in the SIS. The high level descriptor of a class, such as “CHEM 101 - Introduction to Chemistry, and other associated information such as instructor and estimated enrollment. After a course is published, it becomes the reservation-level information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course Date</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>A unique meeting pattern that is associated with a course, such as Tuesday/Thursday, 8:00 am to 9:20 am. Courses can have multiple course dates, such as when a class has both a lecture and a lab component that meet on different days of the week and at different times. After a course date is published, it becomes the booking-level information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Cross-listed Courses</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Courses are designated in the SIS as cross-listed for a variety of reasons; however, after such designation, there are implications in EMS. If two or more courses are cross-listed and have identical course date records (meeting patterns), then these two courses are linked and they are assigned the same room during optimization and final exam scheduling. They, in essence, share space by default.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Shared Space</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>If two courses that have identical course date records are to be scheduled in the same room at the same time, but they are not cross-listed in the SIS, then they can be designated as Shared Space in EMS. This designation links the courses so that they are assigned to the same room during optimization and final exam scheduling. This designation does not affect the SIS.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Academic Scheduling Configuration Process</h2>
+        <p>Before academic scheduling can be even be carried out, the following must be in place in your EMS database:</p>
+        <ul class="unorder-list">
+            <li>Core data—building, rooms, instructors, course types, and subjects—must be synchronized with the Student Information System (SIS).</li>
+            <li>Academic domains and academic units must be configured.</li>
+            <li>Academic users must be configured with the appropriate security settings.</li>
+            <li>Default values for academic parameters must be set.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>See the <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/2_EMS_Desktop_Client_CG.htm">EMS Desktop Client Configuration Guide</a> for detailed instructions about configuring and synchronizing this needed academic data.</p>
+        </div>
+        <p>Although the academic scheduling configuration process varies from one academic site to another, typically, the same two-phase process, the Academic Planning phase and the Post-Publishing phase, is carried out, and each process typically has the same high-level steps.</p>
+        <h2><a name="Academic_Planning_Phase"></a>Academic Planning Phase</h2>
+        <p>The Academic Planning Phase is the first phase carried out in the academic scheduling process. This phase typically has the following high-level steps:</p>
+        <ol>
+            <li>Importing an Academic Term. See <a href="#Importing_an_Academic_Term">Importing an Academic Term</a>.</li>
+            <li>Defining and Editing Courses. See <a href="SynchronizeCourses.htm">Defining and Editing Courses</a>.</li>
+            <li>Settings Preferences. See <a href="SpecifyRoomPrefReq.htm">Specifying Room Preferences.</a></li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can carry out Step 2 and Step 3 individually, or you can carry them out simultaneously using Dual Mode. </p>
+        </div>
+        <ol>
+            <li>Assigning rooms and optimizing. See <a href="ReviewVerifyRoomPref.htm">Review and Verify Room Preferences</a>.</li>
+            <li>Publishing terms in EMS. See <a href="PublishTerm.htm">Publishing a Term.</a></li>
+            <li>Once you have published a term:<ol><li>A new term is created in the SIS either by rolling forward a previous term or by creating it from scratch. The term is synchronized into EMS.</li><li>The Domain Scheduler synchronizes the course schedule data from the campus SIS into EMS Campus.</li><li>Academic units review the course schedule data in the Campus web client and make change requests as appropriate for new, edited, or canceled sections and/or mark the courses that Share Space.</li><li>The Domain Scheduler reviews the changes and shared space settings in EMS Campus, modifies the data in the SIS and resynchronizes the updated course schedule into EMS Campus to synchronize the two systems.</li><li>The Domain Scheduler and/or academic units submit room preferences for courses.</li><li>Pre-assignments are completed and scenarios are created that apply weighted values to the preferences in order to meet organizational criteria for room scheduling and to make the best use of space.</li><li>The Domain Scheduler publishes the schedule to create reservations and bookings in EMS Campus for all academic courses and write the course location information back to the SIS.</li></ol></li>
+        </ol>
+        <h2><a name="Post-Publishing_Phase"></a>Post-Publishing Phase</h2>
+        <p>The Post-Publishing Phase is the second phase carried out in the academic scheduling process. This phase typically has the following high-level steps:</p>
+        <ol>
+            <li>Reviewing reservations and resolving room assignments.</li>
+            <li>Creating a synchronization schedule.</li>
+            <li>Creating and publishing a final exam session.</li>
+        </ol>
+        <p>For all these tasks, see <a href="Post-PubProcCourses.htm">Post-Publish Processing of Courses</a>. Once you have completed them:</p>
+        <ol>
+            <li>The Domain Scheduler reviews the room reservations and resolves unassigned courses or displaced event reservations.</li>
+            <li>A synchronization schedule is created to keep EMS up to date with changes that are made in the SIS.</li>
+            <li>The Domain Scheduler creates and publishes a final exam session for the term.</li>
+        </ol>
+        <h2><a name="Importing_an_Academic_Term"></a>Importing an Academic Term</h2>
+        <ul class="unorder-list">
+            <li><a href="OverviewImportAcadTerm.htm">Overview of Importing an Academic Term</a>
+            </li>
+            <li><a href="SynchronizeAcadTerm.htm">Synchronize an Academic Term</a>
+            </li>
+            <li><a href="SynchronizeCourses.htm">Synchronize Courses</a>
+            </li>
+        </ul>
+    </body>
+</html>

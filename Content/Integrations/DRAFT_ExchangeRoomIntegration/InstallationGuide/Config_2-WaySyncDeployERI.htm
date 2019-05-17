@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Configure 2-Way Sync Deployment for ERI</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ERI/ERI_Note_U32_or_prior.flsnp" />
+        <MadCap:snippetBlock src="../../../CloudConfigNote.flsnp" />
+        <p>ERI&#160;provides 2-way (bi-directional) syncing—<MadCap:variable name="General.Exchange-to-EMS" /> and <MadCap:variable name="General.EMS-to-Exchange" />. To configure 2-way sync deployment in your environment, you will need to register a new application in the <MadCap:annotation MadCap:createDate="2019-05-16T20:03:56.8344072-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does Cloud Services configure the 2-way sync? " MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:04:20.3013933-06:00">Microsoft Azure Portal under an admin account as follows</MadCap:annotation>:&#160;</p>
+        <ol>
+            <li>
+                <p>Sign in to your Azure account through the Azure Portal.</p>
+            </li>
+            <li>
+                <p>Select <span class="ui">Azure Active Directory</span>.</p>
+            </li>
+            <li>
+                <p>Select <span class="ui">App registrations</span> &gt; <span class="ui">New Registration</span>.</p>
+            </li>
+            <li>
+                <p>When the <span class="ui">Register an application</span> page appears, enter your application's registration information as follows:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>In the <span class="ui">Name </span>field, enter <span class="ui">EMS 2-Way Sync</span>.</p>
+                    </li>
+                    <li>
+                        <p>Under <span class="ui">Supported account types</span>, select <MadCap:annotation MadCap:createDate="2019-05-15T15:02:57.3505377-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Can the user select any option, or does the ERI 2-way sync deployment require a specific option. If customer can select option, is that when we provide the link to microsoft documentation" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-15T15:06:59.4403307-06:00">[TBD]</MadCap:annotation>.</p>
+                    </li>
+                </ol>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2019-05-15T15:11:47.8059682-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Is this optional, or can they configure a redirect URI without causing issues with the 2-way deployment?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-15T15:13:25.2328123-06:00">You do not need to configure a Redirect URI.</MadCap:annotation>
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>See <a href="https://docs.microsoft.com/en-us/graph/auth-register-app-v2" target="_blank">Microsoft's documentation</a> for more information about registering an application with the Microsoft identity platform.</p>
+                </div>
+                <p>
+                    <img src="../../../Resources/Images/ERI/RegisterApp_for_2-way-sync.PNG" class="popup_with_padding_and_border" />
+                </p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Register</span>.</p>
+            </li>
+            <li>
+                <p>Copy the Application (client) ID and the Directory (tenant) ID and save this information for later.</p>
+                <p>You will need this information to configure both of these IDs in EMS&#160;Desktop Client application. </p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2019-05-15T15:26:05.6573453-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does the user need to select &quot;Certificates &amp; secrets&quot; first and then select Client secrets &gt; New client secret?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-15T15:26:49.2344211-06:00">Select <span class="ui">Certificates &amp;&#160;secrets</span>, and then click</MadCap:annotation><![CDATA[  ]]><span class="ui">Clients secrets</span> &gt; <span class="ui">New client secret</span>.</p>
+                <p>The <span class="ui">Add a client secret</span> page opens.</p>
+                <p>
+                    <img src="../../../Resources/Images/ERI/Azure_AddClientSecret.PNG" class="padding_and_border" />
+                </p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>In the <span class="ui">Description </span>field, enter EMS&#160;2-Way Sync Secret.</p>
+                    </li>
+                    <li>
+                        <p>For the <span class="ui">Expires </span>value, select <span class="ui">Never</span>.</p>
+                    </li>
+                    <li>
+                        <p>Click <span class="ui">Add</span>.</p>
+                        <p>The <MadCap:annotation MadCap:createDate="2019-05-16T20:06:26.9497260-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="In EMS-3017, the A/C says that the Client Secret needs to be encrypted. Is encryption taken care of during the install and config process, or does the user/cloud services need to do this? " MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:08:17.2069103-06:00">client secret</MadCap:annotation> for EMS 2-Way Sync is saved, and the value of the client secret is displayed.</p>
+                    </li>
+                    <li>
+                        <p>Copy the value for the secret.</p>
+                        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                            <p>Make sure to copy the value of the secret at this point. You will not be able to retrieve value later.</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the <MadCap:annotation MadCap:createDate="2019-05-15T15:42:32.5059746-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="how do they get here?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-15T15:42:36.3217923-06:00">API&#160;permissions section of the Azure Portal, use the <b>Add a permission</b> button to add the following permissions for Microsoft Graph:</MadCap:annotation></p>
+                <ul>
+                    <li>
+                        <p><b>Calendars.ReadWrite (Application)</b>
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>User.Read.All (Application)</b>
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    <img src="../../../Resources/Images/ERI/Azure_MSGraph_API_Permissions.PNG" class="popup_with_padding_and_border" />
+                </p>
+            </li>
+            <li>
+                <p>After you have finished adding permissions, click <b><MadCap:annotation MadCap:createDate="2019-05-16T20:09:12.3011738-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="The A/C in EMS-3017 says:\r\n\r\n&quot;An admin can grant the permission needed in the azure portal- Or a link can be created in an admin page that directs the customer to approve the app with a redirect url to come back, once the app is approved, the tenant id gets passed back in the redirect url so the customer would potentially not need to know that to save it off.&quot;\r\n\r\nAre we giving users both options or just the Azure portal option to grant permission?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:09:56.8030257-06:00">Grant admin consent for emsqa</MadCap:annotation> (Default Directory)</b> at the bottom of the page.</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2019-05-16T09:50:51.9449083-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to verify these instructions (especially how to navigate to the new tab), and get the description and values information for the parameters." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T09:51:49.3014432-06:00"><a href="DRAFT_InstallERI.html">Configure your ERI&#160;settings in EMS&#160;Platform Services Admin Portal</a>
+                    </MadCap:annotation>.</p>
+                <p>Make sure you have access to the <MadCap:annotation MadCap:createDate="2019-05-16T20:20:57.9606848-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="From Confluence doc (https://accruent.atlassian.net/wiki/spaces/EMS/pages/1046904947/Exchange+2-Way+Deployment): \r\nDoes entering these values in Admin Portal take care of configuring the EMS Application (tblRegistry Keys) with the values for:\r\nPAM_MSGraphAppID\r\nPAM_MSGraphAppSecret\r\nPAM_MSGraphTenantID\r\n\r\nAnd how is EnableMSGraph (enable) completed? By completing the information in the Admin Portal?\r\n\r\nNSQ is required for 2-way sync to function. What is NSQ and should we add this requirement to the Requirements topic?\r\n\r\nPlatform needs to be publicly exposed for 2-way exchange to trigger platform. Is Platform set up normally to be publicly exposed or will customers need to do extra work (or cloud do extra work) make Platform publicly exposed?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:30:17.5522770-06:00">Application ID, Directory ID, and EMS 2-Way Sync Secret</MadCap:annotation> that you copied in steps 7 and 8 above. To complete the 2-way sync configuration, you will need to enter the IDs and secret into the MS&#160;Graph fields in EMS&#160;Platform Services Admin Portal. </p>
+            </li>
+        </ol>
+    </body>
+</html>

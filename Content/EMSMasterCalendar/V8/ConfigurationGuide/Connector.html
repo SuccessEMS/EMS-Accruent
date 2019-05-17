@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Connecting Master Calendar to Your EMS Database</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Connect Master Calendar to Your EMS Database</h1>
+        <p class="Body">A <em>connector</em> is a direct feed from your EMS database to your Master Calendar database. If you are an EMS customer and a Master Calendar customer, a connector prevents you from having to carry out double entry of your events. You can enter all your events once into your EMS system, then use a connector to import one or more, or all your EMS events into Master Calendar. See Also:&#160;<a href="ConnectDataSources.html">Connect to Data Sources</a>. </p>
+        <p class="Body">This topic will provide information that will allow you to:</p>
+        <ul>
+            <li><a href="#Confirm">Confirm and Install New License</a>
+            </li>
+            <li><a href="#Add">Add a Connector</a>
+                <ul>
+                    <li><a href="#Details">Details Tab Fields</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Filter">Filter&#160;EMS events</a>
+            </li>
+            <li><a href="#Specify">Specify the Frequency of the Data Import</a>
+                <ul>
+                    <li><a href="#DataRetrieval">Data Retrieval Tab Fields</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Activate">Activate&#160;a Connector</a>
+            </li>
+            <li><a href="#Deactivate">Deactivate&#160;a Connector</a>
+            </li>
+            <li><a href="#Edit">Edit&#160;a Connector</a>
+            </li>
+            <li><a href="#PurgeConnector">Purge a Connector</a>
+            </li>
+            <li><a href="#RunConnector">Run&#160;a Connector</a>
+            </li>
+            <li><a href="#DeleteConnector">Delete&#160;a Connector</a>
+            </li>
+            <li><a href="#Generate">Generate&#160;a Connectors List Report</a>
+            </li>
+            <li><a href="#ViewHistory">View&#160;History for a Connector</a>
+            </li>
+        </ul>
+        <p class="Body">Managing connectors in EMS&#160;Master Calendar consists of adding a connector, filtering the events to import, setting the frequency of the import, activating and inactivating connectors, editing a connector, running a connector, purging a connector, and deleting a connector. You can also generate a Connectors List report and you can view the history for a connector.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>As with data sources, the Connector function requires that your organization purchase the optional module, Master Calendar Data Connectors.</p>
+        </div>
+        <h2><a name="Confirm"></a>Confirm and Install New License</h2>
+        <p>In order to use the Master Calendar Data Connectors, an organization must be properly licensed.  If unsure about whether the EMS Data Connector Module has been purchased, log into the Master Calendar site, go to the systemcheck.aspx page, click the License Information heading and review the Licensed For list and look for a description to state “EMS Connector.”</p>
+        <p>If an organization was not previously licensed for the EMS Data Connector Module but is now, update the registration information by logging in to the Master Calendar, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Site Administration</span> &gt; <span class="ui">Registration</span>, entering the new licenses information then click<span class="ui"> Save License Data</span>.  Please note, the license information is case sensitive and needs to be entered in exactly how it was provide from EMS&#160;Software.  </p>
+        <p>After entering the registration information, Master Calendar must re-read the license by going to the systemcheck.aspx page, clicking the License Information heading and then clicking Read License.  At the very top of the page, it should state “License read successfully.”</p>
+        <h2><a name="Add"></a>Add a Connector</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connectors8.png" class="imgBorderMax520" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Under Actions, click <span class="ui">Add</span>.&#160;A Data Source list is displayed.</li>
+        </ol>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/MC_ConnectMCtoEMSDatabase_DataSource.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select the data source that you want to use for the connector. The Details tab opens. You use the options on this tab to add the basic information for the connector.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Remember, the data source is for the connection to the EMS database, and you must also use a connector to import UDFs into your Master Calendar database. If you do not see the data source that you want to use for the connector, then it has not been created.</p>
+        </div>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/CONNECTOR9.png" class="imgBorderMax520" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Enter the information for the connector.</li>
+        </ol>
+        <p><a name="Details"></a><b>Details Field Tab</b>
+        </p>
+        <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 220px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 602px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="TableColumnHeader">Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="TableColumnHeader">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="TableBody">Connector Name</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">The title or the name for the connector.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="TableBody">Calendars</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="TableBody">A list of all active calendars to which you have access as a Calendar Manager. Click the Lookup icon to open the Calendars dialog box and select the calendar or calendars to which you are importing the EMS events.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="TableBody" style="text-align: left;">Automatically Match Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">Selected by default. If you leave this option selected, then every event type in the selected data source is mapped according to the event type mapping that you carried out for the data source. If you clear this option, then the Event Types dropdown list becomes available.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="TableBody">Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="TableBody">Available only if you clear the Automatically Match Event Type option. Every event type in the selected data source will be mapped to the MC event type that you select on this dropdown list.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="TableBody">Bookings Require Approval</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">If you select this option, the imported events will follow the approval workflow for the Manage Events option. See&#160;Also:&#160;<a href="ManageEvents.html">Managing Events</a>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="TableBody">Hide Contact Name</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="TableBody">If you select this option, the name of the event’s contact person does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="TableBody">Hide Contact Phone Number</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">If you select this option, the contact phone number for the event does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="TableBody">Hide Contact Email</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="TableBody">If you select this option, the contact email for the event does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="TableBody">Location Format</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="TableBody">Determines the location format that is imported from EMS. For example, if one of the buildings for an event type is the Strong building, you can indicate whether you want to import the EMS Building Description (STRONG) or the EMS Building Code (STR). Eight options are available:</p>
+                        <ul>
+                            <li>Building Code - Room Code</li>
+                            <li>Building Code - Room Description</li>
+                            <li>Building Description - Room Code</li>
+                            <li>Building Description - Room Description</li>
+                            <li>Building Code</li>
+                            <li>Building Description</li>
+                            <li>Room Code</li>
+                            <li>Room Description</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Filter"></a>Filter&#160;EMS events</h2>
+        <p class="Body">When you filter the EMS events, you must select at least one event type, one status, and one group type, or no events are pulled from your EMS database into your Master Calendar database.</p>
+        <ol>
+            <li>Click the Filters tab to open it.&#160;The Buildings label, Rooms label, Group Types label, and Group label that you see on the Filters tab are brought over from the EMS Data source. You configure these labels in the EMS Database under System Administration &gt; Settings &gt; Parameters. Asterisks next to Event Types, Statuses, and Group Types indicate the EMS Display on Web setting for the item.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connectors10.png" class="imgBorderMax520" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select at least one event type, one status, and one group type. CTRL-click to select multiple event types, statuses, and group types.</li>
+            <li>
+                <p>If you do not select any specific groups for a group type, then EMS events tied to all groups are pulled. Optionally, to filter the connector based on the EMS events for a specific group:</p>
+                <ul>
+                    <li>Click <span class="ui">Add </span>to open an EMS&#160;Master Calendar Group Lookup dialog box.</li>
+                    <li>In the Filter field, specify the search criteria for the group, and then click Go. The search is limited to the exact order of characters in the search string, and the string must begin with the information for which you are searching. The string is not case-sensitive. For example, if you enter “admin” as your search string for All groups, “Administrators” is returned in the search results, but DnsAdmins is not.</li>
+                    <li>From the search results, select the group that is to be used as a filter&#160;(CTRL-click to select multiple groups), and then click Add to move the groups to the Groups list. To remove groups, select the department (CTRL-click to select multiple groups), and then click Remove</li>
+                </ul>
+            </li>
+            <li>Optionally, select (All) to pull EMS events booked in all EMS buildings, or pick a specific building. If you pick a specific building, you must also select the building rooms. To select all rooms for a building a single step, click the Move All (&gt;&gt;) button.</li>
+            <li>Optionally, to filter the EMS events based on a specific response to a specific UDF, select the UDF on the User Defined Fields dropdown list, and select the answer on the Answer dropdown list.</li>
+        </ol>
+        <h2><a name="Specify"></a>Specify the Frequency of the Data Import</h2>
+        <p class="Body">The frequency of the data import means how often are you querying the EMS database. The greater the frequency, the more current is the “synch up” between your EMS database and your Master Calendar database.</p>
+        <ol>
+            <li>Click the <span class="ui">Retrieval </span>tab to open it.</li>
+        </ol>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/connector11.png" class="imgBorderMax520" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Specify the information for the frequency of the data retrieval.</li>
+        </ol>
+        <p><a name="DataRetrieval"></a><b>Data Retrieval Tab Fields</b>
+        </p>
+        <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 265px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 604px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="TableColumnHeader">Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="TableColumnHeader">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="TableBody">Time Period</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">The time frame for which the events are to be imported. Two values are available:</p>
+                        <ul>
+                            <li><span class="ui">Range of Days </span>(default value)—If you select this value, you must also specify a Days Forward value.</li>
+                            <li><span class="ui">Specific Dates</span>—If you select this value, the Days Forward field is removed from the tab. Fields for specific dates appear instead.</li>
+                        </ul>
+                        <p class="FigureCaptionColumn">Specific Dates options</p>
+                        <p class="AnchorFigure">
+                            <img src="../images/B_Configuration/MC_ConnectMCtoEMSDatabase_SpecificDatesOption.png" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="TableBody">Days Forward</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="TableBody">Available only if you select Range of Days for the Time Period. Indicates the number of days into the future from the current day’s date that the event types are to be imported from the EMS database.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="TableBody">Start Date/End Date/No End Date</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="TableBody">Available only if you select Specific Dates for the Time Period. You must enter a start date. You must enter an end date, or you must select No End Date.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If you select No End Date, then all future events are pulled.</div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="TableBody">Frequency</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="TableBody">Indicates how often you are querying the EMS database.</p>
+                        <ul>
+                            <li>Daily—If you select this option, you must also indicate the run time for the data import. (For example, daily at 1:30 a.m.)</li>
+                            <li>Weekly—If you select this option, you must also indicate the day of the week and the run time for the data import. (For example, every Wednesday at 2:00 p.m.)</li>
+                            <li>Minutes—If you select this option, you must indicate the intervals (in minutes) of the data import. (For example, every 15 minutes.)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true">
+            <li>Click <span class="ui">Save</span>.&#160;The connector is saved as an <em>active</em> connector in Master Calendar.</li>
+        </ol>
+        <h2><a name="Activate"></a>Activate&#160;a Connector</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Click the Inactive tab to open.&#160;All currently inactive connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/connector12.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select the connector that you are activating.</li>
+            <li>Under Actions, click <span class="ui">Edit</span>.&#160;The Details tab opens. The Inactive option is selected.</li>
+        </ol>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/connector13.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select <span class="ui">Active</span>.</li>
+            <li>Click <span class="ui">Save</span>.&#160;The connector is saved and is displayed on the Active tab on the Connectors page.</li>
+        </ol>
+        <h2><a name="Deactivate"></a>Deactivate&#160;a Connector</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select the connector that you want to de-activate.</li>
+            <li>Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens. The Active option is selected.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connector15.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select <strong>Inactive</strong>.</li>
+            <li>Click <strong>Save</strong>.&#160;The connector is saved and is displayed on the Inactive tab on the Connectors page.</li>
+        </ol>
+        <h2><a name="Edit"></a>Edit&#160;a Connector</h2>
+        <p class="Body">You can edit both active and inactive connectors.</p>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li> If needed, click the Inactive tab to open it.</li>
+            <li>Select the connector that you are editing.</li>
+            <li>Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connector15.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Edit the information as needed for the connector. See <a href="#DataRetrieval">Data Retrieval Fields Tab</a>. </li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Click <strong>Save</strong>.&#160;The edited connector is saved in EMS&#160;Master Calendar.</li>
+        </ol>
+        <h2><a name="PurgeConnector"></a>Purge a Connector</h2>
+        <p class="Body">You can purge both active and inactive connectors. When you purge a connector, all the <em>events</em> that you imported into Master Calendar using the selected connector are deleted. The connector itself is not deleted. It remains available either on the Active or Inactive tab of the Connectors page.</p>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>If needed, click the <strong>Inactive </strong>tab to open it.</li>
+            <li>Select the connector that you are purging.</li>
+            <li>Under Actions, click <strong>Purge</strong>.&#160;A message opens asking you if you are sure that you want to purge all the selected connectors.</li>
+            <li>Click <strong>OK </strong>in the message.&#160;A message opens indicating that all the selected connectors were purged.</li>
+            <li>Click <strong>OK </strong>in the message.&#160;All the <em>events</em> that you imported into Master Calendar using the selected connector are deleted. The connector itself is not deleted. It remains available either on the Active or Inactive tab of the Connectors page.</li>
+        </ol>
+        <h2><a name="RunConnector"></a>Run&#160;a Connector</h2>
+        <p class="Body">To manually override the frequency setting for a connector, you run a connector. After you run a connector, the connector will continue to run at its regularly scheduled times.</p>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p class="StepNumberBegin">
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select the connector that you are running.</li>
+            <li>Under Actions, click <strong>Run</strong>.&#160;After the connector runs, a message opens indicating that the run was successful. It also indicates the number of records that were inserted, the number of records that were updated, and the number of records that were deleted.</li>
+        </ol>
+        <h2><a name="DeleteConnector"></a>Delete&#160;a Connector</h2>
+        <p class="Body">You can only delete inactive connectors. To delete a currently active connector, you must first de-activate the connector. &#160;When you delete a connector, none of the events that were imported through the connector are deleted. To delete the events, <a title="Managing Connectors in your Master Calendar System" href="DeleteEventRequests.html" alt="Managing Connectors in your Master Calendar System">purge the data</a> first.</p>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Click the <strong>Inactive </strong>tab to open.&#160;All currently inactive connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Under Actions, click <strong>Delete</strong>.&#160;A message opens asking you if you are sure that you want to delete all the selected connectors.</li>
+            <li>Click <strong>OK </strong>in the message.&#160;A message opens indicating that all the selected connectors were successfully deleted.</li>
+            <li>Click <strong>OK </strong>in the message.&#160;The Inactive tab is refreshed to show the remaining, if any, inactive connectors in Master Calendar.</li>
+        </ol>
+        <h2><a name="Generate"></a>Generate&#160;a Connectors List Report</h2>
+        <p class="Body">You can generate a Connectors List report, which lists all the active or inactive connectors that are configured in Master Calendar. The report includes the connector name and data source, the connector filters, the event types that imported by the connector, and the calendars to which the event types are imported. It also indicates whether automatching for the imported event types has been selected.</p>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Do one of the following:</li>
+        </ol>
+        <ul>
+            <li>If you are generating a Connectors List report for all <em>active</em> connectors in your Master Calendar, under Actions, click <strong>Print</strong>.</li>
+            <li>If you are generating a Connectors List report for all <em>inactive</em> connectors in Master Calendar, click the Inactive tab to open it, and then under Actions, click <strong>Print</strong>.</li>
+        </ul>
+        <p class="StepResultBulletLev1Description mt-indent-1">An onscreen preview of the Connectors List report opens in its own window. A variety of options are available from this preview, including (from left to right at the top of the onscreen preview) the options to search the report results, print the report in its entirety, print the currently displayed report page, and export the report to a file and save the file.&#160;</p>
+        <p class="AnchorFigure">
+            <img src="../images/B_Configuration/MC_ConnectMCtoEMSDatabase_ConnectorSettings.png" class="resize80_noborder_padding" />
+        </p>
+        <h2><a name="ViewHistory"></a>View&#160;History for a Connector</h2>
+        <p class="Body">The history for a connector consists of the original creation date of the connector, the name of the user who created the connector, and the last date that the connector was edited as well as the name of the user who last edited the connector. You can view the history for both active and inactive connectors.</p>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Connectors</span>.&#160;&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connectors8.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>If needed, click the <strong>Inactive </strong>tab to open it.</li>
+            <li>Select the connector for which you are viewing the history.</li>
+            <li>Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Click the <strong>History </strong>tab to open it and view the history for the selected connector.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/connector18.png" class="resize80_noborder_padding" />
+        </p>
+    </body>
+</html>

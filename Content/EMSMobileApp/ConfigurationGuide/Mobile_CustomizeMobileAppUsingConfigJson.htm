@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Customize Your Mobile App Configuration Using config.json (Private Deployment Only)</h1>
+        <p>EMS Mobile App&#160;ships with a&#160;config.json&#160;file that you can use to customize before re-signing and distributing in your app store&#160;or similar.</p>
+        <p>This topic provides information that will allow you to:</p>
+        <ul>
+            <li><a href="#Set_the_API_URL">Set the API URL</a> so users do not have to type it in on their own.</li>
+            <li><a href="#Configure_Authentication">Configure authentication</a>
+            </li>
+            <li><a href="#Find">Find the config.json File</a>
+                <ul>
+                    <li><a href="#iOS">For iOS</a>
+                    </li>
+                    <li><a href="#Android">For Android</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Supported">Supported Authentication Configurations</a>
+                <ul>
+                    <li><a href="#Supported">OpenID</a>
+                    </li>
+                    <li><a href="#SAML">SAML</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Change_Logging_Location">Change the Logging Location</a>
+            </li>
+        </ul>
+        <h2><a name="Find"></a>Find the config.json File&#160;</h2>
+        <p>After unzipping the respective app files, the paths to the file for each OS are:</p>
+        <h3><a name="iOS"></a>iOS&#160;</h3>
+        <ul class="unorder-list">
+            <li>config.json&#160;(top-level file)</li>
+        </ul>
+        <h3><a name="Android"></a>Android&#160;</h3>
+        <ul class="unorder-list">
+            <li>assets &gt; config.json</li>
+        </ul>
+        <p>The file&#160;looks like the example below (subject to change, per development):</p>
+        <div class="code-sample"><pre class="code-sample"><span class="span_1">{<br />&#160;&#160;&#160; "api_doc": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "Configure the API here"<br />&#160;&#160;&#160; ],<br />&#160;&#160;&#160; "api": {<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url_doc": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "The API EMS Mobile App should connect to"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": ""<br />&#160;&#160;&#160; }<br />}</span></pre>
+        </div>
+        <h2><a name="Set_the_API_URL"></a>Set the API URL</h2>
+        <ol start="1" class="number-list">
+            <li>Open the&#160;<span class="ui">config.json</span> file&#160;in a text editor.</li>
+            <li>In the API section, find the URL property.</li>
+            <li>Set the URL property to your desired value (e.g.,&#160;https://Yourcompany.com/EmsPlatform).</li>
+        </ol>
+        <h2><a name="Configure_Authentication"></a>Configure Authentication</h2>
+        <p>EMS Mobile App&#160;does not ship with an authentication configuration section by default, but you can add it as follows.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are adding authentication configuration,&#160;<span class="ui">it is also necessary to <a href="#Set_the_API_URL">set the API URL</a></span>.</p>
+        </div>
+        <p class="NormalWeb">Below is an example (the&#160;..._doc&#160;entries are omitted for brevity):</p>
+        <div class="code-sample"><pre class="code-sample" xml:space="preserve"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/EmsPlatform<span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "</span>https://yourcompany.com/openid<span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span>emssoftware://oauth-callback/x<span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span></pre>
+        </div>
+        <h2><a name="Supported"></a>Supported Authentication Configurations</h2>
+        <h3>Open ID</h3>
+        <div class="code-sample"><pre class="code-sample"><span class="span_1">"authentication": {<br />&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "</span>https://yourcompany.com/openid<span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span>emssoftware://oauth-callback/x<span class="span_1">"<br />&#160;&#160;&#160; }<br />}</span></pre>
+        </div>
+        <ul class="unorder-list">
+            <li>Set the&#160;<span class="ui">activities&#160;</span>to&#160;<span class="ui">openId</span></li>
+            <li>Add an&#160;<span class="ui">openID&#160;</span>section next to&#160;<span class="ui">activities</span></li>
+        </ul>
+        <h3>Properties for the&#160;openID&#160;Section</h3>
+        <ul class="unorder-list">
+            <li><span class="ui">discoveryURL</span>
+                <ul>
+                    <li>if your IdP provides it, this is the URL for EMS Mobile App to automatically configure its Open ID settings.</li>
+                    <li>if you provide this, leave&#160;authorizationURL and&#160;tokenURL empty.</li>
+                </ul>
+            </li>
+            <li><span class="ui">authorizationURL</span>
+                <ul>
+                    <li>this is the endpoint to send the initial Open ID authorization request</li>
+                </ul>
+            </li>
+            <li><span class="ui">tokenURL</span>
+                <ul>
+                    <li>this is the endpoint to request an Open ID&#160;access token</li>
+                </ul>
+            </li>
+            <li><span class="ui">clientID</span>
+                <ul>
+                    <li>the client ID for the EMS Mobile App as configurd in the IdP</li>
+                </ul>
+            </li>
+            <li><span class="ui">redirectURL</span>
+                <ul>
+                    <li>leave this set to&#160;emssoftware://oauth-callback/x&#160;for EMS Mobile App</li>
+                    <li>this is the URL the IdP will redirect to during the Open ID authentication flow</li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="SAML"></a>SAML&#160;</h2>
+        <div class="code-sample"><pre class="code-sample"><span class="span_1">"authentication": {<br />&#160;&#160;&#160; "activities": "saml",<br />&#160;&#160;&#160; "saml": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/ems-platform...ntication/saml<span class="span_1">`<br />&#160;&#160;&#160; }<br />}</span></pre>
+        </div>
+        <ul class="unorder-list">
+            <li>Set the&#160;<span class="ui">activities&#160;</span>to&#160;<span class="ui">saml</span></li>
+            <li>Add a&#160;<span class="ui">saml&#160;</span>section next to&#160;<span class="ui">activities</span></li>
+        </ul>
+        <h3>Properties for the&#160;SAML&#160;Section&#160;</h3>
+        <ul class="unorder-list">
+            <li class="li_1">URL<ul><li>this property is optional</li><li>you can manually specifiy the initial request URL for SAML authentication</li><li>this URL will be opened in a webview in EMS Mobile App</li><li>if you do not specify this property, EMS Mobile App will assume the default SAML endpoint for the REST API<ul><li class="li_2">This is one reason you must specify the URL in the&#160;api&#160;section for custom authentication configuration (e.g., if you set the custom API URL to&#160;https://ems.example.com/api, then EMS Mobile App will use&#160;https://ems.example.com/api/api/v1/a...ntication/saml&#160;as its initial SAML url)</li></ul></li></ul></li>
+        </ul>
+        <h3>Examples</h3>
+        <h4>Custom URL only&#160;</h4>
+        <div class="code-sample"><pre class="code-sample" xml:space="preserve"><span class="span_1">{</span><span class="span_1"><br />&#160;&#160;&#160; "api": {</span><span class="span_1"><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/EmsPlatform<span class="span_1">"</span><span class="span_1"><br />&#160;&#160;&#160; }</span><span class="span_1"><br />}</span></pre>
+        </div>
+        <h3>Open ID with Discovery URL</h3>
+        <div class="code-sample"><pre class="code-sample"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/EmsPlatform<span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "</span>https://yourcompany.com/openid/discovery<span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span>emssoftware://oauth-callback/x<span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span></pre>
+        </div>
+        <h3>Open ID without Discovery URL&#160;</h3><pre class="code-sample"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/EmsPlatform<span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "</span>https://yourcompany.com/openid/authorize<span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "</span>https://yourcompany.com/openid/token<span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span>emssoftware://oauth-callback/x<span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span></pre>
+        <h3>SAML with Default API SAML Endpoint&#160;</h3>
+        <div class="code-sample"><pre class="code-sample"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/EmsPlatform<span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "saml"<br />&#160;&#160;&#160; }<br />}</span></pre>
+        </div>
+        <h3>SAML with Specific API SAML Endpoint</h3><pre class="code-sample"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://yourcompany.com/EmsPlatform<span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "saml",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "saml": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span>https://ems.example.com/saml<span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span></pre>
+        <h2><a name="Change_Logging_Location"></a>Change Logging Location&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Modify the&#160;logFilePath&#160;attribute:&#160;</li>
+        </ol><pre class="code-sample"><span class="HTMLCode_2">"logFilePath": ".\\LogFiles\\api.log"</span><span class="span_1">&#160;&#160;</span></pre>
+    </body>
+</html>

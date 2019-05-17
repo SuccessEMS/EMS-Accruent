@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Rate Schedule V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Configure Rate Schedules</h1>
+        <p>When you&#160;configure&#160;a rate schedule, you can configure one “from scratch,” or you can copy an existing rate schedule and edit the name and any configured pricing as needed to make a new rate schedule. After you configure a rate schedule, you can&#160;define&#160;the pricing for the billable items (rooms and resources) in the rate schedule.</p>
+        <p>This topic will include information on the following:</p>
+        <ul>
+            <li><a href="#ConfigureRate">Configure a Rate Schedule</a>
+            </li>
+            <li><a href="#ConfigurePricing">Configure Pricing for Billable Items in a Rate Schedule</a>
+            </li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;You Can Assign Rate Schedules to Specific Rooms and Resources. <MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you define your organization’s rate schedules, you have three options for&#160;<span class="italics">manually&#160;</span>assigning the prices to billable items (rooms and resources) based on these schedules:</p>
+                <ul class="unorder-list">
+                    <li><span class="ui">During the configuration of a room or resource.</span> When you are configuring a room or resource, the configuration dialog box contains a <span class="ui">Pricing </span>tab. This tab lists all the rate schedules that are currently configured in your EMS database. You can specify the pricing method for the billable item that you are configuring for each rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;Also:&#160;<a href="ConfigRooms.html#ConfigurePricing">Configure Rooms</a>&#160;and&#160;<a href="ConfigResourcesforCat.html#ConfigurePricingResource">Configure Resources for a Category</a>.)</li>
+                    <li><span class="ui">After all necessary rooms and resources are configured.</span> Both the Rooms window and the Resources window contain a <span class="ui">Pricing </span>button. You can click <span class="ui">Pricing </span>to open an Edit Pricing window. You can use the options on this window to specify the pricing method for the billable items (rooms and resources) for a selected rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;Also:&#160;<a href="ConfigRoomPricing.htm">Configure the Pricing for a Room on the Edit Pricing Window</a>&#160;and&#160;<a href="ConfigPricingResourceEditPriceWin.htm">Configure the Pricing for a Resource on the Edit Pricing Window</a>.)</li>
+                    <li><span class="ui">Where rate schedules are defined.</span> The Rate Schedules window has a <span class="ui">Pricing </span>button. After you have defined a rate schedule, you can select a rate schedule in the Rate Schedules window and click <span class="ui">Pricing </span>to open an Edit Pricing window. You can use the options on this Edit Pricing window to specify the pricing method for every billable item for the rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;Also:&#160;<a href="#ConfigurePricing">Configure Pricing for Billable Items in a Rate Schedule</a>.)</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="ConfigureRate"></a>Configure a Rate Schedule</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt;&#160;<span class="ui">Rate Schedules</span>.&#160;The Rate Schedules window opens. This window lists all the rate schedules that are currently configured in your EMS database.<div class="TitleandImage"><p><img src="../Resources/Images/DTC_V44_CGBilling/Configuring Rate Schedules.png" alt="Desktop Client Rate Schedules Window where you can create, edit, or delete rate schedules; you can also edit the pricing for the Rate Schedule" title="Rate Schedules Windw (access through Configuration &gt; Billing)" class="padding_only" /></p><p class="Caption">Rate Schedules Window</p></div></li>
+            <li>Click&#160;<span class="ui">New</span>.&#160;The Rate Schedule dialog box opens.<div class="TitleandImage"><p><img src="../Resources/Images/DTC_V44_CGBilling/Configuring Rate Schedules_1.png" alt="emssg_CoreConfigurationBilling_image004.png" class="padding_only" /></p><p class="Caption">Rate Schedule Dialog Box</p></div></li>
+            <li>In the Rate Schedule field, enter a name or description for the new rate schedule (maximum of 30 characters, including spaces).</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;The Rate Schedule dialog box closes. You return to the Rate Schedules window with the newly configured rate schedule automatically selected.</li>
+        </ol>
+        <h2 class="Heading2"><a name="ConfigurePricing"></a>Configure Pricing for Billable Items in a Rate Schedule</h2>
+        <ol start="1" class="number-list">
+            <li>If you have not already done so, open the Rate Schedule window&#160;(click <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt;&#160;<span class="ui">Rate&#160;Schedules</span>)&#160;and then select the rate schedule for which you are configuring the pricing for billable items.&#160;</li>
+            <li>Click&#160;<span class="ui">Pricing</span>.&#160;The Edit Pricing window opens.<div class="TitleandImage"><p><img src="../Resources/Images/DTC_V44_CGBilling/Configuring Rate Schedules_2.png" alt="emssg_CoreConfigurationBilling_image005.png" class="resize80_noborder_padding" /></p><p class="Caption">Edit Pricing Window</p></div></li>
+            <li>Do one of the following:<ul MadCap:continue="true"><li>To configure the pricing for a resource category, on the Category drop-down list, select the category, and then click&#160;<span class="ui">Display</span>. Optionally, on the Grouping drop-down list, select a resource grouping to filter the search results.</li><li>To configure the pricing for rooms, on the Category drop-down list, select&#160;<span class="ui">Room Charge</span>. All rooms in all buildings that are currently configured in your EMS database are displayed in the lower pane of the dialog box.</li><li>On the Building drop-down list, select a specific building, area, or view to filter the search results.</li><li>On the Grouping drop-down list, select a room type to filter the search results.</li></ul></li>
+            <li>For each billable item (resource or room), select the pricing method, which determines the cost for reserving the item.</li>
+        </ol>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 184px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2018-10-22T13:37:49.4408353-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="If updating this pricing methods table, you may also need to update the pricing tables in the following topics: ConfigResourcesforCat.html, ConfigRateSchedule.htm, ConfigPricingResourceEditPriceWin.htm, ConfigRoomPricing.htm, and ConfigRooms.html. Note that the tables in the Room topics are slightly different from the other pricing methods tables in the topics." MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T13:41:34.3417155-06:00">Pricing Method</MadCap:annotation>
+                        </p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Half Day/Full Day (Event Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The total number of hours for the <span class="italics">event </span>is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the event is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the billable item. If the total number of hours for the event is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the billable item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Half Day/Full Day (Reserved Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The total number of hours for the <span class="italics">reservation </span>(event time and reserved time) is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the reservation is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the billable item. If the total number of hours for the reservation is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the billable item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Half Day/Full Day (Service Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The total number of hours for the <span class="italics">service time </span>is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the service time is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the billable item. If the total number of hours for the service time is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the billable item.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This pricing method is only available for a resource with a service order.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hourly (Event Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The price that is indicated in the Price column is multiplied by the <span class="italics">event time</span> (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Hourly (Reserved Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The price that is indicated in the Price column is multiplied by the <span class="italics">reserved time</span> (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hourly (Service Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The price that is indicated in the Price column is multiplied by the <span class="italics">r<MadCap:annotation MadCap:createDate="2018-10-22T13:22:57.5049494-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should this be &quot;service time&quot; instead of &quot;reserved time&quot;?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T13:23:10.7994540-06:00">eserved</MadCap:annotation> time</span> (in hours) for the service. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This pricing method is only available for a resource with a service order.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Hourly (Specific)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The price that is indicated in the Price column is multiplied by the number of hours indicated when adding a billable item to a booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Unit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>The price that is indicated in the Price column is applied to the billable item, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="5" class="number-list">
+            <li>After you select a pricing method, click in the appropriate fields to select the currently displayed amount, and edit the amount as needed.</li>
+        </ol>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 135px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The dollar amount that is used in calculating the room or resource price for a booking. If the pricing method is Unit, then this value is applied in total to the resource or room, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Discount</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>You can use a discount with any pricing method. If you specify a discount for a room or resource, then the actual price, the discount percentage, and the discounted amount are all displayed on confirmations and invoices.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Min. Charge</p>
+                        <p>Max. Charge</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The values that are indicated in these columns are used in conjunction with the Hourly pricing methods. If you specify a minimum charge for a room or resource, then the system compares this value to the calculated hourly rate and applies the greater of the two charges. Likewise, if you specify a maximum charge for a room or resource, then the system compares this value to the calculated hourly rate and applies the lesser of the two charges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Flat Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>A resource or <MadCap:annotation MadCap:createDate="2018-12-10T10:03:50.1031768-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Service, too?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-12-10T10:03:52.9955256-07:00">room </MadCap:annotation>price that remains constant regardless of the total number of hours booked for a room or resource. Used in conjunction with Hourly (Event Time) and <MadCap:annotation MadCap:createDate="2018-12-10T10:03:15.4969389-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Can Flat Price be applied to Hourly (Service Time)?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-12-10T10:03:37.6033138-07:00">Hourly (Reserved Time)</MadCap:annotation>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Half Day Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2018-11-08T13:56:34.6162070-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Why are the descriptions for Half Day and Full Day the same in this table? Check other Pricing Method tables and see if the descriptions differ." MadCap:editor="Megan.Laub" MadCap:editDate="2018-11-08T13:58:05.2985052-07:00">The dollar amount</MadCap:annotation> that is used in calculating room or resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or <MadCap:annotation MadCap:createDate="2018-12-10T09:38:26.4229357-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should Half Day/Full Day (Service Time) be added here?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-12-13T07:58:40.7956206-07:00">Half Day/Full Day (Reservation Time)</MadCap:annotation>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Full Day Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The dollar amount that is used in calculating the room or resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or <MadCap:annotation MadCap:createDate="2018-12-10T09:38:55.5374781-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should Half Day/Full Day (Service Time) be added here?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-12-13T07:58:42.2907659-07:00">Half Day/Full Day (Reservation Time)</MadCap:annotation>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Multiplier used in calculating the room or resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or <MadCap:annotation MadCap:createDate="2018-12-10T10:04:10.5534973-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should Half Day/Full Day (Service Time) be added here?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-12-13T07:58:44.1616975-07:00">Half Day/Full Day (Reservation Time)</MadCap:annotation>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="6" class="number-list">
+            <li>Click&#160;<span class="ui">Close</span>.&#160;The Edit Pricing window closes. You return to the Rate Schedules window with the rate schedule automatically selected.</li>
+        </ol>
+    </body>
+</html>

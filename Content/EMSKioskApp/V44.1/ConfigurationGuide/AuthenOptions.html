@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>Integrated Authentication Options V44.1 (EMS Kiosk App)</title>
+    </head>
+    <body>
+        <h1>Authentication Options for the EMS&#160;Kiosk App</h1>
+        <p>An <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigEverydayUser.htm">Everyday User account</a> is required prior to provisioning the EMS&#160;Kiosk App. The following authentication methods are supported for the EMS&#160;Kiosk App. See Also:&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSKioskAppParameters.htm#Security">EMS&#160;Kiosk App Parameters</a>. </p>
+        <h2>Primary Authentication</h2>
+        <ol class="number-list">
+            <li>
+                <p>Badge</p>
+            </li>
+            <li>
+                <p>Group Name/Email (Standard)</p>
+            </li>
+            <li>
+                <p>Group Field (Exact Match)</p>
+            </li>
+            <li>
+                <p><a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Configure_EMS_Web_App_to_Use_LDAP_Authentication">LDAP</a>
+                </p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Badge authentication provides the best user experience and most secure authentication. </p>
+        </div>
+        <h2>Secondary Authentication</h2>
+        <p>If Badge is the Primary Authentication, the Secondary Authentication options are:</p>
+        <ol class="number-list">
+            <li>
+                <p>Group Field (Exact Match)</p>
+            </li>
+            <li>
+                <p>LDAP</p>
+            </li>
+            <li>
+                <p>Group Name/Email (Standard)</p>
+            </li>
+        </ol>
+        <h2>Provisioning Authentication For the <MadCap:variable name="General.Kiosk" /></h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For provisioning authentication in the EMS Kiosk App, only <a href="../../../Authentication/LDAPAuthen.html">LDAP</a> and <a href="../../../Authentication/EMSNativeAuthen.html">EMS&#160;Native</a> authentication methods are supported.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to <span class="ui">EMS Platform Services Admin Portal</span> &gt; <span class="ui">Integrations</span> tab and select the EMS Kiosk App client for provisioning authentication. Then, in the <span class="ui">Everyday User Authentication Method</span> field, select either <a href="../../../Authentication/LDAPAuthen.html">LDAP</a> or <a href="../../../Authentication/EMSNativeAuthen.html">EMS Native</a> from the drop-down list.</p>
+                <ul>
+                    <li>
+                        <p>If selecting LDAP, ensure LDAP is configured per <a href="../../../Authentication/LDAPAuthen.html">EMS LDAP authentication</a> requirements.</p>
+                    </li>
+                    <li>
+                        <p>If selecting Native authentication, configure the username and password field in the EMS Desktop Client menu bar (click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday Users</span>).</p>
+                        <div class="TitleandImage">
+                            <p>
+                                <img src="../../../EMSMobileApp/Images/B_ConfigurationGuide/userauthentication.png" class="imgBorderMax520" />
+                            </p>
+                            <p class="Caption">User Authentication Section of the Integrations Tab (EMS&#160;Platform Services Admin Portal)</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <span class="ui">Save</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>This setting controls the authentication method for EMS Kiosk App provisioning only. Everyday User authentication and validation within the EMS Kiosk App is managed per profile per Security Parameter. For more information on Profile Security Parameters, see <a href="ConfigKioskAppProfiles.htm#Parameters">Parameters Tab</a>.</p>
+                </div>
+            </li>
+            <li>
+                <p><a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#ClearCache">Clear cache in EMS Platform Services</a> and in the EMS Web App Admin Portal.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>By default, the EMS Kiosk App uses secure cookies. We strongly recommend you use this approach in your production environment. However, you might want to test without SSL. To disable secure cookies in your test environment, add the following to appsettings.json inside the "PlatformOptions" section:<br /><img src="../Images/securecookies.png" style="width: 500px; height: 79px;" class="popup_with_padding_only" /><br /></p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

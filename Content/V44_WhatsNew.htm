@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>EMS Version 44: What's New?</h1>
+        <h2>Overview Videos</h2>
+        <p>Part 1 –&#160;<a href="https://www.youtube.com/watch?v=OYZRrB2HxDo" title="https://www.youtube.com/watch?v=OYZRrB2HxDo" alt="https://www.youtube.com/watch?v=OYZRrB2HxDo">Enhancements to UDFs and Booking-Level Check-In</a>&#160;&#160;&#160;&#160;&#160;</p>
+        <p>Part 2 – <a href="https://www.youtube.com/watch?v=HnsRawVNDt4" title="https://www.youtube.com/watch?v=HnsRawVNDt4" class="Hyperlink" alt="https://www.youtube.com/watch?v=HnsRawVNDt4">Automated Reports, Notification Rules, New Desktop Installation</a></p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>These notification rules do not apply to EMS Professional.</p>
+        </div>
+        <h2>EMS&#160;Version 44 Overview</h2>
+        <p>New functionality and feature changes are summarized below. Follow links to documentation for further detail.</p>
+        <h3>Enhancements to&#160;User Defined Fields</h3>
+        <p>User defined fields now allow dependencies. See Configure User Defined Fields (UDFs) for more information.</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Dependent User Defined Fields (UDFs)&#160;are triggered based on answers to&#160;List Type&#160;UDFs.</p>
+            </li>
+            <li>
+                <p>Multi Select User Defined Fields&#160;are available for&#160;List Type UDFs. This&#160;allows users to select more than one answer to a UDF.&#160;If one or more of the Multi Select UDFs has a dependency,&#160;it will still trigger the dependent UDFs.</p>
+            </li>
+        </ul>
+        <h3>New&#160;Booking-Level Check-In&#160;Option</h3>
+        <p>This allows administrators&#160;to send notifications to users to remind them to check&#160;into specific bookings, and if the bookings&#160;are not checked into before the start time, they can also now be automatically&#160;canceled. See Enable Booking Check-in for more information.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>This new&#160;functionality replaces Building-Level Check-In.</p>
+        </div>
+        <h3>Enhanced&#160;Automated Report Delivery</h3>
+        <p>EMS Reports can now&#160;be set up to run automatically on a user-configurable schedule and sent via email. See <a href="ServicesComponents/EMSAutomatedReportService.htm">Configure Automated Reports</a> for more information.</p>
+        <h3>Enhanced&#160;Notification Rules</h3>
+        <p>Notifications can now be triggered based on&#160;Setup Types.&#160;User-defined field dependencies can also trigger notifications. See Configure Notification Rules for more information.</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Service Orders can now trigger notifications based on Service States,&#160;Groupings or Resources.&#160;</p>
+            </li>
+            <li>
+                <p>New, changed, or canceled Bookings&#160;can now trigger notifications if tied to Setup Type(s)</p>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Excludes EMS Professional.</p>
+        </div>
+        <h3>New Web-Based Deployment Process for Upgrades or New Installs on Individual Workstations</h3>
+        <p>With the new&#160;<a href="EMSDesktopClient/V44.1/InstallationGuide/DowngradeWebDeploy.htm">EMS Desktop Client Web Deployment</a>, the client is installed from a web page which is hosted on the web server. See Upgrade Instructions for more information. </p>
+        <ul class="unorder-list">
+            <li>
+                <p>Installation of the client does not require administrative privileges.</p>
+            </li>
+            <li>
+                <p>The client is auto-updated whenever the client package is updated on the web server.</p>
+            </li>
+            <li>
+                <p>Easy switching from one database to another.</p>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The existing&#160;conventional&#160;installer&#160;will be also be available as an optional method to install the EMS Desktop Client, however the conventional&#160;installer does not support auto-updating and easy switching from one database to another. &#160;</p>
+        </div>
+        <p>In preparing an upgrade from EMS Version 43 to Version 44 or 44.1, administrators should note that the EMS Web Client has been discontinued after 43.&#160;OS X users will now&#160;have to use alternative methods to&#160;connect&#160;to EMS, such as Citrix environments, RDC Terminal Servers, and so on.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The&#160;EMS Web Client&#160;(V43) is a browser-based version of EMS Desktop Client. In version 43, EMS offered&#160;a browser-based version of EMS Desktop Client, which was used for administering EMS on OS X and Linux-based systems,&#160;and on mobile Apple devices via Safari, Chrome, or Firefox browsers.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>EMS Desktop Web Deployment (V44+ and V44.1) is an alternative method for installing EMS Desktop Client locally on individual user machines&#160;</p>
+        </div>
+        <p>This solution is not a replacement for the EMS Web Client, but rather, it is an alternative to using Microsoft<sup>®</sup> methods of deployment, such as SCCM. Administrators can use it to host EMS Desktop Client&#160;on a web server, with the ability to push the URL to any EMS Administrators so they can download&#160;EMS Desktop Client&#160;without needing Administrative Privileges on their local machine.&#160;</p>
+        <h3>Enhanced&#160;Room Optimization&#160;for Existing Bookings&#160;</h3>
+        <p>Using this new option will cause the optimizer to take into account bookings that are already in EMS when finding rooms.&#160;This feature will only work with bookings in “Booked Space” status.&#160;Searching or assigning rooms after the optimization has run (or during pre-assign) with this option checked will also display the spaces as in use. See Overview of Room Assignments and Optimization for more information.</p>
+        <h3>API Changes</h3>
+        <p>All the above functional changes and enhancements have equivalent updates on the APIs and integrations.</p>
+        <h3>EMS Web App Changes</h3>
+        <p>The&#160;<span class="italics">Request Only</span> (“classic request”) mode for&#160;Web User Templates&#160;has been removed. This mode remains available for unauthenticated users (i.e.,&#160;guests).&#160;</p>
+    </body>
+</html>

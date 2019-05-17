@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Manage Everyday Users For Integrated Authentication</h1>
+        <p>In order to make a reservation in EMS Everyday User Applications, such as&#160;EMS Web App, EMS Mobile App, and EMS for Outlook, a user must have an active Everyday User account with appropriate security and process templates.&#160;</p>
+        <p>In EMS, you can create Everyday User accounts as follows:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Manual_Everyday_User_Account_Creation">Manually Create Everyday User Accounts</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Automatic_Everyday_User_Account_Creation">Automatically Create Everyday User Accounts</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Existing_Everyday_User_Accounts">Modify Existing Everyday User Accounts</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Manual_Everyday_User_Account_Creation"></a>Manually Create Everyday User Accounts</h2>
+        <p>Everyday User accounts can be created manually by EMS Administrators within EMS Desktop Client or by anonymous Everyday Users on their respective EMS Everyday Applications.&#160;</p>
+        <p>To create Everyday User accounts in the&#160;EMS Desktop Client,&#160;see&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigEverydayUser.htm">Configure Everyday Users</a>. </p>
+        <p>To configure EMS Web App to allow anonymous Everyday Users to request an account, you adjust parameters.&#160;See&#160;also:&#160;<a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_WebAppSysParameters.html">EMS Web App System Parameters</a>.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>When manually creating an Everyday User account in an Integrated Authentication environment, you must specify a value in the Everyday User&#160;Network ID&#160;field or the&#160;External Reference&#160;field. The&#160;Field Used to Authenticate Everyday User&#160;parameter (within <span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Parameters</span>&gt; <span class="ui">Everyday User Applications</span> tab) is used to determine which value should be used for authentication.</p>
+        </div>
+        <h2><a name="Automatic_Everyday_User_Account_Creation"></a>Automatically Create Everyday User Accounts&#160;</h2>
+        <p>Various configuration settings are available to automatically create Everyday User records (and assign the appropriate Security and&#160;Process Template(s) if applicable) when a user accesses an EMS Everyday User Application (such as EMS Web App for the first time.&#160;</p>
+        <h3>EMS Web App Parameters&#160;</h3>
+        <p>Within the Everyday User Applications parameters area of the EMS desktop client (<span class="ui">System Administration </span>&gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Parameters</span>&gt; <span class="ui">Everyday User Applications</span>&#160;tab), the following parameters must be set accordingly:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Auto Create Everyday User Account (for Integrated Authentication)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Yes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Security Template for User</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="italics">Must be specified</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Default Account Status for Newly-Created User</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Active</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Portal/Federated&#160;Authentication Parameters</h3>
+        <p>For organizations using Portal or Federated&#160;authentication, EMS supports a simple account provisioning strategy. When using Auto Create, EMS requires that a Everyday User account is provisioned with a name, an email address and a NetworkId (some authentication key).&#160;Otherwise, the user will be redirected to the Account Management page and be asked to manually enter the required information. In addition to the required fields, EMS also supports collecting phone, fax, and an external reference value. The parameters below are meant to help create a more complete Everyday User. The values for each of the parameters are to be determined by the information populated by your portal.</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Portal Authentication Email Variable</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="italics">Must be specified</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Portal Authentication External Reference Variable</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="italics">Must be specified</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Portal Authentication Fax Variable</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="italics">Must be specified</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Portal Authentication Name Variable</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="italics">Must be specified</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Portal Authentication Phone Variable</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><span class="italics">Must be specified</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>HR Toolkit (for EMS Workplace, EMS Campus, EMS Enterprise, EMS District, and EMS Legal only)&#160;</h3>
+        <p>The HR Toolkit is an optional component that allows you to automate the creation and maintenance of Everyday User records in EMS using an outside employee data source like your HR system or another data store within your organization. Please refer to the&#160;<a href="../../5_EMS_HumanResourcesToolkitHome.htm">HR Toolkit Installation Instructions</a>&#160;for information. If you are not licensed for the HR Toolkit, but would like to learn more about it, please contact your Account Executive.</p>
+        <h3>Automatic Template Assignment to Users&#160;</h3>
+        <p>The&#160;Default Security Template for User&#160;parameter shown above is used to automatically&#160;assign the correct Everyday User Security&#160;Template to new Everyday User records.</p>
+        <p>You can automatically assign default Everyday User Process Templates when a new Everyday User account is created. To automatically assign a Everyday User Process Template to new Everyday Users, select the&#160;Available to New Everyday Users&#160;option within your Everyday User Process Template(s) (<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span>&#160;&gt;&#160;<span class="ui">Everyday User Process Templates</span>&#160;(<span class="ui">Edit&#160;</span>the template &gt;&#160;<span class="ui">Process Templates</span>&#160;tab)).</p>
+        <p>EMS customers using the LDAP Authentication method can use an alternate method to assign a Everyday User Process Template to a Everyday User based on the LDAP Group(s) to which the user belongs. This approach can be used in addition to or in lieu of the Everyday User Process Template assignment approach discussed above. Please see the&#160;<a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html">LDAP Authentication</a>&#160;section&#160;for configuration instructions.</p>
+        <h2><a name="Existing_Everyday_User_Accounts"></a>Modify Existing Everyday User Accounts&#160;</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">EXISTING&#160;EMS&#160;CUSTOMERS</span>&#160;</p>
+            <p>Before activating any Integrated Authentication option, the&#160;<span class="ui">Network ID</span>&#160;field or&#160;<span class="ui">External Reference</span>&#160;field must be populated on all existing Everyday User records. Ignoring this step may result in duplicate Everyday User records.</p>
+        </div>
+    </body>
+</html>

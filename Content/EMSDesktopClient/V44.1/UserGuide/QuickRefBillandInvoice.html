@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Billing and Invoicing Quick Reference Guide V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Quick Reference Guide: Billing and Invoicing</h1>
+        <p>This quick reference gets you going with billing and invoicing in EMS Desktop Client:</p>
+        <ul>
+            <li><a href="#runbill" class="Hyperlink">Run the Billing Worksheet to Review Charges</a>
+            </li>
+            <li><a href="#edit" class="Hyperlink">Edit Charges on Reservations</a>
+            </li>
+            <li><a href="#Invoice" class="Hyperlink">Invoice Reservations in Batch</a>
+            </li>
+            <li><a href="#Rungeneral" class="Hyperlink">Run the General Ledger Distribution Report by Invoice</a>
+            </li>
+            <li><a href="#Apply" class="Hyperlink">Apply Payments in Batch</a>
+            </li>
+            <li><a href="#Void" class="Hyperlink">Void Payments and Invoices</a>
+            </li>
+            <li><a href="#Additional" class="Hyperlink">Additional Billing Reports</a>
+            </li>
+        </ul>
+        <h2><a name="runbill"></a>Run the Billing Worksheet to Review Charges&#160;</h2>
+        <ul>
+            <li>Once a billing cycle is complete, run the Billing Worksheet to review reservations with charges assigned that have not been invoiced yet.</li>
+            <li>Go to Billing &gt; Invoices &gt; Billing Worksheet &gt; Select the Previous Billing Cycle &gt;&#160;Print Preview</li>
+        </ul>
+        <h2><a name="edit"></a>Edit Charges on Reservations&#160;</h2>
+        <ul>
+            <li>If a reservation on the billing worksheet needs to be modified, use the Reservation ID from the billing worksheet to open the reservation.</li>
+            <li>Add or edit billable items like resources as needed.</li>
+            <li>In the navigator screen, you will see the prices in the booking details pane. Edit the booking detail to manually change the price as needed.</li>
+            <li>To change the prices to another pricing plan, go to the Reservation level &gt; click&#160;Update Pricing<br></br>Then choose a New Pricing Plan, select the appropriate category, then click&#160;Next. Select all Applicable Bookings, then click&#160;Finish.</li>
+        </ul>
+        <h2><a name="Invoice"></a>Invoice Reservations in Batch&#160;</h2>
+        <ul>
+            <li>Once charges on reservations are corrected, invoice in batch.</li>
+            <li>Go to Billing &gt; Invoices &gt;&#160;Invoicing</li>
+            <li>Select the same Dates and other filter criteria used on the Billing Worksheet.</li>
+            <li>Click&#160;Generate</li>
+        </ul>
+        <ul>
+            <li>Highlight the transactions you want to invoice (all or some), click&#160;Preview&#160;to review, then click&#160;Final&#160;– click Yes to warning about posting and printing x number of invoices</li>
+        </ul>
+        <ul>
+            <li>The invoices display. Close the preview.</li>
+        </ul>
+        <h2><a name="Rungeneral"></a>Run the General Ledger Distribution Report by Invoice&#160;</h2>
+        <ul>
+            <li>Next run the general ledger distribution report by invoice to see all of the journal entries that need to be made for the billing period. The report includes the Billing Reference Number to charge, the accounts to credit, and the amount due.</li>
+            <li>Go to Billing &gt; Reports &gt;&#160;General Ledger Distribution</li>
+            <li>The first time you run this report, make the following selections and then click&#160;Memorize&#160;to save the report for future use.<ul><li>Date Range Tab:<ul><li>Department - will default to the department you work in and are assigned to.</li><li>First Transaction Date and Last Transaction Date – select the date the batch invoices were created</li><li>Group – (all)</li><li>Format – By Invoice</li></ul></li><li>Group Types Tab:<ul><li>Move all group types that you invoice from the Available to the Selected column</li></ul></li><li>Options Tab:<ul><li>Currency: US Dollars</li><li>Invoices with Payments Only: unchecked</li><li>Show Applied Deposits/Pre-payments: unchecked</li></ul></li></ul></li>
+            <li>After the report has been saved, click&#160;Print Preview.</li>
+            <li>Optionally, use this report to make journal entries in your financial system. The Billing Reference Numbers represents the account to be debited, the Account represents the revenue account to be credited.</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Bill/Billing and Invoicing Quick.png" alt="https://success.emssoftware.com/@api/deki/files/6249/clipboard_eae4ca40e6c2960a0f91ba235176b6658.png?revision=1&amp;size=bestfit&amp;width=1063&amp;height=375" class="popup_with_padding_and_border">
+            </img>
+        </p>
+        <h2><a name="Apply"></a>Apply Payments in Batch&#160;</h2>
+        <ul>
+            <li>Optionally, apply payments in EMS to represent that the journal entry was made to pay for the charges. Go to Billing &gt; Payments &gt;&#160;Payment Entry.</li>
+            <li>The Payment Entries window will open. Click&#160;New.</li>
+            <li>The Payment Entry window will open. Make the following selections:<ul><li>Transaction Type – Payment</li><li>Payment Type – Internal Transfer</li><li>Check No. – optionally enter the journal entry transaction number</li><li>Amount – enter the total amount paid for the invoice</li><li>Invoice No. – type the invoice number found on the General Ledger Report</li><li>Notes – Optionally, enter other information you would like to track about this payment. Click&#160;OK&#160;to save.</li></ul></li>
+        </ul>
+        <h2><a name="Void"></a>Void Payments and Invoices&#160;</h2>
+        <ul>
+            <li>If a correction to an invoice is needed, you must void the most recent transaction(s) on an invoice before you can void the Invoice itself. For example, payments applied to an invoice must be voided first.</li>
+            <li>On the Transactions Tab, select payment &gt; Void &gt; enter Void Reason &gt;&#160;OK&#160;(this action does not delete the payment, it voids it and displays void date &amp; comment)</li>
+            <li>To void an Invoice, select invoice &gt; Void&gt; enter Void Reason &gt;&#160;OK</li>
+            <li>Transactions become locked after a certain number of days. The number of days are configured on the Department are represent the number of days you are allowed to&#160;void&#160;an invoice.&#160; If it is&#160;365, for example, you must void invoices within one year of creating that invoice.&#160; After one year, you would not be able to void the invoice.</li>
+        </ul>
+        <h2><a name="Additional"></a>Additional Billing Reports&#160;</h2>
+        <h3>Statements&#160;</h3>
+        <ul>
+            <li>Allows you to create a customer facing statements (across all invoices) of the original amount due on an invoice and remaining balance.<ul><li>Billing &gt; Reports &gt;&#160;Statements</li></ul></li>
+        </ul>
+        <h3>Ageing Report&#160;</h3>
+        <ul>
+            <li>Used to show who owes a payment and if they are current, 30 days, 60 days, or 90 days late.<ul><li>Billing &gt; Reports &gt;&#160;Ageing Report</li></ul></li>
+        </ul>
+        <h3>Billing Queries&#160;</h3>
+        <ul>
+            <li>If you need a billing report that doesn’t already exist in EMS, build a query. Use billing as a filter type. When billing is selected as the filter type, transaction fields become available as filters and display fields.<ul><li>Reports &gt; Queries &gt;&#160;Query Builder</li></ul></li>
+        </ul>
+    </body>
+</html>

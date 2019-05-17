@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2018-05-04T10:52:42.0275880-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Same topic, slightly different content, in Master Calendar install guide." MadCap:editor="Megan.Laub" MadCap:editDate="2018-05-04T10:53:14.3762646-06:00">Authentication Options</MadCap:annotation> for EMS Master Calendar</h1>
+        <p>The following authentication options are available for EMS&#160;Master Calendar:</p>
+        <ul>
+            <li>
+                <p><a href="../../../Authentication/IntroEMSIntegratedAuth.htm">Integrated Windows Authentication</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../../../Authentication/LDAPAuthen.html">LDAP</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../../../Authentication/PortalAuthMethods.html">Portal</a>
+                </p>
+            </li>
+        </ul>
+        <p>Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p>
+        <ol class="number-list">
+            <li>
+                <p><span class="ui">Login Credentials</span>: This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</p>
+            </li>
+            <li>
+                <p><span class="ui">Enabled by</span>: This is either a parameter or checkbox that needs to be enabled for the authentication to work.</p>
+            </li>
+            <li>
+                <p><span class="ui">Configuration Page</span>: This is where configuration and options are set for the authentication.</p>
+            </li>
+        </ol>
+        <h2>Integrated Windows Authentication</h2>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">Login Credentials</span>: External Reference in MC user account settings,&#160;<span class="ui">Admin Panel</span> &gt; <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>.</p>
+            </li>
+            <li>
+                <p><span class="ui">Enabled by</span>: Within IIS on the Master Calendar site, "Authentication" options, Windows Authentication.</p>
+            </li>
+            <li>
+                <p><span class="ui">Configuration Page</span>: None.</p>
+            </li>
+        </ul>
+        <h2>LDAP</h2>
+        <ul class="unorder-list">
+            <li>
+                <p>MC LDAP can be used in two ways:</p>
+                <ul>
+                    <li>
+                        <p>Log into an MC user account with LDAP credentials: External Reference in MC user account settings,&#160;<span class="ui">Admin Panel</span> &gt; <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>.</p>
+                    </li>
+                    <li>
+                        <p>Assign an LDAP group to an MC template, user logs in with LDAP credentials and does not need an MC user account:&#160;<span class="ui">Admin Panel</span> &gt; <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <span class="ui">User Templates</span>, <span class="ui">LDAP </span>tab inside template.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Enabled by: mastercalendar/ldapconfiguration.aspx page, "Authenticate users via LDAP?" checkbox (Need to be logged in as an administrator and have Integrated Authentication in license).</p>
+            </li>
+            <li>
+                <p>Configuration Page: mastercalendar/ldapconfiguration.aspx page, there are multiple tabs.</p>
+            </li>
+        </ul>
+        <h2>Portal</h2>
+        <ul class="unorder-list">
+            <li>
+                <p>Login Credentials: External Reference in MC user account settings,&#160;<span class="ui">Admin Panel</span> &gt; <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>.</p>
+            </li>
+            <li>
+                <p>Enabled by: Always enabled, <span class="ui">Admin Panel</span> &gt; <span class="ui">Admin </span>&gt; <span class="ui">Site Administration</span> &gt; <span class="ui">Default Settings</span> (Select the appropriate entry from the "Portal Authentication Method" parameter drop-down list).</p>
+            </li>
+            <li>
+                <p>Configuration Page: There are multiple different setup items in the Default Settings page under the "Portal Authentication" area.</p>
+            </li>
+        </ul>
+    </body>
+</html>

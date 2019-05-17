@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Search Results skin"
+  ComponentType="SearchResults">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Search Result Path">
+        <Properties>
+          <Property
+            Name="Display">none</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Link">
+        <Properties>
+          <Property
+            Name="Color">#007ac9</Property>
+          <Property
+            Name="FontFamily">Segoe UI</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Definition">
+        <Properties>
+          <Property
+            Name="FontFamily">Segoe UI</Property>
+          <Property
+            Name="Color">#444444</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Glossary Term">
+        <Properties>
+          <Property
+            Name="Color">#444444</Property>
+          <Property
+            Name="FontFamily">Segoe UI</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Result Abstract">
+        <Properties>
+          <Property
+            Name="Color">#444444</Property>
+          <Property
+            Name="FontFamily">Segoe UI</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Suggestion">
+        <Properties>
+          <Property
+            Name="Color">#444444</Property>
+          <Property
+            Name="FontFamily">Segoe UI</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Heading">
+        <Properties>
+          <Property
+            Name="Color">#444444</Property>
+          <Property
+            Name="FontFamily">Segoe UI</Property>
+        </Properties>
+      </Style>
+    </Styles>
+  </Stylesheet>
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="Search Result Path">
+            <Properties>
+              <Property
+                Name="Display">none</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Link">
+            <Properties>
+              <Property
+                Name="Color">#007ac9</Property>
+              <Property
+                Name="FontFamily">Segoe UI</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Glossary Definition">
+            <Properties>
+              <Property
+                Name="FontFamily">Segoe UI</Property>
+              <Property
+                Name="Color">#444444</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Glossary Term">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+              <Property
+                Name="FontFamily">Segoe UI</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Result Abstract">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+              <Property
+                Name="FontFamily">Segoe UI</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Suggestion">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+              <Property
+                Name="FontFamily">Segoe UI</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Heading">
+            <Properties>
+              <Property
+                Name="Color">#444444</Property>
+              <Property
+                Name="FontFamily">Segoe UI</Property>
+            </Properties>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

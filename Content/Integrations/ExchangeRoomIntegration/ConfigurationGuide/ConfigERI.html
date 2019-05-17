@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configuring Exchange Room Integration (ERI) V44.1</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Exchange Room Integration (ERI)</h1>
+        <p>This section will provide information on configuring EMS Exchange Room Integration (ERI).&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#Configure_Resource_Mailboxes_in_MicrosoftExchange">Configure Resource Mailboxes in Microsoft&#160;Exchange</a>
+            </li>
+            <li><a href="#Configure_a_Room_in_EMS_for_Exchange_Room_Integration">Configure a Room in EMS for Exchange Room Integration</a>
+            </li>
+            <li><a href="#ConfigFixedResourcesTiedtoRoom">Configure Fixed Resources in a Room</a>
+            </li>
+            <li><a href="#EMS_Configuration_for_Mobile_Resources_Without_Service_Orders">Configure Mobile Resources (Without Service Orders)</a>
+            </li>
+            <li><a href="#View_Configuration_Information">View Configuration Information</a>
+            </li>
+        </ul>
+        <h2><a name="Configure_Resource_Mailboxes_in_MicrosoftExchange"></a>Configure Resource Mailboxes in Microsoft<sup>®</sup>&#160;Exchange</h2>
+        <p>Consult your&#160;<a href="https://technet.microsoft.com/en-us/library/jj215781(v=exchg.160).aspx" title="https://technet.microsoft.com/en-us/library/jj215781(v=exchg.160).aspx">Microsoft Exchange documentation</a>&#160;for instructions on configuring room and equipment resource mailboxes.</p>
+        <p>Best practices for Exchange configurations include:&#160;</p>
+        <ul class="unorder-list">
+            <li>Microsoft Exchange resource mailboxes must be set to automatically accept/decline invitations by setting&#160;<span class="ui">Accept or decline booking requests automatically</span>&#160;for Booking requests under Booking Delegates section of the mailbox configuration or by using the Booking Attendant.</li>
+            <li>Enable the&#160;<span class="ui">Hide from address lists</span>&#160;option under the General section of the mailbox configuration to forbid users from booking a room or resource outside of EMS.</li>
+            <li>Ensure&#160;<span class="ui">Allow repeating meetings</span>&#160;is enabled to allow recurring bookings.</li>
+            <li>Enable&#160;<span class="ui">Allow conflicting meeting requests</span>&#160;option under the Resource Policy section of&#160;the mailbox configuration to ensure resources are properly booked for recurring meetings. Without this setting, any exceptions to a recurring meeting will result in the entire series being declined.</li>
+            <li>Modify&#160;<span class="ui">Resource Policies</span>&#160;to replicate EMS booking rules, including&#160;<span class="ui">Booking window</span>&#160;and&#160;<span class="ui">Maximum duration</span>.</li>
+            <li>Use a&#160;<span class="ui">Mail flow</span>&#160;rule to suppress email confirmations from resource mailboxes. Be sure to enable the rule prior to utilizing the Exchange Sync utility.</li>
+        </ul>
+        <h2><a name="Configure_a_Room_in_EMS_for_Exchange_Room_Integration"></a>Configure a Room in EMS for Exchange Room Integration</h2>
+        <ol start="1" class="number-list">
+            <li>From the Desktop Client, select&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Rooms</span>. Filter the dialog to display the room(s) you would like to edit.</li>
+            <li>Click&#160;<span class="ui">Edit</span>.</li>
+            <li>On the&#160;<span class="ui">Exchange Integration</span>&#160;tab, enter the email address as it was configured in Microsoft Exchange.<p><img src="../../../Resources/Images/ERI_IG_ExchangeRoom/Configure Exchange Room Integration.png" alt="ERI_RoomConfig.png" class="popup_with_padding_only" /></p></li>
+            <li>On the&#160;<span class="ui">Everyday User Process Templates</span>&#160;tab, make sure the room is utilizing process templates with&#160;<span class="ui">Enable Integration to Microsoft Exchange</span>&#160;enabled. For instructions on creating process templates, please refer to&#160;<a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserProcessTemps.html" MadCap:conditions="General.Online Only">Configure Everyday User Process Templates</a><a href="[%=Links.WebsitePath%]WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserProcessTemps.html" MadCap:conditions="General.Print Only">Configure Everyday User Process Templates</a>.</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;</li>
+        </ol>
+        <h2><a name="ConfigFixedResourcesTiedtoRoom"></a>Configure Fixed Resources in a Room</h2>
+        <ol start="1" class="number-list">
+            <li>From the Desktop Client, create a&#160;<span class="ui">Category</span>. Navigate to&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt; <span class="ui">Categories</span>.&#160;</li>
+            <li>Click&#160;<span class="ui">New</span>. Create a name for your&#160;<span class="ui">Category&#160;</span>(e.g.,&#160;Self-Service VC Devices).&#160;</li>
+            <li>From the&#160;Category Type&#160;dropdown, select&#160;<span class="ui">Resources w/o Service Orders</span>.</li>
+            <li>From the&#160;Default Time In Use&#160;dropdown, select&#160;<span class="ui">Event Time</span>.</li>
+            <li>Navigate to the&#160;<span class="ui">Everyday User Applications</span>&#160;tab. Leave the&#160;<span class="ui">Display to Everyday Users</span>&#160;checkbox unchecked.</li>
+            <li>From the&#160;<span class="ui">Buildings&#160;</span>tab, map this category to a building by selecting a building and clicking the <span class="ui">Select </span>(<span class="ui">&gt;</span>) arrow.</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;</li>
+            <li>Create a&#160;<span class="ui">Feature</span>.&#160;Navigate to&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Features</span>.</li>
+            <li>Click&#160;<span class="ui">New</span>. Create a&#160;<span class="ui">Feature&#160;</span>name&#160;(e.g.,&#160;Self-Service Video Conference).&#160;</li>
+            <li>To make the feature available to everyday users, select the <span class="ui">Available to Everyday Users</span> checkbox and verify the <span class="ui">Tied to Resource</span> checkbox is unchecked.</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;</li>
+            <li>Create a Resource for each room. Navigate to&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Resources</span>. Choose your Category from the dropdown list.&#160;</li>
+            <li>Click&#160;<span class="ui">New</span>. Create&#160;a&#160;Description&#160;that details the Resource (e.g.,&#160;Conference Room 101 Self-service Video Conference Device).</li>
+            <li>Uncheck the&#160;<span class="ui">Available to Everyday Users</span>&#160;box.&#160;</li>
+            <li>It is <span class="ui">not </span>necessary to select the&#160;<span class="ui">Maintain Inventory</span>&#160;checkbox for fixed resources.</li>
+            <li>On the&#160;<span class="ui">Exchange Integration</span>&#160;tab, enter the email address as it was configured in Microsoft Exchange. There are multiple fields for email addresses on this tab. If a room contains multiple device features, enter all the corresponding email addresses.<p><img src="../../../Resources/Images/ERI_IG_ExchangeRoom/Configure Exchange Room Integration_1.png" alt="ERI_ResourceConfig.png" class="resize80_noborder_padding" /></p></li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;</li>
+            <li>To add the feature to the appropriate room, edit the room in the Desktop Client. Navigate to&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Rooms</span>.</li>
+            <li>Filter the dialog to find the appropriate room, and then click&#160;<span class="ui">Edit</span>.</li>
+            <li>On the&#160;<span class="ui">Features&#160;</span>tab, select your feature (e.g.,&#160;Self-service Video Conference) using the <span class="ui">Select </span>(<span class="ui">&gt;</span>) arrow.&#160;The&#160;Resource Selector&#160;dialog box will appear.&#160;</li>
+            <li>From the&#160;Category&#160;dropdown, choose the specific category (e.g.,&#160;Conference Room 101 Self-service Video Conference Device) for that room. Click&#160;<span class="ui">Select</span>.&#160;</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to save your selections.&#160;</li>
+        </ol>
+        <h2><a name="EMS_Configuration_for_Mobile_Resources_Without_Service_Orders"></a>Configure Mobile Resources (Without Service Orders)</h2>
+        <ol start="1" class="number-list">
+            <li>Create a&#160;<span class="ui">Category</span>.&#160;Navigate to&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt; <span class="ui">Categories</span>. &#160;</li>
+            <li>Click&#160;<span class="ui">New</span>. Create a name for your&#160;<span class="ui">Category&#160;</span>(e.g.,&#160;Mobile Surface Hubs).</li>
+            <li>From the&#160;Category Type&#160;dropdown, select&#160;<span class="ui">Resources w/o Service Orders</span>.&#160;</li>
+            <li>From the&#160;Default Time In Use&#160;dropdown, select&#160;<span class="ui">Event Time</span>.</li>
+            <li>Navigate to the&#160;<span class="ui">Everyday User Applications</span>&#160;tab. Click the&#160;<span class="ui">Display to Everyday Users&#160;</span>checkbox.</li>
+            <li>From the&#160;<span class="ui">Buildings&#160;</span>tab, map this category to a building by selecting a building and clicking the <span class="ui">Select </span>(<span class="ui">&gt;</span>) arrow.</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;</li>
+            <li>Create a Resource for each mobile device.&#160;Navigate to&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Resources</span>. Choose your Category from the dropdown list.&#160;</li>
+            <li>Click&#160;<span class="ui">New</span>. Create&#160;a&#160;Description&#160;that details the Resource (e.g.,&#160;Sixth Floor Mobile Surface Hub).</li>
+            <li>Check the&#160;<span class="ui">Maintain Inventory</span>&#160;checkbox and enter the&#160;<span class="ui">Quantity Available</span>&#160;as <span class="ui">1</span>.</li>
+            <li>Check the&#160;<span class="ui">Available to Everyday Users</span>&#160;box.&#160;</li>
+            <li>If you want users to be able to choose the resource while making a booking, check the&#160;<span class="ui">Available at Checkout</span>&#160;box. If you prefer users to add the resource after making a booking, leave this selection unchecked.</li>
+            <li>On the&#160;<span class="ui">Exchange Integration</span>&#160;tab, enter a&#160;single&#160;email address as it was configured in Microsoft Exchange. Click&#160;<span class="ui">OK</span>.&#160;</li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Though there are multiple fields for email addresses in the Exchange Integration for resources, when configuring a mobile device resource, the device must be configured to a&#160;<span class="ui">single&#160;</span>Exchange equipment mailbox in order to properly enable third-party endpoints.</p>
+        </div>
+        <ol start="14" class="number-list">
+            <li>You must add the Categories to the appropriate Everyday User Process Templates. The templates must be configured with&#160;<span class="ui">Enable Integration to Microsoft Exchange</span>&#160;enabled. For instructions on creating process templates, please see&#160;<a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserProcessTemps.html" MadCap:conditions="General.Online Only">Configure Everyday User Process Templates</a><a href="[%=Links.WebsitePath%]WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserProcessTemps.html" MadCap:conditions="General.Print Only">Configure Everyday User Process Templates</a>.</li>
+        </ol>
+        <h2><a name="View_Configuration_Information"></a>View Configuration Information</h2>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/ERI_IG_ExchangeRoom/Configure Exchange Room Integration_2.png" alt="RoomReportERI.png" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">Room Report ERI</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/ERI_IG_ExchangeRoom/Configure Exchange Room Integration_3.png" alt="ResourceReportERI.png" style="width: 354px; height: 302px;" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">Resource Report ERI</p>
+        </div>
+    </body>
+</html>

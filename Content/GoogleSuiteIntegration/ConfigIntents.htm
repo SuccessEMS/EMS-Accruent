@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Configure Intents in the EMS&#160;Desktop Client</h1>
+        <p>Booking Types are configured as Intents in the EMS&#160;Desktop Client. Booking Types are a new configuration available for grouping Everyday User Process templates. Administrators can configure up to five (5) Intents. Everyday User Process templates can be assigned to only one intent. </p>
+        <p>Booking Types are configured in the EMS&#160;Desktop Client. To configure an intent, follow these steps:&#160;</p>
+        <ol>
+            <li>
+                <p>Navigate to<span class="ui"> Configuration </span>&gt;&#160;<span class="ui">Everyday User Applications &gt;&#160;Intents</span> tab. </p>
+                <p>
+                    <img src="images/IntentstabinDTC.png" style="width: 438px; height: 273px;" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>Provide an <span class="ui">Intent Name</span> (there is a 20-character limit). </li>
+            <li>Designate a <span class="ui">Default Start Time.</span></li>
+            <li>
+                <p>Designate a <span class="ui">Default End Time.</span></p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p><span class="ui">Default Start Time</span> and <span class="ui">Default End Time</span> are not utilized by EMS&#160;for Google Calendar. These fields are utilized by other EMS&#160;products (e.g., EMS&#160;Mobile App). </p>
+                </div>
+            </li>
+            <li>Designate a<span class="ui"> <MadCap:popup><MadCap:popupHead>Menu Sequence</MadCap:popupHead><MadCap:popupBody>The Menu Sequence controls the order in which the Booking Types appear to users. Users see Intents within their application as a Booking Type. </MadCap:popupBody></MadCap:popup></span>. </li>
+            <li>
+                <p>Click the <span class="ui">Everyday User Process Template</span> tab to assign Intents to a process template. Using the Move (&gt;)&#160;button, add all templates for your Everyday Users that match the Booking Type. </p>
+                <p>
+                    <img src="images/AssignIntentstoProcessTemplate.png" style="width: 502px; height: 301px;" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Assign a <span class="ui" style="font-weight: normal;">priority value</span> for these Intents. You can enter a number in the <b>Edit Priority</b> field or use the <span class="ui">Move Up</span> and <span class="ui">Move Down</span> buttons to set  a priority relative to the other templates linked to the Intent. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p><span class="ui">Priority </span>is required  and two process templates cannot have the same priority value. When using Intents, the Everyday User only views rooms associated with the template that has been assigned to the Booking Type. The highest priority template will be used for reservation with that Booking Type. </p>
+                    <p>For example, there are two templates with the same rooms. One allows catering but requires two business days’ notice, the other allows last minute bookings but no catering.  The first template requires more restrictive booking rules to have higher priority (e.g., if users are booking two weeks in advance, they can access catering services). <b>Please note that services are not available in the December 2018 release of EMS for Google Calendar.</b></p>
+                </div>
+            </li>
+            <li>
+                <p>The Booking Type will now display on EMS&#160;for Google Calendar.</p>
+                <p>
+                    <img src="images/intents.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

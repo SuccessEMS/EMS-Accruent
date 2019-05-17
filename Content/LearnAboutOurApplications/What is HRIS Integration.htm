@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>What Is HRIS Integration?</h1>
+        <p class="NormalWeb_2">If your organization&#160;uses an Human Resources&#160;Information System or HRIS, user and group profiles or "accounts" may already be maintained there. This toolkit eliminates the double-entry of this information, by synchronizing between your HRIS and EMS&#160;at your chosen frequency. This toolkit enables you to automate&#160;the creation, updating, and de-activation of user and group accounts in EMS. You can configure it to automatically transfer&#160;selected records to a staging database and then update&#160;the appropriate tables in EMS. This tool saves time and enhances security, and enables the creation, maintenance, and inactivation of user and group accounts from an outside data source.</p>
+        <h2 class="Heading2_3">Integration Diagram</h2>
+        <p class="NormalWeb_16">
+            <img src="../Resources/Images/Learn About Our Applications/What is HRIS Integration.png" alt="https://success.emssoftware.com/@api/deki/files/6335/integrationsflowhris.png?revision=1" class="hyperlink_with_padding_and_border" />
+        </p>
+        <h2>How It Works</h2>
+        <p class="NormalWeb">The&#160;EMS_Staging&#160;database (created by&#160;HRTK Staging DB Install G_GT_WU.sql) is used to stage User records before they are imported into EMS.&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your EMS database may have the “Groups” field renamed to another term, such as&#160;Employees.</p>
+        </div>
+        <p class="NormalWeb">Once you have identified the data source within your organization that will be used to create and maintain your User records, you will then define and create a process to import active&#160;User records into the&#160;tblPeople&#160;table within&#160;EMS_Staging&#160;(shown below).</p>
+        <p class="mtaligncenter_1">
+            <img src="../Resources/Images/Learn About Our Applications/What is HRIS Integration_1.png" alt="https://success.emssoftware.com/@api/deki/files/1949/image_26.png?revision=1&amp;size=bestfit&amp;width=385&amp;height=441" class="padding_only" />
+        </p>
+        <h2>Technical Architecture&#160;</h2>
+        <p class="NormalWeb_21">EMS Human Resources Toolkit automates the creation, update, and de-activation of user records as individuals and as groups or contacts. EMS Human Resources Toolkit absorbs user records and any changes to these records&#160;from your chosen data source, and then transfers the data&#160;to EMS.&#160;This allows you to automatically sync EMS with user records held in other systems in your organization.</p>
+        <p class="NormalWeb_22">
+            <img src="../Resources/Images/Learn About Our Applications/What is HRIS Integration_2.png" alt="https://success.emssoftware.com/@api/deki/files/1494/HR_Toolkit_-_Introduction_-_diagram.png?revision=1&amp;size=bestfit&amp;width=768&amp;height=567" class="hyperlink_with_padding_and_border" />
+        </p>
+        <p class="NormalWeb_21">&#160;</p>
+        <p class="NormalWeb_21">The information from your organization’s database(s) is loaded into the EMS_Staging database table and then the HRTK_Update_Group stored procedure is created on the EMS database, then executed to populate the data from the staging table into EMS.&#160;This information populates and updates the information for your EMS Groups, Contacts, and Everyday/Web Users.&#160;</p>
+        <p class="NormalWeb_21">You can use the specifications below to make sure your source data will import correctly into EMS.</p>
+        <p class="NormalWeb_21">The&#160;HRTK_Update_Group&#160;stored procedure (created by&#160;HRTK Update Script G_C_GT_WU.sql) contains all of the logic to create your EMS Contact, Group and Everyday Applications (web) User data.&#160;Records are imported into EMS from the EMS_Staging database according to the specifications below.</p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_2">EMS Staging Field (varchar)</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_2">Writes Data to EMS Database Fields</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_2">Requirements/Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">PersonnelNumber&#160;(20)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact.External Reference</p>
+                        <p class="NormalWeb_7">WebUser.ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb">Required&#160;Part of Primary Key Cluster.&#160;Unique identifier (e.g. Employee/Student ID, Personnel Number, etc.) for each web user.&#160; Used for purposes of creating /updating EMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">FirstName&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.Contact</p>
+                        <p class="NormalWeb_7">WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_7">Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">LastName&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact.Contact</p>
+                        <p class="NormalWeb_7">WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">Title&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.Title</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">MiddleInitial&#160;(10)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact .Contact</p>
+                        <p class="NormalWeb_7">WebUser.UserName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">EMailAddress&#160;(75)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.EmailAddress</p>
+                        <p class="NormalWeb_7">WebUser.EmailAddress</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb">Required&#160;for Web User creation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">Phone&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact.Phone</p>
+                        <p class="NormalWeb_7">WebUser.Phone</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">Fax&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.Phone</p>
+                        <p class="NormalWeb_7">WebUser.Fax</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">Address1&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact.Address1</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">Address2&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.Address2</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">City&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact.City</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">State&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.State</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">ZipCode&#160;(10)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Contact.ZipCode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">Country&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Contact.Country</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_7">can be null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">NetworkID&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">WebUser.NetworkID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb">Required&#160;for Integrated Authentication.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb">GroupID&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="NormalWeb_7">Group.ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb">Required.&#160;&#160;Unique identifier for each group.&#160;&#160;Along with PersonnelNumber, part of primary key cluster. If (Hybrid) for Group/GroupType functionality must be 0.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb">GroupName&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="NormalWeb_7">Group.GroupName</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_7">Required only for Everyday Application User associated with Groups. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="NormalWeb">GroupType&#160;(50)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="NormalWeb_7">Group.GroupTypeID</p>
+                        <p class="NormalWeb_7">GroupType.Description if unique</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="NormalWeb_7">Required only for Everyday Application User associated with Groups. Associates groups with group types. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3_1">Group Type Records</h3>
+        <p class="NormalWeb_21">Unique GroupTypes in&#160;EMS_Staging.tblPeople&#160;are added to the Group Types table in EMS (EMS.tblGroupType). Group Types are not updated or de-activated.</p>
+        <h3 class="Heading3_1">Group Records</h3>
+        <ul class="ul_5">
+            <li class="li_7">Groups that exist in EMS_Staging.tblPeople, but not in EMS.tblGroup (based on EMS_Staging.tblPeople.GroupID and EMS.tblGroup.ExternalReference) will be created in EMS.</li>
+            <li class="li_7">For Groups that exist in EMS_Staging.tblPeople and in EMS.tblGroup, GroupName and GroupType changes in EMS_Staging will be updated in EMS.</li>
+            <li class="li_7">Groups that exist in EMS.tblGroup, but not in EMS_Staging.tblPeople will be de-activated in EMS (includes all of the Contacts associated with the Group).</li>
+        </ul>
+        <h3 class="Heading3_1">Contact Records</h3>
+        <p class="NormalWeb_21">Contacts that exist in EMS_Staging.tblPeople, but not in EMS.tblContact (based on EMS_Staging.tblPeople.PersonnelNumber and EMS.tblContact.ExternalReference) will be created in EMS for the associated Group (see section above for Group maintenance logic).&#160;A Web User account will also be created for the Contact in EMS and the Group record will be automatically assigned to the Contact’s Web User record.&#160;This allows the Contact to make a reservation on behalf of the Group in Virtual EMS.&#160;</p>
+        <p class="NormalWeb_21">For Contacts that exist in EMS_Staging.tblPeople and in EMS.tblContact, any/all changes to the Contact’s information (name, address, etc.)&#160;in EMS_Staging will be updated in EMS.&#160;If the Group that a Contact is assigned to changes, the Contact record under the original Group will be de-activated and a new Contact record will be added under the new Group.&#160;This process also automatically assigns the Group record to the Contact’s Web User record.</p>
+        <p class="NormalWeb_21">Contacts that exist in EMS.tblContact, but not in EMS_Staging.tblPeople will be de-activated in EMS.</p>
+        <h2>Integrating Course and Student Information with Student Information Systems (SIS)</h2>
+        <h3>How Do I Install It?</h3>
+        <p class="NormalWeb">If you are unsure whether your organization is licensed for EMS Human Resources Toolkit or if you would like to learn more about it, please contact your Account Executive.</p>
+        <p class="NormalWeb_23">To integrate the EMS Human Resources Toolkit, you will:</p>
+        <ul class="ul_5">
+            <li class="li_25">Identify the data source(s) in your organization to use as the source for your user records.</li>
+            <li class="li_25">Determine if user records are organized by groups and contacts (Group/Contact Model), by groups and group types (Group/Group Type Model), or all of these (Hybrid).</li>
+            <li class="li_25">Obtain and execute the .sql files for creating the staging database and stored procedures needed to import data into your EMS database.</li>
+            <li class="li_25">Establish a process for importing records into the staging database.</li>
+            <li class="li_25">Execute the EMS HR Toolkit stored procedure (using Microsoft SQL Server Management Studio to create an SQL job to run the stored procedure on a schedule).</li>
+            <li class="li_25">Maintain the source data to ensure continual data flow between your source(s) and EMS.</li>
+        </ul>
+        <h3>EMS Human Resources Toolkit Configuration </h3>
+        <p class="p_38">EMS&#160;Human Resources Toolkit can be configured&#160;in three ways: </p>
+        <ol>
+            <li>Group/Group Type</li>
+            <li>Group/Contact</li>
+            <li>Hybrid</li>
+        </ol>
+        <p class="NormalWeb_21">&#160;Your Implementation Consultant will work with you to determine which variant will be best for your organization.&#160;The “Group/Contact” model is structured around having your Groups populated with Contacts beneath them; the “Group/Group Type” model categorizes User records by group and group type, and&#160;does not create Contacts under the Groups imported into the HRTK. The Hybrid Model will adjust the functionality based upon the&#160;GroupID&#160;criteria in the EMS_Staging.dbo.tblPeople table.&#160;Note that your EMS environment may use different names for Groups and Contacts, such as&#160;Employee.</p>
+        <p class="NormalWeb">The EMS Human Resources Toolkit&#160;Installation Guide leads you through installing HR Toolkit in your environment.&#160;</p>
+        <h2>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

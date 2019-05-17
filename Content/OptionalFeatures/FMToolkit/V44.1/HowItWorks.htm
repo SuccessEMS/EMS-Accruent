@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>How It Works</h1>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#EMS_Staging_Database">EMS_Staging Database</a>
+            </li>
+            <li><a href="#Maintain_Room_Records_in_EMS">Maintain Room Records in EMS</a>
+            </li>
+            <li><a href="#Add_New_Records_in_EMS">Add New Records in EMS&#160;</a>
+            </li>
+            <li><a href="#Updates_to_Existing_Records_in_EMS">Updates to Existing Records in EMS&#160;</a>
+            </li>
+        </ul>
+        <h2><a name="EMS_Staging_Database"></a>EMS_Staging Database</h2>
+        <p>The&#160;EMS_Staging&#160;database (created by&#160;<span class="ui">FMTK Staging DB Install.sql</span>) is used to stage room records before they are imported into EMS.</p>
+        <p>
+            <img src="Images/FMToolkit/FMToolkit.png" alt="https://success.emssoftware.com/@api/deki/files/1477/FM_Toolkit-Overview-Staging_Database.png?revision=1&amp;size=bestfit&amp;width=380&amp;height=254" class="padding_only" />
+        </p>
+        <p>Once you have identified the FM data source within your organization that will be used to create and maintain your EMS room records, you will be required to define/create a process to import room records into the&#160;tblRoom&#160;table within&#160;EMS_Staging.</p>
+        <h2><a name="Maintain_Room_Records_in_EMS"></a>Maintain Room Records in EMS</h2>
+        <p>The&#160;FMTK_Update_Room&#160;stored procedure (created by&#160;<span class="ui">FMTK Update Script.sql</span>) contains all of the logic to create your EMS room data.&#160;Records are imported into EMS from the&#160;EMS_Staging&#160;database according to the specifications outlined in the table below:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p><span class="italics">EMS_Staging.tblRoom</span> Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p><span class="italics">EMS.tblRoom</span>
+                        </p>
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>ExternalReference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">Required.</span>&#160;<span class="ui">Primary Key.</span>&#160;Unique identifier that links a room record in your FM system with a room record in EMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>BuildingCode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>BuildingID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>BuildingCode is matched against&#160;<span class="italics">tblBuilding.BuildingCode</span>&#160;to derive the correct Building ID to be stored in&#160;<span class="italics">tblRoom.BuildingID</span>. If BuildingCode can’t be matched in&#160;<span class="italics">tblBuilding</span>, the room record&#160;<span class="ui">WILL NOT</span>&#160;be created in EMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>RoomCode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Room</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">Required</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>RoomDescription</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">Required</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>RoomType</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>RoomType</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>RoomType is matched against&#160;<span class="italics">tblCategoryGroup.Description</span>&#160;(Room Type table) to derive the correct Room Type ID to be stored in&#160;<span class="italics">tblRoom.RoomType</span>.&#160;If the room type can’t be matched in&#160;<span class="italics">tblCategoryGroup</span>, a new room type record&#160;WILL&#160;be created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Floor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>FloorID</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Floor is matched against&#160;tblFloor.Description&#160;to derive the correct Floor ID to be stored in&#160;tblRoom.FloorID.&#160; If the floor can’t be matched in tblFloor, a new floor record&#160;<span class="ui">WILL&#160;</span>be created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>RoomSize</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>RoomSize</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Optional</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Active</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Active</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Active = 1.&#160; Inactive = 0.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The FM Toolkit uses the&#160;<span class="italics">ExternalReference&#160;</span>field in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;and the&#160;<span class="italics">tblRoom.ExternalReference</span>&#160;field in the EMS database to determine whether a record needs to be added, updated, or inactivated.&#160;</p>
+        <h2><a name="Add_New_Records_in_EMS"></a>Add New Records in EMS&#160;</h2>
+        <p><span class="ui">Rooms:</span>&#160;If the&#160;<span class="italics">ExternalReference&#160;</span>value in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;is not found on an existing room record in EMS, a new room will be created.&#160;</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Existing EMS clients wanting to implement the FM Toolkit must “synchronize” existing EMS rooms before activating the toolkit by adding a valid&#160;<span class="italics">ExternalReference&#160;</span>value in&#160;<span class="italics">tblRoom</span>.&#160;<span class="ui">Ignoring this step will result in duplicate records.</span>&#160;</p>
+        </div>
+        <p><span class="ui">Room Types:</span> If the <span class="italics">RoomType </span>value in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;is not found in the existing list of room types in EMS, a new room type will be created.</p>
+        <p><span class="ui">Floors:</span> If the <span class="italics">Floor </span>value for a particular room record in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;is not found in the existing list of floors in EMS, a new floor will be created.</p>
+        <p><span class="ui">Buildings:</span>&#160;The FM Toolkit does not add or maintain building records in EMS.</p>
+        <h2><a name="Updates_to_Existing_Records_in_EMS"></a>Updates to Existing Records in EMS&#160;</h2>
+        <p>If the&#160;<span class="italics">ExternalReference </span>value&#160;in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;is found on an existing room record in EMS, the room will be updated with any changes.</p>
+        <h2>Inactive Room Records&#160;</h2>
+        <p>A room will be inactivated if one of the two conditions outlined below is met:</p>
+        <ol start="1" class="number-list">
+            <li>If an existing room record in EMS does not exist in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;(based on&#160;<span class="italics">ExternalReference</span>).</li>
+            <li>If a room record’s&#160;<span class="ui">Active&#160;</span>status in&#160;<span class="italics">EMS_Staging.tblRoom</span>&#160;= 0.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Room records within EMS with an empty External Reference field are excluded from processing.&#160;Therefore, rooms that are not included in your data feed can be added and maintained manually within EMS and will not be impacted by the FM Toolkit.&#160;</p>
+        </div>
+    </body>
+</html>

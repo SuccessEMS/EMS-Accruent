@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Print Only"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008027"
+    Name="Online Only"
+    Comment=""
+    OriginalName="TechDocs" />
+  <ConditionTag
+    BackgroundColor="#4b0082"
+    Name="Edit_in_Review"
+    Comment="For changes that require approval and should not appear online or in print" />
+  <ConditionTag
+    BackgroundColor="#66cdaa"
+    Name="Topic_Hide_A"
+    Comment="For removing selected portions of snippet from Topic"
+    OriginalName="Topic_Hide_A" />
+  <ConditionTag
+    BackgroundColor="#ff7f50"
+    Name="Topic_Hide_B"
+    Comment="For removing selected portions of snippet from Topic"
+    OriginalName="Topic_Hide_B" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Topic_Show_A"
+    Comment="Include at topic level and shows &quot;A&quot; content; use with Topic_Show_B (exclude at topic leve)"
+    OriginalName="Topic_Show_A" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Topic_Show_B"
+    Comment="Include at topic level and shows &quot;B&quot; content; use with Topic_Show_A (exclude at topic leve)"
+    OriginalName="Topic_Show_B" />
+</CatapultConditionTagSet>

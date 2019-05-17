@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1_2">
+            <MadCap:concept term="V44.1" />EMS Mobile App Release Notes V44.1, Update 17 </h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a></p>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>V44.1 Update 17</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;<br />October 13, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch:&#160;&#160;<br />44.1.16000.201710040</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build #:&#160;<br />44.1.17000.4278&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_2_1">Fixes&#160;&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 120px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Events List</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Start and End Times Were Incorrect in Booking Details for Meetings Occurring After Daylight Saving Time Ends</p>
+                        <p class="RNBody">For meetings that occur after Daylight Saving Time ends, the meeting start and end times were&#160;incorrect&#160;in the booking details.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality so that when meetings occur after Daylight Saving Time ends, the meeting start and end times will display correctly in the booking details.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=30910" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">30910</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="6" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Scan QR Code</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">After Scanning a QR Code, Selecting the "About This Location" Button Crashed the EMS Mobile App</p>
+                        <p class="RNBody">After scanning a QR code to view a room's schedule, the EMS Mobile App would crash if users selected the&#160;About This Location&#160;button from the room’s schedule/list view.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that after scanning a QR code to view a room's schedule, the&#160;About This Location&#160;page opens if&#160;users select the&#160;About This Location&#160;button from the room’s schedule/list view. &#160;</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33113" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">33113</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">After Scanning a QR Code, Schedule/List View Was Shown Even Though Room Was Not Assigned to User Templates, and EMS Mobile App Crashed If Users Tried to Book the Room</p>
+                        <p class="RNBody">After scanning a QR code for a room that was not assigned to any of the users’ templates, the room’s schedule/list view was shown, and if users selected the&#160;+&#160;button to book the room, the EMS Mobile App would crash.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when users scan a QR code for a room that is not assigned to any of the users’ templates, the EMS Mobile App will not crash; instead, the app will detect that the room is not assigned to the users’ templates, and users will receive an error message.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33115" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">33115</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">After Scanning a QR Code, the Room’s Schedule/List View Did Not Load</p>
+                        <p class="RNBody">When scanning a QR code to view a room’s schedule, the room’s schedule/list view did not load unless users re-scanned the QR code or switched between the schedule/list view.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that a room’s schedule/list view loads the first time users scan the room’s QR code.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33116" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">33116</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">After Scanning a QR Code, Selecting the + Button in Schedule/List View Crashed the EMS Mobile App</p>
+                        <p class="RNBody">After scanning a room’s QR code, the EMS Mobile App would crash if users selected the&#160;+&#160;button from the room’s schedule/list view.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that after scanning a room’s QR code, the app will not crash when users can select the + button from the room’s schedule/list view; instead, a&#160;list of available templates will appear when users select the&#160;+&#160;button.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33117" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">33117</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">When Scanning a QR Code Associated with a Fully Defaulted Template, Users Experienced Infinite Loading When Trying to Create a Booking</p>
+                        <p class="RNBody">When scanning a QR code associated with a fully defaulted template, users experienced infinite loading instead of having the booking created.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when users scan a QR code associated with a fully defaulted template, the booking is created.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33393" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">33393</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">For Bookings Requiring Check In, Users Weren't Checked In When Scanning the&#160;QR Code</p>
+                        <p class="RNBody">For bookings created with rooms that require check in, users were not checked in&#160;when they&#160;scanned the QR code to check in; instead,&#160;they&#160; were&#160;shown the events list.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when a booking requires check in and users scan the QR code, users are checked in to the booking and receive a message stating that check in was successful.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=33396" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">33396</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="text-align: left; mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Configuring and Re-Signing the EMS Mobile App (Private Deployment Only)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure and Re-Sign the EMS Mobile App (Private Deployment Only)</h1>
+        <p>This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#Use_Unsigned_Builds">Use Unsigned Builds</a>
+            </li>
+            <li><a href="#Set_Custom_Configuration">Set Custom Configuration</a>
+                <ul>
+                    <li><a href="#IOScustconfig">IOS</a>
+                    </li>
+                    <li><a href="#Androidcustconfig">Android</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Re-Sign_and_Repackage_for_iOS">Re-Sign and Repackage for iOS</a>
+                <ul>
+                    <li><a href="#Install_Fastlane_iOS">Install Fastlane.</a>
+                    </li>
+                    <li><a href="#install-certificate-provisioning-profile_iOS">Install Certificate and Provisioning Profile</a>
+                    </li>
+                    <li><a href="#resigning_iOS">Re-Sign</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Re-Sign_and_Repackage_for_Android">Re-Sign and Repackage for Android</a>
+            </li>
+        </ul>
+        <h2><a name="Use_Unsigned_Builds"></a>Use Unsigned Builds</h2>
+        <p>For customers re-signing the application, we provide unsigned builds.</p>
+        <ol class="number-list">
+            <li>Store your unsigned EMS Mobile App&#160;in a new or empty directory.</li>
+            <li>Change the extension of the app to .zip.&#160;(e.g., IPhone.App-44.1.xxx-unsigned.ipa -&gt; IPhone.App-44.1.xxx-unsigned.zip.)</li>
+            <li>Un-compress/expand the new zip file.</li>
+        </ol>
+        <h2><a name="Set_Custom_Configuration"></a>Set Custom Configuration</h2>
+        <ol class="number-list">
+            <li>Refer to&#160;<a href="Mobile_CustomizeMobileAppUsingConfigJson.htm">Customize Your Mobile App Configuration Using config.json (Private Deployment Only)</a>&#160;for details on building a configuration file for the EMS Mobile App.&#160;</li>
+            <li>Replace the config.json file with your custom configuration (located as follows):</li>
+        </ol>
+        <h3><a name="IOScustconfig"></a>IOS</h3>
+        <p>config.json (top-level file)</p>
+        <h3><a name="Androidcustconfig"></a>Android</h3>
+        <p>assets/config.json</p>
+        <h2><a name="Re-Sign_and_Repackage_for_iOS"></a>Re-Sign and Repackage for iOS</h2>
+        <p>Follow the steps below to re-sign and repackage for iOS.</p>
+        <h3><a name="Install_Fastlane_iOS"></a>1. Install Fastlane</h3>
+        <p>Using sudo gem, install fastlane on an administrative&#160;Mac computer.</p>
+        <h3><a name="install-certificate-provisioning-profile_iOS"></a>2. Install Certificate and Provisioning Profile</h3>
+        <p>If your Mac computer&#160;is already configured with these items, these steps might not be necessary.&#160;</p>
+        <h4>Provisioning Profile</h4>
+        <ol class="number-list">
+            <li>Login to <a class="link-https" href="https://developer.apple.com" rel="freeklink" title="https://developer.apple.com">https://developer.apple.com.</a></li>
+            <li>Download your Distribution provisioning profile.</li>
+            <li>Double click it to install it. This file should exist on your system:
+    <ul><li>~/Library/MobileDevice/Provisioning Profiles/&lt;profile-guid&gt;.mobileprovision</li></ul></li>
+        </ol>
+        <h4>Certificate</h4>
+        <p>See Apple's <a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html" title="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html">documentation </a>for installing and managing certificates and signing identities.&#160;When the certificate is installed successfully, you should see iPhone Distribution: Your Company, Inc in your Keychain, with a private key.</p>
+        <h3><a name="resigning_iOS"></a>3. Re-Sign</h3>
+        <p>If you have the following, you should be ready to re-sign the EMS&#160;Mobile App:</p>
+        <ul class="unorder-list">
+            <li>Fastlane installed on your Apple computer</li>
+            <li>the cert and private key installed in Keychain</li>
+            <li>the provisioning profile mentioned above in ~/Library/.../&lt;profile-guid&gt;.mobileprovision</li>
+        </ul>
+        <p>Before proceeding, change the following in the command below:</p>
+        <ul class="unorder-list">
+            <li>Replace path/to/your/file.ipa with the real path to the ipa file</li>
+            <li>Replace iPhone Distribution: Your Company, Inc with the appropriate signing identity on your machine</li>
+            <li>Replace &lt;profile-guid&gt; with the actual GUID or name of the provisioning profile you intend to use</li>
+            <li>Replace <span class="ui">EMS-Resigned</span> with the display name you want to use, or remove the parameter if you do not want to rename the application</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p> Running these commands will <span class="ui">overwrite </span>the ipa file you designate. Make a copy first if necessary.</p>
+        </div>
+        <div class="code-sample"><pre class="code-sample">fastlane run resign \<br />&#160;&#160;&#160; ipa:path/to/your/file.ipa \<br />&#160;&#160;&#160; signing_identity:"iPhone Distribution: Your Company, Inc" \<br />&#160;&#160;&#160; provisioning_profile:$HOME/Library/MobileDevice/Provisioning Profiles/&lt;profile-guid&gt;.mobileprovision \<br />&#160;&#160;&#160; display_name:EMS-Resigned</pre>
+        </div>
+        <p>(All on one line for copy/paste:)</p>
+        <div class="code-sample"><pre class="code-sample" xml:space="preserve">fastlane run resign ipa:path/to/your/file.ipa signing_identity:"iPhone Distribution: Your Company, Inc" 
+provisioning_profile:$HOME/Library/MobileDevice/Provisioning Profiles/&lt;profile-guid&gt;.mobileprovision 
+display_name:EMS-Resigned</pre>
+        </div>
+        <p>If you want a bash script that will do this, you can copy this into a file (e.g., resign_enterprise.sh):</p>
+        <div class="code-sample"><pre class="code-sample">#!/bin/bash<br /><br />IPA=relative/path/to/file.ipa<br />IDENTITY="iPhone Distribution: Your Company, Inc"<br />PROFILE=$HOME/Library/MobileDevice/Provisioning\ Profiles/&lt;profile-guid&gt;.mobileprovision<br />DISPLAY_NAME=EMS-Resigned<br /><br />fastlane run resign ipa:"$IPA" signing_identity:"$IDENTITY" provisioning_profile:"$PROFILE" display_name:$DISPLAY_NAME</pre>
+        </div>
+        <h2><a name="Re-Sign_and_Repackage_for_Android"></a>Re-Sign and Repackage for Android</h2>
+        <ul class="unorder-list">
+            <li>Re-zip all the extracted files from earlier
+    <ul><li>Note that assets, res, and AndroidManifest.xml are top-level files in an .apk, so be careful to zip the right files</li><li>This CLI command will zip all the files in the current directory into a new zip file in the parent directory:
+        <ul><li>zip -qr ../ems-custom-44.1.xxx.zip ./*</li></ul></li></ul></li>
+            <li>Give the new zip file an .apk extension
+    <ul><li>e.g., myapp.zip -&gt; myapp.apk</li></ul></li>
+            <li>
+                <p>Sign the new .apk file, for example:</p>
+                <div class="code-sample"><pre class="code-sample"><span class="italics">#!/bin/bash</span><br /><br />APK_TO_SIGN=$1<br />APK_OUTPUT=$2<br />EMS_APK_KEYSTORE_PATH=path/to/your/app.keystore<br /><br />jarsigner -verbose \<br />&#160;&#160;&#160; -sigalg $EMS_APK_SIG_ALG \<br />&#160;&#160;&#160; -digestalg $EMS_APK_DIGEST_ALG \<br />&#160;&#160;&#160; -storepass $EMS_APK_KEYSTORE_PASS \<br />&#160;&#160;&#160; -keystore $EMS_APK_KEYSTORE_PATH \<br />&#160;&#160;&#160; $APK_TO_SIGN $EMS_APK_ALIAS_NAME<br /><br />zipalign 4 $APK_TO_SIGN $APK_OUTPUT</pre>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

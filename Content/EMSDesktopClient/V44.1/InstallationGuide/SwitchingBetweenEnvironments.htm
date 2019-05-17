@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Switch Between Environments for Web Deploy V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Switching Between Environments for EMS&#160;Desktop Client Web Deploy</h1>
+        <p>Users can switch their EMS&#160;Desktop Client between on-premise test and production environments, between on-premise and cloud hosted environments, or between cloud hosted test and production environments. See Also:&#160;<a href="InstallationInstructions.html#InstallWebDeployMethod">Install EMS&#160;Desktop Client Web Deploy</a>.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS Desktop Client runs from the executable file located here:  C:\Users\Username\AppData\Roaming\EMS2016\EMSApplication.exe. Because we can’t point to any two of these environments with the same EMS executable Desktop Client file, users must clear the EMS registry entry and then point to the desired environment.</p>
+        </div>
+        <ol class="number-list">
+            <li>Clear the EMS&#160;registry entry by utilizing the “Reset EMS&#160;V44.1 Connection.reg” file. The content of this file is as follows:<div class="code-sample"><pre>Windows Registry Editor Version 5.00</pre><pre>[HKEY_CURRENT_USER\SOFTWARE\EMS Software\Version 44.1]</pre><pre>"AppFacadeUrl"=-</pre></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>This file can be shared with users via SFTP as most e-mail programs will block attachments with the .reg extension. Alternatively, the file can be renamed with a .txt extension and then renamed again on the user side back to .reg. Or users can copy the three lines above into a text editor and save the file as “Reset EMS&#160;V44.1 Connection.reg.”</p></div></li>
+            <li>Save the registry editor file “Reset EMS&#160;V44.1 Connection.reg” on the hard drive of the EMS Desktop Client user and run it.</li>
+            <li>Click <span class="ui">Yes </span>to the following warning:<p><img src="../../../Resources/Images/image9.png" class="resize80_noborder_padding" /></p></li>
+            <li>Click “OK” to the second informational message:<p><img src="../../../Resources/Images/image10.png" class="resize80_noborder_padding" /></p></li>
+            <li>Launch the Desktop Client from the EMS Desktop Client executable file or EMS icon  .</li>
+            <li>Enter the EMS Desktop Client URL corresponding to the desired environment in the EMS Web Deploy Configuration window and click “OK”. This will launch the EMS Desktop Client for the specified environment.<p><img src="../../../Resources/Images/switching3.png" style="width: 698px; height: 348px;" class="resize80_border_and_padding" /></p></li>
+            <li>Settings are saved from the last time the EMS&#160;Desktop Client was accessed.</li>
+            <li>These steps must be repeated only when a user wants to switch environments.</li>
+        </ol>
+    </body>
+</html>

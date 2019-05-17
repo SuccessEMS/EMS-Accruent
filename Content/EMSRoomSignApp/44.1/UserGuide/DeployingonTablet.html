@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Deploying the EMS Room Sign App on Tablets</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Deploy  <MadCap:variable name="General.RSA" /> on Tablets</h1>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>To deploy the <MadCap:variable name="General.RSA" /> (formerly named EMS Glance), you need to prevent users from using the tablet to browse to other websites or use other tablet apps. This state—where tablets are restricted to a single use—is known as <i>kiosk</i> mode. iOS offers a native kiosk mode known as <i>Guided Access</i>. Android and Windows do not have a native kiosk mode and require a third party application. For Android, we recommend KioWare Lite. Below we detail how to configure the EMS Room Sign App in kiosk mode on iPads and the Samsung Tab A Android tablets.</p>
+        <p>In addition to placing the tablet in kiosk mode, you should also use an enclosure to protect the tablet. An enclosure prevents users from using the power/home buttons, and also protects the tablet from theft. We strongly recommend the&#160;<a href="http://armoractive.com/" rel="external nofollow" target="_blank" title="http://armoractive.com/">ArmorActive enclosures</a>. As of <a href="https://www.emssoftware.com/company/media-center/2016/ems-selects-armoractive-hardware-partner" rel="external nofollow" target="_blank" title="https://www.emssoftware.com/company/media-center/2016/ems-selects-armoractive-hardware-partner">September 2016</a>, ArmorActive is our official hardware partner, and they can help you source both tablets and enclosures.&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To configure LED&#160;integration, set the parameter for your enclosure in the EMS&#160;Desktop Client on the global and/or profile level. This parameter can be set during profile configuration or at a global level to apply the setting across all profiles. See Also:&#160;<a href="../InstallationGuide/DeployRSAAppliances.htm">Deploying the EMS&#160;Room Sign App on Appliances</a>. </p>
+        </div>
+        <p>This topic will include the following information:</p>
+        <ul>
+            <li><a href="#ConfigKioskModeforIpads">Configure Kiosk Mode&#160;for iPads</a>
+            </li>
+            <li><a href="#ConfigureKioskModeAndroid">Configure Kiosk Mode for Android Tablets</a>
+            </li>
+            <li><a href="#configurekiowarelite">Configure&#160;KioWare Lite</a>
+                <ul>
+                    <li><a href="#GeneralSettings">General Settings</a>
+                    </li>
+                    <li><a href="#BrowserSettings">Browser Settings</a>
+                    </li>
+                    <li><a href="#AttractInactivitySettings">Attract/Inactivity Settings</a>
+                    </li>
+                    <li><a href="#ToolbarSettings">Toolbar Settings</a>
+                    </li>
+                    <li><a href="#SecuritySettings">Security Settings</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#OrientationViews">Orientation Views for the EMS Room Sign App</a>
+            </li>
+            <li><a href="#MountRSA">Mount the EMS Room Sign App in an Enclosure</a>
+            </li>
+        </ul>
+        <h2><a name="ConfigKioskModeforIpads"></a>Configure Kiosk Mode&#160;for iPads</h2>
+        <p>To ensure the <MadCap:variable name="General.RSA" /> operates without interruptions, we recommend you hide&#160;the browser's address bar and navigation buttons, and turn off tablet notifications.</p>
+        <ol>
+            <li><b>Hide Browser Address Bar and Navigation Buttons.</b> This setup is also known as "full-screen mode." ​To run the EMS Room Sign App in full-screen mode on an iPad:<ol style="list-style-type: lower-alpha;"><li>Open the Safari browser and enter the URL for your the EMS Room Sign App server. (Contact your&#160;system administrator for the URL.)</li><li>Click&#160;<span class="ui">Share&#160;</span>(located&#160;to the right of the address bar) and select&#160;<span class="ui">Add to Home Screen</span>.</li><li>Choose a name for the icon (such as "EMS Room Sign App") and select&#160;<span class="ui">Add</span>.</li><li>The icon for the EMS Room Sign App appears on the iPad home screen, showing the name you&#160;just specified.</li><li>Click the EMS Room Sign App icon to open the EMS Room Sign App in full screen mode, which makes the navigation bar and Safari menu options inaccessible.</li></ol></li>
+            <li><b>Turn off Tablet Notifications.</b>&#160;To minimize interruptions by iOS, change the following settings in the 'Settings' app:<ol style="list-style-type: lower-alpha;"><li>Control Center: Turn off&#160;<span class="ui">Access on Lock Screen</span>&#160;and&#160;<span class="ui">Access Within Apps</span>&#160;to eliminate access to the Control Center from within apps and the lock screen.</li><li>Notifications: Turn off all notifications for all apps.</li><li>General / Auto-Lock: Select&#160;<span class="ui">Never&#160;</span>to prevent the screen from locking.</li><li>General / Accessibility / Guided Access:&#160;enabling&#160;Guided Access prevents users from accessing the Notification Center and&#160;from using the tablet to access any other application except the EMS Room Sign App. (However, Guided Access ends when the tablet restarts, which happens after a software update, a loss of power, or simultaneously pressing the Home and Sleep/Wake buttons for 10 seconds.) To set up Guided Access:
+    <ol start="1"><li>General / Accessibility / Guided Access: Turn on 'Guided Access.'</li><li>General / Accessibility / Guided Access / Passcode Settings / Set Guided Access Passcode: Enter a 4-digit passcode so that you can enable and disable Guided Access mode.</li><li>Click Home and click the EMS Room Sign App icon to start the EMS Room Sign App.</li><li>With the EMS Room Sign App running, triple-click the Home button. This can be tricky because if you click too slowly, the iPad goes back to the Home screen, and if you click too quickly, the iPad does not detect a triple-click. You'll know you are successful when the screen changes to show "Guided Access" at the top center of the screen.</li><li>Click&#160;Start&#160;at the top right corner of the 'Guided Access' screen.</li><li>Enter the passcode you created earlier.</li><li>To confirm that you set it up correctly, swipe down from the top to open the Notifications Center and swipe up from the bottom to open the Control Center. If neither of them opens, then you have set up Guided Access correctly.</li></ol></li><li>iCloud: Turn off iCloud by going to&#160;Settings&#160;/&#160;iCloud, and selecting&#160;<span class="ui">Sign Out&#160;</span>at the bottom of the screen.&#160;By signing out, you prevent future notifications that prompt&#160;you to sign in.</li></ol></li>
+        </ol>
+        <h2><a name="ConfigureKioskModeAndroid"></a>Configure Kiosk Mode for Android Tablets</h2>
+        <p>Android tablets do not offer a Guided Mode like&#160;iPads do. Because of this limitation on Android tablets, you must deploy&#160;the EMS Room Sign App with an app that puts the tablets in "kiosk" mode. Placing the tablet in kiosk mode will prevent users from accessing other applications and also disable the&#160;<span class="ui">Home&#160;</span>button. We recommend&#160;<a href="http://www.kioware.com/kwl_android.aspx" rel="external nofollow" target="_blank" title="http://www.kioware.com/kwl_android.aspx">KioWare Lite for Android.</a></p>
+        <h2><a name="configurekiowarelite"></a>Provision and Configure&#160;KioWare Lite</h2>
+        <p>KioWare Lite reads settings from an XML file. We strongly recommend configuring KW such that this file is placed on a central server, and tablets download the file from that server. This approach will make any updates easier because you will be able to update a single file rather than make changes on each tablet. Note that the initial provisioning will still require you to configure each tablet individually.</p>
+        <p>To configure and provision KioWare, follow these steps on a Samsung Tab A running Android 6.0 or higher:</p>
+        <ol>
+            <li>Purchase the required number of licenses from Kioware.com. Save the KioWare transaction number and authorization code. (If you use their <a href="https://www.kioware.com/kwl_android.aspx?c=kwl_andr_pricing">volume purchasing path</a>, you should end up with just one of each code for the entire deployment.)</li>
+            <li>Open the <a href="Kioware/kioware_provision.xml">Kioware Provision.xml file</a> and update the following section with the transaction and authorization code:<p><img src="../Images/RSA_UG_Deploy1.png" class="popup_with_padding_only" /></p></li>
+            <li>Open the <a href="Kioware/kwsettings.xml">Kioware_Settings.xml</a> file and make the following changes:<ol style="list-style-type: lower-alpha;"><li>Change the URL to the location for your Room Sign App installation:<p><img src="../Images/RSA_UG_Deploy2.png" class="popup_with_padding_only" /></p></li><li>Also update the URL for the server where the Kioware_Settings.xml will be placed.<p><img src="../Images/RSA_UG_Deploy3.png" class="popup_with_padding_only" /></p><ol style="list-style-type: lower-roman;"><li>Verify that you can access this file from a desktop browser.</li><li>If you are placing this file in the Room Sign folder on your web server, remember that <b>when you upgrade, this file will be removed</b>.</li></ol></li><li>Place the Kioware_Settings.xml file in the location you just specified.</li></ol></li>
+            <li>On the tablet, create a Kioware_Provision folder under the root directory and copy both the Kioware_Provision.xml and Kioware_Settings.xml to that directory.<ol style="list-style-type: lower-alpha;"><li>To create that folder, you can go to Settings / Storage / Other, ‘More’ in the top right, and then ‘Create folder.’ This process should create the folder in the root directory, under ‘Device storage.’ The new folder will be visible in the pane to the left. </li><li>You can copy those files by connecting the tablet to your computer with a micro-USB cable.</li></ol></li>
+            <li>Install KioWare on the tablet.<ol style="list-style-type: lower-alpha;"><li>If you are downloading the app file from KioWare’s website (rather than going through the Android app store), you should Go to 'Settings'/'Lock screen and security', and allow installation of apps from unknown sources.</li></ol></li>
+            <li>After successfully installing, set Kioware as your ‘Home’ app. There are two ways this might happen:<ol style="list-style-type: lower-alpha;"><li>The first time you press the Home button, you should see an option to set the home button as KioWare.</li><li>Or you can go to Settings/Applications/Default applications and set KioWare as the Home application.</li></ol></li>
+        </ol>
+        <p>When you download and install Kioware, we recommend the following settings:</p>
+        <ul>
+            <li><a href="#GeneralSettings">General Settings</a>
+            </li>
+            <li><a href="#BrowserSettings">Browser Settings</a>
+            </li>
+            <li><a href="#AttractInactivitySettings">Attract/Inactivity Settings</a>
+            </li>
+            <li><a href="#ToolbarSettings">Toolbar Settings</a>
+            </li>
+            <li><a href="#SecuritySettings">Security Settings</a>
+            </li>
+        </ul>
+        <h3><a name="GeneralSettings"></a>General Settings</h3>
+        <ol start="1">
+            <li>Start Page URL: Set this to the EMS Room Sign App URL. That is typically<code>&#160;http://your_web_server/EMSRoomSignApp</code>.</li>
+            <li>Start on Boot: Select this option so that the tablet will return to the EMS Room Sign App if is restarted. Users will not be able to access the home screen.</li>
+            <li>Screen Orientation: the EMS Room Sign App can be used in either portrait or landscape orientations.</li>
+            <li>Prevent Screen Sleep: Select 'Disable Screen Timer and Power Button' so that the EMS Room Sign App remains active on the screen.</li>
+        </ol>
+        <h3><a name="BrowserSettings"></a>Browser Settings</h3>
+        <ol start="1">
+            <li>Ensure 'Enable Browser Zoom' is checked. That is, zooming is enabled.
+        <ol style="list-style-type: lower-alpha;"><li>Other than this setting, you can use the default settings on this page.</li></ol></li>
+            <li>Enter the 'Browser Cache/Data' sub-menu. In this sub-menu, only the following options are selected:
+        <ol style="list-style-type: lower-alpha;"><li>Enable Cookies</li><li>Enable Application Cache (under HTML 5 Web Storage)</li><li>Clear HTML 5 Storage at Session End (under HTML 5 Web Storage)</li></ol></li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>It will be more difficult to upgrade the EMS&#160;Room Sign App if you select more options because KioWare will store old settings.</p>
+        </div>
+        <h3><a name="AttractInactivitySettings"></a>Attract/Inactivity Settings</h3>
+        <p>Set the 'Default Inactivity Timer' to 600 seconds.</p>
+        <h3><a name="ToolbarSettings"></a>Toolbar Settings</h3>
+        <ol start="1" class="number-list">
+            <li>Disable Action Bar, Progress Bar, Android Back Arrow, Home Button, and everything under the 'Standard Buttons' section</li>
+            <li>Enable 'Use Immersive Mode.' This option improves the full-screen browsing experience.</li>
+        </ol>
+        <h3><a name="SecuritySettings"></a>Security Settings</h3>
+        <ol start="1" class="number-list">
+            <li>Exit Passcode: set a 4-digit passcode.&#160;This&#160;code&#160;is used to exit&#160;the EMS Room Sign App (being run inside the KioWare kiosk app). When the EMS Room Sign App is running, tap the four corners of the screen starting in the top-left and going clockwise to the bottom left. You will then be able to enter the passcode.</li>
+            <li>Hide System Dialogs: Select this&#160;option.</li>
+            <li>Disable Status Bar: Select this option.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Kioware_Settings.xml file initially sets the exit passcode to 0000. To change this value, you will need to deploy KioWare to a single tablet, open Kioware Config, import the Kioware_Settings.xml file, change the passcode, and export the new settings file to use in your deployment.</p>
+        </div>
+        <h2><a name="OrientationViews"></a>Orientation Views for the EMS Room Sign App</h2>
+        <p>Starting in Update 12, the EMS Room Sign App can be mounted in either landscape or portrait mode.</p>
+        <ul class="unorder-list">
+            <li><strong>Landscape mode</strong> displays a timeline, and allows users to quickly see when a room is available. However, users will have to tap on a booking to view more information.</li>
+            <li><strong>Portrait mode </strong>displays an agenda view (see image below). Users will see what meetings are scheduled in the room for the day. However, they will not have a simple visual display of room availability. For this reason, admins might want to consider deploying portrait mode for rooms that are 'view-only.'</li>
+        </ul>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/C_UserGuide/RSA_UgDeployingonTablet_PortraitOrientation.png" class="padding_only" />
+            </p>
+            <p class="Caption">Agenda View Portrait Orientation&#160;</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/C_UserGuide/RSA_UgDeployingonTablet_LandscapeOrientation.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Timeline View Landscape Orientation</p>
+        </div>
+        <h2><a name="MountRSA"></a>Mount the EMS Room Sign App in an Enclosure</h2>
+        <p>Our customers typically place their EMS Room Sign App tablets in enclosures and mount them on walls. Mounting on drywall is fairly easy, but you will have to do some research if you want to mount on wood or glass.</p>
+        <p>You should also consider how to supply power to your tablets. Our customers typically choose enclosures that allow them to use PoE (Power over Ethernet) to provide power.</p>
+        <p>iPads can connect to networks only via wireless; Apple does <i>not</i> support connecting iPads to Ethernet cables.</p>
+        <p>Please consider the <a href="http://armoractive.com/" rel="external nofollow" target="_blank" title="http://armoractive.com/">ArmorActive</a> enclosures. In particular, ArmorActive offers an <a href="http://www.armoractive.com/products/optica-pro-LED-iPad-mini3.aspx" rel="external nofollow" target="_blank" title="http://www.armoractive.com/products/optica-pro-LED-iPad-mini3.aspx">enclosure for the iPad Mini</a>, which offers optional LED indicators that the EMS Room Sign App supports to indicate whether or not the room is available. ArmorActive also makes an <a href="http://www.armoractive.com/products/optica-pro-LED-plus-samsung-TabA.aspx" rel="external nofollow" target="_blank" title="http://www.armoractive.com/products/optica-pro-LED-plus-samsung-TabA.aspx">enclosure for the Samsung Tab A</a>, which we support and recommend. Contact your Account Executive for more information on these enclosures. </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To configure LED&#160;integration, set the parameter for your enclosure in the EMS&#160;Desktop Client on the global and/or profile level. This parameter can be set during profile configuration or at a global level to apply the setting across all profiles. </p>
+            <p><b>See Also:</b>&#160;<a href="../InstallationGuide/DeployRSAAppliances.htm">Deploy the EMS&#160;Room Sign App on Appliances</a>. </p>
+        </div>
+        <p><a href="Kioware/kioware_provision.xml">Kioware_Provision.xml </a>
+        </p>
+        <p><a href="Kioware/kwsettings.xml">KioWare_Settings.xml </a>
+        </p>
+    </body>
+</html>

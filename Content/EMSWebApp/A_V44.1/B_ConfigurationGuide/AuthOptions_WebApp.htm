@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Authentication Options for EMS Web App</h1>
+        <p>Authentication options for the EMS&#160;Web App include:</p>
+        <ul>
+            <li><a href="#Integrated">Integrated Windows Authentication</a>
+            </li>
+            <li><a href="#LDAP">LDAP</a>
+            </li>
+            <li><a href="#Portal">Portal Authentication</a>
+            </li>
+            <li><a href="#SAML">SAML&#160;Authentication</a>
+            </li>
+            <li><a href="../../../Authentication/EMSNativeAuthen.html">EMS&#160;Native Authentication</a>
+            </li>
+        </ul>
+        <p>Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p>
+        <ol>
+            <li><span class="ui">Login Credentials:</span> This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</li>
+            <li><span class="ui">Enabled by:</span> This is either a parameter or checkbox that needs to be enabled for the authentication to work.</li>
+            <li><span class="ui">Configuration Page:</span> This is where configuration and options are set for the authentication.</li>
+        </ol>
+        <h2><a name="Integrated"></a>Integrated Windows Authentication</h2>
+        <p>Integrated Windows Authentication (IWA) is a built-in Microsoft Internet Information Services (IIS) authentication protocol that can be used to automatically authenticate and sign-in a user to EMS Web App. Integrated Windows Authentication works only with Internet Explorer and is best used on intranets where all clients accessing EMS Web App are within a single domain.&#160;See Also:&#160;<a href="../../../Authentication/WindowsAuthen.html">Integrated Windows Authentication</a>.</p>
+        <ul class="unorder-list">
+            <li>Login Credentials: Network ID / External Reference in web user account settings (Either of these work).</li>
+            <li>Enabled by: Within IIS on the VEMS site, "Authentication" options, Windows Authentication enabled, Anonymous Authentication disabled.</li>
+            <li>Configuration Page: IIS "Authentication" options.</li>
+        </ul>
+        <h2><a name="LDAP"></a>LDAP</h2>
+        <p>Lightweight Directory Access Protocol (LDAP) is an application protocol for querying directory information. The LDAP Authentication method provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS Everyday applications, such as EMS Web App and EMS Mobile App.&#160;See Also:&#160;<a href="ConfigureLDAPMobileandWeb.html">LDAP&#160;Authentication</a>.</p>
+        <ul class="unorder-list">
+            <li>Login Credentials: Network ID / External Reference in web user account settings (This is specified by the "Field Used to Authenticate Web User" on the VEMS/EMS Web App Parameters&#160;tab).</li>
+            <li>Enabled by: ldapconfiguration.aspx page, "Authenticate users via LDAP?" checkbox (must be logged in with Web Admin security role and have Integrated Authentication in license).</li>
+            <li>Configuration Page: ldapconfiguration.aspx page (there are multiple tabs).</li>
+            <li>Other Notes: EMS LDAP License is required for this to work.&#160; The web server will need access to directory server for this to work.</li>
+        </ul>
+        <h2><a name="Portal"></a>Portal</h2>
+        <p>The Portal Authentication method provides EMS Web App single sign-on capability using your organization’s portal (e.g.,&#160;CAS, Shibboleth,&#160;SiteMinder, Plumtree, uPortal, etc.). When a user who is logged into your portal accesses EMS Web App, a predefined user-specific variable (e.g.,&#160;email address, employee/student ID, network ID, etc.) captured by your portal/sign-on page is compared against corresponding information recorded in the&#160;<span class="ui">Network ID</span>&#160;and/or&#160;<span class="ui">External Reference</span>&#160;fields of your EMS Everyday User records. If a match exists, the Everyday User will be automatically logged-into EMS Web App. See Also:&#160;<a href="../../../Authentication/PortalFederatedAuthen.html">Portal Federated&#160;Authentication</a>.</p>
+        <ul class="unorder-list">
+            <li>Login Credentials: Network ID / External Reference in web user account settings (this is specified by the "Field Used to Authenticate Web User" on the VEMS/EMS Web App&#160;parameters tab).</li>
+            <li>Enabled by: Always enabled; select the appropriate entry from&#160;the "Portal Authentication Method" on the VEMS/EMS Web App&#160;Parameters page.</li>
+            <li>Configuration Page: There are multiple different setup items in the VEMS/EMS Web App&#160;parameters under the "Authentication" area.</li>
+        </ul>
+        <h2><a name="SAML"></a>SAML</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>As of Update 23 (March 2018), SAML authentication for the EMS&#160;Web App is supported through EMS&#160;Platform Services. This is now the recommended method for configuring SAML.   See Also:&#160;<a href="../../../Authentication/SAMLAuthen.html#updateSAMLConfiguration">SAML&#160;Authentication</a>.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>Login Credentials:</li>
+            <li>Enabled by:</li>
+            <li>Configuration Page:</li>
+            <li>Other Notes:&#160;</li>
+        </ul>
+    </body>
+</html>

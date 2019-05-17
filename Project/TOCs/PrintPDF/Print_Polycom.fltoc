@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Integration to Polycom"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    Link="/Content/Print Only Topics/TitlePage_Polycom.htm"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_Introduction.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    PageNumberFormat="decimal">
+    <TocEntry
+      Title="Application Architecture"
+      Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_ApplicationArchitecture.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Requirements"
+      Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_Requirements.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Integration Diagram"
+      Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_IntegrationDiagram.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Obtain the Installation Files"
+    Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_ObtainInstallFiles.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Install the EMS Polycom Service For the First Time"
+    Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_InstallPolycomServiceFirstTime.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Install or Upgrade the EMS Polycom Service"
+    Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_InstallUpgradePolycomService.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Configure the EMS Polycom Interface"
+    Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_ConfigPolycomInterface.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Install the Polycom Activity DLL on Users' Machines"
+      Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_InstallPolycomActivityDLL.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Configure the EMS Polycom Rooms/Resources"
+      Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_ConfigurePolycomRoomsResources.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Advanced EMS Polycom Interface Configuration"
+      Link="/Content/OptionalFeatures/Polycom/V44.1/Polycom_AdvancedPolycomInterfaceConfig.html"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Print Only Topics/LastPage_Polycom.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same" />
+</CatapultToc>

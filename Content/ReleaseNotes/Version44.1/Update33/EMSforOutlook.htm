@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS for Outlook Release Notes <br />V44.1, Update 33</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" style="width: 241px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 234px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 123px;" />
+            <col class="TableStyle-Standard-Column-Regular" style="width: 215px;" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 33</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />TBD<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />TBD<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancement</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Create Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-05-03T13:47:19.0898458-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="may not go in U33; in Jira, fix version has been changed to &quot;none&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-03T13:47:19.8943846-06:00">Updated 'Text to append</MadCap:annotation> to EMS for Outlook meetings' parameter to send only one meeting invite on create</p>
+                        <p class="RNBody">Prior to this update, the <span class="ui">Text to append to EMS for Outlook meetings</span> parameter was causing two meeting invites to be sent when a reservation was created. Now, the parameter has been updated so that only one meeting invite is sent when a reservation is created. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-5591" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-5591</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Edit Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Editing a booking after new booking cutoff time triggered conflict resolution</p>
+                        <p class="RNBody">Editing a booking after the new booking cutoff time (specified in the process template) was triggering conflict resolution, and the conflict resolution page had no rooms available for the user to select. This issue was occurring for bookings edited from either Outlook or the EMS for Outlook add-in. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that conflict resolution is not triggered when users edit a booking after the new booking cutoff time. Now, when users edit a booking after the cutoff time, <MadCap:annotation MadCap:createDate="2019-04-17T12:37:43.0441418-06:00" MadCap:creator="megan.laub" MadCap:initials="ME" MadCap:comment="Does the error message appear for only the add-in, or does it also show if someone edits the booking through the Outlook Calendar (drag-and-drop).  " MadCap:editor="megan.laub" MadCap:editDate="2019-04-17T12:39:09.8890354-06:00">an error message about the cutoff time will be displayed</MadCap:annotation>. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-36" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-36</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-04-18T14:02:04.6485332-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Just missing in DTC, right? Does group information show in EMS for Outlook?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-18T14:08:04.5424477-06:00">Group information was missing when reservation was created in EMS for Outlook</MadCap:annotation>
+                        </p>
+                        <p class="RNBody">When creating a reservation in EMS&#160;for Outlook, the group information (such as email address and phone number)&#160;was missing when the reservation was viewed in EMS&#160;Desktop Client.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that when a user creates a reservation in EMS&#160;for Outlook, the group information is saved to the reservation and appears in EMS&#160;Desktop Client. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2142" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2142</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">XX</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-05-09T07:57:45.3189972-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Resolution was &quot;Non-Releasable/Complete.&quot; Should this be in the release notes?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-09T07:58:15.7535907-06:00">Templates</MadCap:annotation> do not follow booking rules  in EMS for Outlook</p>
+                        <p class="RNBody">XX</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that XX. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2154" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2154</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Room availability call was using local system time zone instead of Outlook time zone</p>
+                        <p class="RNBody">Because the room availability call was using the local system time zone instead of the Outlook time zone, the following issues were occurring depending on the time zone selected:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>Although the meeting time was in the past, EMS&#160;for Outlook was showing rooms available instead of displaying the message "Locations cannot be booked in the past." </p>
+                            </li>
+                            <li>
+                                <p>When the meeting time was not in the past, Schedule View was showing the message "Locations cannot be booked in the past."</p>
+                            </li>
+                            <li>
+                                <p>If users changed the time zone through Outlook &gt; File &gt; Options &gt; Time Zone and did not restart Outlook, the meetings created in EMS for Outlook would show the incorrect meeting time/date in the Outlook calendar and EMS&#160;Desktop Client. </p>
+                                <p>For example, if users changed the time zone from MT (Mountain Time)&#160;to EET (Eastern European Time)&#160;and booked a meeting 8:00 a.m. EET, the meeting would show in the Outlook calendar and Desktop Client at 5:00 p.m. EET. </p>
+                            </li>
+                        </ul>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the Outlook time zone is used for the room availability call, and the EMS&#160;for Outlook add-in functions properly with the selected time zone.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2161" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2161</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Edit Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Editing occurrence prevented additional edits</p>
+                        <p class="RNBody"> For recurring reservations, when users edited a single occurrence by adding a room and changing the time, the following issues occurred:</p>
+                        <ul class="RN-unorder-list">
+                            <li> <b>Standard templates:</b>&#160;After saving the occurrence, when users opened the occurrence again, the EMS&#160;for Outlook add-in did not show the added room on the <span class="ui">Selected Rooms</span> or <span class="ui">List View</span> tabs. On the <span class="ui">Schedule View</span> tab, the added room was shown, but there was no minus sign (-); therefore, users could not remove the room. Note that in EMS&#160;Desktop Client, the room was added correctly.</li>
+                            <li><b>Exchange-enabled templates with ERI rooms:</b> After adding a room and changing the time, when users saved the occurrence, they would be prompted for Conflict Resolution, even though there were no conflicts. If users tried updating the rooms through Conflict Resolution, the rooms would not be updated correctly. Also, the other occurrences in series would not show any scheduled rooms in the EMS&#160;for Outlook add-in. In EMS&#160;Desktop Client, the reservation would also be incorrect, such as all occurrences in the series moving to one day with multiple bookings.</li>
+                        </ul>
+                        <p class="RNBody"><b>Fix:</b>&#160;Restored functionality so that editing an occurrence does not prevent users from making additional edits and so that edits are correctly applied in both the EMS&#160;for Outlook add-in and EMS&#160;Desktop Client.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2172" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2172</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Recurring Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Recurrence pattern was not providing an accurate availability value when the recurrence spanned a Daylight Saving Time change</p>
+                        <p class="RNBody">If a recurring meeting spanned a Daylight Saving Time (DST) change, the recurrence pattern for the room did not provide an accurate availability value. The incorrect availability value allowed other users to view the room as available and book the room in conflict status. </p>
+                        <p class="RNBody"><span class="ui">For example:</span>&#160;A user schedules Meeting A at 10:00 a.m. in Room 10 on for March 8, March 15, and March 22. Later, another user tries to schedule Meeting B in Room 10 for the same time and dates; however, instead of Room 10 being unavailable for those dates/time, EMS&#160;for Outlook shows Room 10 as available for 2 out of 3 days. Note that DST&#160;was on March 10, which caused Room 10 to show as available on March 15 and March 22.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that EMS&#160;for Outlook provides an accurate availability value when a recurrence pattern spans a Daylight Saving Time change.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2259" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2259</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Create Reservations, Delegates</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">
+                            <MadCap:annotation MadCap:createDate="2019-05-03T13:46:02.9958228-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="may not go in U33; in Jira, fix version has been changed to &quot;none&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-03T13:46:26.3293226-06:00">Error message when</MadCap:annotation> creating a reservation as a delegate in EMS&#160;for Outlook</p>
+                        <p class="RNBody">In the EMS&#160;for Outlook add-in, some users were receiving an error message when they created meetings as delegates on another user's calendar. When these delegate users clicked on the EMS&#160;for Outlook add-in from within the meeting they were creating, they would receive an error message stating that they did not have access to book on behalf of the user. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that users can successfully create meetings on calendars for which they are delegates . </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2300" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2300</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Create Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Text being cut off for resource selection items</p>
+                        <p class="RNBody">In the EMS&#160;for Outlook add-in, the text was being cut off for resource selection items if the text was more than 23 characters. This issue made some selection items unreadable, and users were unable to determine which items to select for the resource.</p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that the text wraps to the next line, and the checkbox is centered with the resource selection item text. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://jira.accruent.com/browse/EMS-2323" title="For Internal Use Only" alt="For Internal Use Only" class="RNRefHyper">EMS-2323</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

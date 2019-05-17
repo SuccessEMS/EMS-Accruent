@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Kiosk App Release Notes <br />V44.1, Update 31.2</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 31.2</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />February 5, 2019</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.31002.443</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table.css');" cellspacing="0">
+            <col class="TableStyle-Border_table-Column-Column1" style="width: 216px;" />
+            <col class="TableStyle-Border_table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table-Head-Header1">
+                    <th class="TableStyle-Border_table-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table-Body-Body1">
+                    <td class="TableStyle-Border_table-BodyE-Column1-Body1" style="text-align: left;" rowspan="2">
+                        <p class="RNArea">Provisioning </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Unable to Provision EMS&#160;Kiosk App Under Certain Profiles Due to Amount of Room Diagrams</p>
+                        <p class="RNBody">When attempting to choose a profile, the profile modal page in the EMS&#160;Kiosk App kept spinning until it timed out if the profile contained a high number of room diagrams (more than 250).</p>
+                        <p class="RNBody"><b>Fix</b>:&#160;Modified functionality so that users can select a profile regardless of the number of room diagrams (more than 250).</p>
+                        <p class="RNRef">  Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42979&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42979</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table-Body-Body1">
+                    <td class="TableStyle-Border_table-BodyA-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Duplicate Platform API&#160;Requests on Provisioning and Re-authentication</p>
+                        <p class="RNBody">The EMS&#160;Kiosk App was executing each Platform API&#160;request twice during provisioning and re-authentication, resulting in long provisioning time and potentially timeout.</p>
+                        <p class="RNBody"><b>Fix</b>:&#160;Modified functionality so that the EMS&#160;Kiosk App executes Platform API&#160;calls correctly. </p>
+                        <p class="RNRef">  Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=423014&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43014</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configuring Domains V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Domains</h1>
+        <p>A <span class="italics">domain</span>&#160;is a level of organization within an institution that defines scheduling responsibility. Functions such as synchronizing, optimizing, and running reports are carried out on a per domain basis. When you configure your domain, you must identify the subjects that are offered in the domain and you must also specify the rooms that are controlled by the domain. The subjects that are defined within a domain determine the courses listed for the domain. The rooms that are defined within a domain determine all spaces that are potentially scheduled by the courses. Subjects can belong to only one domain. Rooms can belong to multiple domains.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The term domain is controlled by an EMS system parameter (Campus: Domain Title Singular and Campus: Domain Title Plural), and it is often changed to Campus or School to better describe how course scheduling is divided. See <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EditSysParam.htm">Edit System Parameters</a>.</p>
+        </div>
+        <h2>Configuring Domains</h2>
+        <ol class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Configuration </span>&gt; <span class="ui">Domains</span>.&#160;The Domains window opens. This window lists all the domains that are currently configured in your EMS database.<p><img border="0" src="../Images/V44.1_Config/ConfigDomain1.png" style="width: 584px; height: 273px;" class="resize80_noborder_padding" /></p></li>
+            <li>Click <strong>New</strong>.&#160;The Domain dialog box opens on the Domain tab.<p><img border="0" src="../Images/V44.1_Config/ConfigDomain2.png" style="width: 554px;height: 221px;" /></p></li>
+            <li>In the Description field, enter a name or description for the new domain.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The description can be a maximum of 50 characters, including spaces.</p></div></li>
+            <li>On the Cancel Status drop-down list, select the status that is to be used for canceling the room bookings in EMS when a course date is canceled in the SIS after publishing.</li>
+            <li>On the Cancel Reason drop-down list, select the reason that is to be used for cancellations after publishing.</li>
+            <li>Open the Rooms tab, and optionally do one or both of the following:<ul><li>On the Building drop-down list, select (all) buildings, or select a specific building.</li><li>On the Room type drop-down list, leave the value set to (all), or select a specific room type.<p>All rooms that meet your search criteria are displayed in the Available list.</p></li></ul></li>
+            <li>On the Available list, select the room (CTRL-click to select multiple rooms) that is to be&#160;controlled by the campus, and then Move (&gt;) to the Selected list.</li>
+            <li>Open the Subjects tab, and on the Available list, select the subject, or CTRL-click to select the multiple subjects that are offered by the campus, and then click the Move (&gt;) button to move the selected subjects to the Selected list.</li>
+            <li>Optionally, click <span class="ui">Spelling </span>to spell check the domain before you save it.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The Campus dialog box closes. You return to the Domains window the newly configured domain automatically selected.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <h1>Troubleshooting Skype for Business</h1>
+        <h2>Skype for Business in the EMS Web App</h2>
+        <p>If Skype for Business has been <a href="../Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html">properly configured</a>,  Everyday Users creating a reservation in the EMS&#160;Web App should see the <span class="ui">Add Skype to Reservation</span> toggle. </p>
+        <p>
+            <img src="../EMSWebApp/A_V44.1/C_UserGuide/Images/C_UserGuide/WA_SkypeforBusiness_Confirmation.png" class="resize80_border_and_padding" />
+        </p>
+        <p class="Caption">Skype for Business in the <MadCap:variable name="General.EMS&#160;Web App" /></p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>If you do not see this toggle, Skype for Business has not been properly configured and Skype for Business will not be added to the reservations made in the EMS&#160;Web App.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can ensure that Skype for Business has been successfully added to your reservation by navigating to <span class="ui">My Events</span> &gt;&#160;<span class="ui">Reservation Tasks</span> &gt; <span class="ui">Send Invitation</span> &gt; <span class="ui">Join Skype</span> link. <span class="ui">A Meeting ID</span>&#160;will also appear in the <span class="ui">Reservation Details</span> under Skype Meeting Info. <br /><img src="../Skype/Images/JoinSkype.PNG" style="width: 654px; height: 135px;" class="popup_with_padding_only" /><br /></p>
+        </div>
+        <h2>Troubleshooting Skype for Business Issues in the <MadCap:variable name="General.EMS&#160;Web App" /></h2>
+        <ol>
+            <li>
+                <p>Install and launch <a href="https://www.getpostman.com/docs/v6/postman/launching_postman/installation_and_updates">Postman</a>. </p>
+            </li>
+            <li>
+                <p>Start with the Autodiscover URL. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Every user exists in a Pool, which can be a physical server. In large organizations, users are typically grouped by region (e.g., Asia Pool, etc.). When troubleshooting, you must perform these steps within the Pool where the user exists. The purpose of Autodiscover URL&#160;is to determine the location of the Pool. </p>
+                </div>
+                <p>
+                    <img src="../Skype/Images/AutodiscoverURL.PNG" class="popup_with_padding_only" />
+                </p>
+                <p class="Caption">Autodiscover URL&#160;in Postman</p>
+            </li>
+            <li>
+                <p>Perform a GET&#160;request for the Autodiscover URL by clicking the <span class="ui">Send&#160;</span>button. In the <span class="ui">Body </span>section of Postman, a "<span class="ui" style="font-family: 'Courier New';">user href</span>"&#160;value will appear. This <span class="ui" style="font-family: 'Courier New';">user href</span> value provides the location of the user's Pool. </p>
+                <p>
+                    <img src="../Skype/Images/userhrefvalue.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Copy the user href value into a GET&#160;request using the Autodiscover OAuth. </p>
+            </li>
+            <li>
+                <p>A <span class="ui">401 Status</span> will appear. </p>
+                <p>
+                    <img src="../Skype/Images/headerssection401.png" class="popup_with_padding_only" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Skype AutoDiscover URL&#160;can change depend on where the request is made. Ensure requests are made from the client machine and the server to determine why they are communicating differently. Postman will allow you to isolate all interactions independent of EMS.</p>
+                </div>
+            </li>
+            <li>
+                <p>Navigate to the <span class="ui">Headers </span>section to view the authentication information. This information provides where to go to authenticate, as well as which authentication methods are available. The <span class="ui" style="font-family: 'Courier New';">grant_type</span> provides information on how Skype is configured to authenticate. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>This <span class="ui"><span style="font-family: 'Courier New';">grant_type</span></span> informs users on which <a href="../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#Conferencing">authentication method</a> they should be using. </p>
+                </div>
+            </li>
+            <li>
+                <p>Use the <b>www-authenticate URL</b>&#160;to authenticate as the user. Perform a POST&#160;request using this URL for the correct authentication method. </p>
+                <p>
+                    <img src="../Skype/Images/postrequest.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>This <span class="ui">POST&#160;</span>request will provide an access token. </p>
+            </li>
+            <li>
+                <p>Perform a <span class="ui">GET </span>call using the access token to receive a <span class="ui">200 OK&#160;status</span>.  </p>
+            </li>
+            <li>
+                <p>Navigate to the "<span class="ui" style="font-family: 'Courier New';">applications href</span>"&#160;URL. Copy and POST&#160;this URL&#160;into the <b>Create Application</b> section. </p>
+                <p>
+                    <img src="../Skype/Images/createapplication.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>A <span class="ui">201 Created status</span> should appear. </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>A <span class="ui">502 status </span>during this step reflects a Microsoft reverse proxy issue with Skype requests; a valid response has not been created. </p>
+                </div>
+            </li>
+            <li>
+                <p>Navigate to the "<span class="ui"><span style="font-family: 'Courier New';">startMessaging</span>"</span>&#160;URL. The ID&#160;number in the middle of the href identifies the application that has been created. </p>
+                <p>
+                    <img src="../Skype/Images/startmessaging.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Navigate to the <span class="ui">Create Meeting</span> section and POST the startMessaging URL. The Body information provides information on how the event was created in Skype. </p>
+                <p>
+                    <img src="../Skype/Images/bodyinfo.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Navigate back to EMS&#160;Web App and locate the conferencing ID. It should match the ID&#160;created during the Create Meeting above. </p>
+            </li>
+        </ol>
+        <h2>Skype-Related issues in the EMS&#160;Web App </h2>
+        <ol>
+            <li>
+                <p>Download and launch a browser tool that monitors network traffic. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>EMS&#160;recommends using <a href="https://www.rstudio.com/products/rpackages/devtools/">DevTools</a>. </p>
+                </div>
+            </li>
+            <li>
+                <p>In the EMS&#160;Web App, toggle the Add Skype to Reservation to On. </p>
+            </li>
+            <li>
+                <p>Navigate back to<span class="ui"> DevTools</span> &gt;&#160;<span class="ui">Network </span>section. </p>
+            </li>
+            <li>
+                <p>The Skype sign-in screen will appear. Enter your Sign-in address and Password.</p>
+                <p>
+                    <img src="../Skype/Images/DevTools.png" style="width: 712px;height: 250px;" />
+                </p>
+                <p><b>Important Log Components</b>
+                </p>
+                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <col style="width: 223px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Call</th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">IMPORTANCE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">SetConferencingAPIToken</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Most important call to check. Check <span class="ui">Request Payload</span> and ensure that the access token is the same. </p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If the tokens are the same, this means that the EMS&#160;Web App has successfully communicated with Skype for Business. If the token is not the same, the problem is guaranteed to be in the EMS&#160;Web App and proceed accordingly (e.g., check the URLs that AutoDiscover is providing). </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">XFrame.html</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">URL&#160;that Microsoft provides to circumvent browser security. Essential to navigating around cross domain calls. </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">?sipuri=</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">200 GET&#160;call that provides AutoDiscover URL.</td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">user?originalDomain=emsqa.net</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">401 GET&#160;call provides the user URL&#160;from AutoDiscover. </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">oauthtoken</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">Authentication call that provides the access token. </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2>Troubleshooting in EMS&#160;Platform Services </h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Once a reservation is created in the EMS&#160;Web App, reservation information is sent to EMS&#160;Platform Services.</p>
+        </div>
+        <ol>
+            <li>
+                <p>Begin troubleshooting by navigating to the <span class="ui">Logs </span>section of EMS&#160;Platform Services.</p>
+                <p>
+                    <img src="../Skype/Images/Logs.PNG" style="width: 455px; height: 361px;" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Check the Conferencing route in the <span class="ui">msg:&#160;</span>line. If this call does not exist in the Log, the EMS&#160;Web App did not communicating properly with EMS&#160;Platform Services when the reservation was created. </p>
+                <p>
+                    <img src="../Skype/Images/Logs2.PNG" style="width: 458px; height: 363px;" class="popup_with_padding_only" />
+                </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>If you do not see the Conferencing call below, check the Log for <span class="ui">Client Authentication </span>calls, as authentication is the first thing EMS&#160;Web App does. If there is an error with the Client Authentication, this is most likely a <a href="../Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html#Connect_EMS_Web_App_Platform_Services">Configuration</a> issue. The Secret will need to be reset and inserted into the web.config file. <br /><img src="../Skype/Images/Logs3.PNG" style="width: 328px; height: 252px;" class="popup_with_padding_only" /></p>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To troubleshoot further, view the <b>Log</b> in <a href="http://docs.splunk.com/Documentation/ES/5.1.1/Install/InstallEnterpriseSecurity">Splunk</a> and ensure there are no errors with the following items:<br /></p>
+                    <ul>
+                        <li>Client authentication call</li>
+                        <li>Access Token (ensure a token has been generated for the EMS&#160;Web App and authentication was successful with a 200 status)</li>
+                        <li>Conferencing route<br /></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>Export Log from EMS&#160;Platform Services. Navigate to the C Drive &gt; inetpub &gt; wwwroot &gt; EMSPlatformServices (for a standard installation). </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>For other installations, you may need to navigate to C Drive &gt;&#160;Program Data &gt; EMS&#160;Software, LLC &gt;&#160;EMS.Platform.Api. </p>
+                </div>
+            </li>
+            <li>
+                <p>Changes may need to be made in default.json or web.config files. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Depending on client configuration, the Web.config may be used to override changes made in the default.json. </p>
+                </div>
+            </li>
+            <li>
+                <p>Navigate to the <span class="ui">logLevel </span>in the default.json file.</p>
+            </li>
+            <li>
+                <p>Set the logLevel to "<span style="font-family: 'Courier New';">DEBUG</span>." When DEBUG&#160;is configured, the log will write a lot of data. </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>Only use DEBUG&#160;when testing; turn DEBUG&#160;off when not testing. </p>
+                </div>
+                <p>
+                    <img src="../Skype/Images/Logs4.PNG" style="width: 521px;height: 245px;" />
+                </p>
+            </li>
+            <li>
+                <p>Restart the application so that the new <span class="ui">logLevel </span>is picked up. </p>
+            </li>
+            <li>
+                <p>Create a reservation in the EMS&#160;Web App and add Skype for Business. </p>
+            </li>
+            <li>
+                <p>Go back to the <span class="ui">Log </span>and search for the <span class="ui">Conferencing </span>route with the most recent time stamp. If this Conferencing route failed, you will be provided with Debug-level log information. </p>
+            </li>
+        </ol>
+    </body>
+</html>

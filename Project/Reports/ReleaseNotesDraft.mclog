@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MadCapLog Protocol="2" Description="MadCap Flare 2018 Generated PDF/ReleaseNotesDraft.fltar" Date="2019-03-21T17:00:11.4892089-06:00">
+    <Messages>Compiling target ReleaseNotesDraft...
+Checking Word version...
+Removing previously generated content...
+Gathering Glossary information...
+Gathering Auto-index information...
+Loading Master TOC...
+Processing Master TOC...
+Generating Glossary...
+Processing Page Layouts...
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\Resources\Images\title_logowhite.png
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\Resources\Images\title_logowhite.png
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\Resources\Images\title_logowhite.png
+Collecting source files...
+Processing source files...
+Processing topic: TitlePage_PreviewReleaseNotes.htm
+Processing topic: TOC.htm
+A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word.
+Processing topic: EMSDesktopClient.htm
+Processing topic: EMSWebApp.htm
+Link points outside project file:///C:/Users/megan.laub/Documents/My Projects/Success29/Content/EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm
+Processing topic: EMSforOutlook.htm
+Processing topic: EMSRoomSignApp.htm
+Processing topic: EMSKioskApp.htm
+Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information.
+Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information.
+Processing topic: EMSServicesComponents.htm
+Processing topic: EMSPlatformServices.htm
+Processing topic: LastPage_PreviewReleaseNotes.htm
+Generating final output...
+Patching links and page references...
+Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\Success29\Content\EMSDesktopClient\V44.1\ConfigurationGuide\EMSEverydayUserApplicationsParameters.htm. File may not be included in the output.
+Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\EMSRoomSignApp\44.1\ConfigurationGuide\GlobalSettings.html. File may not be included in the output.
+Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\EMSKioskApp\V44.1\InstallationGuide\SysReqPrereq.htm. File may not be included in the output.
+Saving word output...
+Generated ReleaseNotesDraft.doc
+Saving result set...
+Output generated in 27 second(s).
+
+Done
+Saving log to "C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Project\Reports\ReleaseNotesDraft.mclog"
+</Messages>
+    <Warnings>
+        <LogEntry File="../../Content/Resources/PageLayouts/LandscapeMulti Page_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesDraft" ErrorID="10001" />
+        <LogEntry File="../../Content/Resources/PageLayouts/Multi Page_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesDraft" ErrorID="10001" />
+        <LogEntry File="../../Content/Resources/PageLayouts/One Pager_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesDraft" ErrorID="10001" />
+        <LogEntry File="Multi Page_Letter.flpgl" Message="A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesDraft" ErrorID="110020" />
+        <LogEntry File="../../Content/ReleaseNotes/Version44.1/Update32/EMSWebApp.htm" Message="Link points outside project file:///C:/Users/megan.laub/Documents/My Projects/Success29/Content/EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesDraft" ErrorID="10056" />
+        <LogEntry File="../../Content/ReleaseNotes/Version44.1/Update32/EMSKioskApp.htm" Message="Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesDraft" ErrorID="110003" />
+        <LogEntry File="../../Content/ReleaseNotes/Version44.1/Update32/EMSKioskApp.htm" Message="Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesDraft" ErrorID="110003" />
+        <LogEntry File="../../../Success29/Content/EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm" Message="Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\Success29\Content\EMSDesktopClient\V44.1\ConfigurationGuide\EMSEverydayUserApplicationsParameters.htm. File may not be included in the output." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesDraft" ErrorID="40017" />
+        <LogEntry File="../../Content/EMSRoomSignApp/44.1/ConfigurationGuide/GlobalSettings.html" Message="Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\EMSRoomSignApp\44.1\ConfigurationGuide\GlobalSettings.html. File may not be included in the output." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesDraft" ErrorID="40017" />
+        <LogEntry File="../../Content/EMSKioskApp/V44.1/InstallationGuide/SysReqPrereq.htm" Message="Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite3\Content\EMSKioskApp\V44.1\InstallationGuide\SysReqPrereq.htm. File may not be included in the output." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesDraft" ErrorID="40017" />
+    </Warnings>
+    <Errors />
+</MadCapLog>

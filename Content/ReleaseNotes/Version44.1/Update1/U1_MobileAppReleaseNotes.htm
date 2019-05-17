@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Mobile Release Notes <br />V44.1, Update 1</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>.</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Simple.css');margin-left: 0;margin-right: auto;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+            <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+            <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+            <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+            <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                    <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1">V44.1, Update 1	</td>
+                    <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1">Release Date: <br />July 20, 2016</td>
+                    <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1">	Patch #: <br />2016.07.20.1</td>
+                    <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1">
+                        <p>	EMS Mobile App
+#:&#160;<br />44.1.288</p>
+                        <p>EMS Mobile App API	#:&#160;<br />44.1.146.0</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 134px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Android Only Issues</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Android: Calendar Shows Past Bookings</p>
+                        <p class="RNBody">Calendar view incorrectly showed past events by default.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the calendar to hide past events until selected by the user.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Android: Closing App Without Sign Out Causes Crash</p>
+                        <p class="RNBody">When users left the app and then reopened it and clicked Next Meeting, the app crashed.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when the device loses focus on the app, further user interactions are successful and clicking Next Meeting no longer causes a crash.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Android: Events With Terms and Conditions Missing Images</p>
+                        <p class="RNBody">When users created reservations that had Terms and Conditions with an image, the image was not displaying on Android devices.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that when Terms and Conditions for a reservation includes an image, it properly displays on all supported devices including Androids.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Android: QR Code Scan Unreliable</p>
+                        <p class="RNBody">When users scanned QR codes, they had to scan at least three times to successfully reach the Create Reservation or Room Schedule page.&#160;Room Details did not always present.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified QR code functionality to ensure successful scan and interaction on the first attempt.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Browse Locations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Browse Locations Incorrectly Displays "There are no bookings for this room" Message</p>
+                        <p class="RNBody">When booking a room that has future bookings, the message "There are no bookings for this room" incorrectly appeared before the list of events for that room displayed.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality so that this message only displays if there are no events for the room.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Browse Locations Page: Filter Display Issues</p>
+                        <ul class="RN-unorder-list">
+                            <li>Browse Locations &gt; Save&#160;Filters;&#160;When browsing locations and saving a filter, the display incorrectly loaded Event filters as well Location filters.</li>
+                            <li>Browse Locations &gt; Add Filter;&#160;When adding more filters to the saved filters by selecting a location from the dropdown, the Add Filter button became unavailable.</li>
+                            <li>Browse Events &gt; Edit Filter;&#160;When editing a filter on "Your Filters" and then advancing to the Browse Events screen, the filter is incorrectly set to "All".</li>
+                        </ul>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the Browse Locations page&#160;so&#160;that only Location filters display when users view Saved Filters, and the Save Filter button remains available is always available.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Browse Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Calendar List View Does Not Show Selected Week</p>
+                        <p class="RNBody">When users browsed events and changed the view to a new week, the list view did not refresh to show the events for that week. This only occurred the first time the user moved to a new week. Additionally, if the user scrolled to "Now" in the calendar view, it displayed two weeks rather than one.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the Browse Events&#160;page&#160;so&#160;that it lists events for the one week the user specifies.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="13" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">General User Interface Issues</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Booking Conflicts Not Alerting Users</p>
+                        <p class="RNBody">When users attempted to book events (using a favorite room)&#160;that conflicted with existing events, they did not get alerted about the conflict nor did the conflict result in any notifications (per booking template settings). During the booking process, EMS Mobile App gave them the impression that they had successfully booked the event.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to properly inform users when they are booking an event in conflict with an onscreen alert,&#160;plus a notification if specified by the booking template.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Booking Details Display Cropped</p>
+                        <p class="RNBody">The scroll view height did not fill its parent container, causing information to appear to be cut off.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the display to ensure that users can view all information and scroll when needed.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Building Hyperlinks in About This Location Not Clickable&#160;</p>
+                        <p class="RNBody">When a valid URL is configured on a building, the URL was not clickable from&#160;Browse Locations under the building's About This Location page.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Changed the About This Location page so that clicking on valid building URLs successfully directs users to the mobile device's native browser and launches the referenced webpage.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Building Name Missing From EMS for Outlook Bookings</p>
+                        <p class="RNBody">Edit Booking Made in EMS for Outlook;&#160;When users edited bookings that had been made in EMS for Outlook, the building name no longer displayed in the booking details on EMS for Outlook.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the Booking Details&#160;page&#160;so&#160;that the building name remains visible in EMS for Outlook after EMS Mobile App edits are made.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">EMS Logo Cropped on Forgot Your Password Screen&#160;</p>
+                        <p class="RNBody">The EMS logo was cropped.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the display to properly display the EMS logo.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Entries in Mobile API URL Field Deleted When Device Sleeps</p>
+                        <p class="RNBody">When installing EMS Mobile App and entering the Mobile API URL, users' entries in this field were incorrectly deleted when the device went to sleep and was then awakened.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality to save user entries in this field when the device enters sleep mode.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Evening Bookings Show as Next-Day in EMS Desktop Client&#160;</p>
+                        <p class="RNBody">Bookings set in the evening sometimes displayed incorrectly&#160;in the EMS Desktop Client Reservation Book as "Next-Day".</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that evening bookings do not display as next day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Events Not Listed When Returning to Home Screen&#160;</p>
+                        <p class="RNBody">When users were working in EMS Mobile App and&#160;they pressed the Home key on the mobile device to return to the EMS Mobile App home screen, their events were not properly listed on that screen. This could also occur if they navigated away from EMS Mobile App&#160;or shut off the device screen altogether and then later&#160;unlocked the device and returned to EMS Mobile App.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that upon returning to the Home screen of EMS Mobile App, users will see their events properly listed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Location Names in Browse Locations Cut Off&#160;</p>
+                        <p class="RNBody">Location names were incorrectly cut off.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the Browse Locations page to display complete location names.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Lookup Fields Cut Off&#160;</p>
+                        <p class="RNBody">When expanding any lookup field (Rooms, Groups, Contacts, etc.), the bottom of these dropdown lists were incorrectly cut off.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified these fields to properly display all field options in the dropdown.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Past Events Not Listed After Viewing Booking Details</p>
+                        <p class="RNBody">When users opened a reservation, advanced to view a single booking's details, and then clicked the Back button to return to the reservation, past bookings were no longer listed.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that when users navigated to a booking details screen and then retreated to view the parent reservation, past bookings are properly listed if available.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Required Field Indicator Missing for Some Booking Templates</p>
+                        <p class="RNBody">For some booking templates, the required field indicator (red asterisk) was incorrectly black.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Changed the indicator to red.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Search Option Not Closing Correctly</p>
+                        <p class="RNBody">When searching for an event and opening the event details, the search modal did not close properly and obfuscated the event details window.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Changed the search modal to close properly once the user selects the event details.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="3" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Edit Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Edit Booking Not Validating Time Zone</p>
+                        <p class="RNBody">When users changed event times on existing bookings, the following error message occurred:&#160;"The date(s) you requested violates your first allowed booking date."</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified validations to properly check the time zone and allow the Edit Booking&#160;so the error no longer occurs.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">New Bookings from Room Details Defaulting to Incorrect Start Time</p>
+                        <p class="RNBody">When users began a new booking from the Room Details calendar view, the event start time was incorrectly set to the first available time, when it should have been set to the next hour from "now."</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality to ensure that event start time in this situation properly defaults the next hour from "now."</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">PAM_AllowCriticalBookingChanges Parameter Ignored</p>
+                        <p class="RNBody">When users attempted to make critical edits to a booking in environments that had this parameter activated, they were unable to click the Edit button as expected.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality to ensure that when this parameter is set, the Edit button remains available so users can make critical booking changes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="3" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Crash Issues</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Numerous Screen Clicks Cause Crash</p>
+                        <p class="RNBody">When users clicked many times on screen items such as "+" or the "Book Now" button next to a template, EMS Mobile App could crash with the&#160;error "unfortunately, EMS has stopped" or "EMS isn't responding".</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when users click too many times on a screen item, EMS Mobile App continues to function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Picking Unassigned Groups During Booking Causes Crash</p>
+                        <p class="RNBody">When making a new reservation using a template that allows Group lookup, when users added a group to the reservation that was not assigned to their user profile, EMS Mobile App could crash.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality to ensure that EMS Mobile App does not crash during Group lookup and furthermore, assigns the Group to the user's profile (when enabled).&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Saving Filters Causes Crash</p>
+                        <p class="RNBody">Clicking on the Save Filters button prematurely (while locations are still loading)&#160;could produce the error,&#160;</p>
+                        <div class="indent_3em">
+                            <p class="RNBody">"Unfortunately, EMS has stopped"</p>
+                        </div>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality to prevent the Save Filters button from becoming available until locations are loaded, thus preventing the error.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Mobile App Store</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">URL for EMS Mobile App Needs Update</p>
+                        <p class="RNBody">The default URL for the EMS Mobile App needed to be updated to: <br /><a href="https://itunes.apple.com/app/ems-mobile-app/id1126083021" class="a_4">https://itunes.apple.com/app/ems-mobile-app/id1126083021</a></p>
+                        <p class="RNBody">Updated the URL to: <br /><a href="https://itunes.apple.com/app/ems-mobile-app/id1126083021" class="a_4">https://itunes.apple.com/app/ems-mobile-app/id1126083021</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

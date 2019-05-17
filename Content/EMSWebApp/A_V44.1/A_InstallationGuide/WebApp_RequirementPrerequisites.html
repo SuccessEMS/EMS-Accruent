@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Requirements and Prerequisites</title>
+    </head>
+    <body>
+        <h1>Prerequisites and Requirements</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Existing versions of EMS Web App must be manually uninstalled. <span class="ui">Please make sure to copy-off and save any files that have been customized.</span></p>
+        </div>
+        <p>The following information is necessary to successfully install the EMS&#160;Web App:</p>
+        <ul>
+            <li><a href="#Prerequisites">Prerequisites</a>
+            </li>
+            <li><a href="#EMSDatabaseServer">EMS&#160;Database Server Requirements</a>
+            </li>
+            <li><a href="#EMSWebServer">EMS&#160;Web Server Requirements</a>
+            </li>
+            <li><a href="#EMSWebAppReqs">EMS&#160;Web App Requirements</a>
+            </li>
+            <li><a href="#EMSWebAppReqs">EMS&#160;Web App (Mobile)&#160;Requirements</a>
+            </li>
+        </ul>
+        <h2><a name="Prerequisites"></a>Prerequisites</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Beginning with <a href="../../../ReleaseNotes/Version44.1/Update31/EMSWebApp.htm">Update 31</a>, EMS&#160;Platform Services is a prerequisite for installing and using the EMS&#160;Web App. If EMS&#160;Platform Services has not yet been <a href="../../../EMSPlatformServices/InstallationGuide/InstallPS.html">installed</a> in your environment, validate the <a href="../../../EMS_SystemReq_44.1.html#EMSPlatformServices">hardware and software requirements for EMS&#160;Platform Services</a>. </p>
+            <p>If your organization uses the EMS&#160;Mobile App, EMS&#160;Kiosk App, Google Integration, EMS&#160;for Outlook, or SAML authentication, then EMS&#160;Platform Services is already running in your environment.</p>
+        </div>
+        <ol>
+            <li>Before beginning the installation process, please install or upgrade your EMS databases as outlined in the&#160;<a href="WebApp_InstallUpgradetoWebApp.html">EMS Web App (V44.1) Installation Guide</a>.</li>
+            <li>Installation will prompt you to enter a web server. Special setup guides are available for&#160;<a href="WebApp_WinWebServGuide2008R2.htm">Windows Server 2008/2008 R2 Web Server Setup Guide</a>&#160;and&#160;<a href="WebApp_WinWebServGuide2012R.htm">Windows Server 2012/2012 R2 Web Server Setup Guide</a>.&#160;&#160;</li>
+            <li>If using Update 31 or above, <a href="../../../EMSPlatformServices/InstallationGuide/InstallPS.html">install EMS&#160;Platform Services</a> and <a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#ConnectWebApptoPlatformServices">connect EMS&#160;Web App to EMS&#160;Platform Services</a>. </li>
+        </ol>
+        <h2><a name="EMSDatabaseServer"></a>EMS Database Server Requirements</h2>
+        <MadCap:snippetBlock src="../../../EMS44.1SystemReq_DatabaseServer.flsnp" />
+        <h2><a name="EMSWebServer"></a>EMS Web Server Requirements</h2>
+        <MadCap:snippetBlock src="../../../EMS44.1SystemReq_EMSWebServer.flsnp" />
+        <h2><a name="EMSWebAppReqs"></a>EMS&#160;Web App&#160;Requirements&#160;</h2>
+        <MadCap:snippetBlock src="../../../EMS44.1SystemReq_WebApp.flsnp" />
+    </body>
+</html>

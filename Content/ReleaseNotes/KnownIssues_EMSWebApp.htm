@@ -1,0 +1,1622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="18193" MadCap:lastWidth="864" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Web App Known Issues V44.1</title>
+    </head>
+    <body>
+        <h1>EMS&#160;Web App <br />Known Issues</h1>
+        <p>
+            <MadCap:concept term="V44.1" />EMS Known Issues for the EMS&#160;Web App are organized by Update.  See Also:&#160;<a href="#Contact_Customer_Support">Contact Customer Support</a>.</p>
+        <ul>
+            <li><a href="#Update23">V44.1, Update 23</a>
+            </li>
+            <li><a href="#Update22">V44.1, Update 22</a>
+            </li>
+            <li><a href="#Update21">V44.1, Update 21</a>
+            </li>
+            <li><a href="#Update20">V44.1, Update 20</a>
+            </li>
+            <li><a href="#Update19">V44.1, Update 19</a>
+            </li>
+            <li><a href="#Update18">V44.1, Update 18</a>
+            </li>
+            <li><a href="#Update17">V44.1, Update 17</a>
+            </li>
+            <li><a href="#Update16">V44.1, Update 16</a>
+            </li>
+            <li><a href="#Update15">V44.1, Update 15</a>
+            </li>
+            <li><a href="#Update14">V44.1, Update 14</a>
+            </li>
+            <li><a href="#Update13">V44.1, Update 13</a>
+            </li>
+            <li><a href="#Update12">V44.1, Update 12</a>
+            </li>
+            <li><a href="#Update11">V44.1, Update 11.1</a>
+            </li>
+            <li><a href="#Update10">V44.1, Update 10</a>
+            </li>
+            <li><a href="#Update9">V44.1, Update 9</a>
+            </li>
+            <li><a href="#Update8">V44.1, Update 8</a>
+            </li>
+            <li><a href="#Update7">V44.1, Update 7</a>
+            </li>
+        </ul>
+        <p><a name="Update23"></a><span style="font-size: 26pt;"><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update23" style="font-size: 24pt;">Update 23</a><span style="font-size: 26pt;"><span style="font-size: 24pt;">*</span></span>
+        </p>
+        <table style="margin-left: 0;margin-right: auto;width: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 585px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">EMS Web App, when viewed on a mobile device, displays the EMS Mobile App download banner if either or both of the following parameters contain the default sample/starter values:&#160;</p>
+                        <ul class="unorder-list">
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; EveryDay User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the app store</li>
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; EveryDay User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the play store</li>
+                        </ul>
+                        <p>The value fields for the parameters listed above may appear blank because the EMS&#160;Desktop Client ships with default sample/starter URLs&#160;in the description fields that do not display in the parameter value list until the parameters are opened and closed.  
+Although the parameter value fields appear blank, the system recognizes the default URLs and displays the banner.
+
+</p>
+                        <p class="beforelist"><span class="ui">Workaround:</span> Use the following workaround to address this issue. </p>
+                        <ol class="number-list">
+                            <li>In the EMS&#160;Desktop Client, go to <span class="ui">System Administration</span> &gt; <span class="ui">Settings</span> &gt; <span class="ui">Parameters</span> &gt; <span class="ui">EveryDay User Applications</span> tab.  
+</li>
+                            <li>From the <span class="ui">Mobile-Specific</span> area, select the parameter <span class="ui">URL for EMS Mobile App in the app store</span> and click <span class="ui">Edit</span>.</li>
+                            <li>
+Delete the value entry and click <span class="ui">OK</span>.
+</li>
+                            <li>Repeat steps 1–3 for the parameter <span class="ui">URL&#160;for EMS&#160;Mobile App in the play store</span>.</li>
+                            <li>From the EMS&#160;Web App Admin Functions page, clear the cache (multiple times  on a load-balanced environment).
+</li>
+                            <li>Access the EMS&#160;Web App on a mobile device and verify that the EMS Mobile App download banner no longer displays.
+</li>
+                        </ol>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="InternalRef"><a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=36860" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36860</a>
+                            <br />EMS&#160;Internal Use Only</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 style="font-size: 24pt;"><a name="Update22"></a><span style="font-size: 26pt;"><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update22" style="font-size: 24pt;">Update 22</a><span style="font-size: 26pt;"><span style="font-size: 24pt;">*</span></span>
+        </h2>
+        <table style="margin-left: 0;margin-right: auto;width: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 585px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">EMS Web App, when viewed on a mobile device, displays the EMS Mobile App download banner if either or both of the following parameters are blank:&#160;</p>
+                        <ul class="unorder-list">
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; EveryDay User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the app store</li>
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; EveryDay User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the play store</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="InternalRef"><a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=36860" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36860</a>
+                            <br />Internal Use Only</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 style="font-size: 24pt;"><a name="Update21"></a><span style="font-size: 26pt;"><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update21" style="font-size: 24pt;">Update 21</a><span style="font-size: 26pt;"><span style="font-size: 24pt;">*</span></span>
+        </h2>
+        <table style="margin-left: 0;margin-right: auto;width: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 585px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">EMS Web App, when viewed on a mobile device, displays the EMS Mobile App download banner if either or both of the following parameters are blank:&#160;</p>
+                        <ul class="unorder-list">
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; EveryDay User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the app store</li>
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; EveryDay User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the play store</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="InternalRef"><a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=36860" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36860</a>
+                            <br />Internal Use Only</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 style="font-size: 24pt;"> <a name="Update20"></a><span style="font-size: 26pt;"><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update20" style="font-size: 24pt;">Update 20</a><span style="font-size: 26pt;"><span style="font-size: 24pt;">*</span></span></h2>
+        <table style="margin-left: 0;margin-right: auto;width: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 585px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>EMS Web App crashes after trying to go over the Max No Bookings Per Reservation on Exchange.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=26920" title="For EMS Internal Use Only" alt="For EMS Internal Use Only">26920</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update19"></a><span style="font-size: 26pt;"><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update19" style="font-size: 24pt;">Update 19</a><span style="font-size: 26pt;"><span style="font-size: 24pt;">*</span></span>
+        </h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 584px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>EMS Web App crashes after trying to go over the Max No Bookings Per Reservation on Exchange.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=26920" title="For EMS Internal Use Only" alt="For EMS Internal Use Only">26920</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update18"></a><span style="font-size: 26pt;"><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update18.0" style="font-size: 24pt;">Update 18</a><span style="font-size: 26pt;"><span style="font-size: 24pt;">*</span></span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 595px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_9">Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_9">EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_9">EMS Web App crashes after trying to go over the Max No Bookings Per Reservation on Exchange.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" class="a_5">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_9">Show second contact not functioning on Guest Request (unauthenticated user).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" class="a_5">30686</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_9">Join Online Meeting link is missed in the invitation email after adding attendee.&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" class="a_5">30957</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update17"></a><span><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update17.0" style="font-size: 24pt;">Update 17</a><span><span style="font-size: 24pt;">*</span></span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 622px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_98">Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_98">EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_9">EMS Web App crashes after trying to go over the Max No Bookings Per Reservation on Exchange.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" class="a_5">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_9">Show second contact not functioning on Guest Request (unauthenticated user).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" class="a_5">30686</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_9">Join Online Meeting link is missed in the invitation email after adding attendee.&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" class="a_5">30957</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update16"></a><span><span style="font-size: 24pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update16.0" style="font-size: 24pt;">Update 16</a><span><span style="font-size: 24pt;">*</span></span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_94">Issues&#160;</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_94">EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_9">EMS Web App crashes after trying to go over the Max No Bookings Per Reservation on Exchange.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" class="a_16">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_9">Show second contact not functioning on Guest Request (unauthenticated user).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" class="a_16">30686</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_9">Join Online Meeting link is missed in the invitation email after adding attendee.&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" class="a_16">30957</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update15"></a><span style="font-size: 24pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update15" style="font-size: 24pt;">Update 15</a><span style="font-size: 24pt;">*</span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 612px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_96">Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_96">EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">When saving HTML code in edit text mode, there is code being removed.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=20003" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=20003" class="a_5">20003</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_31">Remove icon is missing on Edit Video Conference Booking page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26017" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26017" class="a_5">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_31">When Editing a Booking, adding a location with new Start/End Time reverts to old Start/End Time.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28808" class="a_5">28808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_31">Exceeding “Max No Bookings per Reservation” on Exchange causes the system to crash.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" class="a_5">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_31">Resources incorrectly added when inventory is exceeded. &#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16424" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16424" class="a_5">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_31">"Join Online Meeting" link is missed in the invitation email after adding attendee</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" class="a_5">30957</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_31">Displayed Floor Plan selectors do not update when using manual search through Find a Room Filter.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30985" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30985" class="a_5">30985</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="p_28">Second contact is not available for the Unauthenticated Guest Request Form.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" class="a_5">30686</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update14"></a><span style="font-size: 24pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update14" style="font-size: 24pt;">Update 14</a><span style="font-size: 24pt;">*</span>
+        </h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 595px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 162px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Updated Google Chrome&#160;with EMS Web App Removes Add Services Button on Existing Resources*<br />*If experiencing this issue, please contact Customer Support.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=32064" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=32064" class="Hyperlink">32064</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Remove icon is missing on Edit Video Conference Booking page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26017" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26017" class="Hyperlink">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Ampersand (&amp;) symbol displays incorrectly for Categories on Service Availability page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28054" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28054" class="Hyperlink">28054</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Adding a location with new Start/End Time incorrectly reverted to old Start/End Time.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28808" class="Hyperlink">28808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Canceling bookings under a reservation prevents addition of services for remaining booking.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26806" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26806" class="Hyperlink">26806</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Exceeding “Max No Bookings per Reservation” on Exchange causes the system to crash.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" class="Hyperlink">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>“Default Value for Attendance” setting not observed.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27536" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27536" class="Hyperlink">27536</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Resources incorrectly added when inventory is exceeded. &#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16424" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16424" class="Hyperlink">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>"Join Online Meeting" link is missed in the invitation email after adding attendee</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" class="Hyperlink">30957</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>User is able to select a Floor Plan from another building after manually searching.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30985" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30985" class="Hyperlink">30985</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Second contact is not functioning for unauthenticated users.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30686" class="Hyperlink">30686</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Users receive errors when attempting to edit a booking time after initially clearing the End Time field.&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31395" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31395" class="Hyperlink">31395</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Viewing a large number of events through the Browse Events page can cause the page to stop responding.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=32015" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=32015" class="Hyperlink">32015</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update13"></a><span style="font-size: 24pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update13" style="font-size: 24pt;">Update 13</a><span style="font-size: 24pt;">*</span>
+        </h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 608px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Remove icon is missing on Edit Video Conference Booking page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26017" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26017" class="Hyperlink">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ampersand (&amp;) symbol displays incorrectly for Categories on Service Availability page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28054" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28054" class="Hyperlink">28054</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Adding a location with new Start/End Time incorrectly reverted to old Start/End Time.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28808" class="Hyperlink">28808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Canceling bookings under a reservation prevents addition of services for remaining booking.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26806" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26806" class="Hyperlink">26806</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Editing a booking incorrectly changes setup and teardown times.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26808" class="Hyperlink">26808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Exceeding “Max No Bookings per Reservation” on Exchange causes the system to crash.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26920" class="Hyperlink">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Start/End times set in Browse Locations not carried over to Room Request page when using a template without set times.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27195" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27195" class="Hyperlink">27195</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>“Default Value for Attendance” setting not observed.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27536" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27536" class="Hyperlink">27536</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Editing booking under a confirmed reservation incorrectly reverts room status to Requested.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27551" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27551" class="Hyperlink">27551</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event date format incorrect on Event Details page on browsers using European date format.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27970" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27970" class="Hyperlink">27970</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Resources incorrectly added when inventory is exceeded. &#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16424" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16424" class="Hyperlink">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>"Join Online Meeting" link is missed in the invitation email after adding attendee</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30957" class="Hyperlink">30957</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>User is able to select a Floor Plan from another building after manually searching.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30985" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30985" class="Hyperlink">30985</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update12"></a><span style="font-size: 24pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update12" style="font-size: 24pt;">Update 12</a><span style="font-size: 24pt;">*</span>
+        </h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 566px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 182px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Unable to switch Skype toggle after adding room (Mobile Web).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30949" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30949">30949</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Remove icon is missing on Edit Video Conference Booking page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26017" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26017" class="Hyperlink">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>"Allow Everyday User Authentication" checkbox in Web App Settings Should be Disabled&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31091" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31091" class="Hyperlink">31091</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ampersand symbol displays incorrectly for Categories on Service Availability page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28054" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28054" class="Hyperlink">28054</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Adding a location with new Start/End Time incorrectly reverted to old Start/End Time.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28808" class="Hyperlink">28808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Canceling bookings under a reservation prevents addition of services for remaining booking.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26806" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26806" class="Hyperlink">26806</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Editing a booking incorrectly changes setup and teardown times.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26808" class="Hyperlink">26808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Exceeding “Max No Bookings per Reservation” on Exchange causes the system to crash.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26920" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26920" class="Hyperlink">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Start/End times set in Browse Locations not carried over to Room Request page when using a template without set times.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27195" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27195" class="Hyperlink">27195</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Clicking Location Name from Browse Events causes an error.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27484" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27484" class="Hyperlink">27484</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>“Default Value for Attendance” setting not observed.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27536" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27536" class="Hyperlink">27536</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Editing booking under a confirmed reservation incorrectly reverts room status to Requested.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27551" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27551" class="Hyperlink">27551</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event date format incorrect on Event Details page on browsers using European date format.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27970" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27970" class="Hyperlink">27970</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Resources incorrectly added when inventory is exceeded. &#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=16424" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=16424" class="Hyperlink">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>For unauthenticated requests, groupings are excluded from the list of items to add to the room request.&#160; If the category only contains resources in groupings, then the category is not displayed on the unauthenticated room request form.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27378" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27378" class="Hyperlink">27378</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update11"></a><span style="font-size: 24pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update11" style="font-size: 24pt;">Update 11.1</a><span style="font-size: 24pt;">*</span>
+        </h2>
+        <table style="margin-left: auto;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 621px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issues</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Resources Incorrectly Added When Inventory Exceeded</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=16424" class="Hyperlink">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Remove Icon Missing On Edit Video Conference Booking Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26017" class="Hyperlink">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Services Persist After Room Is Deleted From Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26744?fullScreen=false" class="Hyperlink">26744</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Canceling Bookings Under a Reservation Prevents Addition of Services For Remaining Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26806?fullScreen=false" class="Hyperlink">26806</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Editing Booking Incorrectly Changes Setup and Teardown Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26808" class="Hyperlink">26808</a>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Exceeding "Max No Bookings per Reservation" on Exchange Causes Crash</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26920" class="Hyperlink">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Start/End Times Set in Browse Locations Not Carried Over to Room Request Page When Using Template Without Set Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27195?fullScreen=false" class="Hyperlink">27195</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Clicking Location Name From Browse Events Causes Error</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27484?fullScreen=false" class="Hyperlink">27484</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>"Default Value for Attendance" Setting Not Observed</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27536?fullScreen=false" class="Hyperlink">27536</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Editing Booking Under a Confirmed Reservation Incorrectly Reverts Room Status To Requested</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27551?fullScreen=false" class="Hyperlink">27551</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event Date Format Incorrect on Event Details Page on Browsers Using European Date Format</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27970?fullScreen=false" class="Hyperlink">27970</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Ampersand Symbol Displays Incorrectly for Categories on Service Availability Page&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28054?fullScreen=false" class="Hyperlink">28054</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Adding a Location With New Start/End Time&#160;Incorrectly Reverted To&#160;Old Start/End Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28808?fullScreen=false" class="Hyperlink">28808</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h1><a name="Update10"></a><span style="font-size: 24pt;"><span style="font-size: 26pt;">V44.1, </span></span><a href="../V44.1_ReleaseNotes.htm#Update10" style="font-size: 26pt;">Update 10</a><span style="font-size: 24pt;"><span style="font-size: 26pt;">*</span></span>
+        </h1>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 612px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Issue</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EMS&#160;INTERNAL REFERENCE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Resources Incorrectly Added When Inventory Exceeded</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_28"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=16424" class="a_5">16424</a>*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Remove Icon Missing On Edit Video Conference Booking Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_28"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26017" class="a_5">26017</a>*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Services Persist After Room Is Deleted From Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26744?fullScreen=false" class="a_5">26744</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Canceling Bookings Under a Reservation Prevents Addition of Services For Remaining Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26806?fullScreen=false" class="a_5">26806</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Editing Booking Incorrectly Changes Setup and Teardown Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_28"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26808" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26808" class="a_5">26808</a>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Exceeding "Max No Bookings per Reservation" on Exchange Causes Crash</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_28"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26920" class="a_5">26920</a>*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">"Max No Bookings per Reservation" Rule Not Enforced When Adding New Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_28"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26952" class="a_5">26952</a>*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Browse Events Daily List Does Not Show Today's Reservations When Using Local Database</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27032?fullScreen=false" class="a_5">27032</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Start/End Times Set in Browse Locations Not Carried Over to Room Request Page When Using Template Without Set Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27195?fullScreen=false" class="a_5">27195</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Keyword Search Results Incomplete In&#160;"I Know What Room I Want" Dialog</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27203?fullScreen=false" class="a_5">27203</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Room Search Results Not Filtered By Setup Type For&#160;Unauthenticated User Room Request</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27406?fullScreen=false" class="a_5">27406</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Clicking Location Name From Browse Events Causes Error</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27484?fullScreen=false" class="a_5">27484</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">"Default Value for Attendance" Setting Not Observed</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27536?fullScreen=false" class="a_5">27536</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Editing Booking Under a Confirmed Reservation Incorrectly Reverts Room Status To Requested</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27551?fullScreen=false" class="a_5">27551</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Event Date Format Incorrect on Event Details Page on Browsers Using European Date Format</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27970?fullScreen=false" class="a_5">27970</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Ampersand Symbol Displays Incorrectly for Categories on Service Availability Page&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28054?fullScreen=false" class="a_5">28054</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Time Zone Not Adjusted Correctly For Recurrent Meeting When Changing Buildings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28530?fullScreen=false" class="a_5">28530</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_28">Attendees Added on the Services Page For One Location&#160;Incorrectly Added To&#160;Another Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28614?fullScreen=false" class="a_5">28614</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_28">Adding a Location With New Start/End Time&#160;Incorrectly Reverted To&#160;Old Start/End Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28808?fullScreen=false" class="a_5">28808</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="p_28">Inventory Not Tracked When Shared By Multiple Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/29258?fullScreen=false" class="a_5">29258</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update9"></a><span style="font-size: 24pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update9" style="font-size: 24pt;">Update 9</a><span style="font-size: 24pt;">*</span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 582px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 162px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="color: #ffffff;">
+                        <p class="p_27"><span style="color: #ffffff;">Issue</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="color: #ffffff;">
+                        <p class="p_27">EMS&#160;INTERNAL REFERENCE</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_32">Resources Incorrectly Added When Inventory Exceeded</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=16424" class="a_5">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_32">HTML Code Missing When Saved&#160;in Edit Text Mode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=20003" class="a_5">20003</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_32">Remove Icon Missing On Edit Video Conference Booking Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26017" class="a_5">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_32">Inventory Not Updated When Shared By&#160;Multiple Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26718" class="a_5">26718</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_32">Event Name Not Updated When Created in Outlook And Name is Changed In Mobile Web</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26803" class="a_5">26803</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_32">Exceeding "Max No Bookings per Reservation" on Exchange Causes Crash</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26920" class="a_5">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_32">Add Location Button Disabled When Start Date is in Future</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26948" class="a_5">26948</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="p_32">"Max No Bookings per Reservation" Rule Not Enforced When Adding New Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26952" class="a_5">26952</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update8"></a><span style="font-size: 26pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update8" style="font-size: 26pt;">Update 8</a><span style="font-size: 26pt;">*</span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 525px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_51">Notification Hyperlinks In Plain Text On Chrome</p>
+                        <p class="p_9">Message box in create reservation flow saves URLs as plain text.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=24359" class="a_5">24359</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_11">Resources Incorrectly Added When Inventory Exceeded</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=16424" class="a_5">16424</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_11">HTML Code Missing When Saved&#160;in Edit Text Mode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=20003" class="a_5">20003</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_11">Remove Icon Missing On Edit Video Conference Booking Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26017" class="a_5">26017</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_11">Inventory Not Updated When Shared By&#160;Multiple Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26718" class="a_5">26718</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_11">Event Name Not Updated When Created in Outlook And Name is Changed In Mobile Web</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26803" class="a_5">26803</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_11">Exceeding "Max No Bookings per Reservation" on Exchange Causes Crash</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26920" class="a_5">26920</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_11">Add Location Button Disabled When Start Date is in Future</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26948" class="a_5">26948</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_11">"Max No Bookings per Reservation" Rule Not Enforced When Adding New Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=26952" class="a_5">26952</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="p_11">Confirmations Containing Apostrophes Error</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="p_12"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=27027" class="a_5">27027</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update7"></a><span style="font-size: 26pt;">V44.1, </span><a href="../V44.1_ReleaseNotes.htm#Update7" style="font-size: 26pt;">Update 7</a><span style="font-size: 26pt;">*</span>
+        </h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 572px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">For information on fixes and enhancements released during this Update, <br />click on the update number above. </th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_4">Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_4">EMS&#160;Internal Reference</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Adding Video Conference Attendee Rooms&#160;Only Allowed One Room</p>
+                        <p class="p_32">Only one room can be added at a time while editing a video conference&#160;booking.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=23618" class="Hyperlink_2">23618</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">View Summary Link in Notifications Opened Home Page</p>
+                        <p class="p_32">The View Reservation Summary link in the confirmation mail takes users to the Home page rather than the reservation.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=23903" class="Hyperlink_2">23903</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Setup and Teardown Times Not Shown In Calendar View</p>
+                        <p class="p_32">Set up and tear down times are not drawn twice on schedule view to indicate that the next available event time would be after the next set up time or before the next tear down time.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=24027" class="Hyperlink_2">24027</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Notification Hyperlinks In Plain Text On Chrome</p>
+                        <p class="p_32">Message box in create reservation flow saves URLs as plain text.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=24359" class="Hyperlink_2">24359</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Buildings and Rooms Shown in Server Timezone for Guest Users</p>
+                        <p class="p_32">Room availability on browse location for unauthenticated users is displayed in server time zone.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=24963" class="Hyperlink_2">24963</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Services Missing From Recurrent Meetings</p>
+                        <p class="p_32">Service availability is sometimes not displayed for service only templates with recurrence bookings.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25087" class="Hyperlink_2">25087</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Room Availability Shown In Wrong Time Zone</p>
+                        <p class="p_32">Events created in a different time zone than the room's time zone are incorrectly displayed on the room availability page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25171" class="Hyperlink_2">25171</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Only Two Attendees Allowed When Adding Services</p>
+                        <p class="p_32">Unable to add more than two attendees on the Add Services page for recurrent reservations.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25172" class="Hyperlink_2">25172</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Required Notes Rule Not Observed For Cancellations</p>
+                        <p class="p_32">User is able to cancel a booking without entering required Notes.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25188" class="Hyperlink_2">25188</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Booking Persists On Search List After Clicking End Now</p>
+                        <p class="NormalWeb_6">Booking is not removed from the My Bookings list after ending the booking using the&#160;End Now&#160;button.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25219" class="Hyperlink_2">25219</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Manage Services Button Shows On Canceled Bookings</p>
+                        <p class="p_32">Manage Services link is shown for canceled bookings on the Reservation Summary page.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25220" class="Hyperlink_2">25220</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Room Search Results Not Ordered By Book Sequence</p>
+                        <p class="p_32">Rooms are sorted alphabetically rather than per the Book Sequence parameter on the schedule view.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25234" class="Hyperlink_2">25234</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">Exclude Weekends From Date Calculations Parameter Not Observed</p>
+                        <p class="p_32">The Parameter, "Exclude weekends from date calculations" is not honored during the default calculations.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25255" class="Hyperlink_2">25255</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Cancel Option Incorrectly Available for Past Events</p>
+                        <p class="p_32">The Cancel Booking option is available for past bookings.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25490" class="Hyperlink_2">25490</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Strong_4">User Appeared As Own Delegate</p>
+                        <p class="p_32">Internal server error occurs when a web user who has "\" in the Network ID field is selected as a delegate.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25497" class="Hyperlink_2">25497</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Strong_4">Uploading Indicator Missing When Adding Attachments</p>
+                        <p class="p_32">No "Uploading" indicator appears when adding attachments.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25501" class="Hyperlink_2">25501</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="Strong_4">Unauthenticated Users Not Taken To Sign On Page</p>
+                        <p class="p_32">When the Default Home parameter for Unauthenticated users is set to "Site Home," clicking on&#160;Sign On&#160;does not take users to a page where they can enter credentials.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="NormalWeb_4"><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=25574" class="Hyperlink_2">25574</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact_Customer_Support"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

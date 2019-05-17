@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Desktop Client Release Notes <br />V44.1, Update 26</h1>
+        <p class="p_1">
+            <MadCap:concept term="V44.1" />This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Standard.css');" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 26</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 29, 2018<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">SQL&#160;Patch #:&#160;<br />44.1.26000.201806250<br /></p>
+                </td>
+            </tr>
+        </table>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS&#160;Desktop Client enhancements listed in the table below do not require a new Desktop Client build. The enhancements are covered in the SQL Patch # 44.1.26000.201806250.</p>
+        </div>
+        <h2>Enhancements</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="text-align: left;">
+                        <p class="RNArea">Security</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle"><a name="New_Security_Role_Added"></a>New Security Role Added to EMS&#160;Desktop Client:&#160;View Reservation Summary</p>
+                        <p class="RNBody">A new role, <span class="ui">View Reservation Summary</span>, has been added to everyday user security templates (accessed in the EMS&#160;Desktop Client through Configuration &gt; Everyday User Applications &gt; Everyday User Security Templates &gt; New/Edit template &gt; Roles tab). </p>
+                        <p class="RNBody">This new role relates to the reservation summary links in notification/confirmation emails. When a user clicks on a reservation summary link in an email, the EMS&#160;Web App will perform an authentication check before displaying the Reservation Summary page:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>If the user is the owner of the reservation, or a delegate of the owner, the user can view the Reservation Summary page, even if the user has not been assigned the <span class="ui">View Reservation Summary</span> role.</li>
+                            <li>If the user has been assigned the <span class="ui">View Reservation Summary</span> role, then the user can view the Reservation Summary page.</li>
+                            <li>If the user has not been assigned the <span class="ui">View Reservation Summary</span> role, then the user cannot view the Reservation Summary page.</li>
+                        </ul>
+                        <p class="RNBody">Administrators can use this new role to limit access to reservation information from forwarded emails.  </p>
+                        <p class="RNBody">See Also:&#160;<a href="EMSWebApp.htm#ViewReservationSummary">EMS&#160;Web App Release Notes Update 26</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigSecTemplate.htm#View_Reservation_Summary">Assigning Roles to Users</a>.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38375&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38375</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" style="text-align: left;" rowspan="2">
+                        <p class="RNArea">Create/Manage Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle"><a name="MinimumCharacterCountAttendeeSearch"></a>Minimum Character Count for Attendee Search</p>
+                        <p class="RNBody">A new system parameter, <span class="italics">Minimum Characters to Initiate Type Ahead Search</span>, allows administrators to set the minimum character count to initiate type-ahead searches for the Find Attendees field on calendar-enabled template reservations. The default minimum character count to initiate the attendee lookup is set to <span class="ui">3</span> characters.</p>
+                        <p class="RNBody"><span class="ui">System Parameter</span>
+                            <br /><span class="ui">Area</span>: Create/Manage Reservations<br /><span class="ui">Name</span>: Minimum Characters to Initiate Type Ahead Search<br /><span class="ui">Value</span>: Positive Integer<br /><span class="ui">Default Value</span>: 3<br /><span class="ui">Applies to EMS End Points:</span> EMS&#160;Web App</p>
+                        <p class="RNBody"><span class="ui">See Also:</span>&#160;<a href="EMSWebApp.htm#MiniumCharacterLengthforAttendeeSearch">EMS&#160;Web App U26 Release Notes</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm#Minimum_Characters_to_Initiate_Type_Ahead_Search">Everyday User Applications Parameters</a></p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=38480&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38480</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle"><a name="ConfigureTypeAheadSearchforAttendees"></a>Configure Type-Ahead Search for Attendees</p>
+                        <p class="RNBody">A new system parameter, <span class="italics">Delay for Type Ahead Search Trigger</span>, allows administrators to set the duration after the last keystroke entry in a search field before triggering the search call for attendees on calendar-enabled template reservations.</p>
+                        <p class="RNBody"><span class="ui">System Parameter</span>
+                            <br /><span class="ui">Area</span>: Create/Manage Reservation<br /><span class="ui">Name</span>:  Delay for Type Ahead Search Trigger (ms)<br /><span class="ui">Value Type</span>: Drop down selection - 400 ms; 600 ms 800 ms; 1000 ms<br /><span class="ui">Default Value</span>: 400 ms<br /><span class="ui">Applies to EMS End Points</span>: EMS&#160;Web App</p>
+                        <p class="RNBody"><span class="ui">See Also:</span>&#160;<a href="EMSWebApp.htm#DelayforTypeAheadSearchTrigger">EMS&#160;Web App U26 Release Notes</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm#Delay_for_Type_Ahead_Search_Trigger">Everyday User Applications Parameters</a></p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=38482&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38482</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" style="text-align: left;" rowspan="5">
+                        <p class="RNArea">Database </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Stored Procedures Refactoring for Performance Improvements</p>
+                        <p class="RNBody">Refactored temp tables in EMS_RES_Book_Bookings. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39673&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39673</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Database Optimizations for Performance Improvements</p>
+                        <p class="RNBody">Added column store indexes to improve opening the Reservation Book in EMS&#160;Desktop Client. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39667&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39667</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Database Optimizations for Performance Improvements</p>
+                        <p class="RNBody">Added recompile options to EMS_RES_ServiceOrderDetail_Edit and two other stored procedures. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39669&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39669</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Database Optimizations for Performance Improvements</p>
+                        <p class="RNBody">Added recompile options for adding resources to a category.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39671&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39671</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Database Optimizations for Performance Improvements</p>
+                        <p class="RNBody">Added new indexes to the EMS_RES_Book_Bookings table. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39676&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39676</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Database</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Opening a Recurrent Booking Was Generating Errors</p>
+                        <p class="RNBody">Opening a reservation with multiple bookings from the Reservation Book or Navigator was generating errors and causing unresponsive behavior.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the EMS_RES_Navigator_Bookings so that it executes in an efficient manner.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39302&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39302</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

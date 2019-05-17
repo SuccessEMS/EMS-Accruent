@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>PeopleSoft Campus Solution Integration V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>PeopleSoft Campus Solution Integration</h1>
+        <p>A stored procedure into EMS_SPUPDATECOURSEDATES  provides additional updates to Peoplesoft. </p>
+        <p>To perform a full location writeback for PeopleSoft Campus Solutions:</p>
+        <ol>
+            <li>      Update the PS_CLASS_MTG_PAT record with the room ID.<ol><li> If an Event ID already exists, update the existing PS_CAMPUS_MTG records.</li><li>      If an Event ID does not exist:<ol><li>      Update the PS_EVENT_LAST_TBL table – increment by one.</li><li>  Retrieve the EVENT_NBR_LAST value from the PS_EVENT_LAST_TBL table.</li><li>      Update the PS_CLASS_TBL record with the Event ID.</li><li>     If it’s a combined section, update the related combined sections in PS_CLASS_TBL with the Event ID, so long as the SKIP_MTGPAT_EDIT flag is set to ‘No.’</li></ol></li></ol></li>
+            <li>      Create PS_CAMPUS_EVENT record if it doesn’t exist for the Event ID.</li>
+            <li>      Create PS_CAMPUS_MTG records if they don’t exist for the Event ID and Meeting Number.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Oracle account used for the integration with EMS will need to be updated to have write access to the following tables, if it does not already: <br />PS_CLASS_MTG_PAT <br />PS_EVENT_LAST_TBL <br />PS_CLASS_TBL <br />PS_CAMPUS_EVENT <br />PS_CAMPUS_MTG</p>
+        </div>
+    </body>
+</html>

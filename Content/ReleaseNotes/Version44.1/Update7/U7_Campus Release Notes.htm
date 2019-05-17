@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2627" MadCap:lastWidth="1186" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Desktop Client -- Academic Planning <br />Release Notes <br />V44.1 Update 7</h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_72">See Also:&#160;</p>
+        <ul class="unorder-list">
+            <li class="li_12"><a href="EMS Campus Known Issues.htm">EMS Desktop Client -- Academic Planning Known Issues</a>
+            </li>
+            <li class="li_19">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </li>
+        </ul>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">V44.1 Update 7</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Release&#160;Date:&#160;December 6, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Patch:&#160;&#160;2016.12.05.0</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_12">Build #:&#160;&#160;44.1.284.0</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Publish Courses</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Cross-Listed Courses Missing Info, Slow Performance</p>
+                        <p class="RNBody">When users published a term that included cross-listed courses, conflict handling caused slow performance, errors, and the courses were missing course dates.</p>
+                        <p class="RNBody">Fix:&#160;Modified conflict handling so that data is published efficiently and the issues no longer occur.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 24544<br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Academic Browser</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">SIS Caused Duplicate Courses</p>
+                        <p class="RNBody">Due to syncing issues for section changes over SIS, switching section numbers for two courses resulted in duplicating both courses in the Academic Browser.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Modified synchronization to correctly process the switched section numbers without duplicating the courses.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 18103<br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Academic Book</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Instructor View of Courses Unavailable When Listing All Subjects</p>
+                        <p class="RNBody">When users navigated to the course view for a specific instructor and included all subjects, the view was empty.</p>
+                        <p class="RNBody">Fix:&#160;Modified the view to show all courses for an instructor in all subjects as expected.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 21914<br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Cancellations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Canceling One Meeting Pattern Updates Course Status Incorrectly</p>
+                        <p class="RNBody">When users canceled one meeting pattern for a published term that had more than one meeting pattern, the reservation status incorrectly changed to Canceled.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so the reservation status remains Confirmed as long as one confirmed meeting pattern exists in the course.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 22977<br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

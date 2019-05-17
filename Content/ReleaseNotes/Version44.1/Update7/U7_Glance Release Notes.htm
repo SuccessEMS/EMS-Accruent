@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Glance Release Notes <br />V44.1, Update 7</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Name:&#160;V44.1 Update 7</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;December 6, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch:&#160;2016.12.05.0</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Build #:&#160;&#160;16.11.11.1</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>API:&#160;1.0.1.012<br />&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>There is a&#160;<a href="https://discussions.apple.com/thread/3802691?tstart=0" title="https://discussions.apple.com/thread/3802691?tstart=0" alt="https://discussions.apple.com/thread/3802691?tstart=0">known iOS issue</a>&#160;where homelinks on iPads (i.e., a full screen Safari browser page that is saved as an app) do not always clear&#160;their cache even if you do so manually. This issue may cause some of your devices to have errors.&#160;If you experience this issue, you should upgrade Glance (see&#160;Update 8).</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Glance can run across all EMS versions. You can therefore just update the Glance application without upgrading all of EMS.</p>
+        </div>
+        <h2 class="Heading2_1">Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">ArmorActive&#160;Enclosure</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">LED Colors Stayed Orange for Checked-In And&#160;Canceled Meetings on ArmorActive Enclosure&#160;</p>
+                        <p class="RNBody">When users checked into a meeting that was then canceled, the LEDs on the enclosure stayed orange.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified commands to the ArmorActive&#160;display so that when a meeting is canceled (regardless of check-in), LEDs turn red.&#160;</p>
+                        <p class="RNRef">Internal Reference # 24347<br />(For EMS&#160;Internal Use &#160;Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Edit Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Cross-listed Combo Rooms Showed As Private</p>
+                        <p class="RNBody">When private academic courses were in combo rooms and cross-listed with other courses, they showed as "Private Meeting" when the event names should have shown in the list.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the event names now show in the list of courses and the events no longer behave as if they are private.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Patch (above) required. &#160;</p>
+                        </div>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23867" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNREFHyper">23867</a><br />(For EMS&#160;Internal Use &#160;Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" rowspan="2">
+                        <p class="RNArea">New Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Automatic No-Show Incorrectly Triggered for Some Bookings</p>
+                        <p class="RNBody">When users booked events in Glance that had no-show notifications turned on, due to a lag in saving to the database and updating Glance, some events triggered an automatic no-show status.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the API so that these events update the database more efficiently and the events no longer trigger an inappropriate no-show status.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23640" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">23640</a><br />(For EMS&#160;Internal Use &#160;Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">"Allow Future Same Day Bookings" Parameter Not Observed</p>
+                        <p class="RNBody">When this parameter was set to&#160;No, users were still able to book future same-day bookings by double-clicking on the&#160;desired time slots on the calendar grid.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;&#160;Modified the display so that this parameter is enforced when it is set to No,&#160;clicking on the grid does not allow users to book future events.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=24505" class="RNRefHyper" title="For EMS Internal Use Only" alt="For EMS Internal Use Only">24505</a><br />(For EMS&#160;Internal Use &#160;Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Security</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Web Traffic Security Vulnerabilities</p>
+                        <p class="RNBody">The web application sent non-secure user and session information (cookies) during encrypted (SSL) sessions, exposing vulnerable information.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Added ANtiForgery validation to all Ajax HttpPost calls and added verb tampering redirection to prevent non-HTTP&#160;or Get calls being made to Glance so web traffic no longer exposes user and session information.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23980" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">23980</a><br />(For EMS&#160;Internal Use &#160;Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

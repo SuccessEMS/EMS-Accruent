@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Software Requirements</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Internet Explorer 11</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Google Chrome (latest)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><a href="https://dotnet.microsoft.com/download/dotnet-core/2.2">ASP.NET Core 2.2.2</a>* (EMS&#160;Update 32 and later)</p>
+                        <p><a href="https://dotnet.microsoft.com/download/dotnet-core/2.1">ASP.NET Core 2.1.5</a>* (EMS Updates 29–31)</p>
+                        <p><a href="https://dotnet.microsoft.com/download/dotnet-core/2.0">ASP.NET Core 2.0</a>* (EMS&#160;Update 28 and earlier)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p><a href="https://www.iis.net/downloads/microsoft/url-rewrite">URL&#160;Rewrite 2.1 for IIS</a>**</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*The EMS Kiosk App is an ASP.NET core application. The “.Net Core Server Hosting Bundle” needs to be installed on the web server.</p>
+        <p>**URL Rewrite 2.1 for IIS&#160;needs to be installed on the web server.</p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Hardware Requirements</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>1920 x 1080 multi-touch&#160;monitor (16:9 aspect ratio, 24" or larger)*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Kiosk stand and enclosure for the screen</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>RFID badge reader (as needed)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*EMS Software tests the EMS Kiosk App&#160;on an HD touch-screen monitor that is run on a Windows&#160;10 computer.</p>
+    </body>
+</html>

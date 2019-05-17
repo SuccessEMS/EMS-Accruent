@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configure Confirmation Email Subject Line V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure the Confirmation Email Subject Line</h1>
+        <p>In EMS, users can produce printed confirmations for events. They can also email confirmations directly to the contact person. To make the emailing of confirmations efficient, EMS automatically fills in the subject line on the email with text that you configure&#160;in the Confirmation Email Subject Line dialog box. Examples of confirmation email subject lines include the following:</p>
+        <ul>
+            <li>Reservation 5421 for Acme, Inc., beginning 3/15/2018</li>
+            <li>Confirmation for your event in Smith Hall on 3/22/2018</li>
+        </ul>
+        <p>To configure the confirmation email subject line, follow these steps:</p>
+        <ol start="1">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Confirmation Email Subject Line</span>.&#160;The Confirmation Email Subject Line dialog box opens. This dialog box displays the confirmation subject line currently in use.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_SysAdConfig/Configuring the Confirmation.png" alt="emssg_SysAdminConfiguration_image004.png" />
+                    </p>
+                    <p class="Caption">Confirmation Email Subject Line Dialog Box</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter the text and variables that are to make up the default subject line for every confirmation that is emailed.</p>
+                <MadCap:dropDown>
+                    <MadCap:dropDownHead>
+                        <MadCap:dropDownHotspot>Concept:&#160;Variables Pull in Selected Data</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p>Variables pull in selected data from the event for which the confirmation is being emailed. You can include variables in the subject line as described in the Legend. For example, %2% is the code for the group name, so “Reservation for %2%” would result in “Reservation for Academic Affairs” being displayed in the subject line. Available variables include the following: Reservation ID, Group Name, Event Name, Date of First Booking, Building Code, Room Code, and Location.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">OK</span>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

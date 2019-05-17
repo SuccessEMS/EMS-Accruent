@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Working With Transactions</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Work with Transaction</h1>
+        <p>Working with transactions includes entering and voiding:</p>
+        <ul class="unorder-list">
+            <li>Adjustments.</li>
+            <li>Deposits (Damage, Booking, Reservation).</li>
+            <li>Payments</li>
+            <li>Pre-Payments.</li>
+            <li>Refunds.</li>
+        </ul>
+        <p>Each&#160;<a href="TypesofTransactions.html">type of transaction</a>&#160;involves unique steps for entering them, but the task of voiding all these types of transactions are the same.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You might need to&#160;<a href="SearchforTransactions.html">first search for an existing transaction</a>&#160;to determine if it has already been entered or voided.</p>
+        </div>
+        <h2>Enter&#160;a Transaction: Adjustments, Deposits, Payments, Pre-Payments, Refunds</h2>
+        <ol start="1" class="number-list">
+            <li>Do one of the following:<ul start="1"><li><p>Open the reservation in the Navigator&#160;and on the Transactions tab, click New &gt;&#160;Payment. (This method pre-populates many fields with information for the reservation).</p></li></ul><p><img src="../../../Resources/Images/DTC_V44.1_Bill/Working with Transaction.png" alt="https://success.emssoftware.com/@api/deki/files/6222/clipboard_ed9ca01d359cd1f7bec45c85335c96773.png?revision=1" class="resize80_noborder_padding" /></p><ul start="1"><li><p>On the EMS Desktop Client menu bar, click Billing &gt; Payments &gt;&#160;Payment Entry, and then on the Payment Entries window, click&#160;New. (This method launches a blank Payment Entry form you must complete "from scratch").</p><p><img src="../../../Resources/Images/DTC_V44.1_Bill/Working with Transaction_1.png" alt="https://success.emssoftware.com/@api/deki/files/6223/clipboard_e35b2b1797de28cfe935f3d8cea972c36.png?revision=1" class="popup_with_padding_and_border" /></p><div class="TitleandImage"><p><img src="../../../Resources/Images/DTC_V44.1_Bill/Working with Transaction_2.png" alt="emsum_Billing_image020.png" class="resize80_noborder_padding" /></p><p class="Caption">Payment Entry Window </p></div></li></ul></li>
+            <li>
+                <p>Select a&#160;Transaction Type: Adjustment, Damage Deposit, Deposit (Bookings), Deposit (Reservation), Payment, Pre-payment, Refund. Your selection in this field affects your entries in other fields in this form.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44.1_Bill/Working with Transaction_3.png" alt="https://success.emssoftware.com/@api/deki/files/6224/clipboard_e403a762c030a9613a2dcdcb5c401e4d0.png?revision=1" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Transaction Type Field, Payment Entry Window</p>
+                    <p><b>Types of Transactions (select type in Transaction Type field of Payment Entry Window)</b>
+                    </p>
+                    <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                        <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                        <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Transaction Type</th>
+                                <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Adjustment</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>A price adjustment for the event, such as a discount or late charge.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Damage Deposit</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>A refundable amount to cover possible damages during the event.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Deposit (Reservation)</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>Deposit (Reservation)&#160;is best suited for reservations with one or more bookings that are to be invoiced in their entirety upon completion of the event.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Deposit (Bookings)</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p>Deposit (Bookings)&#160;is best suited for reservations with multiple bookings, for example, an event with multiple occurrences spanning several months, that is to be billed monthly. A Deposit (Bookings) allows you to spread the deposit across multiple months so that only a portion of the deposit is consumed and applied to the invoice that is generated monthly. In this scenario, a large deposit that is entered as Deposit (Reservation) would be consumed in its entirety by the first invoice that is generated.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Payment or Pre-payment</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p>Remember that pre-payments act just like deposits in that they are applied to a reservation and are applied to an invoice reducing the balance due. Payments are applied to an invoice.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Refund</td>
+                                <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">Funds reimbursed to the payee.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>You can also void an existing transaction from this window by clicking the&#160;Void&#160;option. For detailed instructions, see&#160;<a href="#Voiding">Void Transactions</a>&#160;(below).</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol start="3" class="number-list">
+            <li>
+                <p>Enter additional information using the table below.</p>
+                <p><b>Field Descriptions for Payment Entry Window</b>
+                </p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Transaction Date</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The default value is the current day’s date. You can edit this value if needed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Department</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Select the department.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Payment Type</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select the payment type.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Check No.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Enter a check number if you selected “Check” as the payment Type.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Amount</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Enter the amount of the transaction.&#160;To decrease the invoice by this&#160;amount, enter a minus sign (-) before or after the amount.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Currency</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Select the currency for the transaction.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Reservation No.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Automatically populated if you opened this window from the Transaction tab in the Navigator; otherwise, enter a reservation number or Search&#160;for a reservation.</p>
+                                <p>Adjustments,&#160;Payments, Refunds: This field is not available for these transaction types since they&#160;are applied to invoices, not reservations.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Invoice No.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>When required, Search&#160;for an invoice (with a specific date and Employee or Customer&#160;name from the&#160;Department&#160;you specified)&#160;to associate with this transaction .</p>
+                                <p>Deposits,&#160;Pre-payments: This field is not required for deposits and pre-payments since they are&#160;applied before an invoice is generated. The invoicing process totals the charges for the specified date range, consumes any applied&#160;reservation&#160;deposits, and results in a net balance due for the invoice. The invoicing process does not consume any Damage deposits.</p>
+                                <p>See Also:&#160;<a href="WorkwithInvoices.html">Work&#160;with Invoices</a>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p>Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                <p>Optional. Enter any other comments or statements that explain or clarify the transaction.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;The Payment Entry dialog box closes. The transaction information is displayed on the Transactions tab for the reservation.</li>
+        </ol>
+        <h2><a name="Voiding"></a>Void&#160;a Transaction&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Open the reservation in the Navigator&#160;and on the Transactions tab, select the transaction you want to void (CTRL-click to select multiple transactions), and then click&#160;<span class="ui">Void</span>.&#160;A Void Reason dialog box opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44.1_Bill/Working with Transaction_5.png" alt="https://success.emssoftware.com/@api/deki/files/6225/VoidTransactionpopup.png?revision=1" class="resize80_border_and_padding" />
+                    </p>
+                    <p class="Caption">Void Reason Dialog Box</p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>You&#160;can also void a transaction by opening it in Edit mode from the Transactions tab or by locating the transaction by date under the&#160;<span class="ui">Billing </span>&gt; <span class="ui">Payments </span>&gt;&#160;<span class="ui">Payment Entry</span>&#160;option in the EMS Desktop Client menu bar. On the Payment Entry window that displays, select&#160;the&#160;<span class="ui">Void&#160;</span>option.</p>
+                    </div>
+                </div>
+            </li>
+            <li>Enter the reason for voiding the transactions, and then click&#160;<span class="ui">OK</span>.&#160;</li>
+            <li>The Void Reason dialog box closes and a message confirms&#160;that the transaction has been voided.&#160;Click&#160;<span class="ui">OK&#160;</span>to return to the Navigator. The Void column is set to&#160;<span class="ui">Yes&#160;</span>for each of the voided transactions in the Navigator.</li>
+        </ol>
+    </body>
+</html>

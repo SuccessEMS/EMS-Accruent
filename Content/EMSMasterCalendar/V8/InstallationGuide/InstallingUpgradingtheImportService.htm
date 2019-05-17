@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+    </head>
+    <body>
+        <h1>Install or Upgrade the EMS&#160;Master Calendar Import Service</h1>
+        <p>If using a data connector to import a tab delimited and/or XML file, one must set the temporary location, and SMTP server information when setting up the data connecter service.  This allows for the importing of the file and also the generating of an email to notify the individual, who defined the import, the status and result from the import.</p>
+        <p>Import file specifications can be found by logging into the EMS Master Calendar system as a site system administrator, navigating to <span class="ui">Admin </span>&gt; <span class="ui">Events &amp; Special Dates</span> &gt; <span class="ui">Import Events</span> &gt; <span class="ui">Add New</span> &gt; <span class="ui">Import file specifications</span>.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p> Existing versions of the Master Calendar Import Service must be manually uninstalled, through the Add or Remove Programs menu, prior to upgrading the EMS Master Calendar Import Service to a newer version.</p>
+        </div>
+        <ol class="number-list">
+            <li>Download the DEAMasterCalendarImportSetup.msi onto the server that will be running the service.</li>
+            <li>
+                <p>Double-click DEAMasterCalendarImportSetup.msi.  Follow the on-screen prompts.  It is recommended that the defaults are accepted.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_ImportService1.PNG" class="imgBorderMax520" />
+                    </p>
+                    <p class="Caption">EMS Master Calendar Import Service Setup Wizard</p>
+                </div>
+            </li>
+            <li>
+                <p>Within the Microsoft Windows Start menu, locate EMS Master Calendar Import Service &gt; Import Service Configuration Settings.  The Master Calendar Import Service Configuration screen will appear.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_ImportService2.PNG" class="imgBorderMax520" />
+                    </p>
+                    <p class="Caption">Master Calendar Import Service Configuration</p>
+                </div>
+            </li>
+            <li>Enter in the SQL Server name of where the EMS&#160;Master Calendar Database resides on.</li>
+            <li>Enter in the database name that was provided for the Master Calendar Database.  By default, the database name should be ‘Master_Calendar’ unless manually changed.</li>
+            <li>
+                <p>Click Verify Connection to confirm that the Import Service has connected to the EMS&#160;Master Calendar Database.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/MC_ImportService3.PNG" />
+                    </p>
+                    <p class="Caption">Database Connection Test</p>
+                </div>
+            </li>
+            <li>In addition the following can be configured: <ul MadCap:continue="true"><li>SMTP Server–SMTP name or IP Address</li><li><p>Send From–An active email address that will be displayed in the Send From field of the notification emails that are sent out.</p><div class="TitleandImage"><p><img src="Images/MC_ImportService4.PNG" class="imgBorderMax520" /></p><p class="Caption">Master Calendar Import Service Configuration</p></div></li></ul></li>
+            <li>
+                <p>In the Import File Directory field, enter or browse for a physical path of the directory the import files will be downloaded.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The path that is entered for the Import File Directory must refer to an existing directory and must end in a backslash.  For example: D:\Temp\.</p>
+                </div>
+            </li>
+            <li>Select if Error Logging should be enabled.</li>
+            <li>After filling in the information above, be sure to click <span class="ui">OK </span>to save the settings. </li>
+        </ol>
+        <MadCap:snippetBlock src="../../../IssuesStartingService.flsnp" />
+    </body>
+</html>

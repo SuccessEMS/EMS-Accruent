@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Troubleshooting: Improving First Click Performance of EMS Desktop Client V44.1</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Troubleshooting: Improving First Click Performance of <MadCap:variable name="General.EMS&#160;Desktop Client" /></h1>
+        <p>If you&#160;experience a delay&#160;on the "first click" of major functions within the <MadCap:variable name="General.EMS&#160;Desktop Client" /> that's too long, there are a couple of solutions. One approach is to leave <MadCap:variable name="General.My Company" /> running all day so that you only experience the first click delay once. Another approach, which is a bit more involved, is to&#160;run&#160;a function within .NET called NGen. This function&#160;pre-compiles .NET applications to make them load significantly faster and eliminate first-click delays. </p>
+        <h2>Run NGen</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You must have installed EMS and you must have administrative privileges to perform the following steps. </p>
+        </div>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>While NGen eliminates the first click delay, EMS will not be adding&#160;it to our standard installation process; this is an optional workaround you take at your own risk.</p>
+        </div>
+        <ol>
+            <li>
+                <p>Open a command prompt as an administrator. </p>
+                <p>To do this, press the Windows key, type&#160;"cmd" without the quotation marks, position&#160;the cursor over "Command Prompt" as shown in the screen shot below, right click, and select&#160; "Run as administrator."</p>
+            </li>
+            <li value="2">
+                <p>At the C:&gt; prompt, go to the directory where EMS is installed. If you have conventionally installed EMS, then it's typically at the following location:</p>
+                <p>cd \program files (x86)\EMS</p>
+                <p>However,&#160;if you're using the web deployment option to install <MadCap:variable name="General.My Company" />, then you should find <MadCap:variable name="General.My Company" /> at the following location:</p>
+                <p>cd %appdata%\EMS2016\EMS</p>
+            </li>
+            <li value="3">
+                <p>Press Enter and you should see one of the following (where [user name] is your Windows user name):</p>
+                <p>C:\Program Files (x86)\EMS&gt;</p>
+                <p>C:\Users\[user name]\AppData\Roaming\EMS2016\EMS&gt;</p>
+            </li>
+            <li>
+                <p>Type the following:</p>
+                <p>\windows\microsoft.net\framework64\v4.0.30319\ngen install ems.exe</p>
+            </li>
+            <li>
+                <p>Press Enter and wait until the process finishes. It will take about 5 minutes. Ignore any error messages.</p>
+            </li>
+            <li>
+                <p>When the installation finishes, you can close the command prompt and run EMS.</p>
+            </li>
+            <li>
+                <p>If you install a new or updated version of the Desktop Client, then you have to run NGen again if you want to eliminate the first click delay.</p>
+            </li>
+        </ol>
+    </body>
+</html>

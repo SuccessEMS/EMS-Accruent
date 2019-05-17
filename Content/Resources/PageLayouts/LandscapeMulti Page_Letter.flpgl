@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="8.5in" Height="11in" Padding="20px" PageSize="custom" PageType="normal" PaddingRight="0" PaddingLeft="0" PaddingTop="0" PaddingBottom="0" Name="Normal" BackgroundRepeat="no-repeat" BackgroundPositionX="575px" BackgroundPositionY="50px" BackgroundImage="../Images/title_logowhite.png" Orientation="landscape">
+        <Frame X="76px" Y="82px" Width="905px" Height="597px" Flow="body" Right="75px" Bottom="137px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="1px" Y="716px" Width="1062px" Height="100px" Flow="footer" BorderTopStyle="solid" BorderTopWidth="2pt" BorderTopColor="#c2c2c2" BackgroundType="Solid" BackgroundColor="#d9d9d9" Anchors="" Right="-7px" Bottom="0px" VerticalAlign="middle" TextAlign="left" PaddingTop="0" PaddingLeft="50px" PaddingRight="50px" PaddingBottom="0">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body xhtml:class="title_footerdecor">
+                        <xhtml:table xhtml:style="margin-left: 0;margin-right: auto;width: 100%;">
+                            <xhtml:col xhtml:style="width: 379px;" />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td>Accruent Confidential and Proprietary ©&#160;2019</xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;">Page | <MadCap:variable xhtml:name="System.PageNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="770px" Y="34px" Width="209px" Height="32px" Flow="decoration0" Right="77px" Bottom="750px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>
+                            <xhtml:img xhtml:src="../Common (Printed)/Accruent_logo_blue.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xhtml:style="width: 200px;height: auto;" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="76px" Y="33px" Width="449px" Height="38px" Flow="header" Right="531px" Bottom="745px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="PDFh1"><MadCap:variable xhtml:name="Heading.Level1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="H1"
+    Comment="First H1 on Page"
+    EvaluatedDefinition="">[%=Heading.Level1%]</Variable>
+  <Variable
+    Name="ChapterNum"
+    Comment=""
+    EvaluatedDefinition="1">[%=System.ChapterNumber%]</Variable>
+</CatapultVariableSet>

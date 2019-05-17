@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Floor Plans"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    Link="/Content/Print Only Topics/TitlePage_FloorPlans.htm"
+    PageNumber="1"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="(multiple)"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)" />
+  <TocEntry
+    Title="Installation Guide"
+    Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/InstallGuideOverview.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="(multiple)"
+    PageNumberFormat="decimal">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      ComputeToc="false"
+      ReplaceMergeNode="false"
+      PageNumber="(multiple)">
+      <TocEntry
+        Title="Requirements"
+        Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/Requirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="continue"
+        ChapterNumberReset="continue"
+        PageNumber="(multiple)" />
+    </TocEntry>
+    <TocEntry
+      Title="Obtain Floor Plans Installation Files"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/ObtainFPInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Install or Upgrade the Floor Plans Web Service"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/InstallUpgradeFPWebService.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Install or Upgrade the Floor Plans Configuration Tool"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/InstallUpgradeFPConfigTool.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Upload, Configure, and View Floor Plans"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/InstallationGuide/UploadConfigViewFP.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageNumber="(multiple)" />
+  </TocEntry>
+  <TocEntry
+    Title="Configuration Guide"
+    Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/ConfigurationGuide/ConfigGuideOverview.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="continue"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/ConfigurationGuide/Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Floor Plans Configuration Steps"
+      Link="/Content/OptionalFeatures/FloorPlan/A_V44.1/ConfigurationGuide/ConfigurationFPSteps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageNumber="(multiple)" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Print Only Topics/LastPage_FloorPlans.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)" />
+</CatapultToc>

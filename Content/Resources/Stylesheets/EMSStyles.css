@@ -1,0 +1,161 @@
+﻿/*****EMS-Specific Styles********/
+
+/* Removes Side Nav from Home Landing Page—This style goes in the StylesForHomePage_AA.css and StylesForHomePage)SN.css
+
+	.sidenav-wrapper
+	{
+		display:none !important;
+	}
+	
+	*/
+	
+/*********************Release Note Reference Styles*********************/
+
+	p.RNArea
+	{
+		font-style: italic;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+	}
+
+	p.RNTitle
+	{
+		font-weight: bold;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+	}
+
+	p.RNBody
+	{
+		margin-left: 35px;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+	}
+
+	p.RNBodyBeforeList
+	{
+		margin-left: 35px;
+		margin-bottom: 5px;
+		padding-bottom: 0px;
+	}
+
+	p.RNRef
+	{
+		margin-left: 35px;
+		font-size: 12px;
+	}
+
+	a.RNRefHyper
+	{
+		font-size: 12px;
+	}
+
+	p.InternalRef	/**Used in Known Issues Internal Reference Column**/
+	{
+		font-size: 12px;
+	}
+	
+	ol.RN-number-list li
+	{
+		margin-left: 29px;
+	}
+	
+	ul.RN-unorder-list li
+	{
+		margin-left: 29px;
+	}
+	
+/*EMS-specific style for tall narrow mobile images--quick fix until mobile images can be re-sized in photo editing app and then can apply Accruent Global css image styles*/
+
+	img.narrow_padding_only
+	{
+		margin: 10px 0;
+		height: 70%;
+		width: auto;
+		max-height: 500px;
+	}
+
+	img.narrow_padding_and_border
+	{
+		margin: 10px 0;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #6699cc;
+		height: 70%;
+		width: auto;
+		max-height: 500px;
+	}
+	
+/*******************Print Styles need to go in @media print section*********************/
+	@media print
+	
+/*EMS-Specific to keep image and caption together on page (no page break) in print media*/ 
+	div.TitleandImage
+	{
+		page-break-inside: avoid;
+	}
+		
+/*EMS-specific to add chapter number*/
+	h1
+	{
+		mc-auto-number-format: 'CHAPTER {chapnum}: ';
+	}
+	
+/*EMS-specific to remove chapter number from release note PDFs--Internal Preview Release Target*/
+	h1.RNprint
+	{
+		mc-auto-number-format: '';
+	}
+		
+/*EMS-specific--formats running header for chapter heading in PDFs (style used on Master Page) and formats for title page and toc page (Print Only Topics)*/
+	p.PDFh1
+	{
+		font-style: italic;
+		font-size: 11px;
+		margin-top: 8px;		
+	}
+	
+		p.PDFGuideTitle
+	{
+		font-size: 19pt;
+		color: #0074c8;
+		font-weight: normal;
+	}
+	
+	p.PDFGuideType
+	{
+		font-family: Calibri;
+		font-size: 17pt;
+		color: #0074c8;
+		font-weight: normal;
+		margin-top: 15px;
+	}
+	
+	p.PDFTocTitle
+	{
+		font-family: Calibri;
+		font-size: 16pt;
+		color: #007ac9;
+		font-weight: normal;
+	}
+	
+/*EMS-specific style for print for narrow mobile images--quick fix until mobile images can be re-sized in photo editing app and then can apply Accruent Global css image styles */
+
+	img.narrow_padding_only
+	{
+		margin: 10px 0;
+		max-height: 450px;
+		height: 70%;
+		width: auto;
+	}
+
+	img.narrow_padding_and_border
+	{
+		margin: 10px 0;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #6699cc;
+		max-height: 450px;
+		height: 70%;
+		width: auto;
+	}

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>EMS&#160;RoomWizard <br />Release Notes (Version 44.1)</h1>
+        <p>EMS release notes for the EMS&#160;Room Wizard are organized by Update. For information on changes to other products released in the Update, click on the Update number in the title. See Also:&#160;<a href="#Contact_Customer_Support">Contact Customer Support</a>.</p>
+        <ul>
+            <li><a href="#Update31">V44.1, Update 31</a>
+            </li>
+            <li><a href="#Update19">V44.1, Update 19</a>
+            </li>
+            <li><a href="#Update11">V44.1, Update 11</a>
+            </li>
+            <li><a href="#Update7">V44.1, Update 7</a>
+            </li>
+            <li><a href="#Update2">V44.1, Update 2</a>
+            </li>
+            <li><a href="#Update1">V44.1, Update 1</a>
+            </li>
+        </ul>
+        <h2><a name="Update31"></a>V44.1, <a href="../V44.1_ReleaseNotes.htm#Update31">Update 31</a>*</h2>
+        <table style="width: 718px;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="3">*Click the linked Update Number above for more information regarding <br />enhancements and fixes for all products released during this Update.</th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">BUILD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">01/16/2019</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">44.1.31000.201812100</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: center;">3.1.0.65</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="3">
+                        <p colspan="3" style="text-align: center;"><span class="ui">See Also:&#160;</span>Known Issues for Update 31<br /><a href="../WhatsNewV44.1.htm">What's New for Version 44.1</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Fix</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1" style="text-align: left;">
+                        <p class="RNArea">RoomWizard</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">EMS RoomWizard Connector Did Not Work Without SQL EMSUser Account</p>
+                        <p class="RNBody">If the SQL&#160;EMSUser account was modified or replaced with a different account, such as an Active Directory account, users would get the error "Could not build list of available data sources" when they ran the EMS RoomWizard connector. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when users modify or replace the SQL&#160;EMSUser account, the EMS&#160;RoomWizard connector can connect to the EMS&#160;database without generating an error.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=32326&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">32326</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update19"></a>V44.1, <a href="../V44.1_ReleaseNotes.htm#Update19">Update 19</a>*</h2>
+        <table style="width: 718px;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="3">*Click the linked Update Number above for more information regarding <br />enhancements and fixes for all products released during this Update.</th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">BUILD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">11/30/17</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">44.1.19000.201711170</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: center;">3.1.0.63</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="3">
+                        <p colspan="3" style="text-align: center;"><span class="ui"><span class="ui">See Also:&#160;</span><a href="Version44.1/Update19/KnownIssues.htm">Known Issues for Update 19</a></span>
+                            <br /><a href="../WhatsNewV44.1.htm">What's New for Version 44.1</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Enhancement</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 186px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 491px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Checking In </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Checking in From Any EMS Product Will Register on the EMS Room Wizard Panel</p>
+                        <p class="RNBody">A check-in on any EMS product is registered on the EMS Room Wizard Panel. Once a user checks into a booking using any EMS product, the "Start" button is removed from the Room Wizard panel so that user does not need to check in again from the Room Wizard panel.</p>
+                        <p class="RNBody"><span class="ui">Note</span>: The "Start Early" button will still appear before the meeting start time even if the user has checked in from any EMS Product. Room Wizard currently does not provide an API to suppress this button.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=22482" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=25965" class="a_2" alt="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=25965">22482</a><br />(For Internal Use Only)<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=25965" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=25965" class="a_2"><br /></a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update11"></a>V44.1, <a href="../V44.1_ReleaseNotes.htm#Update11">Update 11</a>*</h2>
+        <table style="width: 718px;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="3">*Click the linked Update Number above for more information regarding <br />enhancements and fixes for all products released during this Update.</th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p style="text-align: center;">build Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">05/12/2017</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">2017.05.09.1</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: center;">3.1.0.57</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="3" style="text-align: center;">
+                        <p style="text-align: center;"><span class="ui">See Also:&#160;</span><a href="Version44.1/Update11.1/Known Issues Home V44.1 Update 11.1.htm">Known Issues for Update 11</a>
+                        </p><a href="../WhatsNewV44.1.htm">What's New for Version 44.1</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Fix</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;width: 100%;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 185px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 474px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Add a Room</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">ADDING A ROOM MAY CAUSE "YOU HAVE REACHED YOUR MAXIMUM ROOM COUNT OF 0" ERROR</p>
+                        <p class="RNBody">Some customers experienced this error and had to re-enter their EMS Room Wizard license.</p>
+                        <p class="RNBody">Fix: Modified functionality so that the error no longer occurs and customers can add new rooms as expected.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update7"></a>V44.1, <a href="../V44.1_ReleaseNotes.htm#Update7">Update 7</a>*</h2>
+        <table style="width: 718px;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">*Click the linked Update Number above for more information regarding <br />enhancements and fixes for all products released during this Update.</th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p style="text-align: center;">patch Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">12/06/2016</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: center;">2016.12.05.0</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="2" style="text-align: center;"><span class="ui">See Also:&#160;</span><a href="Version44.1/Update7/U7_KnownIssues.htm">Known Issues for Update 7</a>
+                        <br /><a href="../WhatsNewV44.1.htm">What's New for Version 44.1</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Fix</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Registration and Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">DATABASE AUTHENTICATION USING ACTIVE DIRECTORY FAILS WHEN EMSUSER WAS DISABLED</p>
+                        <p class="RNBody">When Active Directory (AD) was used for database authentication and EMSUser was disabled on the SQL server, an error occurred.</p>
+                        <p class="RNBody">Fix: Modified functionality so that users can disable EMSUser and continue to authenticate successfully in this manner.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/21779" class="RNRefHyper">21779</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update2"></a>V44.1, <a href="../V44.1_ReleaseNotes.htm#Update2">Update 2</a>*</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="3">*Click the linked Update Number above for more information regarding <br />enhancements and fixes for all products released during this Update.</th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p style="text-align: center;">build Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">08/08/2016</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">2016.08.08.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: center;">1.1.0804.4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="3" style="text-align: center;">
+                        <p colspan="3" style="text-align: center;"><span class="ui">See Also:&#160;</span><a href="../WhatsNewV44.1.htm">What's New for Version 44.1</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Enhancement</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Start Early</p>
+                        <p class="NormalWeb">
+                            <br />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Start Early Option Now Checks Users In To Meetings</p>
+                        <p class="RNBody">The Start Early option in EMS Room Wizard now registers a check-in and appears per the configuration of the device used (minutes prior to start time). No Shows configured for the location do not register if Start Early is checked.</p>
+                        <p class="RNBody"><span class="ui">Note</span>: This only works on the latest Room Wizard firmware version as Start Early did not exist on older versions.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/18797" class="RNRefHyper">18797</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Update1"></a>V44.1, <a href="../V44.1_ReleaseNotes.htm#Update1">Update 1</a>*</h2>
+        <table style="width: 718px;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 261px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" colspan="2">*Click the linked Update Number above for more information regarding <br />enhancements and fixes for all products released during this Update.</th>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p style="text-align: center;">Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p style="text-align: center;">patch Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p style="text-align: center;">07/20/2016</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p style="text-align: center;">2016.07.20.1</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" colspan="2" style="text-align: center;">
+                        <p colspan="3" style="text-align: center;"><span class="ui">See Also:&#160;</span><a href="../WhatsNewV44.1.htm">What's New for Version 44.1</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Fix</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 795px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">EMS&#160;Rooms</p>
+                        <p class="NormalWeb">
+                            <br />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">EMS Room Page Error</p>
+                        <p class="RNBody">After database scripts had been run, the EMS Rooms page did not list any rooms and the following error occurred:</p>
+                        <p class="RNBody">"System.Data.SqlClient.SqlException: Invalid object name 'dbo.tblRoomWizard'. at Dea.EMSRWInterface.Utilities.DataAccess.BaseSqlAccess.GetDataTable(String sql, String tableName, CommandType commandType) at h.e() at Dea.EMSRWInterface.Pages.RWConnector.ViewRooms.b() at Dea.EMSRWInterface.Pages.RWConnector.ViewRooms.OnLoad(EventArgs e) at System.Web.UI.Control.LoadRecursive() at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)"</p>
+                        <p class="RNBody">Fix: Updated the database to successfully retrieve rooms after update.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact_Customer_Support"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

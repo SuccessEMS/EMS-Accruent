@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Manage Database Connections with EMS Services</h1>
+        <p>After EMS has been installed on your desktop using the EMS Desktop Client Web Deployment, managing database connections can be done through the&#160;EMS Desktop Client&#160;using the instructions below.</p>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Change_Databases">Change Databases</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Create_New_Database_Connections">Create New Database Connections</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Change_Databases"></a>Change Databases</h2>
+        <p>To change databases&#160;while using EMS Desktop Client applications&#160;installed with&#160;Web Deployment, do the following:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS Menu select <span class="ui">File </span>&gt; <span class="ui">Change Database</span> to open the Database Connections window.</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Managing Database Connections.gif" class="resize80_noborder_padding" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Any database connection listed in blue is a system record inherited from the EMS Desktop Client Web Deployment that can not be deleted.</p>
+                </div>
+            </li>
+            <li>
+                <p>To connect to a database that is not the system database select it from the list of Database Connections and&#160;then press the&#160;<span class="ui">Connect&#160;</span>button.&#160;This will close and reopen EMS Desktop Client connected to the selected database.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The user will need to log in again after changing databases.</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Create_New_Database_Connections"></a>Create New Database Connections</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>To create a New connection select&#160;<span class="ui">New&#160;</span>in the Database Connections window to open the Database Connection window.</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Managing Database Connections_1.gif" class="padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Type in the SQL server and EMS database name and then select&#160;<span class="ui">OK&#160;</span>to save the connection. You can delete connections later when you no longer need them.&#160;</p>
+            </li>
+            <li>
+                <p>For EMS to save this connection, it will first check to see if it is a valid connection. If the connection is invalid,&#160;it will not be created, and the user will receive the "Connection failed" error message.</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Managing Database Connections_2.gif" class="padding_only" style="width: 188px; height: 148px;" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If your implementation uses additional EMS Services and Components, you will need to establish (and maintain) database&#160;connections with each.&#160;</p>
+                </div>
+                <p class="beforelist">See step 7 of the following topics for each service:</p>
+                <ul class="unorder-list">
+                    <li>
+                        <p><a href="../../ServicesComponents/EMS Check in Notification.htm">Install EMS Check-in Notification Service</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="../../ServicesComponents/InstallUpgradeEMSEmailNotificationSvc.htm">Install or Upgrade the EMS Email Notification Service</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="../../ServicesComponents/EMSAutomatedReportService.htm">Install the EMS Automated Report Service</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

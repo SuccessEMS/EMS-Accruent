@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Human Resources (HR) Toolkit"
+    Link="/Content/Print Only Topics/TitlePage_HRToolkit.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Introduction to the EMS Human Resources Toolkit"
+    Link="/Content/OptionalFeatures/HRToolkit/V44.1/Introduction.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    SectionNumberReset="continue"
+    VolumeNumberReset="continue"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="How It Works"
+    Link="/Content/OptionalFeatures/HRToolkit/V44.1/HowItWorks.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    VolumeNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="How HR Toolkit Integrates Your User Records"
+      Link="/Content/OptionalFeatures/HRToolkit/V44.1/HowIntegUserRec.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      VolumeNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Align Your Source Data for HR Toolkit"
+      Link="/Content/OptionalFeatures/HRToolkit/V44.1/AlignSourceData.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      VolumeNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Install EMS HR Toolkit"
+    Link="/Content/OptionalFeatures/HRToolkit/V44.1/InstallHRToolkit.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    VolumeNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Import EMS HR Toolkit Data"
+    Link="/Content/OptionalFeatures/HRToolkit/V44.1/ImportHRToolkitData.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    VolumeNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Configure EMS Web App for HR Toolkit"
+    Link="/Content/OptionalFeatures/HRToolkit/V44.1/ConfigWebAppforHRTK.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    VolumeNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Print Only Topics/LastPage_HRToolkit.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+</CatapultToc>

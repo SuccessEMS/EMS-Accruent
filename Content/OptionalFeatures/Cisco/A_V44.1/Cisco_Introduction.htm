@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Introduction to Integration to Cisco TMS</h1>
+        <p>Videoconferencing (VC) system management software controls the delivery of audio and video content. The scheduling component within the software, however, is typically designed to be used by the person responsible for all technical aspects of the session; the problem is, technicians may be unavailable when video conferences need to be scheduled or changes need to be made. The solution to this problem is integration between your VC system management software and EMS. This simplifies the process and allows hosts to focus on other details of the meeting, and provides a cohesive and powerful way to book and manage video conferences.&#160;With this type of integration, you can coordinate all aspects of your organization's&#160;video conference efforts, from booking the room and reserving the equipment to ensuring that break services have been scheduled and attendees are aware of the event. Even if you are already using the standard functionality of EMS for video conference scheduling, this is another way to take your video conference scheduling to the next level.</p>
+        <p>This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Cisco_Integration_Overview">Cisco Integration Diagram</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#How_It_Works">How It Works</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Technical_Architecture">Technical Architecture</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Examples">Example Integrations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#How_Do_I_Install_It">How Do I Install It?</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#System_Requirements">System Requirements</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Cisco_Integration_Overview">Cisco Integration Overview</a>
+                </p>
+            </li>
+        </ul>
+        <div class="TitleandImage">
+            <h2><a name="Integration_Diagram"></a>Cisco Integration Diagram</h2>
+            <p>
+                <img src="../../../Resources/Images/CISCO_Guide/Introduction.png" class="hyperlink_with_padding_and_border" />
+            </p>
+        </div>
+        <h2><a name="How_It_Works"></a>How It Works</h2>
+        <p><a href="http://www.cisco.com/c/en/us/products/conferencing/telepresence-management-suite-tms/index.html" title="http://www.cisco.com/c/en/us/products/conferencing/telepresence-management-suite-tms/index.html">Cisco's TelePresence Management Suite</a>&#160;(TMS) provides a 3<sup>rd</sup>&#160;Party Booking API that exposes Cisco TMS booking functionality to the EMS Cisco TMS Interface, which enables your organization to manage VC equipment directly through EMS. Once the interface is implemented&#160;at your organization&#160;and an expert user has confirmed a VC&#160;reservation, EMS transmits the request details TMS. The department responsible for the equipment completes the reservation as specified, and then approves and adds locations and details (such as turn-on time).&#160;</p>
+        <h2><a name="Technical_Architecture"></a>Technical Architecture&#160;</h2>
+        <p>The EMS – Cisco TMS Interface is comprised of two components:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">EMS – Cisco TMS Service:</span> Windows service responsible for pushing video&#160;conference bookings from EMS to the Cisco TMS Booking API at timed intervals.</p>
+            </li>
+            <li>
+                <p><span class="ui">Cisco TMS Activity DLL:</span> Custom Cisco TMS DLL provided by EMS that will display all EMS – Cisco TMS Interface activity within the EMS application including errors and successfully scheduled video&#160;conferences.&#160;The Cisco TMS Activity DLL also contains an area that allows EMS Administrators to configure various EMS – Cisco TMS Interface settings.</p>
+            </li>
+        </ul>
+        <p>New video&#160;conferences booked in EMS are pushed to the Cisco TMS Booking API based on various settings defined within EMS. Subsequent critical booking changes (i.e. date, time or location changes) and/or cancellations are also relayed to the API.&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Introduction_1.png" class="hyperlink_with_padding_and_border" />
+        </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS – Cisco TMS Interface is a one-way interface and changes made in Cisco TMS will not be reflected in EMS. For instructions on configuring the interface, see <a href="Cisco_ConfigCiscoTMSinterface.htm">Configure the EMS - Cisco TMS Interface</a>.</p>
+        </div>
+        <h2><a name="Examples"></a>Example Integrations</h2>
+        <p>Below is a sample of booking information transferred from EMS to the Cisco TMS Booking API.</p>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Introduction_3.png" class="popup_with_padding_only" />
+        </p>
+        <p>Shown below is a sample of a TMS Manager interface showing the relationship between the VC equipment and the room assignment.</p>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Introduction_4.png" class="resize80_noborder_padding" />
+        </p>
+        <h2><a name="How_Do_I_Install_It"></a>How Do I Install It?</h2>
+        <p>To integrate EMS with your Cisco - TMS system,&#160;you will:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Obtain the Installation Files (from EMS Professional Services)</p>
+            </li>
+            <li>
+                <p>Install the Database</p>
+            </li>
+            <li>
+                <p>Install the EMS - Cisco TMS Service</p>
+            </li>
+            <li>
+                <p>Install the Cisco TMS Activity DLL</p>
+            </li>
+            <li>
+                <p>Configure the EMS - Cisco TMS Interface</p>
+            </li>
+        </ul>
+        <h2><a name="System_Requirements"></a>System Requirements</h2>
+        <p>The latest versions of the following software must be installed before you begin installing the EMS CISCO TMS component:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>EMS V44.1</p>
+            </li>
+            <li>
+                <p>Cisco TelePresence Management Suite 12.0 or higher (available from Cisco)</p>
+            </li>
+            <li>
+                <p>Cisco TMS Booking API (available from Cisco)</p>
+            </li>
+            <li>
+                <p>.NET Framework 3.5 (available from&#160;Microsoft)</p>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Cisco may charge for the TMS Booking API. See&#160;<a href="https://www.cisco.com/c/en/us/support/conferencing/telepresence-management-suite-extensions/products-programming-reference-guides-list.html">Cisco's TMS Booking API Reference Guide</a>.</p>
+        </div>
+        <h2><a name="Cisco_Integration_Overview"></a>Cisco Integration Overview</h2>
+        <p>To integrate EMS with your Cisco - TMS system,&#160;you will:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Obtain the Installation Files (from EMS Professional Services)</p>
+            </li>
+            <li>
+                <p>Install the Database</p>
+            </li>
+            <li>
+                <p>Install the EMS - Cisco TMS Service</p>
+            </li>
+            <li>
+                <p>Install the Cisco TMS Activity DLL</p>
+            </li>
+            <li>
+                <p>Configure the EMS - Cisco TMS Interface</p>
+            </li>
+        </ul>
+        <p>See Also: <a href="#System_Requirements">System Requirements</a> and  <a href="#Examples">Example Integrations</a></p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Exchange Room Integration"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/PrintPDF/Print_ERI.fltoc"
+  ConditionTagExpression="include[Default.FullHelpSite or Default.PrintOnly or &quot;General.Print Only&quot;] exclude[Default.AccruentAccessOnly or Default.ScreenOnly or General.Edit_in_Review or &quot;General.Online Only&quot;] "
+  PatchHeadingLevels="false"
+  InjectEmptyPages="false"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings="20032,20033,20034,20035,20036,20037,20038,20039,20040,20041"
+  MasterPageLayout="/Content/Resources/PageLayouts/LandscapeMulti Page_Letter.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Accruent_2018.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    GenerateTOCProxy="false" />
+  <DocumentProperties
+    Title="Exchange Room Integration Guide"
+    Author="EMS Software, LLC, an Accruent Company" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="75"
+    TitleBar="FileName"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="false"
+    FullScreen="false"
+    PageMode="UseOutlines" />
+</CatapultTarget>

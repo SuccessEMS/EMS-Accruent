@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>What Is Integrated Windows Authentication?</h1>
+        <p>The EMS&#160;Integrated Authentication component provides single-sign-on capability using Integrated Windows Authentication, your organization’s portal, or LDAP.&#160;The Integrated Authentication Setup Guide&#160;lists the steps you must take to configure these Integrated Authentication options.&#160; If you are unsure whether your organization is licensed for Integrated Authentication or you would like to learn more about it, please contact your Account Executive.&#160;</p>
+        <h2>Integration Diagram</h2>
+        <p>The diagram below shows how your organizations' existing security software and systems integrate with EMS software applications through configurations you set in EMS Desktop Client.</p>
+        <p>
+            <img src="../Resources/Images/Learn About Our Applications/What is Integrated Windows_1.png" alt="https://success.emssoftware.com/@api/deki/files/6340/integrationsflowsecurity2.png?revision=1" class="hyperlink_with_padding_and_border" />
+        </p>
+        <p>When configuring&#160;integrated authentication using this component, you can use the following methods:</p>
+        <ul class="unorder-list">
+            <li class="li_17"><a href="../Authentication/WindowsAuthen.html">Integrated Windows Authentication</a>
+            </li>
+            <li class="li_17"><a href="../Authentication/PortalFederatedAuthen.html">Portal or Federated Authentication</a>
+            </li>
+            <li class="li_17"><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html">LDAP Authentication</a>
+            </li>
+        </ul>
+        <h2>What Is Integrated Windows Authentication?&#160;</h2>
+        <p>Integrated Windows Authentication (IWA) is a built-in Microsoft Internet Information Services (IIS) authentication protocol that can be used to automatically authenticate and sign-in a user to EMS Web App.&#160; Integrated Windows Authentication works only with Internet Explorer and is best used on intranets where all clients accessing EMS Web App are within a single domain.&#160;When a domain user who is logged on to a networked PC accesses an EMS Everyday User application, such as EMS Web App, EMS Mobile App, or EMS for Outlook, their Active Directory credentials (Domain\User ID) are compared against corresponding Domain\User ID information recorded in the&#160;Network ID&#160;and\or&#160;External Reference&#160;fields of your EMS Everyday User records.&#160; If a match exists, the Everyday&#160;User will be automatically logged&#160;in.</p>
+        <h2>What Is Portal or Federated Authentication?</h2>
+        <p>The Portal Authentication method provides EMS Web App single sign-on capability using your organization’s portal (e.g.,&#160;CAS, Shibboleth,&#160;SiteMinder, Plumtree, uPortal, etc.).&#160; When a user logged into your portal accesses EMS Web App, a predefined user-specific variable (e.g.,&#160;email address, employee/student ID, network ID, etc.) captured by your portal/sign-on page is compared against corresponding information recorded in the&#160;Network ID&#160;and/or&#160;External Reference&#160;fields of your EMS Everyday User records.&#160; If a match exists, the Everyday User will be automatically logged-into EMS Web App.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The "Field Used to Authenticate Everyday User"&#160;parameter (within <span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Parameters&#160;</span>(<span class="ui">Everyday User Applications</span> tab) is used by EMS Web App to determine which value should be used for authentication.</p>
+        </div>
+        <p>Several built-in authentication methods to pass-in credentials are available including:</p>
+        <ul class="unorder-list">
+            <li class="mt-font-size-135pt_1">Server Variable (Header Variable)</li>
+            <li class="mt-font-size-135pt_1">Session</li>
+            <li class="mt-font-size-135pt_1">Form</li>
+            <li class="mt-font-size-135pt_1">Cookie</li>
+            <li class="mt-font-size-135pt_1">Query String</li>
+            <li class="mt-font-size-135pt_1">Federated (SAML)</li>
+        </ul>
+        <p class="NormalWeb_11">For a more detailed explanation of the authentication methods outlined above,&#160;See Also:&#160;<a href="../Authentication/PortalAuthMethods.html">Portal Authentication Methods</a>.&#160;</p>
+        <h2 class="Heading2_1">What Is LDAP Authentication?</h2>
+        <p>Lightweight Directory Access Protocol (LDAP) is an application protocol for querying directory information.&#160; The LDAP Authentication method provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS Everyday applications, such as EMS Web App and EMS Mobile App.&#160;</p>
+        <p>
+            <img src="../Resources/Images/Learn About Our Applications/What is Integrated Windows_2.png" alt="https://success.emssoftware.com/@api/deki/files/5930/clipboard_ea9b09f382c66d9bd3f8fce3ede18706d.png?revision=1&amp;size=bestfit&amp;width=547&amp;height=321" class="resize80_noborder_padding" />
+        </p>
+        <p>This topic covers the following topics related to LDAP&#160;configuration:</p>
+        <ul class="unorder-list">
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Configure_EMS_Web_App_to_Use_LDAP_Authentication" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Configuring EMS Web App to Use LDAP Authentication</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Configure_EMS_Web_App_Security" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Configuring EMS Web App Security</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Configure_Communication_Options" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Configuring Communication Options</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Core_Properties" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Core Properties</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Non-AD_Configuration" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Non-AD Config</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#LDAP_Queries" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">LDAP Queries</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Save_Your_Configuration" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Saving Your Configuration</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Test_Your_Configuration" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Testing Your Configuration</a>
+            </li>
+            <li><a href="../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html#Configure_Authentication_for_EMS_Mobile_App" title="LDAP Authentication" class="mt-color-669933_1" alt="LDAP Authentication">Configuring Authentication for EMS Mobile App</a>
+            </li>
+        </ul>
+        <p>When a user logs into EMS Web App or EMS Mobile App with their User ID and Password, their credentials are authenticated against LDAP and compared against corresponding user information recorded in the&#160;Network ID&#160;and/or&#160;External Reference&#160;fields of your EMS Everyday User records.&#160; If a match exists, the Everyday User will be logged in to the application, inheriting any Everyday User Process Template rights to which&#160;their LDAP Group has been assigned.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <ul class="unorder-list">
+                <li class="li_12">The EMS Web App LDAP-Process Template assignment process requires that your implementation of LDAP stores group information (e.g., staff, student, department, etc.) as a Directory Service object containing a property (i.e., member) that contains the users that belong to your various groups.&#160;</li>
+                <li class="li_11">The&#160;Field Used to Authenticate Everyday User&#160;parameter (within&#160;<span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Parameters&#160;</span>(<span class="ui">Everyday User Applications</span> tab) is used by the applications&#160;to determine which value should be used for authentication.</li>
+            </ul>
+        </div>
+        <h2>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul class="unorder-list">
+            <li>
+                <p><b>Option 1 (Recommended):</b> Search the Knowledge Base available <MadCap:conditionalText MadCap:conditions="Default.FullHelpSite">at <a href="https://access.accruent.com/" target="_blank">Accruent Access</a></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Default.AccruentAccessOnly">in Accruent Access</MadCap:conditionalText>.</p>
+            </li>
+            <li>
+                <p><b>Option 2:</b>&#160;Submit a case directly via <a href="https://access.accruent.com/" MadCap:conditions="Default.FullHelpSite" target="_blank">Accruent Access</a><MadCap:conditionalText MadCap:conditions="Default.AccruentAccessOnly">AccruentAccess</MadCap:conditionalText>.</p>
+            </li>
+            <li>
+                <p><b>Option 3:</b> Email <b style="text-decoration: underline;"><a href="mailto:emssupport@accruent.com" style="font-weight: normal;" class="bold">emssupport@accruent.com</a></b>.</p>
+            </li>
+            <li>
+                <p><b>Option 4:</b> Phone (800) 288-4565.<br /></p>
+            </li>
+        </ul>
+        <div class="ImportantNote" MadCap:conditions="Default.FullHelpSite" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>If you do not have a customer login, register <a href="https://access.accruent.com/s/login/" target="_blank">here</a>.</p>
+        </div>
+    </body>
+</html>

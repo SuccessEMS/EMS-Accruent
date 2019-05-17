@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Report Descriptions and Options V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Report Descriptions and Options</h1>
+        <p>This section describes EMS reports by category, and defines especially important fields and settings for each report. The following provide information about the various reports:</p>
+        <ul start="4" class="unorder-list">
+            <li><a href="#Daily">Daily Reports</a>
+            </li>
+            <li><a href="#Sales">Sales Reports</a>
+            </li>
+            <li><a href="#Statistics_Reports">Statistics Reports</a>
+            </li>
+            <li><a href="#Other_Reports">Other Reports</a>
+            </li>
+            <li><a href="#Exceptions_Reports">Exceptions Reports</a>
+            </li>
+            <li><a href="#Hoteling_Reports">Hoteling Reports</a>
+            </li>
+            <li><a href="#Invoice">Invoice Reports</a>
+            </li>
+            <li><a href="#General">General Reports</a>
+            </li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_RepQuer/Report Descriptions and Options.png" alt="https://success.emssoftware.com/@api/deki/files/6276/clipboard_ec5a900f647f7361a37634d5dd8368919.png?revision=1" class="resize80_noborder_padding" />
+        </p>
+        <h2><a name="Daily"></a>Daily Reports&#160;</h2>
+        <p>Daily reports are able to be set to send as an email automatically. To learn more about Automated Reports, see&#160;<a href="ConfigAutomatedReports.html" title="Creating Automated Reports" alt="Creating Automated Reports">Create Automated Reports</a>.</p>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event Schedule</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>A summary of the events that are scheduled at your facility, sorted by date and event start time. The report shows event start and end time, group name, event name, and location. You typically print and post the Event Schedule in a lobby or entry way to help visitors find their events.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Use Page Breaks - If the report is run across multiple days, then each day starts on a new page.</li>
+                            <li>Show Bookings on Start Date Only—If a booking is scheduled overnight, then only the start date of the booking is displayed in the report. For example, a booking exists for 3pm Thursday through 10am Friday. If this option is selected, then the booking is displayed only for Thursday in the report.</li>
+                            <li>Show Holidays—Displays any holidays that are configured in the EMS database on the report.</li>
+                            <li>Show Building Hours—Displays building hours on the report.</li>
+                            <li>VIP Events Only—Only the events that are marked as a “VIP” are displayed in the report.</li>
+                            <li>Use Calendar Styles: Events are displayed in the font/color of the Calendar Style that is associated with each event.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event Calendar</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>A chronological list of scheduled events in a wall calendar format.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Use Calendar Styles—Events are displayed in the font/color of the Calendar Style that is associated with each event.</li>
+                            <li>Weekly Calendar—One week per page is displayed in the report.</li>
+                            <li>Show Adjacent Calendar Days—Works in conjunction with the Weekly Calendar option to display events that occur on Saturday and Sunday in the report.</li>
+                            <li>Grey Out Adjacent Calendar Days—Works in conjunction with The “Show Adjacent Calendar Days” option to display events that occur on adjacent days in gray instead of in black.</li>
+                            <li>Hide Holidays—By default, holidays are displayed on the Daily Calendar Report. Select this option to hide holidays in the report.</li>
+                            <li>By Room—Displays events one room at a time in a calendar view.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Room Cards</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>A list of events that is designed to be posted outside a room or event space. The report notes the date, event time, and location for events, as well as the group sponsoring each event. The report can be a single list of all events that are scheduled for the room on a particular date, or it can be a single page per event.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Show Bookings on Start Date Only—If a booking is scheduled overnight, then only the start date of the booking is displayed in the report. For example, a booking exists for 3pm Thursday through 10am Friday. If this option is selected, then the booking is displayed only for Thursday in the report.</li>
+                            <li>Print Blank Room Cards—Prints a room card for a space that does not have any events scheduled.</li>
+                            <li>Print Logo—Prints the facility logo on each room card. You can specify the logo location on the right or left side of the room card.</li>
+                            <li>Sort Room Cards By Book Sequence—If Book Sequencing is being used on Room Configuration, then a facility can print room cards in the Book Sequence order.</li>
+                            <li>Print Combo Room Components—Prints an individual room card for each component of a combo room.</li>
+                            <li>Suppress End Time—Do not show the end times for bookings in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Activity Schedule</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>A list of bookings in all rooms in a building, or just in a specific room in the building. The report, which shows event start and end times, event name, group name and room, can be generated for a range of dates. The report can generated in one of two formats—by Date or by Building.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Use Page Breaks—A new page is generated for each date or for each building.</li>
+                            <li>Show Bookings on Start Date Only—If a booking is scheduled overnight, then only the start date of the booking is displayed in the report. For example, a booking exists for 3pm Thursday through 10am&#160;Friday. If this option is selected, then the booking is displayed only for Thursday in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a name="Setup_Worksheet"></a>Setup Worksheet</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>An internal report that setup crews, custodial, or operations personnel use to ensure that each room is arranged properly for each event. The report displays detailed information about each booking, including setup type, setup notes, required resources, user defined fields, special instructions and resource item notes.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Use Page Breaks—If this report is run across multiple days, then each day starts on a new page.</li>
+                            <li>Highlight Changes Made Within:(days)—Changes that have been made within the specified number of days are highlighted in the report.</li>
+                            <li>Limit Bookings To Those With Details In Selected Categories—Only bookings with a booking detail from the specified categories are displayed in the report.</li>
+                            <li>Show Bookings on Start Date Only—If a booking is scheduled overnight, then only the start date of the booking is displayed in the report. For example, a booking exists for 3pm Thursday through 10am Friday. If this option is selected, then the booking is displayed only for Thursday in the report.</li>
+                            <li>Keep Detail Together—If an event has booking details, the details are kept together on one page instead of being split across two pages.</li>
+                            <li>Show Holidays—Holidays are displayed in the report.</li>
+                            <li>Show Building Hours—Building hours that are associated with each building are displayed in the report.</li>
+                            <li>Show Item Notes—Any notes that have been entered for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Special Instructions—Any special instructions that have been entered in EMS Web App for a booking detail item are displayed in the report.</li>
+                            <li>Show User Defined Fields—Any user defined fields and their answers for a reservation are displayed in the report.</li>
+                            <li>Show Booking Changes Only—Bookings that have been edited within the specified number of days are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Service Order Schedule</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the service orders that are scheduled for a date or date range. Produced by category.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Use Page Breaks—If this report is run across multiple days, then each day starts on a new page.</li>
+                            <li>Show Details—Booking item details that associated with each event are displayed in the report.</li>
+                            <li>Highlight Changes Made Within:(days)—Changes that have been made within the specified number of days are highlighted in the report</li>
+                            <li>Show Pricing—Any pricing that is associated with an item is displayed in the report.</li>
+                            <li>Show Item Notes—Any notes that have been entered for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Special Instructions—Any special instructions that have been entered in EMS Web App for a booking detail item are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Service Orders</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Separate pages for each service order in a date range. The report provides information on the event and the items or services needed. Produced by category.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Highlight Changes Made Within:(days)—Changes that have been made within the specified number of days are highlighted in the report.</li>
+                            <li>Footer Message—Used to specify the Footer message that is displayed on each page of the report.</li>
+                            <li>Show Item Notes—Any notes that have been entered for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Special Instructions—Any special instructions that have been entered in EMS Web App for a booking detail item are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Banquet Event Order</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Separate pages for each booking that occurs on a date or within a date range that has the “Primary Category” specified. Service orders, resource information, notes, and information for resource with order type categories are included in the report.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Highlight Changes Made Within:(days)—Changes that have been made within the specified number of days are highlighted in the report.</li>
+                            <li>Show Pricing—Any pricing that is associated with an item is displayed in the report.</li>
+                            <li>Limit Bookings To Those With Details In Selected Categories—Only bookings with a booking detail from the specified categories are displayed in the report.</li>
+                            <li>Show Item Notes—Any notes that have been entered for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Special Instructions—Any special instructions that have been entered in EMS Web App for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Selection Notes—Any notes that have been entered for a booking detail item selection are displayed in the report.</li>
+                            <li>Show Service User Defined Fields—Any user defined questions and their answers for any listed category are displayed in the report.</li>
+                            <li>Set Page Numbers By Booking—Resets page number for every unique booking.</li>
+                            <li>Use Page Breaks—If this report is run across multiple days, then each day starts on a new page.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Resource Schedule</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists by category and date, how many of each resource item is needed, as well as the event time, event name, location, and group.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Use Page Breaks—If this report is run across multiple days, then each day starts on a new page.</li>
+                            <li>Highlight Changes Made Within:(days)—Changes that have been made within the specified number of days are highlighted in the report.</li>
+                            <li>Show Overbooked Resources Only—Only those bookings where the selected resource exceeds the number available in inventory at that time are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Service Order Change Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>List the service orders to which a change has been made by Booking/Service Order ID. Includes the service order category, a description of the change, the old value for the service order, the new value for the service order, the date of the change, and the ID for the user who made the change.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Attendee Visitor Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the attendees for an event by date or date range, and indicates whether they are visitors and shows their group name, phone number, event name, the room they will be in, and the start and end times for their event.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Use Page Breaks—If this report is run across multiple days, then each day starts on a new page.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Production Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Lists production items and their quantities grouped by production area.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Show Item Notes—Any notes that have been entered for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Special Instructions—Any special instructions that have been entered in EMS Web App for a booking detail item are displayed in the report.</li>
+                            <li>Show Item Selections—Any selections that have been entered for a booking detail item are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Sales"></a>Sales Reports&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 275px;" />
+            <col style="width: 510px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 402px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sales by Group Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the sales for each group type for a date or date range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Sales by Group</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the sales for each group, divided by group type, for a date or date range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sales by Category</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the revenue generated by each resource category for a date or date range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Sales by Resources</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the sales for each resource item for a date or date range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sales by Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the reservations that have bookings for a specified date or date range and shows the charges, by category, for the reservation. Also gives a grand total for all reservations. If a reservation also has bookings that fall outside the specified date or date range, these figures are not included in the report.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Sales by Billing Reference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the total sales for a date or date range, based on the billing reference number on the reservations that have bookings in the specified range. Sales that are associated with reservations that have no billing reference number are not included in the report.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sales by Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the sales for a particular date or for each date in a date range, broken down by booking. This report displays the following information—Start/End Times, Group, Event Name, Location, Billing Reference#, PO Number, Payment Type, Status, Reservation ID, Booking ID, and Sales amount.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Status Changes by Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the sales that are associated with a reservation where the reservation or booking status was changed.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Status Changes by Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Lists the sales that are associated with bookings where the bookings status was changed.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Display Amount—Select from Net Sales, Gross Sales, or Discounts.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Amounts—Group Types with zero sales/discounts are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Statistics_Reports"></a>Statistics Reports&#160;</h2>
+        <p>All Statistics reports, except Hourly Room Utilization and Hourly Resource Inventory Utilization, provide data analysis&#160;functionality. To View and analyze data, click&#160;Analyze&#160;to open a Browser window that displays the queried data. You can group the information by column, you can export the raw data to an Excel file, and you can click&#160;Details&#160;to provide more detailed information about the queried data.</p>
+        <p>Statistics reports&#160;are able to be set to send as an email automatically. To learn more about Automated Reports, see&#160;<a href="ConfigAutomatedReports.html">Create Automated Reports</a>.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Room Utilization report, the Hourly Room Utilization report, and the Hourly Room Utilization report are available only in EMS Enterprise. They are not available in EMS Professional.</p>
+        </div>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 208px;" />
+            <col style="width: 506px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 473px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Room Statistics</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists all rooms by building and for each room, indicates the following information—the number of bookings for the date range selected, the reserved hours, the event hours, the estimated attendance (i.e., setup count), and the actual attendance.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Room Utilization</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the number of bookings, hours used, hours available, percent utilization, and hours vacant for rooms, by building, for the date range specified.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Day Selection—Specify which day(s) of the week to include in the report.</li>
+                            <li>Group By Utilization Category—Groups rooms by utilization (low, high, unused).</li>
+                            <li>Include Cost—The cost for vacancies is displayed in the report.</li>
+                            <li>Include Unused—Include rooms that contain no bookings in the report.</li>
+                            <li>Cap Utilization at 100%?—Percent utilization cannot exceed 100%.</li>
+                            <li>Low Utilization—Specify what percentage equals “Low” utilization.</li>
+                            <li>High Utilization—Specify what percentage equals “High” utilization.</li>
+                            <li>Availability Based On—Select to base availability on one of the following - Building Hours, Hours per Day, or Specific Hours.</li>
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Hourly Room Utilization</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Displays room utilization broken down by hours in the day, by percentage utilized.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Day Selection—Specify which day(s) of the week to include in the report.</li>
+                            <li>Display Chart—Includes a chart on the final page of the report that summarizes the reported data.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hourly Resource Inventory Utilization</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Displays resources, and the number of items used on an hourly basis for a specified date range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Day Selection—Specify which day(s) of the week to include in the report.</li>
+                            <li>Display Chart—Includes a chart on the final page of the report that summarizes the reported data.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Group Statistics</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Displays Number of Bookings, Reserved Hours, Event Hours, Estimated Attendance, and Actual Attendance by Group Type for a given date or date range. The format can be set to “Detail” to provide statistics for each specific group.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event Type Analysis</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Provides information by event type on the following—the number of reservations, the number of bookings, the percentage of total reserved hours, the percentage of total event hours, the percentage of total estimated attendance, the percentage of total attendance, the actual attendance, and the percentage of total.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Display Chart—Includes a chart on the final page of the report that summarizes the reported data.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Reservation Source Analysis</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Displays the number of reservations, the number of bookings with percentage, reserved hours with percentage, event hours with percentage, estimated attendance with percentage, and actual attendance with percentage by reservation source.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Display Chart—Includes a chart on the final page of the report that summarizes the reported data.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Resource Statistics</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the quantity and the hours used by category and by resource item.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                            <li>Show Zero Quantities—Includes all resources even if the resource is not used during the date range specified.</li>
+                            <li>Show Inactive Resources—Includes all inactive resources used during the date range specified.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Room Availability</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Provides a count of room availability by room type for a given date range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Setup Count Analysis</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the total number of bookings by setup count.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Seat Occupancy</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Displays the capacity for each room, the number of bookings for the date range, the seats available for the bookings, the total estimated attendance based on setup count on each booking, the average estimated attendance, and the estimated percentage of seats filled for the specified date range.Figures are also provided for total actual attendance, average actual attendance, and actual percentage of seats filled.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Include Report Criteria—The filter settings for the report are displayed in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Benchmark Metrics Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Compiles metrics for a number of different areas within EMS, for example, Rooms By Number of Bookings, Reservations By Source, and so on.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Days Open Per Week—Indicates the number of days per week your facility is open per week. The default value is 7.</li>
+                            <li>Hours Open Per Day—Indicates the number of hours per day that your facility is open. The default value is 10.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Other_Reports"></a>Other Reports&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Cancellation Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Lists the bookings that have a status that was changed to “Cancelled” on the date or dates specified, or lists the bookings on the date or dates specified that have a status type of “Cancelled.” The report also lists the date that the booking status was changed, the date the bookings were to have taken place, and the location of the event, the name of the person who canceled the booking, the reason for the cancellation, and the booking ID. You can run the report in one of two formats—by Booking Date (the date that the bookings were to occur) or by Cancel Date (the date that the bookings were canceled).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Cancellation Summary</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Summarizes, by reservation, all charges for bookings on a date or in a date range. The report shows the first and last bookings canceled within the reservation, the Group, the reservation number, the group contact, the event name, the event type, the total charges, and the reason for cancellation of the most recently canceled booking. Reservations that do not have charges associated with the bookings are not displayed on this report. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Reservation Summary</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>A summary of reservations that occurred within a specific date range. The report also lists complete reservation information (reservation number, event name, group, contact person, and so on) and booking dates. User defined fields can also be printed in this report. You can select Use Specific times and then enter a range of times to limit the report to reservations that occurred within this specified time range.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Exceptions_Reports"></a>Exceptions Reports&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Undefined Setups</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the bookings on the selected date or date range for which no setup count has been entered. The report lists the following information for the bookings—the event name, time and location, contact name and phone number, booking status, and ID number. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range. You can enter information about the report, or a name or description for the report in the Report Comment field.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Show Bookings on Start Date Only—If a booking is scheduled overnight, then only the start date of the booking is displayed in the report. For example, a booking exists for 3pm Thursday through 10am Friday. If this option is selected, then the booking is displayed only for Thursday in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Status Reminder Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the bookings that have a status with a reconfirm date that falls within the selected date range. You typically use the information in this report to review tentative bookings. The report can be run in one of two formats—by Status Date (the date that the event was put in a “Tentative” status) or by Booking Date (the actual date of the event). You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range. You can enter a report name or description or any pertinent information about the report in the Comment field.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Wait List Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists all the bookings with a Wait status for the time period that you have requested. Detects situations where a booking has been canceled and there are one or more bookings with a Wait status that can now be changed to Confirmed, and indicates if the room is available. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Booking Conflict Analysis</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Reviews information on all bookings for a date or date range and lists any conflicts</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>EMS does not allow double-bookings, but they might exist because conversion of data from systems that do allow them, or the result of users failing to restart EMS after encountering error messages.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Building Hours Exceptions</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists events for a date or date range that fall outside of the configured building hours. Either event time or reserved time is checked based on the “Validate Building Hours on Event Time” parameter. The report also shows the start and end times, group, event name, location, reservation number, and booking number. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range. You can enter information about the report, or a name or description for the report in the Report Comment field.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Inactive Room With Bookings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the bookings for a specified date or date range that are scheduled in inactive rooms. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range. You can enter information about the report, or a name or description for the report in the Report Comment field. You can click View to open the booking for viewing and editing, changing the status of the booking and/or emailing the group.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Inactive Groups With Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the reservations for a specified date or date range that are scheduled for inactive groups. You can click View to go to the reservation for viewing and editing, including changing the status of the reservation and/or its bookings.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Invalid Service Orders</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the service orders that have a start time and/or end time that fall outside the reserved time for the room. Lists the category, date, reserved and event start and end times, location, group, reservation number, booking number, service order number and a description of the invalid order. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range. You can enter information about the report, or a name or description for the report in the Report Comment field.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Service orders that fall outside the reserved time are considered invalid even if the Validate Service Order Times Against Booking parameter is set to “No.”)</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Invalid Billing References</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists the bookings for a particular date or date range that are in reservations that have invalid billing reference numbers. You can select Use Specific times and then enter a range of times to limit the report to bookings that occurred within this specified time range. You can enter information about the report, or a name or description for the report in the Report Comment field.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>A billing reference number is considered invalid if it has not been defined in the Billing Reference Configuration area but the Validate Billing Reference parameter is set to “Valid Only.”</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Inactive Web Process Templates</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Displays the inactive web process templates that are attached to reservations.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Hoteling_Reports"></a>Hoteling Reports&#160;&#160;</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>In Version 44 the Early Checkout Report was removed. This category of reports is not supported for EMS Professional.</p>
+        </div>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Room Occupancy Summary</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Displays, by building and room type, the number and percentage of rooms occupied.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>No Show</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the bookings for which the reservation holder did not check in.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>A customer can be checked in via the EMS Kiosk, the EMS desktop client, EMS Glance,&#160;or EMS Web App.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Visitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists events for groups that have cities on their group record, other than what is specified in the Exclude Locations field. If multiple locations are to be listed, they should be entered with a comma between them (for example, Denver, Houston, Tampa, and so on).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Booking Notice Statistics</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the total bookings for a date or date range, divided into three “Amount of Notice” categories, where the Amount of Notice is the time between when the booking was scheduled and the date/time for which it was scheduled. The report can be generated in one of two formats— “standard” or by room type.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Transition</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Tracks the occupants of hoteling spaces during a specified date range. Lists by floor and room where the occupant was last, what room the occupant is moving to, and who was in the space the previous day. Typically this report is run for a two day range and the days of the week must be checked. This report can be used by personnel who are responsible for preparing hoteling spaces for each occupant.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Show Details—Prints the categories that are associated with the bookings.</li>
+                            <li>Highlight Changes Made Within:(days)—Changes that have been made within the specified number of days are highlighted in the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Arrivals and Departures</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the departures and arrivals for a particular room by building and floor. The report shows the time of the departure if the customer is a departure and the time of the arrival if the customer is an arrival. Typically, this report is run for a two day timespan listing the departure date first and the arrival date second.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Groups With Multiple Bookings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Lists groups that have multiple bookings for the date or date range specified. The information is organized by date, and lists the start and end times, the room, the room type, and the booking status for each booking.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Room Card&#160;- QR Code</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allows you to print QR Codes that can be placed outside rooms to be used within&#160;EMS Mobile App.</p>
+                        <p>For complete instructions in configuring and generating QR codes,&#160;See Also:&#160;<a href="../ConfigurationGuide/ConfigGenerRoomQRCode.htm" title="https://success.emssoftware.com/Admin_Guides_(V44.1)/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_EMS_QR_Codes" alt="https://success.emssoftware.com/Admin_Guides_(V44.1)/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_EMS_QR_Codes">Configure QR Codes.</a></p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Check In Statistics</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Lists the percentage of bookings that have been&#160;checked-in to&#160;by building, building-room type, or room type.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>A customer can be checked in via the EMS Kiosk, the EMS Desktop Client, or EMS Web App.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Invoice"></a>Invoice Reports&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Billing Worksheet</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Provides information on how bookings are to be invoiced. The report can include bookings within a date range, bookings within a reservation, or bookings within a date range inside a reservation. The report breaks down the charges in the same way as an invoice. The report also provides options for printing heading/footer messages and the detail for zero-dollar items.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="General"></a>General Reports&#160;</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Report</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Ageing Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>A list of outstanding invoices. Current invoices are listed first, followed by past due invoices organized by age. Ageing Reports are based on department.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Currency—Select the currency for the invoices.</li>
+                            <li>Show Unapplied Deposits—Deposits that are applied to reservations that have not been invoiced are displayed on the report.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Statements</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>A list of outstanding invoices for a selected group. Current invoices are listed first, followed by past due invoices organized by age.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Currency—Select the currency for the invoices.</li>
+                            <li>Report Title—Can create a title that is displayed at the top of the statement.</li>
+                            <li>Header Message—Select a message from the pre-configured messages that is displayed at the top of every page of the statement.</li>
+                            <li>Include Transactions On Zero Balance Invoices Within [ ]days—Statements that have a zero balance within the specified number of days are displayed.</li>
+                            <li>Show Billing Reference Number—The billing reference number is displayed under the invoice information.</li>
+                            <li>Show Purchase Order Number—The purchase order number is displayed under the invoice information.</li>
+                            <li>Show Transaction Notes—Any notes entered for the transaction are displayed under the invoice information.</li>
+                            <li>Use Current group Address - The&#160;current&#160;address of the group is displayed on the statement. (This address might or might not be the address for the group when the reservation was made.)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Transaction Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Shows all the billing transactions during a specified period if you generate the report in the By Transaction Type by Date format. Simply enter the date or date range and click Print. The report lists the group, event name, reservation ID, transaction date, transaction type, invoice number, check number, and amount.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the report is generated in Standard format, deposits are not shown as transactions if they have been absorbed by the generation of an invoice.</p>
+                        </div>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>You can also generate the Transaction Report from within a reservation to see only transactions for the selected event and you can generate the Transaction Report from the Print option on the Payment Entries window. Click Billing &gt; Payments &gt; Payment Entry, and then on the Payment Entries window, click Print.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Currency—Select the currency for the billing transactions.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Voided Transaction Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lists the payments, deposits, or adjustments that were voided on a specific date or within a date range. Lists the group, event name, reservation ID, transaction date and type, invoice number (if applicable), check number, and amount.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Currency—Select the currency for the voided transactions.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Invoice Detail Report</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Provides detail for all invoices that were generated within a given date range.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>See&#160;<a href="WorkwithInvoices.html#Reprint_an_Invoice">Reprint an Invoice</a>&#160;for detailed instructions about the options that are available for the Print Invoice Detail dialog box.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>General Ledger Distribution</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Shows the totals for invoices that were generated within a given date range. Entries are broken down by account, invoice, rate plan, or invoice. You can also generate this report in a Summary format.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Currency—Select the currency for the invoices.</li>
+                            <li>Invoices With Payments Only—Only invoices where payment has been received are posted on the report.</li>
+                            <li>Show Applied Deposits/Prepayments—Applied deposits and prepayments are posted on the report. (An applied deposit is a deposit on a reservation that has been invoiced.)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

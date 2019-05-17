@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="10127" MadCap:lastWidth="1434" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1_2">EMS Web App Release Notes Version 44.1, Update 16 </h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>.</p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>
+                        <MadCap:concept term="V44.1" />Name:&#160;V44.1, Update 16</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;September 29, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch:&#160;44.1.16000.201710040</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build #:&#160;&#160;44.1.16000.835</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_2_1">Enhancements&#160;&#160;&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Create Reservation</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">New Booking Cutoff Enhancements</p>
+                        <p class="NormalWeb_3">When users tried to book a location at a time/date that was prior to the New Booking Cutoff time specified in the Everyday User process template, users received the error message&#160;“First available booking date violation.”&#160;To provide users more information and guidance with their booking cutoff errors, the error message reporting and functionality have&#160;been modified for Range of Days and Specific Date cutoffs.</p>
+                        <ul class="ul_4">
+                            <li class="mt-font-size-90pt_1">Range of Days—When users select a Range of Days that is prior to the New Booking Cutoff time, users will receive the following error message:</li>
+                        </ul>
+                        <p class="mt-font-size-90pt_1">“Online Reservations must be made at least X hour(s) (or X day(s)) in advance. Please select a later date/time.”</p>
+                        <p class="mt-font-size-90pt_2">In the error message, X hours and X days are&#160;dynamic to the lead time established by the New Booking Cutoff time parameter.</p>
+                        <ul class="ul_4">
+                            <li class="mt-font-size-90pt_1">Specific Date—The following enhancements were made:</li>
+                        </ul>
+                        <ul class="ul_5">
+                            <li class="mt-font-size-90pt_2">In the calendar selector, users are unable to select an invalid date.</li>
+                            <li class="mt-font-size-90pt_2">If users type in an invalid date, they will receive an inline message that tells them to select a valid date.</li>
+                            <li class="li_35">If a selected date becomes invalid between the time users select the date, and the time users click&#160;Create Reservation&#160;(or the difference between the selected time zone and building time zone causes an issue), users will receive the following error message:</li>
+                        </ul>
+                        <p class="mt-font-size-90pt_1">"Your date/time selection occurs before the earliest date allowed. Please check your selected time zone and/or choose a later date/time."</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27753" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27753" class="Hyperlink_2">27753</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">“Booking Added” Message Was Confusing and&#160;Changed to&#160;“Room Added to Reservation”</p>
+                        <p class="NormalWeb_3">The message&#160;"Booking Added"&#160;has been modified to read&#160;"Room Added to Reservation."&#160;The&#160;"Booking Added"&#160;message,&#160;which appeared after users added a room to a reservation, was confusing because users could interpret the message to mean that their reservation had been created even though users still needed to click&#160;Create Reservation&#160;to complete the reservation process.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=29297" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=29297" class="Hyperlink_2">29297</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Browse People</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Browse People Search Provides Option to View Remaining Results</p>
+                        <p class="NormalWeb_2">When a Browse People search returned more than 50 results, the search results list only displayed the first 50 matching results, and there was no option to display the remaining results. Functionality was modified so that users now have the option to view the remaining results when more than 50 search results are returned.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31313" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31313" class="Hyperlink_2">31313</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">User-Defined Fields (UDFs)</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">User Input Vulnerability Is No Longer Unrestricted</p>
+                        <p class="NormalWeb_2">A parameter was added to limit the allowable characters for user-defined fields (UDFs).</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28135" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28135" class="Hyperlink_2">28135</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="Emphasis_1">Parameter</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">New Parameter Added That Only Displays Rooms with An Exact Match to Search Criteria</p>
+                        <p class="NormalWeb_2">A new parameter was added to EMS Desktop Client that allows configuration managers to enable or disable the exact match when displaying room results in list view of create reservations.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33230" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=33230" class="Hyperlink_2">33230</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2_2_1">Fixes&#160;&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_38">My Bookings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Clicking the Previous or Next Button&#160;Several Times Caused a Loop</p>
+                        <p class="NormalWeb_3">In My Bookings, clicking&#160;the&#160;Previous&#160;or&#160;Next&#160;button repeatedly&#160;caused a loop. &#160;</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that an activity&#160;indicator will display over the My Bookings area while the bookings are being retrieved. Also, when&#160;users click the&#160;Previous&#160;or&#160;Next&#160;button repeatedly, the app will keep track of the date and not loop. For example, if the app shows bookings for August 8&#160;and a user clicks the&#160;Next&#160;button four times, the app will show the bookings for August 12.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=22840" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=22840" class="Hyperlink_2">22840</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Reservation Details</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Assigned Single Event Type in the Everyday User Process&#160;Template Did Not Populate the Event Type Field</p>
+                        <p class="NormalWeb_3">When users assigned a single&#160;event type in the Everyday User process template, the&#160;Event Type&#160;field in the Reservation Details tab was empty and did not populate with the assigned event type.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when users assign only one event type in the Everyday User process template, the&#160;Event Type&#160;field populates with the assigned event type.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=22979" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=22979" class="Hyperlink_2">22979</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">New Reservation &gt; Attendees</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Visitor Checkbox Was Not Checked Even Though Default Was Set to Checked</p>
+                        <p class="NormalWeb_3">In the EMS Web App, the&#160;Visitor&#160;checkbox on the Add New Visitors Attendee screen was not checked even though the&#160;Attendees Are Visitors&#160;checkbox was selected&#160;in the EMS Desktop Client.&#160;&#160;</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that when the&#160;Attendees Are Visitors&#160;checkbox is selected in the EMS Desktop Client, the&#160;Visitor&#160;checkbox&#160;will be checked in the EMS Web App.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=23001" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=23001" class="Hyperlink_2">23001</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Account Management</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Users&#160;with&#160;Pending Status Could&#160;Log In to EMS Web App</p>
+                        <p class="NormalWeb_2">Users&#160;with pending status could log in and view the EMS Web App; however, the users were unable to create reservations or make requests since their status was pending.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that users are not able to log in until their accounts are activated.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31576" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31576" class="Hyperlink_2">31576</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Custom Links</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Custom Links Showed Unapproved and Canceled Events as Approved</p>
+                        <p class="NormalWeb_2">When users generated a custom link, the custom link results showed canceled and unapproved events as approved.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when users generate a custom link, the custom link results do not show canceled and unapproved events.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31352" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=31352" class="Hyperlink_2">31352</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Custom Links Using Group Filter Experienced Delay When Toggling Monthly View</p>
+                        <p class="mt-font-arial_4">When viewing reservations through custom links using the Group Filter, users were experiencing a 13-15 second delay when they toggled the monthly view, even if there were no results to display.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when users view reservations through custom links using the Group Filter, users experience a quick and smooth transition when they toggle the monthly view.</p>
+                        <p class="p_59">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32118" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32118" class="Hyperlink_2">32118</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="6" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Create Reservation</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Wildcard Searching Not Possible in Billing Reference and&#160;Purchase Order&#160;Number Fields</p>
+                        <p class="NormalWeb_2">When creating a reservation using a template that prompted users to enter&#160;a Billing Reference (BR) or&#160;Purchase Order (PO)&#160;number, users had to enter the first two characters of the PO or BR number in the search field to look up the&#160;number.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality to allow wildcard searches. When users are prompted to enter&#160;a PO or BR number, users can search for a PO/BR number as follows:</p>
+                        <ul class="ul_4">
+                            <li class="li_32">To search all numbers, users can enter&#160;**&#160;in the&#160;Billing Reference&#160;Number&#160;or&#160;PO&#160;Number&#160;search field, and the field will display up to 100 results. The results list shows both the BR/PO number and its description.</li>
+                            <li class="li_32">To perform a single character search, users can enter&#160;*&#160;and the first character of the number or first character of the description for the BR/PO number. For example, entering&#160;*4&#160;will return the first 100 search results for BR or PO numbers that start&#160;with the number 4.</li>
+                        </ul>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32294" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32294" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28924" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28924" class="Hyperlink_2">8924</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Reservations Created After User&#160;Session Timed Out</p>
+                        <p class="NormalWeb_2">Users were able to create reservations after their sessions had timed out. However, users were unable to access these reservations because the reservations were created with an unauthenticated user webuserid (logged as webuserid=-1). &#160;</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when&#160;sessions time out, users will receive an Internal Server Error message, or they will be redirected to the login page with a timeout message.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32294" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32294" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28961" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=28961" class="Hyperlink_2">8961</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Service Order Times Did Not Adjust to Building Time Zones</p>
+                        <p class="NormalWeb_2">When creating a reservation with service orders in buildings located in different time zones, the service order time was defaulting to the “Make booking in this time zone” time and not adjusting the time for the building’s time zone.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that the service order time adjusts to the building’s time zone.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30863" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30863" class="Hyperlink_2">30863</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">All Selected Categories Available at Checkout Checkbox Not Respected</p>
+                        <p class="NormalWeb_3">When users created a reservation in EMS Web app, the Services tab was displayed even though the&#160;All Selected Categories Available at Checkout&#160;checkbox was not selected on the Categories tab in EMS Desktop Client.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when the&#160;All Selected Categories Available at Checkout&#160;checkbox is not selected in EMS Desktop Client, the Services tab is not displayed in EMS Web app when users create a reservation.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32686" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32686" class="Hyperlink_2">32686</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Unable to Access Room Request Page When Using SSL</p>
+                        <p class="NormalWeb_2">When creating a reservation in an SSL environment, users were unable to access the Room Request page.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that users can access the Room Request page in an SSL environment.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32840" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32840" class="Hyperlink_2">32840</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Inactive Web Template Was Marked Inactive But Still Able to Book Against</p>
+                        <p class="NormalWeb_2">When creating a reservation using an inactive template, users were receiving a server error on submit request/create reservation page. Users should have been receiving an error message alerting them that they cannot access the page.&#160;</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that users receive an error message alerting them that they cannot access the page when using an inactive template.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32218" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32218" class="Hyperlink_2">32218</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Location Filter</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Selecting a Location Was Not Restricting Floor Filters to Floors in that Location</p>
+                        <p class="NormalWeb_2">Filter options available for selection were not displaying only those assigned to rooms available on the template for the selections in the Locations search parameter.&#160;This applied to filters on Create, Edit, Browse Locations, and Browse Events.</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that&#160;users selecting&#160;a location first can only see the available floors/setup types/room types/features for that location.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=29041" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=29041" class="Hyperlink_2">29041</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Maintain Inventory</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Maintain Inventory Parameter Not Being Respected for Resources on Bookings Across Multiple Time Zones&#160;</p>
+                        <p class="mt-font-arial_4">When adding a resource with a limited quantity to bookings across multiple time zones, the Maintain Inventory parameter was not being respected, and the resource was being added to all of the bookings.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when users add a resource with a limited quantity to bookings across multiple time zones, the Maintain Inventory parameter is respected, the resource is not added to all of the bookings,&#160;and&#160;users receive the error message&#160;“One or More services are unavailable.”</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30693" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30693" class="Hyperlink_2">30693</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Edit Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Remove Icon Was Not Visible When Editing a VC Booking</p>
+                        <p class="NormalWeb_2">Users editing a video conference (VC) booking could not see the Remove icon.</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that the Remove icon is available to users attempting to edit a VC booking.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26017" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26017" class="Hyperlink_2">26017</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Browse Location</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Users Experienced Inconsistent Behavior in Browse Location Grid</p>
+                        <p class="NormalWeb_2">Users with LDAP authentication were unable to create reservations from the Browse Location grid. The dialog box was not opening and users were unable to choose a template.</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that users can choose a template from the dialog box and begin creating their reservation.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26553" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=26553" class="Hyperlink_2">26553</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Floor Filter</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Floor Filter Did Not Reflect Floor Sequencing</p>
+                        <p class="NormalWeb_2">Users creating a reservation and using the floor filter noticed that the floors were in a random order.</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that floor list appears in specified sequence listing.</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27201" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=27201" class="Hyperlink_2">27201</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Location Tab</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Views Were Not Showing Available Spaces</p>
+                        <p class="NormalWeb_2">Views within the Location tab in the guest request form were not displaying the available rooms within that view.</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that rooms display for the selected view.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32230" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=32230" class="Hyperlink_2">32230</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">FIPS</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Unable to Implement Server-level Encryption FIPS</p>
+                        <p class="NormalWeb_2">Server-level encryption&#160;FIPS&#160;were not being implemented.</p>
+                        <p class="NormalWeb_3">Fix: Modified functionality so that server-level FIPS&#160;can be implemented.&#160;</p>
+                        <p class="p_25">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30296" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=30296" class="Hyperlink_2">30296</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Browser</p>
+                        <p class="Emphasis_1">Create Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Weekly Recurring Meetings Did Not Sync with Outlook Calendar in Internet Explorer</p>
+                        <p class="NormalWeb_2">In the Internet Explorer browser with Japanese as the preferred language, when users created a weekly recurring meeting in EMS Web App, the meeting did not sync with the host’s or attendees' Outlook calendars.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when users create a weekly recurring meeting, the meeting will&#160;sync with the host’s and attendees’ Outlook calendars regardless of which browser is used or which language is selected.</p>
+                        <p class="p_41">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=33069" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=33069" class="Hyperlink_2">33069</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Weekly Recurring Meetings Showed on the Wrong Date in Outlook</p>
+                        <p class="NormalWeb_2">In the Internet Explorer browser&#160;with UK English as the preferred language, when users created a weekly recurring meeting in EMS Web App, the meeting showed on the wrong dates in Outlook.</p>
+                        <p class="NormalWeb_3">Fix:&#160;Modified functionality so that when users create a weekly recurring meeting, the meeting will show on the appropriate dates in Outlook regardless of which browser is used or which language is selected.</p>
+                        <p class="p_41">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=33131" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=33131" class="Hyperlink_2">33131</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

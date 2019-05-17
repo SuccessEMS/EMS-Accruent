@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configure EWS Impersonation for Microsoft Exchange V44.1</title>
+    </head>
+    <body>
+        <h1>Configure EWS Impersonation for Microsoft<sup>®</sup> Exchange</h1>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The service account requires a mailbox and must be mail enabled. EMS&#160;Software recommends disabling the password expiration for these accounts.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>Log in to the Office 365<sup>®</sup> Exchange Administration Center. For Microsoft Exchange 2010, please see <a href="https://msdn.microsoft.com/en-us/library/office/bb204095(v=exchg.140).aspx">here</a>. </li>
+            <li>Create a Service Account User within your Office 365 Environment.<br />OR&#160;<br />Configure a already migrated account.</li>
+            <li>Select&#160;<span class="ui">Exchange </span>&gt; <span class="ui">Admin Roles</span>&#160;from the navigation tree.</li>
+            <li>Click the <span class="ui">+</span>&#160;icon to add a new role</li>
+            <li>In the role group dialog box, provide a name for your Role Group (e.g. "EMS_Exchange_Impersonation"). It is also helpful to enter&#160;a Description.</li>
+            <li>Under Role, click the <span class="ui">+</span> icon to add&#160;the&#160;"Application Impersonation"&#160;Role.</li>
+            <li>Under Members, click the <span class="ui">+</span> icon and find your Exchange Service Account.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For more information on EWS&#160;Impersonation, see <a href="LearnMoreaboutEWS.htm">What is EWS&#160;Impersonation?</a></p>
+        </div>
+    </body>
+</html>

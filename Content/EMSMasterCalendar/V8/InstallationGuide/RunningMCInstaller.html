@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Running the Master Calendar Installer V8</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Run the Master Calendar Installer</h1>
+        <p>To install Master Calendar, you will: &#160; &#160;</p>
+        <ol class="number-list">
+            <li><a href="#Run_the_DEA.MasterCalendar.Server.Install.exe">Run the DEA.MasterCalendar.Server.Install.exe</a> to install the Master Calendar Database on the database server. &#160;</li>
+            <li><a href="InstallUpgradeMCWebService.html">Run the DEAMasterCalendarSetup.msi program on the web server</a> to install the Master Calendar website.</li>
+            <li>(Optional)&#160;<a href="../ConfigurationGuide/VerifyMCAPI.html">Verify the Master Calendar API</a>. &#160;</li>
+            <li>(If&#160;Upgrading) Uninstall any optional services on the web server used by the previous version of Master Calendar.&#160;</li>
+            <li>Install or re-install any optional services on the web server.&#160;</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Be sure to run a backup prior to upgrading your database. It is recommended to upgrade your Master Calendar Database in a test environment prior to upgrading a production database.</p>
+        </div>
+        <h2><a name="Run_the_DEA.MasterCalendar.Server.Install.exe"></a>Run the DEA.MasterCalendar.Server.Install.exe</h2>
+        <p>To install the Master Calendar Database on the database server, do the following: </p>
+        <ol class="number-list">
+            <li>Run DEA.MasterCalendar.Server.Install.exe from any PC that has access to the database server.&#160;<p><img src="../images/A_Installation/MC_RunningMCInstaller_InstallUpgradeUtility.png" class="resize80_noborder_padding" /></p></li>
+            <li>In the Server field, enter the name of the server running MS SQL Server.&#160;</li>
+            <li>In the Database field, enter the name for the Master Calendar Database. (It is recommended that you accept the default value of ‘Master_Calendar’.)</li>
+            <li>In the Server Authentication area, specify MS SQL Server authentication credentials.&#160;If <span class="ui">SQL Server Authentication Mode</span> is selected, you must specify a <span class="ui">User Name</span> and <span class="ui">Password</span>.</li>
+            <li>Click the <span class="ui">Execute </span>button.&#160;<p><img src="../images/A_Installation/MC_RunningMCInstaller_CreateDatabase.png" class="resize80_noborder_padding" /></p></li>
+            <li>Click&#160;<span class="ui">Yes </span>to initiate the installation.</li>
+        </ol>
+    </body>
+</html>

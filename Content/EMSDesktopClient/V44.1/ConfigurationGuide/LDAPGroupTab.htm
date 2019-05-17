@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>LDAP Group Tab V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />LDAP&#160;Groups Tab</h1>
+        <p>You use this tab to assign Everyday User Process templates to <MadCap:variable name="General.EMS&#160;Web App" /> users based on LDAP Groups that are defined in your directory service, for example, Active Directory.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Everyday User Process templates that are assigned via LDAP do not need to be explicitly assigned to Everyday user records. When Everyday Users log in to <MadCap:variable name="General.EMS&#160;Web App" />, they “inherit” the Everyday User Process templates based on the LDAP groups to which they belong.</p>
+        </div>
+        <p>To configure LDAP groups for an everyday user process template, follow these steps:</p>
+        <ol class="number-list">
+            <li>Open the <span class="ui">LDAP Groups</span> tab of the <a href="ConfigEverydayUserProcessTemplate.htm">Everyday User Process Template</a> dialog box.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="Images/DC_CG_LDAPGroupsTab.jpg" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">LDAP&#160;Groups Tab</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>On the <span class="ui">Available </span>list, select the LDAP group or CTRL-click to select the multiple groups, and then click the Move button (&gt;) to move the selected groups to the <span class="ui">Selected </span>list.</li>
+            <li>Continue with any other configuration for the templates as needed; otherwise, click <span class="ui">OK </span>to save the changes to the template. For an Everyday User to be able to view and use this template, you must assign the user to the template. See <a href="AssignTempEverydayUser.htm">Assign Templates to Everyday Users</a>.</li>
+        </ol>
+    </body>
+</html>

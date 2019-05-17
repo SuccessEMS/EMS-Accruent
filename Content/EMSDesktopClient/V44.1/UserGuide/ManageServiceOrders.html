@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Managing Service Orders V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />
+            <MadCap:annotation MadCap:createDate="2017-11-12T19:41:49.0293480-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Title used to be Managing Service Orders. This topic is a wiki from 44H." MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-12T19:42:12.0342531-07:00">Manage</MadCap:annotation> Services</h1>
+        <p>You use Manage Services to <a href="#SearchServiceOrders">search</a> for&#160;and view the resources with and without service orders for all bookings on a particular day as well as the current state of the resources and their Reviewed status. After viewing a resource, if applicable, you can <a href="#Review_Edit_ServiceOrders">change the state for a resource</a>. You can review a resource, or you can mark a resource as un-reviewed. You can also <a href="#Open_Resource_in_Navigator">open a resource in the Navigator</a>, and edit it if necessary.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;What is a Service Order, Category, and Resource? <MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In EMS, you might hear these terms used&#160;interchangeably at times; however, they are different concepts.</p>
+                <p>A&#160;Category&#160;in EMS is anything you might add to a Booking such as Catering, Audio Visual, Furniture, Security, Notes, Attendee Names, Agendas etc.&#160;When you configure a Category, however, it must be of six&#160;Category&#160;types:&#160;Activities, Attendees, Catering, Notes, Resources with Service Orders, or Resources Without Service Orders. These types cause the service to&#160;behave slightly differently when&#160;added to a booking. For example, a Notes/Activities/Attendees&#160;type service category&#160;does not require the EMS Administrator to configure items&#160;under it and there is nothing for a person to select from these types of services.</p>
+                <p>By contrast, a&#160;service category that has a type of&#160;Catering,&#160;Resource with Service Order, or a Resource without a&#160;Service Order Category,&#160;will require the Administrator to create items&#160;under it. For example, an&#160;"AV Equipment" service category (configured as a Resource without a Service Order Category type) might have items under it such as a flip chart, whiteboard, (under AV Equipment).&#160;The person requesting the service for this meeting would then select&#160;AV equipment; then&#160;flipchart&#160;and&#160;whiteboard&#160;would be typical options to add to the event.&#160;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The following Category Types allow&#160;<a href="../ConfigurationGuide/DefineProdAreaItems.htm" title="Defining Production Areas and Production Items for a Catering Resource" alt="Defining Production Areas and Production Items for a Catering Resource">Production Items</a>: Catering, Resources with Service Orders, and Resources Without Service Orders.&#160;</p>
+        </div>
+        <p>Furthermore, a Category can&#160;<a href="../ConfigurationGuide/ConfigCategory.html" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" alt="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories">be configured&#160;to "Use States"</a> so that when a service is requested with a meeting, it can be managed through a review and approval process in the Manage Services toolbar option&#160;in the EMS Desktop Client.&#160;<br /></p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_1.png" alt="https://success.emssoftware.com/@api/deki/files/5967/ManageServices.png?revision=3" class="resize80_noborder_padding" />
+        </p>
+        <p>To manage service orders, you will:</p>
+        <ul class="unorder-list">
+            <li>Navigate to the Manage Services browser by clicking the <span class="ui">Manage Services</span> icon from the toolbar in <MadCap:variable name="General.EMS&#160;Desktop Client" />.</li>
+            <li><a href="#SearchServiceOrders">Search for Service Orders</a>.</li>
+            <li><a href="#Review_Edit_ServiceOrders">Review, Edit, and/or Print Service Orders</a>.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are managing Catering services, watch the video tutorial,&#160;<a href="../Video Tutorials/VIDEO_ManagingServicesCatering.htm" title="EMS Desktop Client: Managing Services (Catering)" alt="EMS Desktop Client: Managing Services (Catering)">Manage Catering Services</a>.</p>
+        </div>
+        <h2><a name="SearchServiceOrders"></a>Search for Service Orders</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the toolbar, click the <span class="ui">Manage Services</span> icon. The Service Order Management window opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_2.png" alt="emsum_Search_image026.png" />
+                    </p>
+                    <p class="Caption">Service Order Management window</p>
+                    <ul>
+                        <li>If states are assigned to any of the resources in a booking, the name of the state and if applicable, its color, is displayed in the State column for the booking. If a service order is part of a category that has been configured to "Use States," but none has been assigned, then (none) is displayed in the State column for the booking. If your Administrator has not configured categories in your system to use states, then the State column will be blank.</li>
+                        <li>If a resource has been reviewed for a booking, "Yes" appears in the Reviewed column for the booking.</li>
+                        <li>
+                            <p>If your Options are set to show deleted service orders/items, an "X" appears next to the booking for which the orders/items were deleted and a single line through the booking is displayed.</p>
+                        </li>
+                    </ul>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>You can change how data is listed: click&#160;<span class="ui">Options&#160;</span>in the upper right corner of the Service Order Management window.&#160;The Options dialog box opens; make adjustments as needed&#160;and then click&#160;<span class="ui">OK&#160;</span>to apply these changes.</p>
+                        <p>
+                            <img src="../../../Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_3.png" alt="emsum_Search_image025.png" class="padding_only" />
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>Use filters to search for service orders:&#160;</p>
+                <ul>
+                    <li>
+                        <p>Leave the&#160;Date&#160;set to the default value (the current day's date), or select a different date.</p>
+                    </li>
+                    <li>
+                        <p>On the Building drop-down list, leave the value set to the default value (all buildings), or select a specific building, area, or view.</p>
+                    </li>
+                    <li>
+                        <p>On the Category drop-down list, select the category by which to search.</p>
+                    </li>
+                    <li>
+                        <p>In the Status pane, select one or more specific booking statuses, or select (all) statuses.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="Review_Edit_ServiceOrders"></a>Review and Edit Service Orders</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>You can see pending service orders and details about&#160;each order, review them,&#160;change their details, change their states, and print a list of all the orders in the list:</p>
+                <ul start="1">
+                    <li>
+                        <p>To view the individual service orders&#160;for a booking, click on the booking; detailed items show below in&#160;the <span class="ui">Items </span>tab. You can&#160;view changes made to the service order, in the <span class="ui">Changes </span>tab in the lower pane of the window.&#160;You can rearrange the column order by dragging a column to a new location using the column heading, you can change the width of the data columns, and you can sort the data columns on a tab in either ascending or descending sort order. See&#160;<a href="EMSWindow.html" title="An EMS Browser Window" alt="An EMS Browser Window">An EMS Browser Window</a>.</p>
+                    </li>
+                    <li>
+                        <p>To change the state of the service order, select it, or&#160;CTRL-click to select multiple</p>
+                        <p>
+                            <img src="../../../Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_4.png" alt="emsum_Search_image028.png" class="resize80_noborder_padding" />
+                        </p>
+                    </li>
+                    <li>
+                        <p><a name="Open_Resource_in_Navigator"></a>To change details for a service order, double-click on it&#160;or select it and click&#160;<span class="ui">Open</span>; this launches the item in the Navigator.&#160;If you edit any information for a resource (quantity, notes, and so on) or the service order (service order time, estimated count, or so on) for a booking, then a Changed icon is displayed next to the booking.</p>
+                        <p>
+                            <img src="../../../Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_5.png" alt="emsum_Search_image027.png" class="popup_with_padding_and_border" />
+                        </p>
+                    </li>
+                    <li>To Review a service order, select it, or CTRL-click to select multiple orders, and then click&#160;<span class="ui">Reviewed&#160;</span>or&#160;<span class="ui">Unreviewed</span>. A message opens asking you if you are sure that you want to mark the resource as reviewed. Click <span class="ui">Yes </span>to close the message. "Yes" is displayed in the Reviewed column for the booking orders&#160;of the same category, and then click&#160;<span class="ui">Change State</span>. A Change State window opens, which lists all available states for the service order.&#160;Select the new state for the resource on the State drop-down list.</li>
+                    <li>
+                        <p>To print the list of service orders&#160;that are displayed, click&#160;<span class="ui">Print</span>. An onscreen preview of the Service Orders list opens. The preview window contains options for printing a hard copy of the list, for emailing the list, and so on.</p>
+                        <div class="TitleandImage">
+                            <p>
+                                <img src="../../../Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_6.png" alt="emsum_Search_image029.png" class="popup_with_padding_and_border" />
+                            </p>
+                            <p class="Caption">Onscreen Preview for a Printed Reminder</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>When you are finished working with Service Orders, click&#160;<span class="ui">Close</span>.&#160;Any changes that you made to the search results columns (position and width) remain in effect for any other searches that you do.</li>
+        </ol>
+    </body>
+</html>

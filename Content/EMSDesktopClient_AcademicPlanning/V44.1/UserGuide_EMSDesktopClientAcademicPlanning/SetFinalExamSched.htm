@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Set Final Exam Schedule V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Set a Final Exam Schedule</h1>
+        <p>At some point after a term has been published in EMS Academic Planning, you must schedule the final exams for the term. EMS Academic Planning provides the functionality to automate the final exam scheduling process using templates. You create&#160;a final exam schedule template based on all unique course schedule patterns (for example, MWF 9 am-9:50 am, TR 1 pm-2:20 pm, and so on), and their corresponding final exam days and times. In addition to creating a template, you have the flexibility to define&#160;common exams, specify&#160;the final exam schedules for specific courses, specify&#160;the final exam for multiple courses, and/or exclude&#160;certain courses from the final exam scheduling process.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Unless otherwise specified in Final Exam Settings, EMS Academic Planning attempts to schedule the final exam for a course in the same room that the course has been using for the term. The final exam session publishing process adds the final exam as a separate booking in the course's reservation.</p>
+        </div>
+        <p>This topic will provide the information that will allow you to do the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#CreateFinalExamSched">Create a Final Exam Schedule Template</a>
+            </li>
+            <li><a href="#ManuallyCreateFinalExam">Manually Create a Final Exam Schedule Template</a>
+            </li>
+            <li><a href="#Import">Import a Term to Create a Final Exam Schedule Template</a>
+            </li>
+            <li><a href="#ImportFile">Import a File to Create a Final Exam Schedule Template</a>
+            </li>
+            <li><a href="#SpecifyFinalExamSetting">Specify Final Exam Settings for a Specific Course</a>
+            </li>
+            <li><a href="#SpecifyMutlipleCourses">Specify Final Exam Settings for Multiple Courses</a>
+            </li>
+        </ul>
+        <h2><a name="CreateFinalExamSched"></a>Create a Final Exam Schedule Template&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Courses </span>&gt;&#160;<span class="ui">Final Exam Schedule Templates</span>.&#160;The Final Exam Schedule Templates window opens. This window lists all the final exam schedule templates that are currently configured in your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22.png" alt="emsum_EMSCampus_image067.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="2" class="number-list">
+            <li>Click&#160;<span class="ui">New</span>.&#160;The Final Exam Schedule Template dialog box opens. The Final Exam Schedule Template tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_1.png" alt="emsum_EMSCampus_image068.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>In the&#160;Description&#160;field, enter a name or description for the final exam schedule template, for example, Fall Finals. The description can be a maximum of 50 characters, including spaces.</li>
+            <li>Open the&#160;Schedule&#160;tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_2.png" alt="emsum_EMSCampus_image069.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="5" class="number-list">
+            <li>Continue to one of the following procedures to create a list of unique course schedule patterns.</li>
+        </ol>
+        <h2><a name="ManuallyCreateFinalExam"></a>Manually Create a Final Exam Schedule Template&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Click&#160;<span class="ui">New</span>.&#160;The Final Exam Schedule Days dialog box opens.</li>
+            <li>Enter the information for a unique course schedule pattern and the corresponding final exam day and time, and then click&#160;OK.&#160;The Final Exam Schedule Days dialog box closes. You return to the Schedule tab with the pattern displayed on the tab.&#160;Final Exam Schedule Days dialog box (shown with information for a final exam schedule)</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_3.png" alt="emsum_EMSCampus_image070.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>Repeat this procedure as many times as needed to create a final exam schedule template for each unique course schedule pattern in the term.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the dialog box and&#160;return to the Final Exam Schedule Templates window, where you will see the newly configured final exam schedule template automatically selected.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If any meeting patterns are left without a corresponding final exam time, then courses that fit that meeting pattern in the term will not have a final exam scheduled for them.</p>
+        </div>
+        <h2><a name="Import"></a>Import a Term to Create a Final Exam Schedule Template&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Click&#160;<span class="ui">Import</span>, and on the dropdown list that opens, select&#160;Term.&#160;The Term Picker dialog box opens, listing&#160;the terms currently configured in your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_4.png" alt="emsum_EMSCampus_image071.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="2" class="number-list">
+            <li>Select your Domain and Term for which you are creating the final exam schedule template, and then click&#160;<span class="ui">OK</span>. EMS&#160;Campus scans the term and identifies unique meeting patterns to begin the template building process. After the import is complete, a message opens indicating this.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the message and return to the Schedule tab, which shows the&#160;imported patterns on the Schedule tab.</li>
+            <li>Select an individual pattern, or CTRL-click to select multiple patterns, and then click&#160;Edit&#160;to open the Final Exam Schedule Days dialog box and assign the final exam day of the week and the final exam start and end times.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the Final Exam Schedule Days dialog box and return to the Schedule tab.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the Final Exam Schedule Template dialog box and return to the Final Exam Schedule Templates window with the newly configured final exam schedule template automatically selected.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If any meeting patterns are left without a corresponding final exam time, then courses that fit that meeting pattern in the term will not have a final exam scheduled for them.</p>
+        </div>
+        <h2><a name="ImportFile"></a>Import a File to Create a Final Exam Schedule Template&#160;</h2>
+        <p>You can import your course schedule patterns from a tab-delimited text file.&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>See&#160;Course Schedule Import File Specifications in the EMS Desktop Client Configuration Guide for a table that details the Course Schedule Patterns import file specifications.</p>
+        </div>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_5.png" style="width: 684px; height: 331px;" class="resize80_border_and_padding" />
+        </p>
+        <p class="Caption">Course Schedule Patterns import file format</p>
+        <ol start="1" class="number-list">
+            <li>Click&#160;<span class="ui">Import</span>, and then on the dropdown list that opens, click&#160;File.&#160;The Open File dialog box opens.</li>
+            <li>Browse to and select the import file, and then click&#160;<span class="ui">Open</span>.&#160;The Open dialog box closes and the course schedule patterns are imported. After the import is complete, a message opens indicating this.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the message and return to the Schedule tab.&#160;The imported patterns are displayed on the Schedule tab.</li>
+            <li>Select an individual pattern, or CTRL-click to select multiple patterns, and then click&#160;Edit&#160;to open the Final Exam Schedule Days dialog box and assign the final exam day of the week and the final exam start and end times.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the Final Exam Schedule Days dialog box and return to the Schedule tab.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the dialog box. You return to the Final Exam Schedule Templates window with the newly configured final exam schedule template automatically selected.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If any meeting patterns are left without a corresponding final exam time, then courses that fit that meeting pattern in the term will not have a final exam scheduled for them.</p>
+        </div>
+        <h2><a name="SpecifyFinalExamSetting"></a>Specify Final Exam Settings for a Specific Course&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Open the specific course in the Course Navigator through either the Academic Browser, the Academic Book, or the Navigator.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_6.png" alt="emsum_EMSCampus_image073.png" style="width: 691px; height: 345px;" class="resize80_noborder_padding" />
+        </p>
+        <ol start="2" class="number-list">
+            <li>In the middle pane of the Navigator, select a course date record, and then click&#160;Edit.&#160;The Course Dates dialog box opens. The Course Dates tab is the active tab.</li>
+            <li>Open the Final Exam Settings tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_7.png" alt="emsum_EMSCampus_image074.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="4" class="number-list">
+            <li>Do any of the following:</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Typically, courses with multiple course dates, lab components, or short-term courses are marked as “No Exam Required."</p>
+        </div>
+        <ul class="unorder-list">
+            <li>If a final exam is not required for the course, then clear the Final Exam Required option, and go to&#160;Step 5.</li>
+            <li>If the course is having a final exam at a day/time other than what is specified by the template, select Special/Common Exam, and then enter the date, and start and end times for the special/common exam.</li>
+            <li>Optionally, if you would like the seat fill percentage to be a different value than the default value, update the seat fill percentage for the exam.</li>
+            <li>If the exam is to take place in a different room (not the same room that the course has been using all semester), click the Search icon&#160;next to Room Required to open the Room Selector dialog box and select a different room for the exam.</li>
+            <li>If the exam is to take place in the same room that the course has been using all semester, then select Require Current Room.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>During publishing of the final exam session, if the same room is unavailable, EMS leaves the course unassigned for a manual search.</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>Optionally, in the Notes field, enter any information that is pertinent to the course or final exam.</li>
+            <li>Click OK.&#160;The Course Dates dialog box closes. You return to the Course Navigator with the course date still selected.</li>
+        </ol>
+        <h2><a name="SpecifyMutlipleCourses"></a>Specify Final Exam Settings for Multiple Courses&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning </span>&gt; <span class="ui">Courses </span>&gt;&#160;<span class="ui">Academic Browser</span>.&#160;The Academic Browser opens.</li>
+            <li>If needed, open the Filter tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_2.png" alt="emsum_EMSCampus_image030.png" style="width: 668px;height: 389px;" />
+        </p>
+        <ol MadCap:continue="true" class="number-list">
+            <li>On the Domain dropdown list, select the appropriate domain and on the Term dropdown list, select the appropriate term.</li>
+            <li>Set any other criteria (academic unit, subject, and so on) as needed to provide assistance in locating the courses for which you want to set preferences and requirements, and then click&#160;<span class="ui">Get Data</span>.&#160;The courses that meet your search criteria are displayed on the Results tab.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For detailed information about searching with the Academic Browser, see&#160;<a href="SearchwithAcadBrowser.htm">Searching with the Academic Browser</a>.</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>In the search results, CTRL-click to select the multiple courses for which you are setting the final exam schedule.</li>
+            <li>On the Tools menu, click&#160;Set Final Exam Settings.&#160;The Set Course Final Exam Settings dialog opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_9.png" alt="emsum_EMSCampus_image076.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="7" class="number-list">
+            <li>Do one of the following:</li>
+        </ol>
+        <ul class="unorder-list">
+            <li>If a final exam is not required for the courses, then select Final Exam Not Required, and then continue to the next step.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Typically, courses with multiple course dates, lab components, or short-term courses are marked as “No Exam Required.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>If the courses are having their final exams at a day/time other than what is specified by the template, select Special/Common Exam, and then enter the date, and start and end times for the special/common exam.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>All the selected courses will meet at the date/time specified.</p>
+        </div>
+        <ul class="ul_2">
+            <li>If the final exams for&#160;all&#160;the selected courses are to be in the same room, then select Common Exam Room.</li>
+            <li>If the exam/exams are to take place in a different room (not the same rooms that the courses have been using all semester), click the Search icon&#160;next to Room Required to open the Room Selector dialog box and select a different room for the exams.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>All courses will meet in this room for the final exams.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>If the exams are to take place in the same rooms that the courses have been using all semester, then select Require Current Room.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If no room is requested, or Require Current Room is selected, then each course will have the final exam in its own room. During publishing of the final exam session, if the same room is unavailable, EMS leaves the course unassigned for a manual search.</p>
+        </div>
+        <ol start="8" class="number-list">
+            <li>Optionally, do&#160;one or both of the following:</li>
+        </ol>
+        <ul class="unorder-list">
+            <li>If you want the seat fill percentage to be a different value than the default value, update the seat fill percentage for the exam.</li>
+            <li>In the Notes field, enter any information that is pertinent to the course or final exam.</li>
+        </ul>
+        <ol start="9" class="number-list">
+            <li>Click&#160;<span class="ui">OK</span>.</li>
+        </ol>
+        <p>The Related Courses Dates dialog box opens. This dialog box lists all the courses that you selected on the Results tab of the Academic Browser.</p>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_22_10.png" alt="emsum_EMSCampus_image077.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="10" class="number-list">
+            <li>Select the courses to which the final exam settings are to be applied, or click Select All to select all the courses in a single step, and then click OK.&#160;A message opens indicating that any final exam settings that exist for the selected courses will be overwritten, and asking you if it is OK to continue.</li>
+            <li>Click&#160;<span class="ui">Yes</span>.&#160;A second message opens indicating that the final exam settings were successfully set.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to close the second message and the Related Course Dates dialog box.&#160;You return to the Results tab of the Academic Browser, with the courses still selected on the tab.</li>
+        </ol>
+    </body>
+</html>

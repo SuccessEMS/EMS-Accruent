@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Enable SSL on Web Deployment V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Enable SSL on Web Deployment</h1>
+        <p>To use EMS client web deployment with SSL, you need to perform a few extra steps (mentioned below) before you can install the desktop client. By default EMS desktop client web deployment is enabled to use with HTTP. </p>
+        <p>To enable SSL, follow these steps:</p>
+        <ol start="1">
+            <li>
+                <p>Install EMSDesktopClientWebDeploySetup.msi</p>
+            </li>
+            <li>
+                <p>Go to EMS web deploy’ s virtual directory and open web.config in a notepad. </p>
+                <ol>
+                    <li>
+                        <p>Find the following section:</p>
+                        <p><b>Section 1&#160;</b>
+                        </p>
+                        <div class="code-sample"><pre>&lt;services&gt;</pre><pre>&#160;&#160;&#160;&#160; &lt;service name="EMS.AppFacade.AppFacadeService"&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;  &lt;endpoint address="../AppFacadeService.svc" binding="webHttpBinding" bindingConfiguration="webBinding" 
+         contract="EMS.AppFacade.IAppFacadeService" behaviorConfiguration="webBehavior"/&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;  &#160;&lt;!--&#160;&lt;endpoint address="../AppFacadeService.svc" binding="webHttpBinding" 
+         bindingConfiguration="webHttpsBinding" contract="EMS.AppFacade.IAppFacadeService" 
+         behaviorConfiguration="webBehavior" /&gt;&#160;--&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&lt;/service&gt;</pre><pre xml:space="preserve">&lt;/services&gt;</pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Uncomment the highlighted section by removing <span class="ui">&lt;!--</span> and &#160;<span class="ui">--</span>&gt; from the beginning and end of that statement.</p>
+                    </li>
+                    <li>
+                        <p>Then&#160;comment the first section instead by adding <span class="ui">&lt;!--</span> and <span class="ui">--&gt;</span> to the beginning and end of that statement. The end result will be:</p>
+                        <div class="code-sample"><pre>&lt;services&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;service name="EMS.AppFacade.AppFacadeService"&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;!--&lt;endpoint address="../AppFacadeService.svc" binding="webHttpBinding" bindingConfiguration="webBinding" 
+            contract="EMS.AppFacade.IAppFacadeService" behaviorConfiguration="webBehavior"/&gt;--&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;endpoint address="../AppFacadeService.svc" binding="webHttpBinding" bindingConfiguration="webHttpsBinding" 
+            contract="EMS.AppFacade.IAppFacadeService" behaviorConfiguration="webBehavior" /&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160; &lt;/service&gt;</pre><pre>&lt;/services&gt;</pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Find the following section:</p>
+                        <p><b>Section 2</b>&#160;</p>
+                        <div class="code-sample"><pre>&lt;webHttpBinding&gt;</pre><pre>&#160;&#160;&#160;&#160; &lt;binding name="webBinding" maxReceivedMessageSize="2147483647"/&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&lt;!--&#160;&lt;binding name="webHttpsBinding" maxReceivedMessageSize="2147483647" &gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;  &lt;security mode="Transport"&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;  &lt;transport clientCredentialType="None"/&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;  &#160;&lt;/security&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&lt;/binding&gt;&#160;--&gt;</pre><pre>&#160;&lt;/webHttpBinding&gt;</pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Uncomment the highlighted section by removing <span class="ui">&lt;!--</span> and &#160;<span class="ui">--&gt;</span> from the beginning and end of that statement.</p>
+                    </li>
+                    <li>
+                        <p>Then&#160;comment the first section instead by adding <span class="ui">&lt;!--</span> and <span class="ui">--&gt;</span> to the beginning and end of that statement. The end result will be:</p>
+                        <div class="code-sample"><pre>&lt;webHttpBinding&gt;</pre><pre xml:space="preserve">&#160;&#160;  &#160;&lt;!--&lt;binding name="webBinding" maxReceivedMessageSize="2147483647"/&gt;--&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&lt;binding name="webHttpsBinding" maxReceivedMessageSize="2147483647" &gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;security mode="Transport"&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;transport clientCredentialType="None"/&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/security&gt;</pre><pre>&#160;&#160;&#160;&#160; &lt;/binding&gt;</pre><pre>&lt;/webHttpBinding&gt;</pre>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Once you have modified these sections, save the web.config file and browse to EMS Desktop Client web deploy then install the EMS Desktop Client.</p>
+            </li>
+        </ol>
+    </body>
+</html>

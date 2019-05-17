@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Edit a Booking in the Navigator V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Edit a Booking in the Navigator</h1>
+        <p>
+            <MadCap:concept term="V44.1" />When you edit a booking in the Navigator, you are working with the&#160;when&#160;and&#160;where&#160;information for the event: the event time, the event location, and so on. To edit a booking, you must have the appropriate security access. For example, you cannot move a booking to a room if your EMS administrator has not granted you access to the room. Likewise, you cannot change the status for a booking from Tentative to Confirmed if your EMS administrator has not granted you access to the Confirmed status. If you cannot change a booking and you have appropriate permissions, it might be&#160;<a href="WhyBookingLocked.html" MadCap:conditions="General.Online Only">locked</a><a href="https://docs.emssoftware.com/Content/EMSDesktopClient/V44.1/UserGuide/WhyBookingLocked.html" MadCap:conditions="General.Print Only">locked</a>.&#160;</p>
+        <p>To edit billable information for a booking, see&#160;<a href="EditChargforMultpBillItem.html" title="Editing Booking Detail Item Charges for Multiple Items" alt="Editing Booking Detail Item Charges for Multiple Items">Edit Booking Detail Item Charges for Multiple Items</a>.&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Remember, you can also&#160;<a href="EditResinResBook.htm" title="Using the Reservation Book" alt="Using the Reservation Book">edit certain booking information in the Reservation Book</a>.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>
+                <p><a href="NavigatorOverview.html">Open the&#160;Navigator</a>.&#160;</p>
+            </li>
+            <li>
+                <p>In left pane of the Navigator, expand the folder structure for the reservation until the appropriate booking folder is visible.&#160;Select the booking you want to&#160;change; the panes on the right refresh to show information for the booking. On the Booking Summary tab or on the Properties tab, click&#160;Edit.&#160;</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Navigator/Editing a Booking in the Navigator.png" alt="https://success.emssoftware.com/@api/deki/files/6177/NavigatorEditBooking2.png?revision=1" class="resize80_noborder_padding">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>The Booking window opens. A message is displayed at the top of the window that indicates the hours for the building that contains the selected room. If the booking has any type of booking detail assigned to it, then "This Booking has Service Orders" is displayed at the top of the window.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Navigator/Editing a Booking in the Navigator_1.png" alt="emsum_Navigator_image028.png" class="resize80_noborder_padding">
+                    </img>
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If you have access, you can&#160;change the status of a booking, including canceling a booking.</p>
+                    <ul class="unorder-list">
+                        <li>If you change the status for a booking, you can select&#160;Update Reservation Status&#160;to change the reservation-level status to match.</li>
+                        <li>If you edit a video conference, any date and time changes you make to the booking automatically cascade to all related bookings.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>On the Booking tab, edit the information for the booking as needed, and then click&#160;OK.&#160;</p>
+                <ul>
+                    <li>
+                        <p>If you edited anything other than the date, time, or location&#160;for a booking, the Booking window closes and you return to the Navigator, which now shows the updated information for the booking.</p>
+                    </li>
+                    <li>
+                        <p>If you cancel&#160;a booking, a Cancel Status dialog box opens in which you must identify the user who canceled the booking and provide notes (for example, a cancellation reason) about the cancellation.</p>
+                    </li>
+                    <li>
+                        <p>If you edited the date, time, or location&#160;for a booking, a dialog box opens, warning you that critical booking information has changed and asking you if you want to continue. Click&#160;Yes.&#160;The Booking window closes and you return to the Navigator, which now shows the updated information for the booking.&#160;If you reserved a resource, a Resource Inventory Conflicts report then opens. If you close this report, you can manually run a Resource Inventory Conflict check. In the Bookings folder of the Navigator, select Tools &gt; Resource Inventory Conflict. &#160;</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Technical Benefits</h1>
+        <p>A leading management consulting firm with over 250,000 employee has used EMS for more than 10 years to schedule and manage Classrooms, Lobby Areas, Meeting and Conference Rooms, Hot Desks, Parking Spaces and Video Conference Rooms. Their EMS implementation manages 330 customer buildings around the world, comprising 33,095 rooms and hot-desks. In 2011, the number of bookings scheduled was 2,234,086.&#160;</p>
+        <p>There is no limit&#160;on the amount of data you can pull through the API. The EMS API provide numerous call filters so you can request an efficient and targeted set of data. This helps reduce the workload on the EMS system. It also improves the performance of your solution, so no extraneous data is processed.&#160;</p>
+        <p>EMS APIs provide infinite configurability by enabling you to completely customize your API calls and returns.</p>
+        <h2>EventTypes and StatusTypes</h2>
+        <p>You define your organization's EventTypes&#160;and Statuses; you can retrieve a list of these calls using the GetEventTypes and GetStatusTypes&#160;calls.&#160;Status types, for example, are as follows:</p>
+        <ul class="unorder-list">
+            <li><span class="ui">Booked Space</span>—the room is taken out of inventory and cannot be reserved by another booking. (The system prevents the space from being double-booked.)</li>
+            <li><span class="ui">Cancel</span>—booking information is retained, but the room is released back into inventory</li>
+            <li><span class="ui">Info Only</span>—Booking information is retained, but the space is not taken out of inventory</li>
+            <li><span class="ui">Wait</span>—booking information is retained in case the space becomes available prior to the event date</li>
+        </ul>
+        <p>StatusTypeIDs are as follows: -14 = Booked Space, -11 = Info Only, -13 = Wait, -12 = Cancel</p>
+        <h2>DisplayOnWeb</h2>
+        <p>The GetEventTypes and GetStatuses calls above both return a field called DisplayOnWeb. You set this field when defining a new EventType or a new Status, to either Yes or No.&#160;DisplayOnWeb is the field used in EMS web interfaces, including EMS Web App&#160;and EMS Kiosk, to determine whether to display an event.&#160;Taken one step further, you can also determine which EventTypes and Statuses may be displayed (DisplayonWeb=Yes). You can use those EventTypes and Statuses as filters on some&#160;GetBooking calls; the result is you see&#160;just the booking data needed, rather than pulling in all data and then discarding a long list of bookings. &#160;&#160;</p>
+    </body>
+</html>

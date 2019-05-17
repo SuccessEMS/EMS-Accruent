@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Enable Visitor Management V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Enable Visitor Management</h1>
+        <p>Visitors—or guest attendees who are not part of your organization—can be added to your meetings if you enable this feature. Depending on your licensing, you can contact your Professional Services representative to add this feature.</p>
+        <p>To enable visitor management, you will:</p>
+        <ul>
+            <li><a href="#Configurecatforvis">Configure a Category for Visitors</a>, which can be associated with booking templates</li>
+            <li><a href="#DisplaytoEDU">Set Everyday User Booking or Process Templates</a> to allow the Visitor category</li>
+            <li><a href="#AddVisitorCategory">Add your newly created Visitor category to your Everyday User Process Templates</a>
+            </li>
+            <li><a href="#authorize">Authorize users</a> to manage visitors</li>
+        </ul>
+        <h2><a name="Configurecatforvis"></a>Configure a Category for Visitors</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Visitor Management tab is displayed only if your organization has purchased and installed the optional Visitor Management module, which enables front-desk users such as reception to check in visitors, print badges, access lists of visitors, and run reports. The values that you specify on this tab are used when a new visitor checks into your building. See Also: <a href="ConfigBuilding.html#Specify">Specify Unregistered Attendee/Visitor&#160;Behavior</a>.</p>
+        </div>
+        <ol class="number-list">
+            <li>In the <MadCap:variable name="General.EMS&#160;Desktop Client" />, navigate to <span class="ui">Configuration </span>&gt;&#160;<span class="ui">Administration&#160;</span>&gt;&#160;<span class="ui">Categories</span>.</li>
+            <li>When the Categories window opens, click <span class="ui">New</span> to create a new category for visitors in the Category dialog box.</li>
+            <li>Click the <span class="ui">Category </span>tab and do the following:<ol MadCap:continue="true"><li>Enter a category name in the <span class="ui">Category </span>field.</li><li>Ensure the <span class="ui">Category Type</span> field is set to <span class="ui">Attendees</span>. </li><li>Select the <span class="ui">Attendees Are Visitors</span> box at the bottom of the tab to enable the <span class="ui">Visitor </span>check box as a default on your Everyday User Template. </li></ol><div class="TitleandImage"><p><img src="../Images/EnableVM_1.PNG" class="resize80_border_and_padding" /><br /></p><p class="Caption">Create a Visitors Category in the Category Dialog Box</p></div></li>
+            <li><a name="DisplaytoEDU"></a>From the <span class="ui">Everyday User Applications</span> tab, select the <span class="ui">Display to Everyday Users </span>option so that the category is available for those booking templates. <div class="TitleandImage"><p><img src="Images/DC_CG_EnableVis_Display.png" class="resize80_border_and_padding" /></p><p class="Caption">Everyday User Applications Tab of the Category Dialog Box</p></div></li>
+            <li><a name="AddVisitorCategory"></a>Open the Everyday User Process Templates window (<span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Everyday User Process Templates</span>) and do the following to add the newly created <span class="ui">Visitors </span>category to a template:&#160;<ol MadCap:continue="true" style="list-style-type: lower-alpha;"><li>Select the process template that you want to add the <span class="ui">Visitors </span>category to and click <span class="ui">Edit</span>. </li><li>From the <span class="ui">Categories </span>tab, use the arrow to move the <span class="ui">Visitors </span>category from the Available column to the Selected column.</li><li>Click <span class="ui">OK&#160;</span>to save your changes.</li></ol><div class="TitleandImage"><p><img src="Images/DC_Config_Configuring_Everyday_Users/VisitorsCategory.PNG" class="resize80_border_and_padding" /></p><p class="Caption">Adding the Visitors Category to an Everyday User Process Template</p></div></li>
+        </ol>
+        <ol MadCap:continue="true" class="number-list">
+            <li><a name="authorize"></a>
+                <MadCap:annotation MadCap:createDate="2018-09-21T14:38:02.4153217-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="How? By using info in first sentence in the note below? If so, maybe add first sentence to step 6." MadCap:editor="Megan.Laub" MadCap:editDate="2018-09-21T14:42:22.3147668-06:00">Authorize users to manage visitors.</MadCap:annotation> </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you only allow certain types of users to handle visitors, be sure to assign them to the template you configured above using the <span class="ui">Assign </span>button. If you want to allow visitors to check themselves in (for example, using EMS Mobile App, choose the <span class="ui">Self Serve Mode </span>on the <span class="ui">Process Template</span> tab when configuring the template, and be sure to enable it for Everyday User Applications as needed.</p>
+            <div class="TitleandImage">
+                <p>
+                    <img src="Images/DC_CG_EnableVis_AuthUsers.png" class="resize80_border_and_padding" />
+                </p>
+                <p class="Caption">Self Serve Mode</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Everyday User Security Templates V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Configure Everyday User Security Templates</h1>
+        <p class="mt-color-000000">A security template specifies&#160;which menu items are available to the users who are assigned to the template, which event information&#160;fields can be viewed, and other information.</p>
+        <p class="mt-color-000000">This topic will provide information on the following steps:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Entering">Enter Security Template Settings</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Assigning">Assign Roles to Users</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Setting">Set Tooltip Display</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Finalizing">Finalize the Template</a>
+                </p>
+            </li>
+        </ul>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt;&#160;<span class="ui">Everyday User Security Templates</span>.&#160;</p>
+                <p>The Everyday User Security Templates window opens. This window lists the one user role (unauthenticated user) used in the EMS Web App and EMS Mobile App,&#160;as well as any other security templates that have been defined.</p>
+                <div class="TitleandImage">
+                    <p class="stepresultbulletlev1_1">
+                        <img src="../../../Resources/Images/Everyday User Templates/Configuring Security Templates.png" alt="https://success.emssoftware.com/@api/deki/files/4170/clipboard_e448adeebe2bb7aa94fbfb276594d9d94?revision=1&amp;size=bestfit&amp;width=461&amp;height=486" class="padding_only" />
+                    </p>
+                    <p class="Caption">Everyday User Security Templates Window</p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>The "(unauthenticated user)" role controls what happens when users do not have a log in access an EMS Everyday User application such as EMS Web App and EMS Mobile App.</p>
+                    </div>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>The remainder of this procedure describes how to configure a security template “from scratch.” You can also configure a security template by copying an existing rule. Select the security template that you want to&#160;Copy&#160;then skip to Step 3.&#160;To assign an existing security template to multiple users,&#160;See Also:&#160;<a href="AssignSecTempMultUser.htm">Assigning a Security Template to Multiple Users</a>.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">New</span>.&#160;</p>
+                <p>The Security Template dialog box opens on the <span class="ui">Security Template</span> tab.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Everyday User Templates/Configuring Security Templates_2.png" alt="https://success.emssoftware.com/@api/deki/files/4171/clipboard_eb50f02f5211e6db3bf263f97c700786d?revision=1&amp;size=bestfit&amp;width=740&amp;height=473" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Security Template Tab</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Entering"></a>Enter Security Template Settings</h2>
+        <ol class="number-list" start="3">
+            <li>
+                <p>Enter the information for the new everyday user role.</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p class="mt-color-000000_2">Option</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p class="mt-color-000000_2">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Description</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">The description or name for the security template.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p class="tablenotenote">The description can be a maximum of 50 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">Allow User to Add Groups</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">Selected by default. Users who are attached to this security template can select from a list of existing Groups in your EMS database to add to the users' accounts when submitting a request or making a reservation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Allow User to Add Contacts</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">Select this option if you want users who are attached to this security template to be able to select from a list of existing Contacts in your EMS database when submitting a request or making a reservation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p class="mt-color-000000_3">Allow User to Set Default Contact</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p class="mt-color-000000_3">Available only if Allow User to Add Contacts is selected. Select this option if you want users who are attached to this template to be able to specify a default Contact for a selected Group when submitting a request or making a reservation.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2><a name="Assigning"></a>Assign Roles to Users</h2>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Roles are the tasks that an assigned user can do. Open the&#160;<span class="ui">Roles&#160;</span>tab, and on the Available list, select the role (CTRL-click to select multiple roles) for the user(s)&#160;are to be assigned to this template, and then Move (&gt;)&#160;to the Selected list.</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p class="mt-color-000000_2">
+                                    <MadCap:annotation MadCap:createDate="2019-03-04T13:20:11.4963802-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This table is duplicated in &quot;ConfigEUSecurityFieldDef.htm&quot; along with the table above. Maybe update these tables and delete the other topic to prevent duplicated information (or create snippets for both tables)." MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-04T13:21:30.1697568-07:00">Role</MadCap:annotation>
+                                </p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p class="mt-color-000000_2">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Allow Check In</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">Allows a user to check in to a&#160;booking&#160;from EMS Web App,&#160;the EMS Kiosk, and EMS Mobile App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">Browse Events</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">Provides access to the Events calendar in EMS Web App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Browse&#160;</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">Allows a user to browse for available rooms in a Schedule&#160;view.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">Create\Edit an Account</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">For the (unauthenticated user) template, allows a new user to create his/her own EMS Web App user account. This new everyday user account is set to active or pending based on your EMS Web App parameter settings. For the authenticated users, this role&#160;determines if an existing everyday user can access the Edit My Account area within EMS Web App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Custom Events</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">Provides access to any custom events calendars created.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">Delegation</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">Allows EMS Web App users to delegate control of their reservations (new and existing) to other EMS Web App everyday users.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Browse People</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">Allows an EMS Web App user to view a specific Group's reservations for today.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">Location Details</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">Allows a user to view details (room type, size, phone, features, setup types, images and so on) about a room.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="mt-color-000000_3">Login\Logout</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="mt-color-000000_3">Allows an anonymous user or “guest” to log in to EMS Web App.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">View Floor Map</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">Requires the optional Floor Plan module. Allows a EMS Web App user to view and book rooms on a floor plan.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p><a name="View_Reservation_Summary"></a>View Reservation Summary</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Allows an EMS Web App user to view the Reservation Summary page when the user clicks on the link from notification/confirmation emails. Note that the reservation owner, or delegate of the owner, can view the Reservation Summary page through the email link even if the role has not been assigned. Administrators can use the View Reservation Summary role to limit access to reservation information from forwarded emails.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="mt-color-000000_3">Web Administrator</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="mt-color-000000_3">Provides access to various administrative functions within EMS Web App such as clearing the cache, enabling help text edit mode,&#160;and enabling detailed errors.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Expert User</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>A security role that only pertains to EMS&#160;Platform Services. This role is required to access Platform Services API routes for EMS&#160;Desktop Client functionality. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Kiosk Provisioning</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>This role allows users to log into the EMS&#160;Kiosk App as an Administrator and provision profiles. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2><a name="Setting"></a>Set Tooltip Display</h2>
+        <ol MadCap:continue="true" class="number-list">
+            <li>The&#160;<span class="ui">Booking Details Display Fields</span>&#160;tab houses&#160;the information that appears&#160;when a EMS Web App user browses events in the Browse Events area&#160;or browses for space in the Browse for Space Area. Open this&#160;tab, and on the Available list, select the&#160;information you want displayed&#160;(CTRL-click to select multiple items), then&#160;Move (&gt;) to the Selected list.</li>
+        </ol>
+        <h2><a name="Finalizing"></a>Finalize the Template</h2>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Click&#160;<span class="ui">OK</span>.&#160;The security Template dialog box closes. The changes are saved to the template and you return to the security Templates window.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You can delete a security template by selecting it from the Everyday User Security Template window and clicking&#160;<span class="ui">Delete</span>.&#160;If the template is assigned to a user, you will be prompted to assign another template to that user before deleting it.&#160;</p>
+                </div>
+                <p class="body">You can also print a security template information with the <span class="ui">Print </span>button, which will print a list of your templates or a list of user roles showing how&#160;they are mapped to security templates.&#160;</p>
+            </li>
+        </ol>
+        <p class="body"><b>See Also:</b>
+        </p>
+        <ul>
+            <li>
+                <p><a href="ConfigEUSecurityFieldDef.htm">Everyday User Security Template Field Definitions</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="AssignSecTempMultUser.htm">Assign Security Templates to Multiple Everyday Users</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigWebAppMenu.htm">Configure EMS&#160;Web App Menus</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../../../GoogleSuiteIntegration/ConfigIntents.htm">Configure Intents</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigHelpText.htm">Configure Help Text</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigWebText.htm">Configure Web Text</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigLangTrans.htm">Configure Language Translations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigConfBehavior.htm">Configure Confirmation Behavior for Everyday User Applications</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="CreateTempDeskWork.htm">Create Templates for Desks and Workspaces</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EverydayUserProcTempFieldDef.html">Everyday User Process Template Field Definitions</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="AllowInvitationsBookTemp.htm">How Do I Allow Invitations on a Booking Template?</a>
+                </p>
+            </li>
+        </ul>
+    </body>
+</html>

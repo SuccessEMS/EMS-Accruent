@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Platform Services Release Notes <br />V44.1, Update 26</h1>
+        <p>
+            <MadCap:concept term="V44.1" />This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Standard.css');" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1&#160;Update&#160;26</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 29, 2018<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p>Patch #:<br />&#160;44.1.26000.201806250<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.26000.421<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 165px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="text-align: left;">
+                        <p class="RNArea">API Calls</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Edit In-Progress Bookings</p>
+                        <p class="RNBody">Modified the PATCH/bookings/{id} route to allow editing the Start Time and End Time fields for a booking that is in-progress:</p>
+                        <p class="RNBodyBeforeList">Note that in-progress edits will NOT be supported on the following booking types:</p>
+                        <ul class="RN-unorder-list">
+                            <li>Bookings with service orders</li>
+                            <li>Bookings with setup/teardown times</li>
+                            <li>Video conference bookings</li>
+                            <li>Integrated calendar bookings (Microsoft Exchange and G Suite)</li>
+                            <li>Managed space (request rooms) bookings</li>
+                        </ul>
+                        <p class="RNBody">For this enhancement, no changes were made to the notifications that are triggered on changing the start time and end time.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38329&amp;_a=edit&amp;triage=false" class="RNRefHyper" title="For Internal Use Only" alt="For Internal Use Only">38329</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38737&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38737</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38738&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38738</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38739&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38739</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38740&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38740</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38741&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38741</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38742&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38742</a>, <a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38744&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38744</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2" style="text-align: left;">
+                        <p class="RNArea">Logging </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">EMS&#160;Platform Services Version Included in Logs
+</p>
+                        <p class="RNBody">To aid in remote customer debugging, the logging mechanisms have been updated to include the EMS&#160;Platform Services version in the logs.
+
+</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=34897&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">34897</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 164px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 513px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" style="text-align: left;">
+                        <p class="RNArea">EMS&#160;Kiosk &gt;<br />Apply Profile</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Unable to Apply EMS&#160;Kiosk Profiles</p>
+                        <p class="RNBody">EMS&#160;Kiosk profiles were being created, but users could not apply the profile. Users could not get past the "Are you sure you want to apply this profile" screen.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users can apply EMS&#160;Kiosk profiles. </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=38779&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38779</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2" style="text-align: left;">
+                        <p class="RNArea">EMS&#160;Mobile App</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">EMS&#160;Mobile App Was Not Displaying Bookings on the Home Page After the Latest EMS&#160;Platform Services API&#160;Build</p>
+                        <p class="RNBody">The EMS&#160;Mobile app was not showing bookings on the Home page after the latest EMS&#160;Platform Services API&#160;build. </p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality so that the EMS&#160;Mobile app displays bookings on the Home page.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39359&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39359</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

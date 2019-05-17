@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4043" MadCap:lastWidth="937" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Web App Release Notes <br />V44.1, Update 9 </h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>
+            <a href="#Contact">See Also:&#160;Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Name:&#160;V44.1 Update 9</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Release&#160;Date:&#160;March 07, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_12">Build #:&#160;&#160; 44.1.9000.207</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Log In</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Special Characters in Log-In Email Caused Error</h4>
+                        <p class="NormalWeb_2">When users attempted to log in using an email address that had special characters, an error occurred..&#160;&#160;<br /><br />Fix:&#160;Modified functionality to properly interpret special characters in this field so the error no longer occurs.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27593" class="a_16">27593</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Create Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Adding Non-EMS Web App Services to Multiple Rooms for Recurrent Booking Caused Error</h4>
+                        <p class="NormalWeb_2">When users added a category to a multi-room, recurrent booking that had services that were not enabled for EMS Web App, an internal server error occurred.<br /><br />Fix:&#160;Modified validations for this type of service so that the start and end times for the event are successfully applied to the service and the error no longer occurs.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26982" class="a_16">26982</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Service Orders Times Incorrect When Booked From Different Time Zone</h4>
+                        <p class="NormalWeb_2">When users booked events in a building in a different time zone from their own, and added services, the start and end times for those services were not calculated properly.<br /><br />Fix:&#160;Modified validations to ensure that time zone offsets are calculated properly when the user's time zone is different than the event building time zone.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27646" class="a_16">27646</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Services</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Item Selections for Resources Not Saved</h4>
+                        <p class="NormalWeb_2">When users added services to an event that had item selection options (such as Quantity of items) and then saved their changes, the selections were not saved when they edited the event and only one selection item displayed.&#160;&#160;<br /><br />Fix:&#160;Modified validations so that selection items are saved as expected.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27425" class="a_16">27425</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Special Instructions Overwritten When Using Same Resource</h4>
+                        <p class="NormalWeb_2">When users added multiple instances of the same service&#160;to an event and one instance had Special Instructions, and then edited the services in Manage Services to add special instructions to the other instance of the same Service, the newer instruction overwrote the older ones.<br /><br />Fix:&#160;Modified functionality so that all special instructions are saved and not overwritten.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27422" class="a_16">27422</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Browse for Space</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Browse Locations Shows Invalid Date on Internet Explorer</h4>
+                        <p class="NormalWeb_2">When users searched for a location during a new booking using a date with single digit, the resulting pop-up showed "Invalid Date" on Internet Explorer.&#160;<br /><br />Fix:&#160;Modified validations so the date shows normally in the search results.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27171" class="a_16">27171</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Notifications</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Apostrophes in User Names Blocked Notification&#160;Emails and Delegations</h4>
+                        <p class="NormalWeb_2">When users sent notifications or delegated to users who had apostrophes in their names, emails were not sent and delegations were not successful.&#160;<br /><br />Fix:&#160;Modified functionality to interpret apostrophes in relevant fields properly so that notifications are sent and delegations complete.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27242" class="a_16">27242</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <h4>Invitations From GMT&#160;To Attendees in a Different Time Zone Displayed One Hour Late</h4>
+                        <p class="NormalWeb_2">When users in GMT invited attendees who were in a different time zone, the invitation showed the event time as one hour later than it should have been offset.&#160;<br /><br />Fix:&#160;Modified time zone offset calculations so invitations from users in GMT to users in other time zones display event times properly.</p>
+                        <p class="p_4"><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27241" class="a_16">27241</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

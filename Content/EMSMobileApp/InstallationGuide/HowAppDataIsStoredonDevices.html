@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">How Mobile App Data Is Stored on Devices</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1>How <MadCap:variable name="General.Mobile" /> Data Is Stored on Devices</h1>
+        <p>This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#Data">Data at Rest</a>
+            </li>
+            <li><a href="#Encryption">Encryption</a>
+            </li>
+            <li><a href="#Lifecycle">Lifecycle</a>
+            </li>
+            <li><a href="#SignIn">Sign In</a>
+            </li>
+            <li><a href="#SignOut">Sign Out</a>
+            </li>
+        </ul>
+        <h2><a name="Data"></a>Data at Rest</h2>
+        <p>The following data is likely to be on the device at any given moment during an active user session:</p>
+        <ul class="unorder-list">
+            <li>Per-feature data necessary for the application's functional and business goals:
+    <ul><li>Everyday User data (i.e., information about the current user)</li><li>Booking and Everyday User Process Template data</li><li>Favorite Rooms</li><li>Booking and Room details</li><li>Other similar feature-related data, subject to change over time</li></ul></li>
+            <li>EMS Platform Services information, including version data and assorted parameter values required for operation</li>
+            <li>Application configuration data</li>
+            <li>Tokens for authentication:
+    <ul><li>EMS Platform Services token</li><li>Open ID token(s), if applicable</li></ul></li>
+            <li>Device location information:
+    <ul><li>Location information is stored to speed up certain location calculations that would severely impact performance if the application waited for the underlying OS to return the device's location</li></ul></li>
+            <li>Application logs</li>
+        </ul>
+        <p>Any tokens the application uses are stored in the following areas:</p>
+        <ul class="unorder-list">
+            <li>On iOS, in Keychain</li>
+            <li>On Android, in Shared Preferences</li>
+        </ul>
+        <h2><a name="Encryption"></a>Encryption</h2>
+        <p>The <MadCap:variable name="General.EMS&#160;Web App" /> does not currently encrypt any of the data it stores separately from any OS-enforced encryption.</p>
+        <h2><a name="Lifecycle"></a>Lifecycle</h2>
+        <p>Generally, data stored by <MadCap:variable name="General.EMS&#160;Web App" /> remains until the application is uninstalled. Some information can be overwritten during the course of use. For example, if you refresh your bookings for the first time on a given day, yesterday's bookings will no longer be stored by the app.&#160;Exceptions include user data that is removed when a user signs out. That data is described below.</p>
+        <h2><a name="SignIn"></a>Sign In</h2>
+        <p>Following is an example response the EMS Platform Services API might send on successful authentication. This constitutes the personal information stored in <MadCap:variable name="General.EMS&#160;Web App" />. Other data stored in the application is information related to that user, but is not information that identifies the user necessarily (i.e., the user's collection of Everyday User Process Templates and bookings, or favorites rooms).</p>
+        <p>This data is stored every time a user authenticates.</p>
+        <p>Immediately after successful authentication, <MadCap:variable name="General.EMS&#160;Web App" /> sends two requests to the EMS Platform Services&#160;API:</p>
+        <ol class="number-list">
+            <li>Download the full body of the user's Everyday User Process Templates for use in creating reservations</li>
+            <li>Verify if the user is or is not a valid user in the configured Microsoft Exchange environment.&#160;This data is used to determine whether the user is allowed to create Exchange reservations</li>
+        </ol>
+        <div class="code-sample"><pre>{<br />&#160;&#160;&#160; "userCount": 1,<br />&#160;&#160; &#160;"user": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "userId": 1234,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "userName": "test",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "emailAddress": "test@emssoftware.com",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "externalReference": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "fax": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "networkId": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "phone": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "timeZoneId": 1,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "securityState": 0,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "validated": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "twoFactorState": null,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "allowAddGroup": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "allowAddContact": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "allowSetDefaultContact": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "webRoles": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type": 1,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "code": "eventbrowser",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "description": "Browse Events"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "processTemplates": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id": 1,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "reserveStatusId": 1,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "requestStatusId": 2,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "conflictStatusId": 3,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "cancelStatusId": 4,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "allowPersonalization": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "mobileDeviceEnabled": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "webappEnabled": true,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "outlookEnabled": true<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "additionalProperties": null<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "trustedDeviceID": null,<br />&#160;&#160;&#160; "webToken": "eyJabc123.def456.ghi789" // example token<br />}</pre>
+        </div>
+        <h2><a name="SignOut"></a>Sign Out</h2>
+        <p>When a user signs out of <MadCap:variable name="General.EMS&#160;Web App" />, the following information is deleted from storage:</p>
+        <ul class="unorder-list">
+            <li>Tokens for authentication</li>
+            <li>All information received from the EMS Platform Services API indicated in the previous section
+    <ul><li>The user object received during authentication</li><li>The status of the user in Exchange</li><li>The user's Everyday User Process Templates</li></ul></li>
+            <li>The current platform API token is also invalidated</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head><title>Configure Language Translations for Everyday User Applications for Web App</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2019-03-27T08:03:16.4780092-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic (except the language translation sheet part is in DTC. Can we create a snippet of the repeated content?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-27T08:03:49.7551624-06:00">Configure</MadCap:annotation> Language Translations for Everyday User Applications</h1>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Previous versions of EMS referred to this feature as "Web Cultures."</p>
+        </div>
+        <p>If you need to add language translation capability for your Everyday User templates or EMS Kiosk&#160;pages (menu text, menu items, and help text items), then you must configure&#160;language translations. Each&#160;translation&#160;you configure&#160;represents a language for which translations must be provided in your EMS Everyday User Applications.&#160;&#160;</p>
+        <h3>Build Your&#160;Language Translation Spreadsheet (EMS&#160;Web App)</h3>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p class="box-note">The EMS&#160;Kiosk App uses a JSON translation file instead of a translation spreadsheet. See <a href="../../../EMSKioskApp/V44.1/ConfigurationGuide/LanguageTranslation.htm">Configure Language Translations in EMS&#160;Kiosk App</a> for more information.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>EMS Software provides a Microsoft<sup>®</sup> Excel spreadsheet specific to EMS Web App that contains all of the application labels, page titles, system messages and error messages with their English translations. &#160;<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Values for data items (e.g. Event Types like “Meeting”, “Training”, etc. or Room Types like “Workspace”, “Conference Room”, etc.) configured within EMS or dynamic information that is inputted by an EMS user or Virtual EMS web user (e.g. Event Name like “HR Meeting”, Comments, Special Instructions, etc.) are not translated.&#160;</p></div></li>
+            <li>The customer is responsible for providing the translated values for the information in the product spreadsheet. Once the&#160;customer returns&#160;the fully translated product spreadsheet to EMS Software,&#160;EMS Software development teams compile the spreadsheet into a product-specific language folder containing a set of files. (We maintain a&#160;language folder for each language).</li>
+            <li>The customer saves the language files&#160;in&#160;the "App_GlobalResources" folder within the EMS Web App physical directory on their web server. (The default path is C:\inetpub\wwwroot\emswebapp\App_GlobalResources\).&#160; &#160;&#160;<div class="box-important"><div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;"><p>For the translation to affect an Everyday Applications user,&#160;two conditions should be met: &#160;</p><ol start="1" class="number-list"><li>The language setting should be&#160;<a href="https://www.windowscentral.com/how-properly-change-system-default-language-windows-10" title="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" class="Hyperlink" alt="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10">set in Windows</a>.</li><li>The end&#160;user’s browser Language Preference is set to that specific language and set as the default.</li></ol></div></div></li>
+        </ol>
+        <div class="TitleandImage">
+            <h4>Example Successful Installation</h4>
+            <p>
+                <img src="../../Images/ConfigLangTransl.png" style="width: 557px;height: 129px;" />
+            </p>
+            <div class="TitleandImage">
+                <p>Reflected in EMS as follows (example is French-Canadian).</p>
+                <p>
+                    <img src="Images/WebApp_Config/Configuring Language Translations_5.png" class="resize80_noborder_padding" style="width: 356px;height: 259px;" />
+                </p>
+            </div>
+        </div>
+        <h2><a name="ConfigureYourLanguageTranslationsDTC"></a>Configure Your Language Translations in EMS Desktop Client&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS Desktop Client menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span>&#160;&gt;&#160;<span class="ui">Language Translations</span>.&#160;The Language Translations window opens, listing all the translations that are currently configured in your EMS database.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/WebApp_Config/Configuring Language Translations_6.png" class="padding_only" />
+                    </p>
+                    <p class="title">Language Translations Window</p>
+                </div>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">New</span>.&#160;The Language Translation&#160;dialog box opens. By default, the language is set to English (United States).</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/WebApp_Config/Configuring Language Translations_7.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Language Translation Tab</p>
+                </div>
+            </li>
+            <li>In the&#160;<span class="ui">Description&#160;</span>field, enter a name or description for the new web culture (up to&#160;50 characters, including spaces).</li>
+            <li>On the&#160;<span class="ui">Language&#160;</span>dropdown list, select the language into which the menu text, menu items, and help text items will be translated.</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;The Language Translation&#160;dialog box closes, returning you to the Language Translations&#160;window with the newly configured translations&#160;automatically selected.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>After you configure a language translation, it is displayed on the Translations tab in various configuration areas in EMS.</p>
+        </div>
+    </body>
+</html>

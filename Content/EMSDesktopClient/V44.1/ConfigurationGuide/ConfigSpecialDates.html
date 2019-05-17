@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure Special Dates or Holidays V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Special Dates or Holidays</h1>
+        <p><em class="bold">Special Dates</em>&#160;are days that have special significance for your organization, for example, New Year’s Day, Spring Break, Staff Retreat, and so on. Special Dates are displayed in various places throughout your EMS system. The special date designation is for informational purposes only and unless you specifically close the date to your users, your users are not prevented from making reservations or booking rooms on a special date or holiday.</p>
+        <p>This topic will provide information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#WorkwithSpecialDates">Open the Special Dates Configuration Window</a>
+            </li>
+            <li><a href="#ConfigureSpecialDateorHoliday">Configure a Single Special Date or Holiday</a>
+            </li>
+            <li><a href="#ConfigureMultiple">Configure Multiple Special Dates or Holidays</a>
+            </li>
+            <li><a href="#ImportList">Import a List of Special Dates or Holidays</a>
+            </li>
+            <li><a href="#ConfigureBuildHours">Configure Building Hours for a Special Date or Holiday</a>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You must&#160;configure&#160;your organization’s Special Dates each calendar year. <MadCap:variable name="General.EMS&#160;Desktop Client" />&#160;does not assume that a day that is a special date or holiday for the current calendar year is also a special date or holiday for the next calendar year. </p>
+            <p>You can configure Special Dates on an individual basis; you can configure multiple Special Dates; or you can use a wizard to import a list of Special Dates in a single step. Optionally, after you configure or import a list of Special Dates, you can configure the hours for the buildings that are affected by the special date or holiday. </p>
+            <p>By default, buildings are configured to be “Open All Day.” You can configure the hours for a building so that the building is open for only a specific time period on the special date or holiday or the building is closed for the entire special date or holiday.</p>
+        </div>
+        <h2><a name="WorkwithSpecialDates"></a>Open the Special Dates Configuration Window</h2>
+        <p>To open the Special Dates configuration window to view special dates and holidays, follow these steps:</p>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Special Dates</span>.&#160;The Special Dates window opens. This window lists all the Special Dates that are currently configured for all buildings in your EMS database and that have a date greater than or equal to the current day’s date.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p class="mt-indent-1">
+                <img alt="" src="Images/DC_CG_ConfigSpecialDates1.jpg" />
+            </p>
+            <p class="Caption">Special Dates Window</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Optionally, do one or both of the following:<ul MadCap:continue="true"><li>To view all Special Dates in your EMS database, regardless of date, under Show, click <strong>Old</strong>.</li><li>To view all Special Dates for a specific building, select the building on the Building drop-down list.</li></ul></li>
+        </ol>
+        <h2><a name="ConfigureSpecialDateorHoliday"></a>Configure a Single Special Date or Holiday</h2>
+        <p>To configure a single special date or holiday, follow these steps:</p>
+        <ol class="number-list">
+            <li>Click <strong>New</strong>.&#160;The special date or holiday dialog box opens.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p class="mt-indent-1">
+                <img alt="" src="Images/DC_CG_ConfigSpecialDates2.jpg" />
+            </p>
+            <p class="Caption">Special Date Dialog Box</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Enter the information for the special date or holiday.</li>
+        </ol>
+        <table border="0" cellspacing="12" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Date</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The date for the special date or holiday.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The description or name of the special date or holiday.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The description can be a maximum of 50 characters, including spaces.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Building</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the building to which the special date or holiday applies. (The default value is all buildings.)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Any special notes or information about the special date or holiday.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Calendar Style</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the print characteristics for the special date or holiday on the event schedule.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><b><MadCap:variable name="General.EMS&#160;Web App"></MadCap:variable> Settings</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Display to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Clear this option if you do not want the special date or holiday description to be displayed in <MadCap:variable name="General.EMS&#160;Web App" /> .</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Optionally, click <span class="ui">Spelling</span> to spell check the special date or holiday description before you save it.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The special date or holiday dialog box closes. You return to the Special Dates window with the newly configured special date or holiday automatically selected.</li>
+        </ol>
+        <h2><a name="ConfigureMultiple"></a>Configure Multiple Special Dates or Holidays</h2>
+        <p>To configure multiple special dates or holidays, follow these steps:</p>
+        <ol class="number-list">
+            <li>Click <span class="ui">Wizard</span>.&#160;The special date or holiday Wizard opens.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p class="mt-indent-1">
+                <img alt="" src="Images/DC_CG_ConfigSpecialDates3.jpg" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">Special Date Wizard</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Click <strong>Add.</strong>&#160;The Add special date or holiday dialog box opens.</li>
+            <li>Enter the information for the special date or holiday.</li>
+        </ol>
+        <table border="0" cellspacing="12" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Date</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The date for the special date or holiday.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The description or name of the special date or holiday.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The description can be a maximum of 50 characters, including spaces.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Calendar Style</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the print characteristics for the special date or holiday on the event schedule. See Also: <a href="ConfigCalendarStyles.html">Configuring Calendar Styles</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Any special notes or information about the special date or holiday.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Click <span class="ui">OK</span>.&#160;The Add special date or holiday dialog box closes. You return to the special date or holiday Wizard window with the newly added special date or holiday selected in the window.</li>
+            <li>Repeat&#160;Step 2&#160;through&#160;Step 4&#160;until you have added all the needed Special Dates.</li>
+            <li>Click <span class="ui">Next</span>.&#160;The special date or holiday Wizard window is updated with a list of all the buildings that are currently configured in your EMS database.</li>
+            <li>Select the building, or CTRL-click to select the multiple buildings for which the special date or holiday is to apply, and then click <span class="ui">Finish</span>.&#160;You return to the Special Dates window with the newly configured Special Dates displayed in the window.</li>
+        </ol>
+        <h2><a name="ImportList"></a>Import a List of Special Dates or Holidays</h2>
+        <p>If you use the wizard to import a list of multiple Special Dates, you can set the values only for the special date or holiday date, description, and notes. You cannot specify the calendar style, enter notes for the special date or holiday, or indicate that the special date or holiday is not to be displayed in <MadCap:variable name="General.EMS&#160;Web App" />. To configure any of the latter information for a special date or holiday, you must edit the special date or holiday.</p>
+        <p>To import a list of special dates or holidays, follow these steps:</p>
+        <ol class="number-list">
+            <li>Create a tab-delimited file that contains the information (in the order listed) for the Special Dates that are being imported.<ul><li>Date of special date or holiday (Required. Format is mm-dd-yy.)</li><li>Description of special date or holiday (Required. 50 characters maximum, including spaces.)</li><li>Notes (Optional. No maximum.)</li></ul></li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Each special date or holiday must be a separate line entry. To see the required format for the            tab-delimited file, on the Special Dates window, click <span class="ui">Print </span>&gt; <strong>Import Format</strong>. See Also:&#160;<a href="SpecialDateImportFileSpec.htm">Special Date Import File Specifications</a>.</p>
+        </div>
+        <ol start="2" class="number-list">
+            <li>Click <span class="ui">Wizard</span>.&#160;The special date or holiday Wizard opens.</li>
+            <li>Click <span class="ui">Import</span>, and in the Open File dialog box, browse to and select the tab-delimited text file that contains that Special Dates that you are importing, and then click Open.&#160;The special date or holiday Wizard window is updated with a list of all the buildings that are currently configured in your EMS database.</li>
+            <li>Select the building, or CTRL-click to select the multiple buildings for which the Special Dates are to apply, and then click <span class="ui">Finish</span>.&#160;You return to the Special Dates window with the newly imported Special Dates displayed in the window.</li>
+            <li>Optionally, select a newly imported special date or holiday, and then do one or both of the following:<ul start="2"><li>Click <span class="ui">Edit </span>to edit the Notes, Calendar Style, and/or <MadCap:variable name="General.EMS&#160;Web App" />. Settings for the special date or holiday.</li><li>Configure the building hours for the special date or holiday.&#160;</li></ul></li>
+        </ol>
+        <h2><a name="ConfigureBuildHours"></a>Configure Building Hours for a Special Date or Holiday</h2>
+        <p>To configure building hours for a special date or holiday, follow these steps:</p>
+        <ol class="number-list">
+            <li>If you have not already done so, on the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Special Date</span> to open the Special Dates window.</li>
+            <li>Select a special date or holiday, and then click <span class="ui">Hours</span>.&#160;The Building Hours window opens. The date and title of the special date or holiday are displayed at the top of the window. A list of all the buildings for which the special date or holiday applies as well as the hours of operation for each building are displayed in the window.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img border="0" class="resize80_noborder_padding" src="Images/DC_CG_ConfigSpecialDates4.jpg" />
+            </p>
+            <p class="Caption">Building Hours Window</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Select the building, or CTRL-click to select the multiple buildings for which you are modifying the hours of operation, and then click <strong>Change</strong>.&#160;The Building Hours dialog box opens.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img border="0" src="Images/DC_CG_ConfigSpecialDates5.jpg" />
+            </p>
+            <p class="Caption">Building Hours Dialog Box</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Select the appropriate option on the Building Hours dialog box.</li>
+        </ol>
+        <table border="0" cellspacing="12" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Set Building Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option to specify the time period (Open and Close) during which the building is to remain open for the special date or holiday. Your EMS users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p><MadCap:variable name="General.EMS&#160;Web App" /> users cannot make reservations outside of building hours.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Closed All Day</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option to close the building for the entire special date or holiday period. When you select this option, then a Web Only option is displayed on the Building Hours dialog box.</p>
+                        <ul>
+                            <li>If you do&#160;<span class="italics">not</span>&#160;select Web Only, then none of your users (EMS or <MadCap:variable name="General.EMS&#160;Web App" />) can make reservations on this date in the selected buildings.</li>
+                            <li>If you do select Web Only, then your EMS users can make reservations on this date in the selected buildings; however, your <MadCap:variable name="General.EMS&#160;Web App" /> users cannot.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Open All Day</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>The default value. Leave this option selected to have the building remain open for the entire special date or holiday.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Click <span class="ui">OK</span>.&#160;The Building Hours dialog box closes. You return to the Building Hours window.</li>
+            <li>Repeat&#160;Step 3&#160;through&#160;Step 5&#160;until you have configured the building hours for all the buildings as needed.</li>
+            <li>Click <span class="ui">Close</span>.&#160;You return to the Special Dates window.</li>
+        </ol>
+    </body>
+</html>

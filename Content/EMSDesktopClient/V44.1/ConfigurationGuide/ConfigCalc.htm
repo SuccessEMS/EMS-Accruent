@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Calculations V44.1 (EMS Desktop Client) </title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2019-01-08T08:08:49.1081426-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="For Megan: Start here when you begin reviewing the Billing section again" MadCap:editor="Megan.Laub" MadCap:editDate="2019-01-08T08:09:16.1299299-07:00">Configure Calculations</MadCap:annotation>
+        </h1>
+        <p><b>Calculations</b>&#160;are additional charges that can be applied to billable items (a category, a group, a group type, a resource, or a room) such as gratuity or sales tax. Both pricing methods and calculations determine the final cost for a billable item; however, unlike pricing, which is applied when a billable item is reserved (and retained, even if the price for the item later changes), calculations are figured each time a confirmation or an invoice is generated. When you&#160;configure&#160;a calculation, you must specify the rate for the calculation, the calculation sequence (the order in which the calculation is carried out relative to other calculations), and if applicable, the minimum charge for the calculation. You must also indicate whether the calculation should be carried out on the base amount or on a running total, and whether the result of the calculation should be added to the base amount and then considered in subsequent calculations. </p>
+        <p>For example, consider the following four calculations for a base amount of $1,000.00:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Item</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Calculated on</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Calculation Result</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Running Total</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul>
+                            <li>Gratuity 10%</li>
+                            <li>Calc Sequence = 1</li>
+                            <li>Calc on Base = Yes</li>
+                            <li>Calc Incl in Tot = Yes</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>$1000</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>$100</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>$1100</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <ul>
+                            <li>Sales Tax 5%</li>
+                            <li>Calc Sequence = 2</li>
+                            <li>Calc on Base = No</li>
+                            <li>Calc Incl in Tot = Yes</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>$1100</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>$55</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <ul>
+                            <li>State Tax 5%</li>
+                            <li>Calc Sequence = 3</li>
+                            <li>Calc on Base = Yes</li>
+                            <li>Calc Incl in Tot = No</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>$1000</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>$50</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <ul>
+                            <li>Federal Tax 10%</li>
+                            <li>Calc Sequence = 4</li>
+                            <li>Calc on Base = No</li>
+                            <li>Calc Incl in Tot = No</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>$1155</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>$115.50</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Total Calculations:</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>$320.50</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Grand Total (Base + Calculations):</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>$1320.50</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>After you configure calculations, you can&#160;assign&#160;the calculations to a category, group, group type, resource, or room.</p>
+        <h2 class="Heading2"><a name="To_configure_calculations"></a>Configure Calculations</h2>
+        <p>To configure calculations in the software, complete the following steps:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Calculations</span>.</p>
+                <p>The Calculations window opens. This window lists all the calculations that are currently configured in your EMS database and that have a status of <span class="ui">Active</span>.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations.png" alt="emssg_CoreConfigurationBilling_image010.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Calculations Window</p>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Optionally, to show all calculations, regardless of status, under Show, click <span class="bold-box">Inactive</span>.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span>.&#160;The Calculation dialog box opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations_1.png" alt="emssg_CoreConfigurationBilling_image011.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Calculation Dialog</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter the information for the new calculation.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Calculation</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The name or description for the calculation.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The calculation can be a maximum of 30 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Account</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional field. The account within your internal accounting system that should be credited with the revenue.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If the appropriate account is not available, you can configure it. See <a href="ConfigAccount.htm">Configure Accounts</a>.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Currency</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The currency symbol that is used to display the results of the calculation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Rate</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The percentage for the calculation rate, for example 5%.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Sequence</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The order in which multiple calculations are to be carried out.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>This value is critical when multiple calculations are to be carried out and the order of the calculations affects the resulting value.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Minimum Charge</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional field. The minimum charge that is to applied to a billable item for which this calculation applies.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Base</p>
+                                <p>Include in Total</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <ul>
+                                    <li>Both Base and Include in Total selected—The calculation is carried out on the&#160;original&#160;base amount. The result of the calculation is added to the current running total to make a new running total. The result is also added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                                    <li>Only Include in Total selected—The calculation is carried out on the&#160;current&#160;running total and the result of the calculation is added to the current running total to make a new running total. The result of the calculation is also added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                                    <li>Only Base selected—The calculation is carried out on the&#160;original&#160;base amount. The result of the calculation is added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                                    <li>Neither Base nor Include in Total selected—The calculation is carried out on the&#160;current&#160;running total. The result of the calculation is added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Inactive</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Leave this option blank to add the calculation as an active calculation. Select this option to inactivate the calculation.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Click <span class="ui">OK</span>.&#160;The Calculation dialog box closes. You return to the Calculations window with the newly configured calculation automatically selected.</p>
+            </li>
+            <li>
+                <p>Optionally, continue to <a href="#ToAssignCalculations">Assign Calculations</a> below.</p>
+            </li>
+        </ol>
+        <h2 class="Heading2"><a name="ToAssignCalculations"></a>Assign Calculations&#160;</h2>
+        <p>After you configure a calculation, you can assign the calculation to a category, group, group type, resource, or room from the Calculations window.</p>
+        <p>Remember, you also have the option of assigning calculations to a category, group, group type, resource, or room at the time that you are configuring the category, group, group type, resource, or room. The advantage to assigning a calculation after you configure it is that you can assign the calculation to multiple items in a single step.</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>If needed, click <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Calculations </span>to open the Calculations window.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Assign</span>.&#160;The Assign Calculations dialog box opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations_2.png" alt="emssg_CoreConfigurationBilling_image012.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Assign Calculations Dialog</p>
+                </div>
+            </li>
+            <li>On the <span class="ui">Calculation </span>drop-down list, select the calculation that you are assigning.</li>
+            <li>
+                <p>On the <span class="ui">Assign To</span> drop-down list, select the item (category, group, group type, resource, or room) to which you are assigning the calculation.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Item Selected</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Comments</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Category</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>A list of all categories that are currently configured in your EMS database is displayed. If you assign a calculation at the category level, then the calculation is assigned to all resources that are configured for the category. To assign a calculation to a specific resource in a category, then select&#160;Resource&#160;on the Assign To drop-down list.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Group</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>A list of all groups that are currently configured in your EMS database is displayed. Two additional fields are displayed—Group Type and Starts with. Optionally, select a Group Type and/or enter a search string in the Starts with Field to filter the list of groups that are displayed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Group Type</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>A list of all group types that are currently configured in your EMS database is displayed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Resource</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>A Category drop-down list opens. Select the appropriate category for the resource. A list of all resources that are currently configured for the selected category in your EMS database is displayed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p>Room</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                <p>A Building drop-down list opens. Select the appropriate building. A list of all the rooms that are currently configured for the selected building in your EMS database is displayed.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>On the Available list, select the item, or CTRL-click to select the multiple items to which the calculation is being assigned, and then click the Move button (&gt;) to move the selected items to the Selected list.</li>
+            <li>Click <span class="ui">Close</span>.&#160;The Assign Calculations dialog box closes. You return to the Calculations window.</li>
+        </ol>
+    </body>
+</html>

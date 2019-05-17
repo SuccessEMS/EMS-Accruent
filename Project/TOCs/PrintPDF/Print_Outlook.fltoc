@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS for Outlook"
+    Link="/Content/Print Only Topics/TitlePage_Outlook.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Installation Guide"
+    Link="/Content/InstallGuides/5_OutlookV44.1/5_OutlookV44.1Home.htm"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    StartSection="false"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    PageNumberFormat="decimal">
+    <TocEntry
+      Title="Introduction to EMS for Outlook"
+      Link="/Content/EMSforOutlook/InstallationGuide/Architecture.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue" />
+    <TocEntry
+      Title="Requirements and Prerequisites for EMS for Outlook"
+      Link="/Content/EMSforOutlook/InstallationGuide/ReqsPrereqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue" />
+    <TocEntry
+      Title="Plan Your EMS for Outlook Implementation"
+      Link="/Content/EMSforOutlook/InstallationGuide/PlanImplementation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue" />
+    <TocEntry
+      Title="Install or Upgrade EMS for Outlook on Users' Computers"
+      Link="/Content/EMSforOutlook/InstallationGuide/InstallUpgrade.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue">
+      <TocEntry
+        Title="EMS for Outlook Add-In Is Offline"
+        Link="/Content/EMSforOutlook/InstallationGuide/OutlookAddInOffline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="Silent or Unattended EMS for Outlook Installation"
+        Link="/Content/EMSforOutlook/InstallationGuide/SilentUnattendedInstall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="Where to See Your Exchange Server URL and EMS for Outlook Version Number"
+        Link="/Content/EMSforOutlook/InstallationGuide/WhereExchServURLVerNum.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Integrated Authentication Options"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue"
+      Link="/Content/Authentication/IntroEMSIntegratedAuth.htm">
+      <TocEntry
+        Title="Integrated Authentication Considerations"
+        Link="/Content/OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_IntegratedAuthenticationConsid.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="Integrated Windows Authentication"
+        Link="/Content/Authentication/WindowsAuthen.html"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue">
+        <TocEntry
+          Title="Manage Everyday Users For Integrated Authentication"
+          Link="/Content/OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_ManageEUforIntegAuthen.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          BreakType="chapter"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          ChapterNumberReset="continue"
+          VolumeNumberReset="continue"
+          StartSection="false"
+          SectionNumberReset="continue" />
+      </TocEntry>
+      <TocEntry
+        Title="LDAP Authentication"
+        Link="/Content/EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="Portal or Federated Authentication"
+        Link="/Content/Authentication/PortalFederatedAuthen.html"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue">
+        <TocEntry
+          Title="Portal Authentication Methods"
+          Link="/Content/Authentication/PortalAuthMethods.html"
+          BreakType="chapter"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          ChapterNumberReset="continue"
+          VolumeNumberReset="continue"
+          StartSection="false"
+          SectionNumberReset="continue" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/Introduction.htm"
+      Title="Integration to Microsoft Exchange"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/IntegExchanReqs.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/InstallUpgradeforEIWservice.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/ConfigIntegExchange.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="Configure Multiple Mail Domains"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/ConfigMultipleMailDomain.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/UseAppPoolIdentif.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/ConfigureEWSImpersonation.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/LearnMoreaboutEWS.htm"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue"
+        VolumeNumberReset="continue"
+        StartSection="false"
+        SectionNumberReset="continue" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Configuration Guide"
+    Link="/Content/EMSforOutlook/ConfigurationGuide/ConfigOutlookOverview.htm"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="continue"
+    VolumeNumberReset="continue"
+    StartSection="false"
+    SectionNumberReset="continue">
+    <TocEntry
+      Title="Configure EMS for Outlook"
+      Link="/Content/EMSforOutlook/ConfigurationGuide/ConfigforOutlook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue"
+      VolumeNumberReset="continue"
+      StartSection="false"
+      SectionNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="User Guide"
+    Link="/Content/EMSforOutlook/UserGuide/UseEMSforOutlook.htm"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    ChapterNumberReset="continue"
+    VolumeNumberReset="continue"
+    StartSection="false"
+    SectionNumberReset="continue">
+    <TocEntry
+      Title="Microsoft Outlook, EMS for Microsoft Outlook, and EMS Web App Comparison"
+      Link="/Content/EMSforOutlook/UserGuide/OutlookComparisons.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Create a Reservation in EMS for Microsoft Outlook"
+      Link="/Content/EMSforOutlook/UserGuide/CreateResOverview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Create a Single Reservation"
+        Link="/Content/EMSforOutlook/UserGuide/CreateSingleRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Create a Series Reservation"
+        Link="/Content/EMSforOutlook/UserGuide/CreateSeriesRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Create a Video Conference Reservation"
+        Link="/Content/EMSforOutlook/UserGuide/CreateVideoConRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Edit or Cancel a Reservation"
+        Link="/Content/EMSforOutlook/UserGuide/EditCancelSchedEvent.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Use Skype for Business in EMS for Outlook"
+      Link="/Content/EMSforOutlook/UserGuide/UseSkypeforBusiness.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Resolve Booking Conflicts"
+      Link="/Content/EMSforOutlook/UserGuide/ResolveBookingConflicts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="View Known Errors/Alerts for EMS for Outlook"
+      Link="/Content/EMSforOutlook/UserGuide/ViewKnownErrorsAlerts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="Last Page"
+    Link="/Content/Print Only Topics/LastPage_Outlook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    PageType="first" />
+</CatapultToc>

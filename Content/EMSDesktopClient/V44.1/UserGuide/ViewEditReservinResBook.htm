@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>View and Edit Reservations in the Reservation Book V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />View and Edit Reservations in the Reservation Book</h1>
+        <p>The Reservation Book provides a graphical view of all the confirmed reservations (the reserved time as well as the room for which the reservation is scheduled) for your organization. (Canceled bookings are not shown.) You use the Reservation Book to the view information for a reservation, to edit an existing reservation, and to make a new reservation. In addition, when the Reservation Book first opens, before you edit or make a reservation, you can change the Reservation Book view so that it better suits your working needs.</p>
+        <p>This section will provide information on the following topics:</p>
+        <ul class="unorder-list">
+            <li><a href="#Openthereservationbook">Open the Reservation Book</a>
+            </li>
+            <li><a href="#tochangethereservationBookDisplay">Change the Reservation Book Display</a>
+            </li>
+            <li><a href="#toviewreservationinformatoin">View Reservation Information</a>
+            </li>
+            <li><a href="#ToMakeANewReservation">Make a New Reservation</a>
+            </li>
+            <li><a href="#EditAnExistingReservation">Edit an Existing Reservation</a>
+            </li>
+        </ul>
+        <h2><a id="Openthereservationbook" name="Openthereservationbook"></a>Open the Reservation Book </h2>
+        <ol class="number-list">
+            <li>
+                <p>Open EMS&#160;Desktop Client.</p>
+            </li>
+            <li>
+                <p>From the toolbar, click the <strong>Book </strong>icon. <br />The first time that you open the Reservation Book for your EMS implementation, by default, the Filter dialog box opens on top of a blank Reservation Book. You can leave the room filtering criteria set to their default values, or you can select different values as needed, and then click <span class="ui">OK</span>. All reservations that meet the filtering criteria and that are scheduled for the current day’s date are displayed in the book in the <em>Daily</em> view.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You might need to use the book’s scroll features to scroll through all the reservations that are scheduled for the current day’s date.</p>
+                </div>
+                <ul>
+                    <li>
+                        <p>If an event is scheduled for a room that is a component of a combination room, then the reservation text is displayed in black. A duplicate reservation is also shown for the combination room; however, the reservation text is displayed in gray to indicate that a component of the combination room is currently booked for the indicated time and therefore, the combination room is not available</p>
+                    </li>
+                    <li>
+                        <p>Conversely, if an event is scheduled for a combination room, then the reservation text for the combination room is displayed in black and the reservation text for each component is displayed in gray. This reversed color coding indicates that the component room is currently booked for the selected time and that none of the components is available.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p class="NoteTipWarningText">The Reservation Book has the following appearance:</p>
+        <ul class="unorder-list">
+            <li>Minimum and maximum capacities are displayed next to room descriptions</li>
+            <li>The current time is shown by a vertical line in the grid, called the Current Time Indicator</li>
+            <li>If building hours have been configured for a building, then this information is displayed for the building</li>
+        </ul>
+        <p class="NoteTipWarningText">The reservations are displayed with three components:</p>
+        <ol class="number-list">
+            <li class="NoteTipWarningText">A left bar that indicates the setup time</li>
+            <li class="NoteTipWarningText">A middle bar that indicates, by default, the event name</li>
+            <li class="NoteTipWarningText">A right bar that indicates the teardown time</li>
+        </ol>
+        <h2><a id="tochangethereservationBookDisplay" name="tochangethereservationBookDisplay"></a>Change the Reservation Book Display</h2>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS Web Client toolbar, click the <span class="ui">Book </span>icon. The Reservation Book opens in the Daily view.</p>
+            </li>
+            <li>
+                <p>You can change the Reservation Book display in the following ways:</p>
+                <ul>
+                    <li>
+                        <p>Change the <span class="ui">list of rooms</span> that are displayed in the Reservation Book based on <span class="ui">room properties</span>.</p>
+                    </li>
+                    <li>
+                        <p>Change the <span class="ui">list of rooms</span> that are displayed in the Reservation Book based on a <span class="ui">specific room(s)</span>.</p>
+                    </li>
+                    <li>
+                        <p>Change the <span class="ui">Reservation Book view</span>.</p>
+                    </li>
+                    <li>
+                        <p>Change multiple <span class="ui">display options</span> for a reservation.</p>
+                    </li>
+                    <li>
+                        <p>Select which items to include in the <span class="ui">tooltip </span>that opens when you place the cursor over an event in the Reservation Book.</p>
+                    </li>
+                    <li>
+                        <p>Change the display date using the <span class="ui">calendar</span>.</p>
+                    </li>
+                    <li>
+                        <p>Change the display date using the Reservation Book <span class="ui">scroll features</span>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To change the list of rooms based on room properties:</p>
+                <ol start="1">
+                    <li>
+                        <p>Click <span class="ui">Filter </span>if the Filter dialog box is not already open.</p>
+                    </li>
+                    <li>
+                        <p>Select Room Properties and customize one or more of the following:</p>
+                        <ul start="1">
+                            <li>
+                                <p>Leave the Building drop-down list set to the default value of (all) buildings, or select a specific building, area, or view.</p>
+                            </li>
+                            <li>
+                                <p>Select a <span class="ui">specific floor</span>.</p>
+                            </li>
+                            <li>
+                                <p>Select a specific room type.</p>
+                            </li>
+                            <li>
+                                <p>Select <span class="ui">Capacity </span>and then enter a <span class="ui">capacity</span>.</p>
+                            </li>
+                            <li>
+                                <p>Select <span class="ui">Academic </span>to limit the search to academic rooms.</p>
+                            </li>
+                            <li>
+                                <p>Select a <span class="ui">Room Availability</span> option.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span class="ui">OK</span>.&#160;The Filter Rooms dialog box closes. The room display in the Reservation Book is changed accordingly.</p>
+            </li>
+            <li>
+                <p>To change the list of rooms that are displayed in the Reservation Book based on a specific room or rooms:</p>
+                <ol start="1">
+                    <li>
+                        <p>If the Filter Rooms dialog box is not already open, then above the Rooms list, click <span class="ui">Filter </span>to open the dialog box and select Specific Room.</p>
+                    </li>
+                    <li>
+                        <p>Select the room, or CTRL-click to select multiple rooms on the Available list.</p>
+                    </li>
+                    <li>
+                        <p>Click the <span class="ui">Move </span>(&gt;) button to move the selected rooms to the Selected list. The Reservation Book is updated to show bookings only for the selected rooms</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To change the Reservation Book view,  select Daily, Weekly, or Monthly from the View drop-down list.</p>
+            </li>
+            <li>
+                <p>To&#160;change multiple <span class="ui">display options</span> for a reservation:</p>
+                <ol start="1">
+                    <li>
+                        <p>Click <span class="ui">Options </span>(upper right hand corner of Reservation Book) to open the Book Options dialog box (the General tab is the active tab).</p>
+                    </li>
+                    <li>
+                        <p>Change multiple display options not only for the Reservation Book, but also a reservation in the book.</p>
+                    </li>
+                </ol>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="12">
+                    <col style="width: 123px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p scope="col">Option</p>
+                            </th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p scope="col">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p><span class="ui">Start Hour</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">The daily start time for the Reservation Book display.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Display</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">The information that is displayed in the middle bar for a reservation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Time Display Interval</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Changes the granularity of the time display interval.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Maximum Number of Rooms</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">The maximum number of rooms to display in the Reservation Book.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Booking Colors Based On</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">The color of the bookings in the reservation. Select one: Status, Event Type, or Check-in Status (for EMS Workplace only.)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Rooms Without Bookings</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">Whether to highlight rooms without bookings and if so, the highlight color. If both Highlight Rooms and Booked Space Status Only are selected, then only those rooms that do not have a Booked Space status are highlighted.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Room Display</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Display the room code or the room name for a reservation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Building Display</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">Display the building code or the building name for a reservation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Go To Today on Startup</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">If selected, the Reservation Book opens to the current day’s date; otherwise, it opens to the last date viewed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Always Prompt for Room Filter on Startup</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">If Show ‘(all)’ in Building List is also selected, then when you open the Reservation Book, the Filter dialog box opens on top of the Reservation Book. You can select different options on this dialog box to display only specific reservations in the book, for example, bookings only for selected rooms. If you do not select any options on this dialog box, but instead simply close it, then all reservations for all rooms in all buildings are displayed in the book.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><strong>Hide Current Time Indicator</strong>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Show or hide the vertical bar that indicates the current time for current day.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The Current Time indicator is displayed only if the view is the Daily or Weekly view and the view includes the current day’s date.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p><span class="ui">Show ‘(all)’ in Building List</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Show the “all” option on the Building drop-down list; otherwise, a user must select a specific building. If this option is selected in conjunction with Always Prompt for Room Filter on Startup, then when you open the Reservation Book, then the Filter dialog box always opens on top of the Reservation Book. If you are setting your Reservation Book options, and you do not want to the Filter dialog box to open on top of the Reservation Book when you open the book, then do the following:</p>
+                                <ul>
+                                    <li>Clear Always Prompt for Room Filter on Startup.</li>
+                                    <li>Clear Show (‘all’) in Building List.</li>
+                                    <li>On the Building drop-down list in the Reservation Book, select any building, area, or view.</li>
+                                </ul>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The building, area, or view that you select is not important. This last step just clears the “all” building option from the Reservation Book cache and ensures that the Filter dialog box does not open on top of the Reservation Book. Going forward, you can always select all buildings, or any specific building, area, or view as needed when you are working in the Reservation Book.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Show Capacity</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Show the minimum and maximum capacities next to the room description.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Hide Booking Shadow</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p data-th="Description">Hide the vertical shadow bar that highlights the reserved and/or event start times and end times when a user moves a booking in the Reservation Book.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>To&#160;select which items to include in the <span class="ui">tooltip </span>that opens when you place the cursor over an event in the Reservation Book:</p>
+                <ol start="1">
+                    <li>
+                        <p>Click <strong>Options </strong>(upper right hand corner of Reservation Book) to open the Book Options dialog box.&#160;</p>
+                    </li>
+                    <li>
+                        <p>Open the <strong>Tooltip Display</strong> tab and select which items to include in the tooltip that opens when you rest the mouse pointer on an event in the Reservation Book.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To change&#160;the display date using the <strong>calendar:&#160;</strong></p>
+                <ol start="1">
+                    <li>
+                        <p>From the <strong>Date </strong>field, click the drop-down arrow to open the Calendar.</p>
+                    </li>
+                    <li>
+                        <p>Use the (&lt; and &gt;) scroll features at the top of the calendar to change the month or use the (&gt;) scroll features at the top of the calendar to change the year.</p>
+                    </li>
+                    <li>
+                        <p>To select a different date for a month, click the date.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To change the display date using the Reservation Book <strong>scroll features:</strong></p>
+                <ol start="1">
+                    <li>
+                        <p>Use the scroll features at the top of the reservation book display to scroll to a different day, week, month, or any different combination of these.</p>
+                    </li>
+                    <li>
+                        <p>To reset the display immediately to the current day’s date, click <strong>Today</strong>.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2><a id="toviewreservationinformatoin" name="toviewreservationinformatoin"></a>View Reservation Information</h2>
+        <ol class="number-list">
+            <li>On the EMS toolbar, click the <strong>Book </strong>icon. The Reservation Book opens in the Daily view.</li>
+            <li>To view the reservation in the Navigator,&#160;double-click&#160;the middle bar for the reservation entry or right-click the reservation entry and on the context menu that opens, click <strong>Open</strong>.</li>
+            <li>You can view the&#160;reservation information in the following ways:<ul><li>View the <strong>bookings </strong>for a room</li><li>View the <strong>properties </strong>for a room</li><li>View the <strong>pricing </strong>for a booked room</li><li>View the <strong>setup </strong>information, event information, or teardown information for a reservation.</li></ul></li>
+            <li>To view the bookings for a room:<ol start="1"><li>&#160; &#160; &#160;&#160;&#160;Click the room name or code in the Rooms list to open the Bookings tab for the Room Info dialog box. The tab on this dialog box lists all the bookings for the selected room based on the current view (Daily, Weekly, Monthly) and on the date that is shown in the Date field.</li><li>To view a booking in the Navigator, select the booking, and then click Open.</li></ol></li>
+            <li>To view room properties:<ol start="1"><li>Click the <strong>room name</strong> or <strong>code </strong>in the Rooms list to open the Bookings tab for the Room Info dialog box.</li><li>Open the <strong>Room </strong>tab. The tab on this dialog box lists all the properties for the room, such as the room code, the room name, the room classification, etc. It also lists the &#160;&#160;&#160;&#160;setup type and capacity for the room, and any notes that have been entered for the room.</li></ol></li>
+            <li>To view the pricing for a booked room:<ol start="1"><li>Click the <strong>room name</strong> or <strong>code </strong>in the Rooms list to open the Bookings tab for the Room Info dialog box.</li><li>Open the <strong>Pricing </strong>tab. This tab displays any pricing information that was defined for the room.</li></ol></li>
+            <li>To view the <strong>room setup&#160;</strong>information, event information, or teardown information for a reservation:<ol start="1"><li>Rest the mouse pointer on the left bar, middle bar, or right bar for the reservation entry. A tooltip showing the respective setup, event, or teardown information opens.</li><li>If buildings that are located in multiple time zones are currently displayed, you can specify the time zone in which to view all of your bookings.</li></ol></li>
+        </ol>
+        <h2><a id="ToMakeANewReservation" name="ToMakeANewReservation"></a>Make a New Reservation</h2>
+        <ol class="number-list">
+            <li>On the EMS toolbar, click the <strong>Book </strong>icon. The Reservation Book opens in the Daily view.</li>
+            <li>Change the display to show the room for which you are making the reservation.</li>
+            <li>Select the date for which you are making the reservation.</li>
+            <li>In the Time Grid for the room, click and hold the left mouse button, drag the mouse to schedule the room and time, and then release the mouse button to open the Reservation Wizard. See <a href="CreateResinResWizard.htm">Create a Reservation in the Reservation Wizard</a>.&#160;</li>
+        </ol>
+        <h2><a id="EditAnExistingReservation" name="EditAnExistingReservation"></a>Edit an Existing Reservation</h2>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS toolbar, click the Book icon. The Reservation Book opens in the Daily view.</p>
+            </li>
+            <li>
+                <p>Optionally, you can do one or more of the following to edit an existing reservation:</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Step</p>
+                            </th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p scope="col">Action</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Step" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Step"><span class="ui">Change the setup time for a reservation</span>
+                                </p>
+                            </td>
+                            <td data-th="Action" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <ul>
+                                    <li>Drag the left bar horizontally to a new time.</li>
+                                    <li>Click <span class="ui">Yes </span>in the Confirm Change dialog box.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Step" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Step"><span class="ui">Change the event time</span>
+                                </p>
+                            </td>
+                            <td data-th="Action" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <ul>
+                                    <li>Drag the middle bar horizontally to a new time.</li>
+                                    <li>Click <span class="ui">Yes </span>in the Confirm Change dialog box.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Step" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Step"><span class="ui">Change the teardown time for a reservation</span>
+                                </p>
+                            </td>
+                            <td data-th="Action" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <ul>
+                                    <li>Drag the right bar horizontally to a new time.</li>
+                                    <li>Click <span class="ui">Yes</span> in the Confirm Change dialog box.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Step" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p data-th="Step"><span class="ui">Edit the reservation building, room, time, or both</span>
+                                </p>
+                            </td>
+                            <td data-th="Action" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <ul>
+                                    <li>Drag and drop the reservation to a new room that is the same building or in a different building, and/or to a new time.</li>
+                                    <li>Click <span class="ui">Yes </span>in the Confirm Change dialog box.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Optionally, you can right-click on a reservation in the Reservation Book, and on the context menu that opens, select one of the following:</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p scope="col">Option</p>
+                            </th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p scope="col">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Open</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Opens a reservation in the EMS Navigator.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Move Forward</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">Move the reservation date forward by one day or one week.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Move Backward</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Move the reservation date backward by one day or one week.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Move to a Specific Date</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p data-th="Description">Move the reservation to a specific date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Change Status</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Change the status of the reservation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Copy Bookings</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>N/A</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Although this option is available on the context menu for a reservation, its associated functionality is currently under development.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option"><span class="ui">Swap Rooms With Another Booking</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p data-th="Description">Swap the room assignments of two events. The swap option is applicable only for two events that have identical meeting patterns.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p data-th="Option"><span class="ui">Highlight Related Reservations</span>
+                                </p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p data-th="Description">Highlights the bookings that belong to the same reservation.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2018-05-03T15:15:13.8987666-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="It looks like a lot of the content in this topic might be similar to the content in Portal Authentication Methods in Optional Features. Need to verify. Does Master Calendar needs it own topic? Can the Portal Authentication info be removed and just provide link to Portal Authen topic?\r\n\r\nThis topic also exists separately in Integrated Authentication (Optional Features)." MadCap:editor="Megan.Laub" MadCap:editDate="2018-05-04T10:54:33.6775172-06:00">Integrated </MadCap:annotation>Authentication for Master Calendar</h1>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><b>Concept:&#160;Integrated Authentication is </b><span class="italics" style="font-weight: bold;">Optional</span><b> Functionality.</b> <MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Integrated Authentication module (which includes Integrated Windows Authentication, Portal Authentication and LDAP Integration) is a separately licensed component for the EMS Master Calendar system.&#160;You must be licensed for Master Calendar <span class="italics">and</span> Integrated Authentication in order to configure and use this module.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Portal Authentication</h2>
+        <p>The Master Calendar system can, with proper licensing, be configured so that users are automatically signed on when they access your network.&#160; This process is sometimes referred to as “single sign-on” since users have already signed on to the network through some other means,&#160;usually on a portal such as SiteMinder.&#160;Using one of several methods, Master Calendar can compare a unique variable captured by your portal/sign-on page (email address, employee ID, network credential, etc.) to a value that has been stored for the user in your database.&#160; If the credentials match, the system automatically logs the user into the Master Calendar application.</p>
+        <p><b>See Also:</b>&#160;<a href="../../../Authentication/PortalAuthMethods.html">Portal Authentication Methods</a></p>
+        <h3>Configuration Steps </h3>
+        <p>In order to configure portal authentication you must perform the following steps:</p>
+        <ol class="number-list">
+            <li>Confirm or install new license</li>
+            <li>Select portal authentication method</li>
+            <li>Verify portal redirect</li>
+        </ol>
+        <p>These steps are described in detail in the sections below.</p>
+        <h4>Confirm or Install New License </h4>
+        <p>In order to use Portal Authentication, your organization must be properly licensed.&#160; If you are unsure about whether you have purchased the Integrated Authentication module that enables Portal Authentication, log in to Master Calendar, go to the systemcheck.aspx page (as described under Compatible Systems), click the License Information heading and review the Licensed For list.&#160;&#160;</p>
+        <p>If you were not previously licensed for Integrated Authentication but are now, update your registration information by logging in to the Master Calendar, going to Admin – Registration, entering the new information and clicking Save License Data.&#160;</p>
+        <p>After you have entered the registration information, you must have Master Calendar re-read it by going to the systemcheck.aspx page, clicking the License Information heading and then clicking Read License.</p>
+        <h4>Select Portal Authentication Method </h4>
+        <p>To select the portal authentication method to be used, log in to Master Calendar and go to Admin – Default Settings.&#160; Select the appropriate entry from the Portal Authentication Method drop-down list.&#160; Since almost every “single sign-on” environment and strategy is different, we have provided you with five commonlysupported methods of authentication: server variable, session, form, cookie and query string.&#160; The first two methods are the most widely used.</p>
+        <h4>Server Variable Method (Header Variable)</h4>
+        <p>Server Variable/Header Variable is a collection of variables that are set by the Internet Information Server (IIS).&#160;&#160; Applications like SiteMinder create custom server variables for portal site use.</p>
+        <p>Set the Portal Authentication Method field to Server Variable and type the appropriate entry in the Portal Authentication Variable field.&#160; Then redirect users to the Default.aspx page (or to <em>any</em> page in the system for Master Calendar) and the server variable will be read.</p>
+        <h4>Session Method</h4>
+        <p>A session is a way to provide/maintain user state information in an inherently stateless environment.&#160; It provides access to a session-wide cache you can use to store information.</p>
+        <p>In order to use the session method, set the Portal Authentication Method field to Session and type the appropriate variable in the Portal Authentication Variable field.&#160; Then you must create an asp.net web page and name it with the .aspx extension similar to the example below.&#160; The asp.net web page created must be copied into the Master Calendar root web directory.&#160; It must be put there in order for Master Calendar to read the session variable</p>
+        <p>You will need to pass the user’s email address or external reference through to your asp.net web page.&#160;</p>
+        <p><span class="ui">Code example in vb.net:</span> </p>
+        <div class="code-sample"><pre>&lt;%@ Import Namespace="System" %&gt;&#160;</pre><pre>&lt;script runat="server" language="vb"&gt;</pre><pre>&#160;&#160;&#160;&#160; Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Session.Item("MCSession") = "test@dea.com"</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Response.Redirect("Default.aspx")</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;End Sub &lt;/script&gt;</pre>
+        </div>
+        <h4>Form Method</h4>
+        <p>Forms enable client-side users to submit data to a server in a standardized format via HTML.&#160; The creator of a form designs the form to collect the required data using a variety of controls, such as INPUT or SELECT.&#160; Users viewing the form fill in the data and then click Submit to send the data to the server.&#160;</p>
+        <p>To use the form method, set the Portal Authentication Method field to Form and type the appropriate variable in the Portal Authentication Variable field.&#160; To create portals through a form, create a web page with a form similar to below.&#160; Once the user logs on through the portal, the form below can be submitted to log the user on to the application.</p>
+        <p><span class="ui">Code example in HTML: </span>
+        </p>
+        <div class="code-sample"><pre>&lt;Form name="form1" method="Post" action="http://localhost/virtualdirectory/Default.aspx"&gt;</pre><pre xml:space="preserve">&#160;&#160;&#160; &lt;input type="hidden" id="MCFORM" name="MCFORM" value="test@dea.com"&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </pre><pre xml:space="preserve">    &lt;input type="submit" value="submit"&gt;</pre><pre>&lt;/form&gt;</pre>
+        </div>
+        <h4>Cookie Method</h4>
+        <p>A cookie is a small piece of information stored by the browser. Each cookie is stored in a name/value pair called a crumb—that is, if the cookie name is "id" and you want to save the ID's value as "this", the cookie would be saved as id=this.&#160;</p>
+        <p>You can store up to 20 name/value pairs in a cookie, and the cookie is always returned as a string of all the cookies that apply to the page.&#160; This means that you must parse the string returned to find the values of individual cookies.&#160; Cookies accumulate each time the property is set.&#160; If you try to set more than one cookie with a single call to the property, only the first cookie in the list will be retained.</p>
+        <p>To use the cookie method, set the Portal Authentication Method field to Cookie and type the appropriate variable in the Portal Authentication Cookie Key field.&#160; Then create a web page with code similar to below.&#160; Once the user logs on through the portal, take their user logon information and create a cookie.&#160; After the cookie is created, send the user to the Default.aspx page of the application.</p>
+        <p><span class="ui">Code example in Active Server Pages 2.0: </span>
+        </p>
+        <div class="code-sample"><pre>&lt;%@LANGUAGE="VBSCRIPT" %&gt;</pre><pre>&lt;%</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Expires = -1</pre><pre xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&#160;   Response.Cookies("MCCookie")("CookVal") = "test@dea.com"</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Cookies("MCCookie").Path = "/"</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Cookies("MCCookie").Expires = DateAdd("m", 3, Now)</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Redirect("http://localhost/virtualdirectory/Default.aspx") %&gt;</pre>
+        </div>
+        <h4>Query String Method</h4>
+        <p>A query string is information appended to the end of a page's URL.&#160; An example using portal authentication is below &#160;&#160;&#160;&#160; &#160;</p>
+        <p><span class="ui">Code example:</span>
+        </p><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="mt-color-blue">http://localhost/virtualdirectory/Default.aspx?MCQS=test@dea.com</span></pre>
+        <p>To use the query string method, set the Portal Authentication Method field to Query String and type the appropriate variable in the Portal Authentication Variable field.</p>
+        <h5>Verify Portal Redirect&#160;</h5>
+        <p>The portal authentication entry page is the page within Master Calendar that processes the portal request.&#160; The name of the page is Default.aspx and it is the page where all portal authentication requests should be sent.&#160; This page is already installed and included with your Master Calendar software.&#160; The location will be the same folder as the EMS product’s root web folder.&#160; </p>
+        <p><b>Example</b>
+        </p><pre> <span class="mt-color-blue">http://localhost/virtualdirectory/Default.aspx</span></pre>
+        <h2>Integrated Windows Authentication</h2>
+        <p>Integrated Windows Authentication is another form of “single sign-on” available as an option with Master Calendar systems.&#160;&#160;&#160;</p>
+        <h3>Configuration Steps&#160;&#160;</h3>
+        <p>In order to configure Integrated Windows Authentication for Master Calendar, you must perform the following steps <em>after</em> installing and configuring Master Calendar:&#160;</p>
+        <ol class="number-list">
+            <li>Confirm or install new license</li>
+            <li>Add domain/user account information to user records</li>
+            <li>Configure IIS for authenticated access</li>
+        </ol>
+        <p>These steps are described in detail below.</p>
+        <h4>Confirm or Install New License</h4>
+        <p>In order to use Integrated Windows Authentication, your organization must be properly licensed.&#160; If you are unsure about whether you have purchased the Integrated Authentication module that enables Integrated Windows Authentication, log in to Master Calendar, go to the systemcheck.aspx page (as described under Compatible Systems), click the License Information heading and review the Licensed For list and look for a description to state “Integrated Authentication”.&#160;&#160;</p>
+        <p>If you were not previously licensed for Integrated Authentication but are now, update your registration information by logging in to the Master Calendar, going to Admin &gt; Site Administration &gt;&#160;<span class="ui">Registration</span>, entering the new licenses information then click <span class="ui">Save License Data</span>. The license&#160;information is case-sensitive and needs to be entered in exactly how it was provided from EMS Software&#160; If the information that was provided is incorrect, please contact EMS Software&#160;&#160;After you have entered the registration information, you must have Master Calendar re-read it by going to the systemcheck.aspx page, clicking the License Information heading and then clicking Read License. At the very top of the page, it should state “License read successfully”.</p>
+        <h5>Configure Master Calendar to Call Your LDAP&#160;Server</h5>
+        <ol class="number-list">
+            <li>
+                <p>Log in to Master Calendar as the site system administrator and click on the Admin menu item. Manually type “LDAPConfiguration.aspx” to the URL in the address bar to access the LDAP Configuration page.</p>
+                <p>
+                    <img src="../images/B_Configuration/MC_IntegAuthenforMC_LDAPConfigurationPg.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li value="2">
+                <p>Configure your LDAP Settings.&#160;&#160; </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Master Calendar only utilizes read-only queries to the organizations directory services. The Domain\User account does not need to have any special privileges.&#160;All that is required is that it be an active account in your directory services. Be aware, in some environments, passwords expire at scheduled intervals.&#160;If the password in LDAP settings is not updated when this occurs, Master Calendar/LDAP connectivity will be lost until the new password has been re-entered.&#160; It is recommended to consider using a generic account and a password that does not expire.</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../images/B_Configuration/MC_IntegAuthenforMC_CoreProperties.png" class="popup_with_padding_and_border" />
+                    </p>
+                    <p class="Caption">Core Properties</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../images/B_Configuration/MC_IntegAuthenforMC_Non-ADConfiguration.png" class="popup_with_padding_and_border" />
+                    </p>
+                    <p class="Caption">Non-AD Configuration</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../images/B_Configuration/MC_IntegAuthenforMC_LDAPQueries.png" class="popup_with_padding_and_border" />
+                    </p>
+                    <p class="Caption">LDAP&#160;Queries</p>
+                </div>
+            </li>
+        </ol>
+        <h5>Add LDAP Security Groups to Master Calendar</h5>
+        <p>In the course of setting up LDAP integration within the Master Calendar system, you pair security&#160;“templates” defined with security groups from your network.&#160; In order to make groups available for this pairing, you must “add” them to the Master Calendar.&#160; To do so, perform the following steps (which are also covered in the Master Calendar Setup Guide):</p>
+        <ol class="number-list">
+            <li>
+                <p>Log in to the Master Calendar site as the&#160;system administrator and select Admin &gt;– Security &gt; <span class="ui">User Templates</span>.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Assign LDAP Group</span>s, and then click <span class="ui">Add</span>.&#160;&#160;</p>
+            </li>
+            <li>
+                <p>Use the <strong>Search By</strong>&#160;field&#160;to search all LDAP groups or filter by Global Group or Universal Groups.&#160; Use the <strong>Grouping </strong>text box to search a particular string of characters from the list.</p>
+            </li>
+            <li>
+                <p>From the list of LDAP Groups, feel free to use Microsoft Windows multi-select function to highlight group(s).&#160; All the LDAP Groups that are highlighted from the list will be added to Master Calendar once <span class="ui">Add&#160;</span>is selected on the bottom of the Security Group Lookup screen.&#160;</p>
+            </li>
+            <li>
+                <p>If a user is in multiple groups, that user's&#160;Master Calendar permissions are based on the template associated with the highest priority group that is assigned.&#160; Highlight one or more of the security groups that are listed and use the Move Up ++ / Move Down buttons to order the groups in a top–down order.&#160;&#160;&#160;</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Save </span>to save the Security Groups order.</p>
+            </li>
+        </ol>
+    </body>
+</html>

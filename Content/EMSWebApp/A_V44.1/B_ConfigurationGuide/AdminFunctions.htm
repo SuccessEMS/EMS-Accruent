@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Administrative Functions in the EMS&#160;Web App</h1>
+        <p>From the Admin Portal in the EMS&#160;Web App, Administrators can  access error logs, view license information, and enabling help text. </p>
+        <p>This topic provides information that will allow you to do the following:</p>
+        <ul>
+            <li><a href="#Administrative">Admin Functions</a>
+                <ul>
+                    <li><a href="#Clear">Clear your Cache</a>
+                    </li>
+                    <li><a href="#Enable">Enable Help Text Edit</a>
+                    </li>
+                    <li><a href="#EnableDetailedErrors">Enable Detailed Errors</a>
+                    </li>
+                    <li><a href="#Disable">Disable Custom JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#ErrorLogs">Error Logs</a>
+            </li>
+            <li><a href="#License">License Information</a>
+            </li>
+            <li><a href="#LDAP">LDAP&#160;Configuration</a>
+            </li>
+        </ul>
+        <h2><a name="Administrative"></a>Administrative Functions</h2>
+        <p>This screen allows Administrators to perform the administrative functions listed below:</p>
+        <ul>
+            <li><span class="ui"><a name="Clear"></a>Clear Cache</span>—Click the Clear Cache button to empty your cache of parameters, tool tip options, and web text. This is an important function that must be performed when parameter changes are made in the EMS&#160;Desktop Client. </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you have multiple servers that host the EMS&#160;Web App, you must <span class="ui">Clear the Cache</span> on each server. </p>
+        </div>
+        <ul>
+            <li><span class="ui"><a name="Enable"></a>Enable Help Text Edit</span>—This option allows you to edit help text. To edit help text, click the link next to the help text. See Also:&#160;<a href="WebApp_CG_ConfigHelpText.html">Configure Help Text</a>. To disable help text edit, click the <span class="ui">Disable Help Text Edit </span>button. </li>
+            <li><span class="ui"><a name="EnableDetailedErrors"></a>Enable Detailed Errors</span>—This function allows you to view error details when troubleshooting issues. To disable this function, click the <span class="ui">Disable Detailed Errors</span> button. </li>
+            <li><span class="ui"><a name="Disable"></a>Disable Custom JavaScript</span>—Click this button to disable custom JavaScript for the session while troubleshooting. Click the <span class="ui">Enable Custom JavaScript </span>to enable this function. </li>
+        </ul>
+        <h2><a name="ErrorLogs"></a>Error Logs</h2>
+        <ol>
+            <li>To view error logs, navigate to the <span class="ui">Error Logs</span> tab in the Admin Portal.</li>
+            <li>Click on the .txt file of the log you want to view. </li>
+        </ol>
+        <p>
+            <img src="Images/ErrorLogs (002).png" class="resize80_noborder_padding" />
+        </p>
+        <p class="Caption">Error Logs Tab in the <MadCap:variable name="General.EMS&#160;Web App" /></p>
+        <h2><a name="License"></a>License Information</h2>
+        <ol>
+            <li>To view licensing information, navigate to the <span class="ui">License Information</span> tab in the Admin Portal.</li>
+            <li>Click the <span class="ui">Read License </span>button. </li>
+            <li>You will receive information on the <span class="ui">Application Version</span>, what EMS&#160;components your organization is<span class="ui"> License For</span>, the <span class="ui">Expiration Date </span>of your license, the number of <span class="ui">Allowed Web Users</span> for your license, and the number of <span class="ui">Current Active Users</span>. </li>
+        </ol>
+        <p>
+            <img src="Images/LicenseInfo (002).png" class="resize80_noborder_padding" />
+        </p>
+        <p class="Caption">License Information in the <MadCap:variable name="General.EMS&#160;Web App" /></p>
+        <h2><a name="LDAP"></a>LDAP&#160;Configuration</h2>
+        <p>Lightweight Directory Access Protocol (LDAP) is an application protocol for querying directory information. The LDAP Authentication method provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS Everyday applications, such as the EMS Web App. See Also:&#160;<a href="../../../Authentication/LDAPAuthen.html#ConfigureWebApp">Configure the EMS&#160;Web App to Use LDAP&#160;Authentication</a>.</p>
+    </body>
+</html>

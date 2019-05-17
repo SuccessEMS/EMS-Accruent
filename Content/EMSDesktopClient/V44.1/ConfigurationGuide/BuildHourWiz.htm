@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title> Building Hours Wizard V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Building Hours Wizard</h1>
+        <p>The Building Hours Wizard streamlines the configuration process and allows users to configure building hours for multiple dates.</p>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS Desktop Client menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt;&#160;<span class="ui">Building Hours</span>.&#160;The Building Hours window opens. This window lists all the buildings and their operating hours that are configured in your EMS Desktop Client database.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Configuration Facilities/Building Hours Wizard.png" alt="emssg_corefacilities_image021.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Building Hours Window</p>
+                </div>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Wizard</span>.&#160;The Building Hours Wizard opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Configuration Facilities/Building Hours Wizard_1.png" alt="https://success.emssoftware.com/@api/deki/files/6157/ConfigureBldgWizardpage2.png?revision=1" class="resize80_border_and_padding" />
+                    </p>
+                    <p class="Caption">Building Hours Wizard</p>
+                </div>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Add Dates</span>.&#160;The Date Pattern dialog box opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Configuration Facilities/Building Hours Wizard_2.png" alt="emssg_corefacilities_image023.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Date Pattern Dialog</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter the appropriate date pattern, and then click&#160;<span class="ui">OK</span>. (Both the Start Date and End Date are required values.)&#160;The Date Pattern dialog box closes. You return to the Building Hours Wizard. The dates that meet the pattern that you specified are displayed in the Building Hours Wizard. If any of the dates that meet the pattern are holidays, then the name of the holiday is displayed next to the date.</p>
+            </li>
+            <li>
+                <p>To view information about a date that is marked as a holiday, you can select the date, and then click&#160;<span class="ui">Special Dates</span>. To remove any dates from the list, you can select the date, or CTRL-click to select multiple dates, and then click&#160;<span class="ui">Remove</span>.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Next</span>.&#160;The Building Hours Wizard is updated with a list of the buildings that have been configured in your EMS Desktop Client database.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/Configuration Facilities/Building Hours Wizard_3.png" alt="emssg_corefacilities_image024.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Building Hours Wizard with a list of configured buildings</p>
+                </div>
+            </li>
+            <li>
+                <p>Select the&#160;buildings for which you are configuring the same hours, and then use the arrow button&#160;to move the buildings to the Selected list.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Next</span>.&#160;The Building Hours Wizard is updated with options for configuring the building hours for the selected buildings.</p>
+            </li>
+            <li>
+                <p>Set the new hours for the buildings as appropriate.</p>
+                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <col style="width: 140px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col style="width: 773px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Option</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Set Building Hours</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="p_3">Select this option to specify the time period (Open and Close) during which the building is to remain open for the date. Your EMS Desktop Client users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>EMS Web App users cannot make reservations outside of building hours.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Closed All Day</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="beforelist">Select this option to close the building for the entire day. When you select this option, then a Web Only option is displayed on the Building Hours dialog box.</p>
+                                <ul class="unorder-list">
+                                    <li>
+                                        <p> If you do&#160;not&#160;select Web Only, then none of your users (EMS Desktop Client or EMS Web App) can make reservations on this date in the selected buildings.</p>
+                                    </li>
+                                    <li>
+                                        <p>If you do you select Web Only, then your EMS Desktop Client users can make reservations on this date in the selected buildings; however, your EMS Web App users cannot. <a href="ConfigPricingResourceEditPriceWin.htm">Configure Pricing Info</a></p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p>Open All Day</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                <p>The default value. Leave this option selected to have the building remain open for the entire holiday.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Click&#160;<span class="ui">Finish</span>.&#160;The Building Hours Wizard closes. You return to the Building Hours window.</p>
+            </li>
+        </ol>
+    </body>
+</html>

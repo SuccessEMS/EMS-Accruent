@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Platform Services Release Notes <br />V44.1, Update 31</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');width: 100%;margin-left: 0;margin-right: auto;" class="TableStyle-Standard" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1&#160;Update&#160;31</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />January 16, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p>Patch #:<br />201812100<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.31000.620<br /></p>
+                </td>
+            </tr>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Beginning with <a href="EMSWebApp.htm">Update 31</a>, EMS&#160;Platform Services is a prerequisite for installing and using the EMS&#160;Web App. If EMS&#160;Platform Services has not yet been <a href="../../../EMSPlatformServices/InstallationGuide/InstallPS.html">installed</a> in your environment, validate the <a href="../../../EMS_SystemReq_44.1.html#EMSPlatformServices">hardware and software requirements for EMS&#160;Platform Services</a>. </p>
+        </div>
+        <h2>Fixes</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 165px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">G Suite</p>
+                        <p>&#160;</p>
+                        <p class="RNArea">&#160;</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Google Integration Issues</p>
+                        <p class="RNBody">When a recurring meeting was scheduled in the EMS&#160;Web App, and attendees were invited, the reservation did not always appear on the organizer's calendar. </p>
+                        <p class="RNBody"><b>Fix:</b>&#160;Modified functionality so that  all reservations appear on the organizer's calendar.  </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42095&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42095</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Room Availability</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Number of Rooms Shown Was Being Affected by Page Size</p>
+                        <p class="RNBody">When using the EMS&#160;Platform Services API with a multi-template availability route, the number of available rooms displayed was being affected by the page size. For example, with a page size of 5, three rooms were shown as available and two as unavailable. However, if the page size was changed to 10, six rooms would show as available. Additionally, the sort order did not display all of the available rooms before the unavailable rooms. </p>
+                        <p class="RNBodyBeforeList"><span class="ui">Fix:</span> Modified functionality so that the following occurs for a multi-template availability route: </p>
+                        <ul class="RN-unorder-list">
+                            <li>Page size is applied to the results from all process templates, instead of paging per template.</li>
+                            <li>Available rooms are returned first, followed by unavailable ones.</li>
+                            <li>Availability results are sorted on <span class="ui">UnavailableReason (Ascending)</span>, <span class="ui">Room Description (Ascending)</span>, and <span class="ui">TemplateId</span>.</li>
+                            <li>If a room is available on more than one template, the room will be returned only once based on the value set for filter <span class="ui">filterDuplicateRoomsByDaysAvailable</span>.</li>
+                            <li>If the flag <span class="ui">filterDuplicateRoomsByDaysAvailable</span> is set to false, duplicate results are returned.</li>
+                            <li><span class="ui">resultsCount</span> property represents the total number of rooms returned in response.</li>
+                        </ul>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41313&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41313</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Categories V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Categories</h1>
+        <MadCap:snippetBlock src="CategoriesResourcesServices_WhatsDiff.flsnp" />
+        <p>To configure categories in EMS Desktop Client, complete the following steps:</p>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt; <span class="ui">Categories</span>.&#160;The Categories window opens, where you can define categories of services you can add to booking templates. This window lists all the categories and their types that are currently configured in your EMS database and that have a status of <span class="ui">Active</span>.&#160;To filter&#160;all Categories regardless of status, under Show, click <span class="ui">Inactive</span>.<div class="TitleandImage"><p><img src="../../../Resources/Images/DTC_V44_CGBookElements/Configuring Categories.png" alt="emssg_coreadmin_image001.png" class="padding_only" /></p><p class="title">Categories Window</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p class="box-tip">You can define a category here with the <span class="ui">Category Type</span> of <span class="ui">Attendees</span> to enable users to add attendees to a booking on the EMS&#160;Web App <a href="../../../EMSWebApp/A_V44.1/C_UserGuide/WebApp_WorkingwithServices.htm">Services</a> page. If you define this Category and then add it to a booking template for Everyday Users, then they can control attendees as part of editing Services.</p></div></li>
+            <li>Click <span class="ui">New</span>.&#160;The Category dialog box opens on the <span class="ui">Category </span>tab.&#160;<div class="TitleandImage"><p class="mt-indent-2"><img alt="" class="resize80_noborder_padding" src="Images/DC_CG_ConfigCat1.png" /></p><p class="title">Category Dialog Box</p></div></li>
+            <li>Enter the information for the new Category.</li>
+        </ol>
+        <table border="0" cellspacing="12" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-Border_table_alternate_colors">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Category</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The name or description for the category, for example, A/V Equipment or Furniture (maximum of 30 characters, including spaces).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Print Sequence</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>If items from multiple categories have been reserved for an event, then the print sequence determines the order in which this information is printed on the confirmation and other reports. Categories are ordered from lowest to highest sequence number, with the category with the lowest sequence number being displayed first.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you leave the print sequence set to the default value of zero for all items, then by default, the items are displayed alphabetically.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a name="Category_Type"></a>Category Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Typically, the determining factor is how the category is to be used.</p>
+                        <ul>
+                            <li> <a name="Activities"></a><strong>Activities</strong> — Agenda-type entries that describe what is to occur during an event, for example: 8:30 a.m. - 9:00 a.m., Registration; 9:00 a.m. - 10:00 a.m., Keynote Speaker, and so on.</li>
+                            <li> <a name="Attendees"></a><strong>Attendees</strong> — Individuals who are attending an event. You can use this category for attendees such as VIPs or guest speakers, or to serve as an attendee checklist for smaller meetings.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The <span class="ui">Attendee </span>category type does not typically&#160;relate to attendees invited to a meeting using the optional EMS&#160;for Outlook add-in or using Integration to Microsoft Exchange module for EMS Web App or&#160;EMS Mobile App.</p>
+                        </div>
+                        <ul>
+                            <li> <a name="Notes"></a><strong>Notes</strong> — A free-form block of text that is used to enter clarifying or miscellaneous information about the event. For example, your users can describe room setup for an event such as “Set room temp. at 70 degrees one hour prior to event” or “Please unlock doors at 7 a.m.”</li>
+                            <li> <a name="ResourceswithoutSO"></a><strong>Resources&#160;w/o Service Orders</strong> — Resources that are assigned to a booking from this Category Type are assigned for the entire event time. Typically, this Category Type is&#160;used to manage Audio/Visual Equipment and Furniture categories.</li>
+                            <li> <a name="ResourceswithSO"></a><strong>Resources&#160;w/ Service Orders</strong> — Similar to Resources&#160;w/o Service Orders categories with one exception—you must indicate the specific time that the items assigned to a booking are needed. The end result is one or multiple service orders with specific services times before, during or after the event. Typically, this Category Type is used manage staffing for an event.</li>
+                            <li><a name="Catering"></a> <strong>Catering</strong> — Used to manage categories specific to food &amp; beverage service. Provides capability similar to the Resources, w/ Service Order category in addition to the catering specific fields of Estimated Count, Guaranteed Count, and Actual Count.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you select <strong>Resources w/o Service Orders</strong>,&#160;<strong>Resources w/ Service Orders</strong>, or <span class="ui">Catering</span>, then the <a href="#Use_Production_Items">Use Production Items</a> option becomes available.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a name="Default_Service"></a>Default Service</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Services are defined at the resource level. (See&#160;Also:&#160;<a href="ConfigResourcesforCat.html">Configure Resources for a Category</a>.) <MadCap:annotation MadCap:createDate="2018-10-25T14:23:35.4550568-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This field is unavailable until the category is created and you go into the resources window for the category, right? Then you can define the service through the Services button." MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-25T14:24:58.5175476-06:00">After you define your resources and services, then you can edit the category if needed and define a default service.</MadCap:annotation></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Time in Use</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only if <span class="ui">Catering</span>, <span class="ui">Resources&#160;w/ Service Orders</span>, or <span class="ui">Resources&#160;w/o Service Orders</span> is selected as the category type. Indicates the time that the items in the selected category should be in use for the Reserved Time or for the Event Time.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Quantity</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Depending on the category that was selected, one or more of the following options are available:</p>
+                        <ul>
+                            <li>Setup Count</li>
+                            <li>Estimated Count</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Currency</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the currency to be used for pricing all the resources in the category.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate currency is not available, you can configure it. See <a rel="internal" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies" href="ConfigCurrencies.htm" alt="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies">Configure Currencies</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Available to All Buildings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option if resources from this category are to be available to all buildings.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you do not select this option, then on the <span class="ui">Buildings </span>tab, you must specify the buildings for which resources from this category are to be available.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Allow Resources Notes Edit</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>If selected, EMS Desktop Client users can edit the Notes field for the resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Exclude from Services Indicator</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>In various EMS locations, such as the Reservation Book, the Navigator, and the Edit Booking form, EMS provides an indication that services exist for a booking. Select the <span class="ui">Exclude from Services Indicator</span> option to exclude a category from displaying as a service on the booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a name="Use_Production_Items"></a>Use Production Items</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option to define production items for the category. Production Items are typically used for Catering category types where <MadCap:variable name="General.Product" /> software&#160;will be used by a production kitchen.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Production items are defined at the resource level. See also:&#160;<a href="ConfigResourcesforCat.html">Configure Resources for a Category</a> and <a href="DefineProdAreaItems.htm">Define Production Areas and Production Items for a Catering Resource</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a name="Use_States"></a>Use States</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option if you want to define process phases, or states, for the category, such as “Assigned,” “Out for Delivery,” and “Delivered.”  If you select the <span class="ui">Use States</span> check box, a <span class="ui">States </span>tab appears. On this tab, define the different states that you want to configure in support of your category's workflow.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="table-note">After you define your states, you can edit this category if needed and specify a default state.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>BEO Column</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Indicates in which column the category is to be displayed when the Banquet Event Order (BEO) report is printed in its standard two column format. Select <span class="ui">Column 1</span> to display the category in the left column. Select <span class="ui">Column 2</span> to display the category in the right column. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>External Service</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select the <span class="ui">External Service</span> option if the provider of the resources for this category is external to your organization, and then select the provider on the Provider drop-down list.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="table-note">The <span class="ui">External Service</span> check box is only available for the <span class="ui">Notes </span>category type and if the EMS system parameter <span class="ui">Show External Service Orders on Categories</span> is set to <span class="ui">Yes</span>. See <a href="EMSDesktopClientParameters.htm">EMS&#160;Desktop Client Parameters</a> for more information.</p>
+                        </div>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="table-note">If the appropriate service provider is not available, contact <a href="../../../ContactUs.htm#Support">EMS Support</a>&#160;for assistance in configuring the provider.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p><a name="Attendees_are_Visitors"></a>Attendees are Visitors</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Select the <span class="ui">Attendees are Visitors </span>option to automatically mark all attendees who are added to a booking as a Visitor. (The Visitor option is automatically selected on the Attendee dialog box.)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Open the <span class="ui">Everyday Applications</span>&#160;tab and enter the appropriate&#160;information.&#160;<div class="TitleandImage"><p class="mt-indent-1"><img alt="" src="Images/DC_CG_ConfigCat2.png" class="popup_with_padding_and_border" /></p><p class="title">Everyday Applications Tab of the Category Dialog Box</p></div><div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;"><p class="box-important">Settings on the <span class="ui">Everyday Applications</span> tab control behavior for Everyday User Applications:&#160;<MadCap:variable name="General.EMS&#160;Web App" />. <MadCap:variable name="General.EMS for Outlook Add-in" />, and <MadCap:variable name="General.Mobile" />.</p></div></li>
+        </ol>
+        <table border="0" cellspacing="12" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Display to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>If selected, <MadCap:variable name="General.EMS&#160;Web App" /> and <MadCap:variable name="General.EMS for Outlook Add-in" />&#160;users can view this category if it has been added as a booking detail to one of their bookings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Expand Groupings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>If selected, the resource items for a grouping are displayed immediately when a <MadCap:variable name="General.EMS&#160;Web App" /> or <MadCap:variable name="General.EMS for Outlook Add-in" />&#160;user makes a reservation. If cleared, only the grouping is displayed and a user must expand the grouping to view the resource items. Typically, this option is selected if an option has a small list of resources within the category.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Use Specific Cutoff Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Indicates how far in advance of a booking a <MadCap:variable name="General.EMS&#160;Web App" /> or <MadCap:variable name="General.EMS for Outlook Add-in" />&#160;user can add, edit, or cancel this category. For example, if you select the Cutoff Time/Number of Days option, and you specify 11:00 a.m. and one day, then <MadCap:variable name="General.EMS&#160;Web App" /> or <MadCap:variable name="General.EMS for Outlook Add-in" />&#160;users cannot assign, edit, or cancel categories or resources after 11:00 a.m. on the day before the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Cutoff Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available only if you do not select the <span class="ui">Use Specific Cutoff Time</span> option. With this option, the restriction is imposed based on the number of hours before the event occurs rather than time of day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Quantity</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>From the Default Quantity drop-down field, you can select  <span class="ui">1</span>, <span class="ui">Attendance</span>, or <span class="ui">Blank</span>. The default quantity that you select is automatically filled in by the system when an <MadCap:variable name="General.EMS&#160;Web App" /> user or <MadCap:variable name="General.EMS for Outlook Add-in" />&#160;user selects an item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Available at Checkout</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select <span class="ui">Available at Checkout</span> if this category is to be displayed as part of the initial&#160;Room Request process in <MadCap:variable name="General.EMS&#160;Web App" />. If <span class="ui">Available at Checkout</span> not selected, <MadCap:variable name="General.EMS&#160;Web App" /> users must first complete the Room Request process before they can request the category.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="table-note">For example, if an Attendee-type category is associated with a booking template and the <span class="ui">Available at Checkout</span> option is selected, then users will be able to add or remove attendees&#160;<em>during</em>&#160;the booking. If <span class="ui">Available at Checkout</span> is not selected, users will only be able to manage attendees on the <span class="ui">Reservation Details</span> &gt; <span class="ui">Services </span>page once the reservation is created and they are in edit mode.&#160;</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Prompt for Billing Reference</p>
+                        <p>Prompt for PO Number</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option if <MadCap:variable name="General.EMS&#160;Web App" /> users are to be prompted to enter a billing reference and/or PO number when they select a resource from the category.&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Selecting the <span class="ui">Prompt for Billing Reference</span> or <span class="ui">Prompt for PO Number</span> option does not&#160;<em>require&#160;</em>the user to enter the billing reference or purchase order values. Instead, selecting these options only has the system prompt users to enter the values. </p>
+                        </div>
+                        <p>The behavior of these fields (required, validated, or displayed)&#160;is controlled in the&#160;<span class="italics">Billing Reference Validation</span> and <span class="italics">PO Number Validation</span>&#160;Everyday&#160;User Applications system <a href="EMSEverydayUserApplicationsParameters.htm">parameters</a> in <MadCap:variable name="General.EMS&#160;Desktop Client" />.&#160;Users will see the Billing Reference field during the booking process when the parameter is set at either the reservation, room, or category level.&#160;Whether the Billing Reference field displays is based on four settings: global, template, room-level setting, and category-level. The booking template setting overrides the global setting. The room and category level settings can both override the template setting. After the Admin decides whether to display the field, user entries will be validated based on the value in the <span class="italics">Billing Reference Validation</span> parameter set on the template.</p>
+                        <p>Billing Reference field options:</p>
+                        <ul>
+                            <li>Show (Prompt)</li>
+                            <li>Require</li>
+                            <li>Validate (Show and Require)</li>
+                            <li>Don't Show</li>
+                        </ul>
+                        <p>Additionally, the&#160;<span class="italics">Billing Reference Validation</span>&#160;parameter will always determine whether it is optional, required, or required and validated.&#160;</p>
+                        <p><strong>See Also:&#160;</strong><a href="EstablishBillingRef.htm">Establish Billing Reference and PO Number Field Behavior</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allow Add On Weekend</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option to allow a <MadCap:variable name="General.EMS&#160;Web App" /> user to add a service order to a Saturday or Sunday&#160;booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sequence</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Determines the order in which the category is displayed in a list of categories in <MadCap:variable name="General.EMS&#160;Web App" /> or <MadCap:variable name="General.EMS for Outlook Add-in" />. Categories are ordered from lowest to highest sequence number, with the category with the lowest sequence number being displayed first.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="table-note">If you leave the sequence set to the default value of zero for all categories, then by default, the categories are displayed alphabetically.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Minimum Amount</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The minimum purchase amount that is required for a user to submit a new service order in <MadCap:variable name="General.EMS&#160;Web App" /> or <MadCap:variable name="General.EMS for Outlook Add-in" />&#160;for this category.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>To add the category as an active category, do NOT select the <span class="ui">Inactive </span>check box. To inactivate the category, select the <span class="ui">Inactive </span>check box.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>If you did&#160;<em>not</em>&#160;select <span class="ui">Available to All Buildings</span> then go to&#160;Step 6; otherwise, open the <span class="ui">Buildings </span>tab, and on the <span class="ui">Available </span>list, select the building, or CTRL-click to select the multiple buildings for which the category is to be available, and then click the Move button (&gt;) to move the selected buildings to the <span class="ui">Selected </span>list.</li>
+            <li>Optionally, do one or more of the following:<ul MadCap:continue="true"><li><a name="CalculationsCategory"></a>Open the <span class="ui">Calculations </span>tab and on the <span class="ui">Available </span>list, select the calculation&#160;(CTRL-click to select multiple calculations) you always want to&#160;apply to this category, and then Move (&gt;) the them to the <span class="ui">Selected </span>list.&#160;These calculations apply to all new resources that are added to the category. If the appropriate calculations are not available, you can configure them. See <a rel="internal" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations" href="ConfigCalc.htm" alt="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations">Configure Calculations</a>.&#160;You can also define calculations at the resource item level. See <a href="ConfigResourcesforCat.html#AssignCalc">Configure Resources for a Category</a>.</li><li>Open the <span class="ui">Provider </span>tab and enter the contact information for the provider of the items or services in the category.&#160;Select <span class="ui">International </span>to drop the State and Zip fields for an international provider. None of the provider information is displayed or printed anywhere outside of EMS Desktop Client.</li><li>Open the <span class="ui">Terms and Conditions</span> tab and format a Terms and Conditions message that must be acknowledged by <MadCap:variable name="General.EMS&#160;Web App" /> or <MadCap:variable name="General.EMS for Outlook Add-in" /> users&#160;when&#160;they&#160;select&#160;the category.&#160;Design is selected by default. Use the standard Windows plain text formatting options to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want; otherwise, you can select HTML and enter the necessary HTML code to format the message.</li></ul></li>
+            <li>If you did&#160;<em>not</em>&#160;select <span class="ui">Use States</span>, continue to the next step; otherwise, open the <span class="ui">States </span>tab, and then do the following:<ul MadCap:continue="true"><li>In the <strong>Description </strong>field, enter a name or description for each state or phase that is to be used for managing this category (maximum of 50 characters, including spaces).</li><li>Optionally, to define a color for each state, select the state, and then click <strong>Set Color</strong> to open the Select Color dialog box and select a color for the state.</li><li>After you have defined the states for a category, you can select a default state on the <span class="ui">Category </span>tab. </li></ul></li>
+            <li>Click <strong>OK</strong>.&#160;The Category dialog box closes. You return to the Categories window with the newly added category automatically selected. You can now define the resource items for the categories. See <a href="ConfigResourcesforCat.html">Configure Resources for a Category</a>.</li>
+        </ol>
+    </body>
+</html>

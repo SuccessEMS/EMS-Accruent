@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>EMS For Google Calendar Configuration Guide</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>For Update 31, Everyday Users will not be able to choose a Setup Type; therefore, EMS&#160;for Google Calendar will book a room based on the Default Setup Type. Administrators must ensure that they have a Default Setup Type configured for any room used by EMS&#160;for Google Calendar. </p>
+        </div>
+        <p>Administrators must configure EMS&#160;for Google Calendar in their EMS&#160;Desktop Client. Administrators will:</p>
+        <ol>
+            <li><a href="#CreateEverydayUserProcessTemplate">Create an Everyday User Process Template for EMS&#160;for Google Calendar</a>
+            </li>
+            <li><a href="ConfigIntents.htm">Configure at least one intent</a>
+            </li>
+            <li><a href="#CreateTBDRooms">Create a TBD&#160;Room with a mailbox</a>
+            </li>
+            <li><a href="#ConfigureConflictEmail">Configure a Conflict Email</a> (optional)</li>
+            <li>Ensure  a <a href="../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigRooms.html">Default Setup Type</a> is configured</li>
+            <li><a href="#ConfigureMailboxes">Ensure all Rooms have mailboxes</a>
+            </li>
+            <li MadCap:conditions="General.Edit_in_Review"><a href="AuthURLsforSubscribingtoEvents.htm"><MadCap:annotation MadCap:createDate="2018-12-07T11:58:12.6372814-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Remove condition when Matt is ready for the topic to go out to the public" MadCap:editor="Megan.Laub" MadCap:editDate="2018-12-07T11:58:32.1112576-07:00">Authorize URLs for Subscribing</MadCap:annotation> </a>
+            </li>
+        </ol>
+        <h2><a name="CreateEverydayUserProcessTemplate"></a>Create an Everyday User Process Template for EMS&#160;for Google Calendar</h2>
+        <ol>
+            <li><a href="../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigEverydayUserProcessTemplate.htm">Create an Everyday User Process Template</a> for EMS&#160;for Google Calendar. </li>
+            <li>
+                <p>When creating this Everyday User Process Template, select the <span class="ui">Enable Integration to G Suite </span>and <span class="ui">Enable EMS&#160;for Google Calendar</span> <MadCap:annotation MadCap:createDate="2018-10-17T12:53:28.7343781-06:00" MadCap:creator="Jen.Naused" MadCap:initials="JE" MadCap:comment="This is a placeholder screenshot. Dev is working on changing both checkboxes per Matt in our 10/12/18 meeting. " MadCap:editor="Jen.Naused" MadCap:editDate="2018-10-17T12:53:57.2144945-06:00">checkboxes </MadCap:annotation>under the Everyday User Application Settings. </p>
+                <p>
+                    <img src="images/EnableIntegrationtoGoogleGSuitecheckbox.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+        </ol>
+        <h2><a name="CreateTBDRooms"></a>Create a TBD&#160;Room</h2>
+        <p>Everyday Users <a href="ConflictResolution.htm">resolving a booking conflict</a> may need to <span class="ui">Skip </span>adding a room to their reservation in EMS&#160;for Google Calendar. Therefore, a <a href="../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigRooms.html#ConfigureOutlookTBDRooms">TBD&#160;room</a> must be configured and have an associated mailbox. One TBD&#160;room is needed per building. </p>
+        <p>See Also:&#160;<a href="../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigRooms.html#Google">Configure a Room for EMS&#160;for Google Calendar</a>. </p>
+        <h2><a name="ConfigureConflictEmail"></a>Configure a Conflict Email</h2>
+        <p>You can notify your users of booking conflicts via email by configuring a Conflict Email. </p>
+        <ol start="1">
+            <li>Navigate to the <span class="ui"><MadCap:annotation MadCap:createDate="2018-10-17T12:54:50.2802810-06:00" MadCap:creator="Jen.Naused" MadCap:initials="JE" MadCap:comment="The name of this tab may change per Matt in our 10/12 meeting. " MadCap:editor="Jen.Naused" MadCap:editDate="2018-10-17T12:55:03.6536698-06:00">Outlook Conflict - Email Options </MadCap:annotation></span>tab. </li>
+            <li>From the drop-down menu, select a <span class="ui">Header</span>.</li>
+            <li>From the drop-down menu, select a <span class="ui">Footer</span>.</li>
+            <li>Insert text into the <span class="ui">Email Subject Line</span>. </li>
+            <li>Click <span class="ui">OK</span>. </li>
+        </ol>
+        <h2><a name="ConfigureMailboxes"></a>
+            <MadCap:annotation MadCap:createDate="2018-10-17T14:43:56.0514431-06:00" MadCap:creator="Jen.Naused" MadCap:initials="JE" MadCap:comment="Need to flush out this topic with Matt. " MadCap:editor="Jen.Naused" MadCap:editDate="2018-10-17T14:44:01.9057752-06:00">Configure Room Mailboxes</MadCap:annotation>
+        </h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>A&#160;mailbox must be configured for TBD rooms. </p>
+        </div>
+        <ol>
+            <li><a href="https://support.google.com/a/answer/1686462?hl=en">Create a mailbox</a> in Google.</li>
+            <li>From the EMS&#160;Desktop Client, navigate to <span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt; <span class="ui">Rooms</span>. Filter the dialog to display the room(s) you would like to edit. </li>
+            <li>Click <span class="ui">Edit</span>.</li>
+            <li>Enter the room mailbox on the Google Integration tab. </li>
+        </ol>
+    </body>
+</html>

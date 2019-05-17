@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Configure and Verify EMS for EMS API Web Service Use</h1>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Connect_EMS_Desktop_Client_to_the_EMS_API_Web_Service">Connect EMS Desktop Client&#160;to the&#160;EMS API Web Service</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Enable_JSON_to_Query_Data">Enable JSON to Query Data</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Verify_the_EMS_API">Verify the EMS API</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Connect_EMS_Desktop_Client_to_the_EMS_API_Web_Service"></a>Connect EMS Desktop Client&#160;to the&#160;EMS API Web Service</h2>
+        <p>External applications require a pre-defined EMS User account to authenticate to the EMS API Web Service.&#160;The EMS User account should not be granted any rights within the EMS application itself.</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Launch the EMS client application and login with a user that has EMS administrator-level access.</p>
+            </li>
+            <li>
+                <p>Go to&#160;<span class="ui">System Administration</span>&#160;&gt;&#160;<span class="ui">Security&#160;</span>&gt;&#160;<span class="ui">Users</span>.</p>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">New&#160;</span>button.&#160;The&#160;User&#160;screen will appear.</p>
+            </li>
+            <li>
+                <p>Enter the following information:</p>
+                <ul start="1">
+                    <li>
+                        <p>Name</p>
+                    </li>
+                    <li>
+                        <p>User ID</p>
+                    </li>
+                    <li>
+                        <p>Password</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On the Processes screen, select the&#160;<span class="ui">Special – EMS API Web Service Access</span>&#160;process.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If the&#160;<span class="ui">Special – EMS API Web Service Access</span>&#160;process does not exist, please contact Customer Support.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click the&#160;<span class="ui">OK&#160;</span>button.</p>
+            </li>
+        </ol>
+        <h2><a name="Enable_JSON_to_Query_Data"></a>Enable JSON to Query Data</h2>
+        <p>If using&#160;JSON to interface with the API,&#160;it must&#160;be enabled. (It is disabled by default).</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Installation must be complete before enabling JSON.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Edit the web.config file and enter&#160;&lt;add key="UseJSON" value="false"/&gt;.</p>
+            </li>
+            <li>
+                <p>Set the value to "true".</p>
+            </li>
+        </ol>
+        <h2><a name="Verify_the_EMS_API"></a>Verify the EMS API</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Open a browser and enter the following URL: </p>
+                <p><span class="ui">http://[ServerName]/EMSAPI/Service.asmx</span>&#160;(replace [ServerName] with the name of your web server)</p>
+                <p>Your browser should return a list of API calls.</p>
+                <p>
+                    <img src="Images/OptFeat_API/Configuring and Verifying.png" alt="https://success.emssoftware.com/@api/deki/files/1485/EMS_API_-_Configure_and_Verify_EMS_API_Web_Service_-_Service.png?revision=1&amp;size=bestfit&amp;width=756&amp;height=406" class="resize80_noborder_padding" />
+                </p>
+            </li>
+        </ol>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Verify the EMS API version  by viewing the About page:</p>
+                <div class="code-sample"><pre><span class="ui">http://[ServerName]/EMSAPI/About.aspx</span>&#160;(replace [ServerName] with the name of your web server)</pre>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

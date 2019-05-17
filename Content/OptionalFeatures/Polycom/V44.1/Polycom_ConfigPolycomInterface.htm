@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Configure the EMS Polycom Interface</h1>
+        <p>This topic provides information on the following:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#Set_Preferences_EMS_Polycom_Interface">Set Preferences in EMS&#160;Polycom Interface</a>
+            </li>
+            <li><a href="#Set_Preferences_in_Polycom_Activity_Area">Set Preferences in Polycom Activity Area</a>
+            </li>
+        </ul>
+        <h2><a name="Set_Preferences_EMS_Polycom_Interface"></a>Set Preferences&#160;in EMS Polycom Interface</h2>
+        <ol start="1" class="number-list">
+            <li>Within the Windows Start menu, locate&#160;<span class="ui">EMS Polycom Settings</span>. The EMS Polycom Settings screen presents.<p><img src="Images/Polycom1/Configuring the EMS Polycom.png" class="resize80_noborder_padding" /></p></li>
+            <li>Enter your&#160;EMS MS SQL Server name.</li>
+            <li>Enter your&#160;EMS Database name.</li>
+            <li>Specify the&#160;service execution interval.</li>
+            <li>Specify the&#160;Authentication mode&#160;(EMS or Windows).</li>
+            <li>Click&#160;<span class="ui">OK</span>.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Additional EMS&#160;Polycom Interface settings are configured in the Polycom Activity area within EMS.&#160;Proceed to the next section to complete these steps.</p>
+        </div>
+        <h2><a name="Set_Preferences_in_Polycom_Activity_Area"></a>Set Preferences in Polycom Activity Area</h2>
+        <ol start="1" class="number-list">
+            <li>Verify that the Polycom Realpresence Resource Manager API is running by opening a browser and entering the web service URL (typically&#160;<span class="ui">https://&lt;serverID&gt;:&lt;portnumber&gt;/api/rest</span>). The following screen should present:<p><img src="Images/Polycom1/Configuring the EMS Polycom_2.png" class="resize80_noborder_padding" /></p></li>
+            <li>Log into the EMS desktop application using an EMS user account with Administrator-level access.</li>
+            <li>Click the <span class="ui">Polycom Activity</span> button on the tool bar. The Polycom Activity screen will appear.</li>
+            <li>Click the Settings menu option in the upper right&#160;corner of the Polycom Activity screen. <p>The Polycom Settings screen will present.</p><p><img src="Images/Polycom1/Configuring the EMS Polycom_3.png" alt="https://success.emssoftware.com/@api/deki/files/5003/clipboard_eee8886a5b84d63d428d166c94839694d?revision=1&amp;size=bestfit&amp;width=659&amp;height=389" class="resize80_noborder_padding" /></p></li>
+            <li>On the&#160;<span class="ui">Settings&#160;</span>tab, specify values for the items listed by highlighting the record and clicking the <span class="ui">Edit </span>button. Once you configure a setting, click the <span class="ui">OK </span>button to save your value.<ul start="1"><li><span class="ui">Enable Event Logging</span>&#160;– Enables EMS&#160;Polycom Windows Service event logging.</li><li><span class="ui">Error Email Message</span> – Subject line of error email notifications.</li><li><span class="ui">Error “From” Email Address</span>&#160;– Email address (individual or distribution group) that error email notifications will be sent from</li><li><span class="ui">Error “To” Email Address</span>&#160;– Email address (individual or distribution group) that error email notifications will be sent to.</li><li><span class="ui">Number of days prior to Event</span>&#160;– Specifies how far in advance of a video-conference date the EMS – Polycom Interface should push the EMS booking(s) to Polycom.</li><li><span class="ui">SMTP Authentication Type</span>&#160;– Anonymous or Authenticated.</li><li><span class="ui">SMTP Password</span>&#160;– Specify if SMTP Authentication Type = Authenticated.</li><li><span class="ui">SMTP Server</span>&#160;– Used to relay error notification emails.</li><li><span class="ui">SMTP User Name</span>&#160;– Specify if SMTP Authentication Type = Authenticated.</li><li><span class="ui">Use Reserved Time</span>&#160;– If set to Yes, the booking reserved time will be passed to the Polycom Realpresence Resource Manager API. Otherwise, the event time will be passed.</li><li><span class="ui">Web Service Domain</span>&#160;– Polycom Realpresence Resource Manager API Web Service Domain.</li><li><span class="ui">Web Service Password</span></li><li><span class="ui">Web Service URL</span>&#160;– URL to Polycom Realpresence Resource Manager API Web Service verified in Step 1.</li><li><span class="ui">Web Service User Name</span></li></ul></li>
+            <li>Go to the&#160;<span class="ui">Buildings&#160;</span>tab. This tab is used to include/exclude EMS bookings scheduled in specific Buildings, Areas, or Views during processing. To select an item, highlight the record and click the&#160;<span class="ui">&gt;</span>&#160;button.</li>
+            <li>Go to the&#160;<span class="ui">Event Types</span>&#160;tab. This tab is used to include/exclude EMS bookings scheduled in specific Event Types during processing.</li>
+            <li>Go to the&#160;<span class="ui">Status&#160;</span>tab. This tab is used to include/exclude EMS bookings scheduled in specific Statuses during processing.</li>
+            <li>Click the&#160;<span class="ui">OK&#160;</span>button to save your settings.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Managing User Templates</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure User Templates</h1>
+        <p>A <span class="italics">user </span><em>template</em> contains a set of calendar permissions. For example, Template A specifies requestor access to Calendar A and view-only access to Calendar B, Template B specifies view-only access to all calendars in Master Calendar, and so on. Templates are always optional. You can apply a template to a group of user records in a single step to simplify the setup and maintenance of Master Calendar.</p>
+        <p>This topic guides you in creating a new user template and working with existing ones.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If your organization has purchased and installed the optional EMS&#160;Integrated Authentication module, you can <a title="Managing User Templates" href="IntegAuthenforMC.html" alt="Managing User Templates">select</a> LDAP groups for assignment to a template and you can associate&#160;these selected LDAP groups with a User Template.</p>
+        </div>
+        <h2>Create a New User Template﻿</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin</span> &gt; <span class="ui">Security </span>&gt; <strong>User Templates</strong>.&#160;The User Templates page opens on&#160;the Active tab, which lists all&#160;currently active user templates in Master Calendar.</p>
+                <p>
+                    <img src="../images/B_Configuration/usertemplates1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Under Actions, click <strong>Add</strong>.&#160;The Template tab opens, where you can name and describe the template.</p>
+                <p>
+                    <img src="../images/B_Configuration/usertemplates2.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Click&#160;<strong>Save</strong>&#160;or proceed to the subsequent sections of this topic.</li>
+        </ol>
+        <h2>Edit Existing Templates</h2>
+        <ol>
+            <li>To work with existing templates,&#160;from the User Templates page, click the Active or Inactive tab.</li>
+            <li>Select the template you want to edit.</li>
+            <li>
+                <p>Click&#160;<strong>Edit</strong>.</p>
+                <p>
+                    <img src="../images/B_Configuration/MC_ManageUserTemplates_ActiveInactiveTabEdit.png" class="popup_with_padding_and_border" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Use the&#160;<strong>Print&#160;</strong>option on the page above to generate a report of templates in Master Calendar.&#160; On the Inactive tab, you can Delete templates. You can only delete inactive templates. </p>
+                </div>
+            </li>
+            <li>
+                <p>The User template opens in edit mode. You can change the name and description for the User Template on this page.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You can use the&#160;<strong>Active</strong>&#160;checkbox to control whether the template is active or inactive.&#160;The History tab provides a history of this User Template.</p>
+                </div>
+                <table border="0" cellspacing="0" style="mc-table-style: url('../../../Resources/TableStyles/Border_table.css');" class="TableStyle-Border_table">
+                    <col class="TableStyle-Border_table-Column-Column1" />
+                    <col class="TableStyle-Border_table-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table-Head-Header1">
+                            <th class="TableStyle-Border_table-HeadE-Column1-Header1">TAB</th>
+                            <th class="TableStyle-Border_table-HeadD-Column1-Header1">INFORMATION TO EDIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table-Body-Body1"><![CDATA[  ]]></tr>
+                        <tr class="TableStyle-Border_table-Body-Body1">
+                            <td class="TableStyle-Border_table-BodyE-Column1-Body1">
+                                <p>Template</p>
+                            </td>
+                            <td class="TableStyle-Border_table-BodyD-Column1-Body1">
+                                <ul>
+                                    <li> Template Name</li>
+                                    <li> Template Description</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table-Body-Body1">
+                            <td class="TableStyle-Border_table-BodyE-Column1-Body1">
+                                <p>Permissions</p>
+                            </td>
+                            <td class="TableStyle-Border_table-BodyD-Column1-Body1">
+                                <p>The type of access that a user with the selected template will have to the calendars in Master Calendar. See Also:&#160;<a title="Managing User Templates" href="#SetPermissions" alt="Managing User Templates">Set user template permissions</a>.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table-Body-Body1">
+                            <td class="TableStyle-Border_table-BodyB-Column1-Body1">
+                                <p>LDAP</p>
+                            </td>
+                            <td class="TableStyle-Border_table-BodyA-Column1-Body1">
+                                <p>The security group information that is maintained on your organization’s network in conjunction with the templates in Master Calendar. </p>
+                                <p>See Also:&#160;<a title="Managing User Templates" href="#AssignUsersLDAP" alt="Managing User Templates">Add LDAP groups to a user template</a>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Proceed to the subtopics in this section.</li>
+        </ol>
+        <h2><a name="SetPermissions"></a>Set Permissions for a Template</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>&#160;Permissions control the type of access users assigned to the template have to a calendar.</p>
+        </div>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>User Templates</strong>. </li>
+            <li>Select a template. Click the&#160;<strong>Permissions</strong>&#160;tab.&#160;</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/usertemplates3.png" class="resize80_border_and_padding" />
+        </p>
+        <p>The Viewer, Requester, and Calendar User fields&#160;indicate the type of access that a user with the selected template will have to the calendars in Master Calendar.&#160;Users assigned to the selected template can still view any calendar that remains in the Available Calendars column, unless the calendar is defined as a private.</p>
+        <p><b>Calendar Access Type Fields</b>
+        </p>
+        <table border="0" cellspacing="0" style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table.css');" class="TableStyle-Border_table">
+            <col class="TableStyle-Border_table-Column-Column1" style="width: 198px;" />
+            <col class="TableStyle-Border_table-Column-Column1" style="width: 563px;" /> <thead><tr class="TableStyle-Border_table-Head-Header1"><th class="TableStyle-Border_table-HeadE-Column1-Header1">FIELD</th><th class="TableStyle-Border_table-HeadD-Column1-Header1">DESCRIPTION</th></tr></thead><tbody> <tr class="TableStyle-Border_table-Body-Body1"> </tr> <tr class="TableStyle-Border_table-Body-Body1"></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Viewer</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>Users can only view events on the calendar.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Requester</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>Users can view events on the calendar and submit events to the calendar; however, the submitted event is posted only if approved by the Calendar Manager.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyB-Column1-Body1"><p>Calendar User</p></td> <td class="TableStyle-Border_table-BodyA-Column1-Body1"><p>Users can view events on the calendar and submit events to the calendar and the events are automatically posted without approval by the Calendar Manager.&#160;Calendar Manager is not an option when you are defining templates. It is available only when you are adding or editing a user record.</p></td></tr></tbody></table>
+        <h2><a name="AssignUserstoTemplate"></a>Assign Users to a Template</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>User Templates</strong>. Click the Active or Inactive tab and select the templates you want to assign users to.&#160;</li>
+            <li>Under Actions, click <strong>Assign Users</strong>.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/MC_ManageUserTemplates_AssignUsers.png" class="popup_with_padding_and_border" />
+        </p>
+        <p>The page for assigning users to a template opens.</p>
+        <p>
+            <img src="../images/B_Configuration/usertemplates4.png" class="resize80_border_and_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Enter the search criteria and then click <strong>Go</strong> to search for the users that you want to assign to a selected template.</li>
+            <li>Move the User from Available to Assigned.</li>
+            <li>Click <strong>Save </strong>to save the template as an <em>active</em> template in Master Calendar.</li>
+        </ol>
+        <h2><a name="AssignUsersLDAP"></a>Assign Users to LDAP&#160;Template Groups</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Before you can assign LDAP&#160;"Security Groups"&#160;to a template, you must select the LDAP groups that you want to assign.</p>
+        </div>
+        <p>The Assign LDAP Groups option is available only if your organization has purchased and installed the optional <span class="ui"><a href="IntegAuthenforMC.html">Integrated Authentication</a></span> module. This module allows your organization to use the security group information that is maintained on its own network in conjunction with the templates in Master Calendar to set permissions for its Master Calendar users.  </p>
+        <h2><a name="SelectingLDAPGroupstoUserTemplates"></a>Select LDAP&#160;Groups to Assign to User Templates</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>User Templates</strong>. Click the Active or Inactive tab and select the templates you want to assign.&#160;</li>
+            <li>Under Actions, click&#160;<strong>Assign to LDAP&#160;Groups.</strong></li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/MC_ManageUserTemplates_AssigntoLDAPGroups.png" class="popup_with_padding_and_border" />
+        </p>
+        <p>The Security Groups page opens, listing LDAP&#160;security groups you can assign&#160;to the&#160;template.&#160;</p>
+        <p>
+            <img src="../images/B_Configuration/usertemplates6.png" class="resize80_border_and_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>To select a security group, select it from the list and&#160;click <strong>Add</strong>.&#160;The Security Group Lookup dialog box opens. You use this dialog box to search for the security groups that you want to assign to a template.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/MC_ManageUserTemplates_SecurityGroupLookupDialogBox.png" class="resize80_noborder_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Specify the search criteria for the security groups that you want to assign to a template and then click <strong>Go</strong>.</li>
+            <li>From the search results, select the security group that is to be assigned to a template (CTRL-click to select multiple groups), and then click Add to move the groups to the Security Groups page.</li>
+            <li>When you add a security group to the security groups page, they are added in alphabetical order and this becomes the default priority for the groups. You can leave them as is or change the priority order of the groups in this list by using the&#160;<strong>Move Up ++&#160;</strong>&#160;and&#160;<strong>Move Down --</strong>&#160;buttons.&#160;</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If a user exists in multiple LDAP security groups, then the user’s security settings are assigned based on the LDAP group with the highest priority. For example, if User A is assigned to both the Billing LDAP group and the Cert Publishers LDAP group, and the Billing group has a higher priority (that is, it is higher up in the list) than the Cert Publishers group, then User A’s access security settings are granted based on the Master Calendar template to which the Cert Publishers group is assigned.&#160;   </p>
+        </div>
+        <h2>Associate&#160;LDAP Groups With&#160;a User Template</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>User Templates</strong>. Click the&#160;<strong>LDAP</strong>&#160;tab.</li>
+        </ol>
+        <p>
+            <img src="../images/B_Configuration/usertemplates7.png" class="resize80_border_and_padding" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>From the Security Groups list, select the security group that is to be assigned to the template that you just added (CTRL-click to select multiple groups), and then click then click the Add button  to move the selected groups to the Selected Security Groups list.</li>
+            <li>Click <strong>Save </strong>to assign the selected LDAP security groups to the template.</li>
+        </ol>
+    </body>
+</html>

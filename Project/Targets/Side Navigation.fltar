@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="EMS Documentation Site"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/Side Navigation.flskn"
+  MasterToc="/Project/TOCs/Master.fltoc"
+  ExcludeUnreferencedContent="false"
+  UseDeviceWidth="false"
+  MenuSkin="/Project/Skins/Top Nav Menu.flskn"
+  DisableAutoSync="true"
+  TopicToolbarSkin="/Project/Skins/Topic Toolbar.flskn"
+  FaviconSkin="/Project/Skins/Favicons.flskn"
+  DefaultUrl="/Content/Home.htm"
+  SearchEngine="MadCapSearch"
+  EnableSitemap="false"
+  SitemapWebUrl="https://documentation.bluecieloecm.com/BCWebHelp/en/meridian/2018%20R2/rn/"
+  SearchResultsSkin="/Project/Skins/Search Results.flskn"
+  PartialWordSearch="false"
+  MasterStylesheet="/Content/Resources/Stylesheets/Accruent_2018.css"
+  ConditionTagExpression="include[Default.ExcludefromAccruentAccess or Default.FullHelpSite or Default.ScreenOnly or &quot;General.Online Only&quot;] exclude[Default.AccruentAccessOnly or Default.PrintOnly or General.Edit_in_Review or &quot;General.Print Only&quot;] "
+  TopNavTocPath="true"
+  MasterPage="/Content/Resources/MasterPages/No-Survey Master Page.flmsp"
+  ResolveCssVariables="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Meridian Online Help FTP.fldes"
+      Publish="false"
+      SearchDestination="/Project/Destinations/Elasticsearch.fldes" />
+    <Destination
+      Link="/Project/Destinations/Zelus2018v2 FTP.fldes"
+      Publish="true"
+      SearchDestination="/Project/Destinations/Elasticsearch.fldes" />
+  </Destinations>
+  <Elasticsearch
+    Guid="d0b99aac-5a9b-4628-8338-9a92472c25d9"
+    AutoFuzzy="true" />
+  <Glossaries></Glossaries>
+  <PreBuild></PreBuild>
+  <PostBuild></PostBuild>
+</CatapultTarget>

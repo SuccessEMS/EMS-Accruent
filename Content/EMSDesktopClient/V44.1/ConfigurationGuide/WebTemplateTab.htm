@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Web Template Tab V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />
+            <MadCap:annotation MadCap:createDate="2019-03-04T11:10:42.1711412-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to update this section. The fields are not the same as the ones listed on the current version of the Process tab in DTC. " MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-17T09:34:49.9701333-06:00">Process Template Tab</MadCap:annotation>
+        </h1>
+        <p>To configure the main settings for an everyday user process template, follow these steps:</p>
+        <ol class="number-list">
+            <li>Open the <span class="ui">Process Template</span>tab of the <a href="ConfigEverydayUserProcessTemplate.htm">Everyday User Process Template</a> dialog box.</li>
+            <li>From the fields on the Process Template tab, configure the process template settings (see the following table for more information about the fields).</li>
+        </ol>
+        <p><b>Process Template Tab Fields</b>
+        </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Read-only information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Mode</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Determines how a user can make a reservation in <MadCap:variable name="General.EMS&#160;Web App" />.
+</p>
+                        <ul>
+                            <li>Request - Everyday Users can complete a simple online form requesting a
+room. Unlike the Self Serve mode, this mode does not provide
+options for the Everyday User to view real-time room availability. In
+addition, requests must be reviewed, approved, and manually
+processed into actual reservations by an <MadCap:variable name="General.EMS&#160;Desktop Client" /> user. The room
+is not taken out of inventory until this step has occurred.
+</li>
+                            <li>Self Serve - Registered Everyday Users can view real-time room
+availability (in list or grid views) and create actual reservations in the
+EMS database. Rooms can be booked in a confirmed or request
+status based on your configuration and business process.
+</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>You must select this option if the Everyday Users who are attached to
+this Everyday User Process Template must be able to request rooms that
+have a video conferencing feature.
+</p>
+                        </div>
+                        <ul>
+                            <li>Service Only Request - Allows Everyday Users to request a service (for
+example, catering, A/V equipment, and so on) for a location that is
+not managed in EMS.
+</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Various settings within the Everyday User Process template are
+enabled/disabled based on the selected mode.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Menu Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The menu text or link that an <MadCap:variable name="General.EMS&#160;Web App" /> user sees when requesting a room
+using this Everyday User Process template.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Available to New Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option if this Everyday User Process template is to be automatically
+assigned to newly registered Everyday Users.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Enable for Mobile Device</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option if this Everyday Process template is to be available (in an
+appropriate format) on a mobile device browser.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Outlook</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Enables the Everyday Process template for use with the EMS for Outlook
+Add-in.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Parent Menu</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The parent menu item on the <MadCap:variable name="General.EMS&#160;Web App" /> main menu under which the name
+of this template appears.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Reserve Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available only for Self Serve mode. The default status that is applied to
+reservations that are booked in rooms identified as 'reserveable' on the
+Rooms tab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Request Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only for Self Serve mode. The default status that is applied to
+reservations that are booked in rooms identified as 'requestable' on the
+Rooms tab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Conflict Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available only for Self Serve mode. The default status that is applied to
+bookings made by Everyday Users attached to this template that result in a
+conflict (the room is already booked).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Cancel Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only for Self Serve mode. The default status that is applied to
+bookings that are canceled by Everyday Users who are attached to this
+template.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Rule Violation Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Enabled only if Outlook is selected. Used in conjunction with the EMS
+for Outlook module. If you carry out an action in the EMS for Outlook
+module that violates a category date/time restriction, then the booking is
+changed to this status.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Setup Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The setup type that is selected by default for a room search when a Everyday User who is attached to this template is reserving a room in the <MadCap:variable name="General.EMS&#160;Web App" />. The
+Everyday User can always select a different value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allow Invitations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Enabled only if your organization has purchased the optional Plan a
+Meeting (PAM) module. Select this option if users who are attached to
+this template must be able to see the free/busy schedules of the
+attendees. The Everyday User can choose a date and time that is convenient
+for all attendees and then send invitations through the <MadCap:variable name="General.EMS&#160;Web App" />, which
+attendees receive and can manage through Outlook.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Allow Everyday User Personalization</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option if Everyday Users must be able to use the Options feature
+to customize their settings on <MadCap:variable name="General.EMS&#160;Web App" /> pages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Menu Sequence</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Enter a number that indicates the order in which this menu option is
+relative to other menu items that fall under the same parent menu. Items
+are ordered from lowest to highest sequence number, with the item with
+the lowest sequence number appearing first.
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you leave the sequence set to the default value of zero for all
+menu items, then by default, the items are displayed
+alphabetically.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Available at Checkout</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Select this option if the Everyday Users who are attached to this template
+must be able to select category resource items on the <MadCap:variable name="General.EMS&#160;Web App" /> “checkout
+page” (the last page in the Room Request process) in <MadCap:variable name="General.EMS&#160;Web App" />.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

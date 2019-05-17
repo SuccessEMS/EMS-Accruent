@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Configure Word Merge Documents V44.1  (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">
+            <MadCap:concept term="V44.1" />Configure Word Merge Documents (Optional Module)</h1>
+        <p>EMS provides options for producing pre-formatted documents that contain reservation information, such as confirmations. Your organization, however, might have organization-specific information that must be included in these documents. </p>
+        <p>Using the optional Word Merge module, you can configure&#160;Word Merge documents&#160;to produce confirmations, contracts, and so on that contain not only selected reservation information from EMS, but also, any information that is required by your organization. </p>
+        <p>To configure a Word Merge document, you must first&#160;create&#160;the Word document and apply the appropriate tags to indicate the information in EMS that is to be pulled into the document. You can then&#160;add&#160;this document to your EMS database and use it to generate confirmations, contracts, and so on.</p>
+        <p>This topic provides the following information:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#Createandtag">Create and Tag a Word Document</a>
+            </li>
+            <li><a href="#Addtagged">Add the Tagged Word Document to Your EMS Database</a>
+            </li>
+        </ul>
+        <h2 class="Heading2"><a name="Createandtag"></a>Create and Tag a Word Document</h2>
+        <p>To create and tag a Word document, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>Create the necessary document in Microsoft Word.</li>
+            <li>Tag the text that is to be replaced with EMS field values. For example, if you want the Reservation Status in the Word document to be replaced with the EMS field value for Reservation Status, then any reference to Reservation Status in the Word document should be tagged as &lt;&lt;Reservation Status&gt;&gt;.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To view a complete list of the text that can be replaced in the Word document with EMS field values and the correct tags for this text, on the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Word Merge Documents</span>. Then, from the Word Merge Documents window that opens, click <span class="ui">Print </span>&gt; <span class="ui">Word Merge Format</span>. </p>
+            <p>If you want to save this document for easier access and reference, then after opening the document, click <span class="ui">Export </span>on the document toolbar and export the document as a Rich Text Format (.rtf) document to a location of your choosing. You can then use Microsoft Word to open the document at any time.</p>
+        </div>
+        <h2 class="Heading2"><a name="Addtagged"></a>Add the Tagged Word Document to Your EMS Database</h2>
+        <p>To add the tagged Word document to your EMS&#160;database, follow these steps:</p>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Word Merge Documents</span>. The Word Merge Documents window opens. This window lists all the Word Merge documents that are currently configured in your EMS database and that have a status of Active</li>
+        </ol>
+        <div>
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents.png" alt="emssg_coreother_image034.png" />
+            </p>
+            <p class="Caption">Word Merge Documents Window</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Optionally, to view all Word Merge documents in your EMS database regardless of status, under Show, click <span class="ui">Inactive</span>. The Word Merge Document dialog box opens.</p>
+        </div>
+        <ol start="2" class="number-list">
+            <li>Click <span class="ui">New</span>.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents_1.png" alt="emssg_coreother_image035.png" />
+            </p>
+            <p class="Caption">Word Merge Document Dialog Box</p>
+        </div>
+        <ol start="3" class="number-list">
+            <li>In the Description field, enter the name or description for the Word Merge document.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The description can be a maximum of 50 characters, including spaces.</p>
+        </div>
+        <ol start="4" class="number-list">
+            <li>Click the <span class="ui">Search </span>icon&#160;to open the Find Microsoft Word Document dialog box, and then browse to and select the Word document. The Find Microsoft Word Document dialog box closes. You remain on the <span class="ui">Word Merge Document</span> tab with an entry for the document displayed in the Document field.</li>
+            <li>Optionally, do one or more of the following:<ul start="4"><li>Select a default attachment type for the document.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If the appropriate attachment type is not available, you can configure it. See&#160;<a href="ConfigAttachmentType.html">Configure Attachment Types</a>.</p></div></li><li>Click <span class="ui">Spelling </span>to spell check the attachment notes before you save the document.</li><li>By default, a Word Merge document is added as an active document; you must select <span class="ui">Inactive </span>to inactivate the document.</li></ul></li>
+            <li>Click <span class="ui">OK</span>. The Word Merge Document dialog box closes. You return to the Word Merge Documents window with the newly configured document automatically selected.</li>
+        </ol>
+    </body>
+</html>

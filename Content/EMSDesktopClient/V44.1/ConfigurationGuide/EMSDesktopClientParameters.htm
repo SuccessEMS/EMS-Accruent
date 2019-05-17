@@ -1,0 +1,1894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>EMS Desktop Client Tab System Parameters V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS&#160;System Parameters</h1>
+        <p>Below are the parameters for <a href="#EMSDesktopClient">EMS&#160;Desktop Client</a> and <a href="#EMSCampus">EMS&#160;Desktop Client — Academic Planning</a> (optional). </p>
+        <h2><a name="EMSDesktopClient"></a>EMS&#160;Desktop Client</h2>
+        <p>Parameters for the EMS&#160;Desktop Client are broken into the following Areas:&#160;</p>
+        <ul>
+            <li><a href="#Billing">Billing</a>
+            </li>
+            <li><a href="#Email">Email</a>
+            </li>
+            <li><a href="#Groups&amp;Contacts">Groups &amp;&#160;Contacts</a>
+            </li>
+            <li><a href="#Integration">Integration to Microsoft Exchange</a>
+            </li>
+            <li><a href="#Labels">Labels</a>
+            </li>
+            <li><a href="#LDAP">LDAP</a>
+            </li>
+            <li><a href="#Messaging">Messaging</a>
+            </li>
+            <li><a href="#Notifications">Notifications</a>
+            </li>
+            <li><a href="#Platform">Platform</a>
+            </li>
+            <li><a href="#Reports">Reports</a>
+            </li>
+            <li><a href="#Reservations">Reservations</a>
+            </li>
+            <li><a href="#Resources">Resources</a>
+            </li>
+            <li><a href="#ServiceOrders">Service Orders</a>
+            </li>
+            <li><a href="#System">System</a>
+            </li>
+        </ul>
+        <h2><a name="Billing"></a>Billing</h2>
+        <table cellspacing="12" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr style="height : 15.600000000000001px;" class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Billing</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Determine Invoice Due Date by Adding 'xx' Days</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sets the number of days specified to determine the invoice due date (e.g., 30 days). When creating an invoice in EMS, the due date will be pre-populated by this parameter. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">15, 30, 60, 90</td>
+                </tr>
+                <tr style="height : 129.6px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Billing</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Service Order End Time if None Specified</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Select Event Time or Reserved Time as the Service Order End Time, unless otherwise specified. If no end time is entered in the service order time field, whatever is in this parameter will take effect. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Reserved Time or Event Time</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">A resource costs 10/hour based on Service Order Time. &#160; The parameter is set to&#160;"Event Time"&#160;and the booking is from 8&#160;am&#160;-&#160;5&#160;pm. &#160;The Event End Time with a 5:30 Reserved End time. &#160; &#160;The resource will  be in use starting at 9 am but no end time on the resource is set. &#160;Therefore, the resource will&#160;be in use until 5 pm and will be billed from 9 am until 5 pm.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Email"></a>Email</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 115.2px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Enable Email Support</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">When set to&#160;YES,&#160;you can email a Confirmation to the contact person or group that is making a reservation directly from EMS in Navigator &gt; Confirmation. If parameter is set to NO, the 'Email' button is grayed out on the Confirmation screen.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">The attachment is saved at the Reservation level on the e-mail tab. &#160; &#160;If set to YES, you can view the attachment. &#160; If set to&#160;NO, you can see that an attachment was sent with the confirmation by the indicator YES and a check box "attachment" but you cannot view the attachment.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">SMTP - Save Email Attachments (Database Size Will Increase)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">When set to YES, email attachments are saved.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Default is NO. </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">SMTP - Use SSL</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Used if your SMTP Server is enabled for SSL.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">SMTP Security Protocol</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">The security protocol for the mail server used to send emails on behalf of the everyday user applications. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">(none), TLS, SSL3</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Groups&amp;Contacts"></a>Groups &amp;&#160;Contacts</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Address Format as International</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, the&#160;International&#160;address checkbox is enabled by default when creating a new Group or Contact record and the fields 'State' and 'Zip' do not appear when creating a new Group.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Default is NO. </td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Country</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Country&#160;for creating a new Group or Contact record.&#160;If set to a particular country, new Groups will have this country as their default.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default is blank for none</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">USA, Australia, etc.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Pricing Plan For New Groups</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If this field is populated with a pricing plan, new Groups will inherit this pricing plan as they are added to the EMS database. Pricing Plans are configured in the EMS&#160;Desktop Client in&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Pricing Plans</span>.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Default is (none).</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Require Contact</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, the&#160;Require Contact&#160;checkbox is enabled by default when creating a new Group record. A user must therefore also create at least one Contact record for the Group.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Default is NO. </td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Group Bad Status Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Label used for “Bad” value on the Group Status drop-down list. On the Billing Information tab of the Group record there is a field for status with values Bad, OK or Warning. These three labels can be changed to suit organization's business rules. If the Group status is set to "Bad", no reservations can be made for this Group.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Bad</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Delinquent, Do not Book</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Group OK Status Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Label used for “OK” value on the Group Status drop-down list. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">OK</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Good Standing.</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Group Warning Status Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Label used for “Warning” value on the Group Status drop-down list. If the Group status is set to "Warning," a message appears when this group is selected, however a reservation can still be made for this Group.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Warning</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Slow paying.</td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Offer Drop-Down Selection of Groups</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">When set to YES, the system automatically populates the Group window with all active groups in your EMS database. A user can enter a search string in the 'Starts with' field and the list of groups that meet the search criteria is dynamically updated as the user enters the string. When set to “No,” users must manually search for groups. Typically, only very large organizations will set this parameter to NO. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to YES. </td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Pricing Plan Required For Groups</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, a user must specify a Pricing Plan when creating or editing a Group record. Pricing Plans are configured in the EMS&#160;Desktop Client in&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Pricing Plans</span>. Typically used when the customer wants to include a pricing plan on a Group record.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO.</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Groups &amp; Contacts</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Show Account Field On Group</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">If enabled, an&#160;Account&#160;field is displayed on a Group record. Accounts are usually created for purposes of tracking revenue tied to resources. The Account field on the Group record can be used for other purposes such as tying a salesperson to a Group.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">Typically set to NO. </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Integration"></a>Integration to Microsoft Exchange</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 57.6px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Integration to Microsoft Exchange</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow date/time changes on PAM Bookings in EMS Client</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If set to NO, the EMS&#160;Desktop Client user will not be able to change date or time on bookings made through EMS for Outlook or an Exchange-enabled template.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">The reason a customer might want this set to NO, is so that an EMS&#160;Desktop Client user will not be able to change the date or time of a meeting that is on a person's calendar.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Integration to Microsoft Exchange</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Exchange Integration Web Service URL</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">The URL for the Exchange Integration Web Service.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2"><a href="http://localhost/Pam44-1/Service.asmx &#160; &#160;">http://localhost/Pam44-1/Service.asmx &#160; &#160; </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Labels"></a>Labels</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 28.8px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">1st Contact Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The label for the first Contact field on a Reservation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">1st Contact, Primary Contact, Assistant, Booked By</td>
+                </tr>
+                <tr style="height : 28.8px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">2nd Contact Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The label for the second Contact field on a Reservation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">2nd Contact, Secondary Contact, Back-up Assistant, Backup Contact</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Attendee Company Name</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Label for the&#160;Company&#160;field of an attendee within an Attendees-type Category. Attendee type categories are typically used to add people to an event. Each of these fields can be relabeled based on the customer's needs and how they are using this category.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Company Name</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Attendee Email Address</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Label for the&#160;Email Address&#160;field of an attendee within an Attendees-type Category. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Email Address</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Attendee Name</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Label for the&#160;Name&#160;field of an attendee within an Attendees-type Category. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Name, Attendee, Visitor, Participant</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Attendee Notes</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Label for the&#160;Notes&#160;field of an attendee within an Attendees-type Category. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Notes, Comments</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Attendee Phone</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Label for the&#160;Phone Number&#160;field of an attendee within an Attendees-type Category. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Phone</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Attendee Visitor</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Label for the&#160;Visitor&#160;field of an attendee within an Attendees-type Category. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Visitor</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Check Number Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The label for the&#160;Check No.&#160;field within a Transaction. This field displays on the payment window.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Check No., Journal Entry #, Charge Code</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Phone 1 Label</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The label for the first phone number field under a Contact when creating or modifying a reservation. You can also create a list of options to provide a choice. This list is created in the Phone/Fax Labels List parameter.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">10 characters</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Phone, Primary, Office, Mobile, Fax, Other</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default Phone 2 Label</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The label for the second phone number field under a Contact when creating or modifying a reservation. You can also create a list of options to provide a choice. This list is created in the Phone/Fax Labels List parameter.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">10 characters</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Event Coordinator Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The label for the&#160;Event Coordinator&#160;field on a Reservation or Group.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Event Coordinator</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Scheduler, Banquet Manager, Event Captain</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">External Reference Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The label for the External Reference field. This field is on the Group Record. This field is also used to link Everyday Users to the Group record.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">External Reference, ID Number, Charge Number</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Payment Type Title Plural</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The plural label for the&#160;Payment Type&#160;field within a Transaction. This field displays on the payment window. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Plural</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Payment Types, Payment Methods</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Payment Type Title Singular</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The singular label for the&#160;Payment Type&#160;field within a Transaction. This field displays on the payment window. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Singular</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Phone/Fax Labels List</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Options available as a drop-down menu in the Phone 1 and Phone 2 fields when creating or editing a Group, a Contact, or a Reservation. Enter options as text separated by semicolons. Default options are Phone, Fax, Mobile, and Other.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Primary, Office, Mobile, Fax, Other</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sales Category Title Plural</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The plural label for the Sales Category field. This field is on the Group record and is exposed on the 3rd screen of the Reservation Wizard. The field displays on the query builder but on no other report. This field is often re-labeled and used for tracking other information at the reservation and/or Group level.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Plural</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Sales Categories.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Sales Category Title Singular</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The singular label for the Sales Category field. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Singular</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Sales Category.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Labels</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Salesperson Title</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">The label for the&#160;Salesperson&#160;field on a Reservation or Group.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="LDAP"></a>LDAP</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">LDAP</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">LDAP - Ignore Desktop Client Domain</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Yes/No </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">Default is NO. </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Messaging"></a>Messaging</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Messaging</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Number of concurrent emails that can be sent by one platform service instance.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">This parameter is not used by any EMS application.   It will be removed in an upcoming update. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Notifications"></a>Notifications</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Users To Delete Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">When set to YES, this parameter allows users to delete notifications from the Dashboard.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 273.59999999999996px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Exclude Building Closures On Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">When set to NO, building closures are not excluded from notification date calculations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Parameter is set to YES. &#160; A Building is closed on the 9th, 10th and 11th (three days). &#160;Today is the 4th. &#160; &#160; A notification is set to trigger within 10 days.  &#160;Something is done on the 16th that triggers the notification.  &#160;IT WILL be triggered because even though the 16th is more than 10 days away from the 4th, we are subtracting (excluding) three days. &#160; &#160;Next, something is done on the 18th that triggers the notification.  It will NOT trigger because the 18th is 14 days from the 4th and when you subtract three closed days - you are outside of 10 days. </p>
+                        <p> &#160; &#160;IF BOTH EXCLUDE BUILDING CLOSURES ON NOTIFICATIONS AND EXCLUDE WEEKENDS ON NOTIFICATIONS ARE SET TO YES, ADD NUMBER OF DAYS EXCLUDED TOGETHER IN CALCULATION.    BOTH WILL BE TAKEN INTO ACCOUNT.</p>
+                    </td>
+                </tr>
+                <tr style="height : 288px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Exclude Weekends On Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">When set to NO, weekends are not excluded from notification date calculations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Parameter is set to YES. &#160; Group notification is set to remind Group 10 days prior to booking. &#160; Today is Wednesday the 4th and a meeting will take place on Wednesday the 18th. Therefore, a reminder notification will get triggered to the recipient on Wednesday the 4th because that is 14 days less four weekend days (thus 10 days).</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p> &#160; &#160; If a Group reminder is set to be sent at 4 pm and the bookings on the 18th ends before 4 pm, no Group reminders will be triggered. </p>
+                            <p>No reminders will go to recipients who have bookings that end before notification is to be sent. </p>
+                            <p>If&#160;both the "Exclude Building Closures on Notifications"&#160;and "Exclude Weekends on Notifications"&#160;parameters are set to YES, add the number of days excluded together in your calculation. Both will be taken into account. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Notifications</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Ignore Building Closure/Weekend Notification Settings Beyond xx Days</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Specifies the number of days after which building closures and/or weekends are ignored for notification date calculations.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">999</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Platform"></a>Platform</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 115.2px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Platform</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Allow multiple platform sessions to share the same token.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">If set to YES, EMS&#160;Platform Services will return the "same" value user token if multiple calls to authentication are made. &#160; If set to NO, EMS&#160;Platform Services will generate a new token for each authentication call. &#160; The Default value of the parameter is YES. &#160;&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">If set to YES, a user will be able to log into the same application (e.g., mobile) on multiple devices. &#160; If set to NO, the user will have only one active session for an application on one device. &#160; As soon as the user logs on to the same app on the other device, he will be logged out of the first app.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Reports"></a>Reports</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 42.75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Calendar Inquiry Print Format</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Default format for the&#160;Event Calendar&#160;report. Formats are configured in&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Calendar Styles</span>.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">A calendar format could be created to show just certain fields  and for only certain buildings, event types and statuses (e.g., a calendar of G building events in confirmed status for only Public Meeting event types).</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Confirmation Summary Room Description Format</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Determines how room information is displayed when sending the "Summary" format of the Confirmation in an email body text. Options are Building Code + Room Code or Building Description + Room Code.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Building Code Room Code, Building Description Room Code</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Include Activities on Service Order Forms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If disabled, Activities-type Categories are not included on&#160;Service Order&#160;reports.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Include Catering Details on Setup Worksheet</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, Resource Items within Catering-type Categories are displayed on the&#160;Setup Worksheet&#160;report.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to YES so reports will show all details of the Catering order.</td>
+                </tr>
+                <tr style="height : 72px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Include this Notes Category on Service Order Forms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Determine which Notes-type Category, if any, is included on&#160;Service Order&#160;reports. Only one Notes-type Category can be selected for all&#160;Service Orders.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">A customer can create a Notes Category called "Catering Notes."  If this Category is selected in this parameter, the "Catering Notes" will  print on the Service Order Forms.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Room Description Format</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Determines how room information displays on reports and the detailed Confirmation. Options are Room Code or Room Description, with or without Building Code.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Building Code Room Code, Building Code Room Description, Room Code, Room Description</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Room Description typically gives a better description of the room as the Room Description field holds more characters.</td>
+                </tr>
+                <tr style="height : 86.39999999999999px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Reports</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Use Calendar Styles</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Select YES to enable the use of calendar styles on the Event Schedule report and on the Event Calendar report.   Calendar Styles are created in the EMS&#160;Desktop Client under <span class="ui">Configuration</span> &gt; <span class="ui">Other</span> &gt;&#160;<span class="ui">Calendar Styles</span>.  </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">A Calendar Style could be created to show a unique font, font style, size, color.   This Calendar Style can be attached to a Reservation.    If this parameter is set to YES, on the report, the booking will adopt the Calendar Style and "stand out."</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Reservations"></a>Reservations</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Allow Bookings To Be Added To Outlook Personal Calendar</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, EMS&#160;Desktop Client users can select an&#160;Outlook&#160;option in the Navigator, Browser, and Calendar to add bookings to their personal calendars. Users must have Outlook application locally installed. Does not create an ICS file and/or work with other mail exchange systems (e.g., Gmail).     If the booking gets changed or canceled, the event will remain on the calendar as originally placed.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Book Building Closed Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The color that displays in the Reservation Book to indicate building closures.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Infinite Color Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Book Special Date Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The color that displays in the Reservation Book to designate special dates.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Infinite Color Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Book Weekend Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The color that displays in the Reservation Book to designate weekends.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Infinite Color Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Building Display</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Indicates how building information is displayed in reservations within the desktop client—by Building Code (if one exists) or Building Description.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Building Code, Building Description</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Building Code Room Code.</td>
+                </tr>
+                <tr style="height : 135px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Event Coordinator</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If this is set to YES, and an EMS&#160;Desktop Client user's ID  is flagged as an Event Coordinator, every reservation that the EMS&#160;Desktop Client user makes from  the Desktop Client will be populated with his/her name in the Event Coordinator field in the Reservation.       If the EMS&#160;Desktop Client user's ID is not flagged as an Event Coordinator and this parameter is set to YES,   the Event Coordinator field will be required but and another Event Coordinator will need to be selected.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Default is NO. </td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Exclude Room Charge from Services indicator</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">In various locations in the EMS&#160;Desktop Client (e.g.,&#160;the Book, the Navigator, and Editing a Booking), a visual indicator is provided when services (i.e., Categories)&#160;exist for a booking. If this parameter is enabled, then the "Room Charge" Category is excluded from displaying as a service on the booking.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to NO, as most customers do not consider Room Charge to be a "service."</td>
+                </tr>
+                <tr style="height : 115.2px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Lock Booking Details If Booking Is Locked</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">This parameter works in tandem with "Lock Bookings Older Than 'xx' days." &#160; If a booking is locked due to age, booking details within the booking are also locked if Parameter is set to YES. &#160; However, if this parameter is set to NO, the booking details remain editable, even though the booking is locked.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">A customer can lock a booking date/time but be able to edit the booking details.  &#160; In this scenario, it doesn't matter if the booking is locked because of the "lock bookings older than XX days" or booking is locked because of being invoiced.    </td>
+                </tr>
+                <tr style="height : 57.6px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Lock Bookings Older Than 'xx' Days</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Past bookings beyond this number of days are automatically locked and cannot be edited.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Numeric</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">A customer needs to provide a numeric value for the number of days to lock bookings  from being edited so that EMS&#160;Desktop Client users cannot change historical data past XX days.</td>
+                </tr>
+                <tr style="height : 100.8px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Lock Occurring/Past Reservations For Non-Administrators</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If enabled, users without administrator access cannot edit the Reservation Level once a booking within the Reservation is in the past.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">A customer can enable this parameter so the Group does not get changed on a recurring reservation.       Changing the Group on a reservation that has bookings in the past makes it seem as though the new Group has always had this reservation when in fact, they did not.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Notifications/Automated Reports Data Format</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Controls how the date appears within Group Notification Emails or Automated Report emails.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Short, International, Long</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservation Book 'Checked In' Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Color of bookings in the Book that have been checked in. Use of this color is controlled in the Book under&#160;Options.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Infinite Color Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservation Book 'Not Checked In' Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Color of bookings in the Book located in rooms that do not require check-in. Use of this color is controlled in the Book under&#160;Options.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Infinite Color Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservation Book 'Room Does Not Require Check In' Color</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Color of bookings in the Book that have not been checked in. Use of this color is controlled in the Book under&#160;Options.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Infinite Color Options</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Room Display</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Indicates how room information is displayed in reservations within the EMS&#160;Desktop Client—by Room Code or Room Description.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Room Code, Room Description</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 158.4px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Use Billing Reference Allocation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Enables an EMS user to allocate reservation, booking, or service order charges across multiple Billing Reference numbers by percentage.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">When this parameter is set to YES, a tab will appear at the Reservation Level "Billing Reference Allocation." &#160; This is the area where you can allocate, by percentage to different Billing Reference Numbers. &#160; &#160;This information will print on the Confirmation if the box Print Billing Reference Allocation is checked on the Options tab of the Confirmation. &#160; &#160; This allocation will also be reflected on the Sales by Billing Reference report.</td>
+                </tr>
+                <tr style="height : 86.39999999999999px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Use PO Number Allocation</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Enables an EMS user to allocate reservation, booking, or service order charges across multiple PO Numbers by percentage.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">When this parameter is set to YES, a tab will appear at the Reservation Level "Purchase Order &#160;Allocation." &#160; This is the area where you can allocate, by percentage to different Purchase Order &#160;Numbers.   Typically set to NO.</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Validate Billing Reference</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Validates the Billing Reference entered against the Billing Reference table. Specify No Validation, Valid Only, or Warning for Invalid (Blanks Are Invalid), or Warning for Invalid (Blanks are Valid).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">No Validation,&#160;Valid Only, Warning For Invalid (Blanks Are Invalid),&#160;Warning For Invalid (Blanks Are Valid)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Validate PO Number</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Validates PO Numbers entered against the PO Number table. Specify No Validation, Valid Only, or Warning for Invalid (Blanks Are Invalid), or Warning for Invalid (Blanks are Valid).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">No Validation, Valid Only, Warning For Invalid (Blanks Are Invalid), Warning For Invalid (Blanks Are Valid)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 86.39999999999999px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Validation of Building Hours</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">How Building Hours are validated for new or existing bookings in the EMS&#160;Desktop Client—either by Reserved Time (i.e.,&#160;with Setup and/or Teardown Time) or Event Time.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">On Reserved Time, On Event Time</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Parameter is set to Event Time and Building Hours are set at 8 am - 5 pm and the EMS Desktop Client user inputs 7 am as event start time. As a result, on the second screen of the wizard, the user will be alerted that booking exceeds building hours.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Reservations</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Warn When Booking More Than 'xx' Months in Future</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">If a user attempts to create a booking with a date past xx months, a warning displays. The warning does not prevent booking creation.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">12</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Resources"></a>Resources</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Resources</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Check Inventory When Using Reservation Tools</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, resource availability is verified when Booking Details are copied, Reservations are copied, or the date/time/room is changed for multiple bookings.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 72px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Resources</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Use Resource Selector</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">If enabled, a Resource Selector window is available when adding Booking Detail Items.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">Typically set to YES.   Customers will set to NO when they want to edit the resource or add notes/special instructions at the same time as adding the resource to the booking.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="ServiceOrders"></a>Service Orders</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Service Orders</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Auto Adjust Service Order Times</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">If enabled, Service Order Times are automatically adjusted when a booking's date and/or time is edited. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to YES.</td>
+                </tr>
+                <tr style="height : 158.4px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Service Orders</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Default Service Order Times and Count from Booking</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">When creating a new service, sets the default service order times to the event/reserved time. If set to (none), no default service order times are set.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">(none), Event Time, Reserved Time</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Parameter is set to RESERVE TIME, a booking made from 8 am - 12 pm &#160;with 30 minutes of setup for 10 people. Resources with a Service Order type category is added&#160;and will have 7:30 am - 12 pm automatically defaulted as the start and end time with a count of 10. &#160;This parameter will take precedence over what is set at the Category level. &#160; In order for setup to calculate, default quantity must be set to Setup count on the Category.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Service Orders</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Show External Service Option on Categories</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">When Set to YES, an External Service field is displayed on the Category dialog box for a Catering category or a Resource w/ Service Orders category.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">Typically set to NO.   This was created for a specific customer and integration.   </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="System"></a>System</h2>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 131px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 156px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Campus Planning Interface - Use Integrated Authentication Only</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Enables Integrated Authentication as the only authentication method for the Campus Planning Interface. The Network ID field must be completed for any client user who will also use the Campus Planning Interface.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Custom Calendaring Icon</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allows you to upload a custom icon for the EMS&#160;for Outlook add-in. The recommended image size is 32&#160;x&#160;32 pixels. See&#160;Also:&#160;<a href="../../../EMSforOutlook/ConfigurationGuide/ConfigforOutlook.htm#CustomizeAddinIcon">Customize the Add-in icon</a>.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Dashboard Check Interval</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Indicates how frequently the Dashboard should check for updates. </p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Setting this for more frequent updates might impact application performance.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">5 Minutes, 10 Minutes, 15 Minutes, 30 Minutes, 1 Hour</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Disable Online Help</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If set to YES, then Online Help is not available for the EMS system. (The link Help &gt; Contents is not displayed on the EMS main menu.)</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">NetworkID Login - Ignore Desktop Client Domain</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Setting to YES, causes EMS Desktop Client to ignore the domain when using Integrated Authentication, which is useful if you leverage multiple domains. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">If a user logs in under the domain EMS\username, this parameter causes EMS Desktop Client to overlook the "EMS" portion of the credentials and still enable user login even though they are authenticating via a different domain.</td>
+                </tr>
+                <tr style="height : 72px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Platform Services Desktop Secret Key</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">This is the secret the EMS&#160;Desktop Client will use when communicating with EMS&#160;Platform Services. &#160; &#160;It is required only for G-Suite.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">For more information, click <a href="../../../GoogleSuiteIntegration/Config.htm">here</a>.  &#160;</td>
+                </tr>
+                <tr style="height : 100.8px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Server Time Zone</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sets the time zone for the server to the indicated value.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Affects how times get calculated for date calculations, dashboard notifications, all kinds of stuff. &#160;You see issues when this isn’t set to what the server actually is. &#160;</p>
+                        <p>This was removed for EMS&#160;Cloud Services customers so they can’t change it (because they have no control over the actual servers).</p>
+                    </td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Use Integrated Authentication Only</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;If set to YES, then EMS users are required to manually log-in and authenticate against LDAP.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Yes/No</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 43.199999999999996px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">System</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Warn within XX% of Everyday User Licensing Limit</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Creates a prompt to expert user upon login if number of Everyday Users is within a certain percentage of the licensing limit.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">99</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">This alerts EMS Desktop Client users  that they are reaching their Everyday User limit.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="EMSCampus"></a>EMS&#160;Desktop Client — Academic Planning (Campus)&#160;Optional Parameters</h2>
+        <p>EMS&#160;Desktop Client -- Academic Planning parameters are broken into the following Areas:</p>
+        <ul>
+            <li><a href="#AcademicImport">Academic Import</a>
+            </li>
+            <li><a href="#Campus">Campus</a>
+            </li>
+        </ul>
+        <h2><a name="AcademicImport"></a>Academic Import</h2>
+        <table cellspacing="12" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-Border_table_alternate_colors">
+            <col style="width: 122px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 212px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 235px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 170px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 179px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Academic Import</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Academic Import Days Of The Week</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Indicates how EMS determines the days of the week in import data. Whenever this parameter is changed, any existing (already created) Academic Import Sessions will still reflect the old parameter settings, even if you haven't yet imported a file.  If you change this parameter and then need to load a file using the new setting, if you have already created the Session, it needs to be deleted and recreated.  Any future Sessions created after changing this parameter will use the updated parameter value.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">Specific Text/Positional, Monday First/Positional, Sunday First</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Campus"></a>Campus</h2>
+        <table cellspacing="12" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-Border_table_alternate_colors">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">EXAMPLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Academic Book Course Color</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Color used for courses displayed in the Academic Book.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Color Picker</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Green</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Academic Book Crosslisted Course Color</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Color used for cross-listed courses displayed in the Academic Book.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Color Picker</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Purple</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Academic Unit Title Plural</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>System-defined label for Academic Units. <br /></p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Typically renamed to “Departments.”</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Text</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Departments</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Academic Unit Title Singular</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>System defined label for Academic Unit. </p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Typically renamed to “Department.”</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Department</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Accumulate Enrollment On Shared Space Courses (non-crosslisted only)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Accumulate enrollment on courses that share space instead of using the largest enrollment (which is the approach for crosslisted courses).  This only applies to courses that are manually marked as Shared Space in EMS; it does not apply to cross-listed courses.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to "Yes."</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Campus</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allow Cross-Domain Cross Listings</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>If set to "YES,"&#160;this indicates that courses can be cross-listed across multiple domains.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if courses will be manually set to shared space across domains; will prompt the user to select the domain every time they manually share space.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to "NO."</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Allow Sync of Academic Units from Student Information System</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This view is no longer supplied by EMS&#160;Software; therefore, setting this parameter to "YES"&#160;will not work. </p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to "NO."</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Auto Sync - Automatically Process Cancellations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>If auto-sync is enabled, then course cancellations in your Student Information System are automatically processed in EMS.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Auto Process must also be enabled.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to "YES."</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Auto Sync - Automatically Process Courses not assigned to a Room</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>If auto-sync is set to "YES," then new courses without a room in your Student Information System are automatically processed in EMS into the "TBD" room for the domain.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Auto Process must also be enabled.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">Typically set to "NO."</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Auto Sync - Automatically Process Room Capacity Violations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>If auto-sync is set to "YES," if a new course is added in your Student Information System that violates room capacity, then the course is automatically processed in EMS (bypasses the Dashboard).</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Auto Process must also be enabled.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Typically set to "NO."</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Auto Sync User</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>The EMS user account that is used by the auto-sync service for authentication.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Drop-down</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Set to the Auto Sync user account that was created; usually "Auto Sync."</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course User Defined Field 01</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course User Defined Field 02</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course User Defined Field 03</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course User Defined Field 04</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course User Defined Field 05</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course User Defined Field 06</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course User Defined Field 07</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course User Defined Field 08</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course User Defined Field 09</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Secondary Instructor"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course User Defined Field 10</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Maps an EMS user-defined field to a custom field in your Student Information System.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only needed if customization has been completed to bring custom field from Student Information System into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Course Type User Defined Field (Drop-down List)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Secondary Instructor"</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Day Label 1 - Sunday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is U.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Text</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">U</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Day Label 2 - Monday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is M.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Text</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">M</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Day Label 3 - Tuesday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is T.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>T</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Day Label 4 - Wednesday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is W.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Text</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>W</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Day Label 5 - Thursday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is R.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>R</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Day Label 6 - Friday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is F.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Text</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>F</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Day Label 7 - Saturday</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Determines the label that indicates Sunday in various areas of EMS Campus such as the Time Block Template configuration area. The default value is S.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>S</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Cancel Reason</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Used for courses when publishing a term.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Allows users to run reports and filter information, so as to keep academic cancellations separate from other cancellations that they might be tracking.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Drop-down</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Canceled in Student Information System"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Used for courses when publishing a term.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Drop-down</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Course"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Group</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Used for courses when publishing a term.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Must have a value in order to publish a term.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Drop-down</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Registrar's Office"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Reservation Source</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Used for courses when publishing a term.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Drop-down</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Student Information System"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Seat Fill Percentage</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Used to determine an appropriate room size for a class of a specific estimated enrollment (typically 100%).</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This is only used when optimizing courses.  If there is a course that needs a larger room than what its enrollment would normally call for, this number can be lowered.  For instance, if a course has an enrollment of 30, but needs to be in a room that could hold 60 or more, the seat fill percentage would be set to "50%".  This parameter only needs to be adjusted if the user wants a default seat fill for all courses to be something other than 100%.  This field cannot be set to above 100%.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Numeric</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>100</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Setup Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Used to build a setup type and capacity (from the Student Information System) when synchronizing rooms (typically “classroom”).</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Must be set prior to synchronizing Rooms from the Student Information System in order to pull Student Information System room capacities into EMS.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Drop-down</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Academic Style"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Domain Title Plural</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>System defined label for Domains (typically renamed to “Campuses”).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Campuses"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Domain Title Singular</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>System defined label for Domain (typically renamed to "Campus").</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Campus"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Final Exam Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Used when creating a final exam booking.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This parameter is used in conjunction with Final Exam Module. </p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Drop-down</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Exam"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Include CRN in Reservation Event Name</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Include the Course Reference Number (CRN) in front of the event name post-publish in all areas of EMS Campus where the event name is used.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This parameter always adds the CRN to the front of the event name.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">"NO"</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Keep Sibling Crosslisting Room Assignments In Sync</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>A sibling cross-list describes a crosslist that has at least three courses and the two child courses have a meeting pattern that is not shared with the parent course. If set to "YES," then these sibling crosslist courses become a matched set and are placed in Confirmed/Crosslist status and not Conflict.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>For example, BIO 110 01, BIO 111 01, and BIO 112 01 are all cross-listed.  They all meet MWF 10-1050, and BIO 110 01 is set as the parent.  However, BIO 111 and 112 also share a lab T 9-1150 that BIO 110 doesn't have.  If the parameter is set to "No" then BIO 111 appears in "Conflict" status.  If parameter is set to "Yes" then BIO 111 T 9-1150 appears as "Confirmed" status.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">"YES"</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Large class size (if more than xx students)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Used to determine what constitutes a “large” class for weighting by enrollment in the room optimization process. See Also:&#160;<a href="../UserGuide/RoomAssignmentsOptimization.htm">Room Optimization</a>. </p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This is also how the cutoffs are based in the "Room Availability/Usage" report.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Numeric</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">50</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Large class size weight adjustment</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Used to determine the optimization weighting for a "large" class. See Also:&#160;<a href="../UserGuide/RoomAssignmentsOptimization.htm">Room Optimization</a>. </p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This parameter determines how many potential extra points a large class gets for its optimization rank score.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Numeric</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>30</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Lock Academic Unit Room access</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Used during optimization process. If set to Yes, a room will be assigned to an Academic Unit's (i.e., Department) course only if that Academic Unit owns the room.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">"NO"</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Manually update Student Information System/ERP System after Publishing</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>If set to "NO," course location in the Student Information System will be automatically updated during the publishing process.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">"YES"</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Student Information System/ERP Title</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>System defined label for Student Information System/ERP (typically "Student Information System").</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Banner</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Small class size (if less than xx students)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Used to determine what constitutes a “small” class for weighting by enrollment in the room optimization process. See Also:&#160;<a href="../UserGuide/RoomAssignmentsOptimization.htm">Room Optimization</a>. </p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This also determines how the cutoffs are based in the "Room Availability/Usage" report.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Numeric</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>25</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Small class size weight adjustment</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Used to adjust the optimization weighting for a “small” class.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Determines how many potential extra points a small class gets for its optimization rank score.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Numeric</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">-100</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Subject Title Plural</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">System defined label for Subjects (typically “Subjects”).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Text</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>"Subjects"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Subject Title Singular</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>System defined label for Subject (typically “Subject”).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>"Subject"</p>
+                    </td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sync Course Dates Without Start/End Times</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>If set to No, Courses with incomplete course date records (e.g., missing start/end times or dates) will not be imported into EMS Campus.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Only works for missing start/end times; course dates still need days of the week and start/end dates.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">YES/NO</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">"NO"</td>
+                </tr>
+                <tr style="height : 60px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Campus</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Web Service URL</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>The URL&#160;to the EMS&#160;Campus Web Service.</p>
+                        <p>&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This parameter must be filled out with the correct URL in order to sync with the Student Information System.  When copying production EMS to test EMS environments, this parameter should always be updated to point to the test EMS Campus Web Service.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Text</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">https://www.school.edu/EMSCampusWebService<br />/EMSCampusService.asmx</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

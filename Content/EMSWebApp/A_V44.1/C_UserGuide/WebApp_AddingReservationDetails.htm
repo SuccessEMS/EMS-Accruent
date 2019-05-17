@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Add Reservation Details</h1>
+        <p>If you open an existing reservation or&#160;create a new one,&#160;the Reservation Summary page opens. This area enables you to modify bookings within a reservation, such as requesting services and adding attendees. This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#Reservation_Details">Reservation Details</a>
+            </li>
+            <li><a href="#Reservation_vs._Booking">Reservation vs. Booking</a>
+                <ul>
+                    <li><a href="#Reservations:_Who_and_What">Reservations: Who and What</a>
+                    </li>
+                    <li><a href="#Bookings:_Where_and_When">Bookings: Where and When</a>
+                        <ul class="unorder-list">
+                            <li><a href="#Booking_Details">Booking Details</a>
+                            </li>
+                            <li><a href="#Service_Orders">Service Orders</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Reservation_Tasks">Reservation Tasks</a>
+            </li>
+            <li><a href="#Attachments">Attachments</a>
+            </li>
+            <li><a href="#Bookings_for_the_Reservation">Bookings for the Reservation</a>
+            </li>
+        </ul>
+        <h2><a name="Reservation_Details"></a>Reservation Details</h2>
+        <p>The Reservation Details option displays detailed summary information (the Reservation ID, the Event Name, the Event Type, and so on) for the selected reservation and all its bookings as well as attendees and any services that were requested for the bookings.</p>
+        <p>
+            <img src="Images/WebApp_AddResDet/Adding Reservation Details.png" class="hyperlink_with_padding_and_border" />
+        </p>
+        <h2><a name="Reservation_vs._Booking"></a>Reservation vs. Booking</h2>
+        <p>What's the difference <MadCap:annotation MadCap:createDate="2017-11-22T19:02:46.0153603-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This content below—down to the heading &quot;Reservation Tasks&quot;— is a wiki that links to a topic in the hidden Outlook folder &quot;Using EMS &gt; EMS Desktop Client.&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-22T19:02:46.5782504-07:00">between</MadCap:annotation> a "reservation" and a "booking?" A <span class="italics">Reservation</span> consists of one or more <span class="italics">Bookings</span>. That's it.</p>
+        <p>Every booking belongs to a reservation. EMS lets you have&#160;multiple bookings under a single reservation. When you have multiple bookings in a reservation, each booking&#160;can be independent of the other, such as reserving a set of rooms for an event, or can be a series of bookings under a&#160;<span class="italics">Recurring&#160;</span>reservation.</p>
+        <p>Each booking can contain&#160;multiple&#160;<span class="italics">Booking Details</span>, which are the resources and services required to support the booking, such as catering and room setup.</p>
+        <p>
+            <img src="Images/WebApp_AddResDet/Adding Reservation Details_1.png" class="resize80_noborder_padding" />
+        </p>
+        <h3><a name="Reservations:_Who_and_What"></a>Reservations: Who and What</h3>
+        <p>A&#160;<span class="italics">reservation&#160;</span>is the "who and what" of an event. For example, the Academic Planning Board&#160;(the who) can reserve space for a Semester Kickoff&#160;event&#160;(the what).&#160;</p>
+        <h3><a name="Bookings:_Where_and_When"></a>Bookings: Where and When</h3>
+        <p>A&#160;<span class="italics">booking&#160;</span>is the "where and when" of an event. For example, the Academic Planning Board schedules the conference room (the where) for a staff meeting on the second Monday in January (the when). The Academic Planning Board&#160;now has a single reservation with a single booking in EMS. If, however, they schedule&#160;the conference room (the where) for a staff meeting on the second Monday of each month for a year (the when), then the board now has a single reservation with 12 bookings.</p>
+        <h4><a name="Booking_Details"></a>Booking Details</h4>
+        <p>A booking can have one or more booking details associated with it.&#160;<span class="italics">Booking details</span>&#160;are the resources (items for the meeting)&#160;or services (people and their activities)&#160;that are needed for an event, the notes for the event, the activities for the event, the room charges for the event, or any combination of these. For example, for the Academic Planning Board’s staff meeting, the resources could&#160;include catering (coffee service, bagels and muffins, and so on) and A/V equipment, plus the services of&#160;a person bringing in and setting up a projector, moving&#160;a speaker’s podium, and so on). &#160;</p>
+        <h5><a name="Service_Orders"></a>Service Orders</h5>
+        <p>System Administrators configure "buckets" of these details as "Categories," which streamlines the process of adding details to bookings.&#160;</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;Services, Categories, and Resources: What's the Difference?&#160;<span class="italics">Click for more...</span></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In EMS, you might hear these terms used&#160;interchangeably sometimes, however, they are different concepts.</p>
+                <p>A&#160;<span class="italics">Category&#160;</span>in EMS is anything you might add to a Booking such as Catering, Audio Visual, Furniture, Security, Notes, Attendee Names, Agendas etc.&#160;When you configure a Category, however, it must be of six&#160;<span class="italics">Category&#160;types</span>:&#160;Activities, Attendees, Catering, Notes, Resources with Service Orders, or Resources Without Service Orders. These types cause the service to&#160;behave slightly differently when&#160;added to a booking. For example, a Notes/Activities/Attendees&#160;type service category&#160;does not require the EMS Administrator to configure items&#160;under it, and there is nothing for a person to “select” from these types of services.</p>
+                <p>By contrast, a&#160;service category that has a type of&#160;Catering,&#160;Resource with Service Order, or a Resource without a&#160;Service Order Category,&#160;will require the Administrator to create items&#160;under it. For example, an&#160;"AV Equipment" service category (configured as a Resource without a Service Order Category type) might have items under it such as a flip chart or whiteboard (under AV Equipment).&#160;The person requesting the service for this meeting would then select&#160;<span class="ui">AV equipment</span>; then&#160;<span class="italics">flipchart&#160;</span>and&#160;<span class="italics">whiteboard&#160;</span>would be typical options to add to the event.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The following Category Types allow <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/DefineProdAreaItems.htm">Production Items</a>: Catering, Resources with Service Orders, and Resources Without Service Orders.</p>
+                </div>
+                <p>Furthermore, a Category can&#160;be  <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigCategory.html">configured&#160;to "Use States"</a>&#160;so that when a service is requested with a meeting, it can be managed through a review and approval process in the Manage Services toolbar option&#160;in EMS Desktop Client.&#160;</p>
+                <p>
+                    <img src="Images/WebApp_User/Ways to Make Reservations_2.png" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>See Also:&#160;<a href="../../../EMSDesktopClient/V44.1/UserGuide/AddBookDetailsWizard.htm">Add Booking Details Wizard</a>&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You might be able to see floorplans for rooms. See Also: <a href="WebApp_ViewingFloorPlans.html">View Floor Plans</a>.</p>
+        </div>
+        <h2><a name="Reservation_Tasks"></a>Reservation Tasks</h2>
+        <p>Use the&#160;<span class="ui">Reservation Tasks</span>&#160;area to take available actions on this event:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Reservation Task</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>What You Can Do</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Booking Tools</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Cancel Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Cancel the reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>View Service Availability</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Opens a Service Availability window where you can choose from allowable&#160;booking templates to add services.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Send Invitation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Sends invitations to recipients you specify.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Add to my Calendar</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Adds the reservation and all its bookings to your personal (Outlook) calendar.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Attachments"></a>Attachments</h2>
+        <p>The <span class="ui">Attachments </span>tab is available if the reservation type required attachments. It provides&#160;the attachment description, file name, and notes&#160;about the attachment. You can:</p>
+        <ul class="unorder-list">
+            <li><span class="ui">Delete</span>&#160;an attachment from a reservation or request.</li>
+            <li><span class="ui">Attach</span>&#160;another file to the reservation or request, click Attach File. A dialog box opens where you can&#160;select the attachment. Allowed formats are .csv, .doc, .gif, .pdf, .txt, .xls, .xlsx, and .tif.</li>
+        </ul>
+        <h2><a name="Bookings_for_the_Reservation"></a>Bookings for the Reservation</h2>
+        <p>The lower portion of the Reservation Summary page shows bookings for this reservation and (if you have permissions)&#160;enables you to add another booking,&#160;edit or delete existing bookings, and&#160;take other actions on those bookings.</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Action</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Result</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Cancel Booking</p>
+                        <p>
+                            <img src="Images/WebApp_AddResDet/Adding Reservation Details_5.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Cancel selected bookings for the reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Attendance</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Booking headcount.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Setup Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Setup Types are defined by your Administrator, and define which services, resources, and room types can be used for the booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Stage in the booking process for the booking, such as Requested, Reserved, Pending.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

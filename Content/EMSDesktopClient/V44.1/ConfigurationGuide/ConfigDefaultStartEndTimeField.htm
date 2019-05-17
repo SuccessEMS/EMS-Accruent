@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configure Default Start and End Time Fields V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Default Start And End Time Field Behavior For New Bookings</h1>
+        <p>When a user starts a new booking, the date defaults to today, and the Start Time and End Time fields are automatically populated with times based on several factors:</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Users can change these values within template booking rules.</p>
+        </div>
+        <ul class="unorder-list">
+            <li><span class="ui">Timezone settings</span>
+                <p>If the user has personalized the template to use a specific timezone, the start and end times will be translated into that time zone. If the user has not set a personalized timezone, then the administrator's timezone setting for the template will be used.</p>
+            </li>
+            <li><span class="ui">The administrator's default Start Time and End Time configurations</span>
+                <p>When configuring an Everyday User Applications booking template, administrators can set these fields to default to specific Start and End times (or they can leave these defaults blank for either or both these fields).</p>
+                <ul class="unorder-list">
+                    <li>If a template is configured with both a default start and end time, the user will see these as the default values when they start a new booking. If the user tries to set the meeting later than that end time, the meeting will change to the next day. If the user tries to start the meeting earlier than the default start time, the meeting will change to the previous day.</li>
+                    <li>If only one of the default times (start or end) is configured, then the meeting will be automatically set for an hour based on that default. For example, if the Administrator set the default Start Time to 10:00 am, the End Time will show as 11:00 am. Conversely, if the Administrator set only an End Time default of 11:00 am, then the Start Time will show as 10:00 am. If the user tries to start the meeting earlier than the default Start Time, the meeting will automatically change to the previous day. If the user tries, however, start or end a meeting later than the default End Time, the meeting will change to 12:00 am.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

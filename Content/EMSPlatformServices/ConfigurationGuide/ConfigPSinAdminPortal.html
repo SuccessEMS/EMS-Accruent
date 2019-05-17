@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:conditionTagExpression="include[General.Topic_Show_B] exclude[General.Topic_Show_A] ">
+    <head>
+        <link href="../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Platform Services in the Admin Portal</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Platform Services in the Admin Portal</h1>
+        <p>To begin configuration of EMS Platform Services, navigate to the EMS&#160;Platform Services Admin Portal using the Platform Services admin URL (e.g., https://yourcompany.com/EMSPlatform/admin). From the EMS Platform Services Admin Portal, you can clear the cache, view license and application information, configure authentication methods, manage integration clients, and view logs.</p>
+        <p>EMS Platform Services Admin Portal consists of the following tabs:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#HOME">Home—Perform Admin Functions</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Integrations">Integrations—Manage EMS&#160;Integrations</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#ConnectWebApptoPlatformServices">Connect EMS&#160;Web App to EMS&#160;Platform Services</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Roles">Roles—Create New Roles or Edit Existing Ones</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#LOGS">Logs—View Global and Integration Logs</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Authentication_Types">Header</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Authentication_Types">OpenID</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Authentication_Types">SAML</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Auth">Auth Keys—Create New Keys</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Calendaring">Calendaring—<MadCap:annotation MadCap:createDate="2019-05-16T09:35:18.4754514-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to update this for Exchange when U33 goes out. The Calendaring tab will have info for both G Suite and Exchange?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T09:35:44.2759344-06:00">Enable G Suite Integration</MadCap:annotation></a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Conferencing">Conferencing—Skype for Business</a>
+                </p>
+            </li>
+        </ul>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/HomeTab.PNG" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">EMS&#160;Platform Services Admin Portal</p>
+        </div>
+        <h2><a name="HOME"></a>Home</h2>
+        <p>When logged into EMS&#160;Platform Services Admin Portal from an EMS&#160;Everyday User account with a Web Admin security role, you can perform Administrative Functions, such as <a href="#ClearCache">Clearing the Cache</a> and viewing License and Application Information.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/ConfigPlatform1.PNG" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">Home Tab of EMS&#160;Platform Services Admin Portal</p>
+        </div>
+        <h3><a id="flushcache" name="ClearCache"></a>Clear the Cache</h3>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The cache must be cleared in EMS Platform Services&#160;and the EMS Web App whenever parameter changes are made in the EMS Desktop Client.&#160;</p>
+        </div>
+        <p>To clear your cache and have EMS&#160;Platform Services re-read the database parameters:</p>
+        <ol class="number-list">
+            <li>
+                <p>From the <span class="ui">Home </span>tab, click the <span class="ui">Clear Cache</span> button.&#160;</p>
+            </li>
+            <li>
+                <p>You will receive a notification that the cache has been cleared successfully.</p>
+            </li>
+        </ol>
+        <h2><a name="Integrations"></a>Integrations</h2>
+        <p>You can manage your EMS Integrations from the <span class="ui">Integrations </span>tab. From here, you can <a href="#CreateNewIntegrationClient">create</a>, edit status, delete integration clients, or <a href="#ResetClientSecret">reset the Client Secret</a>.</p>
+        <h3><a name="CreateNewIntegrationClient"></a>Create a New Integration Client</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Integrations </span>tab on the EMS&#160;Platform Services Admin Portal.  From this screen, you can view a list of integrations and their statuses.</p>
+            </li>
+            <li>
+                <p>To create a new integration client, click the <span class="ui">New Integration Client</span> button.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/NewIntegrationClient.PNG" class="hyperlink_with_padding_and_border" />
+                    </p>
+                    <p class="Caption">Integrations Tab of EMS&#160;Platform Services Admin Portal</p>
+                </div>
+            </li>
+            <li>
+                <p>Create a client <span class="ui">Name</span>.</p>
+            </li>
+            <li>
+                <p>From the <span class="ui">Type </span>drop-down, choose either <span class="ui">Custom </span>or <span class="ui">Partner</span>.</p>
+            </li>
+            <li>
+                <p>Choose a <span class="ui">Role </span>from the drop-down. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The <span class="ui">Active </span>box is checked by default. This indicates that your integration is active.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">Enable Logging</span> to view the logs for this integration through the Log section of the Admin Portal.</p>
+            </li>
+            <li>
+                <p>Configure <span class="ui">User Authentication</span>.</p>
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>To designate the Client as an Everyday User, check the <span class="ui">Everyday User Authentication Required</span> box. If this box is not checked, all other options for everyday user authentication will be inaccessible. <a href="#Authentication_Types">Header</a>, <a href="#Authentication_Types">OpenID</a>, and <a href="#Authentication_Types">SAML</a> are configured from the EMS&#160;Platform Services Admin Portal.</p>
+                    </li>
+                    <li>
+                        <p>Check the <span class="ui">User Authentication is Persistent</span> box to allow users to remain logged in.</p>
+                    </li>
+                    <li>
+                        <p>The default for <span class="ui">Token Duration </span>is one day (1440 minutes). Customize this duration by entering a number of minutes in the field.</p>
+                    </li>
+                    <li>
+                        <p>Choose an authentication method from the <span class="ui">Everyday User Authentication Method </span>drop-down. Your choices include:</p>
+                        <ul MadCap:continue="true">
+                            <li>
+                                <p><span class="ui">EMS&#160;Native</span>—Authenticates users via Everyday Application User (webuser) credentials stored in the EMS database. No additional authentication configuration is required.</p>
+                            </li>
+                            <li>
+                                <p><span class="ui">Header</span>—If this authentication is chosen, you must navigate to the&#160;<span class="ui">Header </span>tab. Enter the <span class="ui">Header Variable</span> and click <span class="ui">Save Changes</span>. See Also:&#160;<a href="../../Authentication/PortalAuthMethods.html">Portal Authentication Methods</a>. </p>
+                            </li>
+                            <li>
+                                <p><span class="ui">LDAP</span>—This authentication provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS Everyday applications. See Also:&#160;<a href="../../EMSWebApp/A_V44.1/B_ConfigurationGuide/ConfigureLDAPMobileandWeb.html">LDAP&#160;Authentication</a>. </p>
+                            </li>
+                            <li>
+                                <p><span class="ui">NTLM</span>—To configure NTLM authentication, click the <span class="ui">Enable NTLM For EMS Everyday User Authentication</span> box during installation. See <a href="../InstallationGuide/InstallPS.html#Verifying">Verifying NTLM&#160;Authentication</a> to complete this authentication. </p>
+                            </li>
+                            <li>
+                                <p><span class="ui">OpenID</span>—If this authentication is chosen, navigate to the <span class="ui">OpenID&#160;</span>tab and complete the required fields. See Also:&#160;<a href="../../EMSMobileApp/ConfigurationGuide/Authentication/OpenIDAuthen.html">OpenID&#160;Connect Authentication</a>. </p>
+                            </li>
+                            <li>
+                                <p><span class="ui">SAML</span>—If this authentication is chosen, navigate to the <span class="ui">SAML </span>tab and complete the required fields. See&#160;Also: <a href="../../Authentication/SAMLAuthen.html">SAML Authentication</a>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The Header, OpenID, and SAML authentication settings are applied globally. All Integration Clients with these authentication types selected will default to these settings.</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <ol MadCap:continue="true" class="number-list">
+            <li>
+                <p>Based on client type, EMS Platform Services checks against license count, and current number of "active" integration clients. If license count is 0 or equal to the current number of "active" clients, then EMS Platform Services denies the request to add an additional client. You must set the existing client to inactive or increase your license count via normal licensing processes. Please refer to <a href="../InstallationGuide/LicenseRequirements.html">Licensing Requirements</a> for more details.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Save Client</span>. A Client ID and Secret pair is generated once the Integration Client is successfully saved. Copy and save the Client Secret in a secure location. You will NOT&#160;be able to retrieve the Client Secret. To obtain a new Client Secret, you will need to reset it. See Also:&#160;<a href="#ResetClientSecret">Reset Client Secret</a>. </p>
+            </li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Partner and Custom types can be classified as either of the following client sub-categories: <span class="ui">User-based</span> and <span class="ui">Non-user based</span>. </p>
+            <p><span class="ui"><a name="User-based"></a>User-based</span>:&#160;User-based clients (EMS Mobile, EMS for Outlook) need to authenticate as a user to perform any actions. These clients need an integration client role with minimal access to the following API resources (above and beyond public resources):<br />/authentication<br />/logging</p>
+            <p><span class="ui"><a name="non-userbased"></a>Non-user based</span>:&#160;Non-user based clients (EMS Kiosk, EMS Room Sign App) provide functionality independent of users but also support user-like functionality (such as Check-In or on-the-fly room reservations). These clients need a role with wider access.<br /></p>
+        </div>
+        <h3><a name="ResetClientSecret"></a>Reset the Client Secret</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Integrations</span> tab on the EMS&#160;Platform Services Admin Portal.</p>
+            </li>
+            <li>
+                <p>Select the <span class="ui">Integration Client</span>. </p>
+            </li>
+            <li>
+                <p>Click the <span class="ui">Reset Secret</span> button.</p>
+            </li>
+        </ol>
+        <h3>Booking Rules</h3>
+        <p>The following booking rules are validated by each of these calls. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Call</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">BOOKING RULES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Create Reservation</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Web template must exist (for user)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Web template must be associated with the proper rooms</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Max bookings</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Date limit</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Max bookings per date range</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Max bookings per date </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Max minutes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Twenty four hour max</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Booking cutoffs</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>If VC—must have host/host group</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Event Type ID must be valid</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>If Exchange, Exchange ID must be valid (reaches out to Exchange)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>PROC: Handle setting conflict status if necessary</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Availability</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>User has template</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Template is active</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Must have time zone record for the room</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>24 Hour max</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Max minutes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>No bookings in past</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Inventory (e.g., projector)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Cutoffs</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Last allowed date</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Max bookings per date</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Max bookings before last date</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Building Hours</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Blocking bookings</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Add Booking</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Reservation must exist</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Template must exist for user</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Max bookings</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Max minutes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Twenty four hour max</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Booking cutoffs</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Edit Booking</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>License
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Web template / user</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Template access ("template mode")
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Room access (must be in template, and not be the calendaring TBD room)
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Not crosslisted
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Status must allow edits
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must not be invoiced
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Must not have a service order in progress
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+Must not have setup/teardown and be in progress
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Must not be managed space event in progress
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must not be a VC in progress
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Cutoff rules
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Last Date rules
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Category cutoff rules</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Must not be invited (in calendaring) and be in progress
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Max bookings
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Date limit</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+Max bookings per date range
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Max bookings per date
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Max minutes
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Twenty four hour max
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Booking cutoffs
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Timezone must exist
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>PROC: Cutoff rules
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>PROC: Last Date rules
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>PROC: Max Minutes
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>PROC: MaxBookings per day
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>PROC: Categories (Allow weekends, category cutoff rules)
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>PROC: Setup &amp; Capacity Validation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>PROC: 24 Hours Max
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>PROC: Building Hours
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>PROC: Conflict check
+</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="ConnectWebApptoPlatformServices"></a>Connect EMS&#160;Web App to <MadCap:variable name="General.Platform Services" /></h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Beginning with <a href="../../ReleaseNotes/Version44.1/Update31/EMSWebApp.htm">Update 31</a>, EMS&#160;Platform Services is a prerequisite for installing and using the EMS&#160;Web App. If EMS&#160;Platform Services has not yet been <a href="../InstallationGuide/InstallPS.html">installed</a> in your environment, validate the <a href="../../EMS_SystemReq_44.1.html#EMSPlatformServices">hardware and software requirements for EMS&#160;Platform Services</a>. </p>
+            <p>If your organization uses the EMS&#160;Mobile App, EMS&#160;Kiosk App, Google Integration, EMS&#160;for Outlook, or SAML authentication, then EMS&#160;Platform Services is already running in your environment.</p>
+        </div>
+        <p>To connect EMS&#160;Web App to EMS Platform Services, follow these steps;</p>
+        <MadCap:snippetBlock src="../../ConnectWebApptoPlatform.flsnp" />
+        <h2><a name="Roles"></a>Roles</h2>
+        <p>Roles are separate entities responsible for capturing the rules associated with authorizing clients and users. These authentication roles allow users to access specific rest API routes. Roles are applied to clients, both <a href="#User-based">user-based</a> and <a href="#non-userbased">non-user based</a>.</p>
+        <p>From the <span class="ui">Roles </span>tab, you can <a href="#CreateRoles">create new roles</a> or <a href="#EditRoles">edit existing roles</a>.</p>
+        <h3><a name="CreateRoles"></a>Create New Roles</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Roles </span>tab on the EMS&#160;Platform Services Admin Portal.</p>
+            </li>
+            <li>
+                <p>Click the <span class="ui">New Role </span>button.</p>
+            </li>
+            <li>
+                <p>Provide a unique Role Name in the <span class="ui">Name </span>field.</p>
+            </li>
+            <li>
+                <p>From the <span class="ui">Available Routes</span> list, move the routes you want associated to this role to the <span class="ui">Selected </span>list by using the Move (&gt;) arrow.</p>
+            </li>
+        </ol>
+        <h3><a name="EditRoles"></a>Edit Existing Role Routes</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Roles </span>tab on the EMS&#160;Platform Services Admin Portal.</p>
+            </li>
+            <li>
+                <p>Click on the role route you want to edit. A list of routes associated with the role appears.</p>
+            </li>
+            <li>
+                <p>From the <span class="ui">Available Routes</span> list, move the routes you want associated to this role to the <span class="ui">Selected </span>list by using the Move (&gt;) arrow.</p>
+            </li>
+        </ol>
+        <h2><a name="LOGS"></a>Logs</h2>
+        <p>You can view logs from the EMS&#160;Platform Services Admin Portal. You can <a href="#EditLOGDETAILS">edit log level details</a> through the default.json file. </p>
+        <p>There are two types of logs in EMS Platform Services:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">Global logs</span>: Includes logs only for EMS Platform Services.</p>
+            </li>
+            <li>
+                <p><span class="ui">Integration logs</span>: Includes logs for a selected integration client. Enable logging for any integration client you want to view logs for by choosing a Client from the dropdown.</p>
+            </li>
+        </ul>
+        <h3><a name="EditLOGDETAILS"></a>Edit Log Level Details</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <a href="../InstallationGuide/InstallPS.html#defaultfolder">Default</a> folder that was created during <a href="../InstallationGuide/InstallPS.html">installation</a>.</p>
+            </li>
+            <li>
+                <p>Open the default.json file for editing.</p>
+            </li>
+            <li>
+                <p>Under <span class="ui">Logging</span>, set the <span class="ui">logLevel </span>field to <span class="ui">Debug</span>. </p>
+                <div class="TitleandImage">
+                    <p class="Caption">
+                        <img src="../Images/Editloglevel.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Default.json File</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Authentication_Types"></a>Header, OpenID, and SAML&#160;(Authentication Options)</h2>
+        <p>EMS supports two authentication types for the EMS Platform Services Admin Portal:</p>
+        <ol class="number-list">
+            <li>
+                <p><span class="ui">EMS Native authentication</span>—An Everyday User with Everyday User Admin Security Template credentials can log into the EMS&#160;Platform Services Admin Portal. Verify license information is correctly reflected on the admin home page.</p>
+            </li>
+            <li>
+                <p><span class="ui">NTLM authentication</span>—During installation of EMS&#160;Platform Services, click the&#160;<span class="ui">Enable NTLM&#160;For EMS Everyday User Authentication</span>&#160;box.&#160;</p>
+            </li>
+        </ol>
+        <p>The following authentication methods are EMS&#160;Desktop Client-integration specific:</p>
+        <ul class="number-list">
+            <li>
+                <p><span class="ui">Header authentication</span>. See Also:&#160;<a href="../../Authentication/PortalAuthMethods.html">Portal Authentication Methods</a>. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/ConfigurePlatform_Header.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Header Tab of EMS&#160;Platform Services Admin Portal</p>
+                </div>
+            </li>
+            <li>
+                <p><span class="ui">LDAP authentication</span>—The LDAP Authentication method provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS applications (e.g., EMS Web App and EMS Mobile App). See Also:&#160;<a href="../../Authentication/LDAPAuthen.html">LDAP&#160;Authentication</a>. </p>
+            </li>
+            <li>
+                <p><span class="ui">Open ID authentication</span>—Authentication with Open ID requires configuration in EMS Mobile App before users can authenticate. See Also:&#160;<a href="../../EMSMobileApp/ConfigurationGuide/Authentication/OpenIDAuthen.html">Open ID&#160;Connect Authentication</a>. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/ConfigPlatform_OpenID.PNG" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">OpenID Tab of EMS&#160;Platform Services Admin Portal</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="number-list" start="4">
+            <li>
+                <p><span class="ui">SAML authentication</span>—Authentication with SAML requires configuring set up for EMS Mobile App and EMS Web App prior to beginning the authentication flow. See Also:&#160;<a href="../../Authentication/SAMLAuthen.html">SAML&#160;Authentication</a>.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/ConfigPlatform_SAML.PNG" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">SAML Tab of EMS&#160;Platform Services Admin Portal</p>
+                </div>
+            </li>
+        </ul>
+        <h2><a name="Auth"></a>Auth Keys</h2>
+        <p>Auth Keys are used for SAML&#160;certificates. See Also:&#160;<a href="../../Authentication/SAMLAuthen.html">SAML&#160;Authentication</a>. </p>
+        <p>To create a new Auth Key:</p>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Auth Keys</span> tab in the EMS&#160;Platform Services Admin Portal.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">New Auth Key</span>. </p>
+            </li>
+            <li>
+                <p>Provide a <span class="ui">Purpose</span>.</p>
+            </li>
+            <li>
+                <p>Provide a date range for when the Auth Key will be valid by entering dates in the <b>Not Before</b> and <b>Not After</b> fields. </p>
+            </li>
+            <li>
+                <p>Enter a Public Key (PEM).</p>
+            </li>
+            <li>
+                <p>Enter a Private Key (PEM). </p>
+            </li>
+            <li>
+                <p>Click <span class="ui">Save Auth Key</span>. </p>
+            </li>
+        </ol>
+        <h2><a name="Calendaring"></a>Calendaring</h2>
+        <p>Google Calendar Integration will allow access to G Suite users’ Google Calendars to provide their free/busy statuses within EMS for scheduling meetings. Everyday Users can see attendee availability directly within the EMS Web App or Mobile App alongside space availability information from the EMS database. </p>
+        <h3><a name="EnableGSuite"></a>Enable G Suite Integration</h3>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>A license must be imported prior to Enabling G Suite in the EMS&#160;Platform Services Admin Portal. See Also:&#160;<a href="../../GoogleSuiteIntegration/Config.htm">Configure G Suite Integration</a>. </p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Calendaring </span>tab in the EMS&#160;Platform Services Admin Portal.</p>
+            </li>
+            <li>
+                <p>Upload the JSON&#160;file created for your <a href="https://console.developers.google.com/projectselector/apis/library">G Suite project</a>. Click <span class="ui">Browse </span>to navigate to the file and click <span class="ui">Save New Configuration File</span>.</p>
+            </li>
+            <li>
+                <p>In the <span class="ui">Service Account Mailbox</span> field, enter the mailbox <MadCap:annotation MadCap:createDate="2019-04-10T16:53:52.0279508-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Is this the correct term? Also, is the Update button only for the Mailbox field? Seems like it is, but just checking to make sure." MadCap:editor="Megan.Laub" MadCap:editDate="2019-04-10T17:06:40.4603622-06:00">address and then click the <span class="ui">Update </span>button.</MadCap:annotation></p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>As of <a href="../../V44.1_ReleaseNotes.htm#Update31">Update 31</a>, a Service Account Mailbox is required for the G Suite Integration. The Service Account Mailbox can be any mailbox within your domain (or your organizational unit if you are not integrating the entire domain). The mailbox does not require special permissions. </p>
+                </div>
+            </li>
+            <li>
+                <p>Toggle between <span class="ui">Enabling </span>and <span class="ui">Disabling </span>G Suite Integration by using the Enable G Suite Integration button. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/ConfigPlatform_GSuite.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Calendaring Tab of EMS&#160;Platform Services Admin Portal</p>
+                    <MadCap:snippetBlock src="../../GSuite_TogglerKnownIssue.flsnp" />
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Conferencing"></a>Conferencing</h2>
+        <p>EMS integration of Skype for Business allows users to easily integrate instant messaging and audio/video conferencing to their meetings without the need for A/V support. Users can add, join, or modify/cancel Skype for Business meetings added to bookings. See Also:&#160;<a href="../../Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html">Configure Skype for Business</a>. </p>
+        <p>To configure Skype for Business in the EMS&#160;Platform Services Admin Portal:</p>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Conferencing </span>tab.</p>
+            </li>
+            <li>
+                <p>Provide a <span class="ui">Client Name</span> in the <span class="ui">Azure Active Directory Client ID</span> field. This determines the ID of the registered application. </p>
+            </li>
+            <li>
+                <p>Provide the <span class="ui">Azure Active Directory Tenant</span>. This determines the name of the AAD tenant. </p>
+            </li>
+            <li>
+                <p>Provide the <span class="ui">Skype for Business AutoDiscover URL</span>. This performs autodiscovery to find the appropriate server to communicate with. Multiple URLs must be separated by commas and cannot contain any spaces. The client machine and the Web server should have access to the Autodiscover URL.</p>
+            </li>
+            <li>
+                <p>Choose a <span class="ui">Skype for Business Server Authentication Method</span> from the drop-down. This determines the authentication type that is used to generate a token. You can choose from the following authentication methods:</p>
+                <ul>
+                    <li>
+                        <p><span class="ui">NTLM</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="ui">ADFS</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Username/Password</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Oauth (Online)</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2019-03-22T08:50:50.7279971-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Added for U32" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-22T08:50:54.1216635-06:00">In</MadCap:annotation> the Skype Meeting Options area, select an option from the <span class="ui">These people don't have to wait in the lobby</span> drop-down list. This field determines which participants do not need to wait before joining the meeting. The following options are available:</p>
+                <ul>
+                    <li>
+                        <p><span class="ui">Only me, the meeting organizer</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="ui">People I invite from my company</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Anyone from my organization</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Anyone (no restrictions)</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/ConfigPlatformConferencingwithSkype.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Conferencing Tab of EMS&#160;Platform Services Admin Portal</p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>EMS Web App Known Issue <br />V44.1 Update&#160;23</h1>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;Internal Reference&#160;#</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">EMS Web App, when viewed on a mobile device, displays the EMS Mobile App download banner if either or both of the following parameters contain the default sample/starter values:&#160;</p>
+                        <ul class="unorder-list">
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the app store</li>
+                            <li>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications &gt; Mobile Specific &gt; URL for the EMS Mobile App in the play store</li>
+                        </ul>
+                        <p>The value fields for the parameters listed above may appear blank because the EMS&#160;Desktop Client ships with default sample/starter URLs&#160;in the description fields that do not display in the parameter value list until the parameters are opened and closed.  
+Although the parameter value fields appear blank, the system recognizes the default URLs and displays the banner.
+
+</p>
+                        <p class="beforelist"><span class="ui">Workaround:</span> Use the following workaround to address this issue. </p>
+                        <ol class="number-list">
+                            <li>In the EMS&#160;Desktop Client, go to <span class="ui">System Administration</span> &gt; <span class="ui">Settings</span> &gt; <span class="ui">Parameters</span> &gt; <span class="ui">Everyday User Applications</span> tab.  
+</li>
+                            <li>From the <span class="ui">Mobile-Specific</span> area, select the parameter <span class="ui">URL for EMS Mobile App in the app store</span> and click <span class="ui">Edit</span>.</li>
+                            <li>
+Delete the value entry and click <span class="ui">OK</span>.
+</li>
+                            <li>Repeat steps 1–3 for the parameter <span class="ui">URL&#160;for EMS&#160;Mobile App in the play store</span>.</li>
+                            <li>From the EMS&#160;Web App Admin Functions page, clear the cache (multiple times  on a load-balanced environment).
+</li>
+                            <li>Access the EMS&#160;Web App on a mobile device and verify that the EMS Mobile App download banner no longer displays.
+</li>
+                        </ol>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="InternalRef"><a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=36860&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36860</a>
+                            <br />EMS&#160;Internal Use Only</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

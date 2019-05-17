@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Publish a Term</h1>
+        <p>After the Domain Scheduler has finalized the assignment of courses to rooms, either with the help of the EMS room optimization process or by using the scenario that was pulled from the SIS, the next step is to publish the course schedule for the term in EMS Academic Planning. Publishing the course schedule causes the system to book the space in EMS, creating reservations and bookings. If the EMS Academic Planning system parameter, <span class="ui">Manually Update SIS</span>, is set to <span class="ui">No</span>, then the publishing process also updates course location information directly in the SIS; otherwise, the Domain Scheduler must manually update the SIS. Publishing an academic term consists of the following steps:</p>
+        <ol class="number-list">
+            <li>
+                <p>The Domain Scheduler publishes the term, which includes specifying statuses for courses in conflict and cross-listed courses.</p>
+            </li>
+            <li>
+                <p>If needed, the Domain Scheduler manually updates the course locations in the SIS. See <a href="ManualUpdateCourseLocSIS.htm">Manually Update Course Locations in the SIS</a>.</p>
+            </li>
+            <li>
+                <p>If needed, the Domain Scheduler can unpublish a previously published term. See <a href="UnpublishPreviousPubTerm.htm">Unpublish a Previously Published Term</a>.</p>
+            </li>
+        </ol>
+        <p>After you have finalized the assignment of courses to rooms, either with the help of the EMS room optimization process or by using the scenario that was pulled from the SIS, the next step is to&#160;publish&#160;the course schedule for the term in EMS Academic Planning. Publishing the course schedule causes the system to book the space in EMS, creating reservations and bookings.</p>
+        <h2 class="Heading2">Publish a Term&#160;</h2>
+        <ol start="1" class="number-list">
+            <li class="ListParagraph">
+                <p>On the EMS Academic Planning menu bar, click<span class="ui"> Academic Planning</span> &gt; <span class="ui">Courses </span>&gt; <span class="ui">Manage Terms</span>.&#160;</p>
+                <p>The Terms window opens.</p>
+                <p>
+                    <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_17.png" alt="emsum_EMSCampus_image025.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+        </ol>
+        <ol start="2" class="number-list">
+            <li class="ListParagraph">
+                <p>On the Domain drop-down list, select the domain for which the term is being published.</p>
+            </li>
+            <li class="ListParagraph">
+                <p>Select the term that is being published, and then click <span class="ui">Edit</span>.&#160;</p>
+                <p>The Term dialog box opens. The Term tab is the active tab.</p>
+                <p>
+                    <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_17_1.png" alt="emsum_EMSCampus_image050.png" class="resize80_noborder_padding" />
+                </p>
+                <p class="Caption">Term dialog box, Term tab</p>
+            </li>
+            <li class="ListParagraph">
+                <p>Do the following:</p>
+                <ul class="unorder-list">
+                    <li class="ListParagraph">
+                        <p>Make sure that the <span class="ui">Mode </span>is set to <span class="ui">Read Only</span> and if the academic unit-level users are to have View access to the term, make sure that <span class="ui">Available to Academic Units</span> is selected.</p>
+                    </li>
+                    <li class="ListParagraph">
+                        <p>On the Active Scenarios drop-down list, select the scenario that is being published.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The SIS scenario publishes room assignments that were previously defined in the SIS.</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="ListParagraph">
+                <p>Optionally, in the Phase field and the Notes field, enter any information that is pertinent to the published .</p>
+                <p>For example, “Published” in the Phase field.</p>
+            </li>
+            <li class="ListParagraph">
+                <p>Open the <span class="ui">Excluded Dates</span> tab.</p>
+            </li>
+            <li class="ListParagraph">
+                <p>Select the dates that should be excluded during the publishing process. </p>
+                <p>The Term dialog box closes. You return to the Terms window with the term that is to be published automatically selected.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>This would include any dates where regularly scheduled classes do not take place, for example, breaks, holidays, and if applicable, final exams week. </p>
+                    <p>Bookings are not created for excluded dates, which means that rooms can be scheduled for events and meetings, if needed.</p>
+                </div>
+            </li>
+            <li class="ListParagraph">
+                <p>Click <span class="ui">Publish</span>.&#160;</p>
+                <p>The Publish Term dialog box opens. The Domain field, the Term field, and the Scenario field are automatically populated with the values that you previously selected and you cannot edit them.</p>
+                <p>
+                    <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_17_2.png" alt="emsum_EMSCampus_image051.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li class="ListParagraph">
+                <p>Select the statuses required for publishing the term.</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Status</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The status that is used to book all rooms for course reservations and bookings that are created during the publishing process.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The status should be a Booked Space type.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="tablecolumnheader">Conflict Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="tablecolumnheader">If you are publishing course room placements that were assigned in your SIS (the SIS scenario), then potentially you could have room booking conflicts created. If a double booking is encountered during the publishing process, then the reservation and bookings for the conflicting course are published in this conflict status.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The status should be an Info Only type.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Cross List Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The status that is used to book all cross-listed and shared space course reservations and bookings that are created during the publishing process.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The status should be an Info Only type.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Override Existing Bookings/Override Conflict Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>If another scheduling unit on campus, for example, the Student Union, is allowed to book events in academic space before the publishing process has taken place, then an event and course might be assigned to the same space. If Override Existing Bookings is selected and this situation is encountered during the publishing process, the event is “bumped” and its reservation and bookings are booked into this status. If Override Existing Bookings is not selected, then the conflicted bookings for the course are placed into the Override Conflict Status.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The Override Conflict Status should be an Info Only type.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="ListParagraph">
+                <p>Specify the Domain Settings for the term.</p>
+                <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Setting</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Reservation Source</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select the reservation source that is used for the course reservations and bookings that are created during the publishing process.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Room for Unassigned Courses</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Click the <span class="ui">Search </span>icon&#160;to open the Room Selector dialog box and select the room in which to book the courses that have not been assigned in the SIS or in an optimization scenario.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Unassigned courses are typically booked in a special To Be Determined (TBD) room. Some organizations create a specific TBD building and/or room to accommodate this situation. The room must be an override description room. See the&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/2_EMS_Desktop_Client_CG.htm">EMS Desktop Client Configuration Guide</a>&#160;for information about configuring a TBD building and/or room.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="ListParagraph">
+                <p>Click <span class="ui">Publish</span>.&#160;</p>
+                <p>A message opens stating that publishing the term will set the term to Read Only and asking you if it is OK to continue.</p>
+            </li>
+            <li class="ListParagraph">
+                <p>Click <span class="ui">Yes</span>.&#160;</p>
+                <p>A Publishing progress dialog box opens. After the term is published, the progress dialog box closes, and a message opens indicating that the term was published successfully.</p>
+            </li>
+            <li class="ListParagraph">
+                <p>Click <span class="ui">OK </span>to close the message and return to the Terms window.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If any errors are encountered during the publishing process, or if the EMS Academic Planning system parameter <span class="ui">Manually Update SIS/ERP System After Publishing</span> is set to <span class="ui">Yes</span>, then you can access your course list and manually update the course locations in your SIS. </p>
+            <p>See&#160;<a href="ManualUpdateCourseLocSIS.htm">Manually Update Course Locations in the SIS</a>.</p>
+        </div>
+    </body>
+</html>

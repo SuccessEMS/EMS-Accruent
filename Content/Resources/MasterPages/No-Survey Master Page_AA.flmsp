@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <div class="contentBody" style="min-height: calc(100% - 74px) !important;">
+            <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" />
+            <MadCap:breadcrumbsProxy />
+            <MadCap:bodyProxy />
+            <MadCap:pageHeader />
+        </div>
+        <MadCap:pageFooter MadCap:conditions="Default.ExcludefromAccruentAccess">
+            <MadCap:snippetBlock src="../Snippets/HTML5footer.flsnp" />
+        </MadCap:pageFooter>
+    </body>
+</html>

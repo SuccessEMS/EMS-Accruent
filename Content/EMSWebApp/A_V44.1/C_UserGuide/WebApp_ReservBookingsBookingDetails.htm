@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Reservations, Bookings, and Booking Details</h1>
+        <p>The two essential EMS components for meeting and event scheduling are reservations and bookings. To use the EMS Web Client efficiently and effectively, you must understand the structure of a reservation in EMS, the concept of an event timeline for a reservation booking, and how to make a reservation. This section covers the following topics:</p>
+        <ul>
+            <li><a href="#ReservationStructure">Reservation Structure</a>
+            </li>
+            <li><a href="#EventTimeline">Event Timeline</a>
+            </li>
+            <li><a href="#Make_a_Reservation_Using_the_Reservation_Wizard">Make a Reservation Using the Reservation Wizard</a>
+            </li>
+            <li><a href="#View_and_Edit_Reservations_in_the_Reservation_Book">View and Edit Reservations in the Reservation Book</a>
+            </li>
+        </ul>
+        <h2><a name="ReservationStructure"></a>Reservation Structure</h2>
+        <p>An event in <MadCap:variable name="General.EMS&#160;Desktop Client" /> is comprised of the following:</p>
+        <ol start="1" class="number-list">
+            <li>A&#160;<span class="ui">Reservation</span></li>
+            <li>One or more&#160;<span class="ui">Bookings</span></li>
+            <li>Booking details</li>
+        </ol>
+        <p>These three components exist in a hierarchy—a reservation contains one or more bookings, and each booking can have one or more details associated with it.</p>
+        <h3><a name="Reservations"></a>Reservations</h3>
+        <p>A reservation is the who and the what of an event. For example, Group X (the who) can reserve some space for an Event Y (the what). A booking is the where and the when of an event. For example, Group X can schedule the conference room (the where) for a staff meeting on the second Monday in January (the when). Group X now has a single reservation with a single booking in EMS. If, however, Group X schedules the conference room (the where) for a staff meeting on the second Monday of each month for a calendar year (the when), then Group X now has a single reservation with twelve bookings in EMS.</p>
+        <h3><a name="Booking_Details"></a>Booking Details</h3>
+        <p>A booking can have one or more booking details associated with it. Booking details are the resources or services that are needed for an event, the notes for the event, the activities for the event, the room charges for the event, or any combination of these. For example, for Group X’s staff meeting, the resources could include the requested catering (coffee service, bagels and muffins, and so on) and the A/V equipment (a projector, a speaker’s podium, and so on).</p>
+        <h2><a name="EventTimeline"></a>Event Timeline</h2>
+        <p>The following time designators are used for an event in EMS Desktop Client:</p>
+        <ul class="unorder-list">
+            <li><span class="ui">Event Time:</span>&#160;The time period during which the event actually takes place.</li>
+            <li><span class="ui">Setup/Teardown Hours:</span> The hours, or fractions of hours, that you add to the event time to allow staff to prepare a room for the event or to clean up after the event.</li>
+            <li><span class="ui">Reserved Time:</span> The total time for which the space (the where) is reserved. This time is the event time plus the setup/teardown time.</li>
+        </ul>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 205px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 187px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Variable&#160;</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Time</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Reserved Start Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>8:00 a.m.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Setup Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>1 hour</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event Start Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>9:00 a.m.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event End Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>4:00 p.m.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Teardown Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>1.5 hours</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Reserved End Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>5:30 p.m.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Reserved Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>9.5 hours</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Make_a_Reservation_Using_the_Reservation_Wizard"></a>Make a Reservation Using the Reservation Wizard</h2>
+        <p>The Reservation Wizard allows you to check for available space and make a reservation for an event. You can search for rooms that are available for a particular time on one day (a simple reservation with one booking) or on multiple days (a series reservation with multiple bookings). You can also create a series reservation by selecting one date and time, but multiple rooms. To make a reservation using the wizard, you must do the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#specifyeventdate">Specify the Event Date and Time Information</a>
+            </li>
+            <li><a href="#Specifyeventtimeandstatus">Specify the Event Time and Status</a>
+            </li>
+            <li><a href="#SelectEventLocation">Select the Event Location</a>
+            </li>
+            <li><a href="#Specifyeventinformation">Specify the Event Information</a>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The following procedure describes how to make a reservation by selecting values for the required and optional fields.</p>
+            <ul class="unorder-list">
+                <li>If your EMS administrator has configured reservation wizard templates, then a Reservation Wizard Template dropdown list is displayed at the top of the Reservation Wizard. You can facilitate the making of a reservation in the Reservation Wizard by selecting the appropriate template from the list, which automatically sets the default values for many of the fields in the Reservation Wizard.</li>
+                <li>If your job entails making multiple reservations that require the same information, and you are not using reservation wizard templates, then you can set your own default values for many of the fields in the Reservation Wizard.</li>
+            </ul>
+        </div>
+        <h3><a name="specifyeventdate"></a>Specify the Event Date and Time Information</h3>
+        <ol start="1" class="number-list">
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click the&#160;<span class="ui">Wizard&#160;</span>icon. The Reservation Wizard page opens.</li>
+            <li>If needed, use the scroll features on the top of the&#160;<span class="ui">Calendar&#160;</span>to open the calendar for a different month (&lt; or &gt;), or click a month at the top of the calendar to open a dropdown list from which you can select a different month. You can also click a year at the top of the calendar to open a dropdown list from which you can select a different year.</li>
+            <li>If the event dates do not follow a pattern, use one or more of the following options for entering a date:<ul start="1"><li>Click on the dates on the calendar that the event is to take place.</li><li>To select all five weekdays in a week, click in the blank space that is to the left of the week.</li><li>To select all seven days in a week, double-click in the blank space that is to the left of the week.</li><li>To select every occurrence of a specific day of the week for the displayed month (for example, all Sundays in June, 2017), click the heading (S, M, T, and so on) for the day.</li><li>To select every occurrence of a specific day of the week that is currently displayed onscreen (regardless if the day falls within the same month), double-click the heading (S, M, T, and so on) for the day.</li></ul></li>
+            <li>If the event dates do follow a pattern, (for example, the third Friday of every month), click&#160;<span class="ui">Date Pattern</span>&#160;at the bottom of the Calendar&#160;to open the Date Pattern dialog box and enter your event date information.&#160;As you specify the event dates, the following occurs:<ul start="1"><li>The&#160;<span class="ui">Selected Dates</span>&#160;tab at the top of the Calendar is automatically updated with the selected dates.</li><li>If your EMS administrator has configured any of the dates as a holiday or closed, then holiday dates are displayed in green on the <span class="ui">Calendar </span>tab and closed dates are displayed in red. For any date, after you select the date on the Calendar tab, you can:<ul start="1"><li>Toggle between the&#160;Calendar&#160;tab and the&#160;Selected Date&#160;tab. Open the <span class="ui">Selected Dates</span> tab, select the date, and then click&#160;<span class="ui">Go To Date</span>.</li><li>You can remove a date from the list of selected dates by opening the Selected Dates tab, selecting&#160;the date (or CTRL-click to select multiple dates), and clicking&#160;<span class="ui">Remove</span>.</li></ul></li><li>For dates that are configured as a holiday or as closed, you can:<ul start="1"><li>Place your cursor on a holiday date to open a tooltip that shows the name of the holiday.</li><li>View information about the date from the Selected Dates tab. Open the&#160;<span class="ui">Selected Dates</span>&#160;tab, scroll to the date, and then click&#160;<span class="ui">Holidays&#160;</span>to open a Holidays dialog box that displays information about the holiday.</li><li>Place your cursor on a closed date to open a message that states that you cannot select the date because the date is closed.</li></ul></li></ul></li>
+            <li>Continue to&#160;specify the event time and status.</li>
+        </ol>
+        <h3><a name="Specifyeventtimeandstatus"></a>Specify the Event Time and Status</h3>
+        <ol start="1" class="number-list">
+            <li>Specify&#160;the start time and end time for the event in one of two ways:<ul start="1"><li>Click the <span class="ui">Time Picker</span> icon to open a dropdown list from which you can select a time for each field.</li><li>Under the&#160;<span class="ui">Time&#160;</span>section, manually enter the start and end times from the dropdowns.&#160;If applicable, select the appropriate Time Zone for the event.</li></ul></li>
+            <li>Specify the Setup and Teardown times in one of two ways:<ul start="1"><li>To use the default setup and teardown times that your EMS administrator has assigned to the rooms in your system, leave the&#160;Use Default&#160;checkbox selected.</li><li>Override the default setup/teardown times by clearing the&#160;<span class="ui">Use Default</span>&#160;checkbox, and selecting&#160;<span class="ui">Minutes or Hours</span>, and entering your own setup and teardown times.</li></ul></li>
+            <li>Indicate the status for the event.</li>
+            <li>Continue to select the event location.&#160;</li>
+        </ol>
+        <h3><a name="SelectEventLocation"></a>Select the Event Location</h3>
+        <p>You have three options for selecting the event location, which are indicated on the first page of the Reservation Wizard:</p>
+        <ol start="1" class="number-list">
+            <li><span class="ui"><a href="#To_search_for_a_standard_room">Standard</a>:</span>&#160;Use this option to display a list of all the available rooms that meet all the requested dates.&#160;</li>
+            <li><span class="ui"><a href="#To_search_for_a_best_fit_room">Best Fit</a>:</span>&#160;Use this option if no one room can meet all the requested dates.&#160;The system lists rooms along with the number of bookings for which you can reserve the room. You can piece together the entire reservation using Best Fit, or just part of it.</li>
+            <li><span class="ui"><a href="#To_search_for_a_specific_room">Specific Room</a>:</span>&#160;Use this option to confirm the availability and reserve of one specific room for the scheduled event.</li>
+        </ol>
+        <h4><a name="To_search_for_a_standard_room"></a>I. Search for a Standard Room</h4>
+        <ol start="1" class="number-list">
+            <li>Select&#160;<span class="ui">Standard</span>.</li>
+            <li>Choose one of the following for room specifications:<ul start="1"><li><span class="ui">Type&#160;</span>is the class or category of the room, for example a meeting room, a workspace, and so on. Leave Type set to the default of (all) to search for all pre-configured room types or select a specific room type from the Type dropdown list.</li><li><span class="ui">Floor&#160;</span>is optional information when you are searching for a room. Leave Floor set to the default value of (all) to search for all pre-configured floors or select the floor from the Floor dropdown list.</li><li><span class="ui">Setup Type</span>&#160;is the physical layout or arrangement of a room, for example, rounds of 6 or theater-style. Leave Setup Type set to the default value of (all) to search for all pre-configured setup types or select the setup type from the Setup Type dropdown list.</li><li><span class="ui">Setup Count</span>&#160;is the anticipated attendance for the event. If you selected a specific setup type, then you must enter the setup count.</li></ul></li>
+            <li>To select a <span class="ui">Feature</span>, open the&#160;Features&#160;tab, select the Feature, or CTRL-click to select the multiple features that the room must have.</li>
+            <li>Click&#160;<span class="ui">Next</span>. Up to two tabs are displayed:<ul start="1"><li>The&#160;<span class="ui">Available</span> tab, which is the active tab and is always displayed, lists all the rooms that meet all your event criteria.<ul start="1"><li>If you have elected to show the Available All Day Indicator, the rooms that are available all day are marked with an asterisk (*).</li><li>By default, the available rooms are sorted alphabetically by room code. If your EMS administrator has configured the rooms for your EMS implementation with a book sequence, then under Options, select Sort Rooms by Book Sequence to sort the rooms from lowest to highest book sequence. (If two rooms have the same sequence, then the rooms are sorted alphabetically by name within the sequence.)</li></ul></li><li>The&#160;<span class="ui">Conflicts </span>tab&#160;is displayed only if there are rooms that are not available for the requested dates/times. Optionally, you can open the Conflicts tab to view the list of rooms that were not available for scheduling as well as list of the events that are scheduled for each room.</li></ul></li>
+            <li>Select the room, or CTRL-click to select the multiple rooms that you are scheduling for the event.</li>
+            <li>Click&#160;<span class="ui">Room Info</span>&#160;to open the Room Info dialog box and view information about the room properties, notes, Room URL, Building URL, setup type and capacity, and features. Click&#160;<span class="ui">Close</span>.</li>
+            <li>Click&#160;<span class="ui">Building Hours</span>&#160;to open the Building Hours dialog box which displays the hours that the selected room/building is open on the reserved date. Click&#160;<span class="ui">Close</span>.</li>
+            <li>Click the <span class="ui">Move </span>button (&gt;) to move the rooms to the Selected list.</li>
+            <li>Click&#160;<span class="ui">Next&#160;</span>to&#160;<a href="#Specifyeventinformation">specify the event Information</a>.</li>
+        </ol>
+        <h4>II. <a name="To_search_for_a_best_fit_room"></a>Search for a Best Fit Room</h4>
+        <ol start="1" class="number-list">
+            <li>Select&#160;<span class="ui">Best Fit</span>.</li>
+            <li>Leave&#160;<span class="ui">Building&#160;</span>set to the default value of (all), or select a specific Building, Area, or View in which to search for a best fit room.</li>
+            <li>Choose one of the following for room specifications:<ul start="1"><li><span class="ui">Type&#160;</span>is the class or category of the room, for example a meeting room, a workspace, and so on. Leave Type set to the default of (all) to search for all pre-configured room types or select a specific room type from the Type dropdown list.</li><li><span class="ui">Floor&#160;</span>is optional information when you are searching for a room. Leave Floor set to the default value of (all) to search for all pre-configured floors or select the floor from the Floor dropdown list.</li><li><span class="ui">Setup Type</span>&#160;is the physical layout or arrangement of a room, for example, rounds of 6 or theater-style. Leave Setup Type set to the default value of (all) to search for all pre-configured setup types or select the setup type from the Setup Type dropdown list.</li><li><span class="ui">Setup Count&#160;</span>is the anticipated attendance for the event. If you selected a specific setup type, then you must enter the setup count.</li></ul></li>
+            <li>Open the&#160;<span class="ui">Features </span>tab, and then select the feature, or CTRL-click to select the multiple features that the room must have.</li>
+            <li>Click&#160;<span class="ui">Next</span>. Up to two tabs are displayed:<ul start="1"><li>The&#160;<span class="ui">Available </span>tab, which is the active tab and is always displayed, has two lists. The list in the left pane is a list of all the rooms that meet some or all of your event criteria. The list in the right pane is a list of all the event dates that must be fulfilled.</li><li>The&#160;<span class="ui">Conflicts </span>tab&#160;is displayed only if there are rooms that are not available for the requested dates. Optionally, you can open the Conflicts tab to view the list of rooms that were not available for scheduling for the event as well as list of the events that are scheduled for each room.</li></ul></li>
+            <li>Choose one or both of the following:<ul start="1"><li>Click&#160;<span class="ui">Room Info</span>&#160;to open the Room Info dialog box and view information about the room properties, notes, Room URL, Building URL, setup type and capacity, and features. Click&#160;<span class="ui">Close</span>.</li><li>Click&#160;<span class="ui">Building Hours</span>&#160;to open the Building Hours dialog box which displays the hours that the selected room/building is open on the reserved date. Click&#160;<span class="ui">Close</span>.</li></ul></li>
+            <li>Choose one of the following:<ul start="1"><li>If one is available, select the single room that is available for all the requested dates, and then click the Move button (&gt;) to move the room to the&#160;<span class="ui">Event Dates</span>&#160;list.</li><li>If a single room is not available, select a room that is available for some of your requested dates, and then click the Move button (&gt;) to move the room to the&#160;<span class="ui">Event Dates</span>&#160;list. Repeat this step as needed to fulfill all the event dates.</li></ul></li>
+            <li>Click&#160;<span class="ui">Next&#160;</span>to&#160;<a href="#Specifyeventinformation">specify the event information</a>.</li>
+        </ol>
+        <h4>III. <a name="To_search_for_a_specific_room"></a>Search for a Specific Room</h4>
+        <p>You can use the&#160;<span class="ui">Specific Room</span>&#160;search to book a standard EMS room or a room or area that is not managed in EMS. An override room, or “override description,” is used to book an event in a space that has not been configured in your EMS system. For example, your EMS administrator might have configured an override room named “Other Area” in the Engineering building. To book an event in Dr. Wilson's office, which is a room that is not defined in EMS, in the Engineering building, you can select the “Other Area” room and specify “Dr. Wilson's Office” for the location. EMS does not track availability for events booked in override rooms; however, EMS reports on events that are scheduled in an override room just like any other event scheduled for any other room.</p>
+        <ol start="1" class="number-list">
+            <li>Select&#160;<span class="ui">Specific Room</span>. The Room Selector dialog box opens. By default, (all) buildings is selected.</li>
+            <li>Do one of the following:<ul start="1"><li>To select a room from a list of all rooms in all available buildings:<ul start="1"><li>Leave (all) selected on the Buildings dropdown list.</li><li>Click the&#160;<span class="ui">Add&#160;</span>icon next to a room to select it.</li><li>If the room is configured as an override room, continue to the next step.</li></ul></li><li>To select a room from a list of rooms in a specific building, area, or view:<ul start="1"><li>Select a specific building, area, or view.</li><li>Click the <span class="ui">Add </span>icon next to a room to select it.</li><li>If the room is configured as an override room, continue to the next step:<ul start="1"><li>In the&#160;<span class="ui">Location&#160;</span>field, enter the location of the override room, and then click&#160;<span class="ui">Next</span>.&#160;Two results are possible:<ul start="1"><li>If the event is scheduled for a single date and the room is available, then continue to the next step.&#160;</li><li>In all other cases, (for example, the event is scheduled for a single date but the room is not available or it is a multiple date event), the Available tab opens. This tab lists all the event dates for which the specific room is available.&#160;</li></ul></li></ul></li></ul></li></ul></li>
+            <li>Optionally, before you move a date to the Selected list, click Building Hours to open the Building Hours dialog box which displays the hours that the selected room/building is open on the selected date.&#160;</li>
+            <li>Optionally, before you move a date to the Selected list, do one or both of the following:<ul start="1"><li>Click&#160;<span class="ui">Room Info</span>&#160;to open the Room Info dialog box and view information about the room properties, setup type, features, and pricing.</li><li>Click&#160;<span class="ui">Building Hours</span>&#160;to open the Building Hours dialog box which displays the hours that the selected room/building is open on the reserved date.</li></ul></li>
+            <li>Do one of the following:<ul start="1"><li>If the specific room is available for all the event dates, then click the&#160;<span class="ui">Move All&#160;</span>button (&gt;&gt;) to schedule the room for all the event dates.</li><li>If the specific room is not available, try another approach, such as reserving a different specific room, or try using the Standard or Best Fit search method.</li></ul></li>
+            <li>Click&#160;<span class="ui">Next</span>.</li>
+        </ol>
+        <h3><a name="Specifyeventinformation"></a>Specify the Event Information</h3>
+        <p>After you select an event location(s), you must specify other information for the event.</p>
+        <ol start="1" class="number-list">
+            <li>Enter the event information.</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">Event</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event Name</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>A name or description for the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Event Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The classification for the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>VIP Event</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option to mark the event as a Very Important event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Source</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The reservation source.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Video Conference</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option for a video conference event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">Employee/Contact&#160;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Employee</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Click the Search icon to open an&#160;<span class="ui">Employees&#160;</span>dialog box in which you search for and select a specific employee from a list all employees that are available in your system for hosting/sponsoring an event.</p>
+                        <ul class="unorder-list">
+                            <li>To search a list of all employees, leave the Find field in the Lookup dialog box blank, and then click the Search icon</li>
+                            <li>To search for a specific employee, enter a search string in the Find field, and then click Search icon. Your search is limited to the exact order of the characters in the string, but the string can appear anywhere in the search results and it is not case-sensitive. For example, the search string&#160;<span class="ui">sim&#160;</span>returns Paske,&#160;<span class="ui">Sim</span>on and&#160;<span class="ui">Sim</span>ington, Chance.</li>
+                            <li>To select an employee, click the <span class="ui">Add </span>icon next to the employee.</li>
+                            <li>If the employee that you want to select for the reservation is not available on the pre-configured list, then you can click the Employee icon to open the Employee dialog box and add the employee. &#160;</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>After you select an employee, you can click Employee Info at the bottom of the Reservation Wizard page to open a dialog box that displays the properties for the employee, any user-defined fields for the employee, and any comments that are associated with the employee.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>1st Contact<br />Temp Contact</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>When you select a group, if a&#160;default&#160;contact has been defined for the group, then this field is automatically populated with the name of the contact; otherwise, the field is blank. You have several options for defining the 1st Contact for a reservation:</p>
+                        <ul class="unorder-list">
+                            <li>If the field is blank, but contacts have been configured for the group, you can select a contact from the pre-configured list.</li>
+                            <li>If the field is populated with a default value, but other contacts have been configured for the group, you can select a different contact from the pre-configured list.</li>
+                            <li>If you want to create a temporary contact just for this event, then select (temporary contact), and in the Temp Contact field, enter the name for the temporary contact.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If a default contact has been configured for the employee, then any modifications that you make for the contact apply to this reservation only. The next time you or anyone else creates a reservation for this group, the 1st Contact field is again automatically populated with the name of the default contact.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>2nd Contact<br />Temp Contact</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Define if necessary for the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Phone<br />Fax<br />Email Address</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>One more of these fields might be automatically populated depending on how a selected contact has been configured. You can manually edit these values if needed.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The Phone and Fax fields have a dropdown list available on which you can select a different value (Cellular, Fax, Office, Other, Primary) for the field label, or you can enter a user-defined value. To enter a user-defined value, double-click the current field label to select it, and then enter the user-defined value over the selected label.</p>
+                        </div>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If default values have been configured for a selected contact, then any modifications that you make apply to this reservation only. The next time you or anyone else creates a reservation for the same contact, these fields are again automatically populated with the default information.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">Room Setup Tab</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Setup Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>If you selected a specific value for the setup type when searching for an event location, this value is carried forward to this field; otherwise, the field is blank. You can select a setup type for this field, or if the field is already populated, you can select a different setup type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Setup Count</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>If you entered a specific value for the setup type when searching for an event location, this value is carried forward to this field; otherwise, the field is blank. You can enter a value in this field, or if the field is populated, modify the value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">Billing Tab</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Depending on the group that you select, one or more of these fields might be automatically populated with default values. You can edit these default values but any modifications that you make apply to this reservation only. The next time you or anyone else creates a reservation for the same group, these fields are again automatically populated with the default billing information.</div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Pricing Plan</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Indicates what type of pricing is to be used for the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Cost Center Number</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The internal alphanumeric billing code that is associated with the group. You can manually enter a value in this field, or if a master list of billing reference numbers has been configured for the group, you can click the Search icon to open a&#160;<span class="ui">Cost Center Numbers</span>&#160;dialog box, and select the appropriate value from this list.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>To search for a specific cost center&#160;number, enter a search string in the Find field, and then click the Search icon. The string is not case-sensitive, but your search is limited to the exact order of characters in the string and it must begin with the information for which you are searching. For example, a string of&#160;<span class="ui">co</span>&#160;returns&#160;<span class="ui">CO</span>-123, but&#160;<span class="italics">not&#160;</span>123-<span class="ui">CO</span>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sales Category</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>How the group is sorted for purposes of tracking sales figures (e.g., local, regional, national, etc.).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Payment Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Indicates how the group paid for the event (cash, check, charged, and so on).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Dept. Code/PO Number</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The internal alphanumeric purchase order number that is associated with the group. You can manually enter a value in this field, or if a master list of purchase order numbers has been configured for the group, you can click the Search icon to open a Purchase Order Numbers dialog box, and select the appropriate value from this list.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>To search for a specific purchase number, enter a search string in the Find field, and then click the Search icon. The string is not case sensitive, but your search is limited to the exact order of characters in the string and it must begin with the information for which you are searching. For example, a string of&#160;<span class="ui">co</span>&#160;returns&#160;<span class="ui">CO</span>-123, but&#160;<span class="italics">not&#160;</span>123-<span class="ui">CO</span>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Salesperson</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The user who “sold” the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">Other Tab</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Event Coordinator</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The Event Coordinator assigned to the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Estimated Event Attendance</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The estimated number of people who are expected to attend the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Calendar Style</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Drop-down list of all the available formats for printing this event on the Event Calendar and Event Schedule reports.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>URL</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The event URL.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><span class="ui">Virtual Tab</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Everyday User</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>To specify the everyday users who can view/manage this reservation in VEMS, click the Search icon to open the Everyday Users search dialog box and search from a list of registered everyday&#160;users.</li>
+                            <li>You can search by&#160;<span class="ui">User Name</span>&#160;or&#160;<span class="ui">Email Address</span></li>
+                            <li>To search a list of all available everyday users, leave the Find field in the Lookup dialog box blank, and then click the Search icon</li>
+                            <li>To search for a specific everyday user, enter a search string in the Find field, and then click Search icon<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The string is not case-sensitive, but your search is limited to the exact order of characters in the string and it must begin with the information for which you are searching. For example, if searching by Email Address, a search string of&#160;<span class="ui">bb</span>&#160;returns&#160;<span class="ui">bb</span>osworth@dea.com&#160;but&#160;<span class="italics">not&#160;</span>dbo<span class="ui">bb</span>ett@dea.com.</p></div></li>
+                            <li>To select an everyday&#160;user, click the&#160;<span class="ui">Add&#160;</span>icon next to the user.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>To return this field to the (no change) value at any time, click&#160;<span class="ui">Reset</span>.</p></div></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Process Template</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The process template that defines the functions that are available for the selected everyday user.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>An Everyday&#160;User might be assigned to more than one process template, so make sure to select the template that is applicable for this reservation.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p><span class="ui">User Defined Fields Tab</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>User-defined fields are additional fields that store custom data for a reservation. Your EMS administrator configures the types of fields that are available as well as the allowed values for these fields.</p>
+                        <ul class="unorder-list">
+                            <li>To enter or modify a value for a field, select the field, and then click&#160;<span class="ui">Set Value</span>.</li>
+                            <li>To clear a value for a field, select the field, and then click&#160;<span class="ui">Clear Value</span>.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If a user-defined field is not required here, you can always supply a value for it at a later date in the Navigator.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="2" class="number-list">
+            <li>Click&#160;<span class="ui">Finish</span>. Two results are possible:<ol start="1" style="list-style-type: lower-alpha;"><li>If you did not enter information into required fields, then these fields are outlined in red. You must enter values into these fields and then click Finish again to open the Navigator page.</li><li>The Navigator opens. The reservation information is displayed in the Navigator. You use the Navigator to add booking details and to make any needed modifications to the reservation and its bookings.&#160;</li></ol></li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>A reservation is not complete and rooms are not removed from the Available list until you click&#160;<span class="ui">Finish</span>. Although unlikely, it is possible for another user to select and reserve a room during the time period after you have selected the room but before you have finalized the reservation. If this occurs, after you click Finish, a message opens stating that your reservation conflicts with an existing reservation.</p>
+        </div>
+        <h2><a name="View_and_Edit_Reservations_in_the_Reservation_Book"></a>View and Edit Reservations in the Reservation Book</h2>
+        <p>The Reservation Book provides a graphical view of all the confirmed reservations (the reserved time as well as the room for which the reservation is scheduled) for your organization. (Canceled bookings are not shown.) You use the Reservation Book to the view information for a reservation, to edit an existing reservation, and to make a new reservation. In addition, when the Reservation Book first opens, before you edit or make a reservation, you can change the Reservation Book view so that it better suits your working needs.</p>
+        <p>This section will provide information on the following topics:</p>
+        <ul class="unorder-list">
+            <li><a href="#Openthereservationbook">Open the Reservation Book</a>
+            </li>
+            <li><a href="#tochangethereservationBookDisplay">Change the Reservation Book Display</a>
+            </li>
+            <li><a href="#toviewreservationinformatoin">View Reservation Information</a>
+            </li>
+            <li><a href="#ToMakeANewReservation">Make a New Reservation</a>
+            </li>
+            <li><a href="#EditAnExistingReservation">Edit an Existing Reservation</a>
+            </li>
+        </ul>
+        <h3><a name="Openthereservationbook"></a>Open the Reservation Book</h3>
+        <ol start="1" class="number-list">
+            <li>From the toolbar, click the&#160;<span class="ui">Book&#160;</span>icon. The first time that you open the Reservation Book for your EMS implementation, by default, the Filter dialog box opens on top of a blank Reservation Book. You can leave the room filtering criteria set to their default values, or you can select different values as needed, and then click <span class="ui">OK</span>. All reservations that meet the filtering criteria and that are scheduled for the current day’s date are displayed in the book in the&#160;Daily&#160;view.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>You might need to use the book’s scroll features to scroll through all the reservations that are scheduled for the current day’s date.</p></div><ul><li>If an event is scheduled for a room that is a component of a combination room, then the reservation text is displayed in black. A duplicate reservation is also shown for the combination room; however, the reservation text is displayed in gray to indicate that a component of the combination room is currently booked for the indicated time and therefore, the combination room is not available</li><li>Conversely, if an event is scheduled for a combination room, then the reservation text for the combination room is displayed in black and the reservation text for each component is displayed in gray. This reversed color coding indicates that the component room is currently booked for the selected time and that none of the components is available.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Reservation Book has the following appearance:</p><ul class="unorder-list"><li>Minimum and maximum capacities are displayed next to room descriptions</li><li>The current time is shown by a vertical line in the grid, called the Current Time Indicator</li><li>If building hours have been configured for a building, then this information is displayed for the building</li></ul><p>The reservations are displayed with three components:</p><ul class="unorder-list"><li>A left bar that indicates the setup time</li><li>A middle bar that indicates, by default, the event name</li><li>A right bar that indicates the teardown time</li></ul></div></li></ul></li>
+        </ol>
+        <h3><a name="tochangethereservationBookDisplay"></a>Change the Reservation Book Display</h3>
+        <ol start="1" class="number-list">
+            <li>On the EMS Web Client toolbar, click the&#160;<span class="ui">Book&#160;</span>icon. The Reservation Book opens in the Daily view.</li>
+            <li>You can change the Reservation Book display in the following ways:<ul start="1"><li>Change the&#160;<span class="ui">list of rooms</span>&#160;that are displayed in the Reservation Book based on&#160;<span class="ui">room properties</span>.</li><li>Change the&#160;<span class="ui">list of rooms</span>&#160;that are displayed in the Reservation Book based on a&#160;<span class="ui">specific room(s)</span>.</li><li>Change the&#160;<span class="ui">Reservation Book view</span>.</li><li>Change multiple&#160;<span class="ui">display options</span>&#160;for a reservation.</li><li>Select which items to include in the&#160;<span class="ui">tooltip&#160;</span>that opens when you place the cursor over an event in the Reservation Book.</li><li>Change the display date using the&#160;<span class="ui">calendar</span>.</li><li>Change the display date using the Reservation Book&#160;<span class="ui">scroll features</span>.</li></ul></li>
+            <li>To change the list of rooms based on room properties:<ol start="1" style="list-style-type: lower-alpha;"><li>Click&#160;<span class="ui">Filter&#160;</span>if the Filter dialog box is not already open.</li><li>Select Room Properties and customize one or more of the following:<ul start="1"><li>Leave the Building dropdown list set to the default value of (all) buildings, or select a specific building, area, or view.</li><li>Select a&#160;<span class="ui">specific floor</span>.</li><li>Select a <span class="ui">specific room type</span>.</li><li>Select&#160;<span class="ui">Capacity&#160;</span>and then enter a&#160;<span class="ui">capacity</span>.</li><li>Select&#160;<span class="ui">Academic&#160;</span>to limit the search to academic rooms.</li><li>Select a&#160;<span class="ui">Room Availability</span>&#160;option.</li></ul></li><li>Click&#160;<span class="ui">OK</span>.&#160;The Filter Rooms dialog box closes. The room display in the Reservation Book is changed accordingly.</li></ol></li>
+            <li>To change the list of rooms that are displayed in the Reservation Book based on a specific room or rooms:<ol start="1" style="list-style-type: lower-alpha;"><li>If the Filter Rooms dialog box is not already open, then above the Rooms list, click&#160;<span class="ui">Filter&#160;</span>to open the dialog box and select <span class="ui">Specific Room</span>.</li><li>Select the room, or CTRL-click to select multiple rooms on the Available list.</li><li>Click the&#160;<span class="ui">Move&#160;</span>(&gt;) button to move the selected rooms to the Selected list. The Reservation Book is updated to show bookings only for the selected rooms.</li></ol></li>
+            <li>To change the Reservation Book view, from the View dropdown list, select Daily, Weekly, or Monthly.</li>
+            <li>To&#160;change multiple&#160;<span class="ui">display options</span>&#160;for a reservation:<ol start="1" style="list-style-type: lower-alpha;"><li>Click&#160;<span class="ui">Options&#160;</span>(upper right hand corner of Reservation Book) to open the <span class="ui">Book Options</span> dialog box (the General tab is the active tab).</li><li>Change multiple display options not only for the Reservation Book, but also a reservation in the book.</li></ol></li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Start Hour</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The daily start time for the Reservation Book display.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Display</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The information that is displayed in the middle bar for a reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Time Display Interval</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Changes the granularity of the time display interval.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Maximum Number of Rooms</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The maximum number of rooms to display in the Reservation Book.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Booking Colors Based On</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The color of the bookings in the reservation. Select one: Status, Event Type, or Check-in Status (for EMS Workplace only.)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Rooms Without Bookings</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Whether to highlight rooms without bookings and if so, the highlight color. If both Highlight Rooms and Booked Space Status Only are selected, then only those rooms that do not have a Booked Space status are highlighted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Room Display</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Display the room code or the room name for a reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Building Display</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Display the building code or the building name for a reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Go To Today on Startup</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>If selected, the Reservation Book opens to the current day’s date; otherwise, it opens to the last date viewed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Always Prompt for Room Filter on Startup</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>If Show ‘(all)’ in Building List is also selected, then when you open the Reservation Book, the Filter dialog box opens on top of the Reservation Book. You can select different options on this dialog box to display only specific reservations in the book, for example, bookings only for selected rooms. If you do not select any options on this dialog box, but instead simply close it, then all reservations for all rooms in all buildings are displayed in the book.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Hide Current Time Indicator</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Show or hide the vertical bar that indicates the current time for current day.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The Current Time indicator is displayed only if the view is the Daily or Weekly view and the view includes the current day’s date.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Show ‘(all)’ in Building List</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Show the “all” option on the Building dropdown list; otherwise, a user must select a specific building. If this option is selected in conjunction with Always Prompt for Room Filter on Startup, then when you open the Reservation Book, then the Filter dialog box always opens on top of the Reservation Book. If you are setting your Reservation Book options, and you do not want to the Filter dialog box to open on top of the Reservation Book when you open the book, then do the following:</p>
+                        <ul class="unorder-list">
+                            <li>Clear Always Prompt for Room Filter on Startup.</li>
+                            <li>Clear Show (‘all’) in Building List.</li>
+                            <li>On the Building dropdown list in the Reservation Book, select any building, area, or view.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The building, area, or view that you select is not important. This last step just clears the “all” building option from the Reservation Book cache and ensures that the Filter dialog box does not open on top of the Reservation Book. Going forward, you can always select all buildings, or any specific building, area, or view as needed when you are working in the Reservation Book.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Show Capacity</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Show the minimum and maximum capacities next to the room description.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p><span class="ui">Hide Booking Shadow</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Hide the vertical shadow bar that highlights the reserved and/or event start times and end times when a user moves a booking in the Reservation Book.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="7" MadCap:continue="true" class="number-list">
+            <li>To&#160;select which items to include in the&#160;<span class="ui">tooltip&#160;</span>that opens when you place the cursor over an event in the Reservation Book:<ol start="1" style="list-style-type: lower-alpha;"><li>Click&#160;<span class="ui">Options&#160;</span>(upper-right corner of Reservation Book) to open the Book Options dialog box.&#160;</li><li>Open the&#160;<span class="ui">Tooltip Display</span>&#160;tab and select which items to include in the tooltip that opens when you rest the mouse pointer on an event in the Reservation Book.</li></ol></li>
+            <li>To change&#160;the display date using the&#160;<span class="ui">calendar</span>:&#160;<ol start="1" style="list-style-type: lower-alpha;"><li>From the&#160;<span class="ui">Date&#160;</span>field, click the dropdown arrow to open the Calendar.</li><li>Use the (&lt; and &gt;) scroll features at the top of the calendar to change the month or use the (&gt;) scroll features at the top of the calendar to change the year.</li><li>To select a different date for a month, click the date.</li></ol></li>
+            <li>To change the display date using the Reservation Book&#160;<span class="ui">scroll features</span>:<ol start="1" style="list-style-type: lower-alpha;"><li>Use the scroll features at the top of the reservation book display to scroll to a different day, week, month, or any different combination of these.</li><li>To reset the display immediately to the current day’s date, click&#160;<span class="ui">Today</span>.</li></ol></li>
+        </ol>
+        <h3><a name="toviewreservationinformatoin"></a>View Reservation Information</h3>
+        <ol start="1" class="number-list">
+            <li>On the EMS toolbar, click the&#160;<span class="ui">Book&#160;</span>icon. The Reservation Book opens in the Daily view.</li>
+            <li>To view the reservation in the Navigator,&#160;double-click&#160;the middle bar for the reservation entry or right-click the reservation entry and on the context menu that opens, click&#160;<span class="ui">Open</span>.</li>
+            <li>You can view the&#160;reservation information in the following ways:<ul start="1"><li>View the&#160;<span class="ui">bookings&#160;</span>for a room</li><li>View the&#160;<span class="ui">properties&#160;</span>for a room</li><li>View the&#160;<span class="ui">pricing&#160;</span>for a booked room</li><li>View the&#160;<span class="ui">setup&#160;</span>information, event information, or teardown information for a reservation</li></ul></li>
+            <li>To view the bookings for a room:<ol start="1" style="list-style-type: lower-alpha;"><li>Click the room name or code in the Rooms list to open the Bookings tab for the Room Info dialog box. The tab on this dialog box lists all the bookings for the selected room based on the current view (Daily, Weekly, Monthly) and on the date that is shown in the Date field.</li><li>To view a booking in the Navigator, select the booking, and then click <span class="ui">Open</span>.</li></ol></li>
+            <li>To view room properties:<ol start="1" style="list-style-type: lower-alpha;"><li>Click the&#160;<span class="ui">room name</span>&#160;or&#160;<span class="ui">code&#160;</span>in the Rooms list to open the Bookings tab for the Room Info dialog box.</li><li>Open the&#160;<span class="ui">Room&#160;</span>tab. The tab on this dialog box lists all the properties for the room, such as the room code, the room name, the room classification, etc. It also lists the setup type and capacity for the room, and any notes that have been entered for the room.</li></ol></li>
+            <li>To view the pricing for a booked room:<ol start="1" style="list-style-type: lower-alpha;"><li>Click the&#160;<span class="ui">room name</span>&#160;or&#160;<span class="ui">code&#160;</span>in the Rooms list to open the Bookings tab for the Room Info dialog box.</li><li>Open the&#160;<span class="ui">Pricing&#160;</span>tab. This tab displays any pricing information that was defined for the room.</li></ol></li>
+            <li>To view the&#160;<span class="ui">room setup</span>&#160;information, event information, or teardown information for a reservation:<ol start="1" style="list-style-type: lower-alpha;"><li>Rest the mouse pointer on the left bar, middle bar, or right bar for the reservation entry. A tooltip showing the respective setup, event, or teardown information opens.</li><li>If buildings that are located in multiple time zones are currently displayed, you can specify the time zone in which to view all of your bookings.</li></ol></li>
+        </ol>
+        <h3><a name="ToMakeANewReservation"></a>Make a New Reservation</h3>
+        <ol start="1" class="number-list">
+            <li>On the EMS toolbar, click the&#160;<span class="ui">Book&#160;</span>icon. The Reservation Book opens in the Daily view.</li>
+            <li>Change the display to show the room for which you are making the reservation.</li>
+            <li>Select the date for which you are making the reservation.</li>
+            <li>In the Time Grid for the room, click and hold the left mouse button, drag the mouse to schedule the room and time, and then release the mouse button to open the Reservation Wizard. See&#160;Also:&#160;<a href="#Make_a_Reservation_Using_the_Reservation_Wizard">Make a Reservation Using the Reservation Wizard</a>.&#160;</li>
+        </ol>
+        <h3><a name="EditAnExistingReservation"></a>Edit an Existing Reservation</h3>
+        <ol start="1" class="number-list">
+            <li>On the EMS toolbar, click the <span class="ui">Book </span>icon. The Reservation Book opens in the Daily view.</li>
+            <li>Optionally, you can do one or more of the following to edit an existing reservation:</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Step</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Action</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Change the setup time for a reservation</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Drag the left bar horizontally to a new time.</li>
+                            <li>Click&#160;<span class="ui">Yes&#160;</span>in the Confirm Change dialog box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Change the event time</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Drag the middle bar horizontally to a new time.</li>
+                            <li>Click&#160;<span class="ui">Yes&#160;</span>in the Confirm Change dialog box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Change the teardown time for a reservation</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Drag the right bar horizontally to a new time.</li>
+                            <li>Click&#160;<span class="ui">Yes&#160;</span>in the Confirm Change dialog box.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p><span class="ui">Edit the reservation building, room, time, or both</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <ul class="unorder-list">
+                            <li>Drag and drop the reservation to a new room that is the same building or in a different building, and/or to a new time.</li>
+                            <li>Click&#160;<span class="ui">Yes&#160;</span>in the Confirm Change dialog box.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="3" class="number-list">
+            <li>Optionally, you can right-click on a reservation in the Reservation Book, and on the context menu that opens, select one of the following:</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Open</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Opens a reservation in the EMS Navigator.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Move Forward</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Move the reservation date forward by one day or one week.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Move Backward</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Move the reservation date backward by one day or one week.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Move to a Specific Date</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Move the reservation to a specific date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Change Status</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Change the status of the reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">Copy Bookings</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>N/A</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Although this option is available on the context menu for a reservation, its associated functionality is currently under development.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Swap Rooms With Another Booking</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Swap the room assignments of two events. The swap option is applicable only for two events that have identical meeting patterns.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p><span class="ui">Highlight Related Reservations</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Highlights the bookings that belong to the same reservation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

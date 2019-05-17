@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Web App Release Notes <br />V44.1, Update 26</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Standard.css');" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1&#160;Update&#160;26</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />June 29, 2018<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch #:&#160;<br />44.1.26000.201806250</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.26000.1312<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 374px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">My Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Default Views for My Events</p>
+                        <p class="RNBody">For the My Events page, Administrators can configure the default view by either Reservations or Bookings (this previously defaulted to Reservations). </p>
+                        <p class="RNBody"><span class="ui">See Also:</span>&#160;<a href="../../../EMSWebApp/A_V44.1/C_UserGuide/WebApp_ViewingYourEvents.html#MyEventsDefaultView">View Your Events</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm#My_Events_Default_View">EMS Everyday User Applications Parameters</a>.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=37851&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">37851</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Reservation Details</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle"><a name="ViewReservationSummary"></a>Access to Browse Reservation Details</p>
+                        <p class="RNBody">A new role, <span class="ui">View Reservation Summary</span>, has been added to everyday user security templates (accessed in the EMS&#160;Desktop Client through Configuration &gt; Everyday User Applications &gt; Everyday User Security Templates &gt; New/Edit template &gt; Roles tab). </p>
+                        <p class="RNBody">This new role relates to the reservation summary links in notification/confirmation emails. When a user clicks on a reservation summary link in an email, the EMS&#160;Web App will perform an authentication check before displaying the Reservation Summary page:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>If the user is the owner of the reservation, or a delegate of the owner, the user can view the Reservation Summary page, even if the user has not been assigned the <span class="ui">View Reservation Summary</span> role.</li>
+                            <li>If the user has been assigned the <span class="ui">View Reservation Summary</span> role, then the user can view the Reservation Summary page.</li>
+                            <li>If the user has not been assigned the <span class="ui">View Reservation Summary</span> role, then the user cannot view the Reservation Summary page.</li>
+                        </ul>
+                        <p class="RNBody">Administrators can use this new role to limit access to reservation information from forwarded emails.  </p>
+                        <p class="RNBody">See Also:&#160;<a href="EMSDesktopClient.htm#New_Security_Role_Added">EMS&#160;Desktop Client Release Notes Update 26</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigSecTemplate.htm#View_Reservation_Summary">Assigning Roles to Users</a>.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=38376&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38376</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Error Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">500 Internal Server Error Page</p>
+                        <p class="RNBody">A security issue has been resolved. Submit an EMS Support Help Desk ticket through <MadCap:snippetText src="../../../AccruentAccess_Link_NoLink.flsnp" /> to receive additional information.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=39020&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39020</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" rowspan="2">
+                        <p class="RNArea">Attendee Search</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle"><a name="MiniumCharacterLengthforAttendeeSearch"></a>Minimum Character Length for Attendee Search</p>
+                        <p class="RNBody">A&#160;new parameter, <span class="italics">Minimum Characters to Initiate Type Ahead Search</span>, was added that affects the Find Attendees search field in calendar-enabled templates (Exchange and G Suite). The parameter lets administrators configure a minimum attendee lookup search length. The default is <span class="ui">3</span>&#160;characters. </p>
+                        <p class="RNBody">This new parameter  enables administrators to specify a longer duration after the last keystroke entry to prevent performance issues when returning attendee results. Updates recommended only for organizations with complex Exchange or G&#160;Suite deployments. </p>
+                        <p class="RNBody"><span class="ui">See Also:</span>&#160;<a href="EMSDesktopClient.htm#MinimumCharacterCountAttendeeSearch">EMS&#160;Desktop Client U26 Release Notes</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm#Minimum_Characters_to_Initiate_Type_Ahead_Search">Everyday User Applications Parameters</a></p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=38480&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38480</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle"><a name="DelayforTypeAheadSearchTrigger"></a>Configuration for Search on Type Ahead Fields</p>
+                        <p class="RNBody">A new parameter, <span class="italics">Delay for Type Ahead Search Trigger (ms)</span>, was added that affects the Find Attendees search field in calendar-enabled templates (Exchange and G Suite). The parameter lets administrators configure the duration after the last keystroke entry in a search field before triggering a search call for attendees. The default is <span class="ui">400 ms</span>. </p>
+                        <p class="RNBody">This new parameter enables administrators to specify a longer duration before triggering a search event to prevent performance issues when returning attendee results.</p>
+                        <p class="RNBody"><span class="ui">See Also:</span>&#160;<a href="EMSDesktopClient.htm#ConfigureTypeAheadSearchforAttendees">EMS&#160;Desktop Client U26 Release Notes</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm#Delay_for_Type_Ahead_Search_Trigger">Everyday User Applications Parameters</a></p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=38482&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38482</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" rowspan="2">
+                        <p class="RNArea">Accessibility</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">EMS&#160;Web App Help  Links (Chrome and Safari)</p>
+                        <p class="RNBody">When using EMS&#160;Web App on a Chrome or Safari browser, users can now access all of the Web App help links with a keyboard.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=34036&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">34036</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">My Account Page (Chrome and Safari)</p>
+                        <p class="RNBody">When using EMS&#160;Web App on a Chrome or Safari browser, users can now access all functionality on the My Account  page with a keyboard. <br /></p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=34040&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">34040</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Conflict Messaging </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Improved Conflict Messaging (Non-Calendar Enabled Templates)</p>
+                        <p class="RNBody">Improved messaging when resolving conflicts on recurring meetings (non-calendar enabled templates).</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/_workItems?id=39397&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39397</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 234px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 702px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Edit Reservation Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Add Booking Button Was Appearing on Video Conference Template</p>
+                        <p class="RNBody">Users were briefly seeing the Add Booking button on the Edit Reservation page in the EMS&#160;Web App. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the Add Booking button does not ever display on a VC&#160;template or Calendar-enabled template. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=36849&amp;_a=edit&amp;fullScreen=true&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36849</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create a Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Users Could Request Parts of and Whole Combo Rooms</p>
+                        <p class="RNBody">When Requesting Rooms, users were able to select a combo room and its components without receiving a warning message regarding conflicts. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users can either select the combo room components or the whole combo room. Users will receive an error if they try to do both.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=36802&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36802</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Responsive State</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Reduced Menu Functionality</p>
+                        <p class="RNBody">When viewing the EMS&#160;Web App on a small screen in responsive state (on a mobile device), the reduced menu that appears in the upper left-hand corner (also referred to as a hamburger menu) was auto expanding. This made working with the event impossible.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the hamburger menu does not auto expand and users can access their events on the EMS&#160;Web App in a responsive state. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=36862&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">36862</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create a Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Booking Rule Error</p>
+                        <p class="RNBody">EMS&#160;Web App users received a booking rule violation error when booking a building that is closed on the current day, even if the day of the request is open.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users can create a reservation on a day the building is closed as long as the building is open on the day of the reservation and as long as the booking complies with all booking rules, such as advanced notice.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=37663&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">37663</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Browse Locations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" style="text-align: left;">
+                        <p class="RNTitle">Reverted Date in Browse Locations</p>
+                        <p class="RNBody">Users were experiencing a reverted date when hitting enter in Browse Locations if the cursor was in the Find a Room search field. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users can complete their search without the date changing. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=38550&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">38550</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Translation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2" style="text-align: left;">
+                        <p class="RNTitle">Language Translation Error</p>
+                        <p class="RNBody">Translation for Polish, Spanish, Japanese, and French was not displaying correctly. </p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified functionality so that rendered pages display in the selected language. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://emstfs.dea.com:8080/tfs/EMS Suite/Ems/Aspen/_queries?id=39531&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39531</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

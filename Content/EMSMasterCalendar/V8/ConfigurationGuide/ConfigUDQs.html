@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring User Defined Questions (UDQs) in Master Calendar</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure User Defined Questions (UDQs)</h1>
+        <p class="Body">A <em>user defined question</em> (UDQ) is a question you can set to prompt&#160;a guest or user as part event request process. A UDQ can be optional or required, and you can assign one or more&#160;UDQs to one or more calendars of your choice. This topic guides you in&#160;adding,&#160;editing, deleting,&#160;activating and de-activating&#160;UDQs, and viewing&#160;UDQ history.</p>
+        <h2>Define a New UDQ</h2>
+        <p class="Body">Once you add new a UDQ, you can assign the UDQ to one or more calendars.</p>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <strong>Configuration </strong>&gt;&#160;<strong>User Defined Questions</strong>.&#160;The User Defined Questions page opens on&#160;the Active tab, listing all currently active UDQs in Master Calendar.</p>
+                <p class="FigureCaptionColumn">
+                    <img src="../images/B_Configuration/MC_WorkwithUserDefQuest_UserDefQuestPg.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Under Actions, click <strong>Add</strong>.&#160;The Details tab opens, where you can specify information for the new&#160;UDQ.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/udq1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the information for the UDQ.</p>
+                <p><b>UDQ Details Tab Fields</b>
+                </p>
+                <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Field</th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1" />
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2" />
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="TableBody">Name</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="TableBody">The name of the UDQ. This name is displayed in a pick list on the UDQs tab for calendar configuration.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="TableBody">Question Type</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="TableBody">Dropdown list with four options for the required format of the answer to the UDQ:</p>
+                                <ul>
+                                    <li>Text</li>
+                                    <li>Date</li>
+                                    <li>Numeric</li>
+                                    <li>List</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="TableBody">Default value</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="TableBody">A pre-assigned value for the UDQ that is displayed on the Submit Event page. A guest or user can edit this value as needed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="TableBody">Display Text</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="TableBody">The text that is displayed for the UDQ under Additional Information on the Submit Event page.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="TableBody">Sequence</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="TableBody">The order in which the UDQs are displayed under Additional Information on the Submit Event page. This is a required value. If you give all the UDQs the same sequence number, then the UDQs are displayed in alphabetical order under Additional Information; otherwise, they are displayed in ascending order (Sequence 1, Sequence 2, Sequence 3, and so on).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p class="TableBody">Internal</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p class="TableBody">If selected, then the question is not displayed in the event description; otherwise, the question is displayed in the event description.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p class="TableBody">Response Required</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p class="TableBody">If selected, then a guest or user must answer the question before they can submit the event; otherwise, the guest or user does not have to answer the question to submit the event.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p class="TableNoteNote">If you specify a default value for a UDQ, but then make a response required, Master Calendar ignores the default value.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2" />
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Click the <strong>Calendars </strong>tab.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/udq2.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>In the Calendars list, select the calendar to which the UDQ is to be assigned (CTRL-click to select multiple calendars). The calendar now appears in the Selected Calendars list.</li>
+            <li>Click <strong>Add</strong>.&#160;The UDQ is saved as an <em>active</em> UDQ in Master Calendar.</li>
+        </ol>
+        <h2>Edit Existing UDQs</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <strong>Configuration </strong>&gt;&#160;<strong>User Defined Questions</strong>.&#160;The User Defined Questions page opens on&#160;the Active tab, listing all currently active UDQs in Master Calendar.</p>
+                <p class="StepNumberBegin">
+                    <img src="../images/B_Configuration/MC_WorkwithUserDefQuest_ActiveTab.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>&#160;<em>To edit, activate or de-activate a UDQ</em>, select the Active or Inactive tab.</li>
+            <li>Select the UDQ you want to edit&#160;from the list.</li>
+            <li>
+                <p>Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens.</p>
+                <p>
+                    <img src="../images/B_Configuration/udq3.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li class="StepNumberContinued">Make changes as needed to the UDQ information.</li>
+            <li class="StepNumberContinued">
+                <p><em>To change the calendar the UDQ applies to,</em> use the <strong>Calendars </strong>tab.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/udq2.png" class="resize80_border_and_padding" />
+                </p>
+                <ul>
+                    <li>In the Calendars list, click the calendar to which the UDQ is to be assigned (CTRL-click to select multiple calendars), and then click the<strong> Add </strong>(&gt;) arrow to add the selected calendar(s) to the Selected Calendars list. Click the <strong>Remove&#160;</strong>(&lt;)&#160;arrow to remove it from the Selected Calendars list.</li>
+                    <li class="StepNumberContinued">To view the UDQ's history, click the&#160;<strong>History&#160;</strong>tab.&#160;The history for a UDQ consists of the original creation date of the UDQ, the name of the user who created the UDQ, the last date that the UDQ was edited, as well as the name of the user who last edited the UDQ. You can view the history for both active or inactive UDQs.</li>
+                    <li class="StepNumberContinued">Use the Active checkbox to control whether the UDQ&#160;presents to users during the booking process.&#160;</li>
+                    <li class="StepNumberContinued">Click&#160;<strong>Save</strong>.&#160;The Active or Inactive list of UDQs updates to reflect your changes.&#160;</li>
+                </ul>
+            </li>
+            <li>
+                <p><em> To delete a UDQ, </em>from&#160;the Active or Inactive tab, select the UDQ you want to delete.&#160;To select all UDQs on the currently opened page for deletion in a single step, select Name. If you have multiple pages of UDQs to delete, you must repeat this entire process on each page.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You can delete an active or an inactive UDQ. If you delete an active UDQ, any current events that use the UDQ are not affected. The deletion simply means that going forward, the UDQ is not available for use.</p>
+                </div>
+            </li>
+            <li>Under Actions, click <strong>Delete</strong>.&#160;A message prompts you to confirm that you are sure that you want to delete all the selected UDQs.</li>
+            <li>Click <strong>OK</strong>.&#160;A message confirms the deletion.</li>
+            <li>Click <strong>OK</strong>.&#160;The list of UDQs&#160;is updated to reflect the deletion.</li>
+        </ol>
+    </body>
+</html>

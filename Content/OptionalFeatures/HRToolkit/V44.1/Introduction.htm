@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Introduction to Human Resources Toolkit</h1>
+        <p>If your organization&#160;uses an Human Resources&#160;Information System or HRIS, user and group profiles or "accounts" may already be maintained there. This toolkit eliminates the double-entry of this information, by synchronizing between your HRIS and EMS&#160;at your chosen frequency. This toolkit enables you to automate&#160;the creation, updating, and de-activation of user and group accounts in EMS. You can configure it to automatically transfer&#160;selected records to a staging database and then update&#160;the appropriate tables in EMS. This tool saves time and enhances security, and enables the creation, maintenance, and inactivation of user and group accounts from an outside data source.</p>
+        <p>This section provides the following information:</p>
+        <ul>
+            <li><a href="#integration">Integration Diagram</a>
+            </li>
+            <li><a href="#sTEPS">Steps for Integrating with EMS&#160;HR Toolkit </a>
+            </li>
+        </ul>
+        <div class="TitleandImage">
+            <h2><a name="integration"></a>EMS&#160;HR&#160;toolkit Integration Diagram</h2>
+            <p>
+                <img src="Images/HRToolkit_InstallGuide/Integration Diagram.png" class="hyperlink_with_padding_and_border" />
+            </p>
+            <h2><a name="sTEPS"></a>STEPS FOR INTEGRATING WITH EMS HR TOOLKIT</h2>
+            <ol>
+                <li>Identify the data source(s) in your organization to use as the source for your user records.</li>
+                <li>Determine if user records are organized by groups and group types (Group/Group Type Model) or a combination (Hybrid).</li>
+                <li>Obtain and execute the .sql files for creating the staging database and stored procedures needed to import data into your EMS database.</li>
+                <li>Establish a process for importing records into the staging database.</li>
+                <li>Execute the EMS HR Toolkit stored procedure (using Microsoft SQL Server Management Studio to create an SQL job to run the stored procedure on a schedule).</li>
+                <li>Maintain the source data to ensure continual data flow between your source(s) and EMS.</li>
+            </ol>
+        </div>
+    </body>
+</html>

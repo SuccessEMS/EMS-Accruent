@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Check In Notifications V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Configure Check-in Notification Rules (Excludes Professional)</h1>
+        <p>Check-in Notification Rules help you automate the process of&#160;reminding users to check in and managing no-shows.&#160;You configure Check-in Notification rules based on rooms, statuses, event types, and/or group types. When you configure a Check-in Notification rule, you can configure it generate an&#160;email&#160;to remind users to check in and to cancel no-showed events.&#160;To do this for&#160;group bookings, all the criteria you specify with these rules must be met. For example, if you specify "Room 100, Confirmed status, Analyst group type," then a Confirmed meeting for a Partner group type in Room 100 does not result in a notification being generated.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For notification emails to be sent, the EMS Check-in&#160;Notification Service must be installed and configured. See <a href="../../../ServicesComponents/EMS Check in Notification.htm">Install the EMS Check-in Notification Service</a> for details.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>On the&#160;menu bar, navigate to <span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt; <span class="ui">Check-in Notification Rules</span>.&#160;The Check-in Notification Rules dialog box opens. This window lists all the check-in&#160;notification rules that are currently configured in your EMS database and that have a status of Active.<div class="TitleandImage"><p><img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Check in Notification.png" alt="https://success.emssoftware.com/@api/deki/files/1374/Check-In_Notification_2.png?revision=1&amp;size=bestfit&amp;width=368&amp;height=396" /></p><p class="Caption">Check-in Notification Rules Dialog Box</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>You can view all Check-in notification rules in your EMS database, regardless of status, under Show, click Inactive. </p><p>The remainder of this procedure describes how to configure a Check-in notification rule “from scratch.” You can also configure a Check-in notification rule by copying an existing rule. Select the notification rule that you want to copy, click Copy, and then go to Step 3.</p></div></li>
+            <li>Click <span class="ui">New</span>.&#160;The Check-in Notification Rule dialog box opens. The <span class="ui">Check-in Notification Rule</span> tab is the active tab.&#160;<div class="TitleandImage"><p><img src="Images/DC_ConfigCheck-inNotifRules/Check-In_Notification.png" alt="https://success.emssoftware.com/@api/deki/files/1375/Check-In_Notification.png?revision=1&amp;size=bestfit&amp;width=772&amp;height=729" class="resize80_noborder_padding" /></p><p class="Caption">Check-in Notification Rule Dialog Box</p></div></li>
+            <li>
+                <p>Enter the information for the new Check-in&#160;Notification rule.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Option</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Description</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The name or the description for the notification rule.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The description can be a maximum of 50 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Apply Rule</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>When to apply the rule; this&#160;determines when the Check-in notification rule will be applied and trigger. This can be either before or after the Booking Event Start Time.&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Change Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option if the group’s bookings are to be changed to the status selected on the No Show Status drop-down list.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If the appropriate status is not available, you can configure it. See&#160;<a href="ConfigStatuses.htm">Configuring Statuses</a>.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>No Show Status</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The status to which the group’s bookings are changed if the group “no-shows” (do not check in within the allotted time).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Cancel Reason</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Optional; available only if the No Show Status is a Cancel Status type. Select a reason for canceling the “no-show” group.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If the appropriate cancel reason is not available, you can configure it. See&#160;<a href="ConfigCancelReasons.html">Configuring Cancel Reasons</a>.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Send Email</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>If this box is checked it will send a notification email to the selected party/parties (Group, 1st Contact, 2nd Contact, Everyday User).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Header Message</p>
+                                <p>Footer Message</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select a header and/or footer message that is to be displayed on every Check-in notification that is sent.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If the appropriate message is not available, you can configure it. See&#160;<a href="ConfigMessages.htm">Configuring Messages</a>.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Include Virtual Link</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Includes a link to the reservation summary in Virtual EMS.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Include Cancel Link</p>
+                                <p>Include Check In Link</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Available only if Change Status is not selected. Provides links in the notification email so that a user can cancel or check into the booking directly from the notification email.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Email Group</p>
+                                <p>Email 1st Contact</p>
+                                <p>Email 2nd Contact</p>
+                                <p>Email Web User</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Select the appropriate options to indicate to whom the Check-in notification is to be sent.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If the appropriate group, contact, and/or web user is not available, you can configure it. See&#160;<a href="ConfigGroup.htm">Configure Groups</a>,&#160;<a href="ConfigContacts.htm">Configure Contacts</a>, and/or&#160;<a href="ConfigEverydayUser.htm">Configure Everyday Users</a>.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Email From</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Enter the email address that is to be displayed in the Email From field for the group notification.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If you leave the Email From field blank, then the Email From address that was defined during the installation and configuration of the EMS Email Notification Service is used.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Email Subject Line</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Enter the text that is to be displayed in the email subject line. Variables pull in selected data from the event for which the notification is being emailed. You can include variables as described in the Legend. For example,%2% is the code for the group name, so “Notification for %3%” would result in “Notification for Consumer Electronics Association” being displayed in the subject line if "Consumer Electronics Association" was the name of the event.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Do one or more or all the following to set the criteria to trigger&#160;a notification:<ul start="4"><li>Open the&#160;<span class="ui">Rooms&#160;</span>tab and do the following to search for the rooms for which the notification is to apply:</li><li>On the&#160;Building&#160;drop-down list, select one of the following—(all) buildings, a specific building, a specific area, or a specific view.</li></ul><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If the appropriate group, contact, and/or web user is not available, you can configure it. See&#160;<a href="ConfigGroup.htm">Configure Groups</a>,&#160;<a href="ConfigContacts.htm">Configure Contacts</a>, and/or&#160;<a href="ConfigEverydayUser.htm">Configure Everyday Users</a>.</p></div><ul start="4"><li>On the&#160;Room Type&#160;drop-down list, leave the default value of (all), or select a specific room type.&#160;</li><li>On the&#160;Available&#160;list, select the room, or CTRL-click to select multiple rooms, and then click the Move button (&gt;) to move the selected rooms to the Selected list.&#160;If the appropriate room type is not available, you can configure it.<br />See&#160;<a href="ConfigRoomType.html">Configure Room Types</a>.</li><li>Open the&#160;<span class="ui">Statuses&#160;</span>tab, and on the Available list, select the status, or CTRL-click to select the multiple statuses, and then click the Move button (&gt;) to move the selected statuses to the Selected list.&#160;If the appropriate status type&#160;is not available, you can configure it.<br />See&#160;<a href="ConfigRoomType.html">Configure Room Types</a>.</li><li>Open the&#160;<span class="ui">Event Types</span>&#160;tab, and on the Available list, select the event type, or<br />CTRL-click to select the multiple event types, and then click the Move button (&gt;) to move the selected event types to the Selected list.&#160;If the appropriate event&#160;type is not available, you can configure it.<br />See&#160;<a href="ConfigRoomType.html">Configure Room Types</a>.</li><li>Open the&#160;<span class="ui">Group Types</span> tab, and on the Available list, select the group type, or<br />CTRL-click to select multiple group types, and then click the Move button (&gt;) to move the selected group types to the Selected list.&#160;If the appropriate group type is not available, you can configure it.<br />See&#160;<a href="ConfigRoomType.html">Configure Room Types</a>.</li></ul></li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;The Check-in Notification Rule dialog box closes. You return to the Check-in Notification Rules dialog with the newly configured notification rule automatically selected.</li>
+        </ol>
+    </body>
+</html>

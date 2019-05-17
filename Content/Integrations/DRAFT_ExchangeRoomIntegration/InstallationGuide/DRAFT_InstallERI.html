@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Installing Exchange Room Integration V44.1</title>
+    </head>
+    <body>
+        <h1>Install Exchange Room Integration</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ERI/ERI_Note_U32_or_prior.flsnp" />
+        <MadCap:snippetBlock src="../../../CloudInstallNote.flsnp" />
+        <p>To <MadCap:annotation MadCap:createDate="2019-05-16T20:01:34.1875602-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does any of the information in these steps need to change or have notes for customers who are updating?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:02:17.7440116-06:00">install </MadCap:annotation>Exchange Room Integration,&#160;complete these steps:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Verify that&#160;<a href="../../ExchangeRoomIntegration/InstallationGuide/SystemRequirements.html">System Requirements</a>&#160;have been met.</p>
+            </li>
+            <li>
+                <p>Ensure&#160;<a href="../../../EMSPlatformServices/InstallationGuide/InstallPS.html" MadCap:conditions="General.Online Only">EMS Platform Services</a><a href="https://docs.emssoftware.com/Content/EMSPlatformServices/InstallationGuide/InstallPS.html" MadCap:conditions="General.Print Only" target="_blank">EMS Platform Services</a>&#160;has been installed. Update 33 or later is required. </p>
+            </li>
+            <li>
+                <p>Ensure the&#160;<a href="../../../EMSforOutlook/IntegrationtoMicrosoftExchange/InstallUpgradeforEIWservice.htm" MadCap:conditions="General.Online Only">Exchange Integration Web Service</a><a href="https://docs.emssoftware.com/Content/EMSforOutlook/IntegrationtoMicrosoftExchange/InstallUpgradeforEIWservice.htm" MadCap:conditions="General.Print Only" target="_blank">Exchange Integration Web Service</a> is installed.</p>
+            </li>
+            <li>
+                <p>Install the new License file for ERI. If upgrading, you will need to update your existing license with the <MadCap:annotation MadCap:createDate="2019-05-13T18:52:42.7424383-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Who supplies this license? Do they know how to update the license? Do we need to provide instructions?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T18:57:36.9446659-06:00">license for ERI&#160;that has been supplied to you</MadCap:annotation>.&#160;</p>
+            </li>
+            <li>
+                <p>If you will be using ERI&#160;to sync from EMS&#160;to Exchange with EMS&#160;Desktop Client or EMS&#160;Room Sign App, you must install the Update 33 version or later of EMS&#160;Desktop Client or EMS&#160;Room Sign App. </p>
+            </li>
+            <li>
+                <p>If you will be using ERI with EMS&#160;Web App, install Update 33 or later of EMS&#160;Web App to ensure the <span class="ui">Add to Calendar/Send Invitations</span> checkbox is always selected for Exchange-enabled templates. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>
+                        <MadCap:snippetText src="../../../Resources/Snippets/ERI/ERI_WebApp_DeselectCheckbox.flsnp" /> </p>
+                </div>
+            </li>
+            <li>
+                <p><a href="Config_2-WaySyncDeployERI.htm">Configure 2-way sync deployment</a> for ERI.</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2019-05-16T09:50:51.9449083-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to verify these instructions (especially how to navigate to the new tab), and get the description and values information for the parameters." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T23:24:53.3436768-06:00"><a name="ConfigureERI_Settings_AdminPortal"></a>Configure</MadCap:annotation> your <MadCap:annotation MadCap:createDate="2019-05-16T09:47:33.3153869-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to make this info a snippet and add to this section and the Config Platform topic." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T09:47:50.0909861-06:00">ERI&#160;settings in EMS&#160;Platform Services Admin Portal</MadCap:annotation> as follows:&#160;</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Navigate to the EMS Platform Services Admin Portal.&#160;</p>
+                    </li>
+                    <li>
+                        <p>Select <span class="ui">Calendaring</span> &gt; <span class="ui">Exchange Sync</span>.</p>
+                    </li>
+                    <li>
+                        <p>Complete the MS&#160;Graph fields as follows:&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>To complete the MS&#160;Graph fields, you will need the Application ID, EMS 2-Way Sync Secret, and Directory ID that you copied when you <a href="Config_2-WaySyncDeployERI.htm">configured 2-way sync deployment</a> (step 7). </p>
+                        </div>
+                        <ol>
+                            <li>
+                                <p>In the <span class="ui">MSGraphAppID </span>field, enter the Application (client)&#160;ID that you copied when you <a href="Config_2-WaySyncDeployERI.htm">configured 2-way sync deployment</a> (step 6).</p>
+                            </li>
+                            <li>
+                                <p>In the MSGraphAppSecret field, enter the EMS 2-Way Sync Secret that you copied when you <a href="Config_2-WaySyncDeployERI.htm">configured 2-way sync deployment</a> (step 6).</p>
+                            </li>
+                            <li>
+                                <p>and <span class="ui">MSGraphTenantID</span> fields, enter the Application (client)&#160;ID, Directory (tenant) ID, and EMS 2-Way Sync Secret that you copied when you <a href="Config_2-WaySyncDeployERI.htm">configured 2-way sync deployment</a> (step 7).</p>
+                            </li>
+                        </ol>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The values you enter in the preceding MS&#160;Graph fields will be stored in dbo/tblRegistry.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>In the Exchange Sync Configuration section, <MadCap:annotation MadCap:createDate="2019-05-16T09:40:58.1670570-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need note to explain what these parameters do and how they affect the 2-way sync." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T09:41:15.6123287-06:00">set your defaults for the Exchange Sync parameters</MadCap:annotation>:</p>
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2019-05-16T20:25:31.2401293-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Update this description later to say something about process template:\r\n \r\n&quot;Customer will  be required to configure defaults parameters for the bookings imported from exchange.  These defaults are required because booking imported from exchange to EMS will not be associated with a process template.&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:26:42.9132827-06:00">To properly sync with EMS</MadCap:annotation>, reservations created in native Exchange applications, such as Outlook Mobile, must have a Reserve Status, Conflict Status, Cancel Status, Default Group, Reservation Source, and Default Organizer Mailbox (see the following table for details). When Exchange syncs with EMS, the  values you have selected for the Exchange Sync parameters will be applied to  the reservations.</p>
+                        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 220px;" />
+                            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 412px;" />
+                            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                        <p><a name="ExchangeSyncParameters"></a>Exchange Sync Parameter</p>
+                                    </th>
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                        <p>Description</p>
+                                    </th>
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                        <p>Values</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p><b>Reserve Status</b>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>From the drop-down list, select a Reserve Status to <MadCap:annotation MadCap:createDate="2019-05-16T15:15:57.5796669-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Better word? Append? add?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T15:16:15.6126299-06:00">assign </MadCap:annotation>to reservations created in native Exchange applications, such Outlook Mobile. </p>
+                                        <p>This is a required field.<![CDATA[  ]]></p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">All active reserve statuses that have been configured in EMS&#160;Desktop Client.</td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p><b>Conflict Status</b>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>From the drop-down list, select a Conflict Status to assign to reservations created in native Exchange applications. </p>
+                                        <p>This is a required field.  </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">All active <MadCap:annotation MadCap:createDate="2019-05-16T15:14:15.2705499-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Is there more than one conflict status that can be configured and made active?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T15:14:29.2425496-06:00">conflict </MadCap:annotation>statuses that have been configured in EMS&#160;Desktop Client.</td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p><b>Cancel Status</b>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>From the drop-down list, select a Cancel Status to assign to reservations created in native Exchange applications </p>
+                                        <p>This is a required field.  </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">All active <MadCap:annotation MadCap:createDate="2019-05-16T15:14:15.2705499-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Is there more than one cancel status that can be configured and made active?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T15:17:03.1000922-06:00">cancel </MadCap:annotation>statuses that have been configured in EMS&#160;Desktop Client.</td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p><b>Default Group</b>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>From the drop-down list, select a Default Group to assign to reservations created in native Exchange applications. </p>
+                                        <p>This is a required field.  </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">All active groups  that have been configured in EMS&#160;Desktop Client.</td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p><b>Reservation Source</b>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>From the drop-down list, select a Reservation Source to apply to reservations created in native Exchange applications. </p>
+                                        <p>When reservations are created in native Exchange apps and then synced with EMS, users can view the source of a reservation in EMS&#160;Desktop Client by opening the  reservation, clicking the <span class="ui">Properties </span>tab, and scrolling to the <span class="ui">Source</span> field. Users can also create custom reports based on the Reservation Source to see how many reservations originated from native Exchange applications vs. <MadCap:annotation MadCap:createDate="2019-05-16T17:06:03.6709746-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does the report have to be &quot;custom&quot;? Is there a way to generate a report for Reservation Source with the default report options or by creating a query? Do we need to explain this to users so they can gather this information?\r\n\r\nCould instead say, &quot;that list the reservations created in native Outlook applications.&quot; \r\n" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T17:13:49.2933298-06:00">EMS&#160;products</MadCap:annotation>. </p>
+                                        <p>This is a required field.  </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">All active <MadCap:annotation MadCap:createDate="2019-05-16T17:07:42.1055531-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Are Reservation Sources in DTC right now (pre-U33)? If so, what are the options? If not, what are the values for this field? I couldn't find information in the documentation." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T17:09:10.1155390-06:00">reservation sources</MadCap:annotation> that have been configured in EMS&#160;Desktop Client.</td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                        <p><b><a name="DefaultOrganizerMailbox"></a>Default Organizer Mailbox</b>
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                        <p>This is field is only used by EMS&#160;Room Sign App and EMS&#160;Kiosk App. For reservations created in a native Exchange application, the Default Organizer Mailbox value is applied when an organizer's Exchange email address cannot be determined. </p>
+                                        <p>
+                                            <MadCap:annotation MadCap:createDate="2019-05-16T15:25:00.2000346-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Look up PAM config info for terminology and how to do it." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T15:25:13.7102844-06:00">If you are using ERI&#160;with EMS&#160;Room Sign App and/or EMS&#160;Kiosk App, do the following to locate the value for the <span class="ui">Default Organizer Mailbox</span> field:&#160;</MadCap:annotation>
+                                        </p>
+                                        <ol style="list-style-type: lower-alpha;">
+                                            <li>
+                                                <p>Open your <i>PAMconfig.aspx</i> page. </p>
+                                            </li>
+                                            <li>
+                                                <p>Locate the <span class="ui">SyncOrganizerMailBox</span> field and copy the value from the field into the <span class="ui">Default Organizer Mailbox</span> field in EMS Platform Services Admin Portal (<span class="ui">Calendaring </span>tab &gt; <span class="ui">Exchange Sync</span> section). </p>
+                                            </li>
+                                        </ol>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                        <p>Text field. </p>
+                                        <p>Enter the value from the <span class="ui">SyncOrganizerMailBox</span> field on the <i><MadCap:annotation MadCap:createDate="2019-05-16T17:33:28.9388851-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Look up PAM config info for terminology and how to do it." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T17:33:29.2876855-06:00">PAMconfig.asp</MadCap:annotation>x</i> page.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Click <span class="ui">Save</span>.</p>
+                        <p>Your default parameter selections are saved.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>
+                    <MadCap:annotation MadCap:createDate="2019-05-14T20:24:53.8149928-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="At what point should initial sync be performed? What info should we give customers here? Should all customers perform initial syncs both ways, if they have the data? Need to provide guidance to users on the when, why, and who should do this." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T09:37:41.3703712-06:00">Perform an initial sync of your Exchange booking data and EMS&#160;booking data as follows</MadCap:annotation>:</p>
+                <ol start="1" style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>To perform an <MadCap:annotation MadCap:createDate="2019-05-16T20:32:04.6812558-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="For cloud customers, does Cloud services do this? If so, I will add a note." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:32:14.6528095-06:00">initial sync of Exchange booking data</MadCap:annotation> from Exchange to EMS, <MadCap:annotation MadCap:createDate="2019-05-14T20:24:17.2271738-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Maybe put instructions in a different topic, if the instructions are long and require a lot of information.\r\n\r\nSee EMS&#160;544—Ankita will provide more info after next sprint. Exchange to EMS (Platform will take care of initial sync)—Prior to using ERI, customer has five room calendars and wants to sync reservations with these calendars to EMS&#160;to have availability correct.Provide time estimate: If you have x bookings, the sync will take approximately y amount of time to complete." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T13:22:38.5058559-06:00">do the following:</MadCap:annotation></p>
+                        <p>[Content TBD]</p>
+                        <p>ERI&#160;does not need to be installed or configured for the initial sync from <MadCap:variable name="General.Exchange-to-EMS" />. EMS&#160;Platform Services will perform this initial sync. The initial sync will only sync bookings from current date. </p>
+                    </li>
+                    <li>
+                        <p>To perform an initial sync of EMS&#160;booking data from <MadCap:annotation MadCap:createDate="2019-05-16T20:31:28.9526000-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="For cloud customers, does Cloud services do this? If so, I will add a note to the Exchange Sync Utility topic." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:31:51.1237889-06:00">EMS&#160;to Exchange</MadCap:annotation>, install and use the <a href="DRAFT_ExchangeSyncUtility.html">Exchange Sync Utility</a>. </p>
+                        <p>The Exchange Sync Utility will upload bookings in EMS&#160;to Exchange. <MadCap:annotation MadCap:createDate="2019-05-14T20:24:05.7771115-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="True?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T20:24:07.3281737-06:00">For bookings to be uploaded, the bookings must contain rooms/resources linked to Exchange mailboxes</MadCap:annotation>.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p>Once you have completed the installation process for ERI, you will <MadCap:annotation MadCap:createDate="2019-05-16T15:30:21.3521920-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Once they do complete the install and configure ERI rooms/resources, do they need to test the two-way sync. How will they know the ERI install and sync setup worked?\r\n\r\nAlso, how do users make the ERI tab appear in Desktop Client (by enabling in PS admin portal?)?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-16T20:50:31.5443863-06:00">need </MadCap:annotation>to configure <a href="../ConfigurationGuide/DRAFT_ConfigRoomResourceERI.html#Configure_Resource_Mailboxes_in_MicrosoftExchange">resource mailboxes</a> in Microsoft<sup>®</sup>&#160;Exchange, and then you can configure rooms and resources in EMS&#160;Desktop Client: </p>
+        <ul>
+            <li>
+                <p><a href="../ConfigurationGuide/DRAFT_ConfigRoomResourceERI.html#Configure_a_Room_in_EMS_for_Exchange_Room_Integration">Configure a Room in EMS for ERI</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../ConfigurationGuide/DRAFT_ConfigRoomResourceERI.html#ConfigFixedResourcesTiedtoRoom">Configure Fixed Resources in a Room for ERI</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../ConfigurationGuide/DRAFT_ConfigRoomResourceERI.html#EMS_Configuration_for_Mobile_Resources_Without_Service_Orders">Configure Mobile Resources (w/o Service Orders) for ERI</a><![CDATA[  ]]></p>
+            </li>
+        </ul>
+    </body>
+</html>

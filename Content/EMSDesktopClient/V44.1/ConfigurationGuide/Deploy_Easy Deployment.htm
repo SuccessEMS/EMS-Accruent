@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Web Deployment Easy Deployment V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Easy Deployment with a Conventional EMS Desktop Client Deployment</h1>
+        <h2 class="Heading2">What is EMS "Easy Deployment"?&#160;</h2>
+        <p>This additional&#160;application layer&#160;on the&#160;<a href="#">conventional deployment</a>&#160;simplifies the deployment process for administrative users&#160;so they can deploy EMS Desktop Client software installations directly to their users' workstations. For an overview, see our&#160;<a href="https://www.youtube.com/watch?v=HnsRawVNDt4" title="https://www.youtube.com/watch?v=HnsRawVNDt4">webinar</a>.&#160;It does this&#160;by running&#160;all database queries through a Web Service, which&#160;allows the database server to be isolated from the end user network. By using this tool,&#160;your users do not need to first navigate to the EMS web deploy website and&#160;download the application to their local profile.</p>
+        <h3 class="Heading3">What Are My Deployment Options?&#160;</h3>
+        <p>EMS Deployment is a&#160;process you can use to programmatically deploy software to your end user workstations, either via the web or using conventional methods. See the&#160;Web Deployment VS Conventional Deployment&#160;Decision guide&#160;to understand&#160;how&#160;we can handle that process for you. We recommend implementing a deployment method in order to minimize additional legwork to roll out the EMS Desktop Client to your organization.&#160;</p>
+        <h4 class="Heading4">How a Deployment Changes Standard Configurations&#160;</h4>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.jpg" alt="Conventional Deploy Arch.jpg" class="popup_with_padding_and_border" />
+            </p>
+            <p class="Caption">Standard Configuration</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop_1.jpg" alt="Desktop Web Deploy Arch1.jpg" class="popup_with_padding_and_border" />
+            </p>
+            <p class="Caption">Configuration after completion of this topic</p>
+        </div>
+        <h2 class="Heading2">Prerequisites for Easy Deployment&#160;</h2>
+        <ul>
+            <li>EMS Desktop Client installed on end users' machines</li>
+            <li>EMS Web Deploy Service installed on a web server so&#160;end users are able to access it</li>
+            <li>A method&#160;to remotely push a registry value&#160;into end users' registries</li>
+        </ul>
+        <h4 class="Heading4">Modify&#160;the EMS Web Deploy Service&#160;</h4>
+        <p>By default, once you install the Web Deploy Service, users will be able to download and run the desktop client directly from that service. To prevent that, you should&#160;delete or rename the&#160;install.html file&#160;within that service. This will prevent clients from being able to download the client and&#160;ensure that you can maintain the desktop installations via your application delivery policy. This will also keep the application running outside the users' network.</p>
+        <h4 class="Heading4">Modify the Desktop Client&#160;</h4>
+        <p>To connect&#160;the Conventional Desktop Client to to the web service instead of directly to the database, you will need to&#160;add a String Value named "AppFacadeUrl"&#160;to the users' registry:</p>
+        <p class="indent_14">HKEY_CURRENT_USER\SOFTWARE\EMS Software\Version 44.1</p>
+        <p>The Value of this String will be the URL to the Web Service. For example:&#160;"http://yourwebserver.domain.local/em...ktopwebdeploy/").&#160;Once that key is in place, any server and database keys are ignored. To revert back to a direct database connection, simply delete the Registry Key "AppFacadeUrl"</p>
+        <h4 class="Heading4">Updates&#160;</h4>
+        <p>Once the Conventional Desktop client points to the Web service for Connection to the database, it will not auto-update. When it comes time to deploy a new build of the software, you will need to install the updated Web Deploy Version to update the web server side,&#160;then push the updated local client&#160;from the updated MSI file, and deploy it using your standard installation methods. See&#160;<a href="Deploy_ConventionalDeployment.htm">Conventional EMS Desktop Client&#160;Deployment</a>&#160;for further information.</p>
+    </body>
+</html>

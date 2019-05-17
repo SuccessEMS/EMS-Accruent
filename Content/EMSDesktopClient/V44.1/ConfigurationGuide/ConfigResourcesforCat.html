@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure Resources for a Category V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Resources for a Category</h1>
+        <p>Resources (also called booking detail items) are the individual items or services that your users can reserve for an event. Resources are grouped by <a href="CategoriesResourcesServices_WhatsDiff.htm">category</a>. For example, a furniture category might contain tables and chairs as the resources. </p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Although you can use categories to track setup notes, meeting attendees, and activities for a booking, you do not configure resources for these categories. You must only configure resources for service categories.</p>
+        </div>
+        <p>This topic provides information to (tabs accessed through <span class="ui">Configuration </span>&gt; <span class="ui">Resources </span>&gt; select a category &gt; <span class="ui">New</span>):</p>
+        <ul class="unorder-list">
+            <li><a href="#ConfigureResCat">Configure Resources for a Category</a> (Resource tab)</li>
+            <li><a href="#AssignCalc">Assign Calculations to a Resource</a> (Calculations tab)</li>
+            <li><a href="#ConfigurePricingResource">Configure Pricing for a Resource</a> (Pricing tab)</li>
+            <li><a href="#AssociateImagewithRes">Associate an Image with a Resource</a> (Images tab)</li>
+            <li><a href="#EditProduction">Edit Production Items for a Resource</a> (Production Items tab)</li>
+            <li><a href="#ExcludeRooms">Exclude Rooms for a Resource</a> (Excluded Rooms tab)</li>
+            <li><a href="#CreatePackage">Create a Package for a Resource</a> (Package Items tab)</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can use the <a href="ResourceConfigWiz.htm">Resource Configuration Wizard</a> to configure multiple resources that have common properties, such as grouping, account, and EMS Web App&#160;settings</p>
+        </div>
+        <h2><a name="ConfigureResCat"></a>Configure Resources for a Category</h2>
+        <p>To configure resources for a category, complete the following steps:</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You must configure a category prior to configuring the resources for that category. See <a href="ConfigCategory.html">Configure Categories</a> for more information.</p>
+        </div>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Resources</span>. A list of all the categories that are currently configured in your EMS database and for which you can configure resources opens. If the appropriate category is not listed, you can <a href="ConfigCategory.html">configure it</a>.</li>
+            <li>Select the category for which you are configuring the resources. The Resources window opens. This window lists all of the resources that are currently configured in your EMS database for the selected category and that have a status of <span class="ui">Active</span>.<ul><li>To view all resources for the category in your EMS database, regardless of status, under Show, click <span class="ui">Inactive</span>.</li><li>To filter the displayed resources based on the Resource name, in the Filter field, enter a search string (not case-sensitive, but characters must be in exact order).<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The search string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;Cold&#160;returns&#160;Cold&#160;Boxed Lunches, but not Sandwiches (Cold).</p></div><div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWindow1.PNG" class="resize80_border_and_padding" /></p><p class="Caption"><a name="ResourcesWindow"></a>Resources Window</p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The remainder of this procedure describes how to configure a resource “from scratch.” You can also configure a resource by copying an existing resource. Select the resource that you want to copy, and click <span class="ui">Copy</span>.</p></div></div></li></ul></li>
+            <li>From the Resources dialog box, click <span class="ui">New</span>. The Resource dialog box opens.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWin-ResourcesTab.PNG" class="resize80_border_and_padding" title="Resource Dialog Box, Resources Tab Showing" alt="Desktop Client Resource dialog box for configuring individual resources for a category" /></p><p class="Caption">Resource Tab on the Resource Dialog Box</p></div></li>
+            <li>Enter the information for the new resource.</li>
+        </ol>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 144px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+The name or description of the resource.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The description can be a maximum of 50 characters, including spaces. Resource items are displayed alphabetically in EMS Desktop Client. As a result, when you are configuring a group of similar items, you might want to start the name of each with a common feature. For example, if you have black, white, and blue linens, a good way to name them would be “Linens, black,” “Linens, white,” and so on.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Grouping
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+If needed, select a grouping.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If no groupings are available, or if the appropriate grouping is not available, you can always <a href="ConfigGroupingsResource.html">configure a grouping</a>, and then edit the resource at a later date to place it in a grouping. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Account
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+Select the internal account which is to receive the revenue from the use of the resource.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate account is not available, you can <a href="ConfigAccount.htm">configure it</a>. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Sequence
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+Enter a number that determines the order in which the resource is displayed in a list with other resources in either EMS Desktop Client or EMS Web App. Resources are ordered from lowest to highest sequence number, with the resource with the lowest sequence number being displayed first.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you leave the sequence set to the default value of zero for all resources, then by default, the resources are displayed alphabetically.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a name="Package_on_ResourceTab"></a>Package
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+Select this option if the resource is to be a package.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>A package is a collection of related resources. See Also:&#160;<a href="#CreatePackage">Create a Package for a Resource</a>. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Use Package Item Prices</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+
+Available only if <span class="ui">Package </span>is selected. Select this option if the package price is to be the sum total of the prices for the individual resources that make up the package; otherwise, you can define a different price for the package on the <span class="ui">Pricing </span>tab. See Also:&#160;<a href="#ConfigurePricingResource">Configure Pricing for a Resource</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><a name="Override_Description"></a>Override Description
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option to allow your EMS users to edit the description when they are adding it to a booking.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>A common use for this feature is to configure a resource called “Other” for each of your resource categories which users can rename to whatever non-inventory item is needed when they select it.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maintain Inventory
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+Select this option if you have a limited number of this item and you want EMS to notify your users when they attempt to overbook it.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Quantity Available
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only if you select <span class="ui">Maintain Inventory</span>. Enter the number of resource items of this type that your organization has in its inventory.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>External Reference
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+Links the resource to an outside program if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Internal</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+
+Indicates that the resource is internal to your organization.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Used for internal reporting purposes only. The resource is not printed on external documents such as confirmations and invoices, and it is not hidden in any area of your EMS application.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a name="Production_Item_on_ResourceTab"></a>Production Item
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available only if the category to which you are adding the resource has been designated as using production items. Select this option if this resource item is to be a production item. See Also:&#160;<a href="DefineProdAreaItems.htm">Define Production Areas and Production Items for a Catering Resource</a> and <a href="#EditProduction">Edit Production Items</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Serves
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+The number of users that can be served by the resource. For example, one lunch buffet might serve ten people.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Min. Quantity</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+
+The minimum quantity required when selecting the resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Alert
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+Enter a message that is to be displayed when a user adds the resource to a booking in the <MadCap:variable name="General.EMS&#160;Desktop Client" />.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Notes
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+Any other additional information that is pertinent to the item itself, the use of the item, and so on. Notes displayed in EMS and EMS Web App are printed on <a href="../UserGuide/Confirmations.html" MadCap:conditions="General.Online Only">confirmations</a><a href="https://docs.emssoftware.com/Content/EMSDesktopClient/V44.1/UserGuide/Confirmations.html" MadCap:conditions="General.Print Only">confirmations</a> and the <a href="../UserGuide/ReportDescriptionsOptions.html#Setup_Worksheet" MadCap:conditions="General.Online Only">Setup Worksheet report</a><a href="https://docs.emssoftware.com/Content/EMSDesktopClient/V44.1/UserGuide/ReportDescriptionsOptions.html" MadCap:conditions="General.Print Only">Setup Worksheet report</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" colspan="2">
+                        <p colspan="2"><span class="ui"><MadCap:variable name="General.EMS&#160;Web App"></MadCap:variable> Settings</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Available to Everyday Users
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+To have this resource be an available option for EMS Web App users who select this category, leave <span class="ui">Available on Web</span> selected.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Not available if <span class="ui">Override Description</span> is selected (see <a href="#Override_Description">Override Description</a> above).</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Available at Checkout
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+Select this option if you want the resource to be displayed on the “checkout” page (the last page in the Room Request process) in EMS Web App.
+
+</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Not available if <span class="ui">Available to Everyday Users</span> is not selected.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hide Special Instruction</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Do not show any special instructions for the resource in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Display Alert to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>
+
+If an alert has been configured for the resource, then display this alert when a user adds this resource to a booking in EMS Web App.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can click <span class="ui">Spelling </span>to spell check the information that you entered for the resource before you save it.</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>You can continue to one or more of the subsequent procedures in this topic to further configure the resource:<ul MadCap:continue="true"><li><a href="#AssignCalc">Assign Calculations to a Resource</a></li><li><a href="#ConfigurePricingResource">Configure Pricing for a Resource</a></li><li><a href="#AssociateImagewithRes">Associate an Image with a Resource</a></li><li><a href="#EditProduction">Edit Production Items for a Resource</a></li><li><a href="#ExcludeRooms">Exclude Rooms for a Resource</a></li><li><a href="#CreatePackage">Create a Package for a Resource</a></li></ul><p>Once you have finished configuring the resource, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</p></li>
+        </ol>
+        <p>After you have configured the resource, you can do the following:</p>
+        <ul>
+            <li>If this is the first time that you have configured resources for the category, and the category is <span class="ui">Catering</span> or <span class="ui">Resources, w Service Orders</span>, you must also configure at least one <a href="ConfigCategory.html#Default_Service">default service type</a>.</li>
+            <li>You can <a href="DefineProdAreaItems.htm">define production items</a> for the resource and/or <a href="DefineResourceSel.htm">define selections</a> for the resource.</li>
+        </ul>
+        <h2><a name="AssignCalc"></a>Assign Calculations to a Resource </h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can <a href="ConfigCategory.html#CalculationsCategory">assign calculations at the category level</a>, too. If you have already assigned calculations to a resource’s category, then these calculations are automatically applied to new resources for the category. These calculations are displayed in the <span class="ui">Selected </span>list after you click <span class="ui">OK </span>and save the resource.</p>
+        </div>
+        <p>From the <span class="ui">Calculations </span>tab on the Resource dialog box, you can assign calculations to a resource as follows:</p>
+        <ol class="number-list">
+            <li>If needed, open the Resource dialog box , and then open the <span class="ui">Calculations </span>tab.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWin-CalculationsTab.PNG" class="resize80_border_and_padding" title="Calculations Tab" alt="Calculations tab of the Resource dialog box " /></p><p class="Caption">Calculations Tab on the Resource Dialog Box</p></div></li>
+            <li>On the <span class="ui">Available </span>list, select the calculation, or CTRL-click to select the multiple calculations that are to apply to this resource, and then click the Move button (&gt;) to move the selected calculations to the <span class="ui">Selected </span>list. If the appropriate calculation is not available, you can configure it. See <a href="ConfigCalc.htm">Configure Calculations</a>.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2><a name="ConfigurePricingResource"></a>Configure Pricing for a Resource</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can also <a href="ConfigPricingResourceEditPriceWin.htm">configure the resource price on the Edit Pricing window</a> or when you are <a href="ConfigRateSchedule.htm">configuring rate schedules</a>.</p>
+        </div>
+        <p>From the <span class="ui">Pricing </span>tab on the Resource dialog box, you can configure pricing for a resource as follows:</p>
+        <ol class="number-list">
+            <li>If needed, open the Resource dialog box, and then open the <span class="ui">Pricing </span>tab.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="Images/DC_Resources/ResourcesWin-PricingTab.PNG" class="resize80_border_and_padding" title="Pricing Tab" alt="Pricing tab of the Resource dialog box" />
+            </p>
+            <p class="Caption">Pricing Tab on the Resource Dialog Box</p>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>For each rate schedule, select the rate schedule row and then click in the Pricing Method field and select the pricing method from the drop-down list. The pricing method determines the cost for reserving the resource (see the following table). If the appropriate rate schedule is not available, you can <a href="ConfigRateSchedule.htm">configure it</a>.</li>
+        </ol>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 180px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2018-10-22T13:35:37.6938664-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="If updating this pricing methods table, you may also need to update the pricing tables in the following topics: ConfigResourcesforCat.html, ConfigRateSchedule.htm, ConfigPricingResourceEditPriceWin.htm, ConfigRoomPricing.htm, and ConfigRooms.html. Note that the tables in the Room topics are slightly different from the other pricing methods tables in the topics." MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T13:41:43.8043179-06:00">Pricing Method</MadCap:annotation>
+                        </p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Half Day/Full Day (Event Time)</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+
+The total number of hours for the <span class="italics">event </span>is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the event is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the resource. If the total number of hours for the event is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Half Day/Full Day (Reserved Time)
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The total number of hours for the <span class="italics">reservation </span>(event time and reserved time) is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the reservation is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the resource. If the total number of hours for the reservation is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>
+                            <MadCap:annotation MadCap:createDate="2018-10-22T13:25:20.1744929-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Okay to add this method to the Pricing Method table? Is description correct?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T13:25:56.1701941-06:00">Half Day/Full Day (Service Time)</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The total number of hours for the <span class="italics">service time </span>is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the service time is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the billable item. If the total number of hours for the service time is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the billable item.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This pricing method is only available for a resource with a service order.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hourly (Event Time)
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The price that is indicated in the Price column is multiplied by the <span class="italics">event time</span> (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Hourly (Reserved Time)
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+The price that is indicated in the Price column is multiplied by the <span class="italics">reserved time</span> (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Hourly (Service Time)
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The price that is indicated in the Price column is multiplied by the <span class="italics"><MadCap:annotation MadCap:createDate="2018-10-22T13:33:25.4385652-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should this be &quot;service time&quot; instead of &quot;reserved time&quot;?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T13:33:43.5282859-06:00">reserved</MadCap:annotation> time</span> (in hours) for the service (resource). This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This pricing method is only available for a resource with a service order.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Hourly (Specific)
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The price that is indicated in the Price column is multiplied by the number of hours indicated when adding the resource to a booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Unit
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>The price that is indicated in the Price column is applied to the resource, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>After you select a pricing method, click in the appropriate fields to select the currently displayed amount and edit the amount as needed.</li>
+        </ol>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 147px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Price
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+The dollar amount that is used in calculating the resource price for a booking. If the pricing method is Unit, then this value is applied in total to a resource, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Discount
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+You can use a discount with any pricing method. If you specify a discount for a resource, then the actual price, the discount percentage, and the discounted amount are displayed on confirmations and invoices.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Min. Charge
+
+Max. Charge</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>
+
+The values that are indicated in these columns are used in conjunction with the Hourly pricing methods. If you specify a minimum charge for a resource, then the system compares this value to the calculated hourly rate and applies the greater of the two charges. Likewise, if you specify a maximum charge for a resource, then the system compares this value to the calculated hourly rate and applies the lesser of the two charges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Flat Price
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>
+A resource price that remains constant regardless of the total number of hours booked for the resource. Used in conjunction with Hourly (Event Time) and Hourly (Reserved Time).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Half Day Price
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The dollar amount that is used in calculating the resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Full Day Price
+
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The dollar amount that is used in calculating the resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Hours
+</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>
+Multiplier used in calculating the resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2><a name="AssociateImagewithRes"></a>Associate an Image with a Resource</h2>
+        <p>From the <span class="ui">Images </span>tab on the Resource dialog box, you can associate an image with a resource if the image is in one of the following formats—.gif, .jpeg, .jpg, .bmp, .wmf, or .png and ideally, it should not be larger than 615 x 350 pixels. If you attach an image larger than this, you might not be able to view the image without scrolling. Any images that you associate with the resource are <MadCap:annotation MadCap:createDate="2018-10-22T14:27:34.4333810-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Room images appear in Mobile App. Can resource images be displayed? Can't select resources in Mobile, right?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T14:33:21.0147156-06:00">displayed only in EMS Web App</MadCap:annotation>. They are not displayed in the <MadCap:variable name="General.EMS&#160;Desktop Client" />.</p>
+        <ol class="number-list">
+            <li>If needed, open the Resource dialog box, and then open the <span class="ui">Images </span>tab.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWin-ImagesTab.PNG" class="resize80_border_and_padding" title="Images Tab" alt="Images tab of the Resource dialog box" /></p><p class="Caption">Images Tab on the Resource Dialog Box</p></div></li>
+            <li>To display an image of the resource in the EMS Web App interface, click <span class="ui">New </span>to open the Find Image dialog box, and then browse to and select the image and click <span class="ui">Open</span>. The Find Image dialog box closes. You remain on the <span class="ui">Images </span>tab with an entry for the image displayed on the tab.</li>
+            <li>Optionally, after selecting the image, click in the <span class="ui">Web Long Description</span> field and enter a description of the resource. The value that you enter here defines the “long desc” attribute for web content accessibility.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2>Edit<a name="EditProduction"></a> Production Items for a Resource</h2>
+        <p>The <span class="ui">Production Items</span> tab lists all the production items that have been defined in your EMS database (see also:&#160;<a href="DefineProdAreaItems.htm">Define Production Areas and Production Items for a Catering Resource</a>). </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The <span class="ui">Production Items</span> tab is available only if you did NOT select <span class="ui"><a href="#Production_Item_on_ResourceTab">Production Item</a></span> on the <span class="ui">Resource</span> tab when you were configuring the resource.</p>
+        </div>
+        <ol class="number-list">
+            <li>If needed, open the Resource dialog box, and then open the <span class="ui">Production Items</span> tab.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWin-ProductionItemsTab.PNG" class="resize80_noborder_padding" title="Production Items Tab" alt="Production Items tab of the Resource dialog box (tab only displays if Production Item option is not selected on the Resource tab)" /></p><p class="Caption">Production Items Tab on the Resource Dialog Box</p></div></li>
+            <li>Optionally, do one or more of the following to filter the production items that are displayed:<ul MadCap:continue="true"><li>Select a production area. (The default value is <span class="ui">(all)</span>.)</li><li>To filter the displayed production items based on the Item name, in the Filter field, enter a search string.</li><li>Select <span class="ui">Show Selected Only</span>. Only those production items that have previously been selected for the resource are displayed.</li></ul></li>
+            <li>Select a production item and change the quantity for the item. If you do not want a production item to be assigned to the resource, make sure that the quantity for the item is set to zero.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2><a name="ExcludeRooms"></a>Exclude Rooms for a Resource</h2>
+        <p>This feature prevents a resource from being allocated for a specific room.</p>
+        <ol class="number-list">
+            <li>If needed, open the Resource dialog box, and then open the <span class="ui">Excluded Rooms</span> tab.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWin-ExcludedRoomsTab.PNG" class="resize80_noborder_padding" title="Excluded Rooms Tab" alt="Excluded Rooms tab of the Resource dialog box" /></p><p class="Caption">Excluded Rooms Tab on the Resource Dialog Box</p></div></li>
+            <li>Select the search criteria to search for the excluded rooms.<ul MadCap:continue="true"><li><span class="ui">Building</span></li><li><span class="ui">Room Type</span> — leave the default value of <span class="ui">(all)</span>, or select a specific room type.</li></ul></li>
+            <li>On the <span class="ui">Available </span>list, select the room (CTRL-click to select multiple rooms) from which the resource item is to be excluded, and then Move (&gt;) to the <span class="ui">Selected </span>list.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2><a name="CreatePackage"></a>Create a Package for a Resource</h2>
+        <p>A package is a group of resources. You can combine a list of related resources into a package to streamline booking. For example, an Instructor A/V package might include a laser pointer, a mobile microphone, and a flip chart. You select the items for a resource package on the <span class="ui">Package Items</span> tab on the Resource dialog box. You can set the price for a package to be the sum total of the individual resources that make up the package, or you can set an independent price for the package.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The <span class="ui">Package Items</span> tab is available only if you select <span class="ui"><a href="#Package_on_ResourceTab">Package</a> </span>on the <span class="ui">Resource </span>tab when you are configuring the resource.</p>
+        </div>
+        <ol class="number-list">
+            <li>If needed, open the Resource dialog box, and then open the <span class="ui">Packaged Items </span>tab. The tab displays all the resources that have been configured for the selected category.<div class="TitleandImage"><p><img src="Images/DC_Resources/ResourcesWin-PackageItemsTab.PNG" class="resize80_noborder_padding" title="Package Items Tab" alt="Package Items tab of the Resource dialog box (tab only displays if Package option is selected on the Resource tab)" /></p><p class="Caption">Package Items Tab on the Resource Dialog Box</p></div></li>
+            <li>Optionally, to filter the display, click <span class="ui">Show Selected Only</span>. Only those resource items that have previously been selected to be part of the resource package are displayed.</li>
+            <li>For each resource item that is to be included in the package, double-click in the Quantity field, and then enter the appropriate quantity for the resource item.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click <span class="ui">OK </span>to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+    </body>
+</html>

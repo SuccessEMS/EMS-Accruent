@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Group Notifications V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure Group Notification Rules</h1>
+        <p><span class="italics">Group notification rules</span> determine the conditions under which groups that are holding events at your facility are reminded through an email notification about their events. You&#160;configure&#160;group notifications based on rooms, statuses, event types, group types, and/or categories. A group notification is generated only if all the criteria that you specified is met. For example, if you specify Room 100, Confirmed status&#160;with&#160;catering, then a Confirmed meeting in Room 100&#160;without&#160;a catering service order does&#160;not&#160;result in a notification being generated. Group notification emails contain a summary of the group's events. For example, if a group has a weekly Friday meeting (a booking) that continues for several months, and you define a group notification rule with a monthly frequency, then the group receives a notification email once a month that lists all the Friday meetings for the month.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Configuring Group Notification Rules is similar to configuring notification rules for individuals. If you are familiar with this process, you can apply the same rules for groups.</p>
+        </div>
+        <p>You can configure multiple group notifications in EMS Enterprise. You can configure only a single group notification in EMS Professional. For notification emails to be sent, the EMS Email Notification Service must be installed and configured. Refer to the EMS Installation instructions for details.</p>
+        <p>This section contains information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#ConfigureGroupNot">Configure a Group Notification&#160;</a>
+            </li>
+            <li><a href="#Set">Set the Confirmation Rules for a Group Notification Email&#160;</a>
+            </li>
+        </ul>
+        <h2 class="Heading2"><a name="ConfigureGroupNot"></a>Configure a Group Notification&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click Configuration &gt; Administration &gt; Group Notification Rules.&#160;The Group Notification Rules window opens. This window lists all the group notification rules that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Group Notification.png" alt="emssg_coreadmin_image013.png" class="padding_only" />
+        </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Optionally, to view all group email notification rules in your EMS database, regardless of status, under Show, click Inactive.</p>
+        </div>
+        <p>The remainder of this procedure describes how to configure a group email notification rule “from scratch.” You can also configure a group email notification rule by copying an existing rule. Select the notification rule that you want to copy, click Copy, and then go to&#160;Step 3.</p>
+        <ol start="2" class="number-list">
+            <li>Click New.&#160;The Group Notification Rule dialog box opens. The Group Notification Rule tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_GroupNot1.png" alt="emssg_coreadmin_image014.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>Enter the information for the new group notification rule.</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The name or description for the group notification rule.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The description can be a maximum of 50 characters, including spaces.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Header Message</p>
+                        <p>Footer Message</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select a header and/or footer message that is to be displayed on every notification that is sent to the group.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate message is not available, you can configure it. See <a href="ConfigMessages.htm" title="Configuring Messages" alt="Configuring Messages">Configuring Messages</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Email Format</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the format (HTML or Plain Text) for the email.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Frequency</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select the frequency with which the notification is to be sent.</p>
+                        <ul class="unorder-list">
+                            <li>Daily—You must indicate how many days prior to/after the Booking Date/Last Booking Date that the notification is to be sent.</li>
+                            <li>Weekly—You must select the day on which the notification is to be sent and for which bookings. (For example, every Friday for bookings that start on the following Monday).</li>
+                            <li>Monthly—You must indicate how many days prior to the end of the month that the notification is to be sent.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Multiple Bookings Only</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only in EMS Workplace. Select this option to notify users if they have multiple bookings on a particular day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Send Confirmation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option to attach a full detailed confirmation to the group email; otherwise, leave this option blank to have the group email contain only a simple listing of bookings.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The contents of the full confirmation email are determined by the confirmation settings that you specify. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Email Notification At/Time Zone</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the time of day (based on the time zone) at which the email notification is to be sent.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Include Cancel Link</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available only if Send Confirmation is not selected. Provides a link in the notification email so that a user can cancel the booking directly from the notification email.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Include Reconfirm Link/Reconfirm Status</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only if Send Confirmation is not selected. Provides a link in the notification email so that a user can reconfirm the booking directly from the notification email. If you select this option, then you must also select a Reconfirm Status that is to be applied to the booking.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate status is not available, you can configure it. See&#160;<a href="ConfigStatuses.htm" title="Configuring Statuses" alt="Configuring Statuses">Configure Statuses</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Email Group</p>
+                        <p>Email 1st Contact</p>
+                        <p>Email 2nd Contact</p>
+                        <p>Email Web User</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select the appropriate options to indicate to whom the group notification is to be sent.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate group, contact, and/or web user is not available, you can configure it. See&#160;<a href="ConfigGroup.htm">Configure Groups</a>,&#160;<a href="ConfigContacts.htm">Configure Contacts</a>, and/or&#160;<a href="ConfigEverydayUser.htm">Configure Everyday Users</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Email From</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Enter the email address that is to be displayed in the Email From field for the group notification.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you leave the Email From field blank, then the Email From address that was defined during the installation and configuration of the EMS Email Notification Service is used.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Email Subject Line</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Enter the text that is to be displayed in the email subject line. Variables pull in selected data from the event for which the notification is being emailed. You can include variables as described in the Legend. For example,%2% is the code for the group name, so “Notification for %2%” would result in “Notification for Consumer Electronics Association” being displayed in the subject line. By default, email notifications for booking-level notifications also display the actual booking date (and not just the first booking date of the reservation) in the subject line of the email.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Leave this option blank to add a group email notification rule as an active rule. Select this option to Inactivate the group notification rule.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4" class="number-list">
+            <li>Do one or more or all the following to set the criteria that triggers the generation of the notification:<ul start="4"><li>Open the Rooms tab, you can search for the rooms by Building and Room Type. On the Available list, select rooms, (CTRL-click to select multiple rooms), and then Move them (&gt;) to the Selected list.</li><li>Open the Statuses tab, and specify statuses that should trigger notifications.</li><li>Open the Event Types tab, and specify event types that should trigger notifications.</li><li>Open the Group Types tab, and specify group types that should trigger notifications.</li><li>Open the Categories tab, and specify categories that should trigger notifications.</li></ul></li>
+            <li>Click OK.&#160;The Group Notification Rule dialog box closes. You return to the Group Notification Rules window with the newly configured notification rule automatically selected.</li>
+            <li>If you selected Send Confirmation for the notification rule, then continue to&#160;the next section.</li>
+        </ol>
+        <h2 class="Heading2"><a name="Set"></a>Set the Confirmation Rules for a Group Notification Email&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>If you have not already done so, on the EMS menu bar, click Configuration &gt; Administration &gt; Group Notification Rules to open the Group Notification Rules window.</li>
+            <li>Select the rule for which you are specifying the confirmation settings, and then click Confirmation.&#160;The Confirmation Settings dialog box opens. The Date Range tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_GroupNot2.png" alt="emssg_coreadmin_image015.png" class="padding_only" />
+        </p>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Specify the settings for the confirmation. At a minimum, you must specify buildings and statuses. All other information is optional.<ul MadCap:continue="true"><li><p>Date Range tab—The department name that appears at the top of a printed confirmation.</p></li><li><p>Buildings tab—Select the specific buildings, areas, and/or views that are to be included in the confirmation. </p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If the appropriate building, area, and/or views is not available, you can configure it. See <a href="ConfigBuilding.html">Configuring Buildings</a>, <a href="ConfigAreas.html">Configure Areas</a>, and/or <a href="ConfigPublicViews.html">Configure Public Views</a>. </p></div></li><li><p>Categories tab—Select the specific booking details that are to be included in the confirmation. <br /></p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If the appropriate category is not available, you can configure it. See <a href="ConfigCategory.html">Configure Categories</a>.</p></div></li><li><p>Statuses tab—Select the specific statuses that are to be included in the confirmation. </p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If the appropriate status is not available, you can configure it. See <a href="ConfigStatuses.htm">Configure Statuses</a>. </p></div></li><li><p>Options tab—Format settings for a printed confirmation.  See the following table for option descriptions.</p></li></ul></li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Confirmation Title</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Appears bold and centered at the top of the confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Header Message</p>
+                        <p>Footer Message</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Pre-configured blocks of text that appear in the header and footer of the confirmation.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate message is not available, you can configure it. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Paper Size</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The size of the paper on which the confirmation is printed. Values are Letter, Legal, and A4.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Print Comments</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Include the reservation’s comments in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Print Reminders</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Include the reservation’s reminders in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Print Cancel Reasons</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Include reasons for cancellation in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Print User Defined Fields</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Include user defined fields and their values in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Suppress Reserved Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Hide the reserved time for the booking and show only the event time.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Suppress Location</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Hide the location for the reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Suppress Pricing</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Do not show the reservation’s room charges or resource charges in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Suppress Logo</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Do not show your organization’s logo in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Suppress Item Notes</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Do not show resource notes for any booking items in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Suppress Item Special Instructions</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Do not show special instructions for any booking items in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Limit Bookings to Those With Details in Selected Categories</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Show only those bookings in the printed confirmation that contain details for the categories that are selected on the Categories tab.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><MadCap:variable name="General.EMS&#160;Web App" /> Options Tab—Select your settings for EMS Web App. See the following table for option descriptions.</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Display Web App Link</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option to include a link (URL) to the reservation in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Web App Link Message</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>The message that is to be included with the link.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>At a minimum, you must specify buildings and statuses. All other information is optional.</p>
+        </div>
+        <ol start="4" class="number-list">
+            <li>Click <span class="ui">OK</span>.&#160;The Confirmation Settings dialog box closes. You return to the Group Notification Rules window with the notification rule still selected.</li>
+        </ol>
+    </body>
+</html>

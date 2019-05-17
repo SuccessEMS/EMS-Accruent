@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Best Practices: Setting Up Your Web Server 2012 or 2012R2</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />
+            <MadCap:annotation MadCap:createDate="2017-11-21T15:34:27.5383607-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic contains repeated info from 2008. Also contains two &quot;Add Roles&quot; sections that seeme to have the same content. Is 2008 and 2012 both in this topic?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-21T15:35:08.7452640-07:00">Best</MadCap:annotation> Practices: Setting Up Your Web Server 2012 or 2012 R2</h1>
+        <p>This section guides you in best practices&#160;in setting up a Web Server for installation of EMS web-based products and is intended for experienced System Administrators.&#160; Please be aware that we can only provide instructions for modifying your web server as tested in our facilities, and cannot guarantee results for your configuration. Lastly, after completing these modifications, you will need to perform your own adjustments to system security etc. &#160; &#160; &#160;&#160;</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, please review <a href="../../../EMS_SystemReq_44.1.html">EMS&#160;System Requirements</a>&#160;before proceeding. The minimum hardware requirements must be met to continue with the configuration below. Administrative rights will be necessary to enable the roles and features listed for each Windows Server.</p>
+        </div>
+        <p>This topic provides information on the <MadCap:annotation MadCap:createDate="2017-11-21T17:55:07.3757180-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="First three bullets might be for 2008. " MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-21T17:55:17.8625753-07:00">following</MadCap:annotation>:&#160;</p>
+        <ul>
+            <li><a href="#InstallNetFramework3.5">To&#160;Install&#160;.NET Framework 3.5</a>
+            </li>
+            <li><a href="#InstallNETFramework4.5RegicsOnly">To Install .NET Framework 4.5: Regics Only</a>
+            </li>
+            <li><a href="#InstallIIS">To Install Internet Information Services (IIS)</a>
+                <ul>
+                    <li><a href="#AddRoleServices1">To Add&#160;Role Services</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#WinSer2012-2012R2">Windows Server 2012/2012 R2</a>
+                <ul>
+                    <li><a href="#AddRoleServices2">To Add&#160;Role Services</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="InstallNetFramework3.5"></a>To&#160;Install&#160;.NET Framework 3.5&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Navigate to <span class="ui">Start </span>&gt; <span class="ui">All Programs</span> &gt; <span class="ui">Administrative Tools</span> &gt;&#160;<span class="ui">Server Manager</span></li>
+            <li>In the&#160;Server Manager&#160;interface, click&#160;<span class="ui">Features&#160;</span>to view all the installed Features in the right pane.</li>
+            <li>In the Server Manager interface, select&#160;<span class="ui">Add Features</span>&#160;to lists possible features.</li>
+            <li>In the Select Features interface, expand&#160;<span class="ui">.NET Framework 3.5.1 Features</span>.</li>
+            <li>Once expanded, select&#160;<span class="ui">.NET Framework 3.5.1</span>&#160;and click&#160;<span class="ui">Next</span>.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up.jpg" />
+        </p>
+        <ol start="6" class="number-list">
+            <li>In the&#160;Confirm Installation Selections&#160;interface, review the selections,&#160;then click&#160;<span class="ui">Install</span>.</li>
+            <li>Once the installation process completes,&#160;click&#160;<span class="ui">Close</span>.</li>
+        </ol>
+        <h2><a name="InstallNETFramework4.5RegicsOnly"></a>To Install .NET Framework 4.5: Regics Only&#160;</h2>
+        <p>Windows Server 2008/2008 R2 does not have a built-in option to install&#160;.NET Framework 4.5. In order to install .NET Framework 4.5, the Server Administrator&#160;will need to download the following redistributable to the server and install it following the instructions. </p>
+        <p>See Also:&#160;<a href="https://www.microsoft.com/en-us/download/details.aspx?id=30653">.NET Framework 4.5.</a></p>
+        <h2><a name="InstallIIS"></a>To Install Internet Information Services (IIS)&#160;</h2>
+        <p>To install IIS on a Windows Server 2008, follow the instructions below.</p>
+        <ol start="1" class="number-list">
+            <li>Navigate to&#160;<span class="ui">Start </span>&gt; <span class="ui">All Programs</span> &gt; <span class="ui">Administrative Tools</span> &gt; <span class="ui">Server Manager</span>.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1.jpg" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="2" class="number-list">
+            <li>In the&#160;Server Manager&#160;window, scroll down to&#160;<span class="ui">Roles Summary</span>, and then click&#160;<span class="ui">Add Roles</span>.</li>
+            <li>Select&#160;<span class="ui">Web Server (IIS)</span>&#160;on the&#160;Select Server Roles&#160;page. An introductory page will open with links for further information.<ol start="1" style="list-style-type: lower-alpha;"><li>The Web Server (IIS) role in Windows Server 2012 provides a secure, easy-to-manage, modular and extensible platform for reliably hosting websites, services, and applications.</li></ol></li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_2.jpg" alt="" class="resize80_noborder_padding" />
+        </p>
+        <h3><a name="AddRoleServices1"></a>To Add&#160;Role Services&#160;</h3>
+        <p>When adding IIS using the Add Roles Wizard, only the default installation is executed, which has a minimum set of role services. For EMS products, it is necessary to add role services for the programs to function properly. If role services are added after installing&#160;IIS, the Server Administrator will need to navigate to the Role Services page by following the above directions and then clicking <span class="ui">Next</span>.</p>
+        <p>Select the following IIS Role Services to be installed:</p>
+        <ul class="unorder-list">
+            <li><a href="#Common">Common HTTP Features</a>
+            </li>
+            <li><a href="#Application">Application Development</a>
+            </li>
+            <li><a href="#Health">Health and Diagnostics</a>
+            </li>
+            <li><a href="#Security">Security</a>
+            </li>
+            <li><a href="#Performance">Performance</a>
+            </li>
+            <li><a href="#Management">Management Tools</a>
+            </li>
+        </ul>
+        <h4><a name="Common"></a>Common HTTP Features</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_3.jpg" alt="" />
+        </p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">Static Content—</span>Static Content lets the Web server publish static Web file formats, such as HTML pages and image files. Use Static Content to publish files on a Web server that users can then view using a Web browser.</li>
+            <li><span class="ui">Default Document</span><span class="ui">—</span>Default Document lets organizations configure a default file for the Web server to return when users do not specify a file in a URL. Default documents make it easier and more convenient for users to reach an organizations Web site.</li>
+            <li><span class="ui">HTTP Errors</span><span class="ui">—</span>HTTP Errors lets organizations customize the error messages returned to users’ browsers when the Web server detects a fault condition. Use HTTP errors to give users a better user experience when they run up against an error message. Consider providing users with an e-mail address for staff who can help them resolve the error.</li>
+        </ol>
+        <h4><a name="Application"></a>Application Development</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_4.jpg" alt="" />
+        </p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">ASP.NET</span><span class="ui">—</span>ASP.NET provides a server side object-oriented programming environment for building Web sites and Web applications that use managed code. ASP.NET is not just a new version of ASP. ASP.NET provides a robust infrastructure for building Web applications, and it has been completely re-architected to provide a highly productive programming experience based on the .NET Framework.</li>
+            <li><span class="ui">.NET Extensibility</span><span class="ui">—</span>.NET Extensibility lets managed code developers change, add, and extend Web server functionality in the request pipeline, the configuration, and the UI. Developers can use the familiar ASP.NET extensibility model and rich .NET APIs to build Web Server features that are just as powerful as those written using the native C++ APIs.</li>
+            <li><span class="ui">ISAPI Extensions</span><span class="ui">—</span>Internet Server Application Programming Interface (ISAPI) Extensions provides support for dynamic Web content development using ISAPI extensions. An ISAPI extension runs when requested, just like any other static HTML file or dynamic ASP file. Since ISAPI applications are compiled code, they are processed much faster than ASP files or files that call COM+ components.</li>
+            <li><span class="ui">ISAPI Filters</span><span class="ui">—</span>Internet Server Application Programming Interface (ISAPI) Filters provides support for Web applications that use ISAPI filters. ISAPI filters are files that can extend or change the functionality provided by IIS. An ISAPI filter reviews every request made to the Web server, until the filter finds one that it needs to process.</li>
+        </ol>
+        <h4><a name="Health"></a>Health and Diagnostics</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_5.jpg" alt="" />&#160;</p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">HTTP Logging<span class="ui">—</span></span>HTTP Logging provides logs site activity for this server. When a loggable event (usually an HTTP transaction) occurs, IIS calls the selected logging module, which then writes to one of the logs stored in the file system of the Web server. These logs are kept in addition to those provided by the operating system.</li>
+            <li><span class="ui">Request Monitoring<span class="ui">—</span></span>Request Monitor provides infrastructure to monitor Web application health by capturing information about HTTP requests in an IIS worker process. Administrators and developers can use Request Monitor to understand which HTTP requests are executing in a worker process when the worker process has become unresponsive or very slow.</li>
+        </ol>
+        <h4><a name="Security"></a>Security</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_6.jpg" alt="" />
+        </p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">Windows Authentication<span class="ui">—</span></span>Windows Authentication is a low cost authentication solution for internal Web sites. This authentication scheme allows administrators in a Windows domain to take advantage of the domain infrastructure for authenticating users. Do not use Windows authentication if users who must be authenticated access an organization's website from behind firewalls and proxy servers.</li>
+            <li><span class="ui">Request Filtering</span><span class="ui">—</span>Request Filtering screens all incoming requests to the server and filters these requests based on rules set by the administrator. Many malicious attacks share common characteristics, such as very long URLs, or requests for an unusual action. Filtering requests, can attempt to reduce the impact of these types of attacks.</li>
+        </ol>
+        <h4><a name="Performance"></a>Performance</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_7.jpg" alt="" />
+        </p>
+        <p><span class="ui">Static Content Compression</span><span class="ui">—</span>Static Content Compression provides infrastructure to configure HTTP compression of static content. This provides more efficient use of bandwidth. Unlike dynamic responses, compressed static responses can be cached without degrading CPU resources.</p>
+        <h4><a name="Management"></a>Management Tools</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_8.jpg" alt="" />
+        </p>
+        <p><span class="ui">IIS Management Console<span class="ui">—</span></span>IIS Manager provides infrastructure to manage IIS by using a graphical user interface. IIS Manager can be used to manage a local or remote Web server that runs IIS.</p>
+        <h2><a name="WinSer2012-2012R2"></a>Windows Server 2012/2012 R2&#160;</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, please see our&#160;<a href="../../../EMS_SystemReq_44.1.html">system requirements</a>. The minimum hardware requirements must be met to continue with the below configuration. Administrative rights will be necessary to enable the roles and features listed for each Windows Server.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>In Server Manager, click&#160;<span class="ui">Manage&#160;</span>and then select&#160;<span class="ui">Add Roles and Features</span>&#160;to start the <span class="ui">Add Roles and Features Wizard</span>.</li>
+        </ol>
+        <p>&#160;<img src="Images/WebApp_Install/Best Practices Setting Up_1.png" alt="" class="resize80_noborder_padding" /></p>
+        <ol start="2" class="number-list">
+            <li>On the&#160;Select installation type&#160;screen, select&#160;<span class="ui">Add roles and Features</span>.</li>
+            <li>Select the target server. The wizard presents a Before you Begin prompt.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_1.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="4" class="number-list">
+            <li>Click&#160;<span class="ui">Next</span>. The wizard advances to the Installation Type prompt.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_2.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="5" class="number-list">
+            <li>Select&#160;<span class="ui">Role-based or feature-based installation</span>.</li>
+            <li>Click&#160;<span class="ui">Next</span>. The wizard advances you to the Server Selection prompt.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_3.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="7" class="number-list">
+            <li>Select your server and click&#160;<span class="ui">Next</span>. The wizard advances you to the Server Roles prompt.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_4.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="8" class="number-list">
+            <li>Select&#160;<span class="ui">Web Server (IIS)</span>&#160;and click&#160;<span class="ui">Next</span>. The wizard advances you to the Features prompt.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_5.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="9" class="number-list">
+            <li>Select the&#160;<span class="ui">.NET Framework Framework 3.5</span>&#160;and&#160;<span class="ui">.NET Framework 4.5</span>&#160;options. The wizard prompts you to confirm for each option.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_6.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="10" class="number-list">
+            <li>Click&#160;<span class="ui">Next</span>. Repeat this confirmation step for the .NET 4.5 server role. The Wizard advances you to the Select Role Services prompt.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_7.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="11" class="number-list">
+            <li>Select both&#160;<span class="ui">ASP .NET 3.5</span>&#160;and&#160;<span class="ui">ASP .NET 4.5</span>&#160;options. The wizard advances you to the Confirmation Prompt.</li>
+            <li>Review the selections and then click&#160;<span class="ui">Install</span>.</li>
+            <li>Allow the installation process to complete, review the results that display, and then click&#160;<span class="ui">Close</span>.</li>
+        </ol>
+        <h3>To Install .NET Framework 4.5: Regics Only&#160;</h3>
+        <ol start="1" class="number-list">
+            <li>Repeat Steps 1-10 from the <a href="#WinSer2012-2012R2">Windows Server 2012/2012 R2</a> section.</li>
+            <li>Once expanded, select&#160;both&#160;the&#160;<span class="ui">.NET Framework 4.5</span>&#160;and&#160;<span class="ui">ASP.NET 4.5</span>&#160;options and click&#160;<span class="ui">Next</span>.&#160;</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_1_7.png" alt="" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>Review the selections and then click&#160;<span class="ui">Install</span>.</li>
+            <li>Allow the installation process to complete, review the results that display, and then click&#160;<span class="ui">Close</span>.</li>
+        </ol>
+        <h3><a name="AddRoleServices2"></a>To Add&#160;Role Services&#160;</h3>
+        <p>When adding IIS using the Add Roles Wizard, only the default installation is executed, which has a minimum set of role services. For EMS products, it is necessary to add role services for the programs to function properly. If role services are added after installing&#160;IIS, the Server Administrator will need to navigate to the Role Services page by following the above directions then clicking Next.</p>
+        <p>Select the following IIS Role Services to be installed:</p>
+        <ul class="unorder-list">
+            <li><a href="#Common2">Common HTTP Features</a>
+            </li>
+            <li><a href="#Application2">Application Development</a>
+            </li>
+            <li><a href="#Health2">Health and Diagnostics</a>
+            </li>
+            <li><a href="#Security2">Security</a>
+            </li>
+            <li><a href="#Performance2">Performance</a>
+            </li>
+            <li><a href="#Management2">Management Tools</a>
+            </li>
+        </ul>
+        <h4><a name="Common2"></a>Common HTTP Features</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_3.jpg" alt="" />
+        </p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">Static Content</span>&#160;– Static Content lets the Web server publish static Web file formats, such as HTML pages and image files. Use Static Content to publish files on a Web server that users can then view using a Web browser.</li>
+            <li><span class="ui">Default Document</span>&#160;– Default Document lets organizations configure a default file for the Web server to return when users do not specify a file in a URL. Default documents make it easier and more convenient for users to reach an organizations Web site.</li>
+            <li><span class="ui">Directory Browsing</span>&#160;– Directory Browsing lets users see the contents of a directory on a Web server. Use Directory Browsing to enable an automatically generated list of all directories and files available in a directory when users do not specify a file in a URL and default documents are either disabled or not configured.</li>
+            <li><span class="ui">HTTP Errors</span>&#160;– HTTP Errors lets organizations customize the error messages returned to users’ browsers when the Web server detects a fault condition. Use HTTP errors to give users a better user experience when they run up against an error message. Consider providing users with an e-mail address for staff who can help them resolve the error.</li>
+        </ol>
+        <h4><a name="Application2"></a>Application Development</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_4.jpg" alt="" />
+        </p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">ASP.NET</span>&#160;– ASP.NET provides a server side object-oriented programming environment for building Web sites and Web applications that use managed code. ASP.NET is not just a new version of ASP. ASP.NET provides a robust infrastructure for building Web applications, and it has been completely re-architected to provide a highly productive programming experience based on the .NET Framework.</li>
+            <li><span class="ui">.NET Extensibility</span>&#160;– .NET Extensibility lets managed code developers change, add, and extend Web server functionality in the request pipeline, the configuration, and the UI. Developers can use the familiar ASP.NET extensibility model and rich .NET APIs to build Web Server features that are just as powerful as those written using the native C++ APIs.</li>
+            <li><span class="ui">ISAPI Extensions</span> – Internet Server Application Programming Interface (ISAPI) Extensions provides support for dynamic Web content development using ISAPI extensions. An ISAPI extension runs when requested, just like any other static HTML file or dynamic ASP file. Since ISAPI applications are compiled code, they are processed much faster than ASP files or files that call COM+ components.</li>
+            <li><span class="ui">ISAPI Filters</span>&#160;– Internet Server Application Programming Interface (ISAPI) Filters provides support for Web applications that use ISAPI filters. ISAPI filters are files that can extend or change the functionality provided by IIS. An ISAPI filter reviews every request made to the Web server, until the filter finds one that it needs to process.</li>
+        </ol>
+        <h4><a name="Health2"></a>Health and Diagnostics</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_5.jpg" alt="" />&#160;</p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">HTTP Logging</span>&#160;– HTTP Logging provides logs site activity for this server. When a loggable event (usually an HTTP transaction) occurs, IIS calls the selected logging module, which then writes to one of the logs stored in the file system of the Web server. These logs are kept in addition to those provided by the operating system.</li>
+            <li><span class="ui">Request Monitoring</span>&#160;– Request Monitor provides infrastructure to monitor Web application health by capturing information about HTTP requests in an IIS worker process. Administrators and developers can use Request Monitor to understand which HTTP requests are executing in a worker process when the worker process has become unresponsive or very slow.</li>
+        </ol>
+        <h4><a name="Security2"></a>Security</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_6.jpg" />
+        </p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">Windows Authentication</span>&#160;– Windows Authentication is a low cost authentication solution for internal Web sites. This authentication scheme allows administrators in a Windows domain to take advantage of the domain infrastructure for authenticating users. Do not use Windows authentication if users who must be authenticated access an organization's website from behind firewalls and proxy servers.</li>
+            <li><span class="ui">Request Filtering</span>&#160;– Request Filtering screens all incoming requests to the server and filters these requests based on rules set by the administrator. Many malicious attacks share common characteristics, such as very long URLs, or requests for an unusual action. Filtering requests, can attempt to reduce the impact of these types of attacks.</li>
+        </ol>
+        <h4><a name="Performance2"></a>Performance</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_7.jpg" />
+        </p>
+        <p><span class="ui">Static Content Compression</span><span class="ui">—</span>Static Content Compression provides infrastructure to configure HTTP compression of static content. This provides more efficient use of bandwidth. Unlike dynamic responses, compressed static responses can be cached without degrading CPU resources.</p>
+        <h4><a name="Management2"></a>Management Tools</h4>
+        <p>
+            <img src="Images/WebApp_Install/Best Practices Setting Up_8.jpg" />
+        </p>
+        <p><span class="ui">IIS Management Console</span><span class="ui">—</span>IIS Manager provides infrastructure to manage IIS by using a graphical user interface. IIS Manager can be used to manage a local or remote Web server that runs IIS.</p>
+    </body>
+</html>

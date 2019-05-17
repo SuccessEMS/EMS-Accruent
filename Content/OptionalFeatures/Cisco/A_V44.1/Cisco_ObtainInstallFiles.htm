@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Obtain the Installation Files&#160;</h1>
+        <p>Obtain the following components from your EMS Professional Services contact:</p>
+        <ol class="number-list">
+            <li>
+                <p><span class="ui">EMS License Key—</span>The EMS – Cisco TMS Interface is an optional module that requires the appropriate EMS license to activate.</p>
+            </li>
+            <li>
+                <p><span class="ui">CiscoTMSOverlay.sql</span><span class="ui">—</span>SQL script that will need to be executed against your EMS database.&#160;This will create EMS – Cisco TMS Interface specific objects (tables and stored procedures).</p>
+            </li>
+            <li>
+                <p><span class="ui">UpdateBookingVCHostFlagFromCiscoTMSSettings.sql&#160; (UPGRADES ONLY)</span><span class="ui">—</span>SQL script that will need to be executed against your EMS database.&#160;This will upgrade your EMS - Cisco TMS Interface specific objects (tables and stored procedures) to the current release.</p>
+            </li>
+            <li>
+                <p><span class="ui">CiscoTMSServiceSetup.msi</span><span class="ui">—</span>Service responsible for pushing video conference (VC)&#160;bookings from EMS to the Cisco TMS Booking API at timed intervals.</p>
+            </li>
+            <li>
+                <p><span class="ui">EMS.CiscoTMSActivity.dll<span class="ui">—</span></span>Custom Cisco TMS DLL that will display all EMS – Cisco TMS Interface activity within the EMS application including errors and successfully scheduled video conferences.&#160;The Cisco TMS Activity DLL also contains an area that allows EMS Administrators to configure various EMS – Cisco TMS Interface settings.</p>
+            </li>
+        </ol>
+    </body>
+</html>

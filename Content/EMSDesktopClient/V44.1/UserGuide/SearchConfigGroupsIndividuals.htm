@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Search for and Configure Groups and Individuals V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>Search for and Configure Groups or Individuals</h1>
+        <p>A&#160;group&#160;is an entity for which reservations are made at your facilities. A group can be an internal or external entity and it can be an organization or an individual. A group must be&#160;<a href="#ConfigureGroups">configured</a>&#160;before you can make reservations for it in EMS. Optionally, if you want to first confirm that a group has not already been configured, then you can&#160;<a href="SearchConfigGroupsIndividuals.htm#Search_for_a_group_contact">search</a>&#160;for the group.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Typically, your EMS administrator carries out basic configuration of the groups for which you need to make reservations. You always have the option of modifying any group that your EMS administrator has configured and you always have the option of configuring new groups when needed.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Your organization might use a different term (such as client, customer, and so on) to identify the entities for which reservations are made at your facilities. Contact your EMS administrator if you need assistance in clarifying this term.</p>
+        </div>
+        <h2><a name="Search_for_a_group_contact"></a>Search for a Group and/or Contact&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the toolbar, click the Groups icon.&#160;The Groups window opens. The <span class="ui">Results </span>tab is the active tab. By default, when the <span class="ui">Results </span>tab first opens, it lists the first 1000 groups that are currently configured in your EMS database and that have a status of Active.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_2.png" class="resize80_noborder_padding" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Optionally, to change the number of records that are displayed in the Groups window, click <span class="ui">Options</span>, and then on the Group Options dialog box, select a different number of records to return.</p>
+                </div>
+            </li>
+            <li>
+                <p>Open the <span class="ui">Filter </span>tab and set your search criteria.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Option</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Display</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <ul class="unorder-list">
+                                    <li>Groups—Display all groups that meet your search criteria on the <span class="ui">Results </span>tab.</li>
+                                    <li> Contacts—Display all contacts that meet your search criteria on the <span class="ui">Results </span>tab.</li>
+                                </ul>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>When a list of contacts is displayed, the contact’s group is also displayed.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Search Fields</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <ul class="unorder-list">
+                                    <li>Starts with—The string is not case-sensitive, but your search is limited to the exact order of the characters in the string, and the string must begin with the information for which you are searching. For example,&#160;Assoc&#160;returns&#160;Association of Broadcasters but not Biomedical Student Association.</li>
+                                    <li>Contains—Your search is limited to the exact order of the characters in the string, but the string is not case-sensitive, and the string can be found anywhere in your search results. For example,&#160;Assoc&#160;returns both&#160;Association of Broadcasters and Biomedical Student&#160;Association.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Group</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Fields are available if you select Groups for Display. Enter values as needed in any or all fields.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Contact</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Fields are available only if you select Contacts for Display. Leave all fields set to their default search values to search for all active contacts that are currently configured in your EMS database, or enter values as needed in any or all fields.</p>
+                                <div>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>If you select <span class="ui">Contact</span>, then both the Group fields and the Contact fields are available for searching. If you enter data in both sets of fields when you are searching for a contact, then your search criteria must be met for both the contact&#160;and&#160;the contact’s group to be displayed on the <span class="ui">Results </span>tab.</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To reset the Filter at any time to its default settings, click <span class="ui">Reset Filter</span>.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">Get Data</span>.&#160;The <span class="ui">Results </span>tab opens with a list of search results that meet all your search criteria.</p>
+            </li>
+            <li>
+                <p>To further filter the display on the <span class="ui">Results </span>tab, in the Search field, enter a search string.&#160;The list of groups is dynamically updated as you enter your search string.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p> Your search is limited to the exact order of the characters in the string, but the search string is not case-sensitive and it can appear anywhere in the search results. For example, a search string of&#160;Assoc&#160;returns both&#160;Association of Broadcasters and Biomedical Student&#160;Association.</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="ConfigureGroups"></a>Configure Groups&#160;</h2>
+        <p>Typically, your EMS administrator carries out basic configuration of the groups for which you need to make reservations. You always have the option of modifying any group that your EMS administrator has configured and you always have the option of configuring new groups when needed.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Remember that before you configure a group, you might want to search for the group to verify that it has not already been configured. See&#160;<a href="SearchConfigGroupsIndividuals.htm#Search_for_a_group_contact">Search for a group and/or contact</a>.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the toolbar, click the Groups icon.</p>
+                <p>The Groups window opens. The <span class="ui">Results </span>tab is the active tab. By default, when the <span class="ui">Results </span>tab&#160;first&#160;opens, it lists up the first 1000 groups that are currently configured in your EMS database and that have a status of Active.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_3.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span>.&#160;The Group dialog box opens. The <span class="ui">Group </span>tab is the active tab.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_4.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the summary information for the new group.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The only required information is the group name. All other information on all tabs is optional and can be added at a later date when needed.</p>
+                </div>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Name</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Required field. The name of the group.</p>
+                                <div>
+                                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                        <p>This is the only required information for the group. All other information on all tabs is optional and can be added at a later date when needed. The name can be a maximum of 50 characters, including spaces.</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Address</p>
+                                <p>City</p>
+                                <p>ST</p>
+                                <p>Country</p>
+                                <p>Zip</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The street or mailing address for the group.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>International</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option to drop the State and Zip fields for an international group.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Group Type</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Pick a group type.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If calculations have been assigned to a group type, then these calculations are applied only to&#160;new&#160;groups of this type.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Phone</p>
+                                <p>Fax</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The phone number and fax number for the group.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The Phone and Fax fields have a drop-down list available on which you can select a different value (Fax, Mobile, Other, or Phone) for the field label, or you can enter a user-defined value. To enter a user-defined value, double-click the current field label to select it, and then enter the user-defined value over the selected label.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Email Address</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The email address for the group.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>If your computer is connected to a network, click the Search icon&#160;to open a Global Address Lookup dialog box and search for the email address.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>URL</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The URL for the group’s website.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Web users can link to this group's website on VEMS.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Default Contact</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Populated with the name of the default contact for the group&#160;after&#160;you have defined default contacts for the group.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Require Contacts</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option if the group is to&#160;always require&#160;a contact when a reservation is being made for the group.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>VIP</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Select this option if the group is to be designated as a VIP group.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Available to Web Users</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Select this option if users are to be able to select the group on the Group Lookup page in VEMS.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Inactive</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Leave this option blank to add the group as an active group. Select this option to inactivate the group.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Optionally, do one or both of the following; otherwise, go to&#160;Step 5.</p>
+                <ul>
+                    <li>
+                        <p>Open the <span class="ui">Billing Information</span> tab and add the default billing information for the group.</p>
+                        <p>
+                            <img src="../../../Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_6.png" class="resize80_noborder_padding" />
+                        </p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The values that you specify here are the default values that are applied when a new reservation is made for the group. Any EMS user can change these values if needed.</p>
+                        </div>
+                        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                            <thead>
+                                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                        <p>Option</p>
+                                    </th>
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                        <p>Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                            <p>The values that you specify here are the default values that are applied when a new reservation is made for the group. Any EMS user can change these values if needed.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>Pricing Plan</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                        <p>Pick a pricing plan.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>Payment Type</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <p>Pick a payment type.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>Salesperson</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                        <p>Pick a salesperson.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>Event Coordinator</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <p>Pick an event coordinator.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>Sales Category</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                        <p>Pick a sales category.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>Status</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <p>The status is a way to indicate the standing or ranking of the group. The default values are the following:</p>
+                                        <ul class="unorder-list">
+                                            <li>
+                                                <p>OK—A reservation can be made for the group. (In your organization, this status could indicate that the group is current in payments due.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Warning—If a group status is set to Warning, then a Warning message opens when you make a reservation for the group. It does not, however, prevent a reservation from being made for the group.</p>
+                                            </li>
+                                            <li>
+                                                <p>Bad—If a group status is set to Bad, then reservations cannot be made for the group.</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>Billing Reference Number</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                        <p>You can manually enter data into the field, or you can click the Search icon&#160;to open a master list of billing reference numbers and select a reference.</p>
+                                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                            <p>To define a list of eligible billing references that are specific to the group, see&#160;<a href="../ConfigurationGuide/ConfigAddInfoGroup.html">Configure Additional Information for a Group</a>.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>PO Number</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <p>You can manually enter data into the field, or you can click the Search icon&#160;to open a master list of PO Numbers and select a PO number.</p>
+                                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                            <p>To define a list of eligible PO numbers that are specific to the group, see&#160;<a href="../ConfigurationGuide/ConfigAddInfoGroup.html">Configure Additional Information for a Group</a>.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>External Reference</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                        <p>Links the group to a web user record and/or HR Toolkit.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                        <p>Account</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                        <p>Pick an account.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Open the <span class="ui">Other </span>tab and add any other identifying information for the group as needed.</p>
+                        <p>
+                            <img src="../../../Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_7.png" class="resize80_noborder_padding" />
+                        </p>
+                        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                        <p>Option</p>
+                                    </th>
+                                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                        <p>Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>Network ID</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <p>The Windows login for the group.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                        <p>Personnel Number</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                        <p>Organization number for the group.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                        <p>Badge Number</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                        <p>Badge number for the group.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                        <p>Other ID</p>
+                                    </td>
+                                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                        <p>Any secondary ID for the group.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>Click <span class="ui">OK</span>.&#160;The Group dialog box closes and a group-specific window opens with the newly configured group automatically selected.&#160;You can use the options on this window to carry out additional configuration for the group. See&#160;<a href="../ConfigurationGuide/ConfigAddInfoGroup.html">Configure Additional Information for a Group</a>.<div class="TitleandImage"><p class="Caption"><img src="../../../Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_8.png" class="resize80_noborder_padding" /></p><p class="Caption">Example of a group-specific window</p></div></li>
+        </ol>
+    </body>
+</html>

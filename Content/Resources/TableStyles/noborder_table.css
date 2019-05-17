@@ -1,0 +1,371 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	name: noborder_table;
+	border-collapse: collapse;
+	max-id: 3;
+	border-left-style: none;
+	border-left-width: ;
+	border-left-color: ;
+	border-right-style: none;
+	border-right-width: ;
+	border-right-color: ;
+	border-top-style: none;
+	border-top-width: ;
+	border-top-color: ;
+	border-bottom-style: none;
+	border-bottom-width: ;
+	border-bottom-color: ;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: none;
+	name: Column1;
+	id: 0;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	separator-style: none;
+	name: Header1;
+	id: 2;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: none;
+	name: Body1;
+	id: 1;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	separator-style: none;
+	name: Footer1;
+	id: 3;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-noborder_table
+{
+	border-collapse: collapse;
+	border-left-style: none;
+	border-left-color: ;
+	border-left-width: ;
+	border-right-style: none;
+	border-right-color: ;
+	border-right-width: ;
+	border-top-style: none;
+	border-top-color: ;
+	border-top-width: ;
+	border-bottom-style: none;
+	border-bottom-color: ;
+	border-bottom-width: ;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-noborder_table-Column-Column1
+{
+	
+}
+
+.TableStyle-noborder_table-Head-Header1
+{
+	
+}
+
+.TableStyle-noborder_table-HeadI-Column1-Header1
+{
+	
+}
+
+.TableStyle-noborder_table-HeadI-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadE-Column1-Header1
+{
+	border-right-style: none;
+	border-bottom-style: none;
+}
+
+.TableStyle-noborder_table-HeadE-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadF-Column1-Header1
+{
+
+	border-bottom-style: none;
+}
+
+.TableStyle-noborder_table-HeadF-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadH-Column1-Header1
+{
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-HeadH-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadD-Column1-Header1
+{
+	border-bottom-style: none;
+}
+
+.TableStyle-noborder_table-HeadD-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadC-Column1-Header1
+{
+	
+}
+
+.TableStyle-noborder_table-HeadC-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadB-Column1-Header1
+{
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-HeadB-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadA-Column1-Header1
+{
+	
+}
+
+.TableStyle-noborder_table-HeadA-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-HeadG-Column1-Header1
+{
+	
+}
+
+.TableStyle-noborder_table-HeadG-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-noborder_table-Foot-Footer1
+{
+	
+}
+
+.TableStyle-noborder_table-FootI-Column1-Footer1
+{
+	
+}
+
+.TableStyle-noborder_table-FootI-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootE-Column1-Footer1
+{
+	border-right-style: none;
+	border-top-style: none;
+}
+
+.TableStyle-noborder_table-FootE-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootF-Column1-Footer1
+{
+	border-top-style: none;
+}
+
+.TableStyle-noborder_table-FootF-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootH-Column1-Footer1
+{
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-FootH-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootD-Column1-Footer1
+{
+	border-top-style: none;
+}
+
+.TableStyle-noborder_table-FootD-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootC-Column1-Footer1
+{
+	
+}
+
+.TableStyle-noborder_table-FootC-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootB-Column1-Footer1
+{
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-FootB-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootA-Column1-Footer1
+{
+	
+}
+
+.TableStyle-noborder_table-FootA-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-FootG-Column1-Footer1
+{
+	
+}
+
+.TableStyle-noborder_table-FootG-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-noborder_table-Body-Body1
+{
+	
+}
+
+.TableStyle-noborder_table-BodyI-Column1-Body1
+{
+	
+}
+
+.TableStyle-noborder_table-BodyI-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyE-Column1-Body1
+{
+	border-bottom-style: none;
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-BodyE-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyF-Column1-Body1
+{
+	border-bottom-style: none;
+}
+
+.TableStyle-noborder_table-BodyF-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyH-Column1-Body1
+{
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-BodyH-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyD-Column1-Body1
+{
+	border-bottom-style: none;
+}
+
+.TableStyle-noborder_table-BodyD-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyC-Column1-Body1
+{
+	
+}
+
+.TableStyle-noborder_table-BodyC-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyB-Column1-Body1
+{
+	border-right-style: none;
+}
+
+.TableStyle-noborder_table-BodyB-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyA-Column1-Body1
+{
+	
+}
+
+.TableStyle-noborder_table-BodyA-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-noborder_table-BodyG-Column1-Body1
+{
+	
+}
+
+.TableStyle-noborder_table-BodyG-Column1-Body1 p
+{
+	
+}
+
+

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head><title>Configure Everyday User Process Templates</title>
+    </head>
+    <body>
+        <h1>Configure <MadCap:annotation MadCap:createDate="2019-05-16T08:59:52.3786579-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Information is similar/same as info in ConfigEverydayUserProcessTemplate.htm topic. Create snippet to share same info between topics. The Web App version seems more up-to-date, especially the linked topics that describe the fields and tabs." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-17T09:36:28.4339540-06:00">Everyday User Process</MadCap:annotation> Templates</h1>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept: "Web Process Templates" Are Now Called "Everyday User Process Templates" <MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have previously used older versions of EMS, you might know booking templates as "Web Process Templates." These templates are now called "Everyday User Process Templates." These templates define user access and booking behavior in EMS Web App, EMS Mobile App, and EMS for Outlook. Similarly, you might know permissions templates, which control what an Everyday User is able to do, as "Web Security Templates." These are now called "Everyday User Security Templates."</p>
+                <div class="EXPAND_CLASS">
+                    <p>See Also: <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigSecTemplate.htm">Configure Security Templates.</a></p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>In EMS Enterprise, the guest (unauthenticated user) everyday user process template is always available and you can have an unlimited number of other everyday user process templates. In EMS Professional, the (unauthenticated user) everyday user process template is always available, but you can have only two additional everyday user process templates.</p>
+                    </div>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>To configure Everyday User process templates, complete the following steps:</p>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday Applications</span> &gt; <span class="ui">Everyday User Process Templates</span>. The Everyday User Process Templates window opens on the <span class="ui">Everyday User Template</span> tab.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/B_ConfigurationGuide/WA_ConfigEverydayUserProcessTemps_EUProcessTemps.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Everyday User Process Templates Window</p>
+                </div>
+                <p>This window lists the process templates that have been defined for your EMS Web App implementation. The pre-defined user called "unauthenticated user" is included in all EMS implementations; you use this template to manage settings for anonymous or “guest” users. For a user to be able to view and use this template, you must assign the user to the template. See Also: <a href="WebApp_CG_ConfigEverydayUsers.htm">Configure Everyday Users</a>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To view all everyday user process templates in your EMS database, regardless of status, under Show, click <span class="ui">Inactive</span>.</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span>. The Book a Meeting Room configuration dialog box displays. Enter the information for the new everyday user process template as needed. See <a href="WebApp_CG_EverydayUserProcTempFieldDef.html">Everyday User Process Template Field Definitions</a> for more information on the tabs in the Book a Meeting Room configuration dialog.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/B_ConfigurationGuide/WA_ConfigEverydayUserProcessTemps_BookaMeetingRoom.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Book a Meeting Room Configuration Dialog</p>
+                </div>
+            </li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The cache must be cleared in the EMS Web App whenever parameter changes are made in the EMS Desktop Client.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The <span class="ui">Request Status</span> field is used to configure booking templates for the "Request/Approval" booking model, in which everyday users request space and administrative users approve those requests (using the Dashboard menu icon). For example, if you set this field to <span class="ui">Request</span>, then the booking will not be finalized until an administrator has approved it. If you are configuring a template for booking desks and workspaces or "hoteling," see <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/CreateTempDeskWork.htm">Create Templates for Desks and Workspaces</a>.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">You can use the Request/Approval Model to Oversee "Managed Space." For more information, see <a href="WebApp_CG_ConfigManagedSpace.html">Configure Managed Space</a>.</div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>In the Everyday User Application Settings section:</p>
+            <ul class="unorder-list">
+                <li><span class="ui">Enable for Web App</span> means enable the template on EMS Web App.</li>
+                <li><span class="ui">Enable for Mobile</span> means enable the template for the EMS Mobile App.</li>
+                <li><span class="ui">Enable for Outlook</span> means enable the template for the EMS for Outlook add-in, which can override booking rules such that users can book a room that is in conflict. For this situation, you can also configure a system-generated email to be sent to the user if any rooms are not available for dates booked.  An additional tab becomes available if you create a template with the option enabled, Outlook Conflict Email.</li>
+                <li><span class="ui">Enable Integration to Microsoft Exchange </span>means enable the template for Microsoft<sup>®</sup> Exchange when your organization does not use EMS for Outlook.<p>See Also: <a href="WebApp_CG_EverydayUserProcTempFieldDef.html">Everyday User Process Template Field Definitions.</a></p></li>
+            </ul>
+        </div>
+        <p>You can&#160;continue configuring the booking template on additional tabs or just&#160;click <span class="ui">OK </span>to save your changes.</p>
+        <h2>Save Your Template Settings</h2>
+        <p>When you have completed entries in all tabs as desired, click <span class="ui">OK</span>.  Your changes to the everyday user templates are saved.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Make sure that you have defined your everyday users so you can assign them to your everyday templates. See Also:&#160;<a href="WebApp_CG_ConfigEverydayUsers.htm">Configure Everyday Users</a></p>
+        </div>
+    </body>
+</html>

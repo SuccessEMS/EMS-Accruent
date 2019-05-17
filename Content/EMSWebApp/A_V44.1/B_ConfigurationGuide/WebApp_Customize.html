@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Customize EMS Web App</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />
+            <MadCap:annotation MadCap:createDate="2017-11-01T22:30:37.2402341-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does this topic belong in the Config Guide instead of Install Guide?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-08-28T11:13:54.4645829-06:00">Customize</MadCap:annotation> EMS Web App</h1>
+        <p>After you have installed the EMS Web App, you can customize many aspects of it, such as the appearance and security settings. For example, you can change the <span class="italics">look and feel</span> of the EMS Web App by inserting your own logo. Experienced web developers can also modify the system’s style sheet to change fonts and colors.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Do not alter any of the EMS Web App web page files themselves. <span class="ui">The maintenance agreement for EMS Web App extends to the original page content only.</span></p>
+        </div>
+        <p>This topic provides information on the following:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#CustomLogo">Customize the&#160;Logo</a>
+            </li>
+            <li><a href="#CustomStyleSheets">Customize Style Sheets</a>
+            </li>
+            <li><a href="#CustomLinks">Customize Links</a>
+            </li>
+            <li><a href="#CustomJavaScript">Customize JavaScript</a>
+            </li>
+            <li><a href="#CustomizeSecurity">Customize Security</a>
+            </li>
+        </ul>
+        <h2><a name="CustomLogo"></a>Customize the&#160;Logo</h2>
+        <p>The logo that appears in the upper left corner of all pages within the EMS Web App comes from a file named LOGO.GIF found in the \EMSWebApp\Images folder of the web server. If you choose to have the system display a different logo, create a new file called CUSTOMLOGO in the same folder (any graphics file type, such as .gif, .png, etc. will suffice). If the system detects CUSTOMLOGO, the system will use that file rather than the default LOGO.GIF file. The advantage of creating the new file instead of simply replacing the LOGO.GIF file is that, in an upgrade to a new version of EMS Web App, the LOGO.GIF file is overwritten whereas CUSTOMLOGO is not. If you create a custom logo file, you might need clear your browser’s cache before you see the new image.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Be sure to maintain the aspect ratio of 135 px wide X 40 px high. The system will accept nearly any size logo image, but you should avoid images more than 200 pixels wide and images that are too tall to avoid extra scrolling.</p>
+        </div>
+        <h2><a name="CustomStyleSheets"></a>Customize Style Sheets</h2>
+        <p>Experienced web developers are can modify the look and feel of EMS Web App using a custom style sheet, which controls fonts and colors throughout the application. To do so:</p>
+        <ol class="number-list">
+            <li>Create EMSWebApp/Content/Custom folder on your web server.</li>
+            <li>Name your custom style sheet CUSTOM.CSS and place it in the EMSWebApp/Content/Custom folder. If the system detects this file, it will use the styles found there rather than those in the system’s default style sheet, VEMS.CSS. The advantage of creating the new file instead of overwriting the default file is that, in an upgrade to a new version of EMS Web App, VEMS.CSS is overwritten whereas CUSTOM.CSS is not.</li>
+        </ol>
+        <h2><a name="CustomLinks"></a>Customize Links</h2>
+        <p>The EMS Web App Browse Events page allows users to view all events scheduled in EMS that display to everyday users. You have the option to automatically filter this list of events by facility, room, event type, event name or group name as part of a customized Browse Events page. This customized page is referred to as a Custom Link.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>A Custom Link enables you to build a link based on the Browse Events page that will display only events meeting your specified criteria. For example, you can create a link that only displays events in a specific Building or of a specific Event Type. Essentially, the link pre-filters the event listing displayed to a specific building, event type, Group, etc. Once you generate the link, then you can insert it in emails or websites.</p>
+        </div>
+        <p>To create a Custom Link, follow the steps outlined below.</p>
+        <ol class="number-list">
+            <li>Log into EMS Web App using a user ID that belongs to a Everyday User Security Template containing the Web Administrator Role.  For information on how to configure a user and/or Everyday User Security Template, see <a href="WebApp_CG_ConfigEverydayUsers.htm">Configure Everyday Users</a> and <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigSecTemplate.htm">Configure Security Templates</a>.</li>
+            <li>Under the dropdown menu next to your name, click <span class="ui">Create Custom Link</span>.<p><img src="../A_InstallationGuide/Images/A_InstallationGuide/WA_Customize_CustomizingLinks.png" class="padding_only" /></p></li>
+            <li>Specify the pre-filters that will control what displays when users click your custom link.
+			<p><img src="../A_InstallationGuide/Images/A_InstallationGuide/WA_Customize_GenerateCustomLink.png" class="resize80_noborder_padding" /></p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>To display a custom logo other than the default logo used for your <MadCap:variable name="General.EMS&#160;Web App" /> site, enter the logo filename and server path&#160;in the Logo field.&#160;The logo needs to be stored&#160;in the <MadCap:variable name="General.EMS&#160;Web App" /> physical directory on your web server (typically,&#160;C:\inetpub\wwwroot\EMSWebApp\).</p><p>Select the&#160;<span class="ui">Ignore Everyday User Application Display Settings</span>&#160;option if you want all events within your criteria to display to&#160;users using this link regardless of everyday user display&#160;settings&#160;(essentially,&#160;ignoring configuration rules that would normally hide certain events from view).</p><p>Select the <span class="ui">Collapse Bookings to Reservation-Level</span> option to collapse booking information so that only the reservation information shows.&#160;</p></div><table style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" class="TableStyle-Border_table_alternate_colors" cellspacing="12"><col class="TableStyle-Border_table_alternate_colors-Column-Column1" /><col class="TableStyle-Border_table_alternate_colors-Column-Column1" /><thead><tr class="TableStyle-Border_table_alternate_colors-Head-Header1"><th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Collapse Bookings to&#160;Reservation Level Enabled</th><th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">Collapse Bookings to&#160;Reservation Level Disabled</th></tr></thead><tbody><tr class="TableStyle-Border_table_alternate_colors-Body-Body1"><td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1"><img src="../A_InstallationGuide/Images/A_InstallationGuide/WA_Customize_CollapseBookingsToResEnabled.png" /></td><td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1"><img src="../A_InstallationGuide/Images/A_InstallationGuide/WA_Customize_CollapseBookingsToResDisabled.png" /></td></tr></tbody></table></li>
+            <li>Click the <span class="ui">Generate Link</span> button to display a friendly URL and HTML code that can be added to a web page, email, etc.&#160; The URL can also be used to test your Custom Link.<p><img src="../A_InstallationGuide/Images/A_InstallationGuide/WA_Customize_GenerateLink.png" class="hyperlink_with_padding_and_border" /></p></li>
+        </ol>
+        <h2><a name="CustomJavaScript"></a>Customize JavaScript</h2>
+        <p>With custom JavaScript, you can extend the functionality of EMS Web App to suit your business needs.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Including custom JavaScript on EMS Web App pages can affect performance.</p>
+        </div>
+        <p>When EMS Web App receives a request for a page, it checks for the existence of a CustomJs folder. If the folder exists, EMS Web App checks for any files that match the name of the page. For instance, on the RoomRequest.aspx page, if there is a file called RoomRequest.js in the CustomJs folder, EMS Web App will include the RoomRequest.js file on the page.</p>
+        <p>In addition to the name-matched file, EMS Web App will also check for and include the file named global.js on EVERY page.</p>
+        <p>Perform the following steps to enable Custom JavaScript:</p>
+        <ol class="number-list">
+            <li>Enable Custom JavaScript.</li>
+            <li>Open the EMS Web App web.config file (typically, C:\inetpub\wwwroot\EMSWebApp\web.config).<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p><span class="ui">EMS&#160;CLOUD&#160;CUSTOMERS:</span> Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please <a href="#Contact_Customer_Support">contact EMS Support</a>.</p></div></li>
+            <li>Locate the following node under the &lt;appSettings&gt; node:<p>&lt;add key="allowCustomJs" value="false" /&gt;</p></li>
+            <li>Change the false value to true.</li>
+            <li>Save the file.</li>
+            <li>Create the CustomJs folder within the root of your EMS Web App Install Directory (typically, C:\inetpub\wwwroot\EMSWebApp\CustomJs).</li>
+        </ol>
+        <p>You are now ready to implement your Custom JavaScript using one of several options:</p>
+        <ul class="unorder-list">
+            <li>In the newly-created CustomJs folder, create a file for each of the above pages you want to include your custom JavaScript on (such as RoomRequest.js, EditReservation.js, or Default.js).</li>
+            <li>In the newly-created CustomJs folder, create one file called global.js that will be included on every page in the system.</li>
+        </ul>
+        <p>Your custom JavaScript should be included on global.js <span class="ui">or</span> on each of the applicable page-specific JavaScript files.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>If you include the script in both places, it could cause problems.</p>
+        </div>
+        <h2><a name="CustomizeSecurity"></a>Customize Security</h2>
+        <p>There are settings in the web.config file that you can customize to enhance website security. For more information regarding these security settings, <a href="#Contact_Customer_Support">contact EMS Support</a>. </p>
+        <h2><a name="Contact_Customer_Support"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS for Outlook Release Notes <br />V44.1 Update 6 (x64 or x86)</h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Make sure to download and install the Exchange update for this release (Build #&#160; 44.1.199).</p>
+        </div>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Name:&#160;V44.1 Update 6</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;October 18, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch #:&#160;&#160;2016.10.18.0</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build #:&#160;44.1.1017.90</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_1">Fixes</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 231px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 679px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">New Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Closing Reservation Window Causes Error</p>
+                        <p class="RNBody">When users began a new reservation using Outlook 2010 or&#160;2013, and stopped the reservation process while searching for a room by clicking the red "X" in the upper right corner of the EMS for Outlook window, &#160;the error message "Value cannot be null" presented and although users opted to save their changes, the reservation was not saved to the calendar.</p>
+                        <p class="RNBody">Fix:&#160;Modified behavior so that when users end the&#160;reservation process in this manner, they are returned to the Outlook appointment window and can save changes.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #:&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23716" class="Hyperlink_2">23716</a></p>
+                        <p class="RNTitle">Appointment Text Missing Spaces</p>
+                        <p class="RNBody">When booking a new appointment in Outlook, the text in the Appointment window was missing spaces.</p>
+                        <p class="RNBody">Fix:&#160;Added spaces to the text that appears in the Outlook Appointment window.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22865" class="Hyperlink_2">22865</a></p>
+                        <p class="RNTitle">Services Can Be Delivered to the Wrong Room</p>
+                        <p class="RNBody">When users booked multiple rooms for one meeting and only some allowed services, they could select the rooms that did not allow services for delivery.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality to ensure that when users select&#160;Manage Services, they can only choose the rooms with those services.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #:&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22512" class="Hyperlink_2">22512</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Edit Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Changing&#160;Rooms for Recurrent Booking or Removing Rooms With Services&#160;Cancels Reservation</p>
+                        <p class="RNBody">When users edited a recurrent booking that had been created in EMS Web App and then edited it again to book a different&#160;room, or when they removed a room from a simple reservation that had services associated with it,&#160;the booking canceled and produced an error:</p>
+                        <p class="RNBody">"An error has occurred: The reservation window has been closed&#160;due to an error caused by&#160;a loaded component."</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that the window remains open when users change or cancel rooms so they can complete the reservation change and send updates.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23667" class="Hyperlink_2">23667</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23484" class="Hyperlink_2">23484</a></p>
+                        <p class="RNTitle">Changing Reservation Time Does Not Change Services Time, Move Services, or Update Calendar Correctly</p>
+                        <p class="RNBody">When users changed the time of a meeting in Outlook for a room that had associated services with different times, the updates did not affect the service times. Additionally, when the meeting time change caused a booking conflict, services were not correctly validated and moved to the new room and caused all services to be canceled, and the old meeting room showed on the Outlook calendar.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations to ensure that when meeting and room booking&#160;times are changed, the new room booking showed correctly on the Outlook calendar and&#160;service times are adjusted accordingly. For conflict resolutions, the user can now move service when allowed for the room and the error no longer occurs.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23499" class="Hyperlink_2">23499</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23295" class="Hyperlink_2">23295</a></p>
+                        <p class="RNTitle">Error Blocks Conflict Resolution for Recurrent Meetings</p>
+                        <p class="RNBody">When users attempted to resolve multiple conflicts for recurrent bookings, the bookings in conflict were canceled before all options to resolve the conflict had been exhausted, so users could not complete conflict resolution. The process ended with the error message, "The reservation window has been closed due to an error caused by a loaded component" and the calendar appointment still showed a room location.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that when&#160;another conflict occurs after the room search, the user can now select a different room&#160;and the error no longer occurs.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22358" class="Hyperlink_2">22358</a></p>
+                        <p class="RNTitle">Alternate Rooms In Wrong Buildings Available During Conflict Resolution</p>
+                        <p class="RNBody">When users resolved scheduling conflicts, the list of rooms included those in other buildings.</p>
+                        <p class="RNBody">Fix:&#160;Modified the list of rooms to only those in the same building as the conflicted room, and when no rooms are available, prompt the user to choose to Proceed without Alternate with the message&#160;"No alternative rooms could be found in [Building Name]."</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23813" class="Hyperlink_2">23813</a></p>
+                        <p class="RNTitle">Add Services Fails For Recurrent Meetings</p>
+                        <p class="RNBody">Clicking the&#160;Add Services&#160;option next to a recurrent meeting caused the error message, "The selected destination was not available for the following days..." to appear once the user selected a room for delivery.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality so that the error no longer presents and&#160;the Add Service button functions as expected. Users can now click the Add Service button for the series &#160;to add the service to the selected room for all occurrences containing that room, or they can click the button for a single occurrence, &#160;to add the service to only that occurrence.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23298" class="Hyperlink_2">23298</a></p>
+                        <p class="RNTitle">Alerts Not Visible</p>
+                        <p class="RNBody">When users booked a room with associated alerts, the alerts were not visible.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality to ensure that associated room alerts pop up when the user clicks the&#160;Reserve&#160;button with an&#160;OK&#160;option so users can acknowledge the alert and proceed.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22962" class="Hyperlink_2">22962</a></p>
+                        <p class="RNTitle">Special Instructions Overwritten By Resource Notes&#160;</p>
+                        <p class="RNBody">When users editing bookings with services that had resource notes, those notes overwrote the special instructions notes.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality to ensure that this no longer occurs.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23300" class="Hyperlink_2">23300</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">Cancel Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Changing&#160;I.E. Browser Language Causes Error When Canceling Outlook Reservations</p>
+                        <p class="RNBody">When users change their Internet Explorer browser default language and then canceled a reservation made in Outlook via the EMS Web App, the following&#160;error message presented and the reservation remained on the Outlook calendar although it was canceled in EMS Web App:</p>
+                        <p class="RNBody">"There was a problem canceling a meeting in the calendaring system"</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that users can change browser languages and cancel reservations without this error.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23539?fullScreen=false" class="Hyperlink_2">23539</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Cancel Meeting</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Meeting Cancellation&#160;Not Reflected in Outlook Calendar</p>
+                        <p class="RNBody">When users canceled a room booking by clicking the&#160;Delete &#160;"X" icon, the change was not reflected in the Outlook calendar and the room booking still showed on EMS for Outlook reservation and in EMS Desktop Client.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality to ensure that room cancellations are immediately reflected in the Outlook calendar, EMS Desktop Client, and EMS for Outlook.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22982" class="Hyperlink_2">22982</a></p>
+                        <p class="RNTitle">EMS Web App Meeting Cancellation Causes Error</p>
+                        <p class="RNBody">When users canceled meetings that had been booked in EMS Web App with Exchange-enabled booking templates, an error occurred.</p>
+                        <p class="RNBody">Fix:&#160;Modified Exchange Integration to ensure that cancellations can be completed without errors.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #:<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23866" class="Hyperlink_2">23866</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="Emphasis_1">User-Defined Fields</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">User-Defined Fields Show Default Values in Error</p>
+                        <p class="RNBody">Some required User-Defined Fields (UDFs) displayed default values when they should have been blank.</p>
+                        <p class="RNBody">Fix:&#160;Modified the display so that when required, UDFs&#160;do not display default values.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22887" class="Hyperlink_2">22887</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="Emphasis_1">Confirmations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Confirmation Headers Different Between EMS for Outlook and EMS Web App</p>
+                        <p class="RNBody">Message headings were different for confirmations generated by&#160;bookings made in EMS for Outlook versus EMS Web App.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that the same values are used&#160;for confirmation headings in EMS for Outlook as in EMS Web App.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #:<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23227" class="Hyperlink_2">&#160;23227</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="Emphasis_1">Services</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Services "Available&#160;to Everyday Users" Setting Not Observed</p>
+                        <p class="RNBody">Services that had&#160;the&#160;Available to Everyday Users&#160;option unchecked were still available for selection&#160;in EMS for Outlook. When it was checked, the service category was not available to EMS for Outlook users.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Modified validations to ensure that the&#160;Available to Everyday Users&#160;selection is observed and services only display when it is selected.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #s: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23186" class="Hyperlink_2">23186</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23490" class="Hyperlink_2">23490</a></p>
+                        <p class="RNTitle">Removed Services Remain Available</p>
+                        <p class="RNBody">When a service category was removed for buildings and templates in EMS Desktop Client, the service remained available until users cleared their cache.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality to ensure that changes to service categories manifest immediately in the Outlook add-in so users do not have to clear their cache.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23700" class="Hyperlink_2">23700</a></p>
+                        <p class="RNTitle">Expand Resource Groups Parameter Not Observed</p>
+                        <p class="RNBody">When users viewed resources for a service category, groups of resources were expanded despite parameter settings.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations to ensure that the parameter setting is observed and groups of resources are not expanded in error.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference #: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22125" class="Hyperlink_2">22125</a>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+        <p>&#160;</p>
+    </body>
+</html>

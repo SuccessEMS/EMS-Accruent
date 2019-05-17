@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="5781" MadCap:lastWidth="916" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Mobile App Release Notes (API, IPA, APK)<br />V44.1, Update 4 </h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">V44.1, Update 4</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Release&#160;Date:&#160;<br />September 19, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_16">Build #:&#160;<br />44.1.430</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_17">Mobile API #:&#160;<br />44.1.187.0</p>
+                    <p>IPA &amp;&#160;APK:&#160;<br />44.1.430</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table align="center" class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Login &gt; Create Account</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">EMS Human Resources Toolkit Users Credentials Not Imported Correctly</p>
+                        <p class="RNBody">When EMS Human Resources Toolkit users attempted to log in to EMS Mobile App, security template settings did not affect permissions as expected.&#160;The&#160;Create Account&#160;button was available to users who should not have access to this feature.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that Administrators can control the button's availability&#160;using the "Create \Edit An Account" role under Configuration &gt; Everyday User Applications &gt; Everyday User Security Templates in EMS Desktop Client.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23080" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23080</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" rowspan="3">
+                        <p class="RNArea">User Interface</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Create/Edit Reservation:&#160;Required Fields Unmarked for Long Field Names</p>
+                        <p class="RNBody">When working with a booking, fields that had long field names were not appropriately marked with red to indicate when they were required.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified display so that required fields show a red bar on the left side regardless of field name length.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23171" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23171</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Calendar: "Load more" Button Displays When No More Events Exist</p>
+                        <p class="RNBody">When viewing future events, the button appeared even when no more events existed.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Changed validations so that the button only appears when there are more events to view.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23124" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23124</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">"Reservation Created" Message Repeats After Locking/Unlocking Devices</p>
+                        <p class="RNBody">During the reservation creation process, if users' devices locked and then unlocked while the user was navigating back to the home page,&#160;the message "Reservation Created" appeared multiple times.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Changed the message to only display once after saving changes.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23029" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23029</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Create Reservation&#160;&gt; Change Room</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Changing Room Changes Timezone</p>
+                        <p class="RNBody">When users changed the room to a new building on a reservation, the time zone changed and an error message presented.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified behavior so that the error message no longer presents.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23065" title="EMS Internal Use " alt="EMS Internal Use " class="RNRefHyper">23065</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create Reservation &gt; Add Attendee</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Adding Attendee to Reservation When Add to Calendar is Disabled Causes Crash</p>
+                        <p class="RNBody">When users added attendees to reservations that had the option to add the event to the calendar&#160;disabled, the application crashed.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Changed functionality so the crash no longer occurs, and added a descriptive error message to clarify when adding the event to the calendar has been disabled.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23366" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23366</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" rowspan="2">
+                        <p class="RNArea">Edit Outlook&#160;Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Editing Outlook&#160;Booking Causes Error</p>
+                        <p class="RNBody">When users edited bookings from Outlook&#160;that had been made using a booking template enabled for both EMS Mobile App and EMS for Outlook, the following error occurred: "Error Loading Template."</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that users can edit this type of booking without the error.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23364" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23364</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Cannot Save Changes to Outlook Meeting</p>
+                        <p class="RNBody">When editing a booking that did not allow "Add to my calendar," users were unable to save changes.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified validations to ensure that users can save changes in this situation.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/23367" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">23367</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Search</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Clicking Search Button Repeatedly Opens Multiple Search Windows</p>
+                        <p class="RNBody">When users clicked the Search button multiple times, multiple search windows launched.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified behavior so that only one search window opens.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23006" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23006</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" rowspan="3">
+                        <p class="RNArea">Calendar</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Calendar Fails to Refresh After Booking Cancellation</p>
+                        <p class="RNBody">When users canceled a booking the Calendar did not refresh to show the cancellation.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the page to auto-refresh after a booking cancellation.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23069" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23069</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Location Name and Details Frozen While Scrolling</p>
+                        <p class="RNBody">When users scrolled up and down, the location name and other details did not scroll.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified display so that all elements scroll as designed.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23028" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23028</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Bookings Not Visible When&#160;Toggling Back to Home Page</p>
+                        <p class="RNBody">When users navigated to the calendar in schedule (grid) view&#160;and then back to the home page, bookings did not show on the home page.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the display to ensure that bookings are properly listed on the home page.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=23386" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23386</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Check-In</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Outdated Parameters for Check-In and Building Proximity</p>
+                        <p class="RNBodyBeforeList">Parameters that controlled user&#160;Check-In from EMS Desktop Client for&#160;how building proximity was handled during check-in were outdated:</p>
+                        <ol start="1" class="RN-number-list">
+                            <li class="li_14">MOBILE_CheckinProximityDistance -&#160;Mobile Check In Proximity Distance</li>
+                            <li class="li_14">MOBILE_CheckinProximityUnitOfMeasurement -&#160;Mobile Check In Proximity Unit of Measurement</li>
+                            <li class="li_14">MOBILE_ProximityDistance -&#160;Mobile building proximity distance</li>
+                            <li class="li_14">MOBILE_ProximityUnitOfMeasurement -&#160;Mobile building proximity unit of measurement</li>
+                        </ol>
+                        <p class="RNBodyBeforeList"><span class="ui">Fix:&#160;</span>Modified parameters so now the following exist instead:</p>
+                        <ol start="1" class="RN-number-list">
+                            <li class="li_14">MOBILE_CheckinProximityDistance -&#160;Mobile Check In Proximity Distance</li>
+                            <li class="li_14">MOBILE_ProximityUnitOfMeasurement -&#160;Mobile proximity unit of measurement</li>
+                        </ol>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?searchText=23253%27&amp;_a=edit&amp;id=23253" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23253</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">iOS Only: Home Page</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Today's Events Not Displaying Automatically</p>
+                        <p class="RNBody">When users on iOS&#160;devices launched the application, today's events were not automatically listed.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified the display to list today's events for the current user&#160;as designed.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?searchText=23253%27&amp;_a=edit&amp;id=23378" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">23378</a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+        <p>&#160;</p>
+    </body>
+</html>

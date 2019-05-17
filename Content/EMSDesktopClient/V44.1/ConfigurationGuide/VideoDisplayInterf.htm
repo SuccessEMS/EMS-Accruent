@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Video Display Interface V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />The Video Display Interface</h1>
+        <p>The EMS Video Display Interface (VDI) is an optional, add-on component for EMS that exports meeting and event information to a video display system such as Janus, Target Vision, and so on. It does this by periodically saving booking information to a file which the video display system then retrieves and displays on video monitors. You use the windows-based Task Scheduler to set the frequency at which the EMS Video Display Interface program (EMS.exe) runs. This program stores the booking information and creates the export file. You set parameters in EMS that define the types of bookings that are to be included in the export file (based on buildings, statuses, and so on), where the exported file should reside, and other information. You must manually export the booking information once and create the export file before you can configure EMS to automatically export the information.</p>
+        <p>To integrate EMS with your video display, you will:</p>
+        <ul class="unorder-list">
+            <li>Run the tool from EMS Desktop Client</li>
+            <li>Configure settings for exporting booking information</li>
+            <li>Export the data to your video display system</li>
+            <li>Configure Windows Task Scheduler to automatically export data at a regular interval</li>
+        </ul>
+        <ol class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">System Administration</span> &gt; <span class="ui">Tools </span>&gt; <span class="ui">Video Display Interface</span>. </p>
+                <p>The Video Display Interface dialog box opens. The <span class="ui">Date Range</span> tab is the active tab.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display.png" alt="emssg_appendixdisplay_image001.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Video Display Interface</p>
+                </div>
+            </li>
+            <li>
+                <p>Specify the settings for exporting the booking information:</p>
+                <ul start="2">
+                    <li>
+                        <p>The first time you configure the VDI, or if you edit your VDI settings, you must specify a date range for the system to save the settings. Going forward, the system automatically exports the information only for the bookings that are taking place on the current day’s date based on the frequency that you specify.</p>
+                    </li>
+                    <li>
+                        <p>To export data for a different date or date range, on a one-time only basis, enter the date or range. If the export is to contain only bookings taking place in a particular time frame, check the Use Specific Times box and enter the starting and ending times. After this manual update, the system reverts to exporting data for the current day’s date based on the frequency that you specify.</p>
+                    </li>
+                    <li>
+                        <p>In the Format field, select the pre-defined VDI export format. (If you select PowerPoint as the pre-defined VDI export format, then the Bookings for Slide fields is enabled. You must also indicate the number of bookings that are to appear on a slide.)</p>
+                    </li>
+                    <li>
+                        <p>In the Export File Path, click the Search icon&#160;to open Export File Path dialog box and browse to and select the file to which you are exporting the data, or you can manually enter the full path to the file with the file name and extension.</p>
+                    </li>
+                    <li>
+                        <p>On the Buildings tab, Statuses tab, Event Types tab, and Group Types tab, specify the building/room, status, event type, and group criteria by which to filter the booking information that you are exporting.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click&#160;Export.&#160;A message appears indicating that the export file was created successfully.</p>
+            </li>
+            <li>
+                <p>Click&#160;OK.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>After you configure your export settings, you can click&#160;Memorize&#160;to save the export settings as a memorized report so that you do not have to specify the export settings every time you export your meeting and event information. If you save the export settings as a memorized report, you can make the report public (available to all users in your EMS database) or private (available only to you.)</p>
+                </div>
+            </li>
+        </ol>
+        <p>After you have manually run the export once, you can set up the system to export events automatically. Following the steps outlined in your Windows operating system documentation, use the Task Scheduler to define a scheduled task that executes EMS.exe on a regular basis (typically once each day). The file is located in the folder in which the client portion of the EMS system is installed. (The default is C:\Program Files\ EMS [PRODUCT NAME and VERSION NUMBER]). Before existing the Task Scheduler, select “Open advanced properties for this task when I click Finish” and append /vdi to the end of the EMS path in the “Run” textbox, for example:</p>
+        <p class="indent_14">“C:\Program Files\EMS [PRODUCT NAME and VERSION NUMBER]\EMS.exe”/vdi.</p>
+    </body>
+</html>

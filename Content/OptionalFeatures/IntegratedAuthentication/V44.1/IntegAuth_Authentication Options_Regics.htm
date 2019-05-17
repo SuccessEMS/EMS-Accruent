@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Authentication Options for EMS Regics</h1>
+        <p>Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p>
+        <ol class="number-list">
+            <li>
+                <p><span class="ui">Login Credentials:</span> This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</p>
+            </li>
+            <li>
+                <p><span class="ui">Enabled by:</span> This is either a parameter or checkbox that needs to be enabled for the authentication to work.</p>
+            </li>
+            <li>
+                <p><span class="ui">Configuration Page:</span> This is where configuration and options are set for the authentication.</p>
+            </li>
+        </ol>
+        <h2>Windows Authentication</h2>
+        <ul class="unorder-list">
+            <li>
+                <p>Login Credentials: External Reference in Regics user account settings,&#160;Admin &gt; Security &gt; Users.</p>
+            </li>
+            <li>
+                <p>Enabled by: Within IIS on the Regics site, "Authentication" options, Windows Authentication.</p>
+            </li>
+            <li>
+                <p>Configuration Page: None.</p>
+            </li>
+        </ul>
+        <h2>LDAP</h2>
+        <ul class="unorder-list">
+            <li>
+                <p>Login Credentials: External Reference in Regics user account settings,&#160;<span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>.</p>
+            </li>
+            <li>
+                <p>Enabled by: regics/ldapconfiguration.aspx page, "Authenticate users via LDAP?" checkbox (Need to be logged in as an administrator and have Integrated Authentication in license).</p>
+            </li>
+            <li>
+                <p>Configuration Page: regics/ldapconfiguration.aspx page, there are multiple tabs.</p>
+            </li>
+        </ul>
+        <h2>Portal</h2>
+        <ul class="unorder-list">
+            <li>
+                <p>Login Credentials: External Reference in Regics user account settings,&#160;<span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <span class="ui">Users</span>.</p>
+            </li>
+            <li>
+                <p>Enabled by: Always enabled,&#160;<span class="ui">Admin </span>&gt; <span class="ui">System Administration</span> &gt; <span class="ui">Parameters&#160;</span>(Select the appropriate entry from the "Portal Authentication Method" parameter drop-down list).</p>
+            </li>
+            <li>
+                <p>Configuration Page: There are multiple different setup items in the Default Settings page under the "Portal Authentication" area.</p>
+            </li>
+        </ul>
+    </body>
+</html>

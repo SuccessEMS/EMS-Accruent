@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="2621" MadCap:lastWidth="920" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Desktop Client Release Notes <br />V44.1, Update 14</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Name:&#160;V44.1 Update 14</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;July 31, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch:&#160;44.1.14000.201707251</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build #:&#160;&#160;44.1.14000.349</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Optimization</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Conflicts for Optimization Scenarios Showed Conflicts That Were Not Actual Conflicts</h4>
+                        <blockquote>
+                            <p>Conflicts for Optimization scenarios showed courses from all terms that were not actual conflicts.&#160;</p>
+                            <p>Fix:&#160;Modified functionality so that conflicts shown are actual conflicts.&#160;</p>
+                        </blockquote>
+                        <p>Internal Reference #&#160;<a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21142" title="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21142" class="Hyperlink">21142</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Reporting</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Utilization Report Error</h4>
+                        <blockquote>
+                            <p>When users tried to access&#160;the Room Utilization report, they received an error message stating, "Conversion from string '0.9' to type 'Double' is not valid. Input string was not in a correct format."&#160;&#160;</p>
+                            <p>Fix:&#160;Modified functionality so that the Room Utilization report can be run without errors.&#160;</p>
+                        </blockquote>
+                        <p>Internal Reference #&#160;<a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/29243" title="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/29243" class="Hyperlink">29243</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>EMS Web Deploy</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <h4>EMS Web Deploy Was Not Automatically Updating</h4>
+                        <blockquote>
+                            <p>When users launched the EMS Web-deploy Desktop Client, automatic updates were not taking place. If they attempted to run the AutoUpdate.exe manually, they received the following error, "EMS is having trouble connecting," and the EMS Desktop Client stopped working entirely. Users on version 12 or later needs to upgrade to Update 14.&#160;</p>
+                            <p>Fix:&#160;Modified functionality so that the EMS Web-deploy automatically updates when clicked.&#160;</p>
+                        </blockquote>
+                        <p>Internal Reference #&#160;<a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/31453" title="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/31453" class="Hyperlink">31453</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

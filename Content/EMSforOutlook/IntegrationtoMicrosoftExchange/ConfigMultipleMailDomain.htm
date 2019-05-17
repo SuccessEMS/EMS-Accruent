@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Configure Multiple Mail Domains</title>
+    </head>
+    <body>
+        <h1>Configure Multiple Mail Domains</h1>
+        <p>To configure multiple mail domains, you must edit the web.config file. This will enable the Mail Domain drop-down that allows Administrators to specify different EWS&#160;URLs, AutoDiscover settings, and authentication options based on the domain. </p>
+        <p>When an EIWS booking is made through EMS for Outlook or the EMS&#160;Web App, it will automatically pull the domain from that user’s email address.  It will then use the corresponding Mail Domain option.</p>
+        <ol class="number-list">
+            <li>
+                <p>Open the <span class="ui">web.config</span> file. </p>
+            </li>
+            <li>
+                <p>Navigate to the mail domains line at the top under the Configuration section. </p>
+                <p>
+                    <img src="../Images/EIWS_Maildomains.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Remove the comment marks (&lt;!-- --&gt;) and add your domains to the value (e.g., <span style="font-family: 'Courier New';"><br />&lt;add key="mailDomains" <MadCap:annotation MadCap:createDate="2019-03-28T12:49:02.7777605-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Can we update &quot;dea.com&quot; to a newer example?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-28T12:49:18.9750682-06:00">value="dea.com│google.com│microsoft.com</MadCap:annotation>"/&gt;</span></p>
+            </li>
+            <li>
+                <p>Save your <span class="ui">web.config</span> file. You will now see the <span class="ui">Mail Domain</span> drop-down menu on the <span class="ui">pamconfig.aspx </span>screen. Each menu item will have its own <span class="ui">Provider </span>area. </p>
+                <p>
+                    <img src="../Images/EIWS_Screen.png" class="popup_with_padding_only" />
+                </p>
+            </li>
+            <li>
+                <p><a href="ConfigIntegExchange.htm#Test_Your_Exchange_Integration">Test your Exchange Integration</a>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>These settings are stored in the tblPamSettings table. </p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

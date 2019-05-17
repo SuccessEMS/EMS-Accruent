@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>About Creating Scenarios and Optimizations V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />About Creating Scenarios and Optimization</h1>
+        <p>You create scenarios to test room assignments that have been given to courses for a term. In EMS, you can create two types of scenarios—a&#160;pre-assignment&#160;scenario and an&#160;optimization scenario. A pre-assignment scenario is a scenario in which a selection of courses are manually assigned to rooms, typically because the assigned rooms are to be excluded in an optimization scenario. In pre-assignment scenarios, the assignments are automatically considered “locked in.” An&#160;optimization&#160;scenario is a scenario in which EMS automatically assigns rooms to courses based on room preferences, requirements, and weighted criteria. The EMS optimization process can support 100% optimization, incremental optimization by academic unit, and/or a combination of pre-assignment and automated optimization.</p>
+        <p>This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Scenario">Scenario Settings</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Standard">Standard Weights</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Preference">Preference Weights</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Evaluating">Evaluating Optimization Scenarios</a>
+                </p>
+            </li>
+        </ul>
+        <p>The optimization process assigns rooms to courses in three passes.</p>
+        <ol class="number-list">
+            <li>
+                <p>The first optimization pass queries the term for all courses with&#160;requirements. These courses are scored based on the weightings (importance) assigned to the requirements and processed in order of highest to lowest score. Any course with a requirement that cannot be accommodated remains unassigned and the room assignment must be manually resolved.</p>
+            </li>
+            <li>
+                <p>The second optimization pass queries the term for all courses with&#160;preferences. Courses are processed from highest to lowest score. If an available room cannot be identified for a course with preferences, the optimization process begins to drop preferences (lowest weight first) from consideration in an effort to find and assign an available room. Using the Ignore Requirements option demotes a requirement to a preference and sends any class with the dropped requirement to this second optimization pass.</p>
+            </li>
+            <li>
+                <p>The third and final optimization pass assigns rooms to all remaining courses without preferences. If the Include option for a preference is cleared, then any class with this preference is demoted to this third optimization pass.</p>
+            </li>
+        </ol>
+        <p>Throughout the optimization process, the optimizer considers room capacity (the course’s adjusted enrollment must fit within a room’s capacity), looks for the best&#160;seat fill&#160;(a room with a capacity that most closely accommodates the estimated enrollment), and the best room utilization (completely filling one room before moving on to another) to achieve the best room optimization possible. You use the options that are available to you on the&#160;Scenario dialog box&#160;to create scenarios.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_13.gif" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">Scenario Dialog Box</p>
+        </div>
+        <h2><a name="Scenario"></a>Scenario Settings</h2>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">Locked</span><b>—</b>When this is checked no users will be able to use the "Optimize" or "Preassign" buttons on the Scenarios screen for the corresponding scenario.&#160; Once unchecked those functions become available again.</p>
+            </li>
+            <li>
+                <p><span class="ui">Back To Back Gap Minutes—</span>When an instructor has back to back courses, the EMS Campus Optimizer can be weighted to try to keep instructors in the same room. What determines whether an instructor is back to back is the amount of time in between the courses. With the optimizer, the amount of time required for courses to be considered back to back can be designated in minutes. This allows users to control the amount of time between courses that would be considered important for instructors to remain in the same room.</p>
+            </li>
+            <li>
+                <p><span class="ui">Boost Requirement Weights</span><b>—</b>When checked, this will increase the specified weight on courses with requirements by 50 percent for each applicable slider criteria. For example, if a feature of Whiteboard has a slider weight of 500 and Course 1 has whiteboard marked as a preference, its score would result in 500 points. If Course 2, has whiteboard as a requirement, it’s score would result in 750 points (50% higher).</p>
+            </li>
+            <li>
+                <p><span class="ui">Optimize Around Non-Course Bookings</span><b>—</b>This option will force the optimizer to take into account bookings that are already in EMS when finding rooms.&#160; This feature will only work with bookings in a “Booked Space” status-type.&#160; Searching or assigning rooms after the optimization has run (or during pre-assign) with this option checked will also show the spaces as in use.</p>
+            </li>
+        </ul>
+        <h2><a name="Standard"></a>Standard Weights</h2>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">Instructor Importance</span> — Instructor Importance is assigned in the Academic Planning (Configuration &gt; Instructors) area of EMS Academic Planning. Preferences belonging to those instructors who are marked as “Important” receive priority over those instructors who are not marked as important.</p>
+            </li>
+            <li>
+                <p><span class="ui">Time Block Conformance </span>— Ranks those courses that conform to the time block template for the term higher than those courses that do not.</p>
+            </li>
+            <li>
+                <p><span class="ui">Enrollment </span>— Enrollment uses a combination of the assigned weight&#160;and&#160;the following EMS Academic Planning system parameters to determine the courses that are assigned rooms first.</p>
+            </li>
+            <li>
+                <p><span class="ui">Course Length </span>— Course Length factors in the number of meeting occurrences for a class. For example, a class that meets five times per week might be given room assignment priority over a class that only meets twice per week.</p>
+            </li>
+        </ul>
+        <h2><a name="Preference"></a>Preference Weights</h2>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">Instructor Back to Back</span> — Instructors who are teaching back to back courses (two or more classes in the same day) are ranked higher than instructors who are not teaching back to back courses.</p>
+            </li>
+            <li>
+                <p><span class="ui">Same Room</span> — Ranks courses that have been identified as using the same room during Set Preferences mode higher than those courses that do not use the same room.</p>
+            </li>
+            <li>
+                <p><span class="ui">Building</span> — Any courses that have a building preference will receive this weight.</p>
+            </li>
+            <li>
+                <p><span class="ui">Room</span> — Any courses that have a room preference will receive this weight.</p>
+            </li>
+            <li>
+                <p><span class="ui">Small Class Size </span>(if less than xx students) — Determines what constitutes a “small” class.</p>
+            </li>
+            <li>
+                <p><span class="ui">Small Class Size Weight Adjustment</span> — Adds/subtracts this number from the Enrollment weighting that is set in the optimization scenario.</p>
+            </li>
+            <li>
+                <p><span class="ui">Large Class Size</span> (if more than xx students) — Determines what constitutes a “large” class.</p>
+            </li>
+            <li>
+                <p><span class="ui">Large Class Size Weight Adjustment</span> — Adds/subtracts this number from the Enrollment weighting that is set in the optimization scenario.</p>
+            </li>
+        </ul>
+        <p>For example, with all other weightings set to zero, consider the following configuration for these four settings:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Weight assigned to Enrollment in scenario = 500</p>
+            </li>
+            <li>
+                <p>Small Class Size (if less than xx students) = 10</p>
+            </li>
+            <li>
+                <p>Large Class Size (if more than xx students) = 750</p>
+            </li>
+            <li>
+                <p>Large Class Size Weight Adjustment = +100</p>
+            </li>
+            <li>
+                <p>Instructor Importance = 400</p>
+            </li>
+        </ul>
+        <p>The following three courses would be scored and ranked for room assignment as shown below:</p>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_13.png" class="popup_with_padding_only" />
+        </p>
+        <p>Also, when you are creating a scenario, all the rooms in your domain are eligible to hold a course. If there are rooms offline for the term that you are scheduling, or there are rooms that should not be considered for the scenario, you can exclude them from the scenario on the Excluded Rooms tab of the Scenario dialog box.</p>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_13_1.png" class="resize80_noborder_padding" />
+        </p>
+        <p>Finally, although the process for your organization might vary, a typical approach for using scenarios to optimize room assignments is to first create a pre-assignment scenario to partially complete the assignment of rooms to courses for a term. You would then copy this pre-assignment scenario and edit the weighted values as needed to make an optimization scenario, and then run this optimization scenario to continue with the assignment of rooms to courses. You can create as many optimization scenarios as needed (either by copying an existing scenario or creating one “from scratch”) and then use various tools to compare placement results before you choose your final scenario for publishing. </p>
+        <p><b>See&#160;Also: </b><a href="#Evaluating">Evaluate Optimization Scenarios</a> (below)</p>
+        <h2><a name="Evaluating"></a>Evaluate Optimization Scenarios</h2>
+        <p>You can test an unlimited number of potential scenarios and compare results using various tools before you choose your final scenario for publishing. Both the Academic Browser and the Academic Book contain an Scenario drop-down list from which a specific scenario can be selected for viewing and evaluation. </p>
+        <p><b>See&#160;Also:</b>&#160;<a href="SearchwithAcadBrowser.htm">Search with the Academic Browser</a>&#160;and&#160;<a href="UseAcadBook.htm">Use the Academic Book</a>.</p>
+        <p>The Scenarios window contains a Print option that provides access to the following reports that can be used to for evaluating scenarios—Scenario Results, Scenario Exceptions, Unmet Preferences, and Preferences Summary. Additional reports within the Academic Planning &gt; Reports area are also available, including Classroom Optimization, Hourly Classroom Utilization, and Course Preferences. </p>
+        <p><b>See&#160;Also:</b>&#160;<a href="GenerateAcadReports.htm">Generate Academic Reports</a>.</p>
+    </body>
+</html>

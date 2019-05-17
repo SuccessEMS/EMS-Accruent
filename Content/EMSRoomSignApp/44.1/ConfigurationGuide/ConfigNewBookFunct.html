@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure New Booking Functionality in the EMS Room Sign App (V44.1)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure New Booking Functionality</h1>
+        <p>To configure new booking functionality in EMS&#160;Room Sign App, complete these steps:</p>
+        <ol class="number-list">
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <span class="ui">EMS&#160;Glance Settings</span> to access the <MadCap:variable name="General.RSA" /> Settings area.&#160;<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>You can set how information displays at the Global level (the default for all Profiles) or for just one Profile.&#160;</p></div></li>
+            <li>Open Global Settings&#160;to set this functionality as the default for all Profiles,&#160;<em>or</em>&#160;open a Profile&#160;for which you want to create a special display,&#160;and then edit the settings on the <span class="ui">Settings </span>tab.</li>
+            <li>Adjust the Global or Profile settings listed in the table below to configure how check in information displays on the following screen. New booking functionality has two components:
+    <ol class="mt-indent-1" start="1"><li>New Booking Settings</li><li>Group Identification/Authentication Settings</li></ol></li>
+        </ol>
+        <p><b>New Booking Settings</b>
+        </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Allow Book Now</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allow Book Now and Book Later</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Allow New Bookings</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Indicates if users can book a room. If set to&#160;<span class="ui">Yes</span>, then a <span class="ui">Reserve </span>button is displayed. When a user presses this button, a Reserve popup opens with options for reserving the room.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allow Future Same Day Bookings</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Indicates if a room can be booked for a future time on the&#160;<i>current</i>&#160;day. If set to&#160;<span class="ui">No</span>, the <span class="ui">Start Down</span> dropdown on the Reserve popup is disabled.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Currently, the EMS Room Sign App supports only same day bookings.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Duration for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The default duration for booking the room, in minutes, where the start time is the current time. For example, if you enter 60 for this value and the current time is 8:00 am, then the default start/end time on the Reserve popup will be 8:00 to 9:00 am.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The Default Duration value must not be larger than the&#160;Maximum Number of Minutes for New Booking&#160;value.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Maximum Number of Minutes for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The maximum booking duration, in minutes, allowed when booking a room.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Event Name for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The default name for an event when booking a room. The <span class="ui">Event Name</span> field is always displayed on the Reserve popup.&#160;</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If&#160;Require Event Name for New Booking&#160;is set to&#160;<span class="ui">Yes</span>, then <span class="ui">Default Event Name</span> for New Booking should be left blank.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Event Type for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The default <span class="ui">Event Type</span> when booking a room.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The <span class="ui">Event Type</span> field is not displayed on the Reserve popup.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Reservation Source for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The default Reservation Source when booking a room.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p> The <span class="ui">Reservation Source</span> field is not displayed on the Reserve popup.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Default Status for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The default Status when booking a room.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p> The <span class="ui">Status</span> field is not displayed on the Reserve popup.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Require Event Name for New Booking</p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Indicates if the Event Name is required when booking a room.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/RSA_UgConfigNewBookFunct_ReservePopup.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Reserve Popup (Opens after the Reserve button is pushed on the Available screen)</p>
+            <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                <p>See Also:&#160;<a href="Authentication.htm#GroupIdentification">Group Identification/Authentication Settings</a>.</p>
+            </div>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/RSA_UgConfigNewBookFunct_ReservePopupNoIdentification.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Reserve Popup (No Identification)</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/RSA_UgConfigNewBookFunct_GroupLookup.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Group Lookup Authentication</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/RSA_UgConfigNewBookFunct_GroupLookupSearchResults.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Group Lookup (Matching Search Results from which to Select)</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/RSA_UgConfigNewBookFunct_AuthWithoutPass.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Authentication without Password</p>
+        </div>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/B_Configuration/RSA_UgConfigNewBookFunct_AuthWithPass.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Authentication with Password</p>
+        </div>
+    </body>
+</html>

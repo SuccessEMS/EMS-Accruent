@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="5721" MadCap:lastWidth="937" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Web App Release Notes <br />V44.1 Update 10</h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 202px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 193px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 243px;" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_4">Name:&#160;V44.1 Update 10</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_4">Release&#160;Date:&#160;April 07, 2017</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_4">Build #:&#160;&#160; 44.1.9000.238</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_4">Database (SQL) Patch:&#160;201703280</p>
+                    <p class="p_4">Exchange Integration Build #:&#160;&#160;44.1.10000.85</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Check In</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Increase Duration of Check-In Confirmation Message</h4>
+                        <p class="NormalWeb_2">Increased the duration of the toast message that confirms user Check-In when accessed from a notification email.&#160;&#160;</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28504?fullScreen=false" class="a_16">28504</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="p_26">My Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <h4>Add Capability in web.config To Set Refresh Interval For My Bookings</h4>
+                        <p class="NormalWeb_2">Added a key to the web.config file, "refreshInterval,"&#160;so customers can set the refresh for the My Bookings page to any desired value. If set to less than 60 seconds, it will default to 60 seconds (for their own protection). &#160;&#160;</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/27999" class="a_16">27999</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Check In</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Check-In Status Cut Off&#160;</h4>
+                        <p class="NormalWeb_2">The "Checked In" status that displayed on the My Bookings window was cut off.<br />Fix:&#160;Increased width setting for the status display so that the entire text for "Checked In" is visible.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28573" class="a_16">28573</a>
+                        </p>
+                        <h4>Check-In Button Persisted&#160;When Loading Checked-In Status&#160;</h4>
+                        <p class="NormalWeb_2">When users checked into a room, the&#160;Check In&#160;button continued to display while the Checked In status was loading, which was especially noticeable for customers with large numbers of users and events which required additional loading time. Repeatedly clicking&#160;the Check In button, especially for users who had auto-refresh turned off,&#160;could cause the meeting to be ended prematurely.&#160;<br /><br />Fix:&#160;Modified the Check In button so that it is greyed out and not clickable during the process of loading the Checked In status, and added functionality to validate when the user is already checked in so that clicking the button repeatedly does not result in End Now.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28571">28571</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28572">28572</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28589">28589</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Floor Maps</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Floor Map Indicators Misaligned</h4>
+                        <p class="NormalWeb_2">Indicators on floor maps were slightly up and to the right, which made them difficult to see on large floor maps.&#160;&#160;<br />Fix:&#160;Modified the display so floor map indicators center on their location on floor map images.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28095" class="a_16">28095</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td rowspan="4" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Create Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Search Option Absent For Billing Reference When Adding Services</h4>
+                        <p class="NormalWeb_2">When users added a service to a reservation that had no available resources, the Search option was unavailable so they could not look up Billing Reference numbers.<br /><br />Fix:&#160;Modified functionality to ensure that the Search option is available for the Billing Reference field.</p>
+                        <p class="p_25"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28301" class="a_16">28301</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25991" class="a_16">25991</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>"Please Enter a Valid Time" Error Incorrectly Displayed When Local Timezone&#160;Used DST</h4>
+                        <p class="NormalWeb_2">When users booked events from a different time zone than the server, and left the default value in the Start Time field, the error, "Please Enter a Valid Time" incorrectly displayed due to miscalculations for Daylight Savings time.<br /><br />Fix:&#160;Modified calculations to ensure that DST time zone offsets are calculated properly when the user's time zone is different than the server time zone so the error no longer displays.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28398" class="a_16">28398</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Search For Names Containing Apostrophes Caused Internal Server Error</h4>
+                        <p class="NormalWeb_2">When users clicked the Search icon to search for names containing apostrophes, an Internal Server Error occurred.&#160;&#160;<br /><br />Fix:&#160;Modified search functionality&#160;to properly interpret apostrophes in search strings so the error no longer occurs.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28952" class="a_16">28952</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Event Time Miscalculated for Daylight Savings</h4>
+                        <p class="NormalWeb_2">When users booked an event using an Exchange&#160;template that had a specific date set, and then changed the date and time such that Daylight Savings time had to be automatically calculated, the event time was incorrect on the Manage Bookings page.&#160;&#160;<br /><br />Fix:&#160;Modified daylight savings time calculations to ensure that the event time is correctly calculated when daylight savings is involved. .</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28499" class="a_16">28499</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Edit Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <h4>Exchange Integration: Changing Recurrent Reservation Caused Error</h4>
+                        <p class="NormalWeb_2">When users changed the location, date, or time for recurring reservations, the error "There was a problem updating the meeting in the calendaring system" occurred and the change did not show in attendees' calendars.&#160;&#160;<br /><br />Fix:&#160;Modified daylight savings time calculations to ensure that event time is correctly calculated so the error does not occur.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28214" class="a_16">28214</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Edit Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <h4>Exchange Integration: Apostrophes in Email Addresses Caused Error</h4>
+                        <p class="NormalWeb_2">When users with apostrophes in their email addresses attempted to edit bookings&#160;in systems with Exchange integration, the error, "We could not locate this booking in your calendaring system" occurred and they could not edit the booking.<br /><br />Fix:&#160;Modified encoding for email addresses to Exchange so that apostrophes are properly interpreted and the error no longer occurs.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28799" class="a_16">28799</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <h4>Event Duration Defaulted Incorrectly When Adding New Location</h4>
+                        <p class="NormalWeb_2">When users added a new location to an existing meeting, the meeting duration incorrectly defaulted to one hour and they could not change it. This affected room search results and enabled them to select a room in conflict.<br /><br />Fix:&#160;Modified validations so that the original meeting duration is retained for the new location and users can edit it as expected.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/28608" class="a_16">28608</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

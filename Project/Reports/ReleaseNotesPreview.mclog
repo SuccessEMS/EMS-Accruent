@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MadCapLog Protocol="2" Description="MadCap Flare 2018 Generated PDF/ReleaseNotesPreview.fltar" Date="2019-04-02T15:31:08.6614868-06:00">
+    <Messages>Compiling target ReleaseNotesPreview...
+Checking Word version...
+Removing previously generated content...
+Gathering Glossary information...
+Gathering Auto-index information...
+Loading Master TOC...
+Processing Master TOC...
+Generating Glossary...
+Processing Page Layouts...
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png
+Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png
+Collecting source files...
+Processing source files...
+Processing topic: TitlePage_PreviewReleaseNotes.htm
+A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word.
+A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word.
+A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word.
+A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word.
+Processing topic: copyright.htm
+Processing topic: TOC.htm
+Processing topic: EMSDesktopClient.htm
+Processing topic: EMSWebApp.htm
+Processing topic: EMSforOutlook.htm
+Processing topic: EMSRoomSignApp.htm
+Processing topic: EMSKioskApp.htm
+Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information.
+Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information.
+Processing topic: EMSServicesComponents.htm
+Processing topic: EMSPlatformServices.htm
+A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word.
+Processing topic: LastPage_PreviewReleaseNotes.htm
+Generating final output...
+Patching links and page references...
+Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\EMSDesktopClient\V44.1\ConfigurationGuide\EMSEverydayUserApplicationsParameters.htm. File may not be included in the output.
+Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\EMSRoomSignApp\44.1\ConfigurationGuide\GlobalSettings.html. File may not be included in the output.
+Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\EMSKioskApp\V44.1\InstallationGuide\SysReqPrereq.htm. File may not be included in the output.
+Saving word output...
+Embedding images into document. This may take several minutes.
+Generated ../../../PDF/ReleaseNotesPreview/ReleaseNotesPreview.doc
+Saving result set...
+Output generated in 25 second(s).
+
+Done
+Saving log to "C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Project\Reports\ReleaseNotesPreview.mclog"
+</Messages>
+    <Warnings>
+        <LogEntry File="../../Content/Resources/PageLayouts/LandscapeMulti Page_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesPreview" ErrorID="10001" />
+        <LogEntry File="../../Content/Resources/PageLayouts/Multi Page_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesPreview" ErrorID="10001" />
+        <LogEntry File="../../Content/Resources/PageLayouts/One Pager_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesPreview" ErrorID="10001" />
+        <LogEntry File="../../Content/Resources/PageLayouts/PreviewRN_Multi Page_Letter.flpgl" Message="Missing linked source file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\Resources\Images\title_logowhite.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="ReleaseNotesPreview" ErrorID="10001" />
+        <LogEntry File="PreviewRN_Multi Page_Letter.flpgl" Message="A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110020" />
+        <LogEntry File="PreviewRN_Multi Page_Letter.flpgl" Message="A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110020" />
+        <LogEntry File="PrevTOC.flpgl" Message="A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110020" />
+        <LogEntry File="PrevTOC.flpgl" Message="A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110020" />
+        <LogEntry File="../../Content/ReleaseNotes/Version44.1/Update32/EMSKioskApp.htm" Message="Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110003" />
+        <LogEntry File="../../Content/ReleaseNotes/Version44.1/Update32/EMSKioskApp.htm" Message="Warning: Format auto-number commands can not be converted in MS Word output. See the help for more information." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110003" />
+        <LogEntry File="PreviewRN_Multi Page_Letter.flpgl" Message="A header, body, and/or footer frame is outside the page layout boundaries supported by Microsoft Word." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="110020" />
+        <LogEntry File="../../Content/EMSDesktopClient/V44.1/ConfigurationGuide/EMSEverydayUserApplicationsParameters.htm" Message="Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\EMSDesktopClient\V44.1\ConfigurationGuide\EMSEverydayUserApplicationsParameters.htm. File may not be included in the output." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="40017" />
+        <LogEntry File="../../Content/EMSRoomSignApp/44.1/ConfigurationGuide/GlobalSettings.html" Message="Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\EMSRoomSignApp\44.1\ConfigurationGuide\GlobalSettings.html. File may not be included in the output." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="40017" />
+        <LogEntry File="../../Content/EMSKioskApp/V44.1/InstallationGuide/SysReqPrereq.htm" Message="Unresolved link to file: C:\Users\megan.laub\Documents\My Projects\EMSWebsite4\Content\EMSKioskApp\V44.1\InstallationGuide\SysReqPrereq.htm. File may not be included in the output." LineIndex="-1" CharIndex="-1" Subsystem="MsWord Compiler" Target="ReleaseNotesPreview" ErrorID="40017" />
+    </Warnings>
+    <Errors />
+</MadCapLog>

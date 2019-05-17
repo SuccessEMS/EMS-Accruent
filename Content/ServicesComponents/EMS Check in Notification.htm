@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install the EMS Check-in Notification Service</h1>
+        <p>To install the EMS Email Notification Service:</p>
+        <ol class="number-list">
+            <li>
+                <p>Verify that the prerequisite software is installed.</p>
+            </li>
+            <li>
+                <p>Download the&#160;<span class="ui">EMSCheckInNotificationSetup.msi</span>&#160;onto the server that will be running the service.</p>
+            </li>
+            <li>
+                <p>Double-click&#160;<span class="ui">EMSCheckInNotificationSetup.msi</span>. Follow the on-screen prompts. It is recommended that the defaults are accepted.</p>
+            </li>
+            <li>
+                <p>Within the Microsoft Windows Start menu, locate&#160;<span class="ui">EMS Check-in Notification Service</span>.&#160;The EMS Check-in Notification Configuration dialog will appear.</p>
+                <div class="TitleandImage">
+                    <p class="Caption">
+                        <img src="CheckInNotConfig.PNG" class="padding_only" />
+                    </p>
+                    <p class="Caption">EMS&#160;Check-in Notification Configuration Dialog</p>
+                </div>
+            </li>
+            <li>
+                <p>Review and complete/change the following settings:</p>
+                <ul start="1">
+                    <li>
+                        <p><span class="ui">Mode</span>—Type of authentication to the SMTP server.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">SMTP Server</span>—SMTP server name or IP address.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Use Gmail</span>—Check this box if the organization uses Gmail as their mail server.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Port Number</span>—SMTP port (default = 25)</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Use SSL</span>—Check this option if your SMTP server runs under SSL.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">User Name/Password</span>—Required if an authentication mode other than Unauthenticated is selected.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Email Interval</span>—The frequency with which the system will generate notification emails. If the interval is set to 0 minutes, the service will not function. The recommended interval is 10 to 15 minutes. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>In the Databases section of the dialog box, you will see a sample database and server (named ‘server’ and ‘database.’) Select this entry, click&#160;<span class="ui">Edit</span>, and change the values to your EMS server and database name.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/EMS Plan a Meeting (PAM) (V44)/Installing EMS Check in Notification_1.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Notification Database Dialog</p>
+                </div>
+            </li>
+            <li>
+                <p>On the <span class="ui">Database </span>tab of the Notification Database dialog box, complete the following:</p>
+                <ul start="1">
+                    <li>
+                        <p><span class="ui">Server/Database</span>—EMS server and database name</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">EMS Authentication/Windows Authentication</span>—The method of authentication to this database.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Email From</span>—Email address that will be displayed in the From field of notification emails that are sent.</p>
+                    </li>
+                    <li>
+                        <p><span class="ui">Enable Service Event Logging</span>—Activates Windows event logging.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>After making your entries, click&#160;<span class="ui">OK</span>.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">OK&#160;</span>again to save your EMS Check-in Notification Configuration&#160;settings.</p>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../IssuesStartingService.flsnp" />
+    </body>
+</html>

@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="EMS Mobile App"
+    Link="/Content/Print Only Topics/TitlePage_MobileApp.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    PageType="title"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Installation Guide"
+    Link="/Content/EMSMobileApp/InstallationGuide/4_MobileAppHome.htm"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    StartSection="false"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    PageNumberFormat="decimal">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/EMSMobileApp/InstallationGuide/Introduction.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="What's New"
+        Link="/Content/EMSMobileApp/InstallationGuide/WhatsNew.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="System Requirements"
+      Link="/Content/EMSMobileApp/InstallationGuide/SysRequirements.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Installation and Basic Setup"
+      Link="/Content/EMSMobileApp/InstallationGuide/InstallandBasicSetup.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Architecture"
+        Link="/Content/EMSMobileApp/InstallationGuide/Architecture.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="How Mobile App Data Is Stored on Devices"
+        Link="/Content/EMSMobileApp/InstallationGuide/HowAppDataIsStoredonDevices.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Configuration Guide"
+    Link="/Content/EMSMobileApp/ConfigurationGuide/4_EMS_MobileApp_CG.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Authentication"
+      Link="/Content/EMSMobileApp/ConfigurationGuide/Authentication/ConfigureAuthentication.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="SAML Authentication"
+        Link="/Content/Authentication/SAMLAuthen.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue">
+        <TocEntry
+          Title="SAML Authentication Can Be Hosted or Pre-Configured in the EMS Mobile App"
+          Link="/Content/EMSMobileApp/ConfigurationGuide/Authentication/SAMLAuthenHostPreconfig.htm"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+      </TocEntry>
+      <TocEntry
+        Title="Using Windows Authentication (NTLM) for EMS Mobile"
+        Link="/Content/Authentication/NTLMWindowsAuthentication.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="LDAP Authentication"
+        Link="/Content/Authentication/LDAPAuthen.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Open ID Connect Authentication"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Authentication/OpenIDAuthen.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue">
+        <TocEntry
+          Title="Open ID Connect Authentication Can Be Hosted or Pre-Configured in the EMS Mobile App"
+          Link="/Content/EMSMobileApp/ConfigurationGuide/Authentication/OpenIDConnectAuthenHostPreconfig.htm"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+      </TocEntry>
+      <TocEntry
+        Title="Persistent Authentication"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Authentication/PersistentAuth.htm"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="EMS Native Authentication"
+        Link="/Content/Authentication/EMSNativeAuthen.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Add Mobile Users"
+      Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_AddMobileUsers.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Deploying the EMS Mobile App"
+      Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_DeployMobileApp.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Change EMS Mobile App Logo (Private Deployment Only)"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_ChangeEMSMobileAppLogoPrivDeploy.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Configure and Re-Sign EMS Mobile App (Private Deployment Only)"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_ConfigRe-signMobilePrivDeploy.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Customize Your Mobile App Configuration Using config.json (Private Deployment Only)"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_CustomizeMobileAppUsingConfigJson.htm"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Assign Templates to EMS Mobile Users"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_AssignTemptoMobileUsers.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="Restrict Users' Mobile App Versions"
+        Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_RestrictUsersMobileAppVer.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Change the Help Link Label and URL"
+      Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_ChangeHelpLinkLabelURL.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Configure EMS Mobile QR Codes"
+      Link="/Content/EMSMobileApp/ConfigurationGuide/Mobile_ConfigMobileQRCodes.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="How Do I Know When To Upgrade the Mobile App and API?"
+      Link="/Content/EMSMobileApp/InstallationGuide/HowtoUpgradeMobileApptoAPI.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Set EMS Mobile Parameters"
+      Link="/Content/EMSMobileApp/ConfigurationGuide/MobileAppParam.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/LandscapeMulti Page_Letter.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+  <TocEntry
+    Title="User Guide"
+    Link="/Content/EMSMobileApp/UserGuide/2_EMS Mobile App.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/EMSMobileApp/UserGuide/Introduction.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Log In, Reset Password, or Create An Account"
+      Link="/Content/EMSMobileApp/UserGuide/LogInResetPasswordCreateAccount.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Get Started With EMS Mobile"
+      Link="/Content/EMSMobileApp/UserGuide/GetStarted.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl">
+      <TocEntry
+        Title="Enter Your Server URL"
+        Link="/Content/EMSMobileApp/UserGuide/EnterYourServerURL.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="Search For Events"
+        Link="/Content/EMSMobileApp/UserGuide/SearchforEvents.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="Check In to Meetings"
+        Link="/Content/EMSMobileApp/UserGuide/CheckIntoMeetings.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="Cancel Meetings"
+        Link="/Content/EMSMobileApp/UserGuide/CancelMeetings.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="End Meetings Early"
+        Link="/Content/EMSMobileApp/UserGuide/EndMeetingsEarly.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="Assign or Remove Favorite Locations"
+        Link="/Content/EMSMobileApp/UserGuide/AssignRemoveFavLoc.htm"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="Use QR Codes"
+        Link="/Content/EMSMobileApp/UserGuide/ScanQRCodes.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Attend a Meeting"
+      Link="/Content/EMSMobileApp/UserGuide/AttendMeeting.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Create a Meeting"
+      Link="/Content/EMSMobileApp/UserGuide/CreateMeeting.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl">
+      <TocEntry
+        Title="Find a Room"
+        Link="/Content/EMSMobileApp/UserGuide/FindRoom.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+      <TocEntry
+        Title="Invite People"
+        Link="/Content/EMSMobileApp/UserGuide/InvitePeople.html"
+        ChapterNumberReset="continue"
+        PageNumberReset="continue"
+        StartSection="false"
+        BreakType="chapter"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Edit a Meeting"
+      Link="/Content/EMSMobileApp/UserGuide/EditMeeting.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+    <TocEntry
+      Title="Use Skype for Business in the EMS Mobile App"
+      Link="/Content/EMSMobileApp/UserGuide/UseSkypeforBusiness.html"
+      ChapterNumberReset="continue"
+      PageNumberReset="continue"
+      StartSection="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Last Page"
+    Link="/Content/Print Only Topics/LastPage_MobileApp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    ChapterNumberReset="continue"
+    PageNumberReset="continue"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    PageType="first"></TocEntry>
+</CatapultToc>

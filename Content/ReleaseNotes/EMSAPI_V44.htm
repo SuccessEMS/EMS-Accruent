@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>EMS&#160;API <br />Release Notes (Version 44)</h1>
+        <p>EMS release notes for the Version 44 EMS&#160;API are organized by Month and Year.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>To keep your applications up-to-date, download and run the latest database patch, plus the latest builds for your installed applications.&#160;<span class="ui">Both the database patch and the application builds are cumulative&#160;(all previous fixes are included in the latest build and patch we provide).</span> We recommend that all EMS application components are kept up-to-date&#160;<span class="italics">together</span>.</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For an overview of Version 44, see <a href="../V44_WhatsNew.htm">V44 Whats New</a>.</p>
+        </div>
+        <p class="beforelist">EMS release notes are organized by month:
+            </p>
+        <ol start="1" class="number-list">
+            <li><a href="#July_2017">July 2017</a>
+            </li>
+            <li><a href="#May_2017">May 2017</a>
+            </li>
+            <li><a href="#December_2016">December 2016</a>
+            </li>
+            <li><a href="#September_2016">September&#160;2016</a>
+            </li>
+            <li><a href="#June_2016">June 2016</a>
+            </li>
+            <li><a href="#May_2016">May&#160;2016</a>
+            </li>
+            <li><a href="#April_2016">April&#160;2016</a>
+            </li>
+        </ol>
+        <p class="beforelist">See Also:</p>
+        <ul class="unorder-list">
+            <li><a href="#Contact_Support">Contact Customer Support</a><![CDATA[  ]]></li>
+            <li><a href="../MCV7_RN.htm">Master Calendar Release Notes V7.0</a>
+            </li>
+            <li><a href="../MCV8_RN.htm">Master Calendar Release Notes V8.0</a>
+            </li>
+            <li><a href="../MC_KnownIssues.htm">Master Calendar Known Issues</a>
+            </li>
+            <li><a href="../Regics_RN_4.0.htm">Regics Release Notes V4.0</a>
+            </li>
+            <li><a href="../Update_to_LatestVersion_EMS.htm">Obtain Patches and New Builds</a>
+            </li>
+        </ul>
+        <h2><a name="July_2017"></a>July 2017</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Release Date</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS API</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>July 31, 2017</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>201707100</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>2.0.0.7</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS API&#160;</h3>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 86px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">API Call</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Booking Cancel Issue</p>
+                        <p class="RNBody">The error, "Invalid URI: The URI is empty," was being generated when the API call,&#160;EMSAPI UpdateBooking, was&#160;used on a booking made in the EMS for Outlook&#160;plug-in.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality so that no error is received.</p>
+                        <p class="RNRef">Internal Reference #&#160;25389</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="May_2017"></a>May 2017</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS&#160;API</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>2017.04.17.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>2.0.0.5<br />(updated overlay)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS API&#160;</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">EMS API</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">GetGroups API Call Not Returning Groups That Have Email Address Set To NULL</p>
+                        <p class="RNBody">The GetGroups API was not returning groups that had blank email addresses, so for example importing a list of users may have been missing those with no email addresses.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that groups with blank email addresses are returned by the API call.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="December_2016"></a>December 2016</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS API</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>2016.12.06.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>44.0.244</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>2.0.0.5</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS&#160;API</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <td class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Reported Issue</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Issue Resolution</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>&#160;2.0.0.5</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Some customers required additional support when integrating with third-party room signs that required combo room information.</p>
+                        <p class="InternalRef">Internal Reference # 25284</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Added the&#160;see GetBookingHistory API call, which provides the combo room information including Room ID to support &#160;additional room-sign integration.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="September_2016"></a>September&#160;2016</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Build Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>2016.09.08.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>44.0.235</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS&#160;API</h3>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">Running update calls on the following APIs produced an error:</p>
+                        <ul>
+                            <li>API_EMS_CreateReservation</li>
+                            <li>API_EMS_CreateWebRequest</li>
+                            <li>API_EMS_CreateWebUser</li>
+                            <li>API_EMS_EditReservation</li>
+                            <li>API_EMS_EditWebUser</li>
+                            <li>API_EMS_GetWebUserDetails</li>
+                            <li>API_EMS_GetWebUsers</li>
+                            <li>API_EMS_UpdateWebUserOptions</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Modified functionality so the update runs successfully.&#160;</p>
+                        <p class="InternalRef">Internal Reference # 22721</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="June_2016"></a>June 2016</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>EMS API</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>2016.06.03.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>44.0.227</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>2.0.0.2</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS API&#160;</h3>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNTitle">EMS API &gt; AddWebUser</p>
+                        <p>When using the API "AddWebUser" to add web users to the database, validations did not check that the customer had enough licenses for all products, such as EMS Campus, Enterprise, District, and Legal. The API was only checking licenses for EMS Workplace.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Changed the API to validate licensing for all products where web users must be licensed.</p>
+                        <p class="InternalRef">Internal Reference # 19682</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="May_2016"></a>May&#160;2016</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Build Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>2016.05.16.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>44.0.220&#160;&#160;&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS API</h3>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>When using the&#160;AddWebUser API to add users, the following error displayed even when the Web User Count was not exceeded.&#160;</p>
+                        <p>"Active Web User cannot be added. Web User count exceeded."</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Modified the API to correctly compare the number of active users in the database to the set limit so that the error message only appears when appropriate.</p>
+                        <p class="InternalRef">Internal Reference # 18193</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="April_2016"></a>April&#160;2016</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch Number</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Build Number</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>2016.04.06.0</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>44.0.212</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>EMS API</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 54px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 488px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>APIs.&#160;Additional APIs were requested&#160;as a feature enhancement.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="beforelist">Added the following APIs to the EMS API&#160;library.</p>
+                        <ul>
+                            <li>AddServiceOrder: Allows new service orders to be added to bookings.</li>
+                            <li>AddServiceOrderDetail: Allows new service order details (resources) to be added to existing service orders</li>
+                            <li>UpdateServiceOrder: Allows for edits to service orders.</li>
+                            <li>UpdateServiceOrderDetail: Allows for edits to service order details (resources).</li>
+                            <li>DeleteServiceOrderDetail: Allows deletion of service order details (resources).</li>
+                            <li>DeleteServiceOrder: Allows deletion of service orders.</li>
+                            <li>AddReservation5:&#160;Allows reservations and bookings&#160;tied to a Web User,&#160;including&#160;Billing Reference/PO Numbers and setup count.&#160;</li>
+                            <li>GetCategories: Retrieves category information.</li>
+                            <li>GetCategoryStates: Retrieves categories for the building ID entered.</li>
+                            <li>GetResources: Retrieves&#160;active resource information for the category entered.</li>
+                            <li>GetPricingMethods: Retrieves&#160;active pricing methods to use with Service Order.</li>
+                            <li>ValidateBilling: Checks that&#160;Billing Reference,&#160;PO Number, or both are valid.</li>
+                        </ul>
+                        <p class="InternalRef">Internal Reference # 15148</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact_Support"></a>Contact Support</h2>
+        <MadCap:snippetBlock src="../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

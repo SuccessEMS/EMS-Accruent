@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Web App <br />Release Notes <br />V44.1 Update 7</h1>
+        <p class="NormalWeb">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_71">See Also:&#160;</p>
+        <ul class="unorder-list">
+            <li class="li_4">
+                <a href="U7_EMS Web App Known Issues.htm">EMS Web App Known Issues</a>
+            </li>
+            <li>
+                <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+            </li>
+        </ul>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Name:&#160;V44.1 Update 7</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Release&#160;Date:&#160;December 6, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p class="p_12">Patch:&#160;2016.12.05.0</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="p_12">Build #:&#160;&#160; 44.1.1026.0</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Login</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Add Parameter for Site Home</p>
+                        <p class="p_53">Added a parameter&#160;"Default Home Page (Unauthenticated)"&#160;to control whether Site Home or My Home is the default tab when loading default.aspx. The default value of this parameter is&#160;Site Home. This parameter only applies to unauthenticated users. &#160;Additionally, renamed the current&#160;Default Home&#160;page parameter to&#160;"Default Home Page ( Authenticated)". This&#160;parameter only applies to authenticated users.</p>
+                        <p class="p_53">24330 </p>
+                        <p class="RNTitle">Hide Login Form For Sign In URL Override (Portal Authentication)</p>
+                        <p class="p_53">When the&#160;Sign in URL Override&#160;option (in web.config) is active, Administrators now have the option to&#160;hide the login form on the My Home page and instead, present a single&#160;Sign In&#160;button that links to the override URL.&#160;</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24329" class="a_16">24329</a>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Booking Details</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Streamline Edit Booking Behavior</p>
+                        <p class="p_4">Modified the behavior of the&#160;Edit&#160;icon from the Booking Details window so that if the booking is the only event under a reservation and not part of a series, clicking the&#160;Edit&#160;icon now takes users directly to the Edit Booking page for that single event. Clicking the event name, conversely, takes users to the Reservation Summary page.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23906">23906</a>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_26">My Account &gt; Personalization &gt; Templates</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Enable Building Search to Override Personalized Default Location Settings</p>
+                        <p class="p_25">To enhance user control over default settings and reduce template personalization, added the checkbox, "Override location and time zone settings when I search for available space"&#160;to the template personalization page under Location (de-selected by default). When checked,&#160;this means that whenever a user books using this template, this can change the default location for this template during the booking process. For example, if the template Location was Denver and during booking the user added Kansas, the template would be updated to Kansas going forward.</p>
+                        <p class="p_25"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24522" class="a_16">24522</a>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_11">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_11">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Login</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Validation Fails During&#160;Login for EMS Human Resources Toolkit Integrations</p>
+                        <p class="p_25">For systems that had EMS Human Resources Toolkit installed with special User Defined Fields (UDFs)&#160;to prompt users during the login process, EMS Web App did not properly validate their entries.&#160;</p>
+                        <p class="p_4">Fix:&#160;Modified behavior so that users are properly validated when they log&#160;in and complete&#160;required UDFs.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23644" class="a_16">23644</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Chrome</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Expandable Menus Do Not Expand When Zoom is Not 100%</p>
+                        <p class="p_25">When users on Chrome browsers changed the zoom to anything other than 100% and clicked on&#160;expandable "hamburger menus," the menus&#160;did not expand as expected.</p>
+                        <p class="p_4">Fix:&#160;Modified the display so that menus expand properly regardless of user zoom selections.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24225" class="a_16">24225</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Safari &gt; New Reservation &gt; Browse Locations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Search Icon Absent When Browsing for Space on Safari</p>
+                        <p class="p_25">When users searched for space using the Safari browser, the Search icon did not display.</p>
+                        <p class="p_4">Fix:&#160;Modified the display so that the Search icon now displays.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24380" class="a_16">24380</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Safari 9.1.3</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Safari Browser 9.1.3 Not Supported</p>
+                        <p class="p_25">Launching EMS Web App in Safari 9.1.3 caused the error message "Safari Browser 9.1.3 Is not Supported" to display.</p>
+                        <p class="p_4">Fix:&#160;Modified validations so that the error message no longer displays; EMS Web App supports this browser.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23665" class="a_16">23665</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Internet Explorer 11</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">IE 11 Browser Language in&#160;French Canadian Caused Error</p>
+                        <p class="p_25">When users set their IE 11 browser language to French Canadian and attempted make a reservation, an Internal Server Error message occurred.</p>
+                        <p class="p_4">Fix:&#160;Enabled compatibility so that French Canadian browser language preferences do not cause the error.&#160;</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25005" class="a_16">25005</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Notifications</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Meeting Check-In Notification Caused Error</p>
+                        <p class="p_53">An error occurred when web user&#160;check-ins for an event triggered a notification and the recipient clicked the&#160;Cancel&#160;link in the email.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that in this case, clicking the&#160;Cancel&#160;link does not cause an error.</p>
+                        <p class="NormalWeb_2">&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24100" class="a_16">24100</a></p>
+                        <p class="RNTitle">Reservation Details Link in Outlook Notifications Goes to Reservation Summary</p>
+                        <p class="NormalWeb_2">When attendees clicked the Reservation Details link in their email notifications, they were take to the Reservation Summary page in error.</p>
+                        <p class="p_53">Fix:&#160;Modified the link to point correctly to the Reservation Details page for the event.</p>
+                        <p class="NormalWeb_2">24223&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Browse Locations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">"Show Social Networking Options" Parameter Not Observed</p>
+                        <p class="p_53">When this parameter was set to&#160;No, social media options still displayed on Browse Locations for each booking.&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that users will only see social media options when the parameter is set to&#160;Yes.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23733" class="a_16">23733</a>
+                        </p>
+                        <p class="RNTitle">Clicking Room Availability Caused Error on iOS</p>
+                        <p class="NormalWeb_2">When users logged in to EMS Web App using iOS, navigated to Browse Locations, and then clicked the Room Availability icon, the error "Invalid Data" appeared.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that the error no longer occurs in this situation.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24615" class="a_16">24615</a>
+                        </p>
+                        <p class="RNTitle">&#160;Clicking Floor Map From Locations List View Does Not Zoom</p>
+                        <p class="NormalWeb_2">When users browsed locations from the list view and clicked on a floor map, the image did not automatically zoom in on the room.</p>
+                        <p class="p_53">Fix:&#160;Modified the display so that it automatically zooms in on the room.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23947" class="a_16">23947</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Browse Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Browsing More Than 25,000 Events Caused&#160;Error</p>
+                        <p class="p_53">When users clicked&#160;Browse Events&#160;on systems that had more than 25,000 events, an internal server error occurred.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that the error no longer occurs.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24708" class="a_16">24708</a>
+                        </p>
+                        <p class="RNTitle">Searching for Events Prior to 1900 Caused&#160;Error</p>
+                        <p class="NormalWeb_2">When users searched for events and entered a date prior to 1900 in the Date field, an error occurred.</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that users can browse events prior to 1900.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24025" class="a_16">24025</a>&#160;</p>
+                        <p class="RNTitle">Events Extending Past Midnight Displayed Incorrectly on Calendar and Daily Schedule</p>
+                        <p class="NormalWeb_2">When users browsed events in the daily calendar view and some touched or passed midnight, none of or only the top&#160;half of the event title showed&#160;on the day they begin and the reserve time appeared above the title; on the daily schedule for the next day, the events displayed&#160;correctly.&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified the display so that events spanning midnight render correctly on the daily calendar view of the start day.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23870" class="a_16">23870</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24766" class="a_16">24766</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Browse for Space</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Events Overlapped&#160;in Room Availability Calendar</p>
+                        <p class="p_25">When users searched room availability, existing reservations sometimes did not display correctly and were overlapped by other items on the room calendar.</p>
+                        <p class="p_4">Fix:&#160;Modified the display so that events do not overlap in the calendar view.&#160;</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23832" class="a_16">23832</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">New Reservation &gt; Reservation Details&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Issues Downloading or Uploading Attachments</p>
+                        <p class="p_53">The&#160;Download&#160;option on the Reservation Summary was unavailable for users to access event attachments. Additionally, for Outlook meetings, the&#160;Select Your Files&#160;button no longer displayed&#160;after a single&#160;attachment had been added.&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that users can now click&#160;Download&#160;to access attachments, and the&#160;Select Your Files&#160;button remains visible after the first attachment has been uploaded.&#160;</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24133" class="a_16">24133</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24234" class="a_16">24234</a></p>
+                        <p class="RNTitle">Ampersand Symbol on Room Alert Popup Displayed Incorrectly</p>
+                        <p class="NormalWeb_2">The ampersand symbol was not rendering correctly on this popup alert.</p>
+                        <p class="p_53">Fix:&#160;Modified the display to properly show the ampersand symbol.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24667" class="a_16">&#160;24667</a>
+                        </p>
+                        <p class="RNTitle">Additional Information Tab Not Presented</p>
+                        <p class="NormalWeb_2">When User Defined Fields were defined to appear on the Additional Information page under Building Details, the tab did not appear.</p>
+                        <p class="p_53">Fix:&#160;Modified validations to check for these fields and present the Additional Information tab when they are present.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24718" class="a_16">24718</a>
+                        </p>
+                        <p class="RNTitle">Billing and PO Default Values Not Observed</p>
+                        <p class="NormalWeb_2">When users booked events using a template that had default values set for Billing and PO numbers, although the values displayed as expected, users had to re-enter them in order for the values to be saved with the reservation. Additionally, when a group only had a single contact and the group&#160;was associated with a booking template, the Billing and PO fields did not show any default values.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that users do not have to enter or re-enter Billing and PO values in this situation.&#160;</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23735" class="a_16">23735</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24812" class="a_16">24812</a></p>
+                        <p class="RNTitle">Start and End Times Not Displayed on Weekly and Monthly View</p>
+                        <p class="NormalWeb_2">The list of events in Event Details did not show start and end times on the Weekly and Monthly view.</p>
+                        <p class="p_53">Fix:&#160;Modified the display to show start and end times like the Daily view.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24799" class="a_16">24799</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">New Reservation &gt; Attendees</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Slowness When Searching for Outlook Attendees</p>
+                        <p class="NormalWeb_2">When searching for attendees for Outlook events, typing letters into the Search field caused slow results.</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that searching for attendees has no unusual delay.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24311" class="a_16">&#160;24311</a>
+                        </p>
+                        <p class="RNTitle">Room Capacity Exceeded With No Validation</p>
+                        <p class="NormalWeb_2">When users booked a room and exceeded capacity on systems that had been set to validate headcount (setup type validation rule is set to "Setup And Validation"), they did not receive an error message and were able to complete the reservation. Additionally, when a reservation involved multiple setup types, the room capacity was not properly updated.</p>
+                        <p class="p_53">Fix:&#160;Modified validations to ensure that they are updated to account for the chosen setup types, that they are&#160;observed, and users are prevented from booking in excess of capacity.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23145" class="a_16">23145</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24480" class="a_16">24480</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">New Reservation &gt; Room Request</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Start/End Times Invalid on Guest Requests</p>
+                        <p class="NormalWeb_2">When guest (unauthenticated) users submitted requests using a booking template that specified default start and end times, these values were blank.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that default start/end times from the template display for guest requests.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24863" class="a_16">24863</a>
+                        </p>
+                        <p class="RNTitle">Use Current Template Button Behavior Incorrect</p>
+                        <p class="p_53">When users began a new booking and clicked the&#160;Cancel&#160;(X) icon for the room request and then clicked the Use Current Template button, information they entered remained in the form and the behavior was the same as clicking the&#160;Stay Here&#160;button.</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that clicking the Use Current Template button swipes user entries and enforces the template as expected.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24227" class="a_16">24227</a>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Edit Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Adding Recurrence After Removing Recurrences Caused&#160;Error</p>
+                        <p class="NormalWeb_2">When users removed the recurrence pattern and added a single booking to an event, and then attempted to add another recurrence, an error occurred and they were unable to added the new recurrence.</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that users can remove recurrences, add bookings, and then add recurrences with no errors.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24760" class="a_16">24760</a>
+                        </p>
+                        <p class="RNTitle">Canceled Rooms Not Listed as Available</p>
+                        <p class="NormalWeb_2">When users removed a room from a recurrent booking, the list of rooms available for booking did not refresh to show the newly canceled ones&#160;as available.&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified the search results display to properly refresh and show the newly canceled rooms as available for booking.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24590" class="a_16">24590</a>
+                        </p>
+                        <p class="RNTitle">Maximum of 2 Bookings Validated Incorrectly</p>
+                        <p class="p_53">For reservations made with a template that specified the&#160;maximum number of bookings as 2, clicking the&#160;Add Room&#160;button or&#160;Edit&#160;icon&#160;caused the error "You are only allowed {x} number of booking(s) per date." Additionally, if users updated the booking time, date, event type, or event name and clicked&#160;Update Booking, an internal server error occurred.</p>
+                        <p class="p_53">Fix:&#160;Modified functions to validate correctly&#160;and allow another booking to be added or an existing one to be edited, and changes to booking details no longer cause the internal server error.&#160;</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24813" class="a_16">24813</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24814" class="a_16">24814</a></p>
+                        <p class="RNTitle">Outlook Reservation Bookings List Not Refreshed After Cancellations</p>
+                        <p class="p_53">When users canceled&#160;several bookings under an Outlook&#160;reservation using the&#160;Cancel&#160;icon, the canceled bookings remained on the Bookings list until they refreshed. Additionally, when users selected the option&#160;Include Canceled Bookings, these&#160;did not show in the list. Additionally, when the template had a "Max No. Bookings Allowed per Reservation" booking rule, cancellations were not taken into account during validation and users could not add more bookings even when within the parameters.</p>
+                        <p class="p_53">Fix:&#160;Modified the display to refresh immediately to reflect cancelations and display canceled bookings when selected.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24762">24762</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23225">23225</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23920">23920</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Edit Reservation &gt; Add Services</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Notes Field Blanked Out</p>
+                        <p class="NormalWeb_2">When users added notes on the Services page, added another service, and saved, the Notes field was empty.</p>
+                        <p class="p_53">Fix:&#160;Modified the field to display the notes as expected.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24906" class="a_16">24906</a>
+                        </p>
+                        <p class="RNTitle">Unable to Add Billing/PO Numbers to Existing Reservation</p>
+                        <p class="NormalWeb_2">When users edited a reservation and added services, they could not add Billing/PO numbers although they were required for the service.</p>
+                        <p class="p_53">Fix:&#160;Modified validations so that when users add services that require Billing/PO numbers, they can also add these numbers.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24031" class="a_16">24031</a>
+                        </p>
+                        <p class="RNTitle">New Catering Times Not Added to Service-Only Request</p>
+                        <p class="NormalWeb_2">When users added a new catering time to a service-only request, the services start/end time was not updated. Additionally, users could not add additional services with different times to a request.</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that the new catering time updates the services start/end time as expected, and users can now add multiple services with different times to a request.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24000" class="a_16">24000</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23830" class="a_16">23830</a></p>
+                        <p class="RNTitle">Equipment Service Category Not Displayed at Checkout</p>
+                        <p class="NormalWeb_2">When users added an equipment service to a room, it did not show during checkout.</p>
+                        <p class="p_53">Fix:&#160;Modified the Checkout page display to show all services added to a room request.&#160;</p>
+                        <p class="NormalWeb_2">24717</p>
+                        <p class="RNTitle">Packages Not Listed on EMS Desktop Client</p>
+                        <p class="NormalWeb_2">When users added a "package" service to an event in EMS Web App, it did not display on the EMS Desktop Client.&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified functionality so that packages added in EMS Web App show in the EMS Desktop Client.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23689" class="a_16">23689</a>
+                        </p>
+                        <p class="RNTitle">Services Not Showing For Self-Serve Recurrent Bookings</p>
+                        <p class="p_53">When users booked a recurrent meeting using a self-serve template and and clicked the&#160;Recurrence&#160;button from the Rooms tab, services were unavailable.</p>
+                        <p class="p_53">Fix:&#160;Modified the display to show services as available.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24800" class="a_16">24800</a>
+                        </p>
+                        <p class="RNTitle">Unable to Add Services Already Included In an Existing Booking</p>
+                        <p class="NormalWeb_2">When users edited a reservation and attempted to add a service category that was already included in one of the bookings under the reservation, the category was not listed under available services. This only occurred when no other services were added to the reservation in the meantime.</p>
+                        <p class="p_53">Fix:&#160;Modified validations to allow the same service to be added to multiple bookings in the same reservation.</p>
+                        <p class="NormalWeb_2"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24089" class="a_16">24089</a>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Video Conferences</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Multiple Hosts Allowed For Recurrent Video Conference Meetings&#160;</p>
+                        <p class="NormalWeb_2">When users created recurring video conference meetings, they were able to set more than one room as the host.</p>
+                        <p class="p_53">Fix: Modified validations so that users can only set one room per occurrence as the host, and if the user selects more than one, the last one is set is the host.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24669" class="a_16">24669</a>
+                        </p>
+                        <p class="RNTitle">Some Bookings Missing&#160;on Summary for Recurrent Video Conference Meetings</p>
+                        <p class="NormalWeb_2">When users booked a recurrent video conference meeting and had to select several rooms in order to cover all instances of the meeting (for example, Room 1 for 3 out of 5 days, room 2 for 1 out of 2 days, and Room 3 for 1 day), the Reservation Summary only displayed some of the reservations.&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified the display to show all bookings under the reservation on the Reservation Summary page.&#160;</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24168" class="a_16">24168</a>
+                        </p>
+                        <p class="RNTitle">Event Types Not Filtered by Booking Template</p>
+                        <p class="NormalWeb_2">When users booked video conferences, the Event Types dropdown listed non-video conference event types, and users were able to save the meeting as a "General Meeting."&#160;</p>
+                        <p class="p_53">Fix:&#160;Modified the dropdown to filter Event Types by the video conference event types permitted by the booking template.</p>
+                        <p class="p_53"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24307" class="a_16">24307</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">New Outlook Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Setup Type Changes Not Shown in Outlook</p>
+                        <p class="p_25">When a new default setup type was added to a booking template and users booked a meeting in Outlook using that template, the Setup Type field did not show the new default value in EMS for Outlook.</p>
+                        <p class="p_4">Fix:&#160;Modified validations so that the latest changes to the booking template setup type are immediately reflected in new Outlook bookings.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24140" class="a_16">24140</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Edit Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Edit Button For Single Booking Returns to Reservation Summary</p>
+                        <p class="p_4">When users edited reservation with several rooms, canceled&#160;bookings so only one remained, and then opened it and clicked the&#160;Edit&#160;button, they were incorrectly returned to the Reservation Summary rather than the&#160;Booking Details page.&#160;</p>
+                        <p class="p_4">Fix:&#160;Modified functionality so that clicking the&#160;Edit&#160;button takes the user to the Booking Details page as expected.</p>
+                        <p class="p_4"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24723" class="a_16">24723</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">My Cart &gt; View Occurrences&#160;&gt; Setup Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Setup Type Not Filtered by Room for Recurrent Meetings From My Cart</p>
+                        <p class="RNBody">When users opened a reservation from My Cart, clicked View Occurrences, and then expanded the Setup Type field, all setup types displayed and were not filtered to only those allowed for the selected room.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that the Setup Type dropdown only shows options available for the selected room.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24228" class="a_16">24228</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">Translations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Spanish Translations Incorrect on Add Services Page</p>
+                        <p class="RNBody">Spanish translation on the Add Services page displayed errors.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality so that the page is properly translated.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23646" class="a_16">23646</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Special Characters</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Special Characters Display&#160;Incorrectly</p>
+                        <p class="RNBody">Special characters and symbols, such as the ampersand ("&amp;"),&#160;did not display correctly in several areas of EMS Web App:</p>
+                        <ul class="ul_4">
+                            <p class="RNBody">Various User Defined Fields (UDFs).</p>
+                            <p class="RNBody">The error message that displays when users try to book an event in the past.</p>
+                            <p class="RNBody">The dropdown menu for&#160;Create booking in this time zone.</p>
+                        </ul>
+                        <p class="RNBody">Fix:&#160;Modified the display so that special characters and symbols are correctly rendered in all fields that are shown, such as UDFs, and Room Name &#160;Room Description, Building name.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23650" class="a_16">23650</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24253" class="a_16">24253</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_26">My Account &gt; Personalization &gt; Templates</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Favorite Locations Personalization&#160;Not Observed in Add/Remove Locations Popup</p>
+                        <p class="RNBody">When users had favorite locations set in their personalized template settings, these settings were not observed on the Add/Remove Locations popup.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations to ensure that users' favorite locations appear as expected in the popup.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23720" class="a_16">23720</a></p>
+                        <p class="RNTitle">Favorite Locations Time Zone Not Applied to Bookings, Time Zone Field Empty</p>
+                        <p class="RNBody">When users updated their personalized templates with a favorite location, that location's time zone was not reflected during the booking process using that template, and the Time Zone dropdown field was empty in some cases.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that the favorite location time zone is used for the booking; in the case where a booking template or user personalization specifies multiple possible rooms, all location time zones are now listed in the time zone dropdown and the first item in the list is the default selection.&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24313" class="a_16">24313</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24821?fullScreen=false" class="a_16">24821</a></p>
+                        <p class="RNTitle">Browse Locations Empty When User Account Has No Time Zone Preference</p>
+                        <p class="RNBody">When users who had "No Preference" set for their user account time zone, the Browse Locations grid was empty.</p>
+                        <p class="RNBody">Fix:&#160;Modified the display to use the first time zone in the drop-down list to ensure that the Browse Locations grid renders as expected.</p>
+                        <p class="InternalRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24791" class="a_16">24791</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_26">Conflict Resolution</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Incorrect Messaging&#160;During Conflict Resolution&#160;for Multi-Room Recurrent Outlook Meetings</p>
+                        <p class="RNBody">When users edited an Outlook reservation for multiple rooms for a recurrent meeting, and attempted to book a room that was in conflict, and then attempted to book a second room that was not in conflict, a toast message "Booking added, but the location you selected is not available for all your dates" presented incorrectly. Additionally, once a room had been chosen that was not available for all recurrences, a toast message "Booking Added!" incorrectly appeared.</p>
+                        <p class="RNBody">Fix:&#160;Modified validations so that meaningful&#160;toast messages appear appropriately during the conflict resolution workflow.</p>
+                        <p class="InternalRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24231" class="a_16">24231</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Security</p>
+                        <p class="p_26">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Session State Validation</p>
+                        <p class="RNBody">When the web.config setting for AbandonSessionOnLogout is True (default true) and the user goes to logout, a new session ID is generated at the same time the session is abandoned.</p>
+                        <p class="RNBody"><span class="ui">Fix</span>:&#160;Modified session validation to maintain session state authenticity.</p>
+                        <p class="InternalRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=36023" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23858" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23858" class="a_16">23858</a></a><br />(For EMS Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

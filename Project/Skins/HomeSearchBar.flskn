@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="1"
+  SkinType="Component"
+  Comment="HTML5 skin"
+  Anchors="Width,Height"
+  Width="800"
+  Height="600"
+  Top="0"
+  Left="0"
+  Bottom="0"
+  Right="0"
+  Tabs="TOC,Index,Community"
+  DefaultTab="TOC"
+  UseBrowserDefaultSize="True"
+  UseDefaultBrowserSetup="True"
+  EnableResponsiveOutput="True"
+  ComponentType="SearchBar"
+  conditions="">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Search Bar">
+        <Properties>
+          <Property
+            Name="BorderRight">solid 1px #dcdcdc</Property>
+          <Property
+            Name="BorderTop">none 1px #dcdcdc</Property>
+          <Property
+            Name="BorderBottom">none 1px #dcdcdc</Property>
+          <Property
+            Name="BorderLeft">none 1px #dcdcdc</Property>
+          <Property
+            Name="BorderTopRightRadius">30px</Property>
+          <Property
+            Name="BorderTopLeftRadius">30px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">30px</Property>
+          <Property
+            Name="BorderBottomRightRadius">30px</Property>
+          <Property
+            Name="Height">49px</Property>
+          <Property
+            Name="Width">770px</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter Drop-down">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#f5f5f5</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter Drop-down (hover)">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#ffffff</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Input">
+        <Properties>
+          <Property
+            Name="Placeholder">How Can We Help You?</Property>
+          <Property
+            Name="FontStyle">normal</Property>
+          <Property
+            Name="PaddingRight">10px</Property>
+          <Property
+            Name="Color">#5f5f5f</Property>
+          <Property
+            Name="PaddingLeft">30px</Property>
+          <Property
+            Name="FontSize">0.95em</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Submit Button">
+        <Properties>
+          <Property
+            Name="Tooltip">How Can We Help You?</Property>
+          <Property
+            Name="BackgroundImage">url('searchicon.png')</Property>
+          <Property
+            Name="Width">36px</Property>
+          <Property
+            Name="BackgroundColor">transparent</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Submit Button (hover)">
+        <Properties>
+          <Property
+            Name="BackgroundImage">url('searchicon.png')</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Filter">
+        <Properties>
+          <Property
+            Name="BorderTop">solid 0px #dcdcdc</Property>
+          <Property
+            Name="BorderRight">solid 0px #000000</Property>
+          <Property
+            Name="BorderBottom">solid 0px #dcdcdc</Property>
+          <Property
+            Name="BorderLeft">solid 0px #000000</Property>
+        </Properties>
+      </Style>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Search Bar">
+          <Properties>
+            <Property
+              Name="Width">90%</Property>
+            <Property
+              Name="Height">45px</Property>
+            <Property
+              Name="MarginBottom">40px</Property>
+            <Property
+              Name="MarginTop">10px</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Search Input">
+          <Properties>
+            <Property
+              Name="FontSize">12px</Property>
+          </Properties>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Search Input">
+          <Properties>
+            <Property
+              Name="FontFamily">Open Sans</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Search Bar">
+          <Properties>
+            <Property
+              Name="Width">90%</Property>
+          </Properties>
+        </Style>
+      </Medium>
+    </Styles>
+    <Stylesheet></Stylesheet>
+    <Resources>
+      <Resource
+        Name="search.svg">H4sIAAAAAAAEAFVR227DIAz9FURfCbeEpk1JpO5t0vYDfZlYQhM00lQBNa2m/fuctJs2YQ62jzkyWIdLi669P4USdzGeC8amaaJTSoexZZJzzqACo4uz09NwLTFHHIkcDFe6scdQ6RBv3la09iERn0fnfbFSG7VV77sQx+HDFitQefhJ76IdvYOjEL/JyTWxK+T5uvvS7C6n2V08ughRsGasO83ukW6Ra0r8Ym52fJMYNSaa5GR6+8ghiX9qnuvhFCA6m9ih2psAz1wahVslfhWKbhQBFICcZinZ0lwaRVNJFuBEEJ7QXIB5NRcASEOzDRiw86I54ft/mT+yhz7ZUiWTjCqT0TQlC8yyYnGBSOX+LzNz69mFhtbqgBn8RfvYMIrqG0JSyVmyAQAA</Resource>
+      <Resource
+        Name="searchicon.png">H4sIAAAAAAAEAAGcAWP+iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABY0lEQVQ4jaWUy3GDMBRFD0wKcDqgA+MOkg7iCoI3aGlTQZwK7K1WxhWkhNBBSAWhBErIQgLD4/EZ+84wGt6go8v7KEjTFKEI2AMx8OJjFVAAV7+2stbK/QCE4v0I/AGHDrQ5LAG+/ROptBHwBfiY2+AP/MH90Sz46B1J1UCpxFfAl19HwRFDpyXwCjwDG7+exTcRLmWj4P0ItBDOM/909T4FlrnKPEjTGdchjSJjjJrrkH71a+FU01W8q3mW7VZpH92jUMDiMQcdrZeCCxGb6uUYeBMxrR0JGebsgN5GMW7qusqttWqhn3COC/pFPOHasDl0rTgF+NWgAIG/hCLcmM7lV9POWpvLYNMVFW4oqjvAF2NMMgYGV4QN8DlxQM5w+lR4oNzHjWTrldwmMsHdhlJtWuSAdFVyK2xBf8xzYKfsaZ1POV6iBN35dsrxEuXozk+PgvE5lfDVw+AOfIvrphrI/gGktFgKNdYwtwAAAABJRU5ErkJgghBbhk6cAQAA</Resource>
+      <Resource
+        Name="searchhover.png">H4sIAAAAAAAEAAGTAWz+iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABWklEQVQ4jaWUwXGDMBBFH0wKcDqgA+NLfE2oIFQQXIFNBXEqsDswbsBUEIcrp5AKQgmUkIOEg5cVJObPaDTaEU/L6q+80/sDQgGwBkLg0cZqoACOdr4ojkr5PQC+WG+Bb2DTgbaHJcCHHYFKc4APwOvYB/bAT8wfjYK3NiOpBqiU+AzI7ewEB/QzrYAn4B5Y2Hkv9gSYkjnBawe0EJmndnT1MgSWtUotSNMe45BWQX5eqrX2ub79RmSq6SjWap2l3Wpt0y3yBSx0ZdDR/K/gQsSGvBwCzyKm2RGffs026DYKMV3XVRZHpXrRd5iMC64vcYexYXvoXMkU4EuDAnj2EQowbTpWX02rOCozGWxdUWOaor4BfMjPy8QFBnMJC+Bt4ICMfvepcE95j1tJ61X8dmSCeQ2lLmUZAo9pED4FPASPZUv/VxmwUuK7qWBsTSV8NhncgccYNzVA+gO7uFZAxZN0FwAAAABJRU5ErkJggiTfcqOTAQAA</Resource>
+    </Resources>
+  </Stylesheet>
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="Search Bar">
+            <Properties>
+              <Property
+                Name="BorderTop">solid 4px #000000</Property>
+              <Property
+                Name="BorderRight">solid 4px #000000</Property>
+              <Property
+                Name="BorderBottom">solid 4px #000000</Property>
+              <Property
+                Name="BorderLeft">solid 4px #000000</Property>
+              <Property
+                Name="Width">900px</Property>
+              <Property
+                Name="Height">70px</Property>
+            </Properties>
+          </Style>
+          <Medium
+            Name="Mobile">
+            <Style
+              Name="Search Bar">
+              <Properties>
+                <Property
+                  Name="Width">100%</Property>
+              </Properties>
+            </Style>
+          </Medium>
+          <Style
+            Name="Search Filter Drop-down">
+            <Properties>
+              <Property
+                Name="BackgroundColor">#f5f5f5</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Filter Drop-down (hover)">
+            <Properties>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Input">
+            <Properties>
+              <Property
+                Name="FontSize">2em</Property>
+              <Property
+                Name="Placeholder">What can we help you find?</Property>
+            </Properties>
+          </Style>
+          <Medium
+            Name="Tablet">
+            <Style
+              Name="Search Input">
+              <Properties>
+                <Property
+                  Name="FontFamily">Open Sans</Property>
+              </Properties>
+            </Style>
+          </Medium>
+          <Style
+            Name="Search Submit Button">
+            <Properties>
+              <Property
+                Name="Tooltip">How Can We Help You?</Property>
+            </Properties>
+          </Style>
+        </Styles>
+        <Stylesheet></Stylesheet>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

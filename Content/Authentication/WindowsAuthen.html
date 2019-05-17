@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Integrated Windows Authentication</h1>
+        <p>Integrated Windows Authentication (IWA) is a built-in Microsoft Internet Information Services (IIS) authentication protocol that can be used to automatically authenticate and sign-in a user to EMS Web App. Integrated Windows Authentication works only with Internet Explorer and is best used on intranets where all clients accessing EMS Web App are within a single domain.&#160;</p>
+        <p>This topic provides information on the following:</p>
+        <ul>
+            <li><a href="#Activate_Integrated_Windows_Authentication_for_IIS_6.0">Activate Integrated Windows Authentication for IIS 6.0</a>
+            </li>
+            <li><a href="#Activate_Integrated_Windows_Authentication_for_IIS_7.x/8.x">Activate Integrated Windows Authentication for IIS 7.x/8.x</a>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Integrated Windows Authentication is supported for&#160;<a href="../ReleaseNotes/Version44.1/Update11/U11_Floorplan_RN.htm">EMS Floor Plan&#160;(V44.1 Update 11)</a>.</p>
+        </div>
+        <p>See Also:</p>
+        <ul class="unorder-list">
+            <li><a href="../OptionalFeatures/IntegratedAuthentication/V44.1/IntegAuth_IntegratedAuthenticationConsid.htm">Integrated Authentication Overview</a>
+            </li>
+            <li>For more information, please review the following Microsoft TechNet articles on IWA for IIS&#160;<a href="https://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/523ae943-5e6a-4200-9103-9808baa00157.mspx?mfr=true" title="https://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/523ae943-5e6a-4200-9103-9808baa00157.mspx?mfr=true">6.0</a>,&#160;<a href="https://technet.microsoft.com/en-us/library/cc754628(v=ws.10).aspx" title="https://technet.microsoft.com/en-us/library/cc754628(v=ws.10).aspx">7.0</a>, and&#160;<a href="http://www.iis.net/configreference/system.webserver/security/authentication" title="http://www.iis.net/configreference/system.webserver/security/authentication">8.0</a>.&#160;</li>
+            <li><a href="../OptionalFeatures/Active Directory/ConnectToYourDatabase.htm">Connect Your Database&#160;Using Active Directory</a>
+            </li>
+        </ul>
+        <p>When a domain user who is logged on to a networked PC accesses an EMS Everyday User application, such as EMS Web App, EMS Mobile App, or EMS for Outlook, their Active Directory credentials (Domain\User ID) are compared against corresponding Domain\User ID information recorded in the&#160;<span class="ui">Network ID</span>&#160;and\or&#160;<span class="ui">External Reference</span>&#160;fields of your EMS Everyday User records.&#160;If a match exists, the Everyday&#160;User will be automatically logged&#160;in.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The&#160;Field Used to Authenticate Web User&#160;parameter (within <span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt;&#160;<span class="ui">Parameters </span>&gt; <span class="ui">Everyday User Applications</span> tab&#160;is used to determine which value should be used for authentication.</p>
+        </div>
+        <h2><a name="Activate_Integrated_Windows_Authentication_for_IIS_6.0"></a>Activate Integrated Windows Authentication for IIS 6.0</h2>
+        <ol start="1" class="number-list">
+            <li>On the web server that hosts your EMS application's&#160;site, open&#160;<span class="ui">IIS Manager</span>.</li>
+            <li>Locate your EMS application's&#160;site.</li>
+            <li>Right-click your EMS application's&#160;site&#160;and choose&#160;<span class="ui">Properties</span>. The Properties screen will open.</li>
+            <li>Go to the&#160;<span class="ui">Directory Security</span>&#160;tab and click the&#160;<span class="ui">Edit&#160;</span>button under the&#160;Authentication and access control&#160;section. The Authentication Methods screen will open.</li>
+            <li>Uncheck the&#160;<span class="ui">Enable anonymous access</span>&#160;option.&#160;The&#160;<span class="ui">Integrated Windows authentication</span>&#160;option should be the only option checked.<p><img src="../OptionalFeatures/IntegratedAuthentication/V44.1/Images/IntegAuthen_Guide/Integrated Windows Authentication_1.png" class="resize80_noborder_padding" /></p></li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>to exit the Authentication Methods screen. Click&#160;<span class="ui">OK&#160;</span>again to exit the Properties screen. You have completed the necessary IIS configuration steps for IIS 6.0.</li>
+        </ol>
+        <h2><a name="Activate_Integrated_Windows_Authentication_for_IIS_7.x/8.x"></a>Activate Integrated Windows Authentication for IIS 7.x/8.x</h2>
+        <ol start="1" class="number-list">
+            <li>On the web server that hosts your EMS application's&#160;site, open&#160;<span class="ui">IIS Manager</span>.</li>
+            <li>Locate and highlight your EMS application's&#160;site.&#160;<p><img src="../OptionalFeatures/IntegratedAuthentication/V44.1/Images/IntegAuthen_Guide/Integrated Windows Authentication_2.png" class="popup_with_padding_only" /></p></li>
+            <li>Double-click the&#160;<span class="ui">Authentication&#160;</span>option in the&#160;<span class="ui">IIS&#160;</span>section.<p><img src="../OptionalFeatures/IntegratedAuthentication/V44.1/Images/IntegAuthen_Guide/Integrated Windows Authentication_3.png" style="width: 413px; height: 299px;" class="popup_with_padding_only" /></p></li>
+            <li>Right-click the&#160;<span class="ui">Windows Authentication</span>&#160;option and select&#160;<span class="ui">Enable</span>.</li>
+            <li>Right-click the&#160;<span class="ui">Anonymous Authentication</span>&#160;option and select&#160;<span class="ui">Disable</span>.</li>
+            <li>You have completed the necessary IIS configuration steps for IIS 7.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<projects>
+    <project>
+        <path>Success.flprj</path>
+        <repo>technical-publications-ems</repo>
+	<stagebucket>stage-documentation-accruent-com</stagebucket>
+	<prodbucket>documentation-accruent-com</prodbucket>
+	<prefix>ems</prefix>
+	<flarepath>C:\Program Files\MadCap Software\MadCap Flare 15\Flare.app\madbuild.exe</flarepath>
+    <targets>
+        <target>
+            <name>Side Navigation</name>
+			<dest>ems</dest>
+        </target>
+        <target>
+            <name>AccruentAccess</name>
+			<dest>accruentaccess/ems</dest>
+        </target>
+      </targets>
+    </project>
+</projects>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Define Resource Selections and Selection Items V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Define Resource Selections and Selection Items</h1>
+        <p>After you <a href="ConfigResourcesforCat.html">configure a resource for a category</a>, you can&#160;define&#160;selections&#160;and&#160;selection items&#160;for the resource. A&#160;selection&#160;is used when you offer choices with a resource. For example, a resource named Catered Breakfast might have the following description—Catered breakfast includes the choice of one standard entree, two sides, and assorted mini-muffins, juice, and coffee. The selection of standard entree might include the selection items of french toast, pancakes, or scrambled eggs. The side selection items might include bacon, sausage, and sliced fruit. If selection items have been defined for a resource, then an EMS Desktop Client user or an <MadCap:variable name="General.EMS&#160;Web App" />&#160;user must&#160;make a selection for the resource.</p>
+        <p>To define resource selections and selection items, complete the following steps:</p>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Resources</span>. A list opens of all the categories that are currently configured in your EMS database&#160;and&#160;for which you can configure resources.</li>
+            <li>
+                <p>Select the category for which you are configuring the resources. The Resources window opens. This window lists all the resources that are currently configured in your EMS database for the selected category and that have a status of <span class="ui">Active</span>.</p>
+                <ul start="1">
+                    <li>
+                        <p>To view all resources for the category in your EMS database, regardless of status, under Show, click <span class="ui">Inactive</span>.</p>
+                    </li>
+                    <li>
+                        <p>To filter the displayed resources based on the Resource name, in the Filter field, enter a search string (not case-sensitive, but characters must be in exact order).</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The search string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;Cold&#160;returns&#160;Cold&#160;Boxed Lunches, but not Sandwiches (Cold).</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="Images/DC_Resources/ResourcesWinSelections.PNG" alt="Desktop Client Resources window with the Selections button highlighted" class="resize80_noborder_padding" title="Resources Window" />
+                    </p>
+                    <p class="Caption">Resources Window</p>
+                </div>
+            </li>
+            <li>Select the resource for which you are configuring the selections, and then click the <span class="ui">Selections</span> button. The Selections window opens. This window lists all the selections that have been configured for the selected resource and that have a status of <span class="ui">Active</span>.<div class="TitleandImage"><p><img src="Images/DC_Resources/SelectionsWindow.PNG" alt="Desktop Client Selections window, accessed through the Resources window" class="resize80_noborder_padding" title="Selections Window" /></p><p class="Caption">Selections Window</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Optionally, to show all selections for the resource, regardless of status, under Show, click <span class="ui">Inactive</span>. </p></div></li>
+            <li>Click <span class="ui">New</span>. The Selection dialog box opens. The <span class="ui">Selection </span>tab is the active tab.<div class="TitleandImage"><p><img src="Images/DC_Resources/SelectionsDialog.PNG" alt="Selection dialog with Selection tab showing" title="Selection Dialog, Selection Tab Showing" /></p><p class="Caption">Selection Tab on the Selection Dialog Box</p></div></li>
+        </ol>
+        <ol start="6" class="number-list" MadCap:continue="true">
+            <li>In the Description field, enter a description or name for the selection, for example, Breakfast Entrees.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The description can be a maximum of 255 characters, including spaces.</p></div></li>
+        </ol>
+        <ol start="7" class="number-list" MadCap:continue="true">
+            <li>Optionally, do one or more or all the following:<ul start="7"><li>In the Sequence field, enter a number that determines the order in which the selection is displayed in a list with other selections.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Selections are ordered from lowest to highest sequence number with the selection with the lowest sequence number being displayed first. If you leave the sequence set to the default value of zero for all selections, then by default, the selections are displayed alphabetically.</p></div></li></ul><ul start="7"><li>In the Min Pick field, enter the minimum number of selection items that a user is required to pick.</li><li>In the Max Pick field, enter the maximum number of selections items that a user is allowed to pick.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The maximum pick must be less than or equal to the number of selection items that are configured for the selection.</p></div></li></ul></li>
+            <li>Open the <span class="ui">Items </span>tab, and in the Description field, enter a description or name for each selection item.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The description can be a maximum of 255 characters, including spaces.</p></div><div class="TitleandImage"><p><img src="Images/DC_Resources/SelectionsDialog-ItemsTab.PNG" alt="Selection dialog with the Items tab showing" class="resize80_noborder_padding" title="Selection Dialog, Items Tab Showing" /></p><p class="Caption">Items Tab on the Selection Dialog Box</p></div></li>
+            <li>Optionally, for each selection item, do one or both of the following:<ul start="9"><li>In the Sequence field, enter a number to sort the selection items on the tab.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Selection items are ordered from lowest to highest sequence number with the selection item with the lowest sequence number being displayed first. If you leave the sequence set to the default value of zero for all selection items, then by default, the selection items are displayed alphabetically.</p></div></li></ul><ul start="9"><li>In the Notes field, enter any optional information that is pertinent for the item.</li></ul></li>
+            <li>Click <span class="ui">OK</span>. You return to the Selections window with the newly configured resource selection automatically selected.</li>
+        </ol>
+    </body>
+</html>

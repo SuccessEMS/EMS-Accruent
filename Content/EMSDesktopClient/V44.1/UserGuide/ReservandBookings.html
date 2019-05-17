@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Reservations and Bookings V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">
+            <MadCap:concept term="V44.1" />Reservations and Bookings</h1>
+        <div class="WordSection1">
+            <p>The two essential EMS components for meeting and event scheduling are reservations and bookings. To use the EMS Web Client efficiently and effectively, you must understand the structure of a reservation in EMS, the concept of an event timeline for a reservation booking, and how to make a reservation. This section covers the following topics:</p>
+            <ul>
+                <li>
+                    <p><a href="#ReservationStructure">Reservation Structure</a>
+                    </p>
+                    <ul>
+                        <li>
+                            <p><a href="#reservations">Reservations</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#bookingdetails">Booking Details</a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a href="#Event">Event Timeline</a>
+                    </p>
+                </li>
+            </ul>
+            <h2><a id="ReservationStructure" name="ReservationStructure"></a>Reservation Structure</h2>
+            <p>An event in EMS Desktop Client is comprised of the following:</p>
+            <ol>
+                <li>A <strong>Reservation</strong></li>
+                <li>One or more <strong>Bookings</strong></li>
+                <li>Booking details</li>
+            </ol>
+            <p>These three components exist in a hierarchy—a reservation contains one or more bookings and each booking can have one or more details associated with it.</p>
+            <h3><a name="reservations"></a>Reservations</h3>
+            <p class="mt-align-justify">A reservation is the who and the what of an event. For example, Group X (the who) can reserve some space for an Event Y (the what). A booking is the where and the when of an event. For example, Group X can schedule the conference room (the where) for a staff meeting on the second Monday in January (the when). Group X now has a single reservation with a single booking in EMS. If, however, Group X schedules the conference room (the where) for a staff meeting on the second Monday of each month for a calendar year (the when), then Group X now has a single reservation with twelve bookings in EMS.</p>
+            <h3><a name="bookingdetails"></a>Booking Details</h3>
+            <p class="mt-align-justify">A booking can have one or more booking details associated with it. Booking details are the resources or services that are needed for an event, the notes for the event, the activities for the event, the room charges for the event, or any combination of these. For example, for Group X’s staff meeting, the resources could include the requested catering (coffee service, bagels and muffins, and so on) and the A/V equipment (a projector, a speaker’s podium, and so on).</p>
+            <h3><a name="Event"></a>Event Timeline</h3>
+            <p>The following time designators are used for an event in EMS Desktop Client:</p>
+            <ul>
+                <li>
+                    <p><strong>Event Time:</strong> The time period during which the event actually takes place.</p>
+                </li>
+                <li>
+                    <p><strong>Setup/Teardown Hours</strong>: The hours, or fractions of hours, that you add to the event time to allow staff to prepare a room for the event or to clean up after the event.</p>
+                </li>
+                <li>
+                    <p><strong>Reserved Time</strong>: The total time for which the space (the where) is reserved. This time is the event time plus the setup/teardown time.</p>
+                    <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                        <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                        <col style="width: 81px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                                <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Variable&#160;</th>
+                                <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p data-th="Variable">Reserved Start Time</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p data-th="Time">8:00 a.m.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p data-th="Variable">Setup Hours</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p data-th="Time">1 hour</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p data-th="Variable">Event Start Time</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p data-th="Time">9:00 a.m.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p data-th="Variable">Event End Time</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p data-th="Time">4:00 p.m.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                    <p data-th="Variable">Teardown Hours</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                    <p data-th="Time">1.5 hours</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                    <p data-th="Variable">Reserved End Time</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                    <p data-th="Time">5:30 p.m.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                                <td data-th="Variable" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                    <p data-th="Variable">Reserved Time</p>
+                                </td>
+                                <td data-th="Time" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                    <p data-th="Time">9.5 hours</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

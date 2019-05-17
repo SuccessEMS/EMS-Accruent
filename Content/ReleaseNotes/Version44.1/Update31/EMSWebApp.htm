@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS Web App <br />Release Notes <br />V44.1, Update 31</h1>
+        <p class="p_1">This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-Standard" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1&#160;Update 31</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />January 16, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch #:&#160;<br />201812100<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.31000.1586<br /></p>
+                </td>
+            </tr>
+        </table>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Beginning with <a href="EMSWebApp.htm">Update 31</a>, EMS&#160;Platform Services is a prerequisite for installing and using the EMS&#160;Web App. If EMS&#160;Platform Services has not yet been <a href="../../../EMSPlatformServices/InstallationGuide/InstallPS.html">installed</a> in your environment, validate the <a href="../../../EMS_SystemReq_44.1.html#EMSPlatformServices">hardware and software requirements for EMS&#160;Platform Services</a>. (If your organization uses the EMS&#160;Mobile App, EMS&#160;Kiosk App, Google Integration, EMS&#160;for Outlook, or SAML authentication, then EMS&#160;Platform Services is already running in your environment.)</p>
+            <p>The EMS&#160;Web App has been modified to leverage EMS&#160;Platform Services for functionality that returns a list or grid of Available Rooms.  This will result in significant, positive performance gains when executing these functions.</p>
+        </div>
+        <h2>Enhancements</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 231px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 500px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Setup Type / Count Consistency</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Updated Error Message When Attendance Meets Default Setup Type But Meets Selected Setup Type</p>
+                        <p class="RNBody">Messaging has been updated to help the user better understand Setup Type and Count messages when searching and why they may not be able to proceed (e.g., entering a set-up count that does not meet the specific selected setup type even though it meets the default that is displayed int he Schedule Grid.)</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=40170&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">40170</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Cancellations</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Cancel All-Bookings for A Date Simultaneously on VC Template</p>
+                        <p class="RNBody">Cancel flow has been updated so that users can now cancel all of the bookings on a single date instead of having to cancel each room individually.  </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41204&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41204</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Video Conference (VC)&#160;Templates</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">"New Booking"&#160;Added to VC Templates </p>
+                        <p class="RNBody">New Booking button has been added to non-calendar VC&#160;templates. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41219&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41219</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">User-defined Fields (UDFs)</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Add Optional Reservation-Level UDFs from Reservation Edit</p>
+                        <p class="RNBody">When editing Additional Information from the Edit Reservation page, users can now complete optional UDFs that they have opted to skip during the initial Create process. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41695&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41695</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Fixes</h2>
+        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">BR/PO&#160;Numbers</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Group-level Billing Reference /PO Number Search Not Functioning</p>
+                        <p class="RNBody">When attempting to select a Group from the Reservation Details page, default BR/PO numbers were not pre-populating and the type-ahead search function did not produce a cumulative list of BRs/POs assigned to that Group and/or globally. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users can search for BR/PO numbers.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=37212&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">37212</a>, <a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41189&amp;_a=edit&amp;triage=true" class="RNRefHyper">41189</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Availability Tab</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Parameter Value Not Reflected on Schedule Grid on Availability Tab</p>
+                        <p class="RNBody">When the parameter "Event Information to Display in Booking on Schedule View" was changed to something other than Event Name (e.g., Group Name, None), Event Name was still displayed in the Schedule Grid on the Availability tab.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the Availability tab respects the parameter value configured for "Display in Booking on Schedule View."</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41059&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41059</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Video Conference (VC)&#160;Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">VC Host improperly Identified When Added as Conflict-Exception in Recurrence</p>
+                        <p class="RNBody">When there was a conflict exception on the second location added in a recurring meeting, the second location was duplicated as the VC&#160;host on the excepted dates. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that there is only one host on a VC&#160;recurrence, even with exceptions. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41711&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41711</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Room Search</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">'I Know What Room I Want' Search Not Functioning</p>
+                        <p class="RNBody">When searching for a room utilizing the "I Know What Room I&#160;Want" function, the search results did not return all rooms that matched the search criteria. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the I&#160;Know What Room I&#160;Want search function returns the correct list of rooms.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41712&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41712</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Attendance Count</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Incorrect Attendance Count for Second Location</p>
+                        <p class="RNBody">When adding multiple locations to a reservation, the attendance  per booking reflected the attendee count of the first location (regardless of if you indicated a different count for the second location). </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the attendance for the second location is accurately recorded.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41714&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41714</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>G Suite</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Google Calendar Recurrence Issues</p>
+                        <p class="RNBody">In certain circumstances, when creating a Google-enabled recurrence from the EMS&#160;Web App, the recurrence would not be reflected on the Google calendar of the host and guests.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the Google-enabled reservations are always reflected on the host and guest calendars.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42096&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42096</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Create a Reservation</p>
+                    </td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Unable to Remove Filters When Creating a Reservation</p>
+                        <p class="RNBody">When accessing the EMS&#160;Web App on a tablet, users could select filters  (Feature, Building, Room, and Type), but not deselect them, when creating reservations.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users can deselect filters.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41023&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41023</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">When Default View Was List, No Rooms Were Found for Default Building</p>
+                        <p class="RNBody">When a default building was specified and the default view was List, no rooms were returned in the search. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that rooms can be found when searching a default building.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42269&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42269</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">EMS&#160;Platform Services</td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">EMS&#160;Platform Services Communication Failure</p>
+                        <p class="RNBody">When TLS 1.1 was enabled on the web server, communication failed and generated an error message. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users do not receive an error message when TLS 1.1 is enabled.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42731&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42731</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Billing Reference and PO&#160;Number Failed to Update When Group Was Changed</p>
+                        <p class="RNBody">Even when having the parameter "Update Billing Information When Changing Group"&#160;set to "Yes,"&#160;editing the Group on a reservation did not result in the Billing Reference or PO&#160;numbers being updated. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that Billing Reference and PO&#160;numbers update when a group changes and the parameter is set to "Yes." </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42736&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42736</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Billing Reference Error When Editing Reservation</p>
+                        <p class="RNBody">When the parameter "Billing Reference Validation"&#160;was set to "Require and Validate," and the parameter "Show Billing Reference on Reservation"&#160;was set to "No,"&#160;an error displayed when attempting to save an edit on any field in the reservation. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users do not experience a billing reference error. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41061&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41061</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td style="font-style: italic;" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td style="text-align: left;" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">SAML&#160;Error</p>
+                        <p class="RNBody">When logged in with Okta SAML&#160;credentials, users experienced a 404 error.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that users do not received 404 errors. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42520&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42520</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

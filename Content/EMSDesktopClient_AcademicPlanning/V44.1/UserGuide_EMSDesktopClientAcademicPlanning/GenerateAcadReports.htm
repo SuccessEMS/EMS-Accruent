@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Generate Academic Reports V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Generate Academic Reports</h1>
+        <p>For any academic report, you can specify the parameters, options, and format for the report, or you can generate the report according to&#160;memorized&#160;settings. (For detailed information about a memorized report,&#160;See Also:&#160;<a href="../../../EMSDesktopClient/V44.1/UserGuide/WorkwithSavedReports.html">Work with Saved Reports</a>.)</p>
+        <p>Not all reports require the same parameters, nor do they all have the same options available. In addition, you can generate different reports in different formats. All subjects must belong to an academic unit to be displayed on an academic report.&#160;See Also:&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigAcadUserTemp.htm">Configure Academic User Templates</a>&#160;and&#160;<a href="../ConfigurationGuide_EMSDesktopClientAcademicPlanning/SynchroCampus-SpecificData.html">Synchronize Campus-Specific Data</a>.</p>
+        <p>This topic will provide information on setting up each type of report:</p>
+        <ul class="unorder-list">
+            <li><a href="#Course">Course List</a>
+            </li>
+            <li><a href="#CourseChanges">Course Changes</a>
+            </li>
+            <li><a href="#CoursePRef">Course Preferences</a>
+            </li>
+            <li><a href="#PrefSummary">Preferences Summary</a>
+            </li>
+            <li><a href="#UnmetPref">Unmet Preferences</a>
+            </li>
+            <li><a href="#InstructorBacktoBack">Instructor Back to Back</a>
+            </li>
+            <li><a href="#InstructorSummary">Instructor Summary</a>
+            </li>
+            <li><a href="#Time">Time&#160;Block Violations</a>
+            </li>
+            <li><a href="#Timeavailability">Time Block Room Availability/Usage</a>
+            </li>
+            <li><a href="#Academic">Academic Class Meeting Utilization</a>
+            </li>
+            <li><a href="#Classroom">Classroom Utilization</a>
+            </li>
+            <li><a href="#Hourly">Hourly Classroom Utilization</a>
+            </li>
+            <li><a href="#Over">Over/Under Utilization</a>
+            </li>
+            <li><a href="#Prime">Prime Time Usage</a>
+            </li>
+            <li><a href="#AcademicUnitstats">Academic Class Meeting Utilization</a>
+            </li>
+            <li><a href="#Coursetypeanalysis">Course Type Analysis</a>
+            </li>
+            <li><a href="#Finalexamsettings">Final Exam Settings</a>
+            </li>
+            <li><a href="#Finalschedule">Final Exam Schedule</a>
+            </li>
+            <li><a href="#trendreport">Trend Report</a>
+            </li>
+        </ul>
+        <ol start="1" class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt;&#160;Reports&#160;to open the Reports menu, and then click the report you want to generate. For example, to generate the Course List report, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Reports </span>&gt;&#160;<span class="ui">Course List</span>.<p><img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_28.png" class="padding_only" style="width: 335px;height: 411px;" /></p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>All academic reports are also available under Reports &gt;&#160;Academic Planning.</p></div></li>
+            <li>On the window that appears, set up your report.&#160;<p><img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_28_2.png" class="resize80_noborder_padding" /></p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>In the&#160;Setup&#160;field, you can leave it&#160;as&#160;user-specified, however, if&#160;there are saved reports available in this drop-down for this type of report, you can select one and streamline the reporting process. See Also:&#160;&#160;<a href="../../../EMSDesktopClient/V44.1/UserGuide/WorkwithSavedReports.html">Work with Saved Reports</a>.</p></div><p>In the&#160;Report Comment&#160;field, you can enter a comment to print on the report (maximum&#160;255 characters).</p><p>You can click&#160;Print Preview&#160;to see an preview of the report.</p><p>You can print a hard copy of the report:&#160;specify the number of copies that you are printing, and then click&#160;Print.</p><p>If you want to save settings so that you do not have to adjust them every time you run this type of report, you can click&#160;Save. The option will appear in the&#160;Setup&#160;field drop-down list next time you open this type of report.</p></li>
+            <li>When you have specified all options, click&#160;<span class="ui">Close</span>.&#160;Unless you change the setup, these settings will be used as defaults (which you can change) for all subsequent reports you generate.</li>
+        </ol>
+        <h2><a name="Course"></a>Course List&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Provides a list of courses and course dates.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>This report is often sent out to academic units for review when the Domain Scheduler is finished with room assignments.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>There are options to include courses without room assignments and to print User Defined Fields that are associated with courses. Formats include:</p>
+                        <ul class="unorder-list">
+                            <li>By Course</li>
+                            <li>By Instructor</li>
+                            <li>By Academic Department By Course</li>
+                            <li>By Academic Department By Instructor</li>
+                            <li> By Day of Week</li>
+                            <li>By Location</li>
+                            <li> By Estimated Enrollment</li>
+                            <li>By Start Time</li>
+                            <li>By Subject</li>
+                            <li>By Course Type</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="CourseChanges"></a>Course Changes&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Used during Define and Edit Mode to capture changes made by the academic units to courses and course dates so that the Domain Scheduler can data enter these changes into the SIS.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul>
+                            <li><b>Show Changes</b>
+                            </li>
+                            <li><b>All Changes For Term</b>—If selected, all changes for the term (even changes that have possibly already been data-entered into the SIS) are included in the report.</li>
+                            <li><b>Changes Since Last Synchronization</b>—If selected, the report includes only changes that have been made since the last time that the term was synchronized.</li>
+                            <li><b>Show Room Changes</b>—If selected, the report includes changes to rooms (post-publish only).</li>
+                            <li><b>Show Canceled Courses Only</b>—If selected, the report includes only cancellations.</li>
+                            <li><b>Show New Courses Only</b>—If selected, the report includes only new courses.</li>
+                            <li><b>Show Edited Courses Only</b>—If selected, the report includes only changes.</li>
+                            <li><b>Show Latest Changes Only</b>—If this option is selected, and a single value has been changed multiple times, the report includes only the most recent change for the field.</li>
+                            <li><b>Hide Change Details</b>—If selected, audit trail details are hidden on the report.</li>
+                            <li><b>Show All Courses</b>—If selected, all courses, even those without changes, are shown in the report.</li>
+                            <li><b>Show User Defined Fields</b>—If selected, the report includes any user defined fields that have been completed.</li>
+                            <li><b>Show Notes</b>—If selected, any user-supplied notes are shown in the report.</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The options that are marked with an asterisk (*) are the recommended options for the most inclusive reports.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="CoursePRef"></a>Course Preferences&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 299px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 317px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Used after Set Preferences mode to provide a list of courses and course dates with their preferences and requirements.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Format Choices:</p>
+                        <ul class="unorder-list">
+                            <li>By Course</li>
+                            <li>By Academic Department By Course</li>
+                            <li>By Academic Department by Instructor</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="PrefSummary"></a>Preferences Summary&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 403px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>After running an optimization scenario, this report is used to summarize the following information:</p>
+                        <ul class="unorder-list">
+                            <li>The number of each type of preference or requirement.</li>
+                            <li>The number of the preferences that can be met from the optimization process.</li>
+                            <li>The number of preferences that cannot be met from the optimization process.</li>
+                        </ul>
+                        <p>You can generate this report for each different scenario that was optimized.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="UnmetPref"></a>Unmet Preferences&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 286px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>After running an optimization scenario, this report is used to list the courses that had preferences or requirements that were not met during the optimization process. You can generate this report for each different scenario that was optimized.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Format Choices:</p>
+                        <ul>
+                            <li>By Course</li>
+                            <li>By Academic Department By Course</li>
+                            <li>By Academic Department by Instructor</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="InstructorBacktoBack"></a>Instructor Back to Back&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 939px;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 356px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Lists the courses that have instructors who are scheduled to teach two courses at the same time (Conflicts) and instructors who are teaching back to back in different locations within the time gap that is specified in Options.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul>
+                            <li>The days of the week that are to be included in the instructor’s schedule.</li>
+                            <li>The time gap (in minutes) between classes on the specified days that determines “back to back.”</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="InstructorSummary"></a>Instructor Summary&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>This report includes the following values per instructor:</p>
+                        <ul class="unorder-list">
+                            <li>Number of sections.</li>
+                            <li>Number of teaching hours.</li>
+                            <li>Number of credit hours.</li>
+                            <li>Total estimated enrollment.</li>
+                            <li>Total actual enrollment.</li>
+                            <li>Number of sections in Prime Time.</li>
+                            <li>Number of Time Block violations,.</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Time"></a>Time&#160;Block Violations&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Lists the courses that are in violation of the Time Block template. In the Summary format, the following values are included:</p>
+                        <ul class="unorder-list">
+                            <li>Total number of course dates</li>
+                            <li>Total in violation</li>
+                            <li>Percent in violation</li>
+                            <li>Total that meet the Time Block template</li>
+                            <li>Percent that meet the Time Block template</li>
+                            <li>Percent of total violations per academic unit</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Format options:</p>
+                        <ul class="unorder-list">
+                            <li>By Course</li>
+                            <li>By Instructor</li>
+                            <li>By Academic Unit By Course</li>
+                            <li>By Academic Unit By Instructor</li>
+                            <li>Summary</li>
+                            <li>Chart - Violation Count</li>
+                            <li>Chart - Violation Totals</li>
+                            <li>Show All Courses</li>
+                            <li>Include Courses Not Assigned To Rooms</li>
+                            <li>Show User Defined Fields</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Timeavailability"></a>Time Block Room Availability/Usage&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Displays the number of rooms that are either available or in use for each room size (Small, Medium, or Large) for each time block.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>To generate this report, a Time Block template must be indicated on the term.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Format options:</li>
+                            <li>Availability</li>
+                            <li>Usage</li>
+                            <li>Indicate Low Availability and High Availability Thresholds</li>
+                            <li>Include All Active Scenarios in other Domains</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Academic"></a>Academic Class Meeting Utilization&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Used after publishing to view the percent utilization of your rooms based on the number of class meetings that you specify. For instance, if you hold 50 minute courses from 8:00 - 5:00 (9 meetings) and have one evening course from 6:00 - 9:00 (1 meeting) Monday through Friday (x5), you would have 50 class meetings per week.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Classroom"></a>Classroom Utilization&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Used to analyze the percent that your rooms are utilized compared to a number of hours and the percentage of seats full (selected enrollment compared to room capacity).</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In Manage Terms, you can specify either estimated enrollment or actual enrollment. The value that you selected is the value that is used to calculate the values for this report.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Format Options:</li>
+                            <li>Detail</li>
+                            <li>Chart - By Building</li>
+                            <li>Chart - By Room Type</li>
+                            <li>Chart - By Room Size</li>
+                            <li>The days of the week that are to be included in the report</li>
+                            <li>The Hours Per Day that are to be considered</li>
+                            <li>Include All Active Scenarios in other Domains</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Hourly"></a>Hourly Classroom Utilization&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Calculates the percent that a room is used during each hour of the day. Formats include detailed (percent for each hour of each room specified) and chart (a chart of each hour for overall).</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Format Options:</li>
+                            <li>Detail</li>
+                            <li>Chart</li>
+                            <li>The days of week that are to be reviewed</li>
+                            <li>Include All Active Scenarios in other Domains</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Over"></a>Over/Under Utilization&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Displays those courses that have an adjusted enrollment that is either over the maximum capacity for the room or under the minimum capacity for the room and seat fill.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In Manage Terms, you can specify either estimated enrollment or actual enrollment. The value that you selected is the value that is used to calculate the values for this report.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>To show or not to Show All Courses (regardless if they fall outside capacity thresholds)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Prime"></a>Prime Time Usage&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 354px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 246px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>This report displays the number of sections (course dates) with room assignments that fall within the specified time range (Prime Time) or that have been indicated as Prime Time on the Time Block template.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In Manage Terms, you can specify either estimated enrollment or actual enrollment. The value that you selected is the value that is used to calculate the values for this report.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Format options:</p>
+                        <ul class="unorder-list">
+                            <li>Detail</li>
+                            <li>Chart - Sections</li>
+                            <li>Chart - Class Meetings</li>
+                            <li>Chart - Class Hours</li>
+                            <li>The days of the week that are to be included in the report</li>
+                            <li>Include courses that have not been assigned into a room</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="AcademicUnitstats"></a>Academic Unit Statistics&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 347px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 250px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Displays the following statistics for course dates that have been scheduled into rooms:</p>
+                        <ul class="unorder-list">
+                            <li>Number of sections per unit</li>
+                            <li>Percentage of the total sections</li>
+                            <li>Number of class meetings</li>
+                            <li>Percentage of the total class meetings</li>
+                            <li>Number of class hours</li>
+                            <li>Percentage of class hours</li>
+                            <li>Average estimated enrollment</li>
+                            <li>Average actual enrollment</li>
+                            <li>Average seat fill</li>
+                        </ul>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In Manage Terms, you can specify either estimated enrollment or actual enrollment. The value that you selected is the value that is used to calculate the values for this report.</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Format options:</p>
+                        <ul class="unorder-list">
+                            <li>By Academic Unit</li>
+                            <li>By Academic Time Block</li>
+                            <li>The days of the week that are to be included in the report</li>
+                            <li>Include course dates that have not been assigned into a room</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Coursetypeanalysis"></a>Course Type Analysis&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Displays the following statistics indicated by course type:</p>
+                        <ul class="unorder-list">
+                            <li>Number of sections</li>
+                            <li>Percentage of the total sections</li>
+                            <li>Number of class meetings</li>
+                            <li>Percentage of the total class meetings</li>
+                            <li>Number of class hours</li>
+                            <li>Percentage of class hours</li>
+                            <li>Average estimated enrollment</li>
+                            <li>Average actual enrollment</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Format options:</li>
+                            <li>Detail</li>
+                            <li>Chart - Sections</li>
+                            <li>Chart - Class Meetings</li>
+                            <li>Chart - Class Hours</li>
+                            <li>Chart - Actual Enrollment</li>
+                            <li>The days of the week that are to be included in the report</li>
+                            <li>Include course dates that have not been assigned into a room</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Finalexamsettings"></a>Final Exam Settings&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Outlines any final exam settings that are marked on courses for preparation of publishing the final exam schedule.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>Show All Courses - Displays all courses and their corresponding settings</li>
+                            <li>Show Final Exam Not Required - Limits the report to those courses that had “No Exam Required” specified</li>
+                            <li>Show Special/Common Exams - Limits the report to only those courses with special/common exams settings</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Finalschedule"></a>Final Exam Schedule&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Displays a list of courses with the corresponding final exam date, time, and room as assigned by the final exam session.</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <ul class="unorder-list">
+                            <li>All Assigned - All courses that have been assigned to a room by the final exam session</li>
+                            <li>Different Rooms - All courses that have been scheduled in room that was not the same that was used all semester for the course for the final exam</li>
+                            <li>Unassigned - All courses that have not been scheduled in a room for the final exam</li>
+                            <li>Final Exam Not Scheduled - All courses for which no final exam was scheduled</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="trendreport"></a>Trend Report&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Shows how the following statistics are trending term by term:</p>
+                        <ul class="unorder-list">
+                            <li>Percent utilization</li>
+                            <li>Percent estimated seat fill</li>
+                            <li>Percent actual seat fill</li>
+                            <li>Percent sections in Prime Time</li>
+                            <li>Percent sections over maximum capacity</li>
+                            <li>Percent sections under minimum capacity</li>
+                            <li>Percent Time Block violations</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Format options:</p>
+                        <ul class="unorder-list">
+                            <li>By Term</li>
+                            <li>By Term By Academic Unit</li>
+                            <li>Chart</li>
+                            <li>The days of the week that are to be included in the report</li>
+                            <li>The number of hours per day that are to be used to calculate utilization</li>
+                            <li>Include course dates that have not been assigned into a room</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

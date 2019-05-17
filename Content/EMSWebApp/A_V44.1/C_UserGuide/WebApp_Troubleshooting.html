@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>Troubleshoot an Internal Server Error When Viewing My Events in EMS Web App</title>
+    </head>
+    <body>
+        <h1>Troubleshoot an Internal Server Error When Viewing My Events in EMS Web App</h1>
+        <p>If you are&#160;getting an internal server error when trying to view existing bookings through the “My Events” page in <MadCap:variable name="General.EMS&#160;Web App" /> and there are&#160;a large amount of bookings under your name, this is because the number of records returned exceeds the number allowed by the IIS web app configuration. The maximum is set to 50,000 by default.</p>
+        <p><span class="ui">Workaround:&#160;</span>You or your System Administrator can increase this limit&#160;by editing the web.config file. The configuration attribute to look for is the following:</p>
+        <div class="indent_3em"><pre>&lt;add key="aspnet:MaxJsonDeserializerMembers" value="50000" /&gt;</pre>
+        </div>
+        <p>Change the value to&#160;the maximum number of bookings you expect users to have.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="boldAllCaps" style="font-weight: bold;">EMS Cloud Customers:</span> Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please contact <a href="../../../ContactUs.htm#Support">EMS Support</a>.</p>
+        </div>
+    </body>
+</html>

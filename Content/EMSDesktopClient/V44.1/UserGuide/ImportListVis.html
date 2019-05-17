@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Importing a List of Visitors to a Meeting V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Import a List of Visitors to a Meeting</h1>
+        <p>To import a list of visitors to a meeting, you will</p>
+        <ul class="unorder-list">
+            <li>Ensure your list of visitors&#160;is ready for import.</li>
+            <li>Navigate to the meeting you want to work with.</li>
+            <li>Import your list of visitors.</li>
+            <li>Select the meetings within the reservation to which to add your list of visitors.</li>
+            <li>Confirm and finalize.</li>
+        </ul>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>To utilize the Advanced Visitor Management Module, an additional license must be purchased. Without this optional module, users must add visitors  manually and the “Import”  and “Print Format” buttons will not be available.</p>
+        </div>
+        <ol>
+            <li>
+                <p>Your list of visitors must be&#160;a tab-delimited spreadsheet that contains the information (in the order listed) for the visitors you want to import.&#160;Each visitor must be a separate line entry.</p>
+                <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Required/Optional</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Visitor</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>True/False</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Company Name</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Text. 50 characters maximum.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Email Address</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Text. 255 characters maximum.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Optional</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Phone</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Text. 50 characters maximum.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Optional</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Text. No maximum.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Optional</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Name</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Text. 50 characters maximum.</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Required</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You can click<strong> Print Format </strong>on the second page of the Add Booking Details Wizard (described below) to see the required format for the tab-delimited file.</p>
+                </div>
+            </li>
+            <li>
+                <p>Open the reservation from the Reservation Book.</p>
+                <p>
+                    <img src="Images/DC_UG_ImportListofVis_ResBook.png" class="hyperlink_with_padding_and_border" />
+                </p>
+            </li>
+            <li>
+                <p>In the left pane of the Navigator window that opens, select the meeting for which you are importing the list of attendees/visitors, and in&#160;the Bookings pane on the right, click <strong>Tools</strong>, and then select&#160;<strong>Add Booking Details Wizard</strong>.&#160;</p>
+                <p>
+                    <img src="Images/DC_UG_ImportListofVis_BookDetail.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>The Add Booking Details wizard opens.</p>
+                <p>
+                    <img src="Images/DC_UG_ImportListofVis_BookDetailWiz.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+        </ol>
+        <ol start="5">
+            <li>
+                <p>Select Visitors or Attendees, and then click <strong>Next</strong>.&#160;</p>
+                <p>
+                    <img alt="" class="resize80_noborder_padding" src="Images/DC_UG_ImportListofVis_SelectVis.png" />
+                </p>
+            </li>
+            <li>
+                <p>The second page of the Add Booking Details Wizard opens with a blank row for adding an attendee/visitor to the event.</p>
+            </li>
+            <li>
+                <p>Click <strong>Import</strong>.&#160;The Open File dialog box opens.&#160;Browse to and select your visitor list spreadsheet, and then click <strong>Import </strong>to import the file.&#160;The Add Booking Details Wizard is updated with the imported attendee/visitor information. Each imported visitor is a separate line entry in the Wizard.</p>
+                <p>
+                    <img border="0" class="resize80_noborder_padding" src="Images/DC_UG_ImportListofVis_Import.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click <strong>Next</strong>.&#160;The Select Bookings window opens, listing all the bookings within the selected reservation with a date on or after the current day's date, <em>and</em> that do not already have the visitor list added.</p>
+                <p>
+                    <img border="0" class="resize80_noborder_padding" src="Images/DC_UG_ImportListofVis_SelectBook.png" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To show canceled bookings, clear the Hide Canceled Bookings checkbox. To hide them, select the option. To show all bookings regardless of date, clear the Hide Old Bookings option.</p>
+                </div>
+            </li>
+            <li>
+                <p>Select the meetings&#160;to which to add your visitor list (use CTRL+click or Select All to select multiple meetings), and&#160;then click <strong>Finish</strong>.&#160;</p>
+                <p>A message opens asking you if you want to add more booking details. </p>
+            </li>
+            <li>
+                <p>Click <strong>No</strong>.&#160;</p>
+                <p>A message opens indicating that the changes were made successfully. </p>
+            </li>
+            <li>
+                <p>Click <strong>OK </strong>to close the message and return to the Navigator.&#160;</p>
+                <p>The booking detail (Visitors) and its items (visitors) are displayed as folders under the appropriate booking folders in the Navigator.</p>
+            </li>
+        </ol>
+    </body>
+</html>

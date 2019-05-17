@@ -1,0 +1,1705 @@
+﻿/*<meta />*/
+
+/*CSS VARIABLES*/
+
+:root
+{
+	--Fonts: 'Segoe UI', Arial;
+	--ImageBorderColor: #6699cc;
+	--AccruentBlue: #007ac9;
+	--DarkGray: #444444;
+	--LightBlue: #EDFBFF;
+	--LightGray: #efefef;
+	--BackgroundColor: #ffffff;
+	--PrintH1H4: #085a98;
+	--PrintH2H5: #007ac9;
+	--PrintH3H6: #757575;
+	--PrintBody: #000000;
+	--PrintFont: Calibri;
+	--MaxImageWidth: 552px;
+}
+
+/*BODY TEXT FORMATTING CLASSES*/
+/*this sets the default body text without classes applied*/
+
+body
+{
+	font-size: 12pt;
+	line-height: 18px;
+	color: var(--DarkGray);
+	font-family: var(--Fonts);
+}
+
+/*this sets the line-height, margins, and font-weight of h1-h3*/
+
+h1,
+h2,
+h3
+{
+	line-height: 1.5em;
+	text-rendering: optimizelegibility;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+/*this sets the line-height, margins, and font-weight of h4-h6*/
+
+h4,
+h5,
+h6
+{
+	line-height: 1.5em;
+	text-rendering: optimizelegibility;
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+/*these classes set the font size of h1-h6*/
+
+h1
+{
+	font-size: 28px;
+	mc-disabled: false;
+}
+
+h2
+{
+	font-size: 24px;
+	mc-disabled: false;
+}
+
+h3
+{
+	font-size: 20px;
+	mc-disabled: false;
+}
+
+h4
+{
+	font-size: 18px;
+	mc-disabled: false;
+}
+
+h5
+{
+	font-size: 16px;
+	mc-disabled: false;
+}
+
+h6
+{
+	font-size: 14px;
+	font-weight: 400;
+	mc-disabled: false;
+}
+
+/*paragraph classes*/
+
+p
+{
+	margin: 0 0 10px;
+	mc-hyphenate: never;
+	top: 12px;
+	/*this sets the margin of the paragraph class, and prevents hyphenation at the end of the line*/
+}
+
+p.Caption
+{
+	font-size: 12px;
+}
+
+p.title_footer
+{
+	margin: 10px;
+}
+
+p.PageFooter
+{
+	color: var(--AccruentBlue);
+	text-align: left;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 20px;
+}
+
+p.indent_14	/*this class indents the paragraph by 28pts*/
+{
+	margin-left: 28pt;
+}
+
+p.indent_3em
+{
+	margin-left: 36pt;
+}
+
+p.indent_28	/*this class indents the paragraph by 42pts*/
+{
+	margin-left: 42pt;
+}
+
+/*SPAN CLASSES*/
+
+/*controls how UI elements are formatted in the text. to add this class, select your text, right-click the text, 
+select span class and then select span_ui. Alternatively, in your HTML, format like so: 
+<span class="ui">TEXT HERE</span>*/
+
+span.ui,
+.ui
+{
+	font-weight: bold;
+}
+
+span.italics	/*This should be applied to references of other documents.*/
+{
+	font-style: italic;
+}
+
+/*these next six rules specify how I want text to break in a responsive layout. For example, in the responsive footer*/
+
+span.line
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+span.line2
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+span.line3
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+@media mobile
+{
+	span.line
+	{
+		display: block;
+		margin-left: 0px;
+		clear: right;
+	}
+
+	span.line2
+	{
+		display: inline-block;
+		margin-left: 0px;
+		margin-right: 20px;
+	}
+
+	span.line3
+	{
+		display: inline-block;
+		margin-left: 0px;
+		margin-right: 20px;
+	}
+}
+
+span.ordinal	/*used for ordinal numbers and dates*/
+{
+	vertical-align: super;
+	font-size: 9pt;
+}
+
+span.submenu-toggle-container	/*this adds a 5px margin between the TOC menu toggle and the text it is related to*/
+{
+	margin-left: 5px;
+	mc-hidden: hidden;
+}
+
+.pre /*added for Ken's projects*/
+{
+	font-family: monospace;
+}
+
+
+/*360Facility flare project class only - applies color to bold items*/
+
+b.OptionalFeatureOnly
+{
+	color: #008b8b;
+}
+
+/*END BODY TEXT FORMATTING CLASSES*/
+/*LIST CLASSES*/
+/*ordered and bulleted list classes, including behavior of nested lists*/
+
+ol,
+ul	/*controls padding between a number/letter/bullet and the text that follows*/
+{
+	list-style-position: outside;
+	padding-left: 30px;
+}
+
+li
+{
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ol,
+ul ol
+{
+	list-style-image: none;
+}
+
+ol ol,
+ol ul ol,
+ul ol ol,
+ul ol ul ol,
+ul ul ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+ol ol ol,
+ul ol ol ol,
+ol ul ol ol,
+ol ol ul ol
+{
+	list-style-type: lower-roman;
+}
+
+ul,
+ol ul
+{
+	list-style-type: disc;
+}
+
+ul ul,
+ul ol ul,
+ol ul ul,
+ol ul ol ul,
+ol ol ul ul
+{
+	list-style-type: circle;
+}
+
+ul ul ul,
+ol ul ul ul,
+ul ol ul ul,
+ul ul ol ul
+{
+	list-style-type: square;
+}
+
+ul.ul_3
+{
+	list-style-type: disc;
+	margin-left: 63pt;
+}
+
+li.BulletIndent
+{
+	margin-bottom: 6pt;
+	margin-left: 54pt;
+}
+
+/*END LIST CLASSES*/
+/*LINK CLASSES*/
+
+a
+{
+	text-decoration: none;
+}
+
+/*END LINK CLASSES*/
+/*DIV CLASSES*/
+
+/*This first style is for the default div class: add 15px padding to the left of each div in TOPICS (excluding HTML5 skin). 
+If you have divs that are nested deeper than this, just repeat the div > div > div (etc) pattern*/
+
+/*please do not select the body container class from the style drop-down menu in Flare, that class name refers to elements 
+in the HTML5 skin*/
+
+div.body-container > div,
+div.body-container > div > div,
+div.body-container > div > div > div,
+div.body-container > div > div > div > div,
+div.body-container > div > div > div > div > div,
+div.body-container > div > div > div > div > div > div,
+div.body-container > div > ol > div	/*this line applies the padding to divs that are nested IN an ordered list*/
+{
+	padding-left: 25px;
+	mc-hidden: hidden;
+}
+
+div.nocontent,
+div.MCBreadcrumbsBox_0
+{
+	padding-left: 0px !important;
+	mc-hidden: hidden;
+	/*these settings instruct the output to ignore the default div settings on the breadcrumbs divs*/
+}
+
+div.MCBreadcrumbsBox_0	/*this setting controls the padding at the bottom of the breadcrumbs container div*/
+{
+	position: inherit !important;
+	padding-bottom: 15px !important;
+}
+
+div.sidenav-wrapper	/*this prevents side-scrolling from appearing in the side menu*/
+{
+	overflow-x: hidden;
+	mc-hidden: hidden;
+}
+
+/*Div Note classes*/
+
+div.Note
+{
+	background-position: 10px -3px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/HTML5_Skin_Images/icon-note.png');
+	background-size: 30px auto;
+	background-color: var(--LightGray);
+	border-color: var(--DarkGray);
+	border-width: 1px;
+	border-style: dotted;
+	float: inherit;
+	font-family: var(--Fonts);
+	font-size: 12pt;
+	font-weight: 400;
+	line-height: 18px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	max-width: 75%;
+	min-height: 46px;
+	mc-auto-number-format: '{b}{color #444444}Note: {/color}{/b}';
+	overflow: hidden;
+	page-break-inside: avoid;
+	position: relative;
+	text-align: left;
+	padding: 7px 50px 10px 50px;
+	padding-left: 50px !important;
+	/*instructs the CSS to ignore the padding from the div classes above*/
+}
+
+div.ImportantNote
+{
+	background-position: 10px -3px;
+	background-repeat: no-repeat;
+	background-image: url('../Images/HTML5_Skin_Images/icon-warning.png');
+	background-size: 30px auto;
+	background-color: #f6e5e5;
+	border-color: #990000;
+	border-width: 1px;
+	border-style: dotted;
+	float: inherit;
+	font-family: var(--Fonts);
+	font-size: 12pt;
+	font-weight: 400;
+	line-height: 18px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	max-width: 75%;
+	min-height: 46px;
+	mc-auto-number-format: '{b}{color #990000}Important! {/color}{/b}';
+	overflow: hidden;
+	page-break-inside: avoid;
+	position: relative;
+	text-align: left;
+	padding: 7px 50px 10px 50px;
+	padding-left: 50px !important;
+	/*instructs the CSS to ignore the padding from the div classes above*/
+}
+
+/*this rule puts padding between the auto-numbering in the notes and the content that follows*/
+
+div.Note > p,
+div.Note > ol,
+div.Note > ul,
+div.Note > span,
+div.Note > table,
+div.Note > img,
+div.ImportantNote > p,
+div.ImportantNote > ol,
+div.ImportantNote > ul,
+div.ImportantNote > span,
+div.ImportantNote > table,
+div.ImportantNote > img
+{
+	padding-top: 5px;
+}
+
+@media mobile, tablet
+{
+	div.ImportantNote,
+	div.Note
+	{
+		max-width: 100%;
+	}
+}
+
+/*makes the note classes span 100% of the screen width on mobile and tablet*/
+
+table div.Note,
+table div.ImportantNote	/*this setting configures how notes behave when nested in a table*/
+{
+	max-width: 100%;
+	margin-right: 10px;
+}
+
+/*Code Sample Div*/
+
+div.code-sample
+{
+	padding: 5px, 0px, 5px, 0px;
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 2px;
+	border-bottom: 2px;
+	border-left: 0px;
+	border-right: 0px;
+	border-style: solid;
+	border-color: #d3d3d3;
+	page-break-inside: avoid;
+}
+
+/*IMAGE CLASSES - default image class has no formatting*/
+
+img.padding_only
+{
+	margin: 10px 0;
+}
+
+img.border_only
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+}
+
+img.padding_and_border
+{
+	margin: 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+}
+
+img.popup_with_padding_and_border
+{
+	margin: 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+	mc-thumbnail-max-width: var(--MaxImageWidth);
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+}
+
+img.popup_with_padding_only
+{
+	margin: 10px 0;
+	mc-thumbnail-max-width: var(--MaxImageWidth);
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+}
+
+img.popup_nopadding_withborder
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+	mc-thumbnail-max-width: var(--MaxImageWidth);
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+}
+
+img.resize80_noborder_nopadding
+{
+	width: 80%;
+	height: auto;
+	max-width: var(--MaxImageWidth);
+}
+
+img.resize80_noborder_padding
+{
+	margin: 10px 0;
+	width: 80%;
+	height: auto;
+	max-width: var(--MaxImageWidth);
+}
+
+img.resize80_border_nopadding
+{
+	width: 80%;
+	height: auto;
+	max-width: var(--MaxImageWidth);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+}
+
+img.resize80_border_and_padding
+{
+	margin: 10px 0;
+	width: 80%;
+	height: auto;
+	max-width: var(--MaxImageWidth);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+}
+
+img.resize80_popup_padding_border
+{
+	margin: 10px 0;
+	width: 80%;
+	height: auto;
+	max-width: var(--MaxImageWidth);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+	mc-thumbnail-max-width: var(--MaxImageWidth);
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+}
+
+img.hyperlink_with_padding_and_border
+{
+	margin: 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--ImageBorderColor);
+	max-width: var(--MaxImageWidth);
+	/*specifies maximum width in print output*/
+	height: auto;
+	/*specifies that the system should automatically scale the height according to the max width in print output*/
+	mc-thumbnail-max-width: var(--MaxImageWidth);
+	mc-thumbnail: hyperlink;
+	mc-thumbnail-max-height: auto;
+}
+
+img.imgBorderMax520	/**/
+{
+	margin: 10px 0;
+	max-width: 520px;
+}
+
+/*EMS-specific style for tall narrow mobile images */
+
+img.narrow_padding_only
+{
+	margin: 10px 0;
+	height: 70%;
+	width: auto;
+	max-height: 500px;
+}
+
+img.narrow_padding_and_border
+{
+	margin: 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #6699cc;
+	height: 70%;
+	width: auto;
+	max-height: 500px;
+}
+/*End EMS-specific image styles*/
+
+/*END IMAGE CLASSES*/
+
+/*****EMS-Specific Styles********/
+
+	
+	/*********************Release Note Reference Styles*********************/
+
+	p.RNArea
+	{
+		font-style: italic;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+	}
+
+	p.RNTitle
+	{
+		font-weight: bold;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+	}
+
+	p.RNBody
+	{
+		margin-left: 35px;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+	}
+
+	p.RNBodyBeforeList
+	{
+		margin-left: 35px;
+		margin-bottom: 5px;
+		padding-bottom: 0px;
+	}
+
+	p.RNRef
+	{
+		margin-left: 35px;
+		font-size: 12px;
+	}
+
+	a.RNRefHyper
+	{
+		font-size: 12px;
+	}
+
+	p.InternalRef	/**Used in Known Issues Internal Reference Column**/
+	{
+		font-size: 12px;
+	}
+	
+	ol.RN-number-list li
+	{
+		margin-left: 29px;
+	}
+	
+	ul.RN-unorder-list li
+	{
+		margin-left: 29px;
+	}
+
+/*END EMS-Specific Styles*/
+
+/*MADCAP ELEMENT CLASSES*/
+
+a,
+a.MCXref_ParaTextOnly_0:link,
+a.MCXref_ParaTextOnly_0:visited
+{
+	color: #428BCA;
+	font-weight: normal;
+	font-size: inherit;
+	text-decoration: none;
+}
+
+a.MCToggler_0,
+a.MCToggler_0:link,
+a.MCToggler_0:visited,
+a.MCToggler_a_0:link,
+a.MCToggler_a_0:visited
+{
+	text-decoration: none;
+}
+
+a:hover,
+a.MCXref_ParaTextOnly_0:hover
+{
+	text-decoration: none;
+}
+
+MadCap|xref.ParaTextOnly
+{
+	mc-format: '{para}';
+}
+
+MadCap|xref
+{
+	mc-format: '{para}';
+	text-decoration: none;
+}
+
+/*togglers and drop-downs*/
+
+h2 a img,
+h3 a img,
+h4 a img,
+h5 a img,
+h6 a img	/*controls the margins between the expand/contract button and the heading of the toggler*/
+{
+	padding-right: 25px;
+}
+
+MadCap|toggler
+{
+	mc-open-image: url('../Images/HTML5_Skin_Images/TogglerOpen_New.png');
+	mc-closed-image: url('../Images/HTML5_Skin_Images/TogglerClosed_New.png');
+}
+
+MadCap|dropDown
+{
+	mc-closed-image: url('../Images/HTML5_Skin_Images/TogglerClosed_New.png');
+	mc-open-image: url('../Images/HTML5_Skin_Images/TogglerOpen_New.png');
+}
+
+MadCap|toggler:link
+{
+	color: var(--AccruentBlue);
+}
+
+MadCap|toggler:visited
+{
+	color: var(--AccruentBlue);
+}
+
+/*end togglers and drop-downs*/
+
+div.MCPopupContainer	/*this setting controls where the full-size image pop-up window will appear when you configure a thumbnail 
+to open in a pop-up window*/
+{
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%);
+	mc-hidden: hidden;
+}
+
+@media non-print
+{
+	/*this controls the look and feel of the breadcrumbs. DO NOT remove the media tag*/
+
+	MadCap|breadcrumbsProxy
+	{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: black;
+		width: 100%;
+		position: fixed;
+	}
+}
+
+MadCap|bodyProxy
+{
+	margin: 0px;
+	width: 100%;
+	left: 0px;
+	mc-breadcrumbs-count: 3;
+	mc-breadcrumbs-divider: '>';
+	mc-breadcrumbs-prefix: 'You are here:';
+	padding-top: 0px;
+	position: fixed;
+	margin-top: 200px;
+}
+
+/*the next three styles control the MadCap popup element. This creates a tooltip which appears over a segment of text when you hover your mouse over the text*/
+
+MadCap|popup,
+MadCap|popup:focus,
+MadCap|popup:hover
+{
+	color: var(--AccruentBlue);
+}
+
+MadCap|popupHead
+{
+	color: var(--AccruentBlue);
+	font-weight: bold;
+}
+
+span.MCTextPopupBody	/*controls the background color of the popup*/
+{
+	background-color: #F7F8F9;
+}
+
+/*END MADCAP ELEMENT CLASSES*/
+/*BASIC TABLE SETTINGS - DO NOT MODIFY. THESE APPLY TO THE SKIN AS WELL*/
+
+td > ol,
+td > ul	/*makes sure that there is no top-margin above an ordered or unordered list in a table cell*/
+{
+	margin-top: 0px;
+}
+
+th
+{
+	font-family: var(--Fonts);
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	padding: 8px 10px;
+}
+
+td
+{
+	vertical-align: top;
+	padding: 8px 10px;
+}
+
+table.table_1
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+table.table_2
+{
+	margin-right: auto;
+	margin-left: 5pt;
+	border-collapse: collapse;
+}
+
+table.table_3
+{
+	margin-right: auto;
+	margin-left: 14pt;
+	border-collapse: collapse;
+}
+
+table.table_4
+{
+	margin-left: 28pt;
+	border-collapse: collapse;
+}
+
+table.title_footer
+{
+	width: 100%;
+}
+
+/*END BASIC TABLE SETTINGS*/
+/*FEEDBACK SURVEY CLASSES*/
+
+div.feedback_survey
+{
+	padding-left: 25px;
+	padding-right: 25px;
+	mc-hidden: hidden;
+}
+
+p.feedback-question
+{
+	padding-top: 10px;
+	color: var(--DarkGray);
+	margin-left: 20px;
+	mc-hidden: hidden;
+}
+
+div.feedback-reason
+{
+	display: none;
+	mc-hidden: hidden;
+}
+
+div.feedback-option
+{
+	margin: 0em 0em 0.5em 0em;
+	mc-hidden: hidden;
+}
+
+label
+{
+	font-size: 13px;
+}
+
+a.feedback-button
+{
+	display: inline-block;
+	background-color: var(--AccruentBlue);
+	font-size: 1em;
+	color: var(--BackgroundColor);
+	margin: 0 0.5em 0.5em 0;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	border-style: solid;
+	border-color: var(--AccruentBlue);
+	border-width: 1px;
+	mc-hidden: hidden;
+}
+
+a.feedback-yes
+{
+	color: var(--BackgroundColor) !important;
+	padding-top: 6px;
+	mc-hidden: hidden;
+}
+
+a.feedback-no
+{
+	color: var(--BackgroundColor) !important;
+	padding-top: 6px;
+	mc-hidden: hidden;
+}
+
+a.feedback-yes:hover,
+a.feedback-yes:focus
+{
+	background-color: var(--LightBlue) !important;
+	color: var(--AccruentBlue) !important;
+	text-decoration: none;
+	mc-hidden: hidden;
+}
+
+a.feedback-no:hover,
+a.feedback-no:focus
+{
+	background-color: var(--LightBlue) !important;
+	color: var(--AccruentBlue) !important;
+	text-decoration: none;
+	mc-hidden: hidden;
+}
+
+/*END FEEDBACK SURVEY CLASSES*/
+/*Responsive Footer Class*/
+
+div.Responsive_Footer	/*This is a responsive footer style for the masterpage.*/
+{
+	/*don't touch any of these settings, PLEASE*/
+	mc-grid-row: true;
+	padding-top: 30px;
+	padding-left: 25px;
+	mc-hidden: hidden;
+	height: 24px;
+}
+
+div.Responsive_Footer::before
+{
+	content: ' ';
+	display: table;
+	mc-hidden: hidden;
+}
+
+div.Responsive_Footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+	mc-hidden: hidden;
+}
+
+div.Responsive_Footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-color: var(--BackgroundColor);
+	mc-hidden: hidden;
+}
+
+div.Responsive_Footer > div:nth-child(1)
+{
+	width: 110px;
+	margin-left: 0%;
+	margin-bottom: 0px;
+	text-align: left;
+	mc-hidden: hidden;
+}
+
+div.Responsive_Footer > div:nth-child(2)
+{
+	width: auto;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+	mc-hidden: hidden;
+}
+
+@media tablet
+{
+	div.Responsive_Footer > div:nth-child(1)
+	{
+		width: 110px;
+		margin-left: 0px;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		text-align: left;
+		mc-hidden: hidden;
+	}
+
+	div.Responsive_Footer > div:nth-child(2)
+	{
+		width: auto;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		margin-left: 0px;
+		text-align: left;
+		mc-hidden: hidden;
+	}
+}
+
+@media mobile
+{
+	div.Responsive_Footer
+	{
+		padding-left: 10px;
+		mc-hidden: hidden;
+	}
+
+	div.Responsive_Footer > div:nth-child(1)
+	{
+		width: 100%;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		mc-hidden: hidden;
+		text-align: left;
+	}
+
+	div.Responsive_Footer > div:nth-child(2)
+	{
+		width: 100%;
+		padding-bottom: 5px;
+		margin-left: 0px;
+		mc-hidden: hidden;
+		text-align: left;
+	}
+}
+
+/*End Responsive Footer class*/
+/*MODIFIES PADDING FOR MOBILE OUTPUT ONLY*/
+
+@media only screen and (max-width: 767px)
+{
+	/*controls the padding-left for ordered and bulleted lists*/
+
+	ul,
+	ol
+	{
+		list-style-position: outside;
+		padding-left: 10px;
+	}
+
+	/*controls padding between nested divs*/
+
+	div.body-container > div,
+	div.body-container > div > div,
+	div.body-container > div > div > div,
+	div.body-container > div > div > div > div,
+	div.body-container > div > div > div > div > div,
+	div.body-container > div > div > div > div > div > div,
+	div.body-container > div > ol > div	/*this line applies the padding to divs that are nested IN an ordered list*/
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		mc-hidden: hidden;
+	}
+
+	div.nocontent,
+	div.MCBreadcrumbsBox_0
+	{
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+		mc-hidden: hidden;
+		/*these settings instruct the output to ignore the default div settings on the breadcrumbs divs*/
+	}
+}
+
+/*END MOBILE PADDING*/
+/*HTML5 SIDENAV SETTINGS*/
+/*this style controls the positioning of the caret in the sidenav for web output*/
+
+ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle-container,
+ul.off-canvas-accordion li.is-accordion-submenu-parent > a span.submenu-toggle-container
+{
+	position: relative;
+	float: left;
+	left: -35px;
+	top: 10px;
+	mc-hidden: hidden;
+}
+
+/*this controls the behavior of the caret in the navigation menu when you expand / contract menu items*/
+
+ul.sidenav li.is-accordion-submenu-parent[aria-expanded='true'] > a span.submenu-toggle,
+ul.off-canvas-accordion li.is-accordion-submenu-parent[aria-expanded='true'] > a span.submenu-toggle
+{
+	transform: rotate(360deg);
+	mc-hidden: hidden;
+}
+
+ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle,
+ul.off-canvas-accordion li.is-accordion-submenu-parent > a span.submenu-toggle
+{
+	transform: rotate(270deg);
+	mc-hidden: hidden;
+}
+
+/*This setting set the expanding caret to be at the top of the list item in the menu, rather than the bottom*/
+
+ul.sidenav li a,
+ul.off-canvas-accordion li a
+{
+	display: flex;
+	flex-direction: column-reverse;
+	font-family: var(--Fonts);
+	mc-hidden: hidden;
+}
+
+/*This setting tells Madcap to ignore the previous setting IF the list item in the menu does not have child items*/
+
+ul.sidenav li.tree-node.tree-node-leaf a,
+ul.off-canvas-accordion li.tree-node.tree-node-leaf a
+{
+	display: block;
+	font-family: var(--Fonts);
+	mc-hidden: hidden;
+}
+
+/*these styles control the padding-left in the sidenav for web output*/
+
+ul.sidenav li a
+{
+	padding-left: 30px;
+	mc-hidden: hidden;
+}
+
+ul.sidenav ul > li > a
+{
+	padding-left: 42px;
+	mc-hidden: hidden;
+}
+
+ul.sidenav ul ul > li > a
+{
+	padding-left: 54px;
+	mc-hidden: hidden;
+}
+
+ul.sidenav ul ul ul > li > a
+{
+	padding-left: 66px;
+	mc-hidden: hidden;
+}
+
+ul.sidenav ul ul ul ul > li > a
+{
+	padding-left: 78px;
+	mc-hidden: hidden;
+}
+
+ul.sidenav ul ul ul ul ul > li > a
+{
+	padding-left: 90px;
+	mc-hidden: hidden;
+}
+
+ul.sidenav ul ul ul ul ul ul > li > a
+{
+	padding-left: 102px;
+	mc-hidden: hidden;
+}
+
+/*these styles control the padding-left in the sidenav on the tablet*/
+
+@media tablet
+{
+	ul.off-canvas-list a.selected	/*this applies the blue border to selected items in the sidenav for tablet output*/
+	{
+		border-left: solid 4px var(--AccruentBlue);
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list li a	/*these next five styles control the padding-left in the sidenav for tablet output*/
+	{
+		padding-left: 30px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul > li > a
+	{
+		padding-left: 45px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul ul > li > a
+	{
+		padding-left: 60px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul ul ul > li > a
+	{
+		padding-left: 75px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul ul ul ul > li > a
+	{
+		padding-left: 90px;
+		mc-hidden: hidden;
+	}
+}
+
+/*these styles control the padding-left in the sidenav on a mobile phone*/
+
+@media mobile
+{
+	div.contentBody	/*this makes the footer appear at the bottom of the page*/
+	{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list a.selected	/*this applies the blue border to selected items in the sidenav for mobile output*/
+	{
+		border-left: solid 4px var(--AccruentBlue);
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list li a	/*these next five styles control the padding-left in the sidenav for mobile output*/
+	{
+		padding-left: 30px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul > li > a
+	{
+		padding-left: 45px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul ul > li > a
+	{
+		padding-left: 60px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul ul ul > li > a
+	{
+		padding-left: 75px;
+		mc-hidden: hidden;
+	}
+
+	ul.off-canvas-list ul ul ul ul > li > a
+	{
+		padding-left: 90px;
+		mc-hidden: hidden;
+	}
+}
+
+/*SIDENAV SETTINGS END*/
+/*MISC BEHAVIOR TO MAKE HTML5 WORK THE WAY WE WANT*/
+
+/**This makes the product logo in the Help change location depending on the size of the screen, to accommodate the 
+hamburger menu**/
+
+@media only screen and (max-width: 1279px)
+{
+	div.title-bar-layout div.logo-wrapper
+	{
+		padding-top: 10px;
+		padding-left: 50px;
+		order: 1;
+		min-height: 40px;
+		flex-basis: 100%;
+		mc-hidden: hidden;
+	}
+
+	nav.title-bar button.menu-icon
+	{
+		left: 0px;
+	}
+}
+
+div.contentBody	/*this makes the footer appear at the bottom of the page*/
+{
+	min-height: calc(100% - 200px) !important;
+	/*specifies that the height of the contentbody div should be 100% of the height of the page minus 200px for the footer - this pushes the footer to the bottom of the page, regardless of the length of the page's contents*/
+	padding-right: 25px;
+	padding-left: 25px;
+	mc-hidden: hidden;
+}
+
+div.button-group-container-left
+{
+	padding-right: 0px !important;
+}
+
+div.body-container
+{
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+}
+
+@media tablet
+{
+	div.body-container
+	{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+@media mobile
+{
+	div.body-container
+	{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+@media mobile
+{
+	div.button-group-container-left	/*this controls the margins of the toolbar buttons on mobile*/
+	{
+		margin-left: -20px !important;
+		margin-right: -20px !important;
+	}
+
+	div.MCBreadcrumbsBox_0	/*this moves the breadcrumbs below the toolbar on mobile and pushes the breadcrumbs below the buttons*/
+	{
+		padding-top: 10px;
+		clear: both;
+	}
+}
+
+/*this hides a weird drop-shadow on the body-container div that seems to be applied by MadCap automatically*/
+
+body:not(.web) div.off-canvas-content.inner-wrap
+{
+	box-shadow: none;
+	mc-hidden: hidden;
+}
+
+/*END MISC BEHAVIOR*/
+/*PRINT MEDIA ONLY*/
+
+p.TOC1,
+p.TOC2,
+p.TOC3,
+p.TOC4,
+p.TOC5,
+p.TOC6,
+p.TOC7,
+p.TOC8,
+p.TOC9	/*this configures how the TOC appears in print output, don't change without permission from marketing*/
+{
+	font-family: var(--PrintFont);
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+@media print
+{
+	body
+	{
+		hyphens: none;
+	}
+
+	h1,
+	h1 MadCap|toggler	/*these heading styles are according to our document template styles*/
+	{
+		font-family: var(--PrintFont);
+		font-size: 18pt;
+		color: var(--PrintH1H4);
+		font-weight: normal;
+	/*EMS-specific to add chapter number*/
+		mc-auto-number-format: 'CHAPTER {chapnum}: ';
+	}
+
+	/*EMS-specific to remove chapter number from release note PDFs--Preview Release Target*/
+	h1.RNprint
+	{
+		mc-auto-number-format: '';
+	}
+	/*End EMS-specific*/
+
+	h2,
+	h2 MadCap|toggler
+	{
+		font-family: var(--PrintFont);
+		font-size: 16pt;
+		color: var(--PrintH2H5);
+		font-weight: normal;
+	}
+
+	h3,
+	h3 MadCap|toggler
+	{
+		font-family: var(--PrintFont);
+		font-size: 16pt;
+		color: var(--PrintH3H6);
+		font-weight: normal;
+	}
+
+	h4,
+	h4 MadCap|toggler
+	{
+		font-family: var(--PrintFont);
+		font-size: 14pt;
+		color: var(--PrintH1H4);
+		font-weight: normal;
+	}
+
+	h5,
+	h5 MadCap|toggler
+	{
+		font-family: var(--PrintFont);
+		font-size: 12pt;
+		color: var(--PrintH2H5);
+		font-weight: normal;
+	}
+
+	h6,
+	h6 MadCap|toggler
+	{
+		font-family: var(--PrintFont);
+		font-size: 12pt;
+		color: var(--PrintH3H6);
+		font-weight: normal;
+	}
+
+	p.Caption
+	{
+		font-family: var(--PrintFont);
+		font-weight: normal;
+		color: var(--DarkGray);
+		font-size: 10pt;
+	}
+
+	p
+	{
+		font-family: var(--PrintFont);
+		font-weight: normal;
+		color: var(--PrintBody);
+		font-size: 11pt;
+	}
+
+	/*EMS-specific--formats running header for chapter heading in PDFs (style used on Master Page) and formats for title page and toc page (Print Only Topics)*/
+	p.PDFh1
+	{
+		font-style: italic;
+		font-size: 11px;
+		margin-top: 8px;		
+	}
+	
+		p.PDFGuideTitle
+	{
+		font-size: 19pt;
+		color: #0074c8;
+		font-weight: normal;
+	}
+	
+	p.PDFGuideType
+	{
+		font-family: Calibri;
+		font-size: 17pt;
+		color: #0074c8;
+		font-weight: normal;
+		margin-top: 15px;
+	}
+	
+	p.PDFTocTitle
+	{
+		font-family: Calibri;
+		font-size: 16pt;
+		color: #007ac9;
+		font-weight: normal;
+	}
+	
+/**Prevents image and caption from breaking between pages in print media**/ 
+		div.TitleandImage
+		{
+			page-break-inside: avoid;
+		}
+	
+/************End EMS-Specific PDF Running Header Styles***************/	
+	
+	ol,
+	ul
+	{
+		padding-left: -5px;
+		/*adjusts the position of ordered and unordered lists in print output so that they do not shift too far to the right*/
+	}
+
+	img.padding_only
+	{
+		margin: 10px 0;
+		max-width: var(--MaxImageWidth);
+		/*specifies maximum width in print output*/
+		height: auto;
+		/*specifies that the system should automatically scale the height according to the max width in print output*/
+	}
+
+	img.border_only
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+		max-width: var(--MaxImageWidth);
+		/*specifies maximum width in print output*/
+		height: auto;
+		/*specifies that the system should automatically scale the height according to the max width in print output*/
+	}
+
+	img.padding_and_border
+	{
+		margin: 10px 0;
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+		max-width: var(--MaxImageWidth);
+		/*specifies maximum width in print output*/
+		height: auto;
+		/*specifies that the system should automatically scale the height according to the max width in print output*/
+	}
+
+	img.popup_with_padding_and_border
+	{
+		margin: 10px 0;
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+		max-width: var(--MaxImageWidth);
+		/*specifies maximum width in print output*/
+		height: auto;
+		/*specifies that the system should automatically scale the height according to the max width in print output*/
+		mc-thumbnail-max-width: var(--MaxImageWidth);
+		mc-thumbnail: popup;
+		mc-thumbnail-max-height: auto;
+	}
+
+	img.popup_with_padding_only
+	{
+		margin: 10px 0;
+		mc-thumbnail-max-width: var(--MaxImageWidth);
+		mc-thumbnail: popup;
+		mc-thumbnail-max-height: auto;
+		max-width: var(--MaxImageWidth);
+		/*specifies maximum width in print output*/
+		height: auto;
+		/*specifies that the system should automatically scale the height according to the max width in print output*/
+	}
+
+	img.popup_nopadding_withborder
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+		mc-thumbnail-max-width: var(--MaxImageWidth);
+		mc-thumbnail: popup;
+		mc-thumbnail-max-height: auto;
+		max-width: var(--MaxImageWidth);
+		/*specifies maximum width in print output*/
+		height: auto;
+		/*specifies that the system should automatically scale the height according to the max width in print output*/
+	}
+
+	img.resize80_noborder_nopadding
+	{
+		width: 80%;
+		height: auto;
+		max-width: var(--MaxImageWidth);
+	}
+
+	img.resize80_noborder_padding
+	{
+		margin: 10px 0;
+		width: 80%;
+		height: auto;
+		max-width: var(--MaxImageWidth);
+	}
+
+	img.resize80_border_nopadding
+	{
+		width: 80%;
+		height: auto;
+		max-width: var(--MaxImageWidth);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+	}
+
+	img.resize80_border_and_padding
+	{
+		margin: 10px 0;
+		width: 80%;
+		height: auto;
+		max-width: var(--MaxImageWidth);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+	}
+
+	img.resize80_popup_padding_border
+	{
+		margin: 10px 0;
+		width: 80%;
+		height: auto;
+		max-width: var(--MaxImageWidth);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--ImageBorderColor);
+		mc-thumbnail-max-width: var(--MaxImageWidth);
+		mc-thumbnail: popup;
+		mc-thumbnail-max-height: auto;
+	}
+
+	img.imgBorderMax520
+	{
+		margin: 10px 0;
+		max-width: 520px;
+	}
+	
+	/*EMS-specific style for print for narrow mobile images */
+
+img.narrow_padding_only
+{
+	margin: 10px 0;
+	max-height: 450px;
+	height: 70%;
+	width: auto;
+}
+
+img.narrow_padding_and_border
+{
+	margin: 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #6699cc;
+	max-height: 450px;
+	height: 70%;
+	width: auto;
+}
+/*End EMS-specificimage styles*/
+
+	li
+	{
+		padding-left: 0px;
+		color: var(--PrintBody);
+		font-family: var(--PrintFont);
+		font-size: 11pt;
+		font-weight: normal;
+	}
+
+	td
+	{
+		color: var(--PrintBody);
+		font-family: var(--PrintFont);
+		font-size: 11pt;
+		font-weight: normal;
+	}
+}
+
+/*end print styles*/
+/*Makes the layout work in Flare 2019*/
+
+div[data-mc-content-body="True"]
+{
+	height: 100%;
+	width: 100%;
+	padding-left: 0px !important;
+}
+
+/*this provides a back-up font for the search results page*/
+
+h1#results-heading,
+ul#resultList h3.title a,
+ul#resultList div.description,
+div#pagination a
+{
+	font-family: var(--Fonts);
+	mc-hidden: hidden;
+}
+
+div.pagination,
+h1.results-heading,
+ul.resultList,
+h3.title,
+div.description
+{
+	mc-hidden: hidden;
+}

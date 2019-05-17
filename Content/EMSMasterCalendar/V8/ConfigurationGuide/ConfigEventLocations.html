@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Configuring Event Locations in Master Calendar</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Event Locations</h1>
+        <p class="Body">An <em>event location</em> is the location where the event is to take place. For example, if you are managing a calendar for a university’s athletic events, you could set up a list of possible locations for the event, such as the stadium, the field house, the sports arena, the gymnasium, and so on. When you set up a location in Master Calendar, you can also provide a hyperlink for the location. For example, if you are managing a university’s athletic calendar, and you add the football stadium as a location, you can include a URL for&#160;a webpage showing a map of the stadium. The Location field for an event can be optional or required, depending upon your Master Calendar parameter settings. This topic guides you in setting up new&#160;event locations, activating and de-activating event locations, editing event locations, and deleting event locations.</p>
+        <h2>Create a New Event Location</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <strong>Configuration </strong>&gt;&#160;<strong>Locations</strong>.&#160;The Locations page opens on the Active tab, which lists all currently active event locations in Master Calendar.</p>
+                <p class="StepNumberBegin">
+                    <img src="../images/B_Configuration/locations1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Under Actions, click <strong>Add</strong>.&#160;The Location dialog box opens, where you name the event location, provide a hyperlink, address, hours, or phone information. Users will then be able to select this new location from a dropdown list in the Location field on the Submit Events page.&#160;</p>
+                <p>
+                    <img src="../images/B_Configuration/location2.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>In the <strong>Name </strong>field, enter a name or description for the event location.&#160;</li>
+            <li>In the <strong>URL</strong> field, enter a URL (optional).</li>
+            <li>Enter the <span class="ui">Address </span>of the event location (optional). Click the <span class="ui">Geocode </span>button to autopopulate the latitude and longitude of your address on the field below.  </li>
+            <li>Enter the <span class="ui">Latitude </span>and <span class="ui">Longitude </span>of the event location (optional). </li>
+            <li>Enter the <span class="ui">Hours </span>of operation for the event location (optional). </li>
+            <li>Enter a <span class="ui">Phone </span>number for the event location (optional). </li>
+            <li>To make the location <span class="ui">Active</span>, click the checkbox. </li>
+            <li>Click <span class="ui">Save</span>. The event location is added as an <em>active</em> location in Master Calendar.</li>
+        </ol>
+        <h2>Edit Existing event Locations</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to Admin &gt; <strong>Configuration </strong>&gt;&#160;<strong>Locations</strong>.&#160;The Locations page opens on the Active tab, which lists all currently active event locations in Master Calendar.</p>
+                <p>
+                    <img src="../images/B_Configuration/locations1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li><em>To activate/de-activate locations</em>, choose from the&#160;<strong>Active&#160;</strong>or&#160;<strong>Inactive</strong>&#160;tab.&#160;<ol MadCap:continue="true"><li>Click on the event location that you want to activate or de-activate.</li><li>Use the Active checkbox to control whether the Location is available to users for selection when booking an event.</li><li><p>Click Save. Your changes will be applied immediately; activated Locations will appear for selection in the dropdown next to the Location field on the Submit Events page, and de-activated Locations will not.</p><p><img src="../images/B_Configuration/location2.png" class="padding_and_border" /></p></li></ol></li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Additionally, you can edit the Name, URL, Address, Latitutde, Longitude, Hours, and Phone from this screen. Make the necessary edits and click Save.    </p>
+        </div>
+        <h2>Delete an Existing Event Location</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <strong>Configuration </strong>&gt;&#160;<strong>Locations</strong>.&#160;The Locations page opens on the Active tab, which lists all currently active event locations in Master Calendar.</li>
+            <li>Locate the event location you want to delete on either the <span class="ui">Active </span>or <span class="ui">Inactive </span>tab.&#160;</li>
+            <li>
+                <p> Click the <span class="ui">Delete </span>icon  next to the Location you want to delete. &#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>&#160;If any sub-locations reference the selected location, a dialog box launches indicating the number of sub-locations that reference it. You must first delete these sub-locations before you can delete the location.&#160;To delete these sub-locations, navigate to <span class="ui">Admin </span>&gt;&#160;<span class="ui">Sub-locations</span>. EMS&#160;Software recommends reviewing and editing&#160;your sub-locations first. </p>
+                </div>
+            </li>
+            <li>
+                <p>If no sub-locations reference the selected location, a message prompts you to confirm that you want to delete the selected location.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p> If you delete an active event location, any current events that use this location are not affected. The deletion simply means that going forward, the location is not available for use.&#160;You can delete only one location at a time.  </p>
+                </div>
+                <ul>
+                    <li>Click <strong>OK</strong>.&#160;A message opens confirming the deletion.</li>
+                    <li>Click <span class="ui">OK </span>in the message.&#160;The list of locations is updated to reflect the deletion of the event location.</li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

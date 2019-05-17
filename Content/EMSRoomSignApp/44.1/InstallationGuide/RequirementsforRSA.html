@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Requirements for the EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Prerequisites and&#160;Requirements for EMS&#160;Room Sign App</h1>
+        <p>This topic outlines the requirements necessary to install, configure, and use the <MadCap:variable name="General.RSA" /> (formerly named EMS Glance), including:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#prerequisites">Prerequisites</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#databaseserver">EMS Database Server Requirements</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Webserver">EMS Web Server Requirements</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#EMSRoomSignApp">EMS Room Sign App Requirements</a>
+                </p>
+            </li>
+        </ul>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The EMS Room Sign App requires a license. Please contact your Account Executive to determine if your organization is licensed for the EMS Room Sign App or if you want to learn more.</p>
+        </div>
+        <h2><a id="prerequisites" name="prerequisites"></a>Prerequisites</h2>
+        <p>Before installing the EMS Room Sign App, make sure you meet the following prerequisites based on your software version:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Install and configure the <a href="../../../EMSDesktopClient/V44.1/InstallationGuide/InstallationInstructions.html" MadCap:conditions="General.Online Only">EMS Desktop Client</a><a href="[%=Links.WebsitePath%]EMSDesktopClient/V44.1/InstallationGuide/InstallationInstructions.html" MadCap:conditions="General.Print Only">EMS Desktop Client</a>.</p>
+            </li>
+            <li>
+                <p>If upgrading, uninstall all previous versions of the EMS Room Sign App web application.</p>
+            </li>
+            <li>
+                <p>For earlier versions of the EMS&#160;V44.1 software, do the following:&#160;</p>
+                <ul>
+                    <li>
+                        <p><i>For Update 29 and earlier,</i> install the <a href="InstallRSA.html#Install_or_Upgrade_the_EMS_Room_Sign_App_API">EMS Room Sign App API</a>.&#160;The EMS Room Sign App API URL is required for the EMS Room Sign App web application installation.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a>, the EMS&#160;Room Sign API was moved into the application to improve performance. If you have upgraded to Update 30 or later, you do NOT need to install the API.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p><i>For Update 31 and earlier,</i> create an EMS user account with <a href="InstallRSA.html#Create_an_EMS_Admin_User_to_Manage">EMS API Web Service Access</a> enabled. The user account is necessary&#160;to access the database.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>In Update 32, the  API was moved inside of the EMS&#160;Room Sign App. If you have upgraded to Update 32 or later, you do NOT&#160;need to create an EMS&#160;admin user to manage the API. When required for audit trail purposes, EMS will use the user “EMS Room Sign App.”</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a id="databaseserver" name="databaseserver"></a>EMS&#160;Database Server</h2>
+        <MadCap:snippetBlock src="../../../EMS44.1SystemReq_DatabaseServer.flsnp" />
+        <h2><a id="Webserver" name="Webserver"></a>EMS&#160;Web Server</h2>
+        <p>The EMS Room Sign web application is housed on a web server, which has specific requirements. </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>In <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a>, the Room Sign App API was moved into the EMS Room Sign application to improve performance. See&#160;Also:&#160;<a href="Architecture.html">Architecture</a>. </p>
+        </div>
+        <MadCap:snippetBlock src="../../../EMS44.1SystemReq_EMSWebServer.flsnp" />
+        <h2><a name="EMSRoomSignApp"></a>EMS Room Sign App Requirements</h2>
+        <MadCap:snippetBlock src="../../../EMS44.1SystemReq_EMSRoomSignApp.flsnp" />
+    </body>
+</html>

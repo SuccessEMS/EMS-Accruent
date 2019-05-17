@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure User Defined Fields (UDFs) V44.1  (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure User Defined Fields (UDFs)</h1>
+        <p>You can configure&#160;<em class="bold">User Defined Fields,</em>&#160;or&#160;<em class="bold">UDFs</em>, which are custom fields that store additional information or data for a Building, a Group, a Group with a Reservation, a Reservation, a room, a service order, a guest request, or a web user.</p>
+        <p>For example, for a Reservation, you might want to note the date that the contract for the event was received and if the event was approved by a supervisor. For a guest request, you might want to inquire if alcohol will be served at the event. User defined fields are displayed on the User Defined Fields tab in the Reservation Wizard and on the User Defined Fields tab in the Navigator. If User Defined Fields have been completed for a Reservation, then these fields can be displayed on any confirmations and invoices that are generated for the Reservation.</p>
+        <p>This topic provides information about the following:</p>
+        <ul>
+            <li><a href="#Configure_User_Defined_Fields">Configure User Defined Fields (UDFs)</a>
+            </li>
+            <li><a href="#UDF_Field_Types">UDF&#160;Field Types</a>
+            </li>
+        </ul>
+        <h2><a name="Configure_User_Defined_Fields"></a>Configure User Defined Fields (UDFs)</h2>
+        <p>To configure user defined fields, follow these steps:</p>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">User Defined Fields</span>.&#160;The User Defined Fields dialog box opens. This window lists all the User Defined Fields of any type that are currently configured in your EMS database and that have a status of Active.<div class="TitleandImage"><p><img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields.gif" alt="https://success.emssoftware.com/@api/deki/files/1399/UDFScreen.gif?revision=1&amp;size=bestfit&amp;width=700&amp;height=539" class="popup_with_padding_only" /></p><p class="Caption">User Defined Fields Dialog Box</p></div><ul><li>To view inactive User Defined Fields in your EMS database, under Show, click&#160;<span class="ui">Inactive</span>.</li><li>To view only a specific type of User Defined Field, on the Type drop-down list, select a different type, such as Booking, Building, Group, Group/Reservation (which is a Group for which a Reservation has been made), Reservation, Room, Service Order, Guest Request, or Web User.</li></ul></li>
+            <li>Click&#160;<span class="ui">New</span>.&#160;The User Defined Field dialog box opens.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_1.gif" alt="https://success.emssoftware.com/@api/deki/files/1400/UDFItem.gif?revision=1&amp;size=bestfit&amp;width=592&amp;height=493" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption"><a name="UDF_Tab"></a>User Defined Field Tab of the User Defined Field Dialog Box</p>
+        </div>
+        <ol start="3" class="number-list">
+            <li>Enter the information for the new User Defined Field.&#160;To see more detailed information on UDF Field Types, refer to the following table.</li>
+        </ol>
+        <p><b>User Defined Field Options</b>&#160;</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Field Description</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>A name or description for the field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><a href="#UDF_Field_Types">Field Type</a>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select the type of data that the field is to hold (<a href="#Text_UDF">Text</a>, <a href="#Date_UDF">Date</a>, <a href="#List_UDF">List</a>, or <a href="#Numeric_UDF">Numeric</a>).</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you select Text, then an option for displaying a multi-line textbox in EMS and EMS Web App is available. If you select <span class="ui">List</span>, then an <span class="ui">Items </span>tab is displayed on the User Defined Field dialog box. You must define the items that are to be displayed in the list. If you select List, then the "Allow Multi-Select" option appears.  This lets your users pick multiple items from the list whenever the User Defined Field is used.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Field Applies To</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select the item to which the field applies:</p>
+                        <ul>
+                            <li>Booking—Provides the ability for a user to enter a User Defined Field when creating a booking.</li>
+                            <li>Building—Provides the ability to define a custom Building property for reporting in Query Builder.</li>
+                            <li>Course—EMS Campus only.</li>
+                            <li>Group—Provides the ability to enter User Defined Fields inside the group screen for each Group.</li>
+                            <li>Group/Reservation—The UDF that is assigned to a Group when a new Reservation is created for the Group</li>
+                            <li>Guest Request—Provides the ability for users to enter a User Defined Field when making a Guest Request.</li>
+                            <li>Reservation—Provides the ability for users to enter a User Defined Field when making a Reservation.</li>
+                            <li>Room—Provides the ability to define a custom Room property for reporting in Query Builder.</li>
+                            <li>Service Order—Provides the ability for users to enter a User Defined Field when adding a Service Order.</li>
+                            <li>Web User—Provides the ability for users to enter a User Defined Field when inside an Everyday User's options.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Category</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Available only if you select Service Order for Field Applies To. Select the service order category for which the field applies.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If the appropriate category is not available, you can configure it. See&#160;Configuring Categories.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Default Value</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Optional field. You can enter a default value for the User Defined Field. This value is displayed in the field but a user can edit it if needed.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you assign a default value to a UDF, then the UDF is always added to the item. For example, if you assign a default value to a UDF that applies to Reservations, then the UDF is always added to any Reservation that any user makes in your EMS system.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Internal</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Indicates that the UDF is internal to your organization.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>Used for internal reporting purposes only. The UDF is not printed on external documents such as confirmations and invoices, and it is not hidden in any area of your EMS application.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Sequence</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>If a booking, Building, Group, a Group with a Reservation, a Reservation, a room, a service order, a guest request, or a web user is to have multiple User Defined Fields, then specify the display order of these fields. Fields are ordered from lowest to highest sequence number, with the field with the lowest sequence number being displayed first.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>If you leave the sequence set to the default value of zero for all fields, then by default, the fields are displayed alphabetically.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p><b>Dependency</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Dependent Upon</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select a parent UDF.&#160;Your child UDF will be dependent on that parent.&#160;The parent UDF must be configured first and be a List type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Answer</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select the answer that will cause your child UDF to display with the parent.&#160; If the right answer is not selected the child UDF will not show.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Value</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Required in <MadCap:variable name="General.EMS&#160;Desktop Client" /></p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option if a user must enter a value in the field when making a Reservation in the <MadCap:variable name="General.EMS&#160;Desktop Client" />.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="boldAllCaps"><b>EMS&#160;Web App  Settings</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Display to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Select this option if you want the User Defined Field to be displayed when users are making a Reservation in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Display Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Enter the text that is to be displayed for the field in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>Leave this option blank to add the User Defined Field an active field. Select this option to de-activate the field.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4" class="number-list">
+            <li>If you selected any field type other than List, go&#160;Step 5; otherwise, an <span class="ui">Items </span>tab is displayed on the dialog box. Open the <span class="ui">Items </span>tab, and for each list item for the UDF, do the following:<ul start="4"><li>In the Sequence field, enter the sequence for the list item.</li><li>Items are ordered in a list from lowest to highest sequence number, with the item with the lowest sequence number being displayed first. If you set the sequence for all items to zero, then the items are displayed in the list alphabetically.</li><li>In the Description field, enter a name or description for the item.</li></ul></li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_2.gif" alt="https://success.emssoftware.com/@api/deki/files/1407/UDFItems.gif?revision=1&amp;size=bestfit&amp;width=592&amp;height=493" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Items Tab of the User Defined Field Dialog Box</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The description can be a maximum of 50 characters, including spaces.</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>Optionally, click <span class="ui">Spelling </span>to spell check the User Defined Field before you save it.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The User Defined Field dialog box will close and you will be returned to the User Defined Fields window.</li>
+        </ol>
+        <h2 class="Heading2"><a name="UDF_Field_Types"></a>UDF Field Types</h2>
+        <p>You can select from the following types of UDF fields in the Field Type drop-down list of the  <a href="#UDF_Tab">User Defined Field Tab</a>:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#Date_UDF">Date UDF</a>
+            </li>
+            <li><a href="#List_UDF">List UDF</a>
+            </li>
+            <li><a href="#Numeric_UDF">Numeric UDF</a>
+            </li>
+            <li><a href="#Text_UDF">Text UDF</a>
+            </li>
+        </ul>
+        <h3 class="Heading3"><a name="Date_UDF"></a>Date UDF&#160;</h3>
+        <p>The Date user defined field type allows the user to enter a value into a date field</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_3.gif" alt="https://success.emssoftware.com/@api/deki/files/1401/UDFDate.gif?revision=1&amp;size=bestfit&amp;width=476&amp;height=144" />
+            </p>
+            <p class="Caption">Date UDF&#160;Field Type</p>
+        </div>
+        <h3><a name="List_UDF"></a>List UDF&#160;</h3>
+        <p>The List user defined field type allows the user to select an item or items from a list that you populate.&#160;The <span class="ui">Allow Multi-Select </span>option lets the user pick more than one item from the list.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_4.gif" alt="https://success.emssoftware.com/@api/deki/files/1402/UDFList.gif?revision=1&amp;size=bestfit&amp;width=478&amp;height=146" />
+            </p>
+            <p class="Caption">List UDF&#160;Field Type</p>
+        </div>
+        <p>You can configure the items for a list on the <span class="ui">Items </span>tab. The User Defined Field Dialog box displays the <span class="ui">Items </span>tab when you select <span class="ui">List </span>as the field type.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_5.gif" alt="https://success.emssoftware.com/@api/deki/files/1406/UDFListItems.gif?revision=1&amp;size=bestfit&amp;width=594&amp;height=218" />
+            </p>
+            <p class="Caption">Items Tab of the User Defined Field Dialog Box</p>
+        </div>
+        <h3><a name="Numeric_UDF"></a>Numeric UDF</h3>
+        <p>The Numeric user defined field type allows  the user to enter ONLY a number into a text field.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_6.gif" alt="https://success.emssoftware.com/@api/deki/files/1403/UDFNumeric.gif?revision=1&amp;size=bestfit&amp;width=479&amp;height=145" />
+            </p>
+            <p class="Caption">Numeric UDF Field Type</p>
+        </div>
+        <h3><a name="Text_UDF"></a>Text UDF&#160;</h3>
+        <p>The Text user defined field type allows the user to enter any text into a text field.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_7.gif" alt="https://success.emssoftware.com/@api/deki/files/1405/UDFText2.gif?revision=1&amp;size=bestfit&amp;width=481&amp;height=145" />
+            </p>
+            <p class="Caption">Text UDF&#160;Field Type</p>
+        </div>
+    </body>
+</html>

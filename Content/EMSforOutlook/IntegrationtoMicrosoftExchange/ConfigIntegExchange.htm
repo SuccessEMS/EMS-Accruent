@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Integration to Microsoft Exchange V44.1</title>
+    </head>
+    <body>
+        <h1>Configure Integration to Microsoft Exchange</h1>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>As of 44.1, Update 24, the testing function on pamconfig.aspx will test the FindItems, GetUserAvailability, Create, Edit, and Cancel EWS calls used by the EMS integration.  Previously, only FindItems was tested.  There is not necessarily a 1:1 guide as to what would cause a failure for each specific call, however this does not mean that scenarios exist where ‘create’ would succeed but ‘cancel’ would fail for example.  The ‘GetUserAvailability’ call does not leverage ApplicationImpersonation, so if this is succeeding and the create/edit/cancel calls are failing then the issue is likely around permissions for the service account. Testing will be logged in the logfile, which has a default location of ExchangeIntegrationWebService\LogFiles and can be modified in the web.config file.</p>
+        </div>
+        <p>Configuring EMS to work with Exchange Online (Office 365) or Exchange 2013 is the same as configuring EMS to work with a 2007/2010 Exchange environment that is hosted on your network.&#160;See&#160;<a href="ConfigureEWSImpersonation.htm">Configure EWS Impersonation for Microsoft<sup>®</sup> Exchange</a> for information on configuring impersonation on Exchange Online (Office 365).&#160;If you need additional assistance configuring this, please contact&#160;<a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com">support@emssoftware.com</a>.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Integration to Exchange requires the use of a mail-enabled service account that has the Application/Impersonation role in Exchange for all users who will be accessing EMS. See Also: <a href="ConfigureEWSImpersonation.htm">Configure Exchange Web Service Impersonation</a>. </p>
+        </div>
+        <p>This topic provides information on the following:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#Configure_Integration_to_Exchange_Instructions">Configure Integration to Exchange Instructions</a>
+                <ul>
+                    <li><a href="ConfigMultipleMailDomain.htm">Configure Multiple Mail Domains</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#Test_Your_Exchange_Integration">Test Your Exchange Integration</a>
+            </li>
+            <li><a href="#Optional_Messaging_Settings">Optional Messaging Settings</a>
+                <ul>
+                    <li><a href="#config">Enable Larger File Attachments on the Config&#160;File</a>
+                    </li>
+                    <li><a href="#database">Enable Larger File Attachments in the Exchange Integration Web Service</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="Configure_Integration_to_Exchange_Instructions"></a>Configure Integration to Exchange Instructions</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>As of Update 28, access to the PAMconfig.aspx page is restricted by default. Customers who do not enable Windows Authentication in IIS for the Exchange Integration Web Service should comment out the following section in order for EIWS to work properly:</p>
+            <div class="code-sample"><pre>&lt;remove users="*" roles="" verbs=""/&gt;</pre><pre>&lt;add accessType="Allow" roles="Users"/&gt;”</pre>
+            </div>
+        </div>
+        <ol start="1" class="number-list">
+            <li>After following the&#160;<a href="InstallUpgradeforEIWservice.htm">installation instructions</a>, access the Integration to Exchange configuration area by opening a browser and entering the following:<p>http://[ServerName]/ExchangeIntegrationWebService/PamConfig.aspx&#160;(replace [ServerName] with the name of your web server)</p></li>
+            <li>Go the&#160;<span class="ui">Account Info</span>&#160;tab.<a name="Tabs"></a>&#160;</li>
+            <li>Select your email system in the&#160;Provider&#160;drop-down list using the instructions provided on the page.</li>
+            <li>Check the box “... utilize AutoDiscover to locate the best Client Access Server for the user…”<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If you do not check this box, you&#160;<span class="ui">must&#160;</span>fill in the&#160;Url to Exchange Web Services&#160;field.</p></div></li>
+            <li>Within the&#160;Authentication Information&#160;section, enter your Integration to Exchange Account&#160;User Name&#160;and&#160;Password.&#160;The User Name should be prefixed with your domain (example – YourDomain\Integration to Exchange Account, or Integration to Exchange Account@YourDomain)&#160;.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Make a note of this URL for use later in this topic.</p></div></li>
+            <li>(<span class="italics">Optional</span>)&#160;The “Use application pool identity…” option allows you to set the Integration to Exchange Account credentials at the Application Pool level instead of storing the credentials in the EMS database.&#160;See the&#160;<a href="UseAppPoolIdentif.htm">Use Application Pool Identity for Integration for Exchange Service Account</a>&#160;topic for more information about this option.&#160;If this option is selected, you&#160;must&#160;check the box to use Impersonation.&#160;</li>
+            <li>If you selected “Exchange Web Services” as your&#160;Provider, select the checkbox if the account specified has Exchange Impersonation access to all mailboxes in your Exchange mailbox store.</li>
+            <li>Select the Authentication Type:<ul start="6"><li><span class="ui">Anonymous&#160;</span>– No authentication</li><li><span class="ui">Specify Account</span>&#160;– Relies on a custom account (not the Integration to Exchange Account) that you create and manage.&#160;Please contact Customer Support (or a member of the Professional Services group if you are working with one) to discuss the configuration process for this option.</li><li><span class="ui">Default Credentials</span>&#160;– Relies on security context of EMS application calling the Integration with Exchange&#160;Web Service.&#160;If using this option, Integrated Windows Authentication should be enabled for the Integration with Exchange Web Service.</li><li>For MS Exchange 2007/2010 environments, click&#160;<span class="ui">Save</span>.</li></ul><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>When testing Integration to Exchange, the email account that is being used (either on the Test Settings tab or in the <a href="#Test_Your_Exchange_Integration">Testing Integration to Exchange</a> section below) MUST exist in the Exchange environment being tested.&#160;If you are testing Integration with Exchange in a development environment, please verify that a mailbox for the email being used exists in that domain/environment.</p></div></li>
+            <li>Click&#160;<span class="ui">Test Configuration</span>.&#160;If any errors are encountered, please verify your configuration. Otherwise, your Integration to Exchange configuration is complete.&#160;</li>
+        </ol>
+        <h2><a name="Test_Your_Exchange_Integration"></a>Test Your Exchange Integration</h2>
+        <p>To test your &#160;configuration, you will need to log into EMS Web App with a user account (configured with the user’s primary email address) belonging to a Everyday Application Process Template (within the EMS client application) that has the&#160;<a href="../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EverydayUserProcTempFieldDef.html">Enable Integration to Microsoft Exchange</a>&#160;option checked.</p>
+        <ol start="1" class="number-list">
+            <li>Log into EMS Web App. Begin making a reservation and selecting a room.</li>
+            <li>Select the&#160;<span class="ui">Add to my calendar</span>&#160;checkbox.&#160;If this option is not available, please verify (within the EMS client application) that your user account belongs to a Everyday User Process Template that has the&#160;<span class="ui">Allow Invitations</span>&#160;option checked.&#160;</li>
+            <li>Find and add&#160;an attendee using the&#160;Find Attendee&#160;field.</li>
+            <li>Complete necessary information on the&#160;<span class="ui">Details&#160;</span>tab and click&#160;<span class="ui">Submit Reservation</span>.</li>
+            <li>Verify that an appointment was added to your Outlook Calendar and that your attendee received an invitation.</li>
+        </ol>
+        <h2><a name="Optional_Messaging_Settings"></a>Optional Messaging Settings​</h2>
+        <p>The options on the <span class="ui">Message </span>tab (as reached&#160;above in&#160;<a href="#Tabs">Step 2</a>)&#160;shown below guide you in further configuring your integration.</p>
+        <p>
+            <img src="../../Resources/Images/Integration to Microsoft/Configuring Integration to_2.png" class="resize80_noborder_padding">
+            </img>
+        </p>
+        <p><b>Message Tab Fields</b>
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1">
+            </col>
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Message To Append</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Message appended to the bottom of the appointment body.&#160;This message is seen by all users.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>To view the details of this reservation click the below link</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Message added to the appointment body, above a link that takes a user to a view-only EMS Web App page for the appointment.&#160;This message is seen by all users.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>If you are the meeting organizer click the below link to edit the reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Message added to the appointment body, above a link that takes the meeting organizer to the EMS Web App Reservation Summary page for that reservation.&#160;This message is seen by all users, but only the meeting organizer can access the Reservation Summary page to make changes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Allow Attachments</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Allows users to add attachments within EMS Web App when making an appointment.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Maximum Attachment Size</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>If attachments are allowed, set&#160;the maximum file size allowed for an attachment.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;The default installation allows&#160;file attachments up to 4MB.&#160;<MadCap:snippetText src="../../Click_to_Expand.flsnp"></MadCap:snippetText></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your implementation needs file attachments that are larger, follow the two procedures&#160;below:</p>
+                <ol start="1" class="number-list">
+                    <li>Update the <a href="#config">config file</a>.</li>
+                    <li>Update the <a href="#database">database</a>.&#160;</li>
+                </ol>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>File sizes larger than 2 GB are not allowed at this time.</p>
+                </div>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3>Enable Larger File Attachments On The Config&#160;File<a name="config"></a></h3>
+        <p>By default, Exchange Integration attachments will only accept files 4MB or less.&#160;If your implementation needs to allow files of larger sizes to be attached to reservations, the following config updates will be required, both in EMS Web App&#160;and in the Exchange Integration Web Service.&#160;</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The maximum file size is 2 GB.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>In the&#160;&lt;system.webServer&gt;&#160;section, include this xml node:<div class="code-sample"><pre>&lt;security&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160; &lt;requestFiltering&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;requestLimits&#160;maxAllowedContentLength="51200000"/&gt; &lt;!--maxAllowedContentLength in bytes, 50MB=51200000--&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&lt;/requestFiltering&gt;</pre><pre>&#160;&#160;&#160; &lt;/security&gt;</pre></div></li>
+            <li>In the&#160;&lt;httpRuntime&#160;element, add these highlighted attributes with the end result looking like this:<div class="code-sample"><pre xml:space="preserve">&lt;httpRuntime&#160;targetFramework="4.5"&#160;requestLengthDiskThreshold="2147483644"&#160;
+maxRequestLength="51200"&#160;&#160;/&gt;&#160; &lt;!—-requestLengthDiskThreshold in bytes, &amp; maxRequestLength in KB, 50MB--&gt;</pre></div></li>
+            <li>Under the&#160;&lt;appSettings&gt;&#160;look for the “MaximumUploadSizeInBytes” key.&#160; Update this value to the number of bytes allowed.&#160; For instance, 50MB would look like this:<div class="code-sample"><pre>&lt;add&#160;key="MaximumUploadSizeInBytes"&#160;value="52428800000"/&gt;&#160; &lt;!—- in&#160;bytes50MB--&gt;&#160;</pre></div></li>
+        </ol>
+        <h3>Enable Larger File Attachments in the Exchange Integration Web Service<a name="database"></a><img src="../../Resources/Images/Integration to Microsoft/Configuring Integration to.gif" alt="Edit section" class="img_1"></img></h3>
+        <p>By default Exchange Integration attachments will only accept files 4MB or less. If your implementation needs to allow for Exchange message attachments larger than 4MB, the config updates above will need to be applied in the Exchange Integration Web Service.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Due to the size of the xml sent, we recommend adding 5MB to the desired file upload size. (i.e., if you want to allow a max of 20MB files, calculate a total of 25MB worth of Kilobytes and bytes.</p>
+        </div>
+        <p>In addition to these web.config settings above, a web administrator will need to update the file size in the Exchange Integration Web Service as follows:</p>
+        <ol start="1" class="number-list">
+            <li>Navigate to the Exchange Integration Web Service/PAMConfig.aspx</li>
+            <li>Click the <span class="ui">Message </span>tab</li>
+            <li>Update the&#160;<span class="ui">Maximum Attachment Size</span>&#160;text box and <span class="ui">Save</span>.</li>
+        </ol>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">For&#160;Externally Exposed Web App sites</span>
+            </p>
+            <p>If your EMS Web App site is externally exposed, some of the web.config settings above could make the site vulnerable to DoS site attacks. We highly recommend setting network-level protection to prevent DoS attacks.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>Master Calendar Release Notes<br />(Version 7.0)</h1>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>.</p>
+        <h2><a name="May_2018"></a>May 2018</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 24</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;May 1, 2018</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build:&#160;7.0.0.100</p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="January_2018"></a>January 2018</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 21</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;January 31, 2018</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build:&#160;7.0.0.099</p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="December_2017"></a>December 2017</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 20</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;December 22, 2017</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p>Patch:&#160;201712132</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build:&#160;7.0.0.098</p>
+                </td>
+            </tr>
+        </table>
+        <h3>Fix&#160;&#160;</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 189px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Image Alt Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Image Alt Text Missing Prompt from More Info Request</p>
+                        <p class="RNBody">The EventInfoRequest.aspx page was lacking the same compliance tags as other pages.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality so that the EventInfoRequest.aspx page prompts the user to enter 'Image Alt Tag.'</p>
+                        <p class="RNRef">Internal Reference # 32897</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Permissions</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">EMS&#160;Master Calendar Crashes After Patch Was Applied</p>
+                        <p class="RNBody"> The MC_User SQL account had modified permissions which caused an error after patching.</p>
+                        <p class="RNBody">Fix:&#160;Modified functionality so that the application does not crash after applying the patch.</p>
+                        <p class="RNRef">Internal Reference # 35732</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="November_2017"></a>November 2017</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1, Update 19</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;November 30, 2017</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;201712132</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_2">Build:&#160;&#160;7.0.0.097</p>
+                </td>
+            </tr>
+        </table>
+        <h3>Fix</h3>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: auto;margin-right: auto;mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Event Time</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Event Times Were Not Adjusting Correctly to the TimeZone</p>
+                        <p class="p_9">Event times on the calendar, prior to daylight savings, were not adjusting correctly to the timezone selected from the dropdown. Users were experiencing this from the calendar view when clicking the event details and selecting the more option.</p>
+                        <p class="p_10">Fix:&#160;Modified functionality so that event time display properly.&#160;</p>
+                        <p class="p_11">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=24430" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workItems?_a=edit&amp;id=24430" class="a_2">24430</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="March_2017"></a>March 2017</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Release: March 2017&#160; &#160; &#160;</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="Strong_1">Build Number:&#160;7.0.0.095</p>
+                </td>
+            </tr>
+        </table>
+        <p>Click on the&#160;title&#160;for each item below to expand for more details.</p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 144px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Filters</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Filtering Results By Calendar and Start Date Caused Error</p>
+                        <p class="RNBody">When administrative users added a new connector and chose a calendar, and then in the Retrieval tab, specified a start date with no end date, an error occurred on Save.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified validations to run the connector successfully in this situation so that error no longer occurs.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Email Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Email Text Missing New Lines</p>
+                        <p class="RNBody">When administrative users edited a connector to add new lines in email text, the lines did not display in resulting emails.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified validations to run the connector successfully in this situation so that new lines display as expected.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="January_2017"></a>January 2017</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Release: January 2017&#160; &#160; &#160;</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Patch Number: 2016.12.16.0 &#160;&#160;&#160;&#160;</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="Strong_1">Build Number: 7.0.0.094</p>
+                </td>
+            </tr>
+        </table>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Images</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Alt Text Field Missing For Uploaded Images</p>
+                        <p class="RNBody">No Alt text displayed for images associated with events.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the display so the Event Title now shows as&#160;Alt text when uploading images.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Display</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Custom Theme Colors Not Observed For Admin Panel Headings</p>
+                        <p class="RNBody">Changing the font color by selecting a theme did not change the font color for drop-down headers on the Admin panel.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the display to observe the custom color settings in all areas.</p>
+                        <p class="RNTitle">Locations Not Listed Alphabetically on Main Page and Manage Events</p>
+                        <p class="RNBody">Locations were not listed alphabetically in the drop-down list for some customers on the main Master Calendar page and on the Manage Events page.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the display to sort Locations alphabetically.</p>
+                        <p class="RNTitle">Event Tooltip Missing Large Icon</p>
+                        <p class="RNBody">When users moused over events on the calendar grid, the tooltip did not show the large icon.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the display to show the large event icon.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Submit an Event</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Events With Multiple Dates Missing Details in API Call</p>
+                        <p class="RNBody">When users entered a new event that had multiple dates, the API call,&#160;AddEventWithMultipleDates&#160;only returned the event ID, but did not return the event details.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the API to return event details.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Featured Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Featured Events Section Empty</p>
+                        <p class="RNBody">When users resized the Master Calendar window and&#160;there were no featured events, this empty section continued to display when it should have been hidden.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the resize display to hide the&#160;Featured Events section when there are none.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Event Tags</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Event Tags Over 100 Characters Caused SQL Error</p>
+                        <p class="RNBody">When users entered more than 100 characters in the&#160;Event Tags&#160;field and saved the event, an error occurred.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified validations to truncate long tags so the error no longer occurs.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Google Maps</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Geocode Details Missing</p>
+                        <p class="RNBody">When users provided a Google Maps location URL to retrieve a geocode, details such as latitude, longitude, hours, and phone number&#160;were missing because the Google Maps API now requires an additional authentication key.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Added&#160;the authentication key&#160;to web.config to ensure that all geocode details are retrieved and displayed for Google Maps URLs:&#160;<br />&lt;add key="GoogleMapKey" value="AIzaSyALWSXqWl2Kj9KfOxt7TK_QnaovBtzrma8" /&gt;..</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Social Networking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Special Characters Displayed Incorrectly In AddThis URLs</p>
+                        <p class="RNBody">When users shared events using the AddThis option, special characters caused URLs to display incorrectly.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified URLs&#160;to properly handle special characters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Calendars</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Private Events Incorrectly Shown to Unauthorized Users on Related Events</p>
+                        <p class="RNBody">When users clicked the Related Events link on reservations in the calendar, and the list included private&#160;events, they could see them&#160;even when they did not have authorization.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified the display to honor event privacy so they do not display to unauthorized users.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">RSS</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Keyword Filters Block RSS Feeds</p>
+                        <p class="RNBody">When users set RSS feeds to search by keyword, nothing was returned.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified RSS feeds to search and return content by keyword.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">iCal</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">iCal Feed Displayed Events 2 Hours Later</p>
+                        <p class="RNBody">When users subscribed to an iCal feed and viewed calendars in Outlook, event times displayed as two hours later than on Master Calendar.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality for iCal feeds to calculate for the correct time zone so that event times display start and end times correctly.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Outlook</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Overnight Events&#160;Showed as Recurrences in Outlook</p>
+                        <p class="RNBody">Events that extended overnight&#160;that were imported into Outlook via iCal displayed as recurrences.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality&#160;so that overnight events now display&#160;in&#160;Outlook as single events.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Connectors</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Events From Connectors Absent When DB Blocked</p>
+                        <p class="RNBody">When Master Calendar could not connect to the EMS database on an SQL server, events from Master Calendar connectors disappeared.</p>
+                        <p class="RNBody"><span class="ui">Fix:&#160;</span>Modified functionality to no longer purge previously loaded events when errors occur connecting to the database.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="December_2016"></a>December 2016</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Release: December 2016</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Patch Number: 2016.10.14.0&#160;&#160;&#160;&#160;&#160;</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="Strong_1">Build Number: 7.0.0.082</p>
+                </td>
+            </tr>
+        </table>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_83">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_83">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_25">Modified the main page calendar (month&#160;view) to&#160;show the previous months events in the top row even when the first day of the month falls on a Sunday.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_73">☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_25">Modified links to external calendars to show as plain text rather than HTML.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_83">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_83">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_25">Added new column on Manage Users screen for admins to view LastLoginDate and fixed issue where it wasn't updating in tblUser.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="September_2016"></a>September 2016</h2>
+        <table class="TableStyle-Standard" style="mc-table-style: url('Resources/TableStyles/Standard.css');" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Release: September 2016 &#160;&#160;</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="Strong_1">Patch Number: 2015.12.11.0&#160;&#160;&#160;&#160;&#160;</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="Strong_1">Build Number: 7.0.0.077</p>
+                </td>
+            </tr>
+        </table>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="p_25">Improved&#160;data exchange between EMS Desktop Client&#160;and EMS Master Calendar so that&#160;updates to Building and/or Room names in EMS Desktop Client show in EMS Master Calendar in the Location Filter.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_73">☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="p_25">Added validations to ensure that unauthenticated users cannot view event details.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_73">☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_25">The featured event RSS feed showed&#160;all events instead of just the featured events.&#160;Modified functionality so that only featured events show in the Featured Events RSS feed.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="June_2016"></a>June&#160;2016</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>&#160; &#160; ☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>&#160; &#160;☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="NormalWeb_2">Events Calendar &gt; Event Details:&#160;Requested (unapproved)&#160;events incorrectly&#160;displayed&#160;to unauthorized users if they entered the event ID or URL.&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_25">Added security to prevent unapproved events from displaying on the Event Details view unless the user has rights to submit requests.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="May_2016"></a>May&#160;2016</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Build</p>
+                        <p class="Strong_1">&#160;</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Patch</p>
+                        <p class="Strong_1">&#160;</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_73">☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="NormalWeb_2">System Check :&#160;When setting the "Allow access to system check Pages from any Machine" option to&#160;no&#160;the Master Calendar logo disappeared&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_25">Modified functionality to ensure that the logo appears regardless of user selections.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="April_2016"></a>April 2016</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Build</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Patch</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Reported Issue</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Issue Resolution</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_73">☒</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_73">☐</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="NormalWeb_2">Login (LDAP).&#160;Logging into Master Calendar&#160;when configured to use LDAP&#160;SSL&#160;could result&#160;in the error, "User not found."</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="p_25">Changed LDAP SSL&#160;login validations to ensure that authorized users successfully authenticate and the error no longer occurs.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="ContactCustomerSupport.flsnp" />
+    </body>
+</html>

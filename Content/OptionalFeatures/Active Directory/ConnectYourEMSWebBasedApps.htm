@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Connect Your EMS Web-Based Applications</h1>
+        <p>EMS Web-based applications (such as VEMS, EMS Web App, and EMS Mobile App) also need to be configured to use this database connection method. </p>
+        <p>To configure your EMS&#160;web-based applications, do the following:</p>
+        <ol class="number-list">
+            <li>
+                <p>Access Internet Information Services (IIS) Manager on your web server.&#160;</p>
+            </li>
+            <li>
+                <p>Create a new Application Pool that will be used by your EMS web based application(s) installed on this web server.&#160;</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Connecting Your EMS Web Based.png" class="padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Change the <span class="ui">Application Pool&#160;Identity</span>&#160;to run under a&#160;<span class="ui">Custom account</span>. Specify the EMS-specific Active Directory user account (see&#160;<a href="Pre-InstallReqs.htm">Pre-Installation Requirements</a>).&#160;</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Connecting Your EMS Web Based_1.png" class="popup_with_padding_and_border" />
+                </p>
+            </li>
+            <li>
+                <p>Change the&#160;<span class="ui">Application Pool</span>&#160;in your EMS web-based application to the pool defined above.&#160;</p>
+            </li>
+            <li>
+                <p>Open the&#160;<span class="ui">web.config</span>&#160;file for the EMS web-based product and make the following changes:&#160;</p>
+                <p>
+                    <img src="Images/OptFeatGuide/Connecting Your EMS Web Based_2.png" class="popup_with_padding_and_border" />
+                </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p><span class="ui">TIP&#160;FOR&#160;EMS&#160;CLOUD&#160;CUSTOMERS</span>&#160;</p>
+                    <p>Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please <a href="../../ContactUs.htm#Support">contact EMS Support</a>. </p>
+                </div>
+            </li>
+            <li>
+                <p>Launch your EMS web-based product to verify connectivity.&#160;</p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="G Suite Integration"
+    Link="/Content/Print Only Topics/TitlePage_GSuite.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberReset="continue"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/copyright.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageType="first"
+    PageNumberFormat="lower-roman"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    PageNumber="1"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Resources/Common (Printed)/Table of Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumber="1"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/GoogleSuiteIntegration/Introduction.htm"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    ChapterNumberReset="reset"
+    ChapterNumber="1"
+    StartSection="false"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    PageNumberFormat="decimal"></TocEntry>
+  <TocEntry
+    Title="Configuration of G Suite Integration"
+    Link="/Content/GoogleSuiteIntegration/Config.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberFormat="decimal" />
+  <TocEntry
+    Title="EMS for Google Calendar"
+    Link="/Content/GoogleSuiteIntegration/Google_Cal_Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    ChapterNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    PageNumberFormat="decimal">
+    <TocEntry
+      Title="Installation Guide (EMS for Google Calendar)"
+      Link="/Content/GoogleSuiteIntegration/IntroInstallation.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      PageNumberFormat="decimal" />
+    <TocEntry
+      Title="Configuration Guide (EMS for Google Calendar)"
+      Link="/Content/GoogleSuiteIntegration/ConfigGoogleCalendar.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      PageNumberFormat="decimal" />
+    <TocEntry
+      Title="User Guide (EMS for Google Calendar)"
+      Link="/Content/GoogleSuiteIntegration/IntroGoogleCalendarUserGuide.htm"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      ChapterNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+      PageNumberFormat="decimal">
+      <TocEntry
+        Title="Authentication"
+        Link="/Content/GoogleSuiteIntegration/Authentication.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        ChapterNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        PageNumberFormat="decimal" />
+      <TocEntry
+        Title="Conflict Resolution"
+        Link="/Content/GoogleSuiteIntegration/ConflictResolution.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        BreakType="chapter"
+        PageNumberReset="continue"
+        ChapterNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+        PageNumberFormat="decimal"
+        StartSection="false"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Last Page"
+    Link="/Content/Print Only Topics/LastPage_GSuite.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    ChapterNumberReset="continue"
+    PageNumberReset="continue"
+    PageNumberFormat="decimal"
+    BreakType="chapter"
+    PageType="first"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same" />
+</CatapultToc>

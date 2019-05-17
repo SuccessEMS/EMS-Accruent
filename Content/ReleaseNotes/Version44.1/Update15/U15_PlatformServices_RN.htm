@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1>EMS Platform Services Release Notes <br />V44.1, Update 15</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p>See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Standard.css');" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p>Name:&#160;<br />V44.1, Update 15</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p>Release&#160;Date:&#160;<br />August 31, 2017</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p>Patch:&#160;<br />44.1.15000.201708291</p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p>Build #:&#160;&#160;<br />44.1.15000.3016</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_2_1">Enhancements&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Reservation Edit</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Reservation Edit Supports&#160;Non-User Clients With IgnoreTemplateRules</p>
+                        <p class="RNBody">PATCH /reservations/{id} can be called with client token (instead of user token), if client has ignoreTemplateRules set.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32394" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32394</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="9" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Categories</p>
+                        <p class="p_25">&#160;</p>
+                        <p class="p_41">&#160;</p>
+                        <p class="p_25">&#160;</p>
+                        <p class="p_25">&#160;</p>
+                        <br />&#160;<br />&#160;<br />&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">CategoryModel Returns Visitor and CurrencySymbol Attributes</p>
+                        <p class="RNBody">tblCategory has a currencySymbolD which maps to tblCurrencySymbol to get the symbol attributes.</p>
+                        <p class="RNBodyBeforeList">The following routes&#160;(GET /categories, GET /categories/{id},&#160;POST /categories/actions/search)&#160;now include the following new attributes:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>visitor boolean</p>
+                            </li>
+                            <li>
+                                <p>currencySymbol string</p>
+                            </li>
+                            <li>
+                                <p>currencyTrailingSymbol boolean</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32307" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32307</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">BuildingModel Includes CurrencySymbol Attributes</p>
+                        <p class="RNBody">tblBuilding has a currencySymbolD which maps to tblCurrencySymbol to get the symbol attributes.</p>
+                        <p class="RNBodyBeforeList">The following routes (GET /buildings,&#160;GET /buildings/{id},&#160;POST /buildings/actions/search) now include the following attributes in their&#160;BuildingModel:</p>
+                        <ul class="RN-unorder-list">
+                            <li>
+                                <p>currencySymbol string</p>
+                            </li>
+                            <li>
+                                <p>currencyTrailingSymbol boolean</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32308" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32308</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Enforced Max No. of Bookings Allowed Per Reservation on Create &amp; Add Bookings</p>
+                        <p class="RNBody">Max Number Of Bookings Allowed validation is enforced when creating a reservation or adding bookings. Only non-canceled bookings can be part of a reservation. The system is using&#160;LastDate calculation.&#160;</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32090" title="EMS Internal Reference Only" class="RNRefHyper" alt="EMS Internal Reference Only">32090</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Enforced MaxBookingsPerDate on Create &amp; Add Bookings</p>
+                        <p class="RNBody">Max Bookings per Date validation is enforced when creating a reservation or adding bookings. Uses LastDate calculation DateAdd(d, wt.MaxDays, @Now) to find all none-canceled bookings created by that user, in that template, on the timeframe.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32093" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32093</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Enforced Max No Minutes Allowed on Create Reservation &amp; Edit Booking</p>
+                        <p class="RNBody">Max No Minutes Allowed is enforced on Create Reservation and Edit Booking.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32076" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32076</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Return List of Resources for a Category</p>
+                        <p class="RNBodyBeforeList">The&#160;POST /resources/actions/search&#160;includes a new 'categoryId' search attribute. Response includes additional parameters:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>quantityAvailable</p>
+                            </li>
+                            <li class="li_33">
+                                <p>allowOverbook</p>
+                            </li>
+                            <li class="li_33">
+                                <p>maintainInventory</p>
+                            </li>
+                            <li class="li_33">
+                                <p>overrideDescription</p>
+                            </li>
+                            <li class="li_33">
+                                <p>accountId</p>
+                            </li>
+                            <li class="li_33">
+                                <p>notes</p>
+                            </li>
+                            <li class="li_33">
+                                <p>grouping</p>
+                            </li>
+                            <li class="li_33">
+                                <p>availableToEverydayUsers</p>
+                            </li>
+                            <li class="li_33">
+                                <p>expressCheckout</p>
+                            </li>
+                            <li class="li_33">
+                                <p>alert</p>
+                            </li>
+                            <li class="li_33">
+                                <p>webSequence</p>
+                            </li>
+                            <li class="li_33">
+                                <p>serves</p>
+                            </li>
+                            <li class="li_33">
+                                <p>minQuantity</p>
+                            </li>
+                            <li class="li_33">
+                                <p>externalReference</p>
+                            </li>
+                            <li class="li_33">
+                                <p>internal</p>
+                            </li>
+                            <li class="li_33">
+                                <p>hideSpecialInstructions</p>
+                            </li>
+                            <li class="li_33">
+                                <p>usePackageItemPrice</p>
+                            </li>
+                            <li class="li_33">
+                                <p>resourceAlertDisplayOnWeb</p>
+                            </li>
+                            <li class="li_33">
+                                <p>pricing</p>
+                            </li>
+                            <li class="li_33">
+                                <p>PackageResources</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31643" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31643</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Return the List of Services for a Category</p>
+                        <p class="RNBody">Added&#160;GET /categories/{id}/servicetypes.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31644" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31644</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Get Categories by Template that Are&#160;Filtered by Building</p>
+                        <p class="RNBodyBeforeList">POST /categories/actions/search&#160;has&#160;added&#160;templateId&#160;and&#160;buildingId&#160;to search criteria. &#160;These new fields have been added to response:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>type</p>
+                            </li>
+                            <li class="li_33">
+                                <p>availableToAllBuildings</p>
+                            </li>
+                            <li class="li_33">
+                                <p>buildingIds</p>
+                            </li>
+                            <li class="li_33">
+                                <p>maintainInventory</p>
+                            </li>
+                            <li class="li_33">
+                                <p>active</p>
+                            </li>
+                            <li class="li_33">
+                                <p>displayToEverydayUsers</p>
+                            </li>
+                            <li class="li_33">
+                                <p>expandGroupings</p>
+                            </li>
+                            <li class="li_33">
+                                <p>allowWeekendAdd</p>
+                            </li>
+                            <li class="li_33">
+                                <p>useCutOff</p>
+                            </li>
+                            <li class="li_33">
+                                <p>cutOffTime</p>
+                            </li>
+                            <li class="li_33">
+                                <p>cutOffDays</p>
+                            </li>
+                            <li class="li_33">
+                                <p>cutOffHours</p>
+                            </li>
+                            <li class="li_33">
+                                <p>defaultQuantityType</p>
+                            </li>
+                            <li class="li_33">
+                                <p>billingReferenceRequired</p>
+                            </li>
+                            <li class="li_33">
+                                <p>poNumberRequired</p>
+                            </li>
+                            <li class="li_33">
+                                <p>sequence</p>
+                            </li>
+                            <li class="li_33">
+                                <p>minimumAmount</p>
+                            </li>
+                            <li class="li_33">
+                                <p>defaultServiceTypeId</p>
+                            </li>
+                            <li class="li_33">
+                                <p>termsAndConditions</p>
+                            </li>
+                            <li class="li_33">
+                                <p>currency</p>
+                            </li>
+                            <li class="li_33">
+                                <p>visitor</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31645" title="EMS Internal Reference Only" class="RNRefHyper" alt="EMS Internal Reference Only">31645</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Get Inventory for a Resource</p>
+                        <p class="RNBody">Added&#160;POST /resources/{id}/inventoryused.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31646" title="EMS Internal Reference Only" class="RNRefHyper" alt="EMS Internal Reference Only">31646</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">ClosedAllDay&#160;Flag for EMS Kiosk Does Not&#160;Work for Buildings/hours/actions/search Call</p>
+                        <p class="RNBody">Mapped ClosedAllDay and WebOnly to model for accurate display.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32086" title="EMS Internal Reference Only" class="RNRefHyper" alt="EMS Internal Reference Only">32086</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Enforced MaxBookingsPerDateRange on Create, Edit, &amp; Add Bookings</p>
+                        <p class="RNBody">Max Bookings Per Date Range validation enforced on Create Reservation and Add Bookings.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32099" title="EMS Internal Reference Only" class="RNRefHyper" alt="EMS Internal Reference Only">32099</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Enforced Range Of Days "Only Allow New Bookings Within Range of This Many Days" (Max Days) on Create Reservation &amp; Add Booking</p>
+                        <p class="RNBody">Range Of Days validation is enforced on Create Reservation and Add Bookings.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32111" title="EMS Internal Reference Only" class="RNRefHyper" alt="EMS Internal Reference Only">32111</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Enforced Specific Date -&#160;Only Allow New Bookings Prior to This Date on Create Reservation &amp; Add Bookings</p>
+                        <p class="RNBody">Bookings Before Specific Date validation enforced for Create Reservation and Add Bookings.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32115" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32115</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Enforced Specific Date -&#160;Max No. of&#160;Bookings Prior to Specified Date On Create Reservation, Add Bookings, &amp; Edit Booking</p>
+                        <p class="NormalWeb_2">Max number of bookings prior to a specified date validation is enforced for Create Reservation,&#160;Add Bookings, and Edit Booking.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32116" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32116</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Reservation/Booking Create/Change Routes Called by Non-User Clients</p>
+                        <p class="RNBodyBeforeList">Clients with new "ignore template rules" flag set can call these routes:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>POST /reservations/actions/create</p>
+                            </li>
+                            <li class="li_34">
+                                <p>PATCH /bookings</p>
+                            </li>
+                            <li class="li_34">
+                                <p>POST /bookings/{id}/cancel</p>
+                            </li>
+                            <li class="li_34">
+                                <p>POST /bookings/{id}/checkin</p>
+                            </li>
+                            <li class="li_34">
+                                <p>POST /bookings/{id}/endnow</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32169" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32169</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Create Reservation Without webUserId or processTemplate</p>
+                        <p class="RNBody">Clients with new "ignore template rules" flag set can call create reservation request without a webUserId or templateId.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32170" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32170</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Booking Edit/checkin/cancel/endnow&#160;Called&#160;Without webUserID</p>
+                        <p class="RNBodyBeforeList">Clients with new "ignore template rules" flag set can call these routes without a webUserId:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>POST /bookings/{id}/cancel</p>
+                            </li>
+                            <li class="li_33">
+                                <p>POST /bookings/{id}/checkin</p>
+                            </li>
+                            <li class="li_33">
+                                <p>POST /bookings/{id}/endnow</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32171" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32171</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Client&#160;Config&#160;Supporting Non-User&#160;Reservations/bookings&#160;Changes</p>
+                        <p class="RNBodyBeforeList">New "areTemplateRulesIgnored" attribute added to following routes:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>GET /clients</p>
+                            </li>
+                            <li class="li_33">
+                                <p>POST /clients</p>
+                            </li>
+                            <li class="li_33">
+                                <p>PUT /clients</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32172" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32172</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Admin UI Supports Client Config&#160;Attribute for&#160;Non-User Reservation/booking Changes</p>
+                        <p class="RNBody">Added new field&#160;"Allow this client to book without Everyday User Templates and ignore Booking Rules" on the integration&#160;tab of Platform's admin portal. This field is available&#160;when adding or modifying a client.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32173" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32173</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Booking Time Zone Offset, Abbreviation, and Timezoneid</p>
+                        <p class="RNBody">Added&#160;offset minutes for the time zone: startMinuteOffset and endMinuteOffset. Also added&#160;the time zone abbreviation and the time zone ID on the building object tied to the booking.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32020" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32020</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Get Actual Attendance as a Part of GET Booking&#160;</p>
+                        <p class="RNBody">Users can&#160;modify the actual attendance on the bookings to track actual utilization of the meeting space for accurate reporting.&#160;GET /bookings&#160;now includes actual attendance.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31667" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31667</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Ability to View Building User-Defined Field&#160;Answers</p>
+                        <p class="RNBody">Users now have access to read Building UDFs.</p>
+                        <p class="RNBody">GET /buildings/{id}/userdefinedfields</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31701" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31701</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Ability to Create, Delete, and Update Booking User-Defined Field&#160;Answers&#160;</p>
+                        <p class="RNBodyBeforeList">Users can now "Create," "Delete," and "Update" Booking UDFs.&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>GET /bookings/{id}/userdefinedfields</p>
+                            </li>
+                            <li class="li_33">
+                                <p>PATCH /bookings/{id}/userdefinedfields</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31702" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31702</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Ability to Create, Delete, and Update Reservation User-Defined Field Answers</p>
+                        <p class="RNBodyBeforeList">Users can now&#160;"Create,"&#160;"Delete," and "Update" Reservations UDFs.</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>GET /reservations/{id}/userdefinedfields</p>
+                            </li>
+                            <li class="li_33">
+                                <p>PATCH /reservations/{id}/userdefinedfields</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31703" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31703</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">&#160;Added Group Information to 'Search Bookings' Response</p>
+                        <p class="RNBody">Group information (i.e., name, ID, and email) has been added to response on POST Bookings routes (search, and search multi-user).&#160;</p>
+                        <p class="RNBodyBeforeList">Added following group info to routes:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>POST /bookings/actions/search/users</p>
+                            </li>
+                            <li class="li_34">
+                                <p>POST /bookings/actions/search</p>
+                            </li>
+                        </ul>
+                        <div class="indent_3em">
+                            <p class="RNBody">"group": {</p>
+                            <p class="RNBody">&#160; "emailAddress": "string",</p>
+                            <p class="RNBody">&#160; "id": 0,</p>
+                            <p class="RNBody">&#160; "name": "string"</p>
+                        </div>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31704" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31704</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Added Group Information to 'GET Bookings' Response</p>
+                        <p class="RNBody">Group information (i.e., name, ID, and email) has been added to response on GET Bookings routes.&#160;</p>
+                        <p class="RNBodyBeforeList">Added following group info to routes:&#160;</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>GET /bookings</p>
+                            </li>
+                            <li class="li_34">
+                                <p>GET /bookings/{id}</p>
+                            </li>
+                        </ul>
+                        <div class="indent_3em">
+                            <p class="RNBody">"group": {</p>
+                            <p class="RNBody">&#160; "emailAddress": "string",</p>
+                            <p class="RNBody">&#160; "id": 0,</p>
+                            <p class="RNBody">&#160; "name": "string"</p>
+                            <p class="RNBody">}</p>
+                        </div>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31705" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31705</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Added "isHost" to 'GET Bookings' Response&#160;</p>
+                        <p class="RNBodyBeforeList">Added "isHost" to response on GET Booking and GET Bookings routes:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>GET /bookings</p>
+                            </li>
+                            <li class="li_34">
+                                <p>GET /bookings/{id}</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31733" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31733</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Added "isHost" to 'Search Booking' Response</p>
+                        <p class="RNBodyBeforeList">Added "isHost" to response to all POST/ Search Booking routes:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>POST /bookings/actions/search/users</p>
+                            </li>
+                            <li class="li_34">
+                                <p>POST /bookings/actions/search</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31734" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31734</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Ability to Set Reservations as Private VIP</p>
+                        <p class="RNBody">Added 'VIP' boolean field to the request attributes for Create Reservation. All users types (admin and web user) should have access to these routes.</p>
+                        <p class="RNBody">Added "vip" to&#160;POST /reservations/actions/create request</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31736" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31736</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Ability to Edit Private/VIP&#160;Flag on the Reservation</p>
+                        <p class="RNBody">Added Private&#160;boolean field to the request attributes for Edit Reservation. All users should have access to these routes.&#160;</p>
+                        <p class="RNBody">Added "vip" to&#160;PATCH /reservations/{id} request</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31737" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31737</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Added "Private/VIP" to 'GET Reservation' Response</p>
+                        <p class="RNBody">Added VIP/Private information to response on GET Reservations routes. All users should have access to this route.</p>
+                        <p class="RNBody">Added "vip" to&#160;GET /reservations/{id} response</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31738" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31738</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Added&#160;"Private/VIP" to 'Search Reservations' Response</p>
+                        <p class="RNBody">Added VIP/ Private information to response on all search reservations routes. &#160;All users should have access to this route.</p>
+                        <p class="RNBody">Added "vip" to&#160;POST /reservations/actions/search response</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31739" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31739</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Ability to Create, Delete, and Update Building UDFs&#160;Answers</p>
+                        <p class="RNBodyBeforeList">Added ability to "Create", "Delete", and "update" Buidling UDFs answers. Admin users should have access to these routes (this is desktop functionality today).</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>GET /buildings/{id}/userdefinedfields</p>
+                            </li>
+                            <li class="li_34">
+                                <p>PATCH&#160;/buildings/{id}/userdefinedfields&#160;</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31748" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31748</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Return UDF Definition as Part of UDF Answer Returns</p>
+                        <p class="RNBodyBeforeList">Added new "definitions" attributes to response payloads for routes:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_34">
+                                <p>/buildings/id/userdefinedfields</p>
+                            </li>
+                            <li class="li_34">
+                                <p>/reservations/id/userdefinedfields</p>
+                            </li>
+                            <li class="li_34">
+                                <p>/bookings/id/userdefinedfields</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31775" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31775</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Create Reservation - Add Service Orders</p>
+                        <p class="RNBody">"serviceOrders" attribute part of&#160;POST /reservations/actions/create&#160;request payload.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31647" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31647</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">List Service Orders by Booking</p>
+                        <p class="RNBody">GET /bookings/{id}/serviceorders.&#160;</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31662" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31662</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">List Service Orders for a Collection of Bookings</p>
+                        <p class="RNBody">POST /bookings/actions/search/serviceorders.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31663" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31663</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Return a Booking ID from POST /reservations/{id}/bookings</p>
+                        <p class="RNBody">POST /reservations/{id}/bookings: New "bookingIds" (array of integers) attribute added to response.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=31288" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">31288</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Added&#160;In-Progress Flag to Search&#160;Bookings</p>
+                        <p class="RNBody">POST /bookings/action/search will include in-progress bookings, by default, when both "minReserveStartTime" and "maxReserveStartTime" search criteria are included.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=32425" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32425</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Added&#160;Webuser ID&#160;to Search&#160;Web Users&#160;</p>
+                        <p class="RNBody">Added&#160;GET /webusers/{id}</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workItems?_a=edit&amp;id=32426" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32426</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2_2_1">Fixes&#160;&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 118px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Delegate Authentication Failed&#160;if Webuser 'networkId' or 'externalRef' Did Not Match Username&#160;</p>
+                        <p class="RNBody">Act as delegate should work regardless of the values set in externalReference or networkId fields.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that delegate authentication does not fail.&#160;</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=32026" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">32026</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Authentication Returned Ambiguous User Error If Username Field Was Empty</p>
+                        <p class="RNBody">Authentication request with an empty username field (or space padded) was returning an Ambiguous user error instead of an http 400 error.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the appropriate user error appears.&#160;</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=28875" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">28875</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="p_41">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Room/{id}/bookings Did Not Take into Account Combo Rooms</p>
+                        <p class="RNBody">Bookings for all affected combo rooms related to the room specified in bookings search were being&#160;returned.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when a room is part of a combo room, it&#160;takes the combo room booking&#160;into consideration.&#160;Bookings for all affected combo rooms related to the room specified in bookings search will be returned.</p>
+                        <p class="RNBodyBeforeList">The following routes are affected:</p>
+                        <ul class="RN-unorder-list">
+                            <li class="li_33">
+                                <p>POST /rooms/{id}/bookings</p>
+                            </li>
+                            <li class="li_33">
+                                <p>POST&#160;/bookings/actions/search</p>
+                            </li>
+                            <li class="li_33">
+                                <p>POST /bookings/actions/search/users</p>
+                            </li>
+                            <li class="li_33">
+                                <p>GET /bookings</p>
+                            </li>
+                        </ul>
+                        <p class="RNRef">Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems?_a=edit&amp;id=30555" title="EMS Internal Use Only" class="RNRefHyper" alt="EMS Internal Use Only">30555</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

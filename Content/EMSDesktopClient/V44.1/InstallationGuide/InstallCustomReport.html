@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Install Custom Reports V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">
+            <MadCap:concept term="V44.1" />Install Custom Reports in <MadCap:variable name="General.EMS&#160;Desktop Client" /></h1>
+        <p mt-export-translate="no">If your organization has a custom developed report that needs to be deployed there are two methods, one through the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy and another through the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Install.
+</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p mt-export-translate="no" class="ImportantNote">As of Update 27 (July 2018), changes were made to the EMS&#160;Desktop Client to better support future custom reports and changes to existing custom reports.  As such, any customers on 44.1 that are currently using an EMS Custom Report will need to <a href="../../../ContactUs.htm">contact EMS Support</a> or their Consultant to obtain a new DLL file if they intend to deploy Update 27 of EMS&#160;Desktop Client.
+<br /><br />This change also applies to the Glance DLL, TMS, Polycom, and Custom Badges.</p>
+        </div>
+        <h2 mt-export-translate="no"><MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deployment
+</h2>
+        <ol>
+            <li mt-export-translate="no">Obtain your organization's Custom Report DLL and SQL Overlay script from support.
+</li>
+            <li mt-export-translate="no">Locate the EMS Desktop Client Web Deployment location on the Web Server. Typically this is C:\inetpub\wwwroot\EmsDesktopWebDeploy\.
+</li>
+            <li mt-export-translate="no">Open the Installer folder and locate the EMS.zip file.
+</li>
+            <li mt-export-translate="no">Unzip the EMS.zip file to a location on the PC.
+</li>
+            <li mt-export-translate="no">Place the Custom Report DLL in the EMS folder.
+</li>
+            <li mt-export-translate="no">Zip the new EMS folder containing the DLL and name the zip file EMS.
+</li>
+            <li mt-export-translate="no">Place new EMS.zip file containing the Custom Report DLL back in the Installer folder.
+</li>
+        </ol>
+        <h2 mt-export-translate="no"><MadCap:variable name="General.EMS&#160;Desktop Client" /> Individual Install
+</h2>
+        <ol>
+            <li mt-export-translate="no">Obtain your organization's Custom Report DLL and SQL </li>
+            <li mt-export-translate="no">Overlay script from support.
+Locate the local install of the EMS Client. Typically it is: C:\Program Files (x86)\EMS\.
+</li>
+            <li mt-export-translate="no">Place the Custom Report DLL in the EMS folder.</li>
+        </ol>
+    </body>
+</html>

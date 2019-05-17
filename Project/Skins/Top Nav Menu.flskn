@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Menu skin"
+  ComponentType="Menu"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Menu">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#747474</Property>
+          <Property
+            Name="BorderTop">none 1px #000000</Property>
+          <Property
+            Name="BorderRight">none 1px #000000</Property>
+          <Property
+            Name="BorderBottom">none 1px #000000</Property>
+          <Property
+            Name="BorderTopLeftRadius">5px</Property>
+          <Property
+            Name="BorderTopRightRadius">5px</Property>
+          <Property
+            Name="BorderBottomRightRadius">5px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">5px</Property>
+          <Property
+            Name="TextAlign">left</Property>
+          <Property
+            Name="BorderLeft">none 1px #000000</Property>
+          <Property
+            Name="PaddingLeft">0px</Property>
+          <Property
+            Name="PaddingRight">0px</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu Item">
+        <Properties>
+          <Property
+            Name="Color">#ffffff</Property>
+          <Property
+            Name="FontFamily">Tahoma</Property>
+          <Property
+            Name="FontSize">13px</Property>
+          <Property
+            Name="LineHeight">2em</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="FontWeight">normal</Property>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+              <Property
+                Name="Color">#004e8f</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Style
+        Name="Menu Item (hover)">
+        <Properties>
+          <Property
+            Name="Color">#df7a11</Property>
+          <Property
+            Name="BackgroundColor">#ffffff</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="Color">#004e8f</Property>
+              <Property
+                Name="BackgroundColor">#ffffff</Property>
+              <Property
+                Name="FontWeight">normal</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Menu Item (hover)">
+          <Properties>
+            <Property
+              Name="BackgroundColor">#ffffff</Property>
+          </Properties>
+        </Style>
+      </Medium>
+    </Styles>
+    <Stylesheet></Stylesheet>
+  </Stylesheet>
+  <Strings />
+  <WebHelpOptions
+    EnableSticky="None" />
+</CatapultSkin>

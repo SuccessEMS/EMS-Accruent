@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />&#160;</head>
+    <body>
+        <h1>Authentication Settings for the EMS&#160;Room Sign App</h1>
+        <p>This section provides information about configuring EMS&#160;Room Sign App Authentication. For more information on authentication options, see <a href="GlobalSettings.html#Table" MadCap:conditions="General.Online Only">Global Settings</a>. </p>
+        <ul class="unorder-list">
+            <li><a href="#GroupIdentification">Group Identification/Authentication Settings</a>
+            </li>
+            <li><a href="#Secondary">Secondary Authentication</a>
+            </li>
+        </ul>
+        <h2><a name="GroupIdentification"></a>Group Identification/Authentication Settings</h2>
+        <ol class="number-list">
+            <li>To access these settings, navigate to the <span class="ui">EMS&#160;Glance Settings</span> at the top menu of the EMS&#160;Desktop Client.</li>
+            <li>
+                <p>Select <span class="ui">Global Settings </span>and click<span class="ui"> Open.</span></p>
+                <p>
+                    <img src="../Images/B_Configuration/globalsettings.png" style="width: 584px; height: 378px;" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the setting you want to configure and click <span class="ui">Edit</span>. For more information, please see the table below. See Also:&#160;<a href="GlobalSettings.html#Table" MadCap:conditions="General.Online Only">Global Settings</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/ConfigurationGuide/GlobalSettings.html#Table">Global Settings</a>. </p>
+                <p><b>Identification/Authentication Group Settings</b>
+                </p>
+                <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');margin-left: 0;margin-right: auto;" cellspacing="12">
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 196px;" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 342px;" />
+                    <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 520px;" />
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">GLOBAL SETTING</th>
+                            <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">DESCRIPTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Identification/Authentication</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Group Identification Method</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" data-th="Description">
+                                <p>Indicates how users are required to identify themselves when booking a room. Options are:</p>
+                                <ul class="unorder-list">
+                                    <li><span class="ui">Authentication With Password—</span>Users are required to enter their email addresses and passwords exactly as they are stored for their Web User records in EMS. This identification method requires that the Group Authentication Field setting specify the Web User Email/Password.&#160;</li>
+                                    <li><span class="ui">Authentication Without Password</span>—Users are required to enter their authentication information as defined by the Group Authentication Field setting exactly as it is stored on their Group/Contact records in EMS, based on the Group Authentication Method setting.&#160;</li>
+                                    <li><span class="ui">Group Lookup</span>—Based on the Group Authentication Method setting, users must look up and select their Group/Contact records in EMS. The lookup is a contained search (can be found anywhere in the record) and it is not case-sensitive.&#160;</li>
+                                    <li><span class="ui">Manual Input</span>—Users are required to manually enter their names. Users are added as a temporary contact under the group that is specified in the Default Group for No/Manual Authentication setting.&#160;</li>
+                                    <li><span class="ui">No Identification</span>—Users are not required to identify themselves. New bookings are booked under the group that is specified in the Default Group for No/Manual Authentication setting.</li>
+                                </ul>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The “Authenticate Username” Label/Message should be updated to reflect the correct Group Authentication Field chosen.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Identification/Authentication </p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Group Authentication Method</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" data-th="Description">
+                                <p>Applicable only if Group Identification Method is set to Group Lookup or Authentication Without Password. Options are Group or Contact.</p>
+                                <ul class="unorder-list">
+                                    <li><span class="ui">Contact</span>—If your organization stores employees at the Contact level in EMS, then select Contact.</li>
+                                    <li><span class="ui">Group</span>—If your organization stores employees at the Group level in EMS, then select Group.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Identification/Authentication </p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Group Authentication Field</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" data-th="Description">
+                                <p>Applicable only if Group Identification Method is set to Authentication Without Password. Options are:</p>
+                                <ul class="unorder-list">
+                                    <li><span class="ui">Badge Number&#160;</span>(applies to Group only)</li>
+                                    <li><span class="ui">External Reference</span>&#160;(applies to Group and Contact)</li>
+                                    <li><span class="ui">Group/Contact Email </span>(applies to Group and Contact)</li>
+                                    <li><span class="ui">Network ID</span>&#160;(applies to Group only)</li>
+                                    <li><span class="ui">Other ID</span>&#160;(applies to Group only) Applicable only if Group Identification Method is set to Authentication With Password. Options is: Web User Email/Password</li>
+                                    <li><span class="ui">Personnel Number</span>&#160;(applies to Group only)</li>
+                                    <li><span class="ui">Web User Email/Password</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option">Secondary Authentication Group Authentication Field</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" data-th="Description">
+                                <p data-th="Description">This option should be the same as the corresponding parameters without Secondary Auth (e.g., Group Identification Method, etc.)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p data-th="Option">Secondary Authentication Group Authentication Method</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" data-th="Description">
+                                <p data-th="Description">This option should be the same as the corresponding parameters without Secondary Auth (e.g., Group Identification Method, etc.)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p data-th="Option">Secondary Authentication Group Identification Method</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" data-th="Description">
+                                <p data-th="Description">This option should be the same as the corresponding parameters without Secondary Auth (e.g., Group Identification Method, etc.)</p>
+                                <p data-th="Description">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" data-th="Option">
+                                <p data-th="Option">Label/Message</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Secondary Authentication Password Label</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" data-th="Description">
+                                <p data-th="Description">The Authentication Screen Label and Password label should be used for secondary authentication.</p>
+                                <p data-th="Description">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2" data-th="Option">
+                                <p data-th="Option">Label/Message</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Secondary Authentication User Name Label</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2" data-th="Description">
+                                <p data-th="Description">‘External Reference.’ </p>
+                                <p data-th="Description">The Authentication Screen Label and Password label should be used for secondary authentication.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1" data-th="Option">
+                                <p data-th="Option">Label/Message</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Secondary Authentication Button Label</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1" data-th="Description">
+                                <p data-th="Description">The default for this label is ‘I forgot my badge.’</p>
+                                <p data-th="Description"><![CDATA[
+
+]]></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Identification/Authentication</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Default Group for No/Manual Authentication</p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>If the&#160;<span class="ui">Group Identification Method</span>&#160;is set to&#160;<span class="ui">No Identification</span>&#160;or&#160;<span class="ui">Manual&#160;</span>Input, then new events are booked under the Group specified here.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td data-th="Option" class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p>Identification/Authentication</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p>Default Numeric Keyboard for Group Identification</p>
+                            </td>
+                            <td data-th="Description" class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                <p>Controls the default keyboard display when users are required to identify/authenticate themselves when booking a room. Choices include <span class="ui">Yes </span>or <span class="ui">No</span>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2><a name="Secondary"></a>Secondary Authentication</h2>
+        <p>Users who cannot authenticate due to a lost or forgotten badge can quickly authenticate via a secondary authentication with the "Forgot my badge" button.</p>
+        <p>To allow secondary authentication:</p>
+        <ol class="number-list">
+            <li>From EMS&#160;Desktop Client, click on <a href="GlobalSettings.html" MadCap:conditions="General.Online Only">EMS&#160;Glance Settings</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/ConfigurationGuide/GlobalSettings.html" MadCap:conditions="General.Print Only">EMS&#160;Glance Settings</a>.</li>
+            <li>Navigate to <span class="ui">Profiles </span>&gt;&#160;<span class="ui">Secondary Authentication</span> &gt; <span class="ui">Settings</span>. </li>
+            <li>
+                <p>From the Identification / Authentication Area, set "Use Secondary Auth"&#160;to <span class="ui">Yes</span>. This will display the button and label when users try to authenticate (create and/or edit depending on other settings).</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The default label for the Secondary Auth Button is "I forgot my badge" and the default for the Secondary Authentication Username Label is "External Reference."&#160;</p>
+                </div>
+                <p>
+                    <img src="../../../Resources/Images/secondaryauth3.PNG" class="resize80_noborder_padding">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Set the Secondary Auth Group Identification Method, Secondary Auth Group Authentication Method, and Secondary Auth Group Authentication Field to correspond with the parameters without secondary authentication. </p>
+                <p>
+                    <img src="../../../Resources/Images/secondaryauth4.PNG" class="resize80_noborder_padding">
+                    </img>
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The Authentication Screen Label and Password label should be used for secondary authentication.</p>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

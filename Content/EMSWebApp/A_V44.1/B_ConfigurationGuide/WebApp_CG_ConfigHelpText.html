@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head><title>Configure Help Text for the Web App</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Configure <MadCap:annotation MadCap:createDate="2018-09-07T09:11:40.5654653-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic contains same content as ConfigHelpText.htm topic in DTC. Should they be single-sourced?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-09-07T09:12:16.3954865-06:00">Help Text</MadCap:annotation></h1>
+        <p>Since the EMS Desktop Client is the "backbone" for all editions of EMS, such as EMS Web App and EMS Kiosk, it enables you to customize the text that appears to users of those applications in your organization. This help text displays on various pages in EMS Web App, EMS Kiosk, EMS for Outlook, EMS Campus Planning Interface, and the EMS Floor Plans Utility. As the EMS administrator, you can configure this help text in EMS, or if you are assigned to an appropriate everyday user security template (which has administrator access), you can configure it directly in EMS Web App.</p>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li><a href="WebApp_CG_ConfigLangTransEUapps.html">Configure Help Text in EMS Desktop Client</a>
+            </li>
+            <li><a href="#Configure_Help_Text_in_EMS_Web_App">Configure Help Text&#160;in EMS&#160;Web App</a>
+                <ul>
+                    <li><a href="#Enable_the_Custom_Help_Text_Feature">Enable the Custom Help Text Feature</a>
+                    </li>
+                    <li><a href="#Navigate_to_Pages_in_EMS_Web_App_and_Customize_Help_Text">Navigate to Pages in EMS Web App and Customize Help Text</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p><b>See Also:</b>&#160;<a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigWebText.htm#ConfigureWebTextinDC">Configure Web Text in EMS&#160;Desktop Client</a></p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Depending on your organization, configuration in the EMS Desktop Client might need to be performed by a different type of System Administrator than configuration and text customization in the EMS Web App.</p>
+        </div>
+        <h2><a name="Configure_Help_Text_in_EMS_Desktop_Client"></a>Configure Help Text in EMS Desktop Client</h2>
+        <p>Follow the instructions below to enable custom help text for EMS Web App and/or EMS Kiosk.</p>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Help Text</span>. The Help Text window opens. This window lists the name or description for all types of Help Text that is currently in use in your EMS Web App and EMS Kiosk installations and the EMS Web App or EMS Kiosk page on which it appears. To filter for only a specific type of help text, select a type on the Type dropdown list.<div class="TitleandImage"><p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_HelpTextDropdown.png" class="popup_with_padding_only" /></p><p class="Caption">Help Text Window</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>You can view all help text including the text not in use: select&#160;<span class="ui">Obsolete</span>. Obsolete Help Text&#160;is displayed in red and italics in the Help Text&#160;window.</p></div></li>
+            <li>Select the Help Text&#160;that you are configuring, and then click <span class="ui">Edit</span>.&#160;The Help Text&#160;dialog box opens. The Help Text&#160;tab is the active tab. The tab contains options for entering and configuring the help text.&#160;&#160;<div class="TitleandImage"><p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_HelpTextTab.png" class="resize80_noborder_padding" /></p><p class="Caption">Help Text Tab</p></div></li>
+            <li>Configure the needed help text.
+            <ul class="unorder-list"><li>Design is selected by default. Use the standard Windows plain text formatting options to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want in the help text.</li><li>Select HTML and enter the necessary HTML code to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want in the help text.</li></ul></li>
+            <li>If translations have been defined for everyday user templates (see&#160;<a href="WebApp_CG_ConfigLangTransEUapps.html">Configure Language Translations</a>), then open the <span class="ui">Translations </span>tab, and for each translation, click in the <span class="ui">Text </span>field, and enter the appropriate translation for the Help Text&#160;item.</li>
+            <li>Click <span class="ui">OK</span>.&#160;The Help Text&#160;dialog box closes. You return to the Help Text&#160;window with the newly configured Help Text&#160;item automatically selected in the window.</li>
+        </ol>
+        <h2><a name="Configure_Help_Text_in_EMS_Web_App"></a>Configure Help Text&#160;in EMS&#160;Web App</h2>
+        <p>Once Help Text customization is enabled in the EMS Desktop Client, System Administrators in the EMS Web App can follow the instructions below to customize the applications help text. First, you enable the feature, then you navigate to each page in EMS Web App that you want to customize and enter help text.</p>
+        <h3><a name="Enable_the_Custom_Help_Text_Feature"></a>Enable the Custom Help Text Feature</h3>
+        <ol class="number-list">
+            <li>Log in to EMS&#160;Web App.</li>
+            <li>In the dropdown menu next to your name, click <span class="ui">Admin Functions</span>.&#160;<p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_HelpTextAdminFunctions.png" class="padding_only" style="width: 237px; height: 211px;" /></p></li>
+            <li>The EMS&#160;Web App Administrator Function page opens.<div class="TitleandImage"><p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_EnableHelpTextEdit.png" class="popup_with_padding_only" /></p><p class="Caption">Administrator Functions Page with Enable Help Text Edit Button Showing</p></div></li>
+            <li>Click <span class="ui">Enable Help Text Edit</span>.&#160;A confirmation message appears&#160;indicating that Help Text Mode is now enabled.<div class="TitleandImage"><p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_HelpTextEditConfMess.png" class="popup_with_padding_only" /></p><p class="Caption">Administrator Functions Page with Disable Help Text Edit Button Showing</p></div></li>
+        </ol>
+        <h3><a name="Navigate_to_Pages_in_EMS_Web_App_and_Customize_Help_Text"></a>Navigate to Pages in EMS Web App and Customize Help Text</h3>
+        <ol class="number-list">
+            <li>Navigate to the EMS Web App page where you want to customize Help text. The Edit option is available in the upper, right corner of the page.<div class="TitleandImage"><p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_CustomizeHelpTextEdit.png" class="popup_with_padding_only" /></p><p class="Caption">Edit Option Available in Upper, Right Corner</p></div></li>
+            <li>Click the option.&#160;An edit window launches where you can customize&#160;the help text (click <span class="ui">Edit </span>to enter your custom help text).<div class="TitleandImage"><p><img src="Images/WebApp_Config/EditHelpScreen-WebApp.png" class="padding_only" style="width: 475px; height: 106px;" /></p><p class="Caption">Help Text Edit Window</p></div></li>
+            <li>If your help text should appear in another language, select a language option in the dropdown field.<div class="TitleandImage"><p><img src="Images/B_ConfigurationGuide/WA_ConfigHelpText_HelpTextLanguagedropdown.png" class="popup_with_padding_only" /></p><p class="Caption">Language Field of Help Text Window (After Selecting Edit)</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Options in the Language drop-down are controlled by another Administrator setting, see <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigLangTrans.htm">Language Translations</a>.</p></div></li>
+            <li>After entering and configuring the Help text, click <span class="ui">Save Changes&#160;</span>to apply the text to the selected page.</li>
+        </ol>
+    </body>
+</html>

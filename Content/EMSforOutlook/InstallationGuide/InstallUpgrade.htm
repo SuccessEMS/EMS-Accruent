@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install or Upgrade EMS for Outlook on Users' Computers</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>The installation/upgrading process must begin by&#160;uninstalling previous versions of the EMS for Outlook add-in.&#160;</p>
+        </div>
+        <h2>EMS for Microsoft Outlook Web Deployment Option</h2>
+        <p>As of the Update 19.1 software release (December 2017), a web deployment option is now available for EMS for Microsoft Outlook. This is the recommended method for installing EMS for Outlook locally on individual user machines. Administrators can use the web deployment to host EMS for Outlook on a web server, with the ability to push the URL to any EMS Administrators so they can download EMS for Outlook without needing Administrative Privileges on their local machine.</p>
+        <p>For either 32- or 64-bit installation, you will also need an EMS Platform Services Virtual Directory Name (typical default is EMSPlatform). Make a note of the new site you have created. This URL will need to be entered during the installation process (e.g.,<span class="ui"> http://[ServerName]/EMSPlatform/</span> [replace ServerName with the name of your web server]).</p>
+        <h3>Benefits of Web Deployment Option</h3>
+        <p>The web deploy application is installed on your web server. The EMS for Outlook Add-in is included within this installation. Once installed, end users point their web browsers to the EMS Web Deployment Application, which points them with a link to download the EMS for Outlook Add-in. Once a user downloads and runs that link, the EMS for Outlook is installed in the user's profile on that workstation. Once installed, the EMS for Outlook Add-in will check the server for an updated version of the client each time the client is launched. If a new version is available, then it will automatically download and install the update.</p>
+        <h2>Web Deploy Service Installation on Server</h2>
+        <ol>
+            <li>Verify that the Requirements and Prerequisites have been met.</li>
+            <li>Download the <span class="ui">EMS.Outlook.WebDeploy.msi</span> file onto the user’s desktop.</li>
+            <li>Close Outlook.</li>
+            <li>Run <span class="ui">EMS.Outlook.WebDeploy.msi</span>.</li>
+            <li>The first screen welcomes you to the EMS Outlook Web Deploy Setup Wizard.</li>
+            <li>Click the <span class="ui">Next </span>button to begin the installation process. The Destination Folder screen will appear.</li>
+            <li>Specify the Installation Folder.</li>
+            <li>Click the <span class="ui">Next </span>button. The EMS Platform Services screen will appear.</li>
+            <li>Enter the address your organization uses (e.g., http://[ServerName]/EMSPlatform).</li>
+            <li>Click the <span class="ui">Next </span>button. The Ready to install EMS for Outlook Web Deploy screen will appear.</li>
+            <li>Click the <span class="ui">Install </span>button to complete the installation. Click the <span class="ui">Close </span>button to exit.</li>
+        </ol>
+        <h2>Manual Installation (32-BIT or 64-bit)</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>A 64-bit installation requires an elevated permission level.</p>
+        </div>
+        <ol class="number-list">
+            <li>Verify that the Requirements and Prerequisites have been met.</li>
+            <li>Download the <span class="ui">EMSForOutlook.msi</span> file onto the user’s desktop.</li>
+            <li>Close Outlook.</li>
+            <li>Run <span class="ui">EMSForOutlook.msi</span>.</li>
+            <li>The first screen welcomes you to the EMS Outlook Add-in Setup Wizard.</li>
+            <li>Click the <span class="ui">Next </span>button to begin the installation process. The Destination Folder screen will appear.</li>
+            <li>Specify the Installation Folder.</li>
+            <li>Click the <span class="ui">Next </span>button. The EMS Platform Services screen will appear.</li>
+            <li>Enter the address your organization uses (e.g., http://[ServerName]/EMSPlatform).</li>
+            <li>Click the <span class="ui">Next </span>button. The Ready to install EMS for Outlook screen will appear.</li>
+            <li>Click the <span class="ui">Install </span>button to complete the installation. Click the <span class="ui">Close </span>button to exit.</li>
+            <li>Launch Outlook. The <span class="ui">EMS </span>button should display on the user’s Outlook toolbar on the Calendar as online.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If the EMS for Outlook displays as Offline,&#160;see&#160;<a href="OutlookAddInOffline.htm">EMS for Outlook Add-In Is Offline</a>.</p>
+        </div>
+        <h2>Testing <MadCap:variable name="General.EMS for Outlook Add-in" /></h2>
+        <p>EMS&#160;Software recommends that customers test new versions of EMS for Outlook before deploying to production.  Ideally, customers would have PROD and TEST Exchange environments to pair with the PROD and TEST EMS environments, and separate machines for each environment (e.g., have a machine dedicated to being connected to the test environment).</p>
+        <p>When creating a reservation in EMS for Outlook, the application stores a unique “PAM ID” on the reservation in EMS and stores the EMS Reservation ID on the Exchange object (meeting/appointment) in order to establish the link between the two systems.</p>
+        <p>If the customer has both PROD and TEST linked to the same Exchange environment, here is the risk:</p>
+        <ol>
+            <li>User creates reservation 1234 while connected to TEST EMS.</li>
+            <li>User switches connection (by changing Platform URL) to PROD EMS.</li>
+            <li>User cancels reservation 1234 from Outlook, that was originally created in TEST EMS.</li>
+            <li>Since the connection was changed to PROD, instead of canceling 1234 in TEST, 1234 is canceled in PROD.  1234 in TEST and PROD are almost guaranteed to be two completely different reservations for different users.  So the user has now canceled an unrelated reservation in PROD by accident.</li>
+        </ol>
+        <p>Having separate TEST and PROD Exchange environments is the best way to avoid the problem; however, this is often impractical and costly, if not impossible.  The alternative option is to be careful and deliberate when following the guidelines below:</p>
+        <ol>
+            <li>Users can use a single machine.</li>
+            <li>Install TEST EMS for Outlook version, connect with TEST Platform URL.</li>
+            <li>Make reservations according to test cases and include TEST in the subject line of all meetings created here to help distinguish them.</li>
+            <li>If they are tracking with UAT test cases they can document the date/time/reservation ID used for each test case in order to help track these.</li>
+            <li>Before going back to PROD EMS for Outlook, all TEST reservations must be canceled while still connected to TEST EMS.</li>
+            <li>Once all TEST reservations are canceled, the normal process of uninstalling the TEST EMS for Outlook and reinstalling with PROD can go forward (ensure the Platform URLs are correct).</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head><title mt-export-translate="no">Managing Requests for Managed Space V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Manage Requests for Managed Space</h1>
+        <p>This topic guides you in approving "pending requests," which are requests for space that require supervisory approval and appear in your Dashboard.&#160;</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;You Use the Request/Approval Model to Oversee "Managed Space"&#160;<MadCap:snippetText src="../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Once your system administrator has&#160;<a href="../ConfigurationGuide/ConfigFacil.html" title="Configuration &gt; Facilities" alt="Configuration &gt; Facilities">configured facilities</a>&#160;(rooms, categories, services, resources, and so on), he or she can configure special process templates for "managed space," which is meeting space that might require additional oversight and an approval process to finalize a reservation. For example, your organization might need specialized space like the President's Conference room, or a large banquet hall, to be treated&#160;as managed space to ensure that any request to use it is approved by a supervisor.&#160;Typically, managed space involves services, expenses, and invoicing that affect&#160;multiple stakeholders and departments, and templates designed for this model are typically assigned to Everyday Users of EMS Web App. By contrast, such templates are&#160;not&#160;available for EMS for Outlook&#160;users since Microsoft<sup>®</sup> Outlook does not show the&#160;request status&#160;of such a reservation.&#160;</p>
+                <p>See Also:&#160;<a href="../../../LearnAboutOurApplications/How Does EMS Classify Different.htm">How Does EMS Classify Different Types of Users?</a></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Click the&#160;Dashboard&#160;icon in the EMS Desktop Client toolbar.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed.png" alt="https://success.emssoftware.com/@api/deki/files/5964/clipboard_e387a45acc398227ae37a863e2cd7ca06.png?revision=1" class="popup_with_padding_and_border">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Click the&#160;Guest Requests&#160;tab, which&#160;displays requests for space that require supervisory approval. Such requests are submitted through EMS Web App using process templates designated for "Unauthenticated Users."&#160;An unprocessed&#160;request is in Pending status.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed.gif" alt="https://success.emssoftware.com/@api/deki/files/5961/GuestRequestDashboard.gif?revision=1&amp;size=bestfit&amp;width=938&amp;height=702" class="resize80_noborder_padding">
+                    </img>
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The tab&#160;enables you to filter the&#160;list by status, building, room, and&#160;to work with the requests. If you filter the list, click&#160;<span class="ui">Refresh</span>.</p>
+                </div>
+            </li>
+        </ol>
+        <h2>Approve or Work with&#160;a Pending Request&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Select the request you want to work with,&#160;and click&#160;Edit&#160;to launch the launch the Guest Request dialog box, which shows all the information&#160;submitted for the request through EMS Web App. The dialog box always has a Description tab, a Web Questions tab, and an Audit tab. If the request included resources or setup notes, it also has a Services tab.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed_1.gif" alt="https://success.emssoftware.com/@api/deki/files/4073/GuestRequestDashboard2.gif?revision=1&amp;size=bestfit&amp;width=628&amp;height=513" class="resize80_noborder_padding">
+                    </img>
+                </p>
+            </li>
+            <li>To&#160;ask the requester for further clarification before approving the request, edit the request&#160;without processing it:<ul start="2"><li>You can ask questions and add comments about the request (for example, "Will alcohol be served at the event?") in the&#160;Notes&#160;field on the Description tab. When the user checks the request in EMS Web App, these notes will display.&#160;</li><li>To indicate to the guest user that you are reviewing the request, you can set the&#160;Request Status&#160;to&#160;In Progress.&#160;</li><li>To see the guest's answers to any&#160;predefined questions in EMS Web App, open the Web Questions tab.&#160;</li><li>To see service&#160;requests, click the Services tab. Double-click a category to see&#160;details on the right.</li></ul></li>
+            <li>When you have finished interacting with the request, click&#160;<span class="ui">OK&#160;</span>to save your changes and notify the requester.</li>
+            <li>
+                <p>To process the request and create a&#160;reservation, change the&#160;Request Status&#160;field to a new status&#160;(such as&#160;Approved) and click&#160;Process&#160;on the Description tab.&#160;</p>
+                <p>The reservation opens in the Reservation Wizard and you must&#160;<a href="CreateResinResWizard.htm">finish making the reservation in the Reservation Wizard window that appears</a>.</p>
+                <ul>
+                    <li>If the reservation includes services, the Process Guest Request Details window opens next. To&#160;process the services immediately, use&#160;the options on this window, &#160;or to process the services later, click&#160;Cancel. (You can later open the reservation on the Dashboard &gt; Guest Requests tab, and on the Services tab, click&#160;Process).</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Delete a Request&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Select the guest request, or CTRL-click to select the multiple requests, and then click&#160;Delete.</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Yes</span>.&#160;The message closes. The selected guest requests are deleted.</p>
+            </li>
+        </ol>
+        <h2>Print a Request&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Select the guest request, or CTRL-click to select the multiple requests, and then click&#160;<span class="ui">Print</span>.&#160;An&#160;preview of the selected requests opens, with&#160;options to print a hard copy,&#160;export the requests to a .pdf, and&#160;email the requests.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed_2.gif" alt="https://success.emssoftware.com/@api/deki/files/4072/GuestRequestDashboard3.gif?revision=1" class="resize80_noborder_padding">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Select the option or options that best fit your working needs.</p>
+            </li>
+        </ol>
+    </body>
+</html>

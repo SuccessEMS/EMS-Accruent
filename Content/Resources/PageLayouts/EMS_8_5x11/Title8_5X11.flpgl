@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <Page Name="All" Width="7in" Height="9in" Padding="20px" PageSize="Letter" PageType="title" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" BackgroundRepeat="no-repeat" Orientation="portrait" BackgroundImage="none" BackgroundPositionX="10px" BackgroundPositionY="-90px" BleedLeft="0.25in" BleedRight="0.25in" BleedTop="0.25in" BleedBottom="0.25in">
+        <Frame X="-3px" Y="434px" Width="624px" Height="392px" Flow="body" Right="3px" Bottom="38px" Anchors="" />
+        <Frame X="-59px" Y="-60px" Width="563px" Height="95px" Right="120px" Bottom="829px" BackgroundImage="../../Images/ems_logo_250w.jpg" BackgroundRepeat="no-repeat" BackgroundPositionX="left" BackgroundPositionY="top" Anchors="" Flow="header" TextAlign="left" VerticalAlign="top" />
+        <Frame X="-97px" Y="104px" Width="820px" Height="305px" Flow="decoration1" Right="-99px" Bottom="455px" BackgroundImage="../../Images/banner.jpg" BackgroundRepeat="stretch" DividerTopMargin="208px" Anchors="" />
+        <Frame X="-3px" Y="867px" Width="624px" Height="55px" Flow="footer" Right="3px" Bottom="-58px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="pdfcopyright" xhtml:style="font-size: 8pt;"><MadCap:variable xhtml:name="General.My Company" /> | <MadCap:variable xhtml:name="General.PdfURL" /> | <MadCap:variable xhtml:name="General.pdfContact" /> | <MadCap:variable xhtml:name="General.CopyRight" /></xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

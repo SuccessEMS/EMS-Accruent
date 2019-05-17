@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Skype for Business Integration in EMS Mobile App</h1>
+        <p>The EMS integration of Skype for Business in the Mobile App allows users to easily incorporate&#160;instant messaging and audio/video conferencing to their meetings without the need for A/V support.&#160;Skype for Business Integration is currently available for the EMS Mobile App, <a href="../../EMSWebApp/A_V44.1/C_UserGuide/WebApp_SkypeforBusiness.html">EMS Web App</a>, and <a href="../../EMSforOutlook/UserGuide/UseSkypeforBusiness.htm">EMS&#160;for Outlook</a>.&#160;</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>When considering using the Skype for Business Integration, keep in mind the following</p>
+            <ul class="unorder-list">
+                <li>Skype for Business Integration is <span class="ui">ONLY </span>available on <span class="ui">Exchange-enabled templates</span>.</li>
+                <li><span class="ui">Users cannot edit or remove Skype for Business meetings from their reservations. Users can delete the link, but the Join link will remain enabled.&#160;</span>
+                </li>
+            </ul>
+            <p>For more information about Configuring Skype for Business, see <a href="../../Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html">Configure Skype for Business</a>.</p>
+        </div>
+        <p>This topic provides information about the following:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#AddSkypeforBusinesstoEMSreservation">Add Skype for Business to a Reservation</a>
+            </li>
+            <li><a href="#JoinSkypeforBusinessMeeting">Join a Skype for Business Meeting</a>
+            </li>
+        </ul>
+        <h2><a id="AddSkypeforBusinesstoEMSreservation" name="AddSkypeforBusinesstoEMSreservation"></a>Add Skype for Business to a Reservation</h2>
+        <p>To add Skype for Business to a reservation in EMS&#160;Mobile App:</p>
+        <ol class="number-list">
+            <li><a href="GetStarted.html">Sign in</a> to your EMS Mobile App.&#160;</li>
+            <li><a href="CreateMeeting.html">Create your reservation</a>. <a href="FindRoom.html">Select a room</a> and <a href="InvitePeople.html">invite attendees</a>.</li>
+            <li>
+                <p>At the bottom of the screen, there is a <span class="ui">Create a New Skype Meeting </span>toggle. </p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/SkypeToggle.png" class="narrow_padding_and_border" />
+                    </p>
+                    <p class="Caption">Skype for Business Toggle</p>
+                </div>
+            </li>
+            <li>If this is your first time using Skype for Business, an authentication form will appear. Sign in using your Skype credentials.<ul MadCap:continue="true"><li>If your Skype account is authenticated, you can continue creating your reservation.&#160;</li><li>If your Skype account is not authenticated, an authentication modal will appear.</li><li>If you fail to authenticate your Skype account, the Skype toggle will be disabled.</li></ul><div class="TitleandImage"><p><img src="../Images/C_UserGuide/MA_UseSkypeForBusiness_SkypeLogin.png" class="resize80_border_and_padding" style="width: 434px; height: 247px;" /></p><p class="Caption">Skype Authentication Form</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Authentication&#160;to Skype is dependent upon the deployment type. There are three deployment&#160;types for Skype for Business:</p><ol class="number-list"><li><span class="ui">On Premise:</span> This deployment for Skype for Business does not retain a token and requires authentication every 8 hours. As a result, you will be asked to sign in every 8 hours.</li><li><span class="ui">Online:</span> This deployment retains the token so only an initial authentication is required.</li><li><span class="ui">Hybrid:</span> This deployment has the same authentication method as the Online deployment.</li></ol><p>For more information regarding authentications in Skype for Business, see <a href="../../Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html#Deployment_Types">Skype for Business Deployment Types</a>.</p></div></li>
+            <li>Following authentication, slide the <span class="ui">Create a new Skype Meeting</span> toggle to add Skype for Business to your reservation.<div class="TitleandImage"><p><img src="../Images/C_UserGuide/MA_UseSkypeForBusiness_SkypeToggle.png" class="narrow_padding_and_border" /></p><p class="Caption">Create a New Skype Meeting Toggle</p></div></li>
+            <li>After successful authentication, you should receive a message that Skype has been successfully added to your reservation. To remove Skype from your reservation, slide the <span class="ui">Create a new Skype Meeting</span> toggle to the disabled position.</li>
+            <li>Click <span class="ui">Create Reservation</span>.&#160;Skype meeting information will appear in your meeting invitation and will be stored on the EMS database.<div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;"><p>Once you have added Skype to your reservation, the meeting attendees will receive an email notification including the Join Skype link and call-in information.&#160;</p></div></li>
+            <li>Meeting hosts can view reservation details, including Skype meeting information, by navigating&#160;to&#160;the <span class="ui">Home </span>page. Swipe to the left of the meeting you want to view and click <span class="ui">Details</span>.&#160;<div class="TitleandImage"><p><img src="../Images/C_UserGuide/MA_UseSkypeForBusiness_BookingDetails.png" class="narrow_padding_and_border" style="width: 351px; height: 618px;" /></p><p class="Caption">Select Details to View Skype Meeting Information</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p> Once Skype has been added to your meeting, the Skype meeting information will appear in all EMS applications that have been integrated with Skype for Business (i.e., EMS for Outlook and EMS Web App).</p></div></li>
+        </ol>
+        <h2><a id="JoinSkypeforBusinessMeeting" name="JoinSkypeforBusinessMeeting"></a>Join a Skype for Business Meeting</h2>
+        <p>To join a Skype for Business meeting in EMS&#160;Mobile App:</p>
+        <ol class="number-list">
+            <li>From the Home page, navigate to the meeting you want to attend. Swipe left. From this drawer, you will be able to <span class="ui">Cancel</span>, <span class="ui">Join</span>, and view <span class="ui">Details</span>.&#160;<div class="TitleandImage"><p><img src="../Images/C_UserGuide/MA_UseSkypeForBusiness_JoinSkype.png" class="narrow_padding_and_border" style="width: 353px; height: 609px;" /></p><p class="Caption">Skype Join Meeting Button</p></div></li>
+            <li>Click <span class="ui">Join </span>to be connected to your Skype meeting.&#160;</li>
+        </ol>
+        <p class="beforelist">For more information regarding using Skype for Business in other EMS&#160;access points, see also:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="../../EMSforOutlook/UserGuide/UseSkypeforBusiness.htm">Skype for Business in EMS&#160;for Outlook</a>
+            </li>
+            <li><a href="../../EMSWebApp/A_V44.1/C_UserGuide/WebApp_SkypeforBusiness.html">Skype for Business in EMS Web App</a>
+            </li>
+        </ul>
+        <p>For more information regarding features of Skype for Business, refer to the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=54327">Microsoft Skype for Business User Guide</a>.</p>
+    </body>
+</html>

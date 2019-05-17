@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Benefits and Considerations for ERI</h1>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/ERI/ERI_Note_U32_or_prior.flsnp" />
+        <p>Exchange Room Integration (ERI) works using bi-directional syncing (2-way syncing)—<MadCap:variable name="General.Exchange-to-EMS" /> sync and <MadCap:variable name="General.EMS-to-Exchange" /> sync. The following benefits and limitations are organized by the two sync directions:</p>
+        <ul>
+            <li>
+                <p><a href="#Exchange_to_Exchange_Sync">ERI&#160;from <MadCap:variable name="General.Exchange-to-EMS" /> Sync</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#EMS_to_Exchange_Sync">ERI&#160;from <MadCap:variable name="General.EMS-to-Exchange" /> Sync</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Exchange_to_Exchange_Sync"></a>ERI&#160;from <MadCap:variable name="General.Exchange-to-EMS" /> Sync</h2>
+        <p>Many types of work groups use Microsoft® Outlook alone (without EMS) to find and book meeting spaces. Users are accustomed to setting up a meeting in an Outlook or an Exchange-enabled client, inviting attendees, and then clicking on the Rooms button to locate space within their office. With ERI, these types of users can continue to use their non-EMS&#160;processes for booking self-service spaces through Microsoft Outlook (referred to as native Outlook booking), and organizations can capture the space utilization statistics of native Outlook bookings in EMS. </p>
+        <h3>Benefits</h3>
+        <p>The following types of users and organizations can benefit from the ERI&#160;<MadCap:variable name="General.Exchange-to-EMS" />&#160;Sync:</p>
+        <ul>
+            <li>
+                <p><b>EMS&#160;customers who want to maintain existing processes for booking self-service meeting rooms through native Outlook. </b>
+                </p>
+            </li>
+            <li>
+                <p><b>Organizations with smaller, isolated offices with few meeting rooms or no distinct room booking workflows.</b> </p>
+                <p>Rather than give users in these smaller offices a new tool, the users can continue to book spaces in native Outlook applications, and the room booking information will be synced from Exchange to EMS. </p>
+            </li>
+            <li>
+                <p><b>Organizations that have Macintosh-based work groups/employees who use Outlook for Macintosh to book self-service meeting rooms.</b> </p>
+                <p>The ERI&#160;Exchange to EMS&#160;sync would allow users to continue using their familiar platform and tools. The Mac users could book rooms in Outlook, but the organization would be able to capture and calculate the utilization information for these rooms in EMS.</p>
+            </li>
+            <li>
+                <p><b>Users with the Outlook mobile app and Outlook Web access would benefit.</b> <br /></p>
+                <p>For example, without the ERI&#160;sync, if users changed the meeting time/date in the Outlook mobile app, the meeting time/date would change for the users on their Outlook calendar, but the time/date for the booking would not change in EMS. With the ERI&#160;sync, ERI&#160;would recognize booking edits made from the Outlook mobile app, and after ERI&#160;syncs the edited booking, the booking in EMS&#160;would be updated. <MadCap:annotation MadCap:createDate="2019-05-13T13:47:42.0902838-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Maybe not mention? \r\nAdmins can generate reports " MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-13T17:37:08.9324948-06:00">Any conflicts would trigger a configured EMS&#160;conflict workflow. </MadCap:annotation></p>
+            </li>
+            <li>
+                <p><b>Users who book self-service meeting rooms on an impromptu basis, such as using a kiosk or a digital room sign that references a Microsoft Exchange calendar.  </b>
+                </p>
+                <p>This type of user does not book meetings prior to the meeting time. Instead, the user locates available space and reserves the space using a kiosk or digital room sign. With ERI, these impromptu, on-the-spot bookings would be synced and captured in EMS. </p>
+            </li>
+        </ul>
+        <h3>
+            <MadCap:annotation MadCap:createDate="2019-05-14T19:18:49.0810781-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Review all info and edit it for typos and wording." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:18:58.0889397-06:00"><a name="ConsiderationsERI"></a>Considerations</MadCap:annotation>
+        </h3>
+        <p>The following is a list of considerations  and limitations to keep in mind for ERI&#160;Exchange to EMS&#160;Sync:</p>
+        <ul>
+            <li>
+                <p><b>Organizations with hundreds or thousands of self-service spaces are not good candidates for this functionality. </b>
+                </p>
+                <p>Microsoft Outlook offers no filtering capabilities, so users would not be able to filter spaces, like they can in EMS, by location, capacity, type, or room features, and users would need to know the name of the space they want to reserve. In this scenario, an EMS access point would provide a better user experience since users would be able to filter appropriate spaces and save their favorites for quick access.</p>
+            </li>
+            <li>
+                <p><b>Organizations that have spaces that require an approval are not good candidates for the functionality, as it is designed for self-service meeting rooms only.</b> </p>
+                <p>If there are spaces that require an approval workflow, the spaces would have to be managed EMS and outside of Exchange applications. This would create confusion with users because they would have to use different applications and processes to access both types of spaces.</p>
+            </li>
+            <li>
+                <p><b>Organizations that wish to enforce booking rules would not find the ERI&#160;Exchange to EMS&#160;sync a good fit.</b> </p>
+                <p>While Exchange can provide limited <MadCap:annotation MadCap:createDate="2019-05-14T19:24:21.7995340-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="such as??" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:24:24.4250364-06:00">booking rules</MadCap:annotation>, it does not provide the level of granularity that EMS provides. If your organization desires greater control on how users can book spaces, a workflow using an EMS client would be more appropriate.</p>
+            </li>
+            <li>
+                <p><b>Organizations that want to allow the addition of services to a reservation would not find this functionality useful.</b> </p>
+                <p>While EMS allows users to include service orders (such as catering, room setup, and audio-visual equipment) with their reservation, the service order feature will not be available in the self-service workflows through Microsoft Outlook.</p>
+            </li>
+            <li>
+                <p><b>Organizations that want custom information with reservations should not use the ERI&#160;Exchange to EMS&#160;sync.</b> </p>
+                <p>Self-service workflows through Outlook do not provide the ability to specify custom information about a reservation, nor do they allow the ability to assign a billing code or chargeback information to the reservations. If you require billing or chargeback information for spaces, the ERI&#160;Exchange to EMS&#160;sync is not an appropriate solution.</p>
+            </li>
+            <li>
+                <p><b>Organizations that require </b>
+                    <MadCap:annotation MadCap:createDate="2019-05-14T19:19:26.3418223-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Don't these apps, with ERI, already sync with Exhange? Do web app and mobile app only work EMS to Exchange sync route?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T19:29:22.4423791-06:00" style="font-weight: bold;">EMS Web App or EMS Mobile App</MadCap:annotation><b> for their users will not be a good fit for this solution.</b> The ERI Exchange to EMS&#160;Sync can only support bookings through Outlook or other Exchange clients, such as EMS Room Sign App and EMS Kiosk. Third-party room sign applications that use Exchange resource mailboxes are alternate options.</p>
+            </li>
+        </ul>
+        <h2><a name="EMS_to_Exchange_Sync"></a>
+            <MadCap:annotation MadCap:createDate="2019-05-14T20:29:50.6045635-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Do we have benefits for this or considerations? Maybe topic should just talk about Exchange to EMS sync benefits and considerations?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-14T20:30:27.7088284-06:00">ERI&#160;from <MadCap:variable name="General.EMS-to-Exchange" /> Sync</MadCap:annotation>
+        </h2>
+        <p>[Content TBD]</p>
+        <p>&#160;</p>
+        <p>***************out of time</p>
+        <h3>Create a Booking from a Native Outlook Application</h3>
+        <p>[Booking information is limited by what information native Outlook apps allow (EMS-554):&#160;]</p>
+        <ul>
+            <li>
+                <p>Subject will become Event Name</p>
+            </li>
+            <li>
+                <p>Organizer (only syncing organizer, if info is in EMS, not syncing attendees)</p>
+            </li>
+            <li>
+                <p>Date/Time</p>
+            </li>
+            <li>
+                <p>Location</p>
+            </li>
+        </ul>
+        <p>[EMS-5954—good example of the workflow ]</p>
+        <p>[There will not be a bi-directional flag. Also, if Jira tickets talk about flagged in EMS&#160;as bi-directional, means that Exchange mailbox linked to room. Room has one or more Exchange Room mailbox linked to it.]</p>
+        <p>[Platform will first try to find organizer in EMS because Outlook requires an organizer to create meeting. If Platform can't find organizer in EMS, Platform will use Default Group specified in Platform UI [sounds like config platform will come before explaining how the create or edit scenario works or maybe not???]. Platform uses the other meeting info to set up the meeting in EMS, such as subject for event name, attendees, date/time, and location. ]</p>
+        <p>[However, to complete the booking in EMS&#160;, Platform needs additional information that is not required in Native Outlook. This additional information has been added as default fields in the Platform Admin UI (new tab under Calendaring titled "Exchange Sync" with section titled "Exchange Sync Configuration"), and user can configure these defaults (EMS-4542—need to locate values and defaults for these parameters/fields—initial config is no default but they will be required to make a selection):]</p>
+        <ul>
+            <li>
+                <p>Reserve Status</p>
+            </li>
+            <li>
+                <p>Conflict Status</p>
+            </li>
+            <li>
+                <p>Cancel Status</p>
+            </li>
+            <li>
+                <p>Default Group</p>
+            </li>
+            <li>
+                <p>Reservation Source<br />[From the Platform Admin UI, can configure reservation source for these bookings, such as Native Outlook. Then, in DTC, can view the source for reservation (open booking[reservation?] in DTC and then go to Properties tab, scroll to Source). Users can create custom report based on Reservation Source shows bookings from Reservation Source (Native Outlook) and see daily how many bookings are being created from Native Outlook apps vs other access points.]</p>
+            </li>
+        </ul>
+        <p>[From Native Outlook apps, can create four types of reservations:]</p>
+        <ul>
+            <li>
+                <p>Single meeting with single location (one day, one booking)</p>
+            </li>
+            <li>
+                <p>Single meeting with multiple locations (one day, two or more bookings)</p>
+            </li>
+            <li>
+                <p>Recurring meeting with single location (two or more days, one booking???)</p>
+            </li>
+            <li>
+                <p>Recurring meeting with multiple locations (two or more days, two or more bookings)</p>
+            </li>
+        </ul>
+        <p>[Create table showing these are the types of bookings you can create from exchange, types of changes you can make, and you can cancel. Every time you do this in Exchange, changes will be reflected in EMS. Look at Ankita's interoperability table.]</p>
+        <h3>Modify a Booking from a Native Outlook Application</h3>
+        <p>[Can modify the following meeting info in native Outlook app and have info synced and updated in EMS:]</p>
+        <ul>
+            <li>
+                <p>Subject (event name)</p>
+            </li>
+            <li>
+                <p>Date/Time</p>
+            </li>
+            <li>
+                <p>Room</p>
+            </li>
+        </ul>
+        <h3>Cancel a Booking from a Native Outlook Application</h3>
+        <p>[When user cancels booking from native Outlook app, info is synced and booking is canceled in EMS.&#160;Also, room/resource is made available in room/resource Exchange calendar.]</p>
+    </body>
+</html>

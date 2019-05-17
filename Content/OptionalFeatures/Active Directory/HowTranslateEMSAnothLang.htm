@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>How Do I Translate EMS to Another Language?</h1>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Build_Your_Language_Translation_Spreadsheet">Build Your Language Translation Spreadsheet</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Example_Successful_Installation">Example Successful Installation</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Build_Your_Language_Translation_Spreadsheet"></a>Build Your&#160;Language Translation Spreadsheet</h2>
+        <ol class="number-list">
+            <li>
+                <p>EMS Software provides a Microsoft<sup>®</sup> Excel spreadsheet specific to EMS Web App that contains all of the application labels, page titles, system messages and error messages with their English translations. &#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Values for data items (e.g. Event Types like “Meeting”, “Training”, etc. or Room Types like “Workspace”, “Conference Room”, etc.) configured within EMS or dynamic information that is inputted by an EMS user or Virtual EMS web user (e.g. Event Name like “HR Meeting”, Comments, Special Instructions, etc.) are not translated.&#160;</p>
+                </div>
+            </li>
+            <li>
+                <p>The customer is responsible for providing the translated values for the information in the product spreadsheet. Once the&#160;customer returns&#160;the fully translated product spreadsheet to EMS Software,&#160;EMS Software development teams compile the spreadsheet into a product-specific language folder containing a set of files. (We maintain a&#160;language folder for each language).</p>
+            </li>
+            <li>
+                <p>The customer saves the language files&#160;in&#160;the "App_GlobalResources" folder within the EMS Web App physical directory on their web server (the default path is C:\inetpub\wwwroot\emswebapp\App_GlobalResources\).</p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p class="beforelist">For the translation to affect an Everyday Applications user,&#160;two conditions should be met: &#160;</p>
+                </div>
+            </li>
+            <li>
+                <p>The language setting should be&#160;<a href="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" title="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" class="Hyperlink">set in Windows</a>.</p>
+            </li>
+            <li>
+                <p>The end&#160;user’s browser Language Preference is set to that specific language and set as the default.&#160;&#160;</p>
+            </li>
+        </ol>
+        <h2><a name="Example_Successful_Installation"></a>Example of Successful Installation</h2>
+        <p> <img src="Images/OptFeatGuide/How Do I Translate EMS To.png" class="popup_with_padding_and_border" /></p>
+        <p>
+            <img src="Images/OptFeatGuide/How Do I Translate EMS To_1.png" class="resize80_border_and_padding" />
+        </p>
+        <div class="TitleandImage">
+            <p>
+                <img src="Images/OptFeatGuide/How Do I Translate EMS To_2.png" class="resize80_border_and_padding" style="width: 571px; height: 416px;" />
+            </p>
+            <p class="Caption">Reflected in EMS as follows (French-Canadian is the example here):</p>
+            <p>See Also:&#160;<a href="../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigLangTransEUapps.html">Configure EMS Language Translation for Everyday User Applications</a></p>
+        </div>
+    </body>
+</html>

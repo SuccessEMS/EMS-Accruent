@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Generating Printed Confirmations V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Generate Printed Confirmations</h1>
+        <p>A&#160;confirmation&#160;is a document that details the critical information for a reservation—the date, the time, the location, the scheduled resources, and so on. Through the Navigator, you have the option of generating a single confirmation, either manually or automatically. (See Also:&#160;<a href="Confirmations.html" title="Confirmations" alt="Confirmations">Confirmations</a>.) A miscellaneous reservation function is also available for manually&#160;generating multiple confirmations at the same time. When you generate multiple confirmations, all the confirmations are contained in a single file, but each confirmation begins at the top of a new page. All the confirmations are "sent" by the same office, all the confirmations use the same format (By Booking Date, By Date Added, or By Date Changed) and all the confirmations use the same print options (Confirmation Title, Header Message, and so on); however, each confirmation can contain unique information for the buildings, statuses, and/or categories that are detailed in the confirmation. Because multiple confirmations are for multiple recipients, you cannot mass email these confirmations. Instead, you can only print them, and then manually mail them. You can specify the settings for multiple confirmations "from scratch," or you can copy an existing confirmation format, and edit it as needed.</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS menu bar, click&#160;<span class="ui">Reservations </span>&gt; <span class="ui">Other </span>&gt; <span class="ui">Confirmations</span>.&#160;The window opens on the <span class="ui">Date Range</span> tab.</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_OthResFun/Generating Printed Confirmations.png" alt="emsum_Other_image007.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>You can either draft a confirmation by completing the fields shown on this page (defined below), or on the&#160;Setup&#160;drop-down list at the, select a saved, or&#160;memorized, confirmation, which means that&#160;the only changes that you can make are to the dates and/or times on the <span class="ui">Date Range</span> tab.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p><span class="ui">Date Range Tab</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Department</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The department name that appears at the top the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Starting Date</p>
+                                <p>Ending Date</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The range of dates for which you are generating the confirmations.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Use Specific Times</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Available only if the Starting Date is the same as the Ending Date. If this option is selected, then two fields are displayed on the Date Range tab in which you must specify the time range. After you specify the time range, click Options &gt; Date/Time Filter, and then indicate how the confirmation is to be limited by bookings that start within the time range, or by bookings that occur within the time range.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Format</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The format/organization of the confirmation By Booking Date, By Date Added, or By Date Changed.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p><span class="ui">Buildings&#160;Tab</span> — Select the specific buildings that are to be included in the confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p><span class="ui">Categories&#160;Tab</span> — Select the specific booking details that are to be included in the confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p><span class="ui">Statuses Tab</span> — Select the specific statuses that are to be included in the confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td colspan="2" class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p><span class="ui">Options Tab</span> — Format settings for a printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Confirmation Title</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Appears bold and centered at the top of the confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Header Message</p>
+                                <p>Footer Message</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Pre-configured blocks of text that appear in the header and footer of the printed confirmation.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>Your EMS administrator configures these values. Contact your administrator if you need assistance with adding or editing a value.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Paper Size</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The size of the paper on which the confirmation is printed. Values are Letter, Legal, and A4.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Print Comments</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Include the comments for the reservation in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Print Reminders</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Include the reminders for the reservation in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Print Cancel Reasons</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Include the reasons for cancellation in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Print User Defined Fields</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Include user-defined fields and their values in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Print Room Phone</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Include the phone number for the room in which the event is being held in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Print Room Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Include any notes for the room in which the event is being held in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Print Building Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Include any notes about the building in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Print Billing Reference Allocation</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Include the billing reference numbers for the event as well as the percentage of charges that is allocated to each number in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Print PO Number Allocation</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Include the PO numbers for the event as well as the percentage of charges that is allocated to each number in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Print Category Subtotals</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Include the subtotal charges by category in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Print Room Type</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Include the room type for the event in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Print Item Selection Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Include the notes for each resource selection item for the event in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Suppress Reserved Time</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Do not show the reserved time for the event in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Suppress Location</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Do not show the location for the reservation in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Suppress Pricing</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Do not show the reservation's room charges or resource charges in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Suppress Logo</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Do no show your organization's logo in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Suppress Item Notes</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Do not show notes for any booking items in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Suppress Item Special Instructions</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Do not show special instructions for any booking items in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Suppress Item Selections</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Do not show any resource item selections in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Always Display Time Zone</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>Always show the time zone for the event in the printed confirmation.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Display Messages as HTML</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>If you have defined any HTML messages, then select this option to display the HTML version of these messages in the printed confirmation; otherwise, the message is displayed in plain text.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Limit Bookings to Those With Details in Selected Categories</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>Show only those bookings in the printed confirmation that contain details for the categories that are selected on the Categories tab.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If needed, you can always save&#160;or memorize, these settings.&#160;See Also:&#160;<a href="WorkwithSavedReports.html" title="Working with Saved Reports" alt="Working with Saved Reports">Work with Saved Reports</a>.</p>
+                </div>
+            </li>
+            <li>To print the confirmation, do one or both of the following:<ul start="3"><li><p>Click <span class="ui">Print Preview</span> to open an onscreen preview&#160;of the printed confirmation. A variety of options are available from this preview, including the options to export the confirmation to a .pdf and to print the confirmation.</p><p><img src="../../../Resources/Images/DTC_V44.1_OthResFun/Generating Printed Confirmations_2.png" alt="emsum_Other_image008.png" class="resize80_border_and_padding" /></p></li></ul><ul start="3"><li><p>To manually print the confirmations, edit the number of copies to print as needed in the Copies to Print field (the default value is 1), and then click <span class="ui">Print</span>.&#160;A Print dialog box opens in which you can specify information, such as the printer to use and the page range. Click <span class="ui">Print </span>in this dialog box to manually print the confirmations.</p></li></ul></li>
+        </ol>
+    </body>
+</html>

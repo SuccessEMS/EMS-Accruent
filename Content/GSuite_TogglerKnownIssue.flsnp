@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p><b>Known Issue for Update 32—</b><b>Clicking the G Suite Integration enable/disable button AFTER the first time the integration is enabled will break the integration.</b>
+            </p>
+            <p>After the first time the G Suite Integration is enabled, if you click the enable/disable toggle button again (EMS&#160;Platform Services Admin Portal &gt; <span class="ui">Calendaring</span> tab), the G Suite Integration will no longer work.</p>
+            <p>If your G Suite Integration is no longer functioning because the enable/disable button was clicked after the integration was initially enabled, complete these steps to repair the integration:</p>
+            <ol>
+                <li>
+                    <p>From the <span class="ui">Calendaring </span>tab of the EMS&#160;Platform Services Admin Portal, ensure the enable/disable toggle button is set to enabled. </p>
+                    <p>If the toggle button is currently set to disabled, toggle to enabled, and then refresh the page. </p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>The button is <i>enabled</i> when it is red and displays the words <span class="ui">Disable GSuite Integration</span>.<br />The button is <i>disabled</i> when it is green and displays the words <span class="ui">Enable GSuite Integration</span>.</p>
+                    </div>
+                </li>
+                <li>
+                    <p><a href="GoogleSuiteIntegration/Config.htm#UploadJSONFile">Re-upload the JSON file</a>.</p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p>Do not click the enable/disable toggle button after re-uploading the JSON&#160;file.</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Once the JSON file has been uploaded, restart the app pool used by EMS&#160;Platform Services. </p>
+                    <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                        <p><b>EMS&#160;Cloud Services Customers</b>– EMS&#160;Cloud Operations must restart the app pool for EMS&#160;Platform Services.  To request a restart, <a href="ContactUs.htm#Support">contact EMS&#160;Support</a>.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Web Deployment Troubleshooting V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Web Deployment Troubleshooting</h1>
+        <p class="NormalWeb_6">If you&#160;experience a delay&#160;on the "first click" of major functions within the EMS&#160;Desktop Client that's too long, there are a couple of solutions. One approach is to leave EMS running all day so that you only experience the first click delay once. Another approach, which is a bit more involved, is to&#160;run&#160;a function within .NET called NGen. This function&#160;pre-compiles .NET applications to make them load significantly faster and eliminate first-click delays.</p>
+        <h2 class="Heading2">Run NGen&#160;</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You must have installed EMS and you must have administrative privileges to perform the following steps.</p>
+        </div>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>While NGen eliminates the first click delay, EMS will not be adding&#160;it to our standard installation process; this is an optional workaround you take at your own risk.</p>
+        </div>
+        <ol start="1" class="ol_1">
+            <li class="li_5">
+                <p>Open a command prompt as an administrator as follows:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Press the Windows key.</p>
+                    </li>
+                    <li>
+                        <p>Type&#160;<span class="ui">cmd</span> in the search bar.</p>
+                    </li>
+                    <li>
+                        <p>Position&#160;the cursor over <span class="ui">Command Prompt</span> as shown in the screen shot below, right click, and select&#160;<span class="ui">Run as administrator</span>.</p>
+                        <p class="NormalWeb_7">
+                            <img src="../../../Resources/Images/DeployDesktopClient/Troubleshooting_1.png" alt="https://success.emssoftware.com/@api/deki/files/4009/clipboard_ef0e1e1260de8e736c706014ec9557dfe?revision=1&amp;size=bestfit&amp;width=340&amp;height=579" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li class="li_5">
+                <p>At the C:&gt; prompt, go to the directory where EMS is installed. </p>
+                <p>If you have conventionally installed EMS, then it's typically at the following location:</p>
+                <p class="indent_14"><code>cd \program files (x86)\EMS</code>
+                </p>
+                <p class="NormalWeb_9">However,&#160;if you're using the web deployment option to install EMS, then you should find EMS at the following location:</p>
+                <p class="indent_14"><code>cd %appdata%\EMS2016\EMS</code>
+                </p>
+            </li>
+            <li class="li_5">
+                <p>Press Enter and you should see one of the following (where [user name] is your Windows user name):</p>
+                <p class="indent_14"><code>C:\Program Files (x86)\EMS&gt;</code>
+                </p>
+                <p class="indent_14"><code>C:\Users\[user name]\AppData\Roaming\EMS2016\EMS&gt;</code>
+                </p>
+            </li>
+            <li class="li_5">
+                <p>Type the following:</p>
+                <p class="indent_14"><code>\windows\microsoft.net\framework64\v4.0.30319\ngen install ems.exe</code>
+                </p>
+            </li>
+            <li class="li_5">
+                <p>Press Enter and wait until the process finishes. </p>
+                <p>It will take about 5 minutes. Ignore any error messages.</p>
+            </li>
+            <li class="li_5">
+                <p>When the installation finishes, close the command prompt and run EMS.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you install a new or updated version of the Desktop Client, you have to run NGen again if you want to eliminate the first click delay.</p>
+        </div>
+    </body>
+</html>

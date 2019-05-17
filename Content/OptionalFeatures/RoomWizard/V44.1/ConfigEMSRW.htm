@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Configure the EMS RoomWizard Interface</h1>
+        <p>Establishing a connection between a RoomWizard unit and its associated room in an EMS database is comprised of multiple steps involving the EMS-RoomWizard Interface site and the RoomWizard Setup site.</p>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#Configuration_Overview">Configuration Overview</a>
+            </li>
+            <li><a href="#Configure_EMS_Database_Settings">Configure EMS Database Settings</a>
+            </li>
+            <li><a href="#Configure_EMS_Rooms">Configure EMS Rooms</a>
+            </li>
+        </ul>
+        <h2><a name="Configuration_Overview"></a>Configuration Overview</h2>
+        <p>After you have installed and registered the EMS-RoomWizard Interface site, you must create connections between your RoomWizard unit(s) and the EMS database(s) with which they will communicate.&#160;This also includes the process of setting various configuration options (e.g. statuses, reservation defaults, etc.) per&#160;EMS database.</p>
+        <p>Once a connection to an EMS database has been established/configured, specific EMS rooms containing a RoomWizard unit must be identified.&#160;A &#160;RoomWizard Room ID is generated for each specific room identified.&#160;This ID is required when configuring a room’s RoomWizard device to communicate to that room in the EMS database.</p>
+        <p>The final step is to configure RoomWizard itself via the RoomWizard Setup site.&#160;This includes providing a URL to the EMS-RoomWizard Interface, specifying the Room ID generated above, and configuring various Front Panel settings (e.g. display Host name, enable Start button, etc.).</p>
+        <h2><a name="Configure_EMS_Database_Settings"></a>Configure EMS Database Settings</h2>
+        <ol start="1" class="number-list">
+            <li>Open a browser, and launch the EMS-Room-Wizard Interface.</li>
+            <li>Click the&#160;<span class="ui">Configure EMS Databases</span>&#160;link.<p><img src="Images/RoomWizard/Configuring the EMS RoomWizard.png" class="resize80_noborder_padding" /></p></li>
+            <li>To add/configure a new EMS database, enter the database name in the&#160;<span class="ui">Add New EMS Database Name</span>&#160;field and click the&#160;<span class="ui">Validate&#160;</span>button.&#160;To edit settings for an EMS database that was previously added, select the database in the&#160;Select Existing EMS Database&#160;dropdown.</li>
+            <li>In the&#160;EMS Database Configuration&#160;section, configure the following:<ul start="1"><li><span class="ui">No-Show Status</span>&#160;– RoomWizard&#160;‘Start Now’&#160;function must be activated. If enabled, a user’s booking will be canceled (i.e. set to the status specified here) if the RoomWizard unit’s&#160;Start&#160;button has not been pushed within a configurable amount of time. See <a href="ConfigSteelcaseRW.htm#EMS_RoomWizard_Functionality_Overview">EMS – RoomWizard Functionality Overview</a>&#160;for more information.</li><li><span class="ui">Enable Support for ‘Start Early’ and ‘Start Now’ functions</span>&#160;– Only check this setting if you are using the RoomWizard Start Early and/or Start Now feature. See <a href="ConfigSteelcaseRW.htm#EMS_RoomWizard_Functionality_Overview">EMS – RoomWizard Functionality Overview</a>&#160;for more information.</li><li><span class="ui">Display Service Information as Notes</span>&#160;– If enabled, EMS service orders will display in the Notes area under the meeting Details section.</li><li><span class="ui">Display Meeting Host’s Phone and Email</span>&#160;– RoomWizard must be configured to display host information. See <a href="ConfigSteelcaseRW.htm#Configure_the_RoomWizard_Setup_Site_for_EMS_Synchronization">EMS – RoomWizard Functionality Overview</a>&#160;for more information.</li></ul></li>
+            <li>The&#160;New Reservation Defaults&#160;section requires the RoomWizard <span class="ui">‘Use Now’</span> function to be activated. See <a href="ConfigSteelcaseRW.htm#EMS_RoomWizard_Functionality_Overview">EMS – RoomWizard Functionality Overview</a>&#160;for more information.<ul start="1"><li><span class="ui">Group&#160;</span>– EMS Group (e.g. client, employee, etc.) used to book a new reservation in the EMS database. To search for a specific Group, you may enter a value in the&#160;Starts With&#160;field and click the&#160;<span class="ui">Search&#160;</span>button. For newer generation RoomWizard devices, if a user enters information into the First and Last Name fields on the RoomWizard device, a temporary contact will be created for the reservation under the Group specified in this section.</li><li><span class="ui">Status&#160;</span>– EMS Status used to book a new reservation.</li><li><span class="ui">Reservation Source</span>&#160;– EMS Reservation Source used to book a new reservation.</li><li><span class="ui">Event Name</span>&#160;– EMS Event Name used to book a new reservation. For newer generation RoomWizard devices, to pass-through the event name inputted on the device directly by the user, use the %1% variable.</li></ul></li>
+            <li>Click the&#160;<span class="ui">Update&#160;</span>button to save your settings.</li>
+        </ol>
+        <h2><a name="Configure_EMS_Rooms"></a>Configure EMS Rooms</h2>
+        <ol start="1" class="number-list">
+            <li>Click the&#160;<span class="ui">EMS Rooms</span>&#160;link. A list of previously added Rooms will appear.</li>
+            <li>To add an EMS Room, click the&#160;<span class="ui">Add Room&#160;</span>button.</li>
+            <li>Select the EMS&#160;<span class="ui">Database Name</span>.</li>
+            <li>Select the&#160;<span class="ui">Building&#160;</span>and&#160;<span class="ui">Room</span>.</li>
+            <li>Click the&#160;<span class="ui">Save Room&#160;Button</span>. A&#160;RoomWizard Room ID&#160;will be generated in the&#160;RoomWizard Room ID&#160;field.<p><img src="Images/RoomWizard/Configuring the EMS RoomWizard_1.png" class="resize80_noborder_padding" /></p></li>
+            <li>Repeat Step 4 and Step 5 to add more rooms.&#160;Click the&#160;<span class="ui">EMS Rooms&#160;</span>link when finished to view your list of rooms.</li>
+        </ol>
+    </body>
+</html>

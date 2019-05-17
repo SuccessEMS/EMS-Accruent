@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Upload, Configure, View Floor Plans V44.1 (EMS Floor Plans)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2017-11-04T15:09:56.4751722-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should this topic be in the config guide? Should there be a separate config guide?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-04T15:10:12.1870343-06:00">Upload</MadCap:annotation>, Configure, and View Floor Plans</h1>
+        <p class="beforelist">This topic provides information on the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#Best_Practices">Best Practices</a>
+            </li>
+            <li><a href="#Upload_and_Map_Floorplan_Indicators_and_Diagrams">Upload and Map Floor Plan Indicators and Diagrams to Rooms in EMS Desktop Client</a>
+            </li>
+            <li><a href="#Configure_Floor_Plan_Indicators">Configure Floor Plan Indicators</a>
+            </li>
+            <li><a href="#Configure_a_Floor_Plan_Diagram">Configure a Floor Plan Diagram</a>
+            </li>
+            <li><a href="#Map_a_Floor_Plan">Map&#160;a Floor Plan</a>
+            </li>
+            <li><a href="#Enable_Floorplans_to_Show_in_Your_EMS_Apps">Enable Floor Plans to Show in Your EMS Apps</a>
+                <ul>
+                    <li><a href="#Enable_Floorplans_to_Show_in_EMS_Web_App">Enable Floor Plans to Show in EMS Web App</a>
+                    </li>
+                    <li><a href="#Enable_Floorplans_to_Show_in_EMS_Kiosk">Enable Floor Plans to Show in&#160;EMS Kiosk</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="Best_Practices"></a>Best Practices</h2>
+        <p>Display settings and other environmental factors greatly affect the performance of EMS Floor Plans.&#160;</p>
+        <p>For an optimal floor plan experience, please adhere to the following&#160;best practices:</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Display Component</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Recommended Setting</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Monitor Resolution</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>1920 x 1080</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Monitor Size</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>13" or 23"</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Monitor Screen Ratio</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>16 : 9</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Indicator Size</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Medium (24 &#160;x 24 pixels)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Browser Zoom</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>100%</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Floor plan indicators do <span class="ui">not</span> scale when you zoom in and out of the floor plan.</p>
+        </div>
+        <p class="Caption">Floor Plan Image Max/Min Resolution and Aspect Ratio Recommendations</p>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Monitor Dimension</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Resolution</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Maximized Browser Size</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Browser Size: 75%</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Browser Size: 50%</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>13" Laptop Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>934 x 491</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>13" Laptop Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>1030 x 469</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>13" Laptop Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>871 x 495</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>13" Laptop Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>1244 x 298</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>934 x 491</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>1030 x 469</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>871 x 495</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>1244 x 298</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Potential overlapping&#160;Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>934 x 408</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="beforelist">Potential overlapping Indicators:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>745 x 439</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>23" HP HD Monitor</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>745 x 178</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="beforelist">Ideal Indicator&#160;Display:</p>
+                        <ul class="unorder-list">
+                            <li>Edge</li>
+                            <li>Chrome</li>
+                            <li>IE</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Upload_and_Map_Floorplan_Indicators_and_Diagrams"></a>Upload and Map Floor Plan Indicators and Diagrams to Rooms in EMS Desktop Client</h2>
+        <p>Using the Floor Plan Configuration Utility, map indicators to room locations on your floor plans.&#160;</p>
+        <p>This optional feature, enabled with an EMS Floor Plans license,&#160;allows users to view available rooms and book a space directly from a floor plan image in EMS Web App&#160;or EMS Kiosk.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept:&#160;Configuring floor plans in the Floor Plan module is a three step process. <MadCap:snippetText src="../../../../Click_to_Expand.flsnp" /></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol start="1" class="number-list">
+                    <li><span class="italics">Configure&#160;the&#160;floor plan indicators</span> (the images used indicate whether a room is available or unavailable for a floor plan). For example, you might use something as simple as a green square to indicate that a room on a floor is available and a red square to indicate that a room on a floor is unavailable.</li>
+                    <li><span class="italics">Configure&#160;a floor plan diagram</span>&#160;for each floor of each building for which a floor plan applies. A&#160;floor plan diagram&#160;is a drawing, or outline, usually to scale, that shows the relationships between rooms, spaces, and other physical features for one floor of a building.</li>
+                    <li><span class="italics">Map your floor plan indicators </span>to rooms on your diagrams using the Floor Plan Configuration utility.</li>
+                </ol>
+                <p>The availability of each reservable space ultimately determines the indicator (available or unavailable) that shows&#160;on a floor plan in EMS Web App or EMS Kiosk.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="Configure_Floor_Plan_Indicators"></a>Configure Floor Plan Indicators</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt;&#160;<span class="ui">Floor Plan Indicators</span>.&#160;The Floor Plan Indicators window opens, listing&#160;active&#160;indicator sets currently configured in your EMS database.<div class="TitleandImage"><p class="Caption">Floor Plan Indicators Window</p><p><img src="../Images/FloorPlan_Guide/Upload Configure and View_1.png" alt="emssg_corefacilities_image050.png" class="padding_only" /></p><p class="Caption">Recommended Display Settings</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>To see all indicator sets regardless of status, under Show, click&#160;<span class="ui">Inactive</span>.</p></div></li>
+            <li>Click&#160;<span class="ui">New</span>.&#160;The Floor Plan Indicator dialog box opens.<div class="TitleandImage"><p><img src="../Images/FloorPlan_Guide/Upload Configure and View_3.png" alt="emssg_corefacilities_image051.png" class="padding_only" /></p><p class="Caption">Floor Plan Indicator Dialog</p></div></li>
+            <li>In the Description field, enter a name or description for the new floor plan indicators (max 50 characters including spaces. You can name indicators something as simply as Indicator Set 1, or if you are using different indicators for different floor plans in different buildings, you could identify them by building, for example, Memorial Student Union indicators, Fifth Floor Conference Room indicators, and so on.</li>
+            <li>Next to the Image field, click&#160;<span class="ui">Search&#160;</span>to browse to and select an&#160;image to use for the&#160;<span class="italics">available&#160;</span>indicator.</li>
+            <li>Next to the Secondary Image field, click&#160;<span class="italics">Search&#160;</span>to browse to and select an&#160;image to use for the&#160;<span class="italics">unavailable&#160;</span>indicator.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The image must be in .png, .jpg, .jpeg, .jpe, .jfif, or .svg format.</p></div></li>
+            <li>Click&#160;<span class="ui">OK</span>. Your new&#160;floor plan indicators are added as active. Optionally, select Inactive to deactivate the set.</li>
+        </ol>
+        <h2><a name="Configure_a_Floor_Plan_Diagram"></a>Configure a Floor Plan Diagram</h2>
+        <p>You must configure one floor plan diagram for each floor that will&#160;be available for booking in EMS Web App&#160;and the EMS Kiosk.</p>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt;&#160;<span class="ui">Floor Plan Diagrams</span>.&#160;A blank Floor Plan Diagrams window opens.<div class="TitleandImage"><p><img src="../Images/FloorPlan_Guide/Upload Configure and View_5.png" alt="emssg_corefacilities_image053.png" class="padding_only" /></p><p class="Caption">Floor Plan Diagrams Window</p></div></li>
+            <li>Optionally, in the Building dropdown list, select (all), or select a specific building to see a list of floor plans for all buildings or for the selected building in the window.</li>
+            <li>Click&#160;<span class="ui">New</span>.&#160;The Floor Plan Diagram dialog box opens on&#160;<span class="ui">Floor Plan Diagram</span> tab.<div class="TitleandImage"><p><img src="../Images/FloorPlan_Guide/Upload Configure and View_6.png" alt="emssg_corefacilities_image054.png" class="resize80_noborder_padding" /></p><p class="Caption">Floor Plan Diagram Tab in the Floor Plan Diagram Dialog</p></div></li>
+            <li>In the Description field, enter a name or description for the new floor plan diagram (maximum of 50 characters, including spaces).</li>
+            <li>On the Building dropdown list, select the building for which you are configuring the floor plan diagram.</li>
+            <li>Next to the Image field,&#160;<span class="ui">Search&#160;</span>to browse and select the image to use for the floor plan diagram.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Image files must be&#160;.png, .jpg, .jpeg, .jpe, .jfif, or .svg. Optimal image size is 1024 x 768.</p></div></li>
+            <li>Open the <span class="ui">Floor Plan Indicators</span> tab, and on the Available list, select the floor plan indicator (CTRL-click to select multiple floor plan indicators) you want to use&#160;for this diagram, and then Move (&gt;) to the Selected list.</li>
+            <li>Click&#160;<span class="ui">OK</span>.&#160;The Floor Plan Diagram dialog box closes and you return to the Floor Plan Diagrams window with the newly configured floor plan diagram automatically selected.</li>
+        </ol>
+        <h2><a name="Map_a_Floor_Plan"></a>Map&#160;a Floor Plan</h2>
+        <ol start="1" class="number-list">
+            <li>Log in to the Floor Plan Configuration module. Te Configure Rooms option shows&#160;above&#160;the Login fields on the main window.<p><img src="../Images/FloorPlan_Guide/Upload Configure and View_7.png" alt="emssg_corefacilities_image055.png" class="resize80_border_and_padding" /></p><p class="Caption">Floor Plan Configuration Module, Main Window with Configure Rooms Option</p></li>
+            <li>Click&#160;<span class="ui">Configure Rooms</span>.&#160;The Configure Rooms page opens.<div class="TitleandImage"><p><img src="../Images/FloorPlan_Guide/Upload Configure and View_8.png" alt="emssg_corefacilities_image056.png" class="resize80_border_and_padding" /></p><p class="Caption">Floor Plan Configuration Module, Configure Rooms Page</p></div></li>
+            <li>On the Floor Plan dropdown list, select a floor plan diagram.&#160;The available indicators that are associated with the floor plan diagram are displayed below the selected diagram.</li>
+            <li>Drag an available indicator and place it as needed to indicate where a room (reservable space) is located on the floor.</li>
+            <li>Repeat&#160;Step 4&#160;until you have identified all the reservable spaces on the floor.</li>
+            <li>For each indicator, do the following:<ul start="1"><li>Click on the indicator to open a Room Details dialog box.</li><li>On the Rooms dropdown list, select the room for the indicator, and then click&#160;<span class="ui">Save</span>.</li></ul><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Once an indicator is dropped on the floor plan, users will be prompted to filter by room type and floor. To ensure a room is assigned to an indicator, users must select a room. Click <span class="ui">Save</span>. Only indicators assigned to a room will display in the EMS&#160;Web App or EMS&#160;Kiosk App.</p></div></li>
+            <li>Close the Floor Plan Configuration module.</li>
+        </ol>
+        <h2><a name="Enable_Floorplans_to_Show_in_Your_EMS_Apps"></a>Enable Floor Plans to Show in Your EMS Apps</h2>
+        <p>Once your floor plans have been configured, you can then enable them to display to users in the web apps your organization has licensed.</p>
+        <h3><a name="Enable_Floorplans_to_Show_in_EMS_Web_App"></a>Enable Floor Plans to Show in EMS Web App</h3>
+        <ol start="1" class="number-list">
+            <li>Go to&#160;<span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt; <span class="ui">Parameters </span>&gt;&#160;<span class="ui">Everyday User Applications</span>&#160;tab&#160;and locate the parameter, <span class="italics">"Floor Plan Web Service URL"</span>.&#160;</li>
+            <li>Enter the URL of your Floor Plan Web Service (see&#160;<a href="InstallUpgradeFPWebService.htm">Install  Floor Plan Web Service</a> for more information).</li>
+            <li>Check that the&#160;<span class="ui">View Floor Map</span>&#160;Web Security Template Role is granted (within&#160;<span class="ui">Configuration </span>&gt; <span class="ui">Web </span>&gt;&#160;<span class="ui">Web Security Template</span>).</li>
+        </ol>
+        <h3><a name="Enable_Floorplans_to_Show_in_EMS_Kiosk"></a>Enable Floor Plans to Show in&#160;EMS Kiosk</h3>
+        <ol class="number-list">
+            <li>Go to&#160;<span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt; <span class="ui">Parameters </span>&gt;&#160;<span class="ui">Kiosk&#160;</span>tab&#160;and locate the parameter, <span class="italics">"Floor Plans – Floor Plan Web Service URL"</span>.&#160;</li>
+            <li>Enter the URL of your Floor Plan Web Service (see&#160;<a href="InstallUpgradeFPWebService.htm">Install  Floor Plan Web Service</a> for more information).</li>
+        </ol>
+    </body>
+</html>

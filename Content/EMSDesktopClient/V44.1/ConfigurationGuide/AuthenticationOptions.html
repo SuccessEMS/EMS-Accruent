@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Authentication Options V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Authentication Options for EMS Desktop Client</h1>
+        <p class="beforelist">Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p>
+        <ol>
+            <li><span class="ui">Login Credentials:</span> This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</li>
+            <li><span class="ui">Enabled by:</span> This is either a parameter or checkbox that needs to be enabled for the authentication to work.</li>
+            <li><span class="ui">Configuration Page:</span> This is where configuration and options are set for the authentication.</li>
+        </ol>
+        <h2>Integrated Windows Authentication</h2>
+        <ul type="disc">
+            <li><span class="ui">Login Credentials:</span> Network ID field in desktop user account settings (Make sure to include domain, example: "ems\username").</li>
+            <li><span class="ui">Enabled by:</span> Always enabled unless LDAP is turned on.</li>
+            <li><span class="ui">Configuration Page: </span>None.</li>
+        </ul>
+        <h2>LDAP</h2>
+        <ul type="disc">
+            <li><span class="ui">Login Credentials:</span> Network ID field in desktop user account settings (external reference doesn't work).</li>
+            <li><span class="ui">Enabled by: </span>"Use Integrated Authentication Only" EMS parameter set to <span class="ui">Yes</span>.</li>
+            <li><span class="ui">Configuration Page:</span> The EMS&#160;Desktop Client pulls from the EMS&#160;Web App LDAP setup (apconfiguration.aspx page).There are multiple tabs.&#160;</li>
+            <li><span class="ui">Other Notes:</span> An EMS LDAP License is required for this to work. Client machines must have access to the directory server for this to work.</li>
+        </ul>
+    </body>
+</html>

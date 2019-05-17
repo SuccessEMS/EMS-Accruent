@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configuring Building Hours V44.1 (EMS Desktop Client) </title>
+    </head>
+    <body>
+        <h1>Configure Building Hours</h1>
+        <p class="Body">By configuring building hours, you can set times when buildings and rooms therein are not available for scheduling.&#160;</p>
+        <p>In the <MadCap:variable name="General.EMS&#160;Desktop Client" />, configured building hours do not prevent a user from scheduling events outside these hours. A user is merely warned that the event is being scheduled outside normal operating hours. In <MadCap:variable name="General.EMS&#160;Web App" />, users cannot schedule events outside the configured building hours. Setup and teardown hours must also fall within the configured building hours for an event that is scheduled in <MadCap:variable name="General.EMS&#160;Web App" />.</p>
+        <p>By default, when you configure&#160;a building, the building hours are set to Open All Day, which means that the building is open 24 hours a day, 7 days a week, 365 days a year. If needed, you can configure the hours for a building so that a building is open only for a specified time period on a particular date or for a given date range. You can also configure the hours so that a building is closed all day. You can configure&#160;the hours for a building for a single date, or you can configure&#160;the hours for multiple dates in a single step.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can configure the same hours for multiple buildings using the <a href="BuildHourWiz.htm">Building Hours Wizard</a>.</p>
+        </div>
+        <ol class="number-list">
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> menu bar, click Configuration &gt; Facilities &gt; <strong>Building Hours</strong>.&#160;The Building Hours window opens. This window lists buildings that are configured in your <MadCap:variable name="General.Product" /> database.<div class="TitleandImage"><p><img border="0" src="Images/DC_CG_ConfigBuildHours_1.png" class="padding_only" /></p><p class="Caption">Building Hours Window</p></div></li>
+            <li>In the <span class="ui">Date </span>field, leave the default value of the current day’s date, or select a different date.</li>
+            <li>Select the building, or CTRL-click to select the multiple buildings for which you are changing the hours, and then click <span class="ui">Change</span>. The Building Hours dialog box opens.<div class="TitleandImage"><p><img border="0" src="Images/DC_CG_ConfigBuildHours_2.png" class="padding_only" /></p><p class="Caption">Building Hours Dialog</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If you select multiple buildings, then the Building Hours dialog box reflects the hours for the building that is last in the list of selected buildings. You can set the same building hours for multiple buildings simultaneously using the Building Hours Wizard.</p></div></li>
+            <li>Set the new hours for the buildings as appropriate.</li>
+        </ol>
+        <table border="0" cellspacing="12" class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');">
+            <col style="width: 101px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p scope="col">Option</p>
+                    </th>
+                    <th scope="col" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Set Building Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Select this option to specify the time period (Open and Close) during which the building is to remain open for the date. Your <MadCap:variable name="General.EMS&#160;Desktop Client" /> users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p><MadCap:variable name="General.EMS&#160;Web App" /> users cannot make reservations outside of building hours.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Closed All Day</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="beforelist">Select this option to close the building for the entire day. When you select this option, then a Web Only option is displayed on the Building Hours dialog box.</p>
+                        <ul>
+                            <li>If you do <em>not</em> select Web Only, then none of your users (<MadCap:variable name="General.EMS&#160;Desktop Client" /> or <MadCap:variable name="General.EMS&#160;Web App" />) can make reservations on this date in the selected buildings.</li>
+                            <li>If you do you select Web Only, then your <MadCap:variable name="General.EMS&#160;Desktop Client" /> users can make reservations on this date in the selected buildings; however, your <MadCap:variable name="General.EMS&#160;Web App" /> users cannot.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Open All Day</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>The default value. Leave this option selected to have the building remain open for the entire holiday.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Click <span class="ui">OK </span>to&#160;return to the Building Hours window.</li>
+        </ol>
+    </body>
+</html>

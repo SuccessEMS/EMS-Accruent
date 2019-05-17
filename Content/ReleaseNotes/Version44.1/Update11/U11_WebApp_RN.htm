@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>&#160;</head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Web App Release Notes V44.1 Update 11</h1>
+        <p>See Also:&#160;<a href="U11_WebApp_KnownIssues.htm">EMS Web App Known Issues</a></p>
+        <p><a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a></p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 200px;" />
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>V44.1 Update 11</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Release&#160;Date:&#160;<br />May 12, 2017</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Build #:&#160;<br />44.1.11000.267</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Database (SQL) Patch:&#160;&#160;<br />201705091</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Exchange Integration Service:&#160;<br />44.1.11000.92</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2">Enhancements&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Floor Maps</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Enable Floor Maps Display for Video Conferences</p>
+                        <p class="RNBody">Enabled the display of Floor Maps images on the Search for Rooms page for video conferences.&#160;&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/29296" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">29296</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Browse Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Limit Number of Events Displayed in Browse Events Daily View</p>
+                        <p class="RNBody">Modified logic to ensure performance. This view is now automatically limited to 50 items when the customer has not set a value in the&#160;&#160;"Maximum Number of Events/Day to Display in Daily View" parameter. Otherwise, observe&#160;the customer setting up to 250 items.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/29895?fullScreen=false" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">29895</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2">Fixes&#160;&#160;</h2>
+        <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Authentication</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">New Users Not Automatically Logged in After&#160;Portal Authentication&#160;</p>
+                        <p class="RNBody">When parameter settings enabled users to authenticate (using a portal server)&#160;and automatically create a new account by answering User Defined Fields, they were not automatically logged in for the session and had to authenticate a second time.&#160;&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified how user account status is updated so that once users have entered valid information in User Defined fields, their account status becomes Active and they no longer need to authenticate for the active session.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/24785" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">24785</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Browse Events</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Parameter Missing to Limit Number of Events in Daily View</p>
+                        <p class="RNBody">The Daily View of the Browse Events page could display an unlimited number of events, which could cause performance issues. This was due to a parameter for V44, VEMS, which&#160;had been removed.&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Added the parameter to the EMS Web App parameters area, "Maximum Number of Events/Day to Display in Daily View," with the default set to limit the display to 50 items unless the customer has other settings in place from previous VEMS releases, in which case the former&#160;setting will be respected up to 250 items (to preserve performance).&#160;</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/29895" title="EMS Internal Use Only" alt="EMS Internal Use Only" class="RNRefHyper">29895</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Request Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Guest Users Able to Add Excluded Resources</p>
+                        <p class="RNBody">When unauthenticated users requested a room, they were able to add resources that had been defined as excluded for the room.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that excluded resources are unavailable for selection for unauthenticated users.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/29077?fullScreen=false" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">29077</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="3" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Keyword Search Results Incomplete In&#160;"I Know What Room I Want" Dialog</p>
+                        <p class="RNBody">When users searched for a room by partial name, search results were incomplete.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that partial keyword searches show all matching results (within the parameters settings for the number of rooms to display and the user's permissions to request or reserve).</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/27203" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">27203</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Hard Returns Fail in Special Instructions Field</p>
+                        <p class="RNBody">When users entered Special Instructions for services under a reservation, typing&#160;a hard return in the text field did not start a new line.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that hard returns result in a new line in this field as expected.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/28606" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">28606</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Setup Type Filter Not Enforced in List View</p>
+                        <p class="RNBody">When guest or authenticated users searched for rooms by clicking the Let Me Search for a Room button, and&#160;a booking template or global settings were in force to filter the search by setup type, the filter was not enforced for the List view.&#160;&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to ensure that the setup type filter is enforced as expected in the Room search results, list view.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02.dea.com:8080/tfs/EMS Suite/Ems/_workitems/edit/27406?fullScreen=false" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">27406</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Edit Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Viewing Booking Details Caused Internal Server Error</p>
+                        <p class="RNBody">When users opened booking details for meetings, and multiple parameters and security settings configured booking details to show "Meeting Contact"&#160;(both Desktop Client and All Applications parameters had the Event Coordinator Title and the Group Title Singular labels set to the same Meeting Contact&#160;as the active Security template), an internal server error occurred.&#160;&#160;&#160;</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that these settings no longer cause the error and booking details display as expected.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/28006" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">28006</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Edit Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Time Zone Not Adjusted Correctly For Recurrent Meeting When Changing Buildings</p>
+                        <p class="RNBody">When users changed a building for a recurrent meeting and the building was in a different time zone, time zone adjustments incorrectly used the time zone of the original building.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality to adjust meeting times using the timezone for the newly selected location.</p>
+                        <p class="RNRef">Internal Reference # <a href="http://tfs02:8080/tfs/EMS Suite/Ems/_workitems/edit/28530" class="RNRefHyper" title="EMS Internal Use Only" alt="EMS Internal Use Only">28530</a><br />(EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

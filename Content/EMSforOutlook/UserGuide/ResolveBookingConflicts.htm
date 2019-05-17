@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Resolve Booking Conflicts</h1>
+        <p>This topic provides information on the following:&#160;</p>
+        <ul class="unorder-list">
+            <li><a href="#series_reservation">Resolve Booking Conflicts for a Series Reservation</a>
+            </li>
+            <li><a href="#receive_a_warning_email">Resolve Booking Conflicts When You Receive a Warning Email</a>
+            </li>
+        </ul>
+        <h2>Resolve Booking Conflicts for a <a name="series_reservation"></a>Series Reservation</h2>
+        <p>When booking a recurring&#160;meeting, you might encounter&#160;a booking conflict. To resolve this conflict:</p>
+        <ol class="number-list">
+            <li>Create your <a href="CreateSeriesRes.htm">recurring reservation</a>.</li>
+            <li>Click the <span class="ui">EMS Room Manager</span> icon to choose your room. The List View will display with a list of all available rooms that match your meeting criteria.</li>
+            <li>Choose a room by clicking the&#160;<span class="ui">Add&#160;</span>(<span class="ui">+</span>) button next to the Location.</li>
+            <li>
+                <p>To avoid booking conflicts, choose a room that is available for the entire span of your recurring meeting (as displayed in the&#160;<span class="ui">Days Available</span>&#160;column).</p>
+                <div class="TitleandImage">
+                    <p class="Caption">
+                        <img src="../../Resources/Images/Using EMS for Outlook/Resolve Booking Conflicts.png" alt="EMSforOutlook_ResolveBookingConflict_ListView.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Days Available Column Indicates Potential Conflicts</p>
+                </div>
+            </li>
+            <li>If you choose a room that is not available for the entire time span of your recurrence,&#160;a booking conflict has been created. The Conflict Resolution dialog box will open.</li>
+            <li>
+                <p>From the Conflict Resolution dialog box, choose a room for the remaining occurrences that do not yet have locations by clicking the&#160;<span class="ui">Add&#160;</span>(<span class="ui">+</span>) button.</p>
+                <div class="TitleandImage">
+                    <p class="Caption">
+                        <img src="../../Resources/Images/Using EMS for Outlook/Resolve Booking Conflicts_1.png" alt="EMSforOutlook_ResolveBookingConflict_ConflictResolutionBox.png" class="popup_with_padding_only" />
+                    </p>
+                    <p class="Caption">Conflict Resolution Dialog Box</p>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>You can click the&#160;<span class="ui">skip it</span>&#160;link at the top of the Conflict Resolution dialog box to bypass this resolution. However, you will not have space reserved for the booking, and it will not appear on your calendar. EMS Software recommends that you define an "Outlook TBD"&#160;room for each building in your database. This will ensure skipped bookings remain in the correct timezone and will allow for localized notifications and reports to be created around meetings without locations. </p>
+                    <p><b>See Also:</b>&#160;<a href="../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigRooms.html#ConfigureOutlookTBDRooms">Configure Outlook TBD&#160;Rooms</a>. </p>
+                </div>
+            </li>
+            <li>Choose an alternate room. The conflict has been resolved and will be reflected on your calendar.&#160;</li>
+        </ol>
+        <h2>Resolve Booking Conflicts When You <a name="receive_a_warning_email"></a>Receive a Warning Email</h2>
+        <p>As the meeting scheduler, you might receive a booking error message (e.g., "One or more of your rooms were not available and are in conflict. Refer to your email for next steps.") and an email that indicates the bookings that are in conflict&#160;for the reservation. This email will alert you that "The following rooms could not be reserved because they are unavailable. You must reserve a new room for each time slot shown below."</p>
+        <ol class="number-list">
+            <li>Open your Outlook calendar and click on the <span class="ui">EMS Room Manager</span>.</li>
+            <li class="ListParagraph">Navigate to&#160;the date of the scheduled event&#160;and&#160;double-click the event for which a booking is in conflict.&#160;</li>
+            <li>If the event is recurring, an <span class="italics">Open Recurring Item</span> message opens. The message indicates that the event is recurring and asks you if want to open only this occurrence of the event, or the series.</li>
+            <li>Leave&#160;<span class="ui">Open this occurrence</span>&#160;selected, and then click&#160;<span class="ui">OK</span>.&#160;</li>
+            <li>Click <span class="ui">the&#160;EMS Outlook Manager</span>&#160;icon in the Outlook toolbar.&#160;The EMS for Outlook add-in opens the&#160;<span class="ui">Selected Rooms</span>&#160;tab to show you the booking conflicts.</li>
+        </ol>
+    </body>
+</html>

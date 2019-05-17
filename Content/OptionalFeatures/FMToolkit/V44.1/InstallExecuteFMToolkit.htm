@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install and Execute the Facility Management Toolkit</h1>
+        <h2>Installation</h2>
+        <p>The followings steps should be performed on the MS SQL Server that hosts your EMS database.</p>
+        <ol class="number-list">
+            <li>Obtain the SQL files outlined in the&#160;<a href="ObtainInstallFiles.htm">Obtain the Installation Files</a>&#160;section.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;<span class="ui">FMTK Staging DB Install.sql</span>&#160;script against your&#160;<span class="ui">master&#160;</span>database.&#160;This will create the&#160;<span class="italics">EMS_Staging&#160;database</span> containing one table named&#160;<span class="italics">tblRoom</span>.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute <span class="ui">the&#160;FMTK Update Script.sql&#160;</span>script against your&#160;<span class="ui">EMS&#160;</span>database.&#160;This will create a stored procedure in your EMS database named&#160;<span class="italics">FMTK_Update_Room</span>.&#160;</li>
+        </ol>
+        <h2>Execution</h2>
+        <ol class="number-list">
+            <li>Import records from your organization’s facility management system into the&#160;<span class="italics">tblRoom&#160;</span>table within the&#160;<span class="italics">EMS_Staging</span>&#160;database.<div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;"><p>Existing EMS clients wanting to implement the FM Toolkit must “synchronize” existing EMS rooms before activating the toolkit by adding a valid&#160;<span class="italics">ExternalReference&#160;</span>value in&#160;<span class="italics">tblRoom</span>.&#160;<span class="ui">Ignoring this step will result in duplicate records.&#160;</span></p></div></li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;<span class="ui">FMTK_Update_Room</span>&#160;stored procedure.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Step 2 (and Step 1 with assistance from your IT Department) can be scheduled to execute automatically using a SQL Job.&#160;Please refer to your MS SQL Server documentation for more information on creating and scheduling a SQL Job.</p></div></li>
+        </ol>
+    </body>
+</html>

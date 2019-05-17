@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install the EMS – Cisco TMS Service</h1>
+        <p>This topic provides information about the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#Pre-Installation_Requirements">Pre-Installation Requirements</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Install_or_Upgrade_the_EMS_–_Cisco_TMS_Service">Install or Upgrade the EMS – Cisco TMS Service</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Configure_the_EMS_–_Cisco_TMS_Service">Configure the EMS – Cisco TMS Service</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Pre-Installation_Requirements"></a>Pre-Installation Requirements</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Existing versions of the EMS – Cisco TMS Service must be manually uninstalled.</p>
+        </div>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Install the EMS – Cisco TMS Service on&#160;<span class="ui">one computer/server only</span>.</p>
+        </div>
+        <h2><a name="Install_or_Upgrade_the_EMS_–_Cisco_TMS_Service"></a>Install or Upgrade the EMS – Cisco TMS Service</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Manually uninstall any existing versions of the EMS – Cisco TMS Service.</p>
+            </li>
+            <li>
+                <p>Download the&#160;<span class="ui">CiscoTMSServiceSetup.msi</span>&#160;file onto the server that will be running the service.&#160; This can be your existing EMS database server or web server.</p>
+            </li>
+            <li>
+                <p>Run&#160;<span class="ui">CiscoTMSServiceSetup.msi</span>.</p>
+            </li>
+            <li>
+                <p>The first screen welcomes you to the EMS Cisco TMS Service Setup Wizard.&#160;Click&#160;<span class="ui">Next&#160;</span>to begin the installation process.&#160;The&#160;Select Installation Folder&#160;screen will appear.</p>
+                <p>
+                    <img src="../../../Resources/Images/CISCO_Guide/Installing the EMS Cisco TMS.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Select the installation Folder and context (Everyone or Just Me).&#160;It is recommended that you keep the default settings.&#160;Click&#160;<span class="ui">Next</span>.</p>
+            </li>
+            <li>
+                <p>The&#160;Confirm Installation&#160;screen will appear. Click&#160;<span class="ui">Next</span>.&#160;</p>
+            </li>
+            <li>
+                <p>The&#160;Installation Complete&#160;screen appears.&#160;Click&#160;<span class="ui">Close</span>.&#160;</p>
+            </li>
+        </ol>
+        <h2><a name="Configure_the_EMS_–_Cisco_TMS_Service"></a>Configure the EMS – Cisco TMS Service</h2>
+        <ol start="1" class="number-list">
+            <li>
+                <p>Within the Windows&#160;Start&#160;menu, locate&#160;<span class="ui">EMS Cisco TMS Settings</span>.&#160;The&#160;EMS Cisco TMS Settings&#160;screen will appear.</p>
+                <p>
+                    <img src="../../../Resources/Images/CISCO_Guide/Installing the EMS Cisco TMS_1.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Enter your EMS MS SQL&#160;Server&#160;name.</p>
+            </li>
+            <li>
+                <p>Enter your EMS&#160;Database&#160;name.</p>
+            </li>
+            <li>
+                <p>Specify the service execution&#160;Interval.</p>
+            </li>
+            <li>
+                <p>Specify the&#160;Authentication&#160;mode (EMS or Windows).</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">OK</span>.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For more information regarding EMS – Cisco TMS Interface settings, see <a href="Cisco_ConfigCiscoTMSinterface.htm">Configure the EMS - Cisco TMS Interface</a>.</p>
+        </div>
+    </body>
+</html>

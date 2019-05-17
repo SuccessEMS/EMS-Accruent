@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Specify Room Preferences/Requirements V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Specify Room Preferences/Requirements</h1>
+        <p><span class="ui" style="font-weight: normal; font-style: italic;">Set Preferences</span> is an optional mode in which the Domain Scheduler can solicit preferences from academic units about the type of rooms that would be suitable for each course that they teach. These preferences can then be used to run an optimization, or to have EMS automate room scheduling based on preferences and additional user-specified criteria. To enable and use Set Preferences Mode, the following steps are carried out:</p>
+        <ol class="number-list">
+            <li>The Domain Scheduler enables Set Preferences mode. See <a href="EnableDisableTermSetPrefMode.htm">Enable/Disable a Term for Set Preferences Mode</a>.</li>
+            <li>The academic units review courses and specify their room preferences and requirements using the EMS Campus Planning Interface (typical) or the EMS Campus desktop client (if granted access). </li>
+            <li>The Domain Scheduler verifies and reviews the room preferences and requirements that the academic units have specified. See <a href="ReviewVerifyRoomPref.htm">Review and Verify Room Preferences</a>.</li>
+        </ol>
+        <p>After you place the term in Set Preferences mode, three options that can be used in conjunction with each other are available for completing the preferences and requirements phase. In addition, you can complete the phase independently, or you can solicit input from the academic units.</p>
+        <p>This topic will provide information that will allow you to:</p>
+        <ul class="unorder-list">
+            <li><a href="#UseManageTerms">Use the Manage Terms Copy Preferences Tool</a>—You can&#160;use the Manage Terms Copy Preferences tool to copy the preferences and requirements from a previous term.</li>
+            <li><a href="#UseAcademicBrowser">Use the Academic Browser Set Course Preferences Tool</a>—You can use the Academic Browser Set Course Preferences tool to set preferences and requirements for multiple courses in a single step. </li>
+            <li><a href="#UseCourseNav">Use the Course Navigator to Set Preferences and Requirements</a>—You can&#160;use&#160;the&#160;use the Course Navigator to set preferences and requirements on a course by course basis.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If a course must take place in a specific room that you plan to exclude from optimization, you can pre-assign it to a specific room. This process is outlined during the Scenario phase. See&#160;<a href="CreateScenarios.htm">Create Scenarios</a>.</p>
+        </div>
+        <p>For any of these methods, the following caveats apply:</p>
+        <ul class="unorder-list">
+            <li>An academic unit-level user can&#160;request&#160;any building, area, or view and up to three rooms that have been defined for the domain with which it is associated.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If needed, you can set the Lock Academic Unit Room Access system parameter to limit the users to their specific academic units. See <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/SystemParam.htm">System Parameters</a> in the EMS Desktop Client Configuration Guide.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>An academic unit can&#160;require&#160;only those buildings and rooms that have been assigned to its unit within the Academic Planning &gt; Configuration &gt; Academic Units area of EMS Academic Planning. If the academic units specify requirements, then only a single room can be specified.</li>
+            <li>Room types can be requested or required for all courses. By default the “limit by course type” selection is designated, but you can change it to honor a specific room type.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Configuration of the Course Types/RoomTypes matches is carried out in the Academic Planning &gt; Configuration &gt; Match Course Types/Room Types area of EMS Academic Planning. See the <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/2_EMS_Desktop_Client_CG.htm">EMS Desktop Client Configuration Guide</a> for detailed information.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>You can set features to <span class="ui">Preferred </span>or <span class="ui">Required</span>. The # of Rooms Available label that is displayed above the Features pane is dynamically updated based on the building, room type, and features selected.</li>
+            <li>The Seat Fill Percentage, in conjunction with the estimated enrollment, is used to determine the size of the room needed for the class. For example, a Seat Fill Percentage of 50% and an estimated enrollment of 100 means that the course should be held in a room that can accommodate 200 people.</li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The Seat Fill Percentage is initially set to the default value that is specified in EMS (Campus) system parameters, but you can update the value on a per course date basis. See the <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/2_EMS_Desktop_Client_CG.htm">EMS Desktop Client Configuration Guide</a>.</p>
+        </div>
+        <ul class="unorder-list">
+            <li>Ignore Term Excluded Dates schedules bookings on all dates that adhere to the meeting pattern, regardless of the Excluded Dates that are marked on the term when the course dates are published.</li>
+            <li>Publish In SIS Room (No Optimization) allows the course dates to avoid the optimization process. Bookings are published in the room that was carried over from the SIS.</li>
+            <li>Require SIS Room flags buildings/rooms that come across from the SIS as Required. Courses with requirements still go through the optimization process.</li>
+            <li>Requires Different Room (For Courses That Share Space) identifies a meeting pattern that should be in its own room despite the cross-listed or shared space status. You can set preferences for this room.</li>
+            <li>Same Room (ALL Selected Course Dates are to be in the same Room) flags courses that should be in the same room but at different times when optimized.</li>
+        </ul>
+        <h2><a name="UseManageTerms"></a>Use the Manage Terms Copy Preferences Tool</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Courses </span>&gt; <span class="ui">Manage Terms</span>.&#160;The Terms window opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11.png" alt="emsum_EMSCampus_image028.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="2" class="number-list">
+            <li>Click <span class="ui">Copy Pref</span><b>s</b>.&#160;The Copy Preferences dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_1.png" alt="emsum_EMSCampus_image029.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>In the Copy Preferences From pane, select the domain and term&#160;from&#160;which you want to copy room preferences and requirements.</li>
+            <li>In the Copy Preferences To pane, do the following:<ul start="3"><li>Select the domain and term&#160;to&#160;which you want to copy your room preferences and requirements.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>A term can be displayed in the To pane only if it is in Set Preferences mode.</p></div></li><li>Indicate if the preferences are to be copied only if the instructors match.</li></ul></li>
+            <li>Click <span class="ui">OK</span>.&#160;A message opens, informing you that copying preferences will overwrite any existing preferences, and asking you if it is OK to continue.</li>
+            <li>Click <span class="ui">Yes</span>.&#160;The message closes. After the preferences are copied, you return to the Terms window.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Preferences are copied based on the Course Section (Math 101 01) and Course Type information (lecture or lab). If you have added new sections or changed course type designations on course dates within a section, then even after you complete this procedure, some courses still will not have preferences. Be sure to review your list of courses and set preferences where applicable.</p>
+        </div>
+        <h2><a name="UseAcademicBrowser"></a>Use the Academic Browser Set Course Preferences Tool</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Courses </span>&gt; <span class="ui">Academic Browser</span>.&#160;The Academic Browser opens.</li>
+            <li>If needed, open the Filter tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_2.png" alt="emsum_EMSCampus_image030.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>On the Domain dropdown list, select the appropriate domain and on the Term dropdown list, select the appropriate term.</li>
+            <li>Set any other criteria (academic unit, subject and so on) as needed to provide assistance in locating the courses for which you want to set preferences and requirements, and then click <span class="ui">Get Data</span>.&#160;The courses that meet your search criteria are displayed on the Results tab.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For detailed information about searching with the Academic Browser, see&#160;<a href="SearchwithAcadBrowser.htm">Searching with the Academic Browser</a>.</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>CTRL-click to select the courses for which you are setting the room preferences and requirements.</li>
+            <li>On the Tools menu, click <span class="ui">Set Course Preferences</span>.&#160;The Set Course Preferences dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_3.png" alt="emsum_EMSCampus_image031.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="7" class="number-list">
+            <li>Indicate whether the preferences that you set are to override any existing preferences, or whether they are to be added to existing preferences.</li>
+            <li>Set your preferences for the selected courses. </li>
+            <li>Optionally, do one or both of the following:<ul start="7"><li>In the Notes field, enter any pertinent or supporting information that substantiates or explains your preferences.</li><li>By default, the preferences/requirements that you specify are applied to all course dates for all selected courses. If the preferences/requirements are applicable for only specific course dates, open the Selected Course Dates tab, select the course dates for which these preferences/requirements are&#160;not&#160;applicable and then click Remove.</li></ul></li>
+            <li>Click OK.&#160;Two results are possible:<ul start="7"><li>If any of the selected courses are cross-listed and/or share space, and you did not select the corresponding cross-listed/shared space courses, then a Related Course Dates dialog box opens. This dialog box lists all the related courses that have not been selected. Go to&#160;Step 11.</li><li>If none of the selected courses are cross-listed and/or share space, then a message opens indicating whether the selected preferences will override any existing preferences, or be added to existing preferences and asking you if it is OK to continue. </li></ul></li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_4.png" alt="emsum_EMSCampus_image032.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="11" class="number-list">
+            <li>Optionally, select any or all of the related courses for which you want to set the same preferences/requirements, or do not select any of these related courses, and then click OK.&#160;A message opens indicating whether the selected preferences will override any existing preferences, or be added to existing preferences and asking you if it is OK to continue.</li>
+            <li>Click <span class="ui">Yes</span>.&#160;The message closes and another message opens indicating that the preferences were set successfully.</li>
+            <li>Click <span class="ui">OK </span>to close the second message and return to the Academic Browser.</li>
+        </ol>
+        <h2><a name="UseCourseNav"></a>Use the Course Navigator to Set Preferences and Requirements</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS Academic Planning menu bar, click <span class="ui">Academic Planning</span> &gt; <span class="ui">Courses </span>&gt; <span class="ui">Academic Browser</span>.&#160;The Academic Browser opens.</li>
+            <li>If needed, open the Filter tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_2.png" alt="emsum_EMSCampus_image030.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="3" class="number-list">
+            <li>On the Domain dropdown list, select the appropriate domain and on the Term dropdown list, select the appropriate term.</li>
+            <li>Set any other criteria (academic unit, subject, and so on) as needed to provide assistance in locating the courses for which you want to set preferences and requirements, and then click <span class="ui">Get Data</span>.&#160;The courses that meet your search criteria are displayed on the Results tab.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For detailed information about searching with the Academic Browser, see&#160;<a href="SearchwithAcadBrowser.htm">Search with the Academic Browser</a>.</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>In the search results, double-click the course for which you are setting the preferences/requirements.&#160;The course opens in the Course Navigator.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>For detailed information about working with the Course Navigator, see&#160;<a href="UseCourseNav.htm">Using the Course Navigator</a>. </p>
+        </div>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_5.png" alt="emsum_EMSCampus_image033.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="6" class="number-list">
+            <li>In the middle pane of the Navigator, select the specific course date for which you are setting preferences/requirements, and then click <span class="ui">Edit</span>.&#160;The Course Dates dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/AcademicPlanV44/AcademicPlanV44_11_6.png" alt="emsum_EMSCampus_image034.png" class="resize80_noborder_padding" />
+        </p>
+        <ol start="7" class="number-list">
+            <li>Set the preferences/requirements for the course as needed, and then click <span class="ui">OK</span>. The Course Dates dialog box closes and you return to the Course Navigator. The preferences/requirements that you set for the course date are displayed on the Preferences tab in the lower pane of the Navigator.</li>
+        </ol>
+    </body>
+</html>

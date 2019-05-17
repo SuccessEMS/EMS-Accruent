@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Draft"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/WordDraft/ReviewDraft_Lana.fltoc"
+  ConditionTagExpression="include[General.Edit_in_Review or &quot;General.Print Only&quot;] exclude[&quot;General.Online Only&quot;] "
+  PatchHeadingLevels="false"
+  InjectEmptyPages="false"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings="20032,20033,20034,20035,20036,20037,20038,20039,20040,20041"
+  EmbedImages="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Word_Accruent_2018.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    GenerateTOCProxy="false"
+    EnableTrackedChanges="true" />
+  <DocumentProperties
+    Title="Draft"
+    Author="EMS Software" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="100"
+    PageLayout="SinglePage"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="true"
+    FullScreen="false"
+    PageMode="UseNone" />
+</CatapultTarget>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="emsWebapp" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title>Work with Services in Web App</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Work with Services</h1>
+        <p>This topic provides information on the following:&#160;</p>
+        <ul>
+            <li><a href="#Services_Categories_and_Resources">Services, Categories, and Resources</a>
+            </li>
+            <li><a href="#Adding_Services_to_a_Reservation">Add Services to a New Reservation</a>
+            </li>
+            <li><a href="#Change_or_Cancel_Services_for_an_Existing_Reservation">Change or Cancel Services for an Existing Reservation</a>
+            </li>
+        </ul>
+        <h2><a name="Services_Categories_and_Resources"></a>Services, Categories, and Resources</h2>
+        <p>In EMS, you may sometimes hear the terms Services, Categories, and Resources used interchangeably; however, they are different concepts.</p>
+        <h3>Categories</h3>
+        <p>A Category in EMS is anything you might add to a Booking such as Catering, Audio Visual, Furniture, Security, Notes, Attendee Names, Agendas etc. When you configure a Category, however, it must be of six Category types: Activities, Attendees, Catering, Notes, Resources with Service Orders, or Resources Without Service Orders. These types cause the service to behave slightly differently when added to a booking. For example, a Notes/Activities/Attendees type service category does not require the EMS Administrator to configure items under it and there is nothing for a person to “select” from these types of services.</p>
+        <h3>Service Category</h3>
+        <p>By contrast, a service category that has a type of Catering, Resource with Service Order, or a Resource without a Service Order Category, will require the Administrator to create items under it. For example, an "AV Equipment" service  category (configured as a Resource without a Service Order Category type) might have items under it such as a flip chart or whiteboard (under AV Equipment). The person requesting the service for this meeting would then select <span class="ui">AV equipment</span>; then flipchart and whiteboard would be typical options to add to the event.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The following Category Types allow <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/DefineProdAreaItems.htm">Production Items</a>: Catering, Resources with Service Orders, and Resources Without Service Orders.</p>
+        </div>
+        <p>Furthermore, a Category can&#160;be <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/ConfigCategory.html">configured&#160;to "Use States"</a>&#160;so that when a service is requested with a meeting, it can be managed through a review and approval process in the Manage Services toolbar option&#160;in EMS Desktop Client.&#160;</p>
+        <p>
+            <img src="Images/WebApp_User/Ways to Make Reservations_2.png" alt="https://success.emssoftware.com/@api/deki/files/5970/clipboard_e9d0b1d823c09fb0734a820c64ddd5789.png?revision=1&amp;size=bestfit&amp;width=61&amp;height=33" />
+        </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>If you are using the EMS Web App on a mobile device, you will not have access to this feature. See Also: <a href="../../../EMSDesktopClient/V44.1/ConfigurationGuide/CategoriesResourcesServices_WhatsDiff.htm">Categories, Resources, and Services:&#160;What's the Difference?</a></p>
+        </div>
+        <h2><a name="Adding_Services_to_a_Reservation"></a>Add Services to a New Reservation</h2>
+        <ol class="number-list">
+            <li>While <a href="WebApp_MakingaResv.html">creating a new reservation</a>, navigate to the <span class="ui">Services </span>tab. The services your administrator has defined as available for the booking template and room(s) you selected are listed on the left panel.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>If you are <a href="WebApp_EditResvBooking.html">editing an existing reservation</a>, click the <span class="ui">Add Services </span>option in the Reservation Tasks menu on the right, or open the Reservation Details and select the <span class="ui">Services </span>tab.</p></div></li>
+            <li>Click the <span class="ui">Services </span>dropdown to expand and pick a service. You can add resources with service orders, catering (food) services, resources without service orders, setup notes and/or a room charge. You can add multiple services to a reservation and to a booking.<p><img src="Images/WebApp_User1/Working with Services.png" alt="https://success.emssoftware.com/@api/deki/files/4178/clipboard_ef2db4b34bd8df42e0857c3dd69481abf?revision=1" class="hyperlink_with_padding_and_border" /></p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Options available in the Services drop-down field depend on several factors leading up to this stage in the booking process: your booking template parameters, setup type, and other rules set by your System Administrator.</p></div></li>
+            <li>Enter the necessary information for the services you are adding to the reservation.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Required fields are marked with red. You may need to add information such as the start and end times, the estimated count, and so on. You may also have to answer service-specific questions, and/or have to agree to Terms and Conditions.</p></div><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>You can add notes for each services you add to a reservation. These will only appear if you open the booking, and not in the Booking Summary.</p></div></li>
+            <li>At the bottom of the page, click <span class="ui">Next Step</span>. The Available Services tab closes. You advance to the Reservation Details tab.<ul class="unorder-list"><li>If the reservation has only this single booking, a confirmation message displays. Click <span class="ui">OK </span>to close the message and return to the Booking Details tab. The newly added booking detail shows on the Existing Services tab.</li><li>If the reservation has multiple bookings, then choose whether to add services to just the one booking, or several:<ul><li>To add the services to only this booking, click <span class="ui">Do Not Apply</span> to Additional Bookings. You remain on the Booking Details tab. The newly added services show on the Existing Services tab.</li><li>To add the services to one or more of the other bookings in the reservation, select them (you can select all using the checkbox in the Date column heading), and then click <span class="ui">Save</span>. A confirmation message displays. Click <span class="ui">OK </span>to close and return to the Booking Details tab. The newly added services now show on the Existing Services tab.</li></ul></li></ul></li>
+        </ol>
+        <h2><a name="Change_or_Cancel_Services_for_an_Existing_Reservation"></a>Change or Cancel Services for an Existing Reservation</h2>
+        <p>From an existing booking within one of your reservations, click the <span class="ui">Manage Services</span> option (if available) under the Bookings list. This enables you to change or cancel (delete) services for a booking, individually, per service item, or by service category.</p>
+        <p>
+            <img src="Images/WebApp_User1/Working with Services_3.png" alt="https://success.emssoftware.com/@api/deki/files/6009/clipboard_ed94b297bd21eefff95a7ace87e2ad6bd.png?revision=1" class="popup_with_padding_and_border" />
+        </p>
+        <p>On the Manage Services page that presents, you can subtract (<span class="ui">-</span>) services from the Services Summary view (if enabled). Services are listed in the right panel by category.</p>
+        <p>
+            <img src="Images/WebApp_User1/Working with Services_5.png" alt="https://success.emssoftware.com/@api/deki/files/6010/clipboard_e01ee08a8df48439f2d86e42bdb214937.png?revision=1" class="popup_with_padding_and_border" />
+        </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The event type and the booking status (as well as your Administrator settings) affect whether the <span class="ui">Manage Services</span> option is available.</p>
+        </div>
+    </body>
+</html>

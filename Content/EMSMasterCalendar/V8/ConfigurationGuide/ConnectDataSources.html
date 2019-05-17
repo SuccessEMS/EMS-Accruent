@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Connecting to Data Sources</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Connect to Data Sources</h1>
+        <p class="Body">Data Sources consist of Event Types, Holidays, and User-Defined fields defined in your EMS implementation.</p>
+        <p>This topic will provide information that will allow you to:</p>
+        <ul class="unorder-list">
+            <li><a href="#Adding">Add a Data Source</a>
+            </li>
+            <li><a href="#DeleteDataSource">Delete a Data Source</a>
+            </li>
+            <li><a href="#Import">Import&#160;EMS Event Types</a>
+            </li>
+            <li><a href="#View">View the History for an Event Type Mapping</a>
+            </li>
+            <li><a href="#ImportHoliday">Import&#160;EMS Holidays or Special Dates</a>
+            </li>
+            <li><a href="#Select">Select&#160;EMS User-Defined Fields (UDFs) for Importing</a>
+            </li>
+        </ul>
+        <p class="Body">In EMS&#160;Master Calendar, as the site administrator, you have the option of setting up event types and holidays (special dates) from “scratch;” however, if you are an existing EMS customer who uses one of the EMS products, such as Campus, Desktop Client, Enterprise, Professional, Legal, and so on, this means that you have already configured this information for your EMS application. Rather than creating these items from scratch, if your organization has purchased the optional module, Master Calendar Data Connectors, you can follow the steps in this topic&#160;to perform a one-time import of event types and holidays from your EMS application into Master Calendar. You can import event types and holidays from one or more EMS databases to one or more calendars in Master Calendar. Also, at the data source level, you can select a high-level view of your user-defined fields (UDFs) in your EMS database, and you can then run a connector to import one or more selected UDFs and their associated answers into your Master Calendar database. Managing data sources in Master Calendar consists of adding data sources, deleting data sources, importing the event types, importing the holidays, and selecting the UDFs that are to be imported. You can also view the history of event type mapping between your EMS database and your Master Calendar database.</p>
+        <p class="Body"><b>See Also:</b>
+        </p>
+        <ul class="unorder-list">
+            <li class="Body">For setting up event types from “scratch,” see <MadCap:xref href="../UserGuide/ManagingYourEvents.html">Manage Your Events</MadCap:xref>.</li>
+            <li class="Body">For setting up holidays (special dates) from “scratch,” see <a title="Managing Special Dates" href="ConfigSpecialDates.html" alt="Managing Special Dates">Configure Special Dates</a>.</li>
+        </ul>
+        <h2><a name="Adding"></a>Add a Data Source</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <strong>Site Administration</strong> &gt;&#160;<strong>Data Sources</strong>.&#160;The Data Sources page opens. This page lists all the currently available data sources in Master Calendar.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/connectors1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Under Actions, click <strong>Add</strong>.&#160;The Adding a Data Source page opens.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/connectors2.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Add the information for the data source.&#160;<ul MadCap:continue="true"><li>Description—The name of the database into which you are importing the event types and/or holidays.</li><li>Database Server Name—The name for the database server on which the EMS database from which you are importing the information resides.</li><li>Database Name—The name of the EMS database from which you are importing the event types and/or holidays.</li><li><p><strong>EMS database resides on the same server or you are using a linked server.</strong></p></li></ul><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>You can obtain the database server name and the database name by logging in to the EMS client and then choosing <strong>Select File</strong> &gt; <strong>Change Database</strong>, or you can work with your local Database Administrator to obtain the correct server name and database name.</p></div></li>
+            <li>Click <strong>Test Data Source</strong>.&#160;If Master Calendar can connect to the specified EMS database, a message opens indicating that the “Connection succeeded.” Otherwise, the message indicates that the “Connection failed,” and provides a reason for the failure. You must make the necessary changes to the data connector, and test the connection again.</li>
+            <li>After the message indicates that the “Connection succeeded,” click <strong>Save</strong>.</li>
+        </ol>
+        <h2><a name="DeleteDataSource"></a>Delete a Data Source</h2>
+        <p class="Body">When you a delete a data source, all connectors that use this data sources and associated events are deleted.</p>
+        <ol class="number-list">
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <strong>Site Administration</strong> &gt;&#160;<strong>Data Sources</strong>.&#160;The Data Sources page opens. This page lists all the currently available data sources in Master Calendar.</p>
+                <p>
+                    <img src="../images/B_Configuration/connectors1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Select the data sources that you are deleting.&#160;To select all data sources on the currently opened page for deletion in a single step, select Description. If you have multiple pages of data sources to delete, you must repeat this entire process on each page.</li>
+            <li>Under Actions, click <strong>Delete</strong>.&#160;A message opens, informing you that all connectors that use this data source and associated events are deleted and asking you if you are sure that you want to continue.</li>
+            <li>Click <strong>OK </strong>in the message.&#160;A message opens indicating that all the selected data sources were successfully deleted.</li>
+            <li>
+                <p>Click <strong>OK </strong>in the message.&#160;The Data Sources page is refreshed to show the remaining, if any, data sources in Master Calendar.</p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>Deleting a Data Source and its associated events cannot be undone. </p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Import"></a>Import&#160;EMS Event Types</h2>
+        <p class="Body">When you are importing event types from EMS into Master Calendar, you have three options. You can:</p>
+        <ul class="unorder-list">
+            <li>Map an EMS event type to an existing Master Calendar event type.</li>
+            <li>Create an EMS event type in Master Calendar if it doesn’t already exist.</li>
+            <li>Indicate that you do not want to import the EMS event type.</li>
+        </ul>
+        <ol class="number-list">
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Site Administration</span> &gt; <span class="ui">Data Sources</span>. The Data Sources page opens. This page lists all the currently available data sources in Master Calendar.</p>
+                <p>
+                    <img src="../images/B_Configuration/datasources5.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Select the data source from which you are importing the event types and then, under Actions, click <span class="ui">Event Types</span>.&#160;The Event Types page opens. This page lists all the currently defined event types for the selected data source. It also shows the mapping for each event type, or whether it has been set to “Do Not Use.” </p>
+                <p>
+                    <img src="../images/B_Configuration/connectors4.png" class="resize80_border_and_padding" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If an EMS event type has <em>not</em> been mapped to a Master Calendar event type, and it has <em>not</em> been set to “Do Not Use,” then the “Create” option is displayed for it in the Master Calendar Event Type list.</p>
+                </div>
+            </li>
+            <li>
+                <p>For any of the unmapped EMS event types, click Create to open a Master Calendar dialog box. The Description tab on this dialog box lists all the currently active Master Calendar event types. The “Do Not Use” option is also displayed on this list. If you do not see the Master Calendar event type to which you want to map the EMS event type, either it has not been created, or it is currently inactive in Master Calendar. To add a new event type, or to activate a currently inactive event type, see “<a title="Managing Event Types" href="ConfigEventTypes.html" alt="Managing Event Types">To add an event type</a>” or “<a title="Managing Event Types" href="ConfigEventTypes.html" alt="Managing Event Types">To activate an event type</a>”.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/eventtypemapping.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>On the list, select the Master Calendar event type to which you are mapping the EMS event type, or select <strong>Do Not Use.</strong></li>
+            <li>Optionally, for any of the currently mapped EMS event types, change the mapping, or set the mapping to “Do Not Use.”&#160;All EMS event types that you leave in a '&lt;Create&gt;' status will be created in Master Calendar when you save your event type mappings. On the Master Calendar main menu, select Admin &gt; Configuration &gt; Event Types to view a global list of all the event types that are being stored in your Master Calendar database, regardless of their data source.</li>
+            <li>Click <strong>Save </strong>on the Master Calendar dialog box.&#160;The Master Calendar dialog box opens. You return to the Event Types page.</li>
+            <li>Click <strong>Save </strong>on the Event Types page.&#160;A message opens asking you if you are sure that you want to save all the event types.</li>
+            <li>Click <strong>OK </strong>in the message.&#160;The message closes. The page is refreshed to show the newly selected mapping for the EMS event type.</li>
+            <li>Optionally, continue to one or both of the following:<ul MadCap:continue="true"><li><a title="Managing Data Sources" href="#ImportHoliday" alt="Managing Data Sources">Import EMS holidays</a></li><li><a title="Managing Data Sources" href="#Select" alt="Managing Data Sources">Select EMS user-defined fields (UDFs) for importing</a></li></ul></li>
+        </ol>
+        <h2><a name="View"></a>View the History for an Event Type Mapping</h2>
+        <p class="Body">The history for an event type mapping consists of the original creation date of the mapping, the name of the user who created the mapping, and the last date that the mapping was edited as well as the name of the user who last edited the mapping.</p>
+        <ol class="number-list">
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Site Administration</span> &gt; <span class="ui">Data Sources</span>.&#160;The Data Sources page opens. This page lists all the currently available data sources in Master Calendar.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/connectors1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Select the data source from which you are viewing the history of the event mappings.</li>
+            <li>
+                <p>Under Actions, click <span class="ui">Event Types</span>.&#160;The Event Types page opens. This page lists all the currently defined event types for the selected data source.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/MC_ConnectDataSources_SelectDataSource.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Click the MC Event Type link for the mapping for which you are viewing the history.&#160;A Master Calendar dialog box opens. By default, the Description tab is the opened tab.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/MC_ConnectDataSources_EventTypeMappingDescription.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Click the History tab to open it and view the history for the selected mapping.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/MC_ConnectDataSources_EventTypeMappingHistory.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+        </ol>
+        <h2><a name="ImportHoliday"></a>Import&#160;EMS Holidays or Special Dates</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The term “holiday” is equivalent to the Master Calendar term “special date.”</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt;<span class="ui"> Site Administration</span> &gt; <span class="ui">Data Sources</span>.&#160;The Data Sources page opens. This page lists all the currently available data sources in Master Calendar.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/connectors1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Select the data source from which you are importing the holidays.</li>
+            <li>
+                <p>Under Actions, click <strong>Holidays</strong>.&#160;The Holidays page open. By default, the New tab is the opened tab. This tab lists the records for up to the first 50 holidays that are defined in the selected data source and that have a date greater than or equal to the current day’s date.</p>
+                <p>
+                    <img src="../images/B_Configuration/connector20.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Optionally, to refine this list, do one or both of the following:<ul MadCap:continue="true"><li>In the <strong>Start Date</strong> field, enter a different start date.</li><li>In the <strong>Title </strong>field, enter partial or complete search criteria for the holiday description. The search is limited to the exact order of the characters in the string; however, the search string is not case-sensitive and the search string can be found anywhere in the search results. For example, the search string “scout” returns holidays that contain either Scouting Day or Boy Scouts’ Day.</li></ul></li>
+            <li>Click <strong>Go</strong>.&#160;The page is refreshed to show the Holidays that meet your search criteria.</li>
+            <li>Select the holidays that are to be imported from the selected data source, and then <strong>Add</strong>.To select all holidays on the currently opened page for importing in a single step, select <strong>Description</strong>. If you have multiple pages of holidays to import, you must repeat this entire process on each page.&#160;You will be prompted to confirm that&#160;you are sure you want to add all the selected holidays.&#160;</li>
+            <li>Click <strong>OK </strong>in the message. The message closes. You return to the Holidays page.&#160;When you import EMS holidays into your Master Calendar database, all the imported holidays are added to all the calendars in Master Calendar. You must manually delete the dates from the calendars on which you do not want the holidays to be displayed. </li>
+            <li>Optionally, do one or both of the following:<ul MadCap:continue="true"><li>Click the <strong>Existing </strong>tab to open it and view the list of all the holidays that you have imported into Master Calendar.</li><li>Continue to procedures below.</li></ul></li>
+        </ol>
+        <h2><a name="Select"></a>Select&#160;EMS User-Defined Fields (UDFs) for Importing</h2>
+        <ol class="number-list">
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Site Administration</span> &gt; <span class="ui">Data Sources</span>.&#160;The Data Sources page opens. This page lists all the currently available data sources in Master Calendar.</p>
+                <p class="AnchorFigure">
+                    <img src="../images/B_Configuration/connectors1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>Select the data source from which you are importing the UDFs.</li>
+            <li>
+                <p>Under <strong>Actions</strong>, click <strong>User Defined Fields</strong>.&#160;The User Defined Fields page opens. On this page, you see only those UDFs that have the Field Applies To: Reservation configured within the EMS database. You can find this information in the EMS Desktop Client by navigating to Configuration &gt; Other &gt; User Defined Fields.</p>
+                <p>
+                    <img src="../images/B_Configuration/connectors21.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>On the User Defined Fields list, select the UDF that is to be imported from the selected data source (CTRL-click to select multiple UDFs), and then click the Add button  to move the UDFs to the Assigned list. &#160;To move all the UDFs in a single step, click the Add All button.</li>
+            <li>Click <strong>Save</strong>.</li>
+            <li>You must now run a connector to import the selected UDFs and their associated answers into your Master Calendar database.</li>
+        </ol>
+    </body>
+</html>

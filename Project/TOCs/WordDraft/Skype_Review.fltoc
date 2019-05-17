@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Skype for Business Integration"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Title8_5X11.flpgl"
+    PageNumberReset="continue"
+    AutoEndOnLeftPage="disabled"
+    PageType="title"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Print Only Topics/TOC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/TOC8_5X11.flpgl"
+    AutoEndOnLeftPage="disabled">
+    <TocEntry
+      Title="Introduction to Skype for Business Integration "
+      Link="/Content/Skype/ConfigurationGuide/Introduction.html"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      ChapterNumberReset="reset"
+      ChapterNumber="1"
+      StartSection="false"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Chapters8_5X11.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      AutoEndOnLeftPage="disabled"
+      PageType="firstright" />
+    <TocEntry
+      Title="Configure Skype for Business Integration"
+      Link="/Content/Skype/ConfigurationGuide/ConfigureSkypeforBusiness.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Chapters8_5X11.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      AutoEndOnLeftPage="disabled"
+      PageType="continue" />
+    <TocEntry
+      Title="Skype for Business in EMS Web App"
+      Link="/Content/EMSWebApp/A_V44.1/C_UserGuide/WebApp_SkypeforBusiness.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Chapters8_5X11.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      AutoEndOnLeftPage="disabled"
+      PageType="continue" />
+    <TocEntry
+      Title="Skype for Business in EMS Mobile App"
+      Link="/Content/EMSMobileApp/UserGuide/UseSkypeforBusiness.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      AutoEndOnLeftPage="disabled"
+      PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Chapters8_5X11.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+    <TocEntry
+      Title="Skype for Business in EMS for Outlook Add-in"
+      Link="/Content/EMSforOutlook/UserGuide/UseSkypeforBusiness.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Chapters8_5X11.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      AutoEndOnLeftPage="disabled"
+      PageType="continue"></TocEntry>
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install or Upgrade EMS API Web Service</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Before beginning the installation process, please do the following:</p>
+            <ul class="unorder-list">
+                <li>
+                    <p>Install or upgrade your EMS databases as outlined in the&#160;<a href="../../../EMSDesktopClient/V44.1/InstallationGuide/InstallationInstructions.html">EMS&#160;Desktop Client Installation Instructions</a>.</p>
+                </li>
+                <li>
+                    <p>Manually&#160;<span class="ui">uninstall&#160;</span>any previous versions of the EMS API Web Service on your web server.&#160;</p>
+                </li>
+            </ul>
+        </div>
+        <p>To install or upgrade EMS&#160;API&#160;Web Service:&#160;</p>
+        <ol class="number-list">
+            <li>
+                <p>Verify that the prerequisite software is installed.</p>
+            </li>
+            <li>
+                <p>Download&#160;<span class="ui">EMSAPI.msi</span>&#160;onto the web server.</p>
+            </li>
+            <li>
+                <p>Run&#160;<span class="ui">EMSAPI.msi</span>.</p>
+            </li>
+            <li>
+                <p>The first screen welcomes you to the EMS API Web Service Setup Wizard.&#160;Click&#160;<span class="ui">Next</span>&#160;to begin the installation process.&#160;The&#160;Select Installation Address&#160;screen will appear.</p>
+                <p>
+                    <img src="Images/OptFeat_API/Installing Upgrading the EMS.png" alt="https://success.emssoftware.com/@api/deki/files/1481/EMS_API_-_Installing_API_Service_-Install_Address.png?revision=1&amp;size=bestfit&amp;width=513&amp;height=420" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>Select the <span class="ui">Site</span>, <span class="ui">Virtual Directory</span>, and <span class="ui">Application Pool</span>.&#160;It is recommended that you keep the default settings.&#160;The installation process will create a Physical and Virtual directory on your web server named “EMSAPI” (or whatever value you entered in the Virtual Directory field.)&#160;Click&#160;<span class="ui">Next&#160;</span>to begin the installation process.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The EMS API should&#160;<span class="ui">not&#160;</span>be installed in the same Virtual Directory as other EMS web-based products.</p>
+                </div>
+            </li>
+            <li>
+                <p>The&#160;Confirm Installation&#160;screen will appear.&#160;Click&#160;<span class="ui">Next</span>. The&#160;EMS Settings&#160;screen will appear.</p>
+                <p>
+                    <img src="Images/OptFeat_API/Installing Upgrading the EMS_1.png" alt="https://success.emssoftware.com/@api/deki/files/1482/EMS_API_-_Installing_API_Service__-_Settings.png?revision=1&amp;size=bestfit&amp;width=422&amp;height=164" class="padding_only" />
+                </p>
+            </li>
+            <li>
+                <p>Enter your EMS SQL Server Name.</p>
+            </li>
+            <li>
+                <p>Enter your EMS Database:</p>
+                <ul>
+                    <li>
+                        <p>EMS Professional customers – enter “EMSData”</p>
+                    </li>
+                    <li>
+                        <p>EMS Workplace, EMS Campus, EMS Enterprise, EMS Legal, and EMS District customers—typically named&#160; “EMS”</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">OK</span>.</p>
+                <p>The&#160;Installation Complete&#160;screen will appear.&#160;</p>
+            </li>
+            <li>
+                <p>Click&#160;<span class="ui">Close</span>.&#160;</p>
+            </li>
+        </ol>
+    </body>
+</html>

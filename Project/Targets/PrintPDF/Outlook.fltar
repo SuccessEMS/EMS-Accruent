@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="EMS for Outlook Installation, Configuration, and User Guides"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/PrintPDF/Print_Outlook.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Multi Page_Letter.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Accruent_2018.css"
+  PatchHeadingLevels="false"
+  ConditionTagExpression="include[Default.FullHelpSite or Default.PrintOnly or &quot;General.Print Only&quot;] exclude[Default.AccruentAccessOnly or Default.ScreenOnly or General.Edit_in_Review or &quot;General.Online Only&quot;] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="75" />
+  <DocumentProperties
+    Title="EMS for Outlook Documentation"
+    Author="EMS Software, LLC, an Accruent Company" />
+</CatapultTarget>

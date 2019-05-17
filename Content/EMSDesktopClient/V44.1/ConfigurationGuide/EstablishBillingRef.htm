@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Establish Billing Reference and PO Behavior V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Establish Billing Reference and PO&#160;Behavior</h1>
+        <p>Billing Reference and PO numbers can be added to rooms and services. As an Admin, you can customize the behavior of these fields and when and where they appear and are required at many levels.</p>
+        <p>The lowest level where you set Billing Reference and PO field behavior (All Reservations, Booking Templates, Rooms, Services) overrides other settings.</p>
+        <p>For example, if you set behavior for a room, it will override settings from a booking template. This ensures that the room billing behavior is not changed by the booking template, so you can always charge for a special room.</p>
+        <p>From EMS Desktop Client, you can set parameters for all reservations and for each booking template to control whether these fields are required, validated, and appear to users. You can also configure specific rooms and categories to prompt users to enter values in these fields. For example, you could globally set the Billing Reference field to appear for all reservations in your system, but then you could also set one booking template, a room and a few service categories to also prompt the user for PO numbers. Your settings for the booking template would override the global settings, and the prompts for the room and service categories would override both the global setting and the booking template setting.</p>
+        <p>This topic will include information on the following:</p>
+        <ul>
+            <li><a href="#GloballySetBehavior">Globally Set Behavior for All Reservations</a>
+            </li>
+            <li><a href="#setbehavebookingtemp">Set Behavior for a Booking Template</a>
+            </li>
+            <li><a href="#Setbehavcat">Set Behavior for a Category</a>
+            </li>
+            <li><a href="#Setbehaveservice">Set Behavior for a Service</a>
+            </li>
+            <li><a href="#Setbehaviorroom">Set Behavior for a Room to Prompt Users for a Billing Reference</a>
+            </li>
+        </ul>
+        <h2><a name="GloballySetBehavior"></a>Globally Set Behavior for All Reservations</h2>
+        <p>You can set global parameters for Billing Reference and PO Number field behavior as shown below in the <MadCap:variable name="General.EMS&#160;Desktop Client" /> (<span class="ui">System Administration</span> &gt; <span class="ui">Settings </span>&gt; <span class="ui">Parameters </span>&gt; <span class="ui">Everyday User Applications</span> tab):</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="Images/DC_CG_EstablishBillingRef1.png" class="resize80_popup_padding_border" />
+            </p>
+            <p class="Caption">Everyday User Applications Tab of the Parameters Dialog Box</p>
+        </div>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>These settings default to <span class="ui">No</span>.</p>
+        </div>
+        <p>See Also: <a href="ConfigCategory.html">Complete Instructions on Configuring Categories</a>.</p>
+        <h2><a name="setbehavebookingtemp"></a>Set Behavior for a Booking Template</h2>
+        <p>You can set behavior for Billing Reference and PO Number fields for a specific template when you configure the template, which will override settings at the Global level. These settings default to <span class="ui">No</span>.</p>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Everyday Applications</span> &gt; <span class="ui">Everyday User Process Templates</span>.</li>
+            <li>The Everyday User Process Templates window opens. Select <span class="ui">New </span>or select a template and click <span class="ui">Edit</span>.<div class="TitleandImage"><p><img src="Images/DC_CG_EstablishBillingRef3.png" class="resize80_noborder_nopadding" /></p><p class="Caption">Everyday User Process Templates Window</p></div></li>
+            <li>When the Everyday User Process Template dialog box opens, click the <span class="ui">Parameters </span>tab and configure the parameters highlighted in the following image to control field behavior.<div class="TitleandImage"><p><img src="Images/DC_CG_EstablishBillingRef4.png" class="resize80_popup_padding_border" /></p><p class="Caption">Parameters Tab of the Everyday User Process Template Dialog Box</p></div></li>
+        </ol>
+        <p>See Also: <a href="ConfigCategory.html">Complete Instructions on Configuring Categories</a>.</p>
+        <h2><a name="Setbehavcat"></a>Set Behavior for a Category</h2>
+        <p>Use this procedure if you only want specific service categories to use Billing Reference and/or PO numbers. Setting behavior for Billing Reference and PO number fields at the category level will apply to any bookings made using that Category (and override settings at the Global or Template level if those are set to <span class="ui">No</span>).</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Before proceeding, make sure that the global and template settings for these fields are set to <span class="ui">No</span>.</p>
+        </div>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Administration </span>&gt; <span class="ui">Categories</span>. The Categories window opens.</li>
+            <li>Click <span class="ui">New </span>or select a Category and click <span class="ui">Edit</span>.<div class="TitleandImage"><p><img src="Images/DC_CG_EstablishBillingRef6.png" class="resize80_border_and_padding" /></p><p class="Caption">Categories Window</p></div></li>
+            <li>On the screen that appears, select the <span class="ui">Everyday User Applications</span> tab, and use the fields highlighted below to set bookings with this template to prompt the user for Billing Reference and/or PO information.<div class="TitleandImage"><p><img src="Images/DC_CG_EstablishBillingRef7.png" class="resize80_border_and_padding" /></p><p class="Caption">Everyday User Applications Tab of the Categories Dialog Box</p></div></li>
+        </ol>
+        <p>See Also: <a href="ConfigCategory.html">Complete Instructions on Configuring Categories.</a></p>
+        <h2><a name="Setbehaveservice"></a>Set Behavior for a Service</h2>
+        <ol class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Resources</span>. A list of all the categories that are currently configured in your EMS database and for which you can configure resources opens.</li>
+            <li>Select the resource for the service category you want to set Billing Reference and/or PO number field behavior.</li>
+            <li>From the Resources screen that appears, select the category for the service you want to edit, and click <span class="ui">Services</span>. Then create a New service or select and Edit an existing one.<div class="TitleandImage"><p><img src="Images/DC_CG_EstablishBillingRef9.png" class="popup_with_padding_only" /></p><p class="Caption">Steps to Set Behavior for a Service</p></div></li>
+        </ol>
+        <p>See Also: <a href="ConfigCategory.html">Complete Instructions on Configuring Categories.</a></p>
+        <h2><a name="Setbehaviorroom"></a>
+            <MadCap:annotation MadCap:createDate="2018-09-21T14:04:19.8241651-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Need to write steps for this section (use image for steps)" MadCap:editor="Megan.Laub" MadCap:editDate="2018-09-21T14:05:17.4304740-06:00">Set Behavior for a Room</MadCap:annotation> to Prompt Users for a Billing Reference</h2>
+        <p>Follow the steps below from the Configuration menu to require users to enter a Billing Reference when choosing this room. These settings will override settings at the Global, Template, and Category levels.</p>
+        <div class="TitleandImage">
+            <p>
+                <img src="Images/DC_CG_EstablishBillingRef10.png" class="popup_with_padding_only" />
+            </p>
+            <p class="Caption">Steps for Configuring a Room to Require Users to Enter Billing Reference</p>
+        </div>
+    </body>
+</html>

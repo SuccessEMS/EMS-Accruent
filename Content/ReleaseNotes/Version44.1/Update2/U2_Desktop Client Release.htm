@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="3719" MadCap:lastWidth="744" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS Desktop Client Release Notes<br />V44.1 Update 2</h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Name:&#160;V44.1 Update 2</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;August 8, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Patch #:&#160;&#160;2016.08.08.0</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p>Build #:&#160;44.1.235</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_1">Enhancements&#160;</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 137px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 601px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">EMS API</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Updates to the Database Table</p>
+                        <p class="RNBody">New Tables&#160;</p>
+                        <ul class="ul_4">
+                            <li class="li_13">tblDynamicFilters</li>
+                            <li class="li_13">tblMobileSecurity</li>
+                        </ul>
+                        <p class="RNBody">Changes to Tables&#160;</p>
+                        <ul class="ul_4">
+                            <li class="li_13">TblNotificationRule – Added [VisitorCheckIn] [bit] field at end of table</li>
+                            <li class="li_13">TblRegistry – Increased length of [Area] nvarchar(30) to nvarchar(50)</li>
+                            <li class="li_13">TblServerVersion – Added the following 3 fields:</li>
+                        </ul>
+                        <ul class="ul_5">
+                            <li class="li_13">[ServerMinorVersion] [int] NOT NULL CONSTRAINT [DF_tblServerVersion_ServerMinorVersion] DEFAULT ((1)),</li>
+                            <li class="li_13">[ServerMajorVersion] [int] NOT NULL CONSTRAINT [DF_tblServerVersion_ServerMajorVersion] DEFAULT ((44)),</li>
+                            <li class="li_13">[DatabaseScriptVersion] [nvarchar] (max) NULL</li>
+                        </ul>
+                        <ul class="ul_4">
+                            <li class="li_13">TblWebMenu – Added new field, [IconClass] [nvarchar] (50)</li>
+                            <li class="li_13">TblWebTemplate – Added the following field:</li>
+                        </ul>
+                        <ul class="ul_5">
+                            <li class="li_13">[WebApp] [bit] NOT NULL CONSTRAINT [DF_tblWebTemplate_WebApp] DEFAULT ((1))</li>
+                        </ul>
+                        <ul class="ul_4">
+                            <li class="li_13">ems_vwBookings – removed WITH SCHEMABINDING</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Fixes&#160;</h4>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">EMS Desktop Client &gt;&#160;Login</p>
+                        <p class="NormalWeb" style="text-align: left;">
+                            <br />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Login Possible Via LDAP-SSL&#160;Without a Password</p>
+                        <p class="RNBody">When logging into the EMS Desktop Client using&#160;LDAP-SSL,&#160;users were able to login without a password.</p>
+                        <p class="RNBody">Fix:&#160;&#160;Modified validations to require a password.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17826" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17826" class="RNRefHyper"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21359" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21359" class="RNRefHyper">21359</a></a><br />(For EMS&#160;internal use only) </p>
+                        <p class="RNTitle">URL Field Unavailable</p>
+                        <p class="RNBody">When using&#160;Portal Authentication, the URL field was unavailable on the Login page.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Enabled the field when Portal Authentication is in use&#160;so users can now specify the URL as designed.</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17826" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17826" class="RNRefHyper"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21359" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21359" class="RNRefHyper">21929</a></a><br />(For EMS&#160;internal use only) </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">EMS Desktop Client &gt; Room Wizard &gt; Meeting Check-In &gt; Start Early</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Start Early Button and Check-In Timing Off&#160;on Room Wizard</p>
+                        <p class="RNBody">When checking in early to meetings in the Room Wizard, the check-in failed and registered as a no-show.&#160;</p>
+                        <p class="RNBody">Fix:&#160;Improved check-in functionality so that users can now click the Start Early button and successfully check in to a meeting.&#160;</p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 18802 &amp;&#160;18797<br />(For EMS&#160;internal use only) </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

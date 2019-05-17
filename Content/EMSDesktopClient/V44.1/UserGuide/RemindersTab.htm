@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Reminders Tab V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Reminders Tab</h1>
+        <p>A&#160;comment&#160;is a text entry that explains or clarifies a reservation, booking, group, or service order. A&#160;reminder&#160;is a comment that has a due date associated with it. The Reminders tab displays all the reminders for which you are the responsible user and that, by default, have a due date through the current day’s date.</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Dash/Reminders Tab.png" alt="emsum_Dashboard_image003.png" class="resize80_noborder_padding">
+            </img>
+        </p>
+        <p>To work with reminders, you can:</p>
+        <ul>
+            <li><a href="#Changing_the_Reminders_View">Change the Reminders View</a>
+            </li>
+            <li><a href="#Creating_Unattached_Reminders">Create&#160;Unattached Reminders</a>
+            </li>
+            <li><a href="#Changing_a_Reminder">Change a Reminder</a>
+            </li>
+            <li><a href="#Deleting_Reminder">Delete&#160;a Reminder</a>
+            </li>
+            <li><a href="#Printing_a_Reminder">Print a Reminder</a>
+            </li>
+            <li><a href="#Viewing_an_Item_to_Which_a_Reminder_Is_Attached">View an Item to Which a Reminder is Attached</a>
+            </li>
+            <li><a href="#Marking_a_Reminder_Complete">Mark a Reminder Complete</a>
+            </li>
+            <li><a href="#Reassigning_Multiple_Reminders_Between_EMS_Users">Reassign Multiple Reminders Between EMS Users</a>
+            </li>
+        </ul>
+        <h2><a name="Changing_the_Reminders_View"></a>Change the Reminders View</h2>
+        <p>By default, when the Dashboard window first opens, the Reminders tab displays all the reminders for which you are the responsible user and that have a due date through the current day’s date. You can do one or more of the following to change this view:</p>
+        <ul>
+            <li>To view the reminders for which other users are responsible, simply select the user or users in the Responsible User pane.</li>
+            <li>To view only a specific group of reminders for which you or others are the responsible users, change the viewing criteria.</li>
+        </ul>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>View</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>View reminders that have the indicated due date. The default value is Thru Today. If a value from the pre-configured list does not meet your needs, then select (user specified) and in the Date Due fields, enter at least a Starting due date. The Ending due date is optional.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Reminder Type</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>The default value is (all).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Attached To</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>The default value is (all). To view reminders that are not attached to any item (reservation, booking, group, or service order), select (none). See&#160;<a href="#Creating_Unattached_Reminders">To create an unattached reminder</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Search in Text</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Enter the string by which to search for specific reminders. (The search is carried out on the Notes field for the reminder.) Your search is limited to the exact order of the characters in the string, but the search string is not-case sensitive and it can appear anywhere in the search results. For example, a search string of&#160;cat&#160;returns reminders that have “catering” or “Mary’s&#160;catering” in the Notes field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Date Completed</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>Available only if Exclude Complete is not checked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Exclude Completed</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>Selected by default. Clear this option to display completed reminders in the Reminders list. To display completed reminders that meet the other viewing criteria, regardless of their completion dates, leave the Date Completed fields blank; otherwise, to view completed reminders that were completed by a specific date, you can enter a Starting date or a date range in the Date Completed fields.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p>Hide Canceled</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p>Not selected by default. Select this option to display canceled reminders in the Reminders list.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Creating_Unattached_Reminders"></a>Create&#160;Unattached Reminders</h2>
+        <p>When you create reminder on the Navigator, the reminder is attached to a specific reservation, booking, or booking detail. Similarly, when you create a reminder on the Groups window, the reminder is attached to a specific group. If needed, however, you can create a reminder that addresses just your general business needs and is not attached to any specific item. For example, you can create a reminder about “preparing for your organization’s yearly safety inspection.” Any reminder that you create from the Reminders tab on the Dashboard window is an&#160;unattached&#160;reminder.</p>
+        <ol start="1">
+            <li>Click&#160;New.&#160;The Reminder dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Dash/Reminders Tab_1.png" alt="emsum_Dashboard_image004.png" class="resize80_noborder_padding">
+            </img>
+        </p>
+        <ol start="2">
+            <li>
+                <p>Do one of the following:</p>
+                <ul>
+                    <li>Select a&#160;Reminder Type.</li>
+                    <li>
+                        <p>If none of the pre-configured Reminder Types meets your working needs, then select (user-specified), and in the&#160;Description&#160;field, enter a description for the reminder type.</p>
+                    </li>
+                </ul>
+                <p>The&#160;Responsible User&#160;field is populated with your User ID and the Date Due field is populated with the current day’s date.</p>
+            </li>
+            <li>Optionally, change the&#160;Responsible User,&#160;Date Due, or both.</li>
+            <li>If you are completing the reminder today, select a&#160;Date Completed; otherwise, leave this field blank. (This field is populated automatically when you or another user completes the reminder.)</li>
+            <li>Optionally, in the Notes field, enter any further explanation or information about the reminder.&#160;Click&#160;Spelling&#160;to spell-check the reminder before you save it.</li>
+            <li>Click&#160;OK.&#160;The Reminder dialog box closes. The newly created reminder is not attached to an item. It might or might not be displayed in the Reminders list depending on the values that you have set for filtering the display.</li>
+        </ol>
+        <h2><a name="Changing_a_Reminder"></a>Change a Reminder</h2>
+        <ol start="1">
+            <li>On the Reminders list, select the reminder that you are editing, and then click&#160;Edit.&#160;The Reminder dialog box opens. The dialog box is populated with the current information for the reminder.</li>
+            <li>Edit the reminder as needed.&#160;Optionally, click&#160;Spelling&#160;to spell-check the reminder before you save the edited reminder.</li>
+            <li>Click&#160;OK.&#160;The Reminder dialog box closes. If the reminder is attached to an item such as a reservation, then the reminder remains attached; otherwise, it is saved as an unattached reminder.</li>
+        </ol>
+        <h2><a name="Deleting_Reminder"></a>Delete&#160;a Reminder</h2>
+        <p>You can delete any reminder (attached or unattached) regardless of its due date and regardless if it is completed.</p>
+        <ol start="1">
+            <li>On the Reminders list, select the reminder that you are deleting, and then click Delete.&#160;A message opens asking you if it is&#160;OK&#160;to delete the reminder.</li>
+            <li>Click&#160;Yes.&#160;The message closes and the reminder is deleted.</li>
+        </ol>
+        <h2><a name="Printing_a_Reminder"></a>Print a Reminder</h2>
+        <ol start="1">
+            <li>
+                <p>On the Reminders list, select the reminder that you are printing, and then click&#160;Print.&#160;An onscreen preview of the reminder opens. The preview window contains options for printing a hard copy of the reminder, for emailing the reminder, and so on.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../../../Resources/Images/DTC_V44.1_Dash/Reminders Tab_2.png" alt="emsum_Dashboard_image005.png" class="popup_with_padding_and_border" />
+                    </p>
+                    <p class="Caption">Onscreen Preview for a Printed Reminder</p>
+                </div>
+            </li>
+            <li>Select the option or options that best fit your working needs.</li>
+        </ol>
+        <h2><a name="Viewing_an_Item_to_Which_a_Reminder_Is_Attached"></a>View an Item to Which a Reminder Is Attached</h2>
+        <p>On the Reminders list, select a reminder, and then click&#160;Go To.The Attached To column for the reminder must state anything other than “Unattached.”</p>
+        <ul>
+            <li>If the reminder is attached to a reservation, booking, or booking detail, then the reservation opens in the Navigator, and the appropriate folder (Reservation, Booking, or Booking Detail) is automatically selected.</li>
+            <li>If the reminder is attached to a group, then the Group window opens, with the group information displayed in the window</li>
+        </ul>
+        <h2><a name="Marking_a_Reminder_Complete"></a>Mark a Reminder Complete</h2>
+        <ol start="1">
+            <li>On the Reminders list, select the reminder, or CTRL-click to select the multiple reminders that you are completing.</li>
+            <li>Click&#160;Completed.&#160;A message opens asking you if it is OK to set the selected reminders as completed.</li>
+            <li>Click&#160;Yes.&#160;The message closes. The reminders are completed with a date equal to the current day’s date. The reminders might or might not be displayed in the Reminders list depending on the values that you have set for filtering the display.</li>
+        </ol>
+        <h2><a name="Reassigning_Multiple_Reminders_Between_EMS_Users"></a>Reassign Multiple Reminders Between EMS&#160;Users</h2>
+        <ol start="1">
+            <li>
+                <p>On the Reminders list, select the reminder, or CTRL-click to select the multiple reminders that you are reassigning.</p>
+            </li>
+            <li>
+                <p>Click&#160;Reassign.&#160;The Select User dialog box opens. This dialog box lists all the users for your EMS implementation.&#160;</p>
+                <p>
+                    <img src="../../../Resources/Images/DTC_V44.1_Dash/Reminders Tab_3.png" alt="emsum_Dashboard_image006.png" class="resize80_noborder_padding">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Select the user to whom you are reassigning the reminder.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>To search for a user, enter a search string in the Search field. The search string is limited to the exact order of the characters in the string, but the search string is not case-sensitive and it can appear anywhere in the search results. For example, a search string of&#160;Admin&#160;returns both&#160;Admin&#160;users and SysAdmin. The list of users that meet your search string is dynamically updated as you enter the string.</p>
+                </div>
+            </li>
+            <li>Click&#160;OK.&#160;A message opens, asking you if you are sure that you want to reassign the selected reminders to the user.</li>
+            <li>Click&#160;Yes.&#160;The Select User dialog box and message close and the reminder is reassigned.</li>
+        </ol>
+    </body>
+</html>

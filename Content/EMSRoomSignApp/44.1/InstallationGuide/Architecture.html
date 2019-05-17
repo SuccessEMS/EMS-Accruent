@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Architecture for the EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2019-05-02T09:48:24.2347179-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="For U33, need to review architcture and update graphic, if needed. Also need to create an earlier versions section in the topic so that only the current architecture is fully displayed. Older versions can be later in this topic or stored elsewhere." MadCap:editor="Megan.Laub" MadCap:editDate="2019-05-02T09:49:28.3059379-06:00">Architecture for EMS&#160;Room Sign App</MadCap:annotation>
+        </h1>
+        <p>The <MadCap:variable name="General.RSA" /> application&#160;is comprised of four main components:</p>
+        <ol class="number-list">
+            <li><b>EMS Room Sign App Device:</b>&#160;Device with a supported browser installed that will access the <MadCap:variable name="General.RSA" /> web application.&#160;A particular device is tied to&#160;<b>one</b>&#160;specific room in EMS.</li>
+            <li><b>EMS Room Sign App Web Application:</b>&#160;EMS Room Sign web application.</li>
+            <li><b>EMS Room Sign App Web Service API:</b>&#160;Web service API that manages all communication between the <MadCap:variable name="General.RSA" /> web application and your EMS database. <span class="ui">This component is only required for Update 29 or earlier</span>.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p> For <a href="../../../V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Online Only">Update 30</a><a href="https://docs.emssoftware.com/Content/V44.1_ReleaseNotes.htm#Update30" MadCap:conditions="General.Print Only">Update 30</a> or later, the EMS&#160;Room Sign App web service API is no longer necessary because the API for EMS Room Sign App has been moved into the application to improve performance.</p></div></li>
+            <li><b>EMS Room Sign App Settings DLL:</b>&#160;Component installed with your EMS Client application (.exe) that allows your EMS Administrators to configure the EMS Room Sign App.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../Images/A_Installation/RSA_InstalArchitecture_Architecture.png" class="hyperlink_with_padding_and_border" />
+            </p>
+            <p class="Caption"><a name="ArchitectureRSA"></a>Architecture of EMS&#160;Room Sign App</p>
+        </div>
+    </body>
+</html>

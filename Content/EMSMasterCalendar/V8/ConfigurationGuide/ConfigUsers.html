@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configure Users in Master Calendar</title>
+    </head>
+    <body>
+        <h1>Configure Users</h1>
+        <p>A <em>user</em> in Master Calendar is anyone who can log in to Master Calendar and who has a predefined level of access to specific calendars. For example, User A has requestor access to Calendar A, and view only access to Calendar B, User B has view only access to all calendars in Master Calendar, and so on. The user’s record that you define specifies this level of access. This topic guides you in searching for users, creating new ones, and working with existing ones.</p>
+        <h2>Search For a User</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>Users</strong>.&#160;The Users page open, on the Active tab, which lists all currently active users in Master Calendar.</p>
+                <p>
+                    <img src="../images/B_Configuration/MC_ManageUsers_UsersActive.png" class="resize80_border_and_padding" />
+                </p>
+                <p class="Caption">Users Page</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The&#160;<strong>Inactive</strong>&#160;tab lists all inactive users in EMS Master Calendar. You might find the user on either tab. Use the&#160;<strong>Print</strong>&#160;option to generate a report list of all users configured in Master Calender, which you can export as a PDF (default),&#160;Xls, Xlsx, Rtf, Mnt, Text, Image, or Csv.</p>
+                </div>
+            </li>
+            <li>Use the search fields at the top of the tab (<strong>User Name, Email, Template Name</strong>), enter partial or complete search criteria, and then click <strong>Go</strong>.The search is limited to the exact order of characters in the search string, however, the string is not-case sensitive and it can appear anywhere in the search results. For example, if you enter “Rob” as your &#160;search string for User Name, search results can include Robert, Rob, Robertson, Jarrob, and so on.&#160;A list of all users that meets the search criteria is displayed on the tab.</li>
+        </ol>
+        <h2>Create a New Master Calendar&#160;User</h2>
+        <ol>
+            <li>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>Users</strong>.&#160;&#160;</li>
+            <li>
+                <p>Under Actions, click <strong>Add</strong>.&#160;The Details window opens, where you can&#160;add the information about the user.</p>
+                <p>
+                    <img src="../images/B_Configuration/securityusers1.png" class="resize80_border_and_padding" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">If your organization has purchased the optional Integrated Authentication module, a Lookup icon shows&#160;next to the <strong>Full Name</strong> field. Click this icon to open a list of users in your EMS system and automatically populate these fields. </div>
+            </li>
+            <li>
+                <p>Add the information for the new user.&#160;</p>
+                <p><b>Details Fields</b>
+                </p>
+                <table border="0" cellspacing="0" class="TableStyle-Border_table" style="mc-table-style: url('../../../Resources/TableStyles/Border_table.css');">
+                    <col class="TableStyle-Border_table-Column-Column1" />
+                    <col class="TableStyle-Border_table-Column-Column1" /> <thead><tr class="TableStyle-Border_table-Head-Header1"><th class="TableStyle-Border_table-HeadE-Column1-Header1">FIELD</th><th class="TableStyle-Border_table-HeadD-Column1-Header1">DESCRIPTION</th></tr></thead><tbody> <tr class="TableStyle-Border_table-Body-Body1"> </tr> <tr class="TableStyle-Border_table-Body-Body1" /> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Full Name</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The full name for the user.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Email</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The email address for the user.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Password</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The login password for the user.</p><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p> The password does not have any special rules.</p></div></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Confirm Password</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>Re-enter the password exactly as you entered it in the Password field.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Phone</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The phone number for the user.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>External Reference</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>Required only if you have LDAP security. Used to enable single sign-on through the separately purchased Integrated Authentication module.</p></td></tr><tr class="TableStyle-Border_table-Body-Body1"><td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Account Type</p></td><td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>Choose one of the three options from the dropdown:</p><ul><li>Standard</li><li>Template</li><li>Administrator</li></ul></td></tr><tr class="TableStyle-Border_table-Body-Body1"><td class="TableStyle-Border_table-BodyB-Column1-Body1"><p>Template</p></td><td class="TableStyle-Border_table-BodyA-Column1-Body1"><p>If you select Template as the Account Type, the Template dropdown appears. Choose a template from the dropdown. Select the Add Additional Permissions to Template User checkbox to add additional permissions. </p></td></tr></tbody></table>
+            </li>
+            <li>
+                <p>Select the account type for the user - Standard, Template or Administrator.</p>
+                <p><b>User Types</b>
+                </p>
+                <table border="0" cellspacing="0" class="TableStyle-Border_table" style="mc-table-style: url('../../../Resources/TableStyles/Border_table.css');">
+                    <col class="TableStyle-Border_table-Column-Column1" />
+                    <col class="TableStyle-Border_table-Column-Column1" /> <thead><tr class="TableStyle-Border_table-Head-Header1"><th class="TableStyle-Border_table-HeadE-Column1-Header1">User type</th><th class="TableStyle-Border_table-HeadD-Column1-Header1">Description</th></tr></thead><tbody> <tr class="TableStyle-Border_table-Body-Body1"> </tr> <tr class="TableStyle-Border_table-Body-Body1" /> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Standard</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>This is the default value for a user type. You must manually apply permissions for this type of user.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Template</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p> This type of user is available only if you have active templates defined in Master Calendar. See <a title="Managing User Templates" href="ConfigUserTemplates.html" alt="Managing User Templates">Configure User Templates</a>.</p></div><p>If you select this type of user:</p><ul><li>The Permission tab is initially removed from the page.</li><li>A Template dropdown list opens. You use this list to select the correct template for the user’s permissions.</li></ul><p><img src="../images/B_Configuration/MC_ManageUsers_TemplateDropdownList.png" class="padding_and_border" /></p><ul><li>Optionally, if you want to add permissions for the user in addition to the ones that are defined by the selected template, select Add additional permissions to template user to make the Permissions tab available again.</li></ul></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyB-Column1-Body1"><p>Administrator</p></td> <td class="TableStyle-Border_table-BodyA-Column1-Body1"><p>This type of user has full access to all calendars in Master Calendar as well as to all system areas and functions.</p></td></tr></tbody></table>
+            </li>
+            <li>
+                <p>Do one of the following:</p>
+                <ul>
+                    <li>If the user is an administrator, or a template user who does <em>not</em> have additional permissions, click <strong>Save</strong>.&#160;The user is saved as an <em>active</em> user in Master Calendar.</li>
+                    <li>If the user is an administrator, or a template user who does <em>not</em> have additional permissions, click <strong>Save</strong>.&#160;The user is saved as an <em>active</em> user in Master Calendar.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Define User Permissions</h3>
+        <ol start="1">
+            <li>
+                <p>Click the <span class="ui">Permissions </span>tab, which&#160;lists&#160;all currently active calendars in Master Calendar.</p>
+                <p>
+                    <img src="../images/B_Configuration/USERS1.png" class="resize80_border_and_padding" />
+                </p>
+            </li>
+            <li>
+                <p>To indicate the type of access the user will have to the calendars in Master Calendar, select the calendar (CTRL-click to select multiple calendars), and then click the appropriate Add button  to move the calendars to the access type.</p>
+                <p><b>Calendar Access Type Fields</b>
+                </p>
+                <table border="0" cellspacing="0" class="TableStyle-Border_table" style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table.css');">
+                    <col class="TableStyle-Border_table-Column-Column1" style="width: 195px;" />
+                    <col class="TableStyle-Border_table-Column-Column1" style="width: 561px;" /> <thead><tr class="TableStyle-Border_table-Head-Header1"><th class="TableStyle-Border_table-HeadE-Column1-Header1"><p>FIELD</p></th><th class="TableStyle-Border_table-HeadD-Column1-Header1">DESCRIPTION</th></tr></thead><tbody> <tr class="TableStyle-Border_table-Body-Body1"> </tr> <tr class="TableStyle-Border_table-Body-Body1" /> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Viewer</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The user can only view events on the calendar.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Requester</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The user can view events on the calendar and submit events to the calendar; however, the submitted event is posted only if the Calendar Manager approves it.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyE-Column1-Body1"><p>Calendar User</p></td> <td class="TableStyle-Border_table-BodyD-Column1-Body1"><p>The user can view events on the calendar and submit events to the calendar and the events are automatically posted without approval by the Calendar Manager.</p></td></tr> <tr class="TableStyle-Border_table-Body-Body1"> <td class="TableStyle-Border_table-BodyB-Column1-Body1"><p>Calendar Manager</p></td> <td class="TableStyle-Border_table-BodyA-Column1-Body1"><p>The user can carry out all administration functions for the calendar (edit the calendar, create calender URLs, submit events to the calendar without approval, add/edit/delete special dates, and so on.)</p></td></tr></tbody></table>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>If you do not select a calendar for the user, the calendar is considered to be a private calendar—the user cannot view events on the calendar, submit events to the calendar, and so on. </p>
+                </div>
+            </li>
+            <li>Click <strong>Save</strong>.&#160;The user is saved as an <em>active</em> user in Master Calendar.</li>
+        </ol>
+        <h2>Edit Existing Users</h2>
+        <ol>
+            <li>
+                <p>From the Admin Panel, navigate to <span class="ui">Admin </span>&gt; <span class="ui">Security </span>&gt; <strong>Users</strong>.&#160;Select the Active or Inactive tab and select the user you want to work with and click <strong>Edit</strong>.&#160;The Details tab opens.</p>
+                <p>
+                    <img src="../images/B_Configuration/securityusers1.png" class="resize80_border_and_padding" />
+                </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Use the&#160;<strong>Active</strong>&#160;option to control whether the user is active or inactive in Master Calendar.&#160;</p>
+                    <p>You can only <span class="ui">Delete </span>inactive users, so to delete a user from Master Calendar entirely, first set them to Inactive, and then on the Inactive tab you can select the user and click the&#160;<strong>Delete&#160;</strong>option.&#160;</p>
+                    <p>You can view history on a user by clicking the&#160;<strong>History</strong>&#160;tab.</p>
+                </div>
+            </li>
+            <li>Edit the information as needed for the user.</li>
+            <li>If needed, edit the user's permissions on the Permissions tab, and update the&#160;type of access the user will have to the calendars in Master Calendar, select the calendar (CTRL-click to select multiple calendars), and then click the appropriate Add button  to move the calendars to the access type.</li>
+            <li>Click <strong>Save </strong>to save your changes.</li>
+        </ol><![CDATA[  ]]></body>
+</html>

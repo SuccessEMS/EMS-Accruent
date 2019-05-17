@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Application Architecture</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Application Architecture</h1>
+        <p>The EMS Polycom Interface is comprised of two components:</p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">EMS Polycom Service:</span>&#160;Windows service responsible for pushing video conference bookings from EMS to the Polycom Realpresence Resource Manager API at timed intervals.</li>
+            <li><span class="ui">Polycom Activity DLL:&#160;</span>Custom Polycom DLL provided by EMS that will display all EMS Polycom Interface activity within the EMS application, including errors and successfully scheduled video conferences. The Polycom Activity DLL also contains an area that allows EMS Administrators to configure various EMS&#160;Polycom Interface settings.</li>
+        </ol>
+        <p>New video conferences booked in EMS are pushed to the Polycom Realpresence Resource Manager API based on various settings defined within EMS (see EMS Polycom Interface Configuration Settings) Subsequent critical booking changes (i.e. date, time or location changes) and/or cancellations are also relayed to the API. The EMS&#160;Polycom Interface is a one-way interface and changes made in Polycom will not be reflected in EMS.</p>
+        <p>
+            <img src="Images/Polycom/Introduction_2.png" alt="https://success.emssoftware.com/@api/deki/files/5009/PolycomV44Diagram.png?revision=1" class="hyperlink_with_padding_and_border" />
+        </p>
+        <p>See Also:&#160;<a href="Polycom_AdvancedPolycomInterfaceConfig.html">Advanced EMS Polycom Interface Configuration</a>&#160;to learn about how data&#160;is transferred from EMS to the Polycom Realpresence Resource Manager API.</p>
+    </body>
+</html>

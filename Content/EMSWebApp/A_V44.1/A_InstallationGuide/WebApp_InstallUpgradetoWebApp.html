@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False" MadCap:conditionTagExpression="include[General.Topic_Show_A]exclude[General.Topic_Show_B]">
+    <head><title>Install or Upgrade to the EMS Web App</title>
+    </head>
+    <body>
+        <h1>Install or Upgrade the EMS Web App</h1>
+        <p>To install or upgrade the EMS&#160;Web App</p>
+        <ol>
+            <li>
+                <p>Manually <span class="ui">uninstall </span>any previous versions of VEMS or <MadCap:variable name="General.EMS&#160;Web App" />&#160;on your web server.&#160;</p>
+            </li>
+            <li>
+                <p>Verify that <a href="WebApp_RequirementPrerequisites.html">Requirements and Prerequisites</a> have been met.
+			</p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>Beginning with <a href="../../../ReleaseNotes/Version44.1/Update31/EMSWebApp.htm">Update 31</a>, EMS&#160;Platform Services is a prerequisite for installing and using the EMS&#160;Web App. If EMS&#160;Platform Services has not yet been <a href="../../../EMSPlatformServices/InstallationGuide/InstallPS.html">installed</a> in your environment, validate the <a href="../../../EMS_SystemReq_44.1.html#EMSPlatformServices">hardware and software requirements for EMS&#160;Platform Services</a>. </p>
+                    <p>If your organization uses the EMS&#160;Mobile App, EMS&#160;Kiosk App, Google Integration, EMS&#160;for Outlook, or SAML authentication, then EMS&#160;Platform Services is already running in your environment.</p>
+                </div>
+            </li>
+            <li>
+                <p>Download the <span class="ui">EMSWebApplication.msi</span> file onto the web server that will be running <MadCap:variable name="General.EMS&#160;Web App" />.</p>
+            </li>
+            <li>
+                <p>Run <span class="ui">EMSWebApplication.msi</span>.</p>
+            </li>
+            <li>
+                <p>The first screen welcomes you to the&#160;<MadCap:variable name="General.EMS&#160;Web App" />&#160;Setup Wizard.&#160;Click <span class="ui">Next</span> to begin the installation process.</p>
+                <p>
+                    <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSetupNext.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>In the&#160;Destination Folder screen, select the destination folder.</p>
+                <p>
+                    <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSetupDestinationFolder.png" class="resize80_noborder_padding" />
+                </p>
+                <p> &#160;  The installation process will create a new physical directory on your web server based on the destination folder path you entered.&#160;Click <span class="ui">Next</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Choosing a folder above other than the default will create a new physical directory on your web server at that location.&#160;If your organization uses Internet Information Services (IIS), make sure that the user account used for IIS (IUSR&#160;and/or IIS_IUSRS) has access to this new installation directory. To learn more,&#160;see <a href="WebApp_WinWebServGuide2008R2.htm">Windows Server 2008/2008 R2 Web Server Setup Guide</a> or <a href="WebApp_WinWebServGuide2012R.htm">Windows Server 2012/2012 R2 Web Server Setup Guide</a>.</p>
+                </div>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p><MadCap:variable name="General.EMS&#160;Web App" />&#160;should <span class="ui">not</span> be installed in the same physical directory as other EMS web-based products OR under a site running another version of VEMS or <MadCap:variable name="General.EMS&#160;Web App" />.</p>
+                </div>
+            </li>
+            <li>
+                <p>In the SQL Server and database information screen that appears, enter your SQL Instance Name and your Database Name and click <span class="ui">Next</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>The database name is typically “EMS.”</p>
+                </div>
+                <p>
+                    <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSQLServerdatabase.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>In the Virtual Directory information screen that appears, the Virtual Directory Name will default to the destination folder you specified (in Step 6 above).&#160;It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EmsWebApp” in the example above).&#160;Click <span class="ui">Next</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p><MadCap:variable name="General.EMS&#160;Web App" /> should not be installed in the same virtual directory as other EMS web-based products OR under a site running another version of <MadCap:variable name="General.EMS&#160;Web App" />.</p>
+                </div>
+            </li>
+            <li>
+                <p>On the Ready to install EMS Web Application screen that appears, click <span class="ui">Install</span>.</p>
+                <p>
+                    <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSetupReadytoInstall.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>On the Completed the EMS Web App Setup Wizard screen that appears, click <span class="ui">Finish</span>.</p>
+            </li>
+            <li>
+                <p>EMS&#160;Platform Services is required for <a href="../../../ReleaseNotes/Version44.1/Update31/EMSWebApp.htm">Update 31</a> or later; ensure that <a href="../../../EMSPlatformServices/ConfigurationGuide/ConfigPSinAdminPortal.html#ConnectWebApptoPlatformServices">EMS&#160;Web App is connected to EMS&#160;Platform Services</a> as follows:</p>
+                <MadCap:snippetBlock src="../../../ConnectWebApptoPlatform.flsnp" />
+            </li>
+        </ol>
+    </body>
+</html>

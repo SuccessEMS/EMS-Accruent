@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="6422" MadCap:lastWidth="1020" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />EMS for Outlook <br />Release Notes <br />V44.1 Update 3</h1>
+        <p class="p_34">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p class="p_47">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Name:&#160;V44.1 Update 3</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                    <p>Release&#160;Date:&#160;August 26, 2016</p>
+                </td>
+                <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                    <p class="Strong_4">Build #:&#160;<a href="http://www.dea.com/ServiceAndSupport/DownloadHandler.axd?f=v441&amp;L=1&amp;data=EMS%20for%20Outlook.msi" title="http://www.dea.com/ServiceAndSupport/DownloadHandler.axd?f=v441&amp;L=1&amp;data=EMS%20for%20Outlook.msi" class="Hyperlink_2">44.1.0823.4</a></p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2_1">Fix&#160;</h2>
+        <table align="center" class="TableStyle-Border_table_alternate_colors" style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col style="width: 206pt;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 559pt;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="Strong_1">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">EMS for&#160;Outlook &gt; Room Search&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Services Button Shows for Rooms in Buildings With No Available Services</p>
+                        <p class="RNBody">When searching for rooms in buildings that had no services available, the Services button was incorrectly available.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified the display so the button no longer appears for rooms in buildings with no services.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22758?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22758?fullScreen=false" class="Hyperlink_2">2758</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">EMS for&#160;Outlook &gt; Group Policy&#160;&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Macro Security Settings Not&#160;Enabling EMS for Outlook</p>
+                        <p class="RNBody"><span class="span_19">When an organization enforced user access by group policy (Outlook &gt; File &gt; Options &gt; Trust Center &gt; Trust Center Settings &gt; Macro </span><span class="span_19">Settings &gt; Apply macro..), the setting was not enabling users as expected.</span>
+                        </p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Added a step to the EMS for Outlook&#160;build process that digitally signs the add-in's loader, thus satisfying the security requirements and enabling users as expected.</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22477?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22477?fullScreen=false" class="Hyperlink_2">2477</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">EMS for&#160;Outlook &gt; New Meeting&#160;</p>
+                        <p class="p_25">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Meeting Created Although Not Saved</p>
+                        <p class="RNBody">When users began booking a new meeting but clicked the Cancel (X) button without saving, the meeting was still created and appeared on the calendar.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Changed functionality to ensure that meetings that are not saved do not book.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 22111</p>
+                        <p class="RNTitle">Capacity and Setup Count Values Not Populating In EMS Desktop Client</p>
+                        <p class="RNBody">When users booked space and set the Capacity and Setup Count fields for rooms, those values appeared in the&#160;EMS Desktop Client as zero.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified functionality so that these values show in the EMS Desktop Client.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference # 22354</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">EMS for&#160;Outlook &gt;&#160;User Defined Fields</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">User Defined Field Not Shown on&#160;New Service Orders</p>
+                        <p class="RNBody">When booking a new service order using a booking template that had a user defined Yes/No field prompting users, the field was not visible, and only appeared when editing existing orders.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified functionality to ensure that the field appears on new bookings.</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference # <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22897?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22897?fullScreen=false" class="Hyperlink_2">2897</a></p>
+                        <p class="RNTitle">Date Conversion Miscalculated</p>
+                        <p class="RNBody">When making a reservation&#160;with a service order&#160;using a template that had a user defined field with a default date set, the date was converted to year-day-month format.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix:&#160;</span><span class="span_19">Changed how dates are converted for this field to always use&#160;the local system date formatting.</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22886?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22886?fullScreen=false" class="Hyperlink_2"> 22886</a></p>
+                        <p class="RNTitle">Chose Option for&#160;User Defined Field Not Saved</p>
+                        <p class="RNBody">When editing a booking with a service order that had parent and child user defined fields, the chosen option did not save or display in the order summary.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix:&#160;</span><span class="span_19">Modified the display so that selections in these fields save with the service order and show on the order summary</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">EMS for&#160;Outlook &gt; Conflict Resolution&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Multiple Confirmation Emails Triggered by Conflict Resolution for Recurrent Meetings</p>
+                        <p class="RNBody">When resolving booking conflicts for a recurrent meeting by canceling a series, multiple individual confirmation emails were generated for each occurrence plus one.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified functionality so that only one confirmation email triggers for this type of conflict resolution.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22901?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22901?fullScreen=false" class="Hyperlink_2">2901</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">EMS for&#160;Outlook &gt; &#160;Billing Information&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Reserve Button&#160;Hidden on Provide Billing Information Page</p>
+                        <p class="RNBody">When prompted to provide billing information, the Reserve button was hidden and only showed when users expanded the page.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified the display so that the button shows when the page displays at its default size.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21820" class="Hyperlink_2">2</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22967?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22967?fullScreen=false" class="Hyperlink_2">2967</a></p>
+                        <p class="RNTitle">Default PO/Billing Missing on Service Orders</p>
+                        <p class="RNBody">When booking service orders using booking templates that had prepopulated&#160;values set for billing information, the values were not showing on EMS for Outlook.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix:&#160;</span><span class="span_19">Modified functionality to ensure that these values show on EMS for Outlook.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS Internal Reference #&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22696?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22696?fullScreen=false">22696</a>, <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22697?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22697?fullScreen=false">22697</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">EMS for Outlook &gt; Edit Resources</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Changes to Resources Not Saved</p>
+                        <p class="RNBody">When editing a reservation and changing resources, changes were not saved.</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified functionality to ensure that these changes are saved.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;22956</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">EMS for Outlook &gt; Edit Recurring Meeting</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Changes to Single Occurrence in Appointment Window Not Saved</p>
+                        <p class="RNBody">When editing the&#160;time of a single occurrence in the Appointment window, the changes were not saved to the calendar.&#160;</p>
+                        <p class="RNBody"><span class="Strong_2">Fix</span><span class="span_19">: Modified functionality to ensure that these edits are saved.&#160;</span>
+                        </p>
+                        <p class="RNRef">EMS&#160;Internal Reference #&#160;22532</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Contact"></a>Contact Customer Service</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

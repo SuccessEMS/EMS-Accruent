@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Accounts V44.1 (EMS Desktop Client) </title>
+    </head>
+    <body>
+        <h1>Configure Accounts</h1>
+        <p>EMS uses&#160;accounts&#160;to indicate where the monies that your organization receives for billable items should be deposited, based on your internal accounting system.</p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Accounts in EMS are used for reporting purposes only. EMS does not provide any functions for physically moving funds.</p>
+        </div>
+        <p>Examples of accounts include the following:</p>
+        <ul class="unorder-list">
+            <li>
+                <p>Facilities Account</p>
+            </li>
+            <li>
+                <p>Catering Fees Account</p>
+            </li>
+            <li>
+                <p>Miscellaneous Charges Accounts</p>
+            </li>
+        </ul>
+        <p>Income for each resource or room is recorded into only one account. The account that is credited typically corresponds to the operational department that receives the income credit for the sale of the resource or room. For instance, in this model, room charges might be credited to the Facilities Account and food and beverage resources would be credited to the Catering Account. When you&#160;configure&#160;an account, you must specify both an account name and an account code. After you configure accounts, you can use them to label billable items (rooms, equipment items, and so on). If you invoice out of EMS, then you can run the General Ledger Distribution report to group your receivables by account.</p>
+        <h2 class="Heading2">Configure Accounts&#160;</h2>
+        <p>To configure accounts, complete the following steps:</p>
+        <ol start="1" class="number-list">
+            <li>
+                <p>On the EMS menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Billing </span>&gt; <span class="ui">Accounts</span>. The Accounts window opens. This window lists all the accounts that are currently configured in your EMS database.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Accounts.png" alt="emssg_CoreConfigurationBilling_image013.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Accounts Window</p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span>. The Account dialog box opens.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Accounts_1.png" class="padding_only" />
+                    </p>
+                    <p class="Caption">Account Dialog Box</p>
+                </div>
+            </li>
+            <li>
+                <p>Enter the information for the new account.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Field</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Description</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The name or description for the account.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The description can be a maximum of 50 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                                <p>Account</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                                <p>The code for the account. Typically, this is numerical, but it can be abbreviated text that conveys the account name or description.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>The code can be a maximum of 50 characters, including spaces.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <ol start="4" class="number-list">
+            <li>
+                <p>Click <span class="ui">OK</span>. The Account dialog box closes. You return to the Accounts window with the newly configured account automatically selected.</p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ReviewDraft"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/WordDraft/ReviewDraft.fltoc"
+  ConditionTagExpression="include[Default.PrintOnly or General.Edit_in_Review or General.Topic_Hide_A or General.Topic_Hide_B or &quot;General.Print Only&quot;]exclude[Default.ScreenOnly or &quot;General.Online Only&quot;]"
+  PatchHeadingLevels="false"
+  InjectEmptyPages="false"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings="20032,20033,20034,20035,20036,20037,20038,20039,20040,20041"
+  MasterPageLayout="/Content/Resources/PageLayouts/EMS_8_5x11/Chapters8_5X11.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Word_Accruent_2018.css"
+  EmbedImages="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    GenerateTOCProxy="false"
+    EnableTrackedChanges="true" />
+  <DocumentProperties
+    Title="VPAT"
+    Author="EMS Software, LLC, an Accruent Company" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="50"
+    TitleBar="FileName"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="false"
+    FullScreen="false"
+    PageMode="UseOutlines" />
+</CatapultTarget>

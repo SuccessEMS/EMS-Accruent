@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" MadCap:onlyLocalStylesheets="False" MadCap:searchable="False" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Security Headers V44.1 (EMS Web App)</title>
+    </head>
+    <body>
+        <h1>Customize Security in EMS&#160;Web App</h1>
+        <p style="line-height: 20px;margin-top: -5px;"><span class="italics">(EMS Internal Documentation)</span>
+        </p>
+        <p class="beforelist">Through the web.config file and parameter settings, you can enhance security features in the EMS&#160;Web App to meet your organization's needs. This topic provides information about the following security settings:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#FileSize">Customize Reservation Attachment File Size Limit</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Calendar-Enabled_AttachmentSize">Customize Calendar-Enabled Attachment File Size Limit</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#SecurityHeaders">Customize HTTP&#160;Security Headers</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="FileSize"></a>Limit File Size for Reservation Attachments</h2>
+        <p>A setting in the web.config file limits the file size for reservation attachments to 50 MB. You can edit this file size limit by modifying the web.config file as follows:</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can also limit the file size of calendar-enabled attachments (Exchange and G Suite). Refer to <a href="#Calendar-Enabled_AttachmentSize">Limit File Size of Calendar-Enabled Attachments</a> for more information.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Open the EMS Web App web.config file. The typical path is C:\inetpub\wwwroot\EMSWebApp\web.config.</p>
+            </li>
+            <li>
+                <p>In the web.config file, locate the <span style="color: #228b22;">requestLimits</span> node under <span class="ui">&lt;requestFiltering&gt;</span>.</p><pre class="code-sample"><pre xml:space="preserve">&lt;requestFiltering&gt;</pre><pre xml:space="preserve">  <span style="color: #228b22;">&lt;requestLimits maxAllowedContentLength="51200000"/&gt;</span></pre><pre xml:space="preserve">&lt;/requestFiltering&gt;</pre></pre>
+            </li>
+            <li>
+                <p>Edit the <span class="ui">&lt;requestLimits&gt;</span> node's value according to your maximum file size requirements. </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>The default maximum file size is 51200000 bytes (50&#160;MB). When specifying a different maximum file size, make sure to enter the value in bytes. If you remove the <span class="ui">&lt;requestLimits&gt;</span> node from the web.config file, the hard-coded file size limit of 4096000&#160;bytes (4 MB) will go into effect.</p>
+                </div>
+            </li>
+            <li>
+                <p>Save the web.config file.</p>
+            </li>
+            <li>
+                <p>Restart the website.</p>
+            </li>
+        </ol>
+        <h2><a name="Calendar-Enabled_AttachmentSize"></a>Limit File Size of Calendar-Enabled Attachments</h2>
+        <p>For EMS&#160;Web App, the default file size limit is 8&#160;MB for calendar-enabled reservation attachments (Exchange and G Suite). To modify this file size limit, please <a href="#Contact_Customer_Support">contact EMS Support</a>. A support representative will need to access the hidden parameter <span class="italics">PAM_MaxAttachmentSize</span> in your EMS&#160;database.</p>
+        <p class="beforelist">Parameter for specifying the maximum file size limit for calendar-enabled reservation attachments (Exchange and G Suite):</p>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">Display Value:</span> PAM Maximum size of attachment to allow</p>
+            </li>
+            <li>
+                <p><span class="ui">Keyvalue:</span> PAM_MaxAttachmentSize</p>
+            </li>
+            <li>
+                <p><span class="ui">Default Size:</span>&#160;8000 kB (8 MB)</p>
+            </li>
+        </ul>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>When modifying the default maximum file size for calendar-enabled attachments, make sure to specify the size in kilobytes.</p>
+        </div>
+        <h2><a name="SecurityHeaders"></a>Customize HTTP&#160;Security Headers</h2>
+        <p> HTTP security headers tell the browser how to behave when handling a website's content and data. Using security headers can improve  web security; for example, using the <span class="ui">strict-transport-security</span> header forces the browser to communicate solely over HTTPS.  </p>
+        <p>The following table lists the security headers that can be <a href="#ConfigSecurityHeaders">configured</a> in the EMS&#160;Web App's web.config file.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">TIP&#160;FOR&#160;EMS&#160;CLOUD&#160;CUSTOMERS:</span> Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please <a href="#Contact_Customer_Support">contact EMS Support</a>.</p>
+        </div>
+        <p><a name="HeaderTable"></a><b>Security Headers Available for Configuration in EMS&#160;Web App</b>
+        </p>
+        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>HTTP&#160;Security Header</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p>Default</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">X&#8209;Frame&#8209;Options</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Disabled</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>This header indicates whether a browser should be allowed to render a page in a &lt;frame&gt;, &lt;iframe&gt;, or &lt;object&gt;. By default, the <span class="ui">x-frame-options</span> header is disabled. To enable this header, you will need to <a href="#ConfigSecurityHeaders">edit the web.config file</a>. </p>
+                        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                            <p class="ImportantNote" style="margin-top: 20px;">If you want to enable the <span class="ui">x-frame-options</span> header and your company uses the Skype for Business Integration, the header must be configured with values that are appropriate for your EMS&#160;Web App configuration. </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p><span class="ui">X&#8209;Content&#8209;Type&#8209;Options</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p>Enabled</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p>This header blocks content sniffing by instructing the browser to follow the MIME&#160;types indicated in the header. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p><span class="ui">Strict&#8209;Transport&#8209;Security</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p>Disabled</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p>This header forces communication using HTTPS&#160;instead of HTTP. By default, the <span class="ui">strict-transport-security</span> header is disabled. To enable this header, you will need to <a href="#ConfigSecurityHeaders">edit the web.config file</a>. </p>
+                        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                            <p class="ImportantNote" style="margin-top: 20px;">The <span class="ui">strict-transport-security</span> header is only valid if you are using SSL/HTTPS.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p><span class="ui">Content&#8209;Security&#8209;Policy</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p>Disabled</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p>This header can prevent attacks, such as cross-site scripting, by defining content sources that are approved and allowing the browser to load them. By default, the <span class="ui">content-security-policy</span>&#160;header is disabled. To enable this header, you will need to <a href="#ConfigSecurityHeaders">edit the web.config file</a>. </p>
+                        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                            <p class="ImportantNote" style="margin-top: 20px;">If your company uses the Skype for Business Integration and you want to enable the <span class="ui">content-security-policy</span> header, you must configure this header with appropriate values. </p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="ConfigSecurityHeaders"></a>Configure Security Headers</h3>
+        <p>To configure HTTP&#160;security headers, you will need to edit the web.config file as follows:&#160; </p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">TIP&#160;FOR&#160;EMS&#160;CLOUD&#160;CUSTOMERS:</span> Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please <a href="#Contact_Customer_Support">contact EMS Support</a>.</p>
+        </div>
+        <ol class="number-list">
+            <li>
+                <p>Open the EMS Web App web.config file. The typical path is C:\inetpub\wwwroot\EMSWebApp\web.config.</p>
+            </li>
+            <li>
+                <p>In the web.config file, locate the <span style="color: #228b22;">header nodes</span> under <span class="ui">&lt;customHeaders&gt;</span>.</p>
+                <div class="code-sample"><pre class="code-sample"><pre>&lt;httpProtocol&gt;</pre><pre xml:space="preserve">  &lt;!-- security-specific http headers --&gt;</pre><pre xml:space="preserve">  &lt;customHeaders&gt;</pre><pre xml:space="preserve" style="color: #228b22;">    &lt;!--&lt;add name="X-Frame-Options" value="deny" /&gt;--&gt;&lt;!-- valid only when NOT using Skype 
+    integration - can be configured with 'allow-from' when using Skype --&gt;</pre><pre xml:space="preserve" style="color: #228b22;">    &lt;add name="X-Content-Type-Options" value="nosniff"/&gt;</pre><pre xml:space="preserve" style="color: #228b22;">    &lt;!--&lt;add name="Strict-Transport-Security" value="max-age=31536000"/&gt;--&gt;&lt;!-- valid only when
+    using SSL/HTTPS --&gt;</pre><pre xml:space="preserve" style="color: #228b22;">    &lt;!--&lt;add name="Content-Security-Policy" value="default-src 'self'"/&gt;--&gt;&lt;!-- valid only when
+    NOT using Skype integration - can be configured with appropriate values when using Skype --&gt;</pre><pre xml:space="preserve" style="color: #228b22;">  &lt;/customHeaders&gt;</pre><pre>&lt;/httpProtocol&gt;</pre></pre>
+                </div>
+            </li>
+            <li>
+                <p>Edit the <span class="ui">&lt;customHeaders&gt;</span> nodes as follows:</p>
+                <ul>
+                    <li>
+                        <p>To enable a security header, uncomment the header by removing the "&lt;!&#8209;&#8209;" and "&#8209;&#8209;&gt;" from the beginning and end of the header statement. Make sure to set the header value according to your EMS&#160;Web App configuration and your company's specifications.</p>
+                        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                            <p>Some security header values are not valid with the Skype for Business Integration. Refer to the <a href="#HeaderTable">Security Headers</a> table for more information.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>To disable a security header, comment out the header by adding  the "&lt;!&#8209;&#8209;" and "&#8209;&#8209;&gt;" to the beginning and end of the header statement.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Save the web.config file.</p>
+            </li>
+            <li>
+                <p>Restart the website.</p>
+            </li>
+        </ol>
+        <h2><a name="Contact_Customer_Support"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Room Pricing V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2018-11-08T09:28:14.8113072-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Should topic title be changed to &quot;Configure the Pricing for a Room on the Edit Pricing Window&quot; (like was done for Resource one) to differentiate this topic from the Configure Rooms &gt; Pricing Tab?" MadCap:editor="Megan.Laub" MadCap:editDate="2018-11-08T09:29:08.1805172-07:00">Configure Room Pricing</MadCap:annotation>
+        </h1>
+        <p>You can configure the pricing for a room on the <span class="ui">Pricing </span>tab of the Room dialog box, or you can configure the room, and then configure the pricing for it at a later date on the Edit Pricing window (as described in this topic).</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You can also configure the room price at the time that you are&#160;configuring the room on the Room dialog box (see <a href="ConfigRooms.html#ConfigurePricing">Configure Rooms</a>), or when&#160;you are&#160;configuring rate schedules (see <a href="ConfigRateSchedule.htm" title="Configuring" alt="Configuring">Configure Rate Schedules</a>).</p>
+        </div>
+        <p>To configure the pricing for a room on the Edit Pricing window, complete the following steps:</p>
+        <ol class="number-list">
+            <li>On the EMS Desktop Client menu bar, click <span class="ui">Configuration </span>&gt; <span class="ui">Facilities </span>&gt;&#160;<span class="ui">Rooms</span>.&#160;The Rooms window opens. See Also:&#160;<a href="ConfigRooms.html#ConfigurePricing">Configure Pricing for a Room on the Pricing Tab</a>. <div class="TitleandImage"><p class="Caption"><img src="Images/RoomsConfigurationPage.png" class="resize80_border_and_padding" /></p><p class="Caption">Rooms Window</p></div></li>
+            <li>From the Building drop-down list, select the Building, Area, or View that contains the rooms that you are pricing.</li>
+            <li>Select a Room and click&#160;<span class="ui">Pricing</span>.&#160;The Edit Pricing window opens.<div class="TitleandImage"><p><img src="../../../Resources/Images/Configuration Facilities/Configure Room Pricing_1.png" alt="emssg_corefacilities_image046.png" class="resize80_noborder_padding" /></p><p class="Caption">Edit Pricing Window</p></div></li>
+            <li>On the <span class="ui">Rate Schedule</span> drop-down list, select the rate schedule for which you are pricing the rooms.</li>
+            <li>You can leave the&#160;Room Type&#160;set to the default value of (all), and then click <span class="ui">Display </span>to display a list of all&#160;active&#160;rooms for all room types that have been configured in your EMS database. On the Room Type drop-down list, you can select a specific room type, and then click&#160;<span class="ui">Display&#160;</span>for a list of all&#160;active&#160;rooms of the selected room type.</li>
+            <li>For each room, select the pricing method, which determines the cost for reserving the room, using the field definitions below.</li>
+        </ol>
+        <div class="TitleandImage">
+            <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+                <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 163px;" />
+                <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                        <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                            <p class="p_4">
+                                <MadCap:annotation MadCap:createDate="2018-10-22T13:42:23.1058892-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="If updating this pricing methods table, you may also need to update the pricing tables in the following topics: ConfigResourcesforCat.html, ConfigRateSchedule.htm, ConfigPricingResourceEditPriceWin.htm, ConfigRoomPricing.htm, and ConfigRooms.html. Note that the tables in the Room topics are slightly different from the other pricing methods tables in the topics." MadCap:editor="Megan.Laub" MadCap:editDate="2018-10-22T13:42:24.0123742-06:00">Pricing Method</MadCap:annotation>
+                            </p>
+                        </th>
+                        <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                            <p class="p_4">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                            <p class="tablebody_1">Half Day/Full Day (Event Time)</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                            <p class="tablebody_1">The total number of hours for the event is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the event is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the room. If the total number of hours for the event is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the room.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                            <p class="tablebody_1">Half Day/Full Day (Reserved Time)</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                            <p class="p_3">The total number of hours for the reservation (event time and reserved time) is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the reservation is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the room. If the total number of hours for the reservation is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the room.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                            <p class="tablebody_1">Hourly (Event Time)</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                            <p class="tablebody_1">The price that is indicated in the Price column is multiplied by the event time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                            <p class="tablebody_1">Hourly (Reserved Time)</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                            <p class="tablebody_1">The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                            <p class="tablebody_1">Hourly (Service Time)</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                            <p class="tablebody_1">The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the service (resource). This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                            <p class="tablebody_1">Hourly (Specific)</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                            <p class="tablebody_1">The price that is indicated in the Price column is multiplied by the number of hours indicated when adding the room to a booking.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                        <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                            <p class="tablebody_1">Unit</p>
+                        </td>
+                        <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                            <p class="tablebody_1">The price that is indicated in the Price column is applied to the room, regardless of the event time or reserved time for the booking.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ol MadCap:continue="true" class="number-list">
+            <li>After you select a pricing method, click in the appropriate fields to select the currently displayed amount, and then edit the amount as needed.</li>
+        </ol>
+        <table class="TableStyle-Border_table_alternate_colors" style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 135px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_4">Field</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_4">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="tablebody_1">Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="tablebody_1">The dollar amount that is used in calculating the room price for a booking. If the pricing method is Unit, then this value is applied in total to a room, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="tablebody_1">Discount</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="tablebody_1">You can use a discount with any pricing method. If you specify a discount for a room, then the actual price, the discount percentage, and the discounted amount are displayed on confirmations and invoices.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="tablebody_1">Min. Charge</p>
+                        <p class="tablebody_1">Max. Charge</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="tablebody_1">The values that are indicated in these columns are used in conjunction with the Hourly pricing methods. If you specify a minimum charge for a room, then the system compares this value to the calculated hourly rate and applies the greater of the two charges. Likewise, if you specify a maximum charge for a room, then the system compares this value to the calculated hourly rate and applies the lesser of the two charges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="tablebody_1">Flat Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="tablebody_1">A resource price that remains constant regardless of the total number of hours booked for the room. Used in conjunction with Hourly (Event Time) and Hourly (Reserved Time).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="tablebody_1">Half Day Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="tablebody_1">The dollar amount that is used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="tablebody_1">Full Day Price</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="tablebody_1">The dollar amount that is used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="tablebody_1">Hours</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="tablebody_1">Multiplier used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true" class="number-list">
+            <li>Repeat&#160;above&#160;steps for each rate schedule and/or grouping as needed.</li>
+            <li>Click&#160;<span class="ui">Close</span>.&#160;The Edit Pricing window closes. The pricing information is saved for the room.</li>
+        </ol>
+    </body>
+</html>

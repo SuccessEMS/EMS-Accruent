@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Install or Upgrade Campus Auto Sync V44.1 (Academic Planning)</title>
+    </head>
+    <body>
+        <h1>Install or Upgrade the EMS Campus Auto Sync Service</h1>
+        <p>Functionality exists within EMS Campus that allows Domain Schedulers to manually process post-publish course changes made in your SIS to EMS. The EMS Campus Auto Sync Service automates this process.</p>
+        <p>The EMS Campus Auto Sync Service must be installed on a computer/server that is connected to the network and is running 24 hours a day.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>  Existing versions of the EMS Campus Auto Sync Service must be manually uninstalled. Install the EMS Campus Auto Sync Service on one computer/server only.</p>
+        </div>
+        <p>To install the EMS Campus Auto Sync Service:</p>
+        <ol class="number-list">
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Manually uninstall any existing versions of the EMS Campus Auto Sync Service.</li>
+            <li>Download the EMSCampusAutoSyncSetup.msi onto the server that will be running the service.</li>
+            <li>Double-click EMSCampusAutoSyncSetup.msi. Follow the on-screen prompts. It is recommended that you accept the defaults.</li>
+            <li>Within your Microsoft Windows Start menu, locate EMS Campus Auto Sync. The EMS Campus Auto Sync Configuration window will appear.<div class="TitleandImage"><p><img src="../Images/Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service/Auto_Sync_Setup_5.png" class="padding_only" /></p><p class="Caption">EMS&#160;Campus Auto Sync Configuration Window</p></div></li>
+            <li>Set the Auto Sync Interval. EMS recommends setting this value to at least 30 minutes. It is very important that EMS Campus Auto Sync has plenty of time to synchronize with the SIS and process any changes.</li>
+            <li>In the Databases section of the dialog box, you will see a sample database and server (named ‘server’ and ‘database.’) Select this entry, click Edit, and change the values to your EMS server and database name.<div><p class="TitleandImage">EMS&#160;Database Window</p><p><img src="../Images/Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service/Auto_Sync_Setup_6.png" class="resize80_noborder_padding" /></p></div><p>On the Database tab of the Database dialog box, complete the following:</p><ul class="unorder-list"><li>Server/Database – EMS server and database name</li><li>EMS Authentication/Windows Authentication – The method of authentication to this database.</li><li>Enable Service Event Logging – Activates Windows event logging.</li></ul></li>
+            <li>After making your entries, click OK.</li>
+            <li>Click OK again to save your EMS Campus Auto Sync Configuration settings.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p> If any issues are encountered starting the service, please contact customer support.</p>
+        </div>
+        <p>The EMS Campus Auto Sync Service is now enabled. See <a href="../UserGuide_EMSDesktopClientAcademicPlanning/Post-PubProcCourses.htm#To_automatically_process_courses_post-publish">Automatically Process Courses Post-Publish</a> for information on how to configure the auto sync feature.</p>
+        <h2>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

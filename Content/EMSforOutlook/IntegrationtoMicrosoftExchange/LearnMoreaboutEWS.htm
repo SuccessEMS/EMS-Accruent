@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Learn More About Exchange Web Services Impersonation V44.1</title>
+    </head>
+    <body>
+        <h1>Learn More About Exchange Web Services (EWS) Impersonation</h1>
+        <p>EMS offers two Exchange integration options to enable seamless room, resource, and attendance scheduling:</p>
+        <ol start="1" class="number-list">
+            <li><span class="ui">EMS Integration to Exchange&#160;</span>offers users the convenience of scheduling rooms, resources, and services, confirming attendee availability,&#160;and managing Outlook invitations via EMS Web App (our web-based reservation tool).&#160;See Also: Installation Overview.</li>
+            <li><span class="ui">EMS for Outlook</span>&#160;lets users find available rooms, review their details, reserve them and book any necessary resources (equipment, etc.) without ever leaving Microsoft<sup>®</sup> Outlook.</li>
+        </ol>
+        <p>To achieve this seamless interaction between everyday users, Outlook hosts, and EMS administrators, an account with Exchange impersonation access to all mailboxes in your Exchange mailbox store is required.</p>
+        <p><b>See Also:</b>&#160;<a href="ConfigureEWSImpersonation.htm">Configure EWS Impersonation for Microsoft<sup>®</sup> Exchange</a></p>
+        <h2>FAQs&#160;</h2>
+        <p><span class="ui">Why is this account necessary?</span>
+        </p>
+        <p>Meetings created via EMS Integration for Exchange either on EMS Web App or EMS for Outlook are owned by the host and associated with a specific Exchange account. That Exchange user can move, update, or cancel the event. However, these meetings can also&#160;be moved, changed, or canceled by IT admins and expert users in EMS Desktop Client. When a reservation is moved, changed or canceled in the client, EMS must be able to update the record on the host’s Exchange account. Co-ownership of events between the meeting host and the EMS administrators necessitates an account that can read and write to all Exchange accounts being used for booking.</p>
+        <p><span class="ui">Can we exclude people from impersonation?&#160;</span>(For example, remove CEO, Board of Directors, etc. from being impersonated.)</p>
+        <p>Microsoft Exchange Server supports a&#160;CustomRecipientScope&#160;parameter when defining the impersonation role. You can define a scope of included users by implementing this parameter.</p>
+        <p><span class="ui">Is there any way that we could use a delegation feature (like allowing office admins delegate rights) instead of impersonation to notify hosts of updates/changes?</span>
+        </p>
+        <p>Delegation is possible, here are some things you should know:</p>
+        <ul class="unorder-list">
+            <li>The account needs Editor w/Folder owner (so a custom rights set).</li>
+            <li>Custom rights, at least through exchange 2010, are not scriptable. This means the delegation account will get set to owner, which is the only built in (read scriptable) option that has all the necessary permissions.</li>
+            <li>EMS for Outlook creates a custom property on the Calendar folder, which allows you to programmatically search the folder for items that have the custom property.&#160;Once that custom property is created, then Editor will&#160;be enough. It is the creation of the custom property at the folder level that requires owner permission.&#160;&#160;</li>
+            <li>While you can use PowerShell to script the permissions and loop through the users and set the permissions (owner), you would need to make sure that the script got applied to any new users and reapplied to any users that have changed the permissions of the delegation account</li>
+            <li>Rights are granted to ANY mail client (Outlook, OWA, etc):&#160; when using the impersonation account, rights are only granted to Exchange Web Services, so nobody could type in the service account into Outlook and gain the same permissions.</li>
+            <li>These rights are visible to the end user. For example, if an account, "EMSExchangeAccount", has been granted, delegation rights (any level) to User1’s calendar, and&#160;User1 goes to the Permissions tab of his calendar, he will see the EMSExchangeAccount and the rights it is assigned. Additionally, User1 would be able to change the rights, which would essentially disable&#160;the Exchange integration.</li>
+            <li>This restricts&#160;access only to the calendar</li>
+        </ul>
+        <p>By contrast, EWS&#160;impersonation provides the following alternatives to delegation:</p>
+        <ul class="unorder-list">
+            <li>Allows access ONLY through Exchange Web Services</li>
+            <li>Does grant permission to do anything the impersonated user could do (assuming it is available as part of EWS)</li>
+            <li>End users do not see (and cannot change) the permissions</li>
+        </ul>
+        <h2>Additional Reading&#160;</h2>
+        <p>The links below provide additional information from Microsoft<sup>®</sup>&#160;about Exchange Web Services (EWS).</p>
+        <ul class="unorder-list">
+            <li><a href="https://blogs.msdn.microsoft.com/webdav_101/2012/06/27/the-importance-of-ews-impersonation-while-using-an-application-account/">The Importance of EWS Impersonation</a>
+            </li>
+            <li><a href="https://msdn.microsoft.com/en-us/library/office/dn626019(v=exchg.150).aspx">Authentication and EWS in Exchange</a>
+            </li>
+            <li><a href="https://msdn.microsoft.com/en-us/library/office/dn722377(v=exchg.150).aspx">Impersonation and EWS in Exchange</a>&#160;<p>With Impersonation, a service account has full access to a defined set of mailboxes. What it can access in those mailboxes (such as specific folders) cannot be filtered or defined.&#160;Only an Exchange Admin can configure an EWS Impersonation account for impersonation and configure its mailboxes to allow the impersonation.</p></li>
+            <li><a href="https://msdn.microsoft.com/en-us/library/office/dn641957(v=exchg.150).aspx">Delegate Access and EWS in Exchange</a>
+                <p>Delegate access allows a user to access&#160;certain folders in another user’s mailbox &#160;Delegate permissions&#160;can be set by a mailbox owner or administrator using an app or other app code.&#160;</p>
+            </li>
+        </ul>
+    </body>
+</html>

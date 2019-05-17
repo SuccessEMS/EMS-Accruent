@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="desktopClient">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Analytics Tab V44.1 (EMS Desktop Client)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">
+            <MadCap:concept term="V44.1" />
+            <MadCap:annotation MadCap:createDate="2017-11-15T14:35:08.5454155-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Wiki link to 44H" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-15T14:35:14.3771008-07:00">Analytics</MadCap:annotation> Tab</h1>
+        <p>The Analytics tab provides quick access for queries that have been defined using the Query builder and to which you have access as a user. You can run these queries from the Analytics tab.</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44.1_Dash/Analytics Tab.png" alt="emsum_Dashboard_image015.png" class="resize80_noborder_padding">
+            </img>
+        </p>
+        <h2>Run a Query from the Analytics Tab</h2>
+        <p>To run a query from the Analytics tab, follow these steps:</p>
+        <ol start="1">
+            <li>
+                <p>In the upper left corner of the Analytics tab, click Select Queries.&#160;The Queries dialog box opens. This dialog box lists the queries that have been defined using the Query builder and to which you have access.</p>
+            </li>
+            <li>
+                <p>Select the queries that you want to run, and then click OK.&#160;The Queries dialog box closes. The selected queries are displayed in the Queries pane (upper left) on the Analytics tab.</p>
+            </li>
+            <li>
+                <p>In the Queries pane, select the query that you want to run, and then select the date for which the data in your EMS database is to be queried.</p>
+                <table style="mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+                    <thead>
+                        <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                            <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                                <p>Option</p>
+                            </th>
+                            <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Custom</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The starting date is set to the first day of the month and the ending date is set to the last day of the month but you can edit one or both of these dates.</p>
+                                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                                    <p>For some queries, if you select Custom, a Use Specific Times option becomes available. If you enter the same date for the starting date and ending date, you can select Use Specific Times, and then enter a starting time and ending time to query the data for in specific time range on the same day.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Last Month</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The starting date is set to the first day of the previous month and the ending date is set to the last day of the previous month.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>Last Quarter</p>
+                                <p>This Quarter</p>
+                                <p>This Quarter To Date</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>Quarters are based on a calendar year:</p>
+                                <ul>
+                                    <li>First quarter is 1/1 through 3/31.</li>
+                                    <li>Second quarter is 4/1 through 6/30.</li>
+                                    <li>Third quarter is 7/1 through 9/30.</li>
+                                    <li>Fourth quarter is 10/1 through 12/31.</li>
+                                </ul>
+                                <p>For example, if the current day's date is 11/22/2010, and you select Last Quarter, then the starting date is set to 7/1/2010 and the ending date is set to 9/30/2010.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>Last Year</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The starting date is set to 1/1 of the previous year, and the ending date is set to 12/31 of the previous year.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                                <p>This month</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                                <p>The starting date is set to the first day of the current month and the ending date is set to the last day of the current month.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                                <p>This Year</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                                <p>The starting date is set to 1/1 of the current year, and the ending date is set to 12/31 of the current year.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                            <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                                <p>This Year to Date</p>
+                            </td>
+                            <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                                <p>The starting date is set to 1/1 of the current year, and the ending date is set to the current day's date.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Optionally, in the Report Comment field, enter a description or explanation of the query.</p>
+            </li>
+            <li>
+                <p>Click Get Data.&#160;If the query returns data, then the results are displayed in the Results pane on the Analytics tab.</p>
+            </li>
+            <li>
+                <p>Optionally, do one or more of the following:</p>
+                <ul>
+                    <li>
+                        <p>To export the query results to an Excel spreadsheet or to an XML file, click Export, and then select the appropriate file type. A dialog box opens in which you can specify the file name (the default file name is the name of the query, but you can always edit this), and the location to which to save the file.</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p>The file type for an Excel spreadsheet is .xl or .xls and you cannot change this. The file type for an XML file is .xml and you cannot change this.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>To generate an onscreen preview of the printed query results, click Print. The preview window contains options for printing a hard copy of the query results, for emailing the results, and so on. Select the option or options that best fit your working needs.</p>
+                        <div class="TitleandImage">
+                            <p>
+                                <img src="../../../Resources/Images/DTC_V44.1_Dash/Analytics Tab_1.png" alt="emsum_Dashboard_image016.png" />
+                            </p>
+                            <p class="Caption">Onscreen preview of a query results</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>If the query has been defined with a Chart, the Chart option is enabled. Click Chart to generate an onscreen preview of the charted data. The preview window contains options for printing a hard copy of the chart, for emailing the chart, and so on. Select the option or options that best fit your working needs.</p>
+                        <div class="TitleandImage">
+                            <p>
+                                <img src="../../../Resources/Images/DTC_V44.1_Dash/Analytics Tab_2.png" alt="emsum_Dashboard_image017.png" class="resize80_noborder_padding" />
+                            </p>
+                            <p class="Caption">Onscreen preview of query results that are charted/graphed</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

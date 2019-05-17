@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/No-Survey Master Page_AA.flmsp');" MadCap:searchable="False">
+    <head>
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS for Outlook Release Notes <br />V44.1, Update 30.9</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table class="TableStyle-Standard" style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 30.9</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />March 6, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />TBD<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fix</h2>
+        <table class="TableStyle-Border_table_alternate_colors" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" cellspacing="12">
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 147px;" />
+            <col class="TableStyle-Border_table_alternate_colors-Column-Column1" style="width: 779px;" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1" style="text-align: left;">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Notifications</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Error occurred when dismissing Outlook reminders for in-progress meetings</p>
+                        <p class="RNBody">For reservations created in EMS Web App using a calendar-enabled template, users in EMS for Outlook were experiencing an error when trying to dismiss the meeting reminders if the meetings were in-progress.</p>
+                        <p class="RNBody">For example, a reservation with a meeting start time of 10:00 a.m. is created in EMS Web App using a calendar-enabled template. While the meeting is in progress at 10:02 a.m., the user tries to dismiss the meeting reminder in Outlook and receives the following error: "This ongoing reservation cannot be edited."</p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that EMS for Outlook users can dismiss reminders for in-progress meetings without receiving an error.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43596&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43596</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Notifications and Errors</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Error occurred in EMS for Outlook when the meeting end time was extended in EMS Desktop Client while the meeting was in progress</p>
+                        <p class="RNBody">For reservations created in EMS Web App using a calendar-enabled template, users in EMS for Outlook were experiencing an error when the meeting end times were extended in EMS Desktop Client while the meetings were in progress.</p>
+                        <p class="RNBody">For example, a reservation with a meeting start time of 10:00 a.m. is created in EMS Web App. While the meeting in progress, an EMS Desktop Client user extends the meeting end time from 10:30 a.m. to 10:45 a.m. Once the meeting end time has been extended, EMS for Outlook users receive the following error: "This ongoing reservation cannot be edited."</p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that when a booking end time is extended in EMS Desktop Client while a booking is in progress, the end time is updated in EMS for Outlook, and users do not receive an error.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=43612&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">43612</a><br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body1">
+                        <p class="RNArea">Edit Booking</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body1">
+                        <p class="RNTitle">Booking edits made in EMS for Outlook were not updating in EMS Desktop Client
+</p>
+                        <p class="RNBody">Booking edits made in EMS for Outlook were not updating in EMS Desktop Client if users edited the bookings on the same day the bookings were scheduled (that is, between the time the bookings were created and up to 10 hours later). However, once the 10-hour window was exceeded, the edits made in EMS for Outlook were written back to EMS Desktop Client. Because the booking information was out-of-sync between EMS for Outlook and EMS Desktop Client, some users incorrectly assumed they had rooms scheduled when they did not. 
+</p>
+                        <p class="RNBody"><b>Fix:</b> Modified functionality so that when users edit bookings in EMS for Outlook, the bookings are updated in EMS Desktop Client unless the booking rules are violated, the bookings are in progress, or the bookings are in the past.</p>
+                        <p class="RNRef">Internal Reference #&#160;43633<br />(For Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

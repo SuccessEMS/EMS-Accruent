@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Room Administration Wizard V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Room Administration Wizard</h1>
+        <p>You&#160;use&#160;the Room Administration Wizard to identify new rooms that have been configured in your EMS database and add these rooms to or delete these rooms from public views, notification rules, group notification rules, users, user templates, Everyday User process templates, and if applicable, kiosk profiles. (If you are using the Room Administration Wizard in EMS Academic Planning, then you can add specific rooms to or delete specific rooms from domains and/or academic units.)</p>
+        <p>This topic will provide information that will allow you to do the following:</p>
+        <ul class="unorder-list">
+            <li><a href="#UseRoomAdminWiz">Use the Room Administration Wizard</a>
+            </li>
+            <li><a href="#UseAddRooms">Use the Room Administration Wizard to Add Rooms</a>
+            </li>
+            <li><a href="#UsingDeleteRooms">Use the Room Administration Wizard to Delete Rooms</a>
+            </li>
+        </ul>
+        <h2 class="Heading2"><a name="UseRoomAdminWiz"></a>Use the Room Administration Wizard</h2>
+        <ol start="1" class="number-list">
+            <li>On the EMS menu bar, click <span class="ui">System Administration</span> &gt; <span class="ui">Tools </span>&gt; <span class="ui">Room Administration Wizard</span>. The Room Administration Wizard opens.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_SysAdTools/Room Administration Wizard.png" alt="emssg_SysAdminTools_image009.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Room Administration Wizard</p>
+        </div>
+        <ol start="2" class="number-list">
+            <li>Do one of the following:<ul start="2"><li>If you are using the wizard to add rooms to a view, rule, or so on, then leave Add On or After Date selected, if needed, select a date, and then continue to&#160;“To use the Room Administration Wizard to add rooms”.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The default value for the date is the current day’s date.</p></div></li><li>If you are using the wizard to delete rooms from a view, rule, or so on, select Remove, and then continue to&#160;“To use the Room Administration Wizard to delete rooms”.</li></ul></li>
+        </ol>
+        <h2><a name="UseAddRooms"></a>Use the Room Administration Wizard to Add Rooms</h2>
+        <ol start="1" class="number-list">
+            <li>On the Building drop-down list, select all buildings, a specific building, or an area. All rooms that have been added to the selected building or area on or after the indicated date are displayed.</li>
+            <li>Optionally, do one or both of the following to filter the rooms that are displayed. As you select your search criteria, the list of rooms that meet the search criteria is dynamically updated.<ul start="1"><li>On the Classification drop-down list, leave the default value of (all), or select a specific room classification.</li><li>On the Room Type drop-down list, leave the default value of (all), or select a specific room type.</li></ul></li>
+            <li>Optionally, to further filter the displayed search results based on the Room Name, in the Filter field, enter a search string.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The search string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;"Mee"&#160;returns&#160;Meeting room, but not Science Meeting room.</p>
+        </div>
+        <ol start="4" class="number-list">
+            <li>Select the room or CTRL-click to select the multiple rooms that you are adding, and then click Next. The Room Administration Wizard is updated with a list of the public views that are currently configured in your EMS database.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_SysAdTools/Room Administration Wizard_1.png" alt="emssg_SysAdminTools_image010.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Room Administration Wizard, Public Views</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>Do one of the following:<ul start="5"><li>To keep all public views as is (none of the selected rooms are to be added to any existing public views), leave Keep Existing Settings selected, and then click Next.</li><li>To add the selected rooms to one or more of the existing public views, click Add to Existing Settings, and on the Available list, select the view or CTRL-click to select the multiple views, click the Move (&gt;) button to move the selected views to the Selected list, and then click Next.</li></ul></li>
+            <li>Repeat the process detailed in&#160;Step 5&#160;to move through the configuration process for each of the remaining configuration items—Notification Rules, Group Notification Rules, Users, User Templates, Everyday User Process Templates, and if applicable, Kiosk Profiles.<ul start="5"><li>For Users, User Templates, and Everyday User Process Templates, a third option, Overwrite Existing Settings is available. If you select this option, then the current (existing) room access for the configuration item is replaced by the room access that you define here. For example, if you select Overwrite Existing Settings for Users, then any room access that has been previously defined for a selected user is replaced by the room access that you define here.</li></ul></li>
+            <li>Do one or more or all of the following as needed:<ul start="5"><li>For Notification Rules, Group Notification Rules, and Kiosk Profiles, go to&#160;Step 8.</li><li>For Users and User Templates, select the appropriate access, and then go to&#160;Step 8.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>EMS Enterprise has both the View and Book and the View Only access for user security. EMS Professional has just the View and Book access for user security.</p></div></li><li>View and Book—A user who has access to the Special - Edit Critical Booking Information process&#160;and&#160;who is assigned to this option can reserve the room, move an event into or out of the room, change the time or status of an event that is scheduled in the room, and add resources to events in the room.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>The Special - View and Book Access On All Rooms process can be used as an alternative to manually assigning all rooms to the View and Book list. See&#160;“Configuring User Security for Multiple User Accounts”.</p></div></li><li>View Only—A user who is assigned to this option cannot reserve the room, move an event into or out of the room, or change the time or status of an event that is scheduled in the room; however, as long as the user has access to the appropriate category and to the Special - Edit Booking Details process, the user can view events in the room and add resources to events in the room.</li><li>For Everyday User Process Templates, select the appropriate access, and then go to&#160;Step 8.</li><li>Move rooms that can be reserved without approval (that is, booked into the Reserve Status on the Everyday User Process Template tab) into the Reserve pane.</li><li>Move rooms that require approval (that is, booked into the Request Status on the Everyday User Process Template tab) into the Request pane.</li></ul></li>
+            <li>Click Finish. A Process message opens indicating that you are about to process the selected rooms and possibly overwrite data, and asking you if it is OK to continue.</li>
+            <li>Click Yes. A message appears indicating that the rooms were processed successfully, and asking you if you want to select more rooms.</li>
+            <li>Do one of the following:<ul start="5"><li>Click Yes to close the message and return to the Room Administration Wizard.</li><li>Click No to close the message and the Room Administration Wizard.</li></ul></li>
+        </ol>
+        <h2><a name="UsingDeleteRooms"></a>Use the Room Administration Wizard to Delete Rooms</h2>
+        <ol start="1" class="number-list">
+            <li>On the Building drop-down list, select all building, a specific building, or an area. All rooms that have been configured for the selected building, area, or view are displayed.</li>
+            <li>Optionally, do one or both of the following to filter the rooms that are displayed. As you select your search criteria, the list of rooms that meet the search criteria is dynamically updated.<ul start="1"><li>On the Classification drop-down list, leave the default value of (all), or select a specific room classification.</li><li>On the Room Type drop-down list, leave the default value of (all), or select a specific room type.</li></ul></li>
+            <li>Optionally, to further filter the displayed search results based on the Room Name, in the Filter field, enter a search string.</li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>The search string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;Mee&#160;returns&#160;Meeting room, but not Science Meeting room.</p>
+        </div>
+        <ol start="4" class="number-list">
+            <li>Select the room or CTRL-click to select the multiple rooms that you are removing, and then click Next. The Room Administration Wizard is updated with a list of the public views that are currently configured in your EMS database&#160;and&#160;that contain the selected room or rooms.</li>
+        </ol>
+        <div class="TitleandImage">
+            <p>
+                <img src="../../../Resources/Images/DTC_V44_SysAdTools/Room Administration Wizard_2.png" alt="emssg_SysAdminTools_image011.png" class="resize80_noborder_padding" />
+            </p>
+            <p class="Caption">Room Administration Wizard, Public Views</p>
+        </div>
+        <ol start="5" class="number-list">
+            <li>Do one of the following:<ul start="5"><li>To keep all public views as is (none of the selected rooms are to be removed from any of these public views), leave Keep Existing Settings selected, and then click Next.</li><li>To remove the selected rooms from one or more of the public views, on the Available list, select the view, or CTRL-click to select the multiple views from which you are removing the rooms, click the Move (&gt;) button to move the selected views to the Selected list, and then click Next.</li></ul></li>
+            <li>Repeat the process detailed in&#160;Step 5&#160;to move through the configuration process for each of the remaining configuration items—Notification Rules, Group Notification Rules, Users, User Templates, Everyday User Process Templates, and if applicable, Kiosk Profiles.</li>
+            <li>Click <span class="ui">Finish</span>. A Process message opens indicating that you are about to process the selected rooms and possibly overwrite data, and asking you if it is OK to continue.</li>
+            <li>Click <span class="ui">Yes</span>. A message appears indicating that the rooms were processed successfully, and asking you if you want to select more rooms.</li>
+            <li>Do one of the following:<ul start="5"><li>Click Yes to close the message and return to the Room Administration Wizard.</li><li>Click No to close the message and the Room Administration Wizard.</li></ul></li>
+        </ol>
+    </body>
+</html>

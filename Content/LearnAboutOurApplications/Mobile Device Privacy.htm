@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Mobile Device Privacy</h1>
+        <ol start="1" class="ol_2">
+            <li class="li_9">
+                <p>What notice and consent does EMS Mobile App present to the user&#160;before collecting&#160;the user’s device location information?</p>
+                <p class="p_7">Screenshot of the notice/consent from the app is at the end of this email.</p>
+            </li>
+            <li class="li_9">
+                <p>Although the app does not share location information with any third party outside of the app, does the app itself retain the location information?&#160; If so, for how long?</p>
+                <p class="p_7">The app at this time does not retain the location information.&#160; It queries the device for it when it uses it for calculations of distance to the nearest building.&#160; It does send it to the API when calculating default locations to show for searches.</p>
+            </li>
+            <li class="li_9">
+                <p>Is&#160;any sensitive personal information maintained or used by EMS Mobile App?</p>
+                <p class="p_7">The app uses your organization email address/phone to identify the user and to set the contact email address/phone for their reservation. &#160;We also store the Mobile API token (stored in OS secure storage – iOS: Keychain; Android: Shared Preferences).</p>
+            </li>
+            <li class="li_9">
+                <p>Does EMS publish a privacy policy for the mobile app?</p>
+                <p class="p_8">Currently we do not publish a privacy policy.</p>
+            </li>
+            <li>
+                <p>What other data is stored on the app?</p>
+                <p class="p_9">The user record that we store contains the user’s name, email, boolean flags for application preferences, timezone, flags to indicate what that user’s permissions are within the app (i.e., can they view details of events, rooms), and two-factor authentication status (required, passed validation, no codes or secure information).</p>
+            </li>
+            <li class="li_9">
+                <p>Does the application require bluetooth access?</p>
+                <p class="p_7">No.</p>
+            </li>
+            <li class="li_9">
+                <p>Does the application require NFC access?</p>
+                <p class="p_7">No.</p>
+            </li>
+            <li class="li_9">
+                <p>Does the application require mic/audio access?</p>
+                <p class="p_7">No.</p>
+            </li>
+            <li class="li_9">
+                <p>Does the application require camera access?</p>
+                <p class="p_7">Yes.</p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Use Application Pool Identity for Integration for Exchange Service Account V44.1</title>
+    </head>
+    <body>
+        <h1>Use Application Pool Identity for Integration for Exchange Service Account</h1>
+        <p>Rather than entering&#160;the Integration for Exchange account credentials on the PAMConfig.aspx page (as in V44 and previous releases), credentials can be maintained at the Application Pool level. This allows your organization to maintain absolute control—<span class="ui">only&#160;</span>IIS applications running in the newly created application pool can run as the Integration to Exchange Account.</p>
+        <p>This functionality requires the following:</p>
+        <ul class="unorder-list">
+            <li>Microsoft Exchange 2007 (SP1) or Exchange 2010.</li>
+            <li>Microsoft Exchange Impersonation Account (your EMS Integration to Exchange account).&#160;This account&#160;<span class="ui">must&#160;</span>be using&#160;<a href="ConfigureEWSImpersonation.htm">Exchange Web Services (EWS) Impersonation</a>, not full access to the mailbox store.</li>
+        </ul>
+        <h2>Configure the Application Pool&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Open IIS Manager</li>
+            <li>Open the&#160;Application Pools&#160;panel</li>
+            <li>Click&#160;<span class="ui">Add Application Pool…</span></li>
+            <li>The&#160;Add Application Pool&#160;window opens.&#160; Enter a unique name and ensure the correct .NET Framework&#160;is selected.&#160; Managed pipeline mode should be&#160;<span class="ui">Integrated</span>.&#160;Click&#160;<span class="ui">OK</span></li>
+            <li>Find the Application Pool you just created.&#160;Right-click it and select&#160;<span class="ui">Advanced Settings</span>.</li>
+            <li>The third section in the list is&#160;Process Model.&#160;Highlight&#160;<span class="ui">Identity&#160;</span>and then click the (<span class="ui">...</span>) button to configure.</li>
+            <li>Choose&#160;<span class="ui">Custom Account&#160;</span>and then click&#160;<span class="ui">Set</span>.&#160;Enter the username and password for your EMS Integration to Exchange account.&#160;Confirm the password and click&#160;<span class="ui">OK&#160;</span>on any remaining dialogs (see following image).<p><img src="../../Resources/Images/Integration to Microsoft/Using Application Pool Identity.jpg" class="popup_with_padding_only" /></p></li>
+            <li>Within IIS Manager, navigate to the Virtual Directory containing the Integration for Exchange&#160;Web Service.&#160; This is under the Default website by default, but can be installed to a different website.&#160;</li>
+            <li>With the <span class="ui">IntegrationExchangeWebService </span>Virtual Directory highlighted in the left pane, select&#160;<span class="ui">Basic Settings…</span>&#160;under Actions in the right pane.</li>
+            <li>Click the&#160;<span class="ui">Select&#160;</span>button and then choose your newly created application pool from the list.</li>
+            <li>Click&#160;<span class="ui">OK&#160;</span>on all remaining dialogs.</li>
+        </ol>
+        <h2>Configure&#160;Integration for Exchange to Use the Application Pool Account&#160;</h2>
+        <ol start="1" class="number-list">
+            <li>Navigate to the Integration for Exchange&#160;configuration area by opening a browser and entering the following:<p>http://[ServerName]/PAMWebService/PAMConfig.aspx&#160;(replace [ServerName] with the name of your web server)</p></li>
+            <li>From the&#160;<span class="ui">Account Info</span>&#160;tab, find the&#160;Authentication Information&#160;section, check the box for&#160;<span class="ui">Use application pool identity when authenticating to calendaring service</span> (see following image).</li>
+            <li>With this option enabled, you can leave the&#160;Username&#160;and&#160;Password&#160;fields blank in the Authentication Information section.</li>
+            <li>Click&#160;<span class="ui">Save&#160;</span>button at the bottom of the page.&#160;<p><img src="../../Resources/Images/Integration to Microsoft/Using Application Pool Identity.png" class="popup_with_padding_only" /></p></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:searchable="True">
+    <head>
+        <link href="../../../Resources/TableStyles/Standard.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/Border_table_alternate_colors.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="RNprint">EMS for Outlook Release Notes <br />V44.1, Update 31</h1>
+        <p>This section describes updates to&#160;your EMS software.&#160;&#160;</p>
+        <p MadCap:conditions="General.Online Only">See Also:&#160;<a href="#Contact">Contact Customer Support</a>&#160;and&#160;<a href="../../../Update_to_LatestVersion_EMS.htm">Updating to the Latest Version of EMS (Patches and Builds)</a>. </p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/Standard.css');margin-left: 0;margin-right: auto;width: 100%;" class="TableStyle-Standard" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <tr class="TableStyle-Standard-Body-Row1">
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">V44.1 Update 31</p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Release&#160;Date:&#160;<br />January  16, 2019<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                    <p class="p_3">Patch:&#160;<br />201812100<br /></p>
+                </td>
+                <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                    <p class="p_3">Build #:&#160;<br />44.1.31000.2141</p>
+                    <p class="p_3">Outlook Web Deploy:</p>
+                    <p class="p_3">44.1.31000.2141<br /></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes</h2>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors" cellspacing="12">
+            <col style="width: 111px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 384px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">
+                        <p class="p_6">Area</p>
+                    </th>
+                    <th style="text-align: left;" class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">
+                        <p class="p_6">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Combination Rooms</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Combo Room Components Showed Incorrectly in EMS for Outlook </p>
+                        <p class="RNBody">After reserving a combo room, the Schedule View and List View showed the component rooms as available even though the parent combo room was shown as reserved. Additionally, booking one of these component rooms would cause a conflict window to appear.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that Schedule View and List View show the component rooms as unavailable if the parent combo room has been reserved.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=39620&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">39620</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Recurring Reservation</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">EMS&#160;for Outlook "Send Update" Button Not Updating Database</p>
+                        <p class="RNBody">EMS&#160;for Outlook was not updating the time in the database when users modified a meeting time via drag-and-drop in the Outlook calendar and then used the EMS&#160;for Outlook <span class="ui">Send Update</span> button. If the native Outlook <span class="ui">Send Update</span> button was used, the time would update in the database, but there would be a few minutes delay, and users would need to refresh the Reservation Book multiple times in EMS&#160;Desktop Client to view the change. </p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when users change a meeting time through drag-and-drop and click the EMS&#160;for Outlook <span class="ui">Send Update</span> button, the time will be updated in the database.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41171&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41171</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">
+                        <p class="RNArea">Cancel Meeting</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Meetings Canceled in EMS&#160;for Outlook Were Not Showing As Canceled in the Attendees' Outlook Calendars</p>
+                        <p class="RNBody">When a single or recurring meeting was canceled in EMS&#160;for Outlook, the attendees' Outlook calendars did not show the meeting as canceled even though the organizer's Outlook calendar showed the meeting as canceled.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that when a single or recurring meeting is canceled in EMS&#160;for Outlook, the organizer's and attendees' calendars show the meeting as canceled.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41623&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41623</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td rowspan="2" class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">
+                        <p class="RNArea">Create Reservations</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">
+                        <p class="RNTitle">Meeting Invitation Did Not Show As Sent When the Organizer Viewed the Invitation After Clicking Send</p>
+                        <p class="RNBody">Meeting invitations were not showing as sent after the organizer clicked the <span class="ui">Send </span>button. When the organizer viewed the meeting invite, Outlook displayed the <span class="ui">Delete </span>button instead of the <span class="ui">Cancel Meeting</span> button, and Outlook also displayed the message, "You haven't sent this meeting invitation yet."</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that after the organizer clicks <span class="ui">Send </span>on a meeting invitation, Outlook will display the <span class="ui">Cancel Meeting</span> button when the organizer views the meeting invite, and Outlook will no longer display the message, "You haven't sent this meeting invitation yet."</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=41829&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">41829</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">
+                        <p class="RNTitle">Drag-and-Drop Did Not Update Time for Meetings in Beijing Time Zone</p>
+                        <p class="RNBody">For meetings in the Beijing time zone, when users modified the meeting time using drag-and-drop in the Outlook calendar, the EMS for Outlook add-in did not update the time in the database if the change was made on the same day.</p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Modified functionality so that the database updates when users in the Beijing time zone make changes via drag-and-drop to the meeting time.</p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42190&amp;_a=edit&amp;triage=true" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42190</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">
+                        <p class="RNArea">Performance</p>
+                    </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">
+                        <p class="RNTitle">Performance Issue with EMS&#160;Outlook Add-in</p>
+                        <p class="RNBody">Between Update 29 and Update 30.2, a change was made that caused a <MadCap:annotation MadCap:createDate="2019-01-03T13:17:48.6005350-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Was the performance issue a slow down in getting search results?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-01-03T13:18:03.3101090-07:00">performance issue</MadCap:annotation> in the EMS&#160;Outlook add-in. When users searched for a room, a time zone search call was being sent for every room within the search results instead of only one time zone search call being sent for each building. <MadCap:annotation MadCap:createDate="2019-01-03T13:23:40.3528336-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="True?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-01-03T13:23:42.5875476-07:00">This change caused the search results to display slowly.</MadCap:annotation><![CDATA[   ]]></p>
+                        <p class="RNBody"><span class="ui">Fix:</span>&#160;Restored functionality so that <MadCap:annotation MadCap:createDate="2019-01-03T13:18:38.1384607-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="True or was the performance issue something else?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-01-03T13:18:48.8283387-07:00">only one time zone call is being sent for each building within the search results and users experience a faster response when searching within the EMS&#160;Outlook add-in</MadCap:annotation>. </p>
+                        <p class="RNRef">Internal Reference #&#160;<a href="https://emstfs.emssoftware.com/tfs/ems suite/Ems/_workItems?id=42147&amp;_a=edit&amp;triage=false" title="For EMS Internal Use Only" alt="For EMS Internal Use Only" class="RNRefHyper">42147</a><br />(For EMS&#160;Internal Use Only)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 MadCap:conditions="General.Online Only"><a name="Contact"></a>Contact Customer Support</h2>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" MadCap:conditions="General.Online Only" />
+    </body>
+</html>

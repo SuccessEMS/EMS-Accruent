@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Best Practices for Using <MadCap:variable name="General.RSA" /></h1>
+        <p>The <MadCap:variable name="General.RSA" /> (formerly named EMS Glance) is an optional web-based application that turns your tablet (e.g., iPad, iPad mini, etc.) into a digital room sign.  The EMS Room Sign App  gives users real-time information and at-a-glance availability for their meeting, learning, and working spaces. </p>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Version 44.1, Update 12 has introduced a sleek visual redesign and an upgraded customer interface. </p>
+        </div>
+        <p>This topic will provide information on:</p>
+        <ul class="unorder-list">
+            <li><a href="#Considerations">Considerations When Using the <MadCap:variable name="General.RSA" /></a>
+            </li>
+            <li><a href="#iPADS">iPads and the <MadCap:variable name="General.RSA" /></a>
+            </li>
+            <li><a href="#Android">Android Tablets and the EMS&#160;Room Sign App</a>
+            </li>
+        </ul>
+        <h2><a name="Considerations"></a>Considerations </h2>
+        <ol class="number-list">
+            <li>You need to know when the <MadCap:variable name="General.RSA" /> stops running by receiving an email notification (ideally), or by watching a central monitoring display. EMS does not provide this capability, therefore you should physically check your tablets to see if <MadCap:variable name="General.RSA" /> has stopped.</li>
+            <li>For the tablets running the EMS Room Sign App, you will want notification of battery failure, lost connectivity, or necessary updates to the operating system. EMS does not detect these conditions remotely; therefore, we recommend implementation of a Mobile Device Management (MDM) system.</li>
+        </ol>
+        <h2><a name="iPADS"></a>iPADS&#160;and the EMS Room Sign App</h2>
+        <ol class="number-list">
+            <li>
+                <p>If the iPad's battery dies, the iPad will return to its home screen after you restore power. At that point, you must configure Guided Access again for the EMS Room Sign app.  See <a href="../UserGuide/DeployingonTablet.html" MadCap:conditions="General.Online Only">Deploy [%=General.RSA%] on Tablets</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/UserGuide/BestPracticesforUsing.html" MadCap:conditions="General.Print Only">Deploy [%=General.RSA%] on Tablets</a> for more information.</p>
+            </li>
+            <li>
+                <p>If a user presses the iPad's <span class="ui">Home </span>button, Guided Access displays a passcode screen. The screen disappears after fifteen seconds or if the user clicks <span class="ui">Cancel</span>.</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Users should not be able to press any tablet buttons if using a tablet enclosure.</p>
+                </div>
+            </li>
+            <li>
+                <p>If a user presses both the iPad's Home and Sleep/Wake buttons simultaneously for 10 seconds, the iPad restarts. At that point, you must configure Guided Access again for the EMS Room Sign app.  See <a href="../UserGuide/DeployingonTablet.html" MadCap:conditions="General.Online Only">Deploy [%=General.RSA%] on Tablets</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/UserGuide/BestPracticesforUsing.html" MadCap:conditions="General.Print Only">Deploy [%=General.RSA%] on Tablets</a> for more information. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>Users should not be able to press any tablet buttons if using a tablet enclosure.</p>
+                </div>
+            </li>
+            <li>
+                <p>iOS devices occasionally display notifications that a software update is available. There is no way to suppress update notifications. When this notification appears, the user can choose <span class="ui">Later </span>but the notification will appear again in 24 hours. If the user chooses <span class="ui">Install Now</span>, the iPad downloads and installs the update and then restarts. At that point, you must configure Guided Access again for EMS Room Sign.  See <a href="../UserGuide/DeployingonTablet.html" MadCap:conditions="General.Online Only">Deploy [%=General.RSA%] on Tablets</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/UserGuide/BestPracticesforUsing.html" MadCap:conditions="General.Print Only">Deploy [%=General.RSA%] on Tablets</a> for more information.</p>
+            </li>
+        </ol>
+        <h2><a name="Android"></a>Android Tablets and the EMS&#160;Room Sign App</h2>
+        <ol class="number-list">
+            <li>
+                <p>Ideally, a tablet will be dedicated to the EMS Room Sign App and will not be used for anything else. However, Android provides no capability to lock down the tablet in a way that is suitable for the EMS Room Sign App. Therefore, EMS&#160;Software recommends deploying the EMS Room Sign App with an Android app that places the tablets in 'kiosk' mode. Placing the tablet in kiosk mode prevents users from accessing other applications and disables the <span class="ui">Home </span>button. EMS&#160;Software recommends that you purchase, install, and configure the&#160;<a href="https://www.kioware.com/kwl_android.aspx">Kioware Lite</a>&#160;app.</p>
+            </li>
+            <li>
+                <p>If you run the EMS Room Sign App on a Samsung Tab A, users can power off the tablet by holding down the Power button. If you have configured Kioware <a href="../UserGuide/DeployingonTablet.html#ConfigureKioskModeAndroid" MadCap:conditions="General.Online Only">according to our recommendations</a><a href="https://docs.emssoftware.com/Content/EMSRoomSignApp/44.1/UserGuide/DeployingonTablet.html" MadCap:conditions="General.Print Only">according to our recommendations</a>, the EMS Room Sign App will restart as soon as the tablet is powered on. To prevent users from pressing the <span class="ui">Home</span> button, use the <a href="RequirementsforRSA.html#EMSRoomSignApp">appropriate enclosure</a>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

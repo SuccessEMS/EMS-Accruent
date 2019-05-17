@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title>Downgrade Web Deploy V44.1 (EMS Desktop Client)</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Downgrade the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy</h1>
+        <p>When determining whether you organization wants to revert to an older version of the EMS Desktop Client, follow the steps below.</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>You cannot roll back an EMS Patch once it has been applied. Please read the release notes each month to determine if an upgrade is necessary for your organization. As a best practice, it is recommended that your system remain current on EMS Desktop Client builds and patches.</p>
+        </div>
+        <ol>
+            <li>Uninstall the newer version of the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy.</li>
+            <li>Run the installer for the older version of the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy.<div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;"><p>Once the older version of the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy is installed, users will need to close EMS before they will be downgraded to the older version of the software. Any user who has an individual install of the EMS Desktop Client will also need to have that individual install rolled back, by uninstalling the EMS Client and installing the older version.</p></div></li>
+            <li>After the users' <MadCap:variable name="General.EMS&#160;Desktop Client" /> software have been downgraded, they will receive a message prompt stating there is new client software available.<p>If you want to prevent this prompt from appearing to your users after installing the older version of the EMS Desktop Client Web Deploy, run the following script against the EMS database:</p><div class="code-sample"><pre>Update tblServerVersion</pre><pre>set ClientVersion = NULL</pre></div></li>
+        </ol>
+        <h2>Contact Customer Support</h2>
+        <p>If you have further questions, please contact Customer Support.</p>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

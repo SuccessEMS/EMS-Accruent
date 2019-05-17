@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install HR&#160;Toolkit</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p><span class="ui">UPGRADE CONSIDERATION</span>
+            </p>
+            <p>EMS V44.1 changes how <a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUsers.htm">Everyday Web Users</a> are validated. If you have custom HR Toolkit scripts and you are upgrading, these need to tested with the new Install to account for this change.</p>
+        </div>
+        <MadCap:snippetBlock src="../../../CloudInstallNote.flsnp" />
+        <p>To install HR Toolkit, you must:</p>
+        <ol>
+            <li>
+                <p><a href="#Obtain">Obtain the installation files from your Professional Services Consultant.</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Install">Install the HR&#160;Toolkit files</a>.</p>
+            </li>
+        </ol>
+        <h2><a name="Obtain"></a>Obtain the EMS&#160;HR&#160;Toolkit Installation Files</h2>
+        <p>Please contact your Professional Services Consultant to obtain the following components:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><span class="ui">HR Toolkit Staging Database </span>installation file—SQL file creates the Staging Database and associated table(s).</p>
+            </li>
+            <li>
+                <p><span class="ui">HR Toolkit Update Script</span> installation file—SQL file generates the HRTK_Update_Group stored procedure.</p>
+            </li>
+        </ul>
+        <h2><a name="Install"></a>Install EMS&#160;HR&#160;Toolkit Files</h2>
+        <p>Once you have <a href="#Obtain">obtained the installation files</a>, perform the following steps on the MS SQL Server that hosts your EMS database Using Microsoft SQL Server Management Studio.</p>
+        <ol>
+            <li>
+                <p>Execute the <span class="ui">HRTK Staging DB Install </span>script against your master database. This will create the EMS_Staging database containing one table named tblPeople.</p>
+            </li>
+            <li>
+                <p>Execute the <span class="ui">HRTK Update </span>script against your EMS database. This will create a stored procedure in your EMS database named HRTK_Update_Group.</p>
+            </li>
+        </ol>
+    </body>
+</html>

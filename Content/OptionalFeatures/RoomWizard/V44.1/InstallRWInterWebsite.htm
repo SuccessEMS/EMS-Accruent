@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Install EMS – RoomWizard Interface Website</h1>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Existing copies of the EMS Integration to RoomWizard must be manually&#160;uninstalled.</p>
+        </div>
+        <ol start="1" class="number-list">
+            <li>Download the&#160;<span class="ui">EMSRoomWizard.msi</span>&#160;file onto the server that will be running the web site.&#160;This can be your existing VEMS or EMS Web App&#160;web server.</li>
+            <li>Run&#160;<span class="ui">EMSRoomWizard.msi</span>.</li>
+            <li>The first screen welcomes you to the EMS RoomWizard Connector Setup Wizard.&#160;Click&#160;<span class="ui">Next</span>&#160;to begin the installation process. The&#160;SQL Server Connection&#160;screen will appear.<p><img src="Images/RoomWizard/Installing EMS RoomWizard.png" class="padding_only" /></p></li>
+            <li>Enter your EMS&#160;<span class="ui">SQL Server Name</span>.&#160;</li>
+            <li>Only change the EMS&#160;<span class="ui">Master Database Name</span>&#160;(EMS_Master) if you are running an older version of EMS (Enterprise 4x/Professional 10x/Lite 6x or older). </li>
+            <li>Click&#160;<span class="ui">Next</span>. The&#160;Select Installation Address&#160;screen will appear.&#160;<p><img src="Images/RoomWizard/Installing EMS RoomWizard_1.png" class="padding_only" /></p></li>
+            <li>Select the&#160;<span class="ui">Site</span>,&#160;<span class="ui">Virtual Directory</span>, and <span class="ui">Application Pool</span>.&#160;(It is recommended that you keep the default settings.)&#160;The installation process will create a Physical and Virtual directory on your web server named ‘RWInterface’ (or whatever value you entered in the Virtual Directory field.)&#160;Click&#160;<span class="ui">Next</span>.</li>
+            <li>The&#160;Confirm Installation&#160;screen appears.&#160;Click&#160;<span class="ui">Next</span>.</li>
+            <li>The&#160;Installation Complete&#160;screen appears.&#160;Click&#160;<span class="ui">Close</span>.&#160;</li>
+            <li>After following the steps above, verify your installation by opening a browser and entering the following:<p><span class="ui">http://[ServerName]/RWInterface</span> (replace [ServerName] with the name of your web server)</p></li>
+            <li>The Registration screen will appear if you are using the EMS-RoomWizard Interface for the first time.&#160;Please enter your license information and click the&#160;<span class="ui">Save License Data</span>&#160;button.&#160;You are ready to begin the configuration process.</li>
+        </ol>
+    </body>
+</html>

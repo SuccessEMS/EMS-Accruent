@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title mt-export-translate="no">Portal Authentication Methods</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Portal Authentication Methods</h1>
+        <p>This topic provides information about the following:</p>
+        <ul>
+            <li><a href="#Server_Variable_Method_(Header_Variable)">Server Variable Method (Header Variable)</a>
+            </li>
+            <li><a href="#Server_Variable_Method_–_Federated_(SAML)">Server Variable Method – Federated (SAML)</a>
+                <ul>
+                    <li><a href="#Method_1:_Locally_installed_Service_Provider">Method 1: Locally installed service provider</a>
+                    </li>
+                    <li><a href="#Method_2">Method 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#EMS_Configuration">EMS Desktop Client Configuration</a>
+                <ul>
+                    <li><a href="#Session_Method">Session Method</a>
+                    </li>
+                    <li><a href="#Form_Method">Form Method</a>
+                    </li>
+                    <li><a href="#Cookie_Method">Cookie Method</a>
+                    </li>
+                    <li><a href="#Query_String_Method">Query String Method</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>EMS applications do&#160;not&#160;natively support SAML. You must use our&#160;<a href="PortalFederatedAuthen.html">Portal Authentication</a>&#160;to use SAML.</p>
+        </div>
+        <h2><a name="Server_Variable_Method_(Header_Variable)"></a>Server Variable Method (Header Variable)</h2>
+        <p>Server Variable/Header Variable is a collection of variables that are set by Internet Information Server (IIS).&#160;</p>
+        <p>Applications like SiteMinder create custom server variables for portal site use.</p>
+        <p>Set the&#160;<span class="ui">Portal Authentication Method</span>&#160;parameter to&#160;Server Variable&#160;and type the appropriate variable for the&#160;<span class="ui">Portal Authentication Variable</span>&#160;parameter. Direct users to your EMS Web App&#160;Default.aspx page.</p>
+        <h2><a name="Server_Variable_Method_–_Federated_(SAML)"></a>Server Variable Method – Federated (SAML)</h2>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>As of Update 23 (March 2018), SAML authentication for the EMS&#160;Web App is supported through EMS&#160;Platform Services. This is now the recommended method for configuring SAML. See Also:&#160;<a href="SAMLAuthen.html">SAML&#160;Authentication</a>. </p>
+        </div>
+        <p>SAML can be leveraged for authentication with your EMS applications by leveraging our portal authentication method and a service provider of your choosing.</p>
+        <h3><a name="Method_1:_Locally_installed_Service_Provider"></a>Method 1: Locally installed Service Provider</h3>
+        <p>Using this method, you install a service provider of choice on the webserver hosting the EMS web applications. All traffic is routed through that service provider (typically via an ISAPI filter). This service provider will manage all of the authentication for the user. Once the user has successfully authenticated, it will pass an identifier for the user to the EMS application using one of our portal methods. In this scenario typically the Server Variable (Header) method is used.</p>
+        <h4>Method 1&#160;Configuration Steps</h4>
+        <ol start="1">
+            <li>Install and configure a service provider on the EMS web server</li>
+            <li>Set the service provider to protect the specified EMS web applications</li>
+            <li>Configure the service provider to pass the required user attributes</li>
+            <li>In <MadCap:variable name="General.EMS&#160;Desktop Client" />, configure the&#160;EMS Web App&#160;parameter “Portal Authentication Method”</li>
+            <li>In <MadCap:variable name="General.EMS&#160;Desktop Client" /> configure the applicable Portal Authentication Variables.</li>
+        </ol>
+        <h3><a name="Method_2"></a>Method 2</h3>
+        <p>This method can be common if there is already a server configured with a service provider in your environment, handling authentication for other applications. In <MadCap:variable name="General.EMS&#160;Desktop Client" />, you can configure your application to re-direct any login requests to the other server to be authenticated. Once the user is authenticated, the server with your service provider installed sends the user back to the <MadCap:variable name="General.EMS&#160;Desktop Client" /> with an identifier for the user in the header, or within a cookie. The EMS application reads this header, or cookie value, and leverages portal authentication to sign the user in with the matched credentials.</p>
+        <h4>Method 2 Configuration Steps</h4>
+        <ol start="1">
+            <li>Install and configure a service provider on the EMS web server</li>
+            <li>Set the service provider to protect the specified EMS web applications</li>
+            <li>Configure the service provider to pass the required user attributes</li>
+            <li>In <MadCap:variable name="General.EMS&#160;Desktop Client" /> configure the EMS Web App parameter “Portal Authentication Method”</li>
+            <li>In EMS <MadCap:variable name="General.EMS&#160;Desktop Client" />, configure the applicable Portal Authentication Variables.</li>
+            <li>In EMS <MadCap:variable name="General.EMS&#160;Desktop Client" />, change the Login URL under <span class="ui">Configuration </span>&gt; <span class="ui">Everyday User Applications</span> &gt; <span class="ui">Web App&#160;Menus</span>.<ol start="1"><li>Select <span class="ui">Login.aspx</span> and click&#160;<span class="ui">Edit</span></li><li>Enter in the URL to your Remote Service Provider</li></ol></li>
+            <li>Configure your remote Service provider to send the user back to the default.aspx page of the web application that the request originated from.</li>
+        </ol>
+        <h2><a name="EMS_Configuration"></a>EMS Desktop Client Configuration</h2>
+        <p>Please reference our Portal Authentication section for further details around the configuration required within EMS. There are a number of different options available. You will need to know the method that the user identifying value will be passed and the name of that value. Other values can also be passed (ie: email address and phone number) to aid in automatic web user account provisioning as well.</p>
+        <h3><a name="Session_Method"></a>Session Method</h3>
+        <p>A session is a way to provide/maintain user state information in an inherently stateless environment.&#160; It provides access to a session-wide cache you can use to store information.</p>
+        <p>In order to use the session method, set the&#160;Portal Authentication Method&#160;parameter to&#160;<span class="ui">Session&#160;</span>and type the appropriate variable for the&#160;Portal Authentication Variable&#160;parameter.&#160; Then you must create an asp.net web page and name it with the .aspx extension similar to the example below.&#160; The asp.net web page created must be copied into the EMS Web App root web directory.&#160; It must be copied there in order for EMS Web App to read the session variable.</p>
+        <p>You will need to pass through the user’s email address or external reference to your asp.net web page.</p>
+        <p><span class="ui">Code example in vb.net:</span>
+        </p>
+        <div class="code-sample"><pre>&lt;%@ Import Namespace="System" %&gt;</pre><pre>&lt;script runat="server" language="vb"&gt;</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Session.Item("EMS Web AppSession") = "<a href="mailto:test@dea.com" title="mailto:test@dea.com">test@</a>emssoftware.com"</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Redirect("Default.aspx")</pre><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; End Sub</pre><pre>&lt;/script&gt;</pre>
+        </div>
+        <h3><a name="Form_Method"></a>Form Method</h3>
+        <p>Forms enable client-side users to submit data to a server in a standardized format via HTML.&#160;The creator of a form designs the form to collect the required data using a variety of controls, such as INPUT or SELECT. Users viewing the form fill in the data and then click Submit to send the data to the server.</p>
+        <p>To use the form method, set the&#160;Portal Authentication Method&#160;parameter to&#160;<span class="ui">Form&#160;</span>and type the appropriate variable for the&#160;Portal Authentication Variable&#160;parameter.&#160; To create portals through a form, create a web page with a form similar to below.&#160; Once the user logs on through the portal, the form below can be submitted to log the user on to EMS Web App.</p>
+        <p><span class="ui">Code example in HTML:</span>
+        </p>
+        <div class="code-sample"><pre><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;Form name="form1" method="Post" action=" http://[ServerName]/ EMSWebApp/Default.aspx "&gt;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input type="hidden" id="EMS Web AppFORM" name="EMS Web AppFORM" value="test@emssoftware.com&gt;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;input type="submit" value="submit"&gt;</p><p>&lt;/form&gt;</p></pre>
+        </div>
+        <h3><a name="Cookie_Method"></a>Cookie Method</h3>
+        <p>A cookie is a small piece of information stored by the browser. Each cookie is stored in a name/value pair called a crumb—that is, if the cookie name is "id" and you want to save the id's value as "this", the cookie would be saved as id=this.</p>
+        <p>You can store up to 20 name/value pairs in a cookie, and the cookie is always returned as a string of all the cookies that apply to the page. &#160;This means that you must parse the string returned to find the values of individual cookies.&#160; Cookies accumulate each time the property is set. &#160;If you try to set more than one cookie with a single call to the property, only the first cookie in the list will be retained.</p>
+        <p>To use the cookie method, set the&#160;Portal Authentication Method&#160;parameter to&#160;<span class="ui">Cookie&#160;</span>and type the appropriate variable for the&#160;Portal Authentication Cookie Key&#160;parameter.&#160; Then create a web page with code similar to below.&#160; Once the user logs on through the portal, take their user logon information and create a cookie.&#160; After the cookie is created send the user to your EMS Web App Default.aspx page.</p>
+        <p><span class="ui">Code example in Active Server Pages 2.0:</span>
+        </p>
+        <div class="code-sample"><pre><p>&lt;%@LANGUAGE="VBSCRIPT" %&gt;</p><p>&lt;%</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Expires = -1</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Cookies("EMS Web AppCookie")("CookVal") = "test@emssoftware.com"</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Cookies("EMS Web AppCookie").Path = "/"</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Cookies("EMS Web AppCookie").Expires = DateAdd("m", 3, Now)</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Redirect("http://[ServerName]/ EMSWebApp/Default.aspx ")</p><p>%&gt;</p></pre>
+        </div>
+        <h3><a name="Query_String_Method"></a>Query String Method</h3>
+        <p>A query string is information appended to the end of a page's URL. &#160;An example using portal authentication is below.</p>
+        <p><span class="ui">Code example:</span>
+        </p>
+        <div><pre>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;http://[ServerName]/ EMSWebApp/Default.aspx?MCQS=test@emssoftware.com</pre>
+            <p>To use the query string method, set the&#160;Portal Authentication Method&#160;parameter to&#160;<span class="ui">Query String</span>&#160;and type the appropriate variable for the&#160;Portal Authentication Variable&#160;parameter.</p>
+        </div>
+    </body>
+</html>

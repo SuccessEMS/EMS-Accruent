@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="V44.1" />Execute the EMS&#160;Master Calendar Data Connector Script</h1>
+        <p>In order to use the EMS&#160;Master Calendar Data Connectors, an organization must be properly licensed.  If unsure about whether the EMS Data Connector Module, that allows importing from the current EMS Database, has been purchased; Log into the EMS&#160;Master Calendar site, go to the systemcheck.aspx page, click the License Information heading and review the Licensed For list and look for a description to state “EMS Connector”.</p>
+        <p>If an organization was not previously licensed for the EMS Data Connector Module but is now, update the registration information by logging in to the EMS&#160;Master Calendar, going to Admin – Site Administration - Registration, entering the new licenses information then click Save License Data.  Please note, the license information is case sensitive and needs to be entered in exactly how it was provide.</p>
+        <p>After entering the registration information, EMS&#160;Master Calendar must re-read the license by going to the systemcheck.aspx page, clicking the License Information heading and then clicking Read License.  At the very top of the page, it should state “License read successfully.”</p>
+        <p>The information in this section is for executing a SQL script against ones existing EMS Database.  The EMS Data Connector Scripts create the needed stored procedures to export information from an EMS Database to the EMS&#160;Master Calendar Database. To do so, one must run the <span class="ui">DEA.MasterCalendar.DataConnectorScript.sql</span> against the existing EMS Database(s).</p>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>Be sure that the EMS Data Connector Script is executed against the EMS Database                  not the Master Calendar Database.</p>
+        </div>
+        <ol class="number-list">
+            <li>On the database server, start the SQL Server tool (Query analyzer\Sql Management Studio) that is used to execute sql scripts. </li>
+            <li>Select the EMS Database, which is going to be the data source for EMS&#160;Master Calendar. </li>
+            <li>In the query window, navigate and open up the EMS Data Connector Script. </li>
+            <li>Execute this script against the EMS Database, not the EMS&#160;Master Calendar Database.<div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;"><p> If any error messages are generated, be sure to check the settings and permissions.   Then try to re-execute the script against the correct database.  If error messages continue to be generated, please contact our <a href="../../../ContactUs.htm">Customer Support</a> Department. </p></div><ul><li>      In order to use the Data Connectors and exchange data between the EMS database and Master Calendar  database, Ad Hoc Remote Queries has to be enabled in order for a Data Connector to work.</li><li><span class="ui">For Microsoft SQL Server 2005:</span> To check to see if Ad Hoc Remote Queries are enabled – on the Database  Server – find Microsoft Configuration Tools &gt; SQL Server Surface Area Configuration &gt; Surface Area  Configuration for Features &gt; Select the server level &gt; Database Engine &gt; be sure “Enable  OPENROWSET and OPENDATASOURCE support” is checked. If it is not checked, data connectors will  not be able to pull data from the EMS database to the Master Calendar database.</li><li><span class="ui">For Microsoft SQL Server 2008 and 2012</span> : To check to see if Ad Hoc Remote Queries are enabled – on the   Database Server - go to Management Studio &gt; right click on Server level &gt; Facets &gt; from the drop-down  box &gt; Select Surface Area Configuration &gt; Check AdHocRemoteQueriesEnabled &gt; Set to  True.  (This might require a restart of the SQL Server this is changed on.)</li></ul></li>
+        </ol>
+    </body>
+</html>

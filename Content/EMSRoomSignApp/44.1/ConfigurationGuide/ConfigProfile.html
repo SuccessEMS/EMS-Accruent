@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');">
+    <head><title mt-export-translate="no">Configuring Profiles in the EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Profiles in <MadCap:variable name="General.RSA" /></h1>
+        <p>In the <MadCap:variable name="General.RSA" /> (<strong>formerly named EMS Glance</strong>), you can customize how information displays at the <a href="GlobalSettings.html">Global level</a> (the default for all Profiles) or for just one Profile (as described in this topic).</p>
+        <p>This topic outlines how to:</p>
+        <ul class="unorder-list">
+            <li>
+                <p><a href="#accessdisplaysettings">Access Display Settings for Just One Profile</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Create_a_New_Profile">Create a New Profile</a>
+                </p>
+                <ul>
+                    <li>
+                        <p><a href="#Nameyourprofile">Name Your Profile</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#adddeleteroom">Add or Delete a Room from Your Profile</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#Addevent">Add an Event to Your Profile</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#Configuresetting">Configure a Setting for the Profile</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><a href="#Delete_a_Profile">Delete a Profile</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Secondary">Secondary Authentication</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a id="accessdisplaysettings" name="accessdisplaysettings"></a>Access Display Settings for Just One Profile</h2>
+        <ol class="number-list">
+            <li>
+                <p> On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <span class="ui">EMS&#160;Glance Settings</span>&#160;to access the <MadCap:variable name="General.RSA" /> settings area.&#160;</p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p>  By default, all settings for the profile are initially defined by the <a href="GlobalSettings.html">global settings</a>; however, you can override these settings for a profile. You can also reset all the settings to their default values.</p>
+                </div>
+            </li>
+            <li>
+                <p>Then select&#160;<strong>Profiles</strong> and click <strong>Open</strong>.</p>
+                <p>
+                    <img src="../Images/B_Configuration/ProfilesScreen.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+            <li>
+                <p>The Profiles window lists all the defined profiles by name. From this window, you can <a href="#Create_a_New_Profile">create new profiles</a>, edit existing profiles, or <a href="#Delete_a_Profile">delete profiles</a>.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/B_Configuration/profileswindow.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Profiles Window</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Create_a_New_Profile"></a>Create a New Profile</h2>
+        <ol class="number-list">
+            <li>
+                <p>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <span class="ui">EMS&#160;Glance Settings</span>&#160;to access the <MadCap:variable name="General.RSA" /> settings area.&#160;</p>
+            </li>
+            <li>
+                <p>Select&#160;<strong>Profiles</strong> and click <strong>Open</strong>.</p>
+            </li>
+            <li>
+                <p>Click <span class="ui">New</span> to create a new profile. </p>
+                <p>The Profiles window opens where you can configure profile settings through the following tabs: <span class="ui"><a href="#Nameyourprofile">Profile </a></span>(the tab that opens by default), <span class="ui"><a href="#adddeleteroom">Rooms</a></span>, <span class="ui"><a href="#Addevent">Editable Event Types</a></span>, <span class="ui"><a href="#Configuresetting">Settings</a></span>, and <span class="ui">Audit </span>tabs.</p>
+                <p>
+                    <img src="../Images/B_Configuration/profiletabs.png" class="resize80_noborder_padding" />
+                </p>
+            </li>
+        </ol>
+        <h3><a id="Nameyourprofile" name="Nameyourprofile"></a>Name Your Profile</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to the <span class="ui">Profile </span>dialog box &gt; <span class="ui">Profile </span>tab.</p>
+            </li>
+            <li>
+                <p>Name your profile from the <span class="ui">Profile </span>tab.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/B_Configuration/profiletab.png" style="width: 608px; height: 338px;" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Profile Tab</p>
+                </div>
+            </li>
+        </ol>
+        <h3><a id="add%25252525252Fdeleteroom" name="adddeleteroom"></a>Add or Delete a Room from Your Profile</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to <span class="ui">Profile </span>dialog box &gt;&#160;<span class="ui">Rooms </span>tab.&#160;</p>
+                <p>The <span class="ui">Rooms </span>tab displays all the rooms that can be added to the profile (the Available list) as well as all the rooms that are currently selected for the profile. </p>
+            </li>
+            <li>
+                <p>Add or delete rooms for a profile on this tab by selecting the room to be added or deleted and clicking the Move (&lt;, &gt;)&#160;buttons. </p>
+                <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+                    <p>For  28 or earlier, you should <a href="../InstallationGuide/InstallRSA.html#Deregister_RSA_on_Your_Device">deregister your device</a> from the room  before you delete the room from the profile. EMS&#160;Desktop Client does not automatically deregister a device when you delete a room from a profile. If you have already deleted a room and you did not deregister the device first, you will need to <a href="../InstallationGuide/InstallRSA.html#Remove_Unused_Devices_from_the_Database">access the database to deregister the device</a> and free up its license.</p>
+                    <p>For Update 29 or later, when you delete a room from a profile, the software automatically deregisters your device from the room, which frees up the license. The software also automatically deregisters your devices when you delete a profile (see <a href="#Delete_a_Profile">Delete a Profile</a>).</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/B_Configuration/Roomstab.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption"><a name="Rooms"></a>Rooms Tab</p>
+                </div>
+            </li>
+        </ol>
+        <h3><a id="Addevent" name="Addevent"></a>Add an Event to Your Profile</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to <span class="ui">Profile </span>dialog box &gt; <span class="ui">Editable Event Types</span> tab. </p>
+            </li>
+            <li>
+                <p>The Editable Event Types tab displays all the event types that can be added to the profile (the Available list) as well as all the event types that are currently selected for the profile. This tab controls which bookings (<i>via</i> event types) are editable in the <MadCap:variable name="General.RSA" />.</p>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/B_Configuration/editableevents.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Editable Event Types Tab</p>
+                </div>
+            </li>
+        </ol>
+        <h3><a id="Configuresetting" name="Configuresetting"></a>Configure a Setting for the Profile</h3>
+        <ol class="number-list">
+            <li>
+                <p>Navigate to <span class="ui">Profile </span>dialog box &gt;&#160;<span class="ui">Settings</span> tab.</p>
+            </li>
+            <li>
+                <p>The Settings tab displays the configuration setting for the profile. </p>
+                <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                    <p> By default, all settings for the profile are initially defined by the <a href="GlobalSettings.html">global settings</a>; however, you can override these settings for a profile. You can also reset all the settings to their default values.</p>
+                </div>
+                <div class="TitleandImage">
+                    <p>
+                        <img src="../Images/B_Configuration/globalsettingsdialogbox2.png" class="resize80_noborder_padding" />
+                    </p>
+                    <p class="Caption">Settings Tab</p>
+                </div>
+            </li>
+        </ol>
+        <h2><a name="Delete_a_Profile"></a>Delete a Profile</h2>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>For Update 28 or earlier, you should <a href="../InstallationGuide/InstallRSA.html#Deregister_RSA_on_Your_Device">deregister your devices</a> from the rooms in the profile before you delete the profile. EMS&#160;Desktop Client does not automatically deregister devices when you delete a profile. If you have already deleted a profile and you did not first deregister the devices, you will need to <a href="../InstallationGuide/InstallRSA.html#Remove_Unused_Devices_from_the_Database">access the database to deregister the devices</a> and free up the licenses.</p>
+            <p>For Update 29 or later, when you delete a profile, the software automatically deregisters your devices from the rooms in the profile. The software also automatically deregisters your devices when you delete individual rooms from a profile (see <a href="#adddeleteroom">Add or Delete Rooms</a>).</p>
+        </div>
+        <p>To delete a profile, complete the following steps:</p>
+        <ol class="number-list">
+            <li>
+                <p>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <span class="ui">EMS&#160;Glance Settings</span>&#160;to access the EMS&#160;Glance window.&#160;</p>
+            </li>
+            <li>
+                <p>In the EMS&#160;Glance window, select&#160;<strong>Profiles</strong> and click <strong>Open</strong>.</p>
+            </li>
+            <li>
+                <p>In the Profiles window, select the profile you want to delete and then click the <span class="ui">Delete</span> button.</p>
+            </li>
+            <li>
+                <p>In the Verify Delete confirmation window, click <span class="ui">Yes</span> to confirm the deletion. </p>
+                <p>The profile is deleted and no longer appears in the list on the Profiles window.</p>
+            </li>
+        </ol>
+        <h2><a name="Secondary"></a>Secondary Authentication</h2>
+        <p>Users can quickly authenticate in the EMS&#160;Room Sign App with their work badge. However, for users without a badge, secondary authentication is necessary. You can configure a <span class="ui">Forgot my Badge</span> button that allows for this secondary authentication.</p>
+        <p><b>See Also:</b>&#160;<a href="Authentication.htm">Authentication</a>.</p>
+    </body>
+</html>

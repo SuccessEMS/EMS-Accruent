@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Configure Language Translations in EMS&#160;Kiosk App</h1>
+        <p>If you need to add language translation capability to your EMS Kiosk pages (menu text, menu items, and help text items), then you must configure language translations. </p>
+        <p class="beforelist">To configure a language translation, follow these steps:</p>
+        <ol class="RN-number-list">
+            <li>
+                <p><a href="../../../EMSWebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigLangTransEUapps.html#ConfigureYourLanguageTranslationsDTC"><MadCap:annotation MadCap:createDate="2019-03-27T08:02:38.9219821-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Links to topic in Web App, but the same topic is in DTC config. Can we just link there?" MadCap:editor="Megan.Laub" MadCap:editDate="2019-03-27T08:02:56.4859218-06:00">Configure</MadCap:annotation> your language translations in EMS Desktop Client</a>. </p>
+            </li>
+            <li>
+                <p><a href="ConfigKioskAppProfiles.htm#Translations">Add the language translation to the EMS&#160;Kiosk App profile</a>.</p>
+            </li>
+            <li>
+                <p>After configuring your language translation and adding your language translation to your EMS&#160;Kiosk App profile, create a new JSON translation file to apply your translation to EMS&#160;Kiosk App:</p>
+                <ol>
+                    <li>
+                        <p>Navigate to the root folder for your EMS&#160;Kiosk installation and locate the en.json file in the translations folder. </p>
+                        <p>Example Installation Path: <i>C:\Program Files\EMS Software\EmsKiosk\wwwroot\kiosk\translations</i>.</p>
+                    </li>
+                    <li>
+                        <p> Copy and rename the en.json file according to your desired language. </p>
+                        <p>For example, if you are translating to Spanish, you would rename the copied file es.json.</p>
+                    </li>
+                    <li>
+                        <p>Update the en.json file with your desired culture code. </p>
+                        <p>To determine the culture code, refer to the language tag listed in the <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c">Microsoft language table</a> (you will need to scroll down the page to locate the table).</p>
+                        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+                            <p class="box-note">EMS&#160;Kiosk App is able to use specific culture codes, such as French Canadian  (fr-CA); however, if you do not provide a json translation file for fr-CA,&#160;EMS&#160;Kiosk App will use the base French (fr) as long as the base French translation files have been provided.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Add the new JSON&#160;translation file  to the translations folder.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </body>
+</html>

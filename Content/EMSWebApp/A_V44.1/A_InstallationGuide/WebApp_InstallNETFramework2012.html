@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" class="emsWebapp" MadCap:onlyLocalStylesheets="False">
+    <head><title>Install .NET Framework</title>
+    </head>
+    <body>
+        <h1>Install .NET Framework for Windows Server 2012/2012 R2</h1>
+        <p>This topic provides information on the following:</p>
+        <ul>
+            <li><a href="#Install_.NET_Framework_3.5_and_.NET_Framework_4.5">Install .NET Framework 3.5 and .NET Framework 4.5</a>
+            </li>
+            <li><a href="#Install_.NET_Framework_4.5:_Regics_Only">Install .NET Framework 4.5: Regics Only</a>
+            </li>
+        </ul>
+        <h2><a name="Install_.NET_Framework_3.5_and_.NET_Framework_4.5"></a>Install .NET Framework 3.5 and .NET Framework 4.5</h2>
+        <ol>
+            <li>In Server Manager, click <span class="ui">Manage </span>and then select <span class="ui">Add Roles and Features</span> to start the Add Roles and Features Wizard.<p><img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF35ServerManager.png"></img></p></li>
+            <li>In the Confirm Installation Selections interface, review the selections and then click <span class="ui">Install</span>.</li>
+            <li>Allow the installation process to complete and then click <span class="ui">Close</span>.</li>
+            <li>On the Select installation type screen, select <span class="ui">Role-based or feature-based installation</span>.</li>
+            <li>Select the target server.</li>
+            <li>On the <span class="ui">Select Features</span> screen, check the box next to <span class="ui">.Net Framework 3.5 Features</span>.<p><img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF35Features.png"></img></p></li>
+            <li>In the Select Features interface, expand <span class="ui">.NET Framework 3.5 Features</span>.</li>
+            <li>Once expanded, there will be three check boxes. One for .NET Framework 3.5 and the other two for HTTP Activation and Non-HTTP Activation. Check the box next to <span class="ui">.NET Framework 3.5</span> and click <span class="ui">Next</span>.</li>
+        </ol>
+        <h2><a name="Install_.NET_Framework_4.5:_Regics_Only"></a>Install .NET Framework 4.5: Regics Only</h2>
+        <ol>
+            <li> In Server Manager, click <span class="ui">Manage </span>and then select <span class="ui">Add Roles and Features</span> to start the Add Roles and Features Wizard.<p><img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF45ServerManager.png"></img></p></li>
+            <li> On the Select installation type screen, select <span class="ui">Role-based or feature-based installation</span>.</li>
+            <li>Select the target server.</li>
+            <li>On the Select Features screen, check the box next to <span class="ui">.Net Framework 4.5 Features</span>.</li>
+            <li>In the Select Features interface, expand <span class="ui">.NET Framework 4.5 Features</span>.</li>
+            <li>Once expanded, there will be three check boxes. These will be .NET Framework 4.5, APS.NET 4.5 and WCF Services. Check the boxes next to <span class="ui">.NET Framework 4.5</span> and <span class="ui">ASP.NET 4.5</span> then click <span class="ui">Next</span>.<p><img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF45Features.png"></img></p></li>
+            <li>In the Confirm Installation Selections interface, review the selections and then click <span class="ui">Install</span>.</li>
+            <li>Allow the installation process to complete and then click <span class="ui">Close</span>.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Import HR&#160;Toolkit Data</h1>
+        <div class="ImportantNote" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #990000;&quot; class=&quot;mcFormatColor&quot;&gt;Important! &lt;/span&gt;&lt;/b&gt;">
+            <p>Existing EMS clients must synchronize&#160;existing EMS Group, Contact, and Everyday User records before activating the HR Toolkit.&#160;<span class="ui">Ignoring this step will result in duplicate records.</span> Please contact your Professional Services Consultant for more details.</p>
+        </div>
+        <ol>
+            <li>
+                <p>Import&#160;<span class="ui">ACTIVE&#160;</span>records from your organization’s data source into the&#160;<span class="italics">tblPeople&#160;</span>table within the&#160;<span class="italics">EMS_Staging</span>&#160;database.</p>
+            </li>
+            <li>
+                <p>Execute the&#160;<span class="italics">HRTK_Update_Group</span>&#160;stored procedure.</p>
+            </li>
+        </ol>
+        <div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #1a1a1a;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">
+            <p>These steps (with assistance from your IT Department) can be scheduled to execute automatically using an SQL Job.&#160;Please refer to your MS SQL Server documentation for more information on creating and scheduling an SQL Job.&#160;This&#160;process is not managed by EMS Software.</p>
+        </div>
+    </body>
+</html>

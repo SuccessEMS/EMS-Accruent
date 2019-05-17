@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>&#160;</head>
+    <body>
+        <table cellspacing="12" style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/Border_table_alternate_colors.css');" class="TableStyle-Border_table_alternate_colors">
+            <col style="width : 117px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 160px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 312px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 167px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <col style="width: 204px;" class="TableStyle-Border_table_alternate_colors-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Border_table_alternate_colors-Head-Header1">
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Area</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Title</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Description</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadE-Column1-Header1">Value</th>
+                    <th class="TableStyle-Border_table_alternate_colors-HeadD-Column1-Header1">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Field to find rooms by when scanning QR codes</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Indicates the fields you want to match rooms by Room ID, Room Code or External Reference. </td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Room ID, Room Code, External Reference (on room).</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Label for the Help Link on the Mobile App</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Login to the EMS Mobile App and click on top left navigation bar. &#160; On the bottom there is a help URL. This parameter allows you to configure the label for the help link. &#160; You can also configure the URL using another parameter - URL for HELP link on the EMS&#160;Mobile App.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">Login to the EMS Mobile App and click on top left navigation bar. &#160; On the bottom there is a help URL.   </td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Maximum EMS Mobile App version that the API should allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Maximum app version that the API will allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Minimum EMS Mobile App version that the API should allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Minimum app version that the API will allow to connect.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Minimum number of minutes to book via QR code or mobile Browse Location</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile check-in proximity distance</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile proximity unit of measurement</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Scans custom QR codes and interprets them as URLs.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">QR Codes when scanned, can be configured to be interpreted as a URL.   If the Customer's configuration requires QR codes to be scanned as a URL, this parameter should be set to YES.   If set to No, QR Codes will be scanned as plain text.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 75px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Sets the header variable for the EMS Mobile APIs Header Authentication Method</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">EMS Mobile App supports header authentication.    The value of the header variable is set on the Platform's Admin page.   The same value should also be set for this parameter to make the Header Authentication work.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">See Also:&#160;<a href="Authentication/PortalAuthMethods.html">Portal Authentication Methods. </a></td>
+                </tr>
+                <tr style="height : 120px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">The Query String Field in QR Code URLs for looking up Rooms</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">If you have the parameter SCAN CUSTOM QR CODES and INTERPRETS THEM AS URLS set to YES, then this is what tells the app to look for in the Query string. &#160; &#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">If set to ROOMID, when it goes to the following URL: http://blah.com?romID=23921, it would use that ROOMID to look up the room based on the parameter: &#160;FIELD TO FIND ROOMS BY WHEN SCANNING QR CODES.</td>
+                </tr>
+                <tr style="height : 45px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">The subject for the EMS Mobile two-factor setup email</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Subject of the email sent to users notifying them to go to the EMS&#160;Web App and scan their 2fa barcode.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">The first time you configure 2fa (Two-Factor Authentication) you get e-mailed. &#160;This is the subject of that e-mail.</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">URL for the EMS Mobile App in the app store</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">Setting this parameter to blank prevents&#160;the EMS Mobile App popup prompt from appearing.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr style="height : 30px;" class="TableStyle-Border_table_alternate_colors-Body-Body1">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">URL for the EMS Mobile App in the play store</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">Setting this parameter to blank prevents&#160;the EMS Mobile App popup prompt from appearing.&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr style="height : 90px;" class="TableStyle-Border_table_alternate_colors-Body-Body2">
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Mobile-Specific</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">URL for the Help Link on the mobile app</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">Login to the EMS Mobile App and click on top left navigation bar. &#160; On the bottom there is a help URL. The URL you put here, will be the URL for the Help Link. &#160; You can also configure the Help Link Label using another parameter - URL for HELP link Label on the EMS Mobile App.</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyB-Column1-Body2">&#160;</td>
+                    <td class="TableStyle-Border_table_alternate_colors-BodyA-Column1-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('..\..\..\Resources\MasterPages\No-Survey Master Page_AA.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Room Wizard Communication</h1>
+        <h2>Communication Overview</h2>
+        <p>The RoomWizard unit is the initiator of all communication.</p>
+        <p>Using HTTP and URL query string parameters the RoomWizard unit makes specific requests (using GET) to the EMS RW-Interface which proved an immediate response in an XML format defined by the RoomWizard API.</p>
+        <h2>RoomWizard API Calls Used</h2>
+        <p>The following requests (defined as part of the RoomWizard API) are honored by the EMS-ROOMWIZARD Interface with a summary of the EMS-ROOMWIZARD Interface response:</p>
+        <ul class="unorder-list">
+            <li><span class="ui">about_connector</span>
+                <ul>
+                    <li>Provides the RoomWizard unit with basic information about the EMS-ROOMWIZARD Interface including the interface version and what versions of the RoomWizard API that are supported.</li>
+                </ul>
+            </li>
+            <li><span class="ui">get_booking</span>
+                <ul>
+                    <li>Provides a list of the day’s events to the RoomWizard unit including (depending on configuration settings) Event Name, Group Name, Group Phone, Group Email Address, and setup information.</li>
+                </ul>
+            </li>
+            <li><span class="ui">Add_booking</span>
+                <ul>
+                    <li>Provides a method for information sent from the RoomWizard unit (Host, Purpose, and Times) and used to create EMS Events.</li>
+                </ul>
+            </li>
+            <li><span class="ui">edit_booking</span>
+                <ul>
+                    <li>Provides methods for the RoomWizard unit to initiate the Edit/Cancelation of EMS Bookings.</li>
+                    <li>Returns success or failure.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
